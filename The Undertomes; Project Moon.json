@@ -48,6 +48,10 @@
 							"depth": 1
 						},
 						{
+							"header": "Bard",
+							"depth": 1
+						},
+						{
 							"header": "Cleric",
 							"depth": 1
 						},
@@ -116,6 +120,22 @@
 									"classSource": "PHB",
 									"collapsed": true,
 									"shortName": "Precognition"
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Bard",
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "College of the Screaming Melody",
+									"className": "Bard",
+									"classSource": "PHB",
+									"collapsed": true,
+									"shortName": "Screaming Melody"
 								}
 							]
 						},
@@ -337,6 +357,18 @@
 				"Manuale in Maturazione|Ranger|PHB|Spada Palermitana|TheUndertomesProjectMoon|7",
 				"Cacciatore del Traguardo|Ranger|PHB|Spada Palermitana|TheUndertomesProjectMoon|11",
 				"Senzionatura di Inefficienza|Ranger|PHB|Spada Palermitana|TheUndertomesProjectMoon|15"
+			]
+		},
+		{
+			"name": "College of the Screaming Melody",
+			"shortName": "Screaming Melody",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"College of the Screaming Melody|Bard|PHB|Screaming Melody|TheUndertomesProjectMoon|3",
+				"Rampant Melody|Bard|PHB|Screaming Melody|TheUndertomesProjectMoon|6",
+				"Rhythmaniac|Bard|PHB|Screaming Melody|TheUndertomesProjectMoon|14"
 			]
 		}
 	],
@@ -1274,6 +1306,109 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "College of the Screaming Melody",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Screaming Melody",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i “I know it hurts, but please, stop struggling…!”}",
+				"{@i “I promise, nothing could make as fascinating music as a human can… Nothing!”}",
+				"Rockin' is all that a bard of the magnanimous and great COLLEGE OF THE SCREAMING MELODY needs to be alive, to be able to shred flesh with metal and have music be performed by each dying noise and beating gargle of another - Ah! Pure ecstasy.",
+				"Of course, people - MOST people don't understand the artistry at work upon taking apart the human body to find the music inside, so these bards either take to being secretive in their work, only forming the occasional band perofrmance with their fellows or they swing the complete other way in an obsessive opulence that rivals even that of paladins!",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shredding Melodies|Bard|PHB|Screaming Melody|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hype up the Masses!|Bard|PHB|Screaming Melody|TheUndertomesProjectMoon|3"
+				}
+			]
+		},
+		{
+			"name": "Shredding Melodies",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Screaming Melody",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i “I promise, nothing could make as fascinating music as a human can… Nothing!”}",
+				"Music isn't just an art form limited to the conveniently well-accepted instruments that all other bards partake in playing, no, hardly! You have come to understand that there is no greater song machine other than the meticulous inner-workings of living beings when they are subject to glorious torment, and you have done your utmost to become proficient in playing them!",
+				"You may perform melodic attacks as an {@action Action} during your turn provided you are wielding an Instrument you are proficient in. A melodic attack is an advanced artform comprised of absolutely shredding with your instruments, blowing your targets minds or even setting them ablaze with sheer, overwhelming fervour for the melody. You are proficient with these attacks and use your Charisma modifier for their rolls, dealing {@damage 2d4} plus your Charisma modifier's worth of thunder damage on a hit, also inflicting 2 {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules} count.",
+				"You may choose which of the Conditions to inflict and how to partition them. The amount inflicted increases to 3 count upon reaching 8th level in Bard.",
+				"You start being able to perform a single melodic attack during your turn and upon reaching 6th level your melodious attacks count as magical for the purposes of bypassing Resistance,",
+				"Whenever a creature benefits from your {@classFeature Bardic Inspiration|Bard|PHB|1} you may instantly perform a melodic attack as a {@action Reaction} against a target within 30-ft. of them, provided they can hear you."
+			]
+		},
+		{
+			"name": "Hype up the Masses!",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Screaming Melody",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i “If everyone threw their bodies into me, it'll certainly create an even sweeter melody”}",
+				"A lively life is one that is marched with an entire band and not a single sad little player, after all, how are you going to play without plentiful instruments?! That thought has crawled in the back of your mind enough times for you to consider the occasional welcoming of others into your melody and actually learning how they tick from the outside in. You gain proficiency in the {@skill Nature} skill, or Expertise if you were already proficient. Charisma is your Ability Modifier for this skill.",
+				"Additionally, whenever a creature attempts a Strength, Dexterity, Constitution or Charisma ability check you may spent your {@action Reaction} to play a backing track to hype them - and yourself - up, granting them half your Charisma modifier as a bonus modifier to their roll. If they still fail, the sounds of their broken body fill you with joy, with that creature suffering an amount of {@damage d8} bludgeoning damage equal to half their proficiency bonus and you instantly recovering one use of your {@classFeature Bardic Inspiration|Bard|PHB|1}. This must be done before they roll. You may only use this feature an amount of times equal to half your proficiency bonus per short or long rest."
+			]
+		},
+		{
+			"name": "Rampant Melody",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Screaming Melody",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i “This way, just a little closer… Hahah! Perfect! That scream, weaving into a ninth chord!”}",
+				"{@i “Such wondrous… harmony.”}",
+				"Ah, the sweet, sweet and tender dance of notes fluttering down your instrument is ecstasy for your brain! However, you have come to learn that the true bliss comes from creating a twinned harmony by pulling the cords of other's bodies, mangling them to make truly divine music! Whenever you make a melodious attack for the first time during your turn, you may perform an additional melodious attack as part of the same action for each time you've rolled a 20 or greater on the dice roll, including modifiers. This value is diminished by one per melodious attack hit as part of this {@action Action}, with it being reset at the end of your turn. You may make one additional attack at 6th level and a second upon reaching 12th level in Bard. You may select the same creature as the target of these additional attacks.",
+				"You have a +1 bonus modifier to this roll for each sum of 3 {@condition Bleed|TheUndertomesGeneralRules} and {@condition Burn|TheUndertomesGeneralRules} count the target is suffering from, to a maximum value of +5. This is considered a direct increase to your roll's base result for the sakes of triggering additional attacks.",
+				"When you perform your first melodious attack during your turn you may spend a Bard spell slot to empower your music. You gain the following as part of this {@action Action}:",
+				{
+					"type": "list",
+					"items": [
+						"Your range increases by 5-ft. and you may choose an additional target per spell slot level spent.",
+						"You perform an additional melodious attack for every two spell slot levels spent greater than 0, such as performing two additional melodious attacks when spending a 4th level spell slot.",
+						"Instead of delivering more notes and performing additional melodious attacks whenever you've rolled the aforementioned value on a dice roll, you instead inflict 2 additional {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules} count whenever you trigger that roll. This value increases by one for each time you have triggered this additional infliction.",
+						"If cast using a 4th level spell slot or higher, you also convert all {@condition Bleed|TheUndertomesGeneralRules} count on the target to be {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} instead. Additionally, you add your Charisma modifier to damage rolls of melodious attacks.",
+						"If cast using an 8th level spell slot or higher, you perform an additional melodious attack for each creature killed as part of this {@action Action}. Summoned or otherwise easily-reproducible creatures do not count toward this, as a fake being just does not provide anything but repetitive music to your ears.",
+						"If cast using a 9th level spell slot, you deal additional damage on hits equal to your choice of the targets {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules} count. Additionally, you recover a spent {@classFeature Bardic Inspiration|Bard|PHB|1} for each creature killed through this attack, to a maximum amount recovered equal to half your maximum Bardic Inspiration die. Summoned creatures also do not count toward this."
+					]
+				},
+				"Additionally, you have learnt how to create such electrifying symphonies that they touch the hearts of legions at once. Whenever you grant a creature a use of your {@classFeature Bardic Inspiration|Bard|PHB|1} dice, you may choose to fill another creature within 30-ft. of that target with inspiration. When you do so, though, your attempt at catering to multiple tastes slightly diminishes the quality of the music, granting each only a {@dice d4}. This increases to a {@dice d6} upon reaching 15th level in Bard."
+			]
+		},
+		{
+			"name": "Rhythmaniac",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Screaming Melody",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i “Make me move… Light my path with the songs!”}",
+				"No one should, could or would stop you now, they can't stop either when the rhythm that pervades their soul! Your jam sessions have evolved, short strums to melodies to whole shows played over the battle stage and others finally have a shot of truly, lastingly connecting to the song that rips at your heart's strings! At the end of your turns, all creatures who have spent a use of your {@classFeature Bardic Inspiration|Bard|PHB|1} die during this combat may choose to gain one count of {@condition Rhythm|TheUndertomesProjectMoon}. While creatures have this Condition you are considered to be Concentrating on it, with all creatures' count being lost if you lose Concentration. This counts an additional Concentration for the purpose of still being able to concentrate on other spells.",
+				"A creature with this Condition has been enraptured by the god-rending melody of your carnage, and can't help but want to partake in it as musician and instrument, dealing and suffering an additional amount of damage equal to your Charisma modifier whenever they deal or suffer damage ( respectively ) equal to your 3 times your {@condition Rhythm|TheUndertomesProjectMoon} count that they currently have. Whenever a creature declines receiving {@condition Rhythm|TheUndertomesProjectMoon}, they halve the counts of the Condition they currently have, rounded up. Additionally, if a creature with this Condition benefits from your {@classFeature Bardic Inspiration|Bard|PHB|1} rolls the minimum value rolled is always equal to their current {@condition Rhythm|TheUndertomesProjectMoon} count, being increased if it was lower.",
+				"A creature with {@condition Rhythm|TheUndertomesProjectMoon} gain an additional count whenever they first kill a creature during a round, except for summoned creatures. Additionally, a creature with 3 or more count may spend one count to perform an additional weapon attack or cast an additional spell of 3rd level or lower during their turn.",
+				"While out of combat you may grant a creature up to 4 {@condition Rhythm|TheUndertomesProjectMoon} count whenever they receive one of your {@classFeature Bardic Inspiration|Bard|PHB|1}s. When used like this, they gain a +1 to skill checks for each count they currently have, although they can't help but feel the loathsome break in their cadence whenever they fail those, suffering {@damage 1d6} psychic damage for each count they currently have and then instantly losing the Condition.",
+				"Additionally, you may spend your {@action Action} while within 5-ft. of a medium or greater corpse to perform a haunting melody using it. When you do so, you instantly lose any negative Conditions currently afflicting you and gain 3 {@condition Rhythm|TheUndertomesProjectMoon} count. Any hostile creatures within 30-ft. of you that can see or hear you must also pass a Wisdom saving throw or suffer {@damage 4d8} psychic damage from the horrible sight. While you have {@condition Rhythm|TheUndertomesProjectMoon} count you recover an amount of Hit Points equal to the Condition's count at the end of your turns. If you lose Concentration you suffer an amount of {@damage d6} psychic damage equal to all {@condition Rhythm|TheUndertomesProjectMoon} count lost."
+			]
 		}
 	],
 	"condition": [
@@ -1394,6 +1529,14 @@
 			"source": "TheUndertomesProjectMoon",
 			"entries": [
 				"During combat, the enemy that dealt the most damage to you or your allies this round gains a Vengeance Mark. This lasts until the end of the next round, or until you fall {@condition unconscious}. If no enemy has dealt damage this turn, the stack of Vengeance Mark is given to the enemy that last attempted to attack you or an allied creature. If two enemies dealt the same amount of highest damage, the stack of Vengeance Mark goes to the latest enemy that dealt this damage. Outside of combat, whenever someone rolls an ability check to hurt or damage your character or their reputation, they will also gain a point of Vengeance Mark until your next short rest. If combat is initiated right after an instance of this by rolling an initiative check, then the enemy with the highest initiative roll gains Vengeance Mark until the end of the first round of combat."
+			]
+		},
+		{
+			"name": "Rhythm",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A creature with this Condition has been enraptured by the god-rending melody of your carnage, and can't help but want to partake in it as musician and instrument, dealing and suffering an additional amount of damage equal to your Charisma modifier whenever they deal or suffer damage ( respectively ) equal to your 3 times your Rhythm count that they currently have. Whenever a creature declines receiving Rhythm, they halve the counts of the Condition they currently have, rounded up. Additionally, if a creature with this Condition benefits from your Bardic Inspiration rolls the minimum value rolled is always equal to their current Rhythm count, being increased if it was lower.",
+				"A creature with Rhythm gain an additional count whenever they first kill a creature during a round, except for summoned creatures. Additionally, a creature with 3 or more count may spend one count to perform an additional weapon attack or cast an additional spell of 3rd level or lower during their turn."
 			]
 		}
 	],
