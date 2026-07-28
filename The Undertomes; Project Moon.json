@@ -5,7 +5,7 @@
 				"json": "TheUndertomesProjectMoon",
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
-				"version": "1.3.0",
+				"version": "1.0.4",
 				"authors": [
 					"The Undertomes"
 				],
@@ -24,7 +24,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1785205424
+		"dateLastModified": 1785215258
 	},
 	"book": [
 		{
@@ -51,6 +51,10 @@
 							"depth": 1
 						},
 						{
+							"header": "Fighter",
+							"depth": 1
+						},
+						{
 							"header": "Monk",
 							"depth": 1
 						},
@@ -61,10 +65,26 @@
 					]
 				},
 				{
-					"name": "Core Bursts",
+					"name": "Fighting Styles",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 2
+					},
+					"headers": []
+				},
+				{
+					"name": "Magic Items",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": []
+				},
+				{
+					"name": "Core Bursts",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
 					},
 					"headers": [
 						"The Disgrace"
@@ -116,6 +136,22 @@
 						},
 						{
 							"type": "entries",
+							"name": "Fighter",
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Vengeance Martial Archetype",
+									"className": "Fighter",
+									"classSource": "PHB",
+									"collapsed": true,
+									"shortName": "Vengeance"
+								}
+							]
+						},
+						{
+							"type": "entries",
 							"name": "Monk",
 							"entries": [
 								{
@@ -144,6 +180,33 @@
 									"collapsed": true,
 									"shortName": "Spada Palermitana"
 								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Fighting Styles",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@optfeature Fighting Style: Sacrifice|TheUndertomesProjectMoon}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Magic Items",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@item First Seal Removed: Lævateinn|TheUndertomesProjectMoon}",
+								"{@item Lævateinn|TheUndertomesProjectMoon}",
+								"{@item Sealed Lævateinn|TheUndertomesProjectMoon}",
+								"{@item Second Seal Removed: Lævateinn|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -230,6 +293,21 @@
 						]
 					}
 				}
+			]
+		},
+		{
+			"name": "Vengeance Martial Archetype",
+			"shortName": "Vengeance",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"edition": "classic",
+			"subclassFeatures": [
+				"Vengeance Martial Archetype|Fighter|PHB|Vengeance|TheUndertomesProjectMoon|3",
+				"Stomping|Fighter|PHB|Vengeance|TheUndertomesProjectMoon|7",
+				"Don't Let Something Like This Break You!|Fighter|PHB|Vengeance|TheUndertomesProjectMoon|10",
+				"Stamp of Vengeance|Fighter|PHB|Vengeance|TheUndertomesProjectMoon|15",
+				"I'll Gut You Like a Fish|Fighter|PHB|Vengeance|TheUndertomesProjectMoon|18"
 			]
 		},
 		{
@@ -990,6 +1068,211 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Vengeance Martial Archetype",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i “Heh. Why work with your brains when you've got the brawn?”}",
+				"The Vengeance Martial Archetype is selfish and unstoppable. You want personal vengeance against the world, and other people around you are just pawns for you to sacrifice in order to achieve that vengeance and the heights of greatness.",
+				"You belong to the Middle, a faction that treats all of their members like family, and mistreating one of theirs earns the ire of the entire group. Within, family forgives tiny missteps, but outsiders do not receive such mercy. However, you also believe thay a little sacrifice is nothing for the family, and will use your brothers and sisters to aid in your ascension, even if that costs them their lives.",
+				"Vengeance Fighters are very strong, but also uncaring. They trick you into believing you're a part of their inner circle, then use you for their own gains. You may play as a character that eventually comes to realize the wrong in their ways, but remember to always keep a desire for vengeance deep within your heart.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "The Book of Vengeance|Fighter|PHB|Vengeance|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sealed Sword [Lævateinn]|Fighter|PHB|Vengeance|TheUndertomesProjectMoon|3"
+				}
+			]
+		},
+		{
+			"name": "The Book of Vengeance",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i “Kiddo, remember what Mama told you? You ever find anything you don't like, you can talk to me about it!”}",
+				"During combat, the enemy that dealt the most damage to you or your allies this round gains a {@condition Vengeance Mark|TheUndertomesProjectMoon}. This lasts until the end of the next round, or until you fall {@condition unconscious}. If no enemy has dealt damage this turn, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} is given to the enemy that last attempted to attack you or an allied creature. If two enemies dealt the same amount of highest damage, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} goes to the latest enemy that dealt this damage. Outside of combat, whenever someone rolls an ability check to hurt or damage your character or their reputation, they will also gain a point of {@condition Vengeance Mark|TheUndertomesProjectMoon} until your next short rest. If combat is initiated right after an instance of this by rolling an initiative check, then the enemy with the highest initiative roll gains {@condition Vengeance Mark|TheUndertomesProjectMoon} until the end of the first round of combat.",
+				"Whenever you hit an enemy with counts of {@condition Vengeance Mark|TheUndertomesProjectMoon}, they suffer 1 count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}."
+			]
+		},
+		{
+			"name": "Sealed Sword [Lævateinn]",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i “Hah. What's a couple of pointed fingers when this sword of legends… is resting all snug and sweet in my hands?”}",
+				"You have discovered a legendary relic, but its power is currently sealed. The mythical Greatsword {@item Lævateinn|TheUndertomesProjectMoon} requires a specific type of user to attune with it. You are no such user, but you will still attempt to draw out as much power from it as you can. You have the {@item Sealed Lævateinn|TheUndertomesProjectMoon} Greatsword, you are always attuned to it and it cannot be destroyed. If it is lost, you can magically teleport it to your location during a Long Rest.",
+				"When you attack a creature with {@condition Vengeance Mark|TheUndertomesProjectMoon} with your {@item Lævateinn|TheUndertomesProjectMoon}, you may choose one of the following options once per turn:",
+				{
+					"type": "list",
+					"items": [
+						"They suffer 1 additional count of {@condition Bleed|TheUndertomesGeneralRules} per turn the first time you or another Middle member would inflict them with {@condition Bleed|TheUndertomesGeneralRules} until the start of your next turn;",
+						"They suffer 1 additional count of {@condition Burn|TheUndertomesGeneralRules} per turn the first time you or another Middle member would inflict them with {@condition Burn|TheUndertomesGeneralRules} until the start of your next turn;",
+						"If there is a Rogue that follows the Middle's Blade Roguish Archetype that you can see within 30 feet of you, you may give them 1 count of Thermal Blades;",
+						"If there is a Rogue that follows the Middle's Blade Roguish Archetype that you can see within 30 feet of you, you may show off to them, adding {@damage 1d6} Bludgeoning damage to your attacks until the end of your turn."
+					]
+				},
+				"You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses on a Long Rest."
+			]
+		},
+		{
+			"name": "Stomping",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i “Welcome to the kill zone!”}",
+				"As a member of the Middle, you do not lack the powerful magical tattoos they are known to boast. You may attune to an additional number of tattoos equal to half your Proficiency Bonus. Additionally, whenever you finish a Short or a Long Rest, you may choose 3 tattoos from the list below to have active (if any of them requires a save DC, it is equal to 8 + your Proficiency Bonus + your Strength modifier):",
+				{
+					"type": "entries",
+					"name": "Tattoo of Manipulation",
+					"entries": [
+						"Upon getting this Tattoo, you gain proficiency in the Persuasion or the Deception skill, your choice. If you already have Proficiency in the chosen skill, you gain Expertise instead."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tattoo of Deep Wounds",
+					"entries": [
+						"When you hit a creature, you may choose to inflict the {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} condition on them as long as they have {@condition Bleed|TheUndertomesGeneralRules} counts. Once they are cured of the {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} condition, they become Immune to it for 10 minutes. {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} instead causes the afflicted creature to suffer {@damage 2d6} damage on the same triggers as the previous Condition and 2 stacks are removed every time it is triggered. The Medicine Check required to remove this Condition is increased by 5."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tattoo of Dread",
+					"entries": [
+						"As a Bonus Action, each creature of your choice that is within 30 feet of you and aware of you must succeed on Wisdom saving throw or become {@condition Frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, they become Immune to this effect for the next 24 hours. Creatures with {@condition Vengeance Mark|TheUndertomesProjectMoon} have disadvantage on this saving throw."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tattoo of Stomping",
+					"entries": [
+						"You may replace one of your attack actions with an unarmed attack, which you are proficient with, against a creature within reach. On a hit, they take {@damage 1d8} Bludgeoning damage and are pushed 10 feet back towards a direction of your choice. This forced movement provokes opportunity attacks, and the damage increases to {@damage 1d10} at level 10 and {@damage 1d12} at level 15."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tattoo of Alliance",
+					"entries": [
+						"For each Middle-aligned friendly creature within 30 feet of you, you gain a +1 bonus to your ability checks, for a maximum of +3."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tattoo of Shielding",
+					"entries": [
+						"You gain +1 to your AC."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tattoo of Chains",
+					"entries": [
+						"As a Reaction when you see a creature move within 30 feet of you, you may attempt to Grapple them from where you are with your chains of loyalty. Creatures with {@condition Vengeance Mark|TheUndertomesProjectMoon} have disadvantage on this ability check."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tattoo of Rule Violation",
+					"entries": [
+						"At the start of combat, before any turns take place, you may establish a rule. If that rule is broken by a creature, you can use your Reaction to glare at them, lowering your sunglasses if you are wearing any. They must succeed on a Charisma saving throw or become {@condition Paralyzed} until the end of your next turn due to your overwhelming presence. Creatures with {@condition Vengeance Mark|TheUndertomesProjectMoon} have disadvantage on this saving throw. After a creature is affected by this Paralysis, they become Immune to it for 24 hours."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tattoo of Resentment",
+					"entries": [
+						"You have advantage on your first attack every turn against creatures with {@condition Vengeance Mark|TheUndertomesProjectMoon}."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Designer's Notes",
+					"entries": [
+						"Your rules for the Tattoo of Rule Violation can be anything you find fitting, but your DM has the final say if something is or isn't allowed. Breathing would not be a fun rule violation most of the time, but it COULD be interesting if used once for a cool roleplaying situation. Basically, make cool rules that everyone at the table can agree with, don't take the fun out of the ability!"
+					]
+				}
+			]
+		},
+		{
+			"name": "Don't Let Something Like This Break You!",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i “I don't need some stupid crutch like that “Core Burst (心)” crap. I just gotta pull as much power as I can from these tattoos and grit my teeth, and I'll overpower your fancy little tricks no problem.”}",
+				"You live in a dangerous world, so your solution was to become the most dangerous thing within it and not just survive, but rule it. Whenever you use your {@classFeature Second Wind|Fighter|PHB|1} ability when you have half of your hit points or less, for 1 minute you gain Resistance to all damage types except Psychic or Force, and the first time you hit an attack every turn, you heal hit points equal to {@dice 1d10} + your constitution modifier.",
+				"When you use this ability, you can only use it again after a Long Rest."
+			]
+		},
+		{
+			"name": "Stamp of Vengeance",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i “Heh. Why work with your brains when you've got the brawn?”}",
+				"You don't take shit from anyone, or anything, and you make that very clear with every step you take. Your speed increases by 10 feet. After you use your {@classFeature Indomitable|Fighter|PHB|9} ability, regardless of if you failed or succeeded, you may immediately use your remaining movement speed to move towards the source that forced you to make a saving throw. You can make an unarmed attack against it, as if you had your Tattoo of Stomping active, except it deals double the damage dice. If the source is an object or a structure, it takes double damage from this attack.",
+				"Additionally, if you have taken the {@optfeature Fighting Style: Sacrifice|TheUndertomesProjectMoon}, you may choose to double the damage dice of your attack once per Long Rest, but both creatures will take the doubled damage, and it cannot be diminished or prevented in any way by the friendly creature. If the friendly creature is a Middle's Blade Rogue, then both them and the creature become Vulnerable to the damage types of your attack as well."
+			]
+		},
+		{
+			"name": "I'll Gut You Like a Fish",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i “Hahahahaha! Having a good time, Kiddo? Mama's the best, huh?”}",
+				"You've heard the destructive desire of the sword would eventually corrupt your spirit - bullshit, you're as sane as the day you killed for this thing. As long as you're holding {@item Lævateinn|TheUndertomesProjectMoon}, you gain the following abilities:",
+				{
+					"type": "entries",
+					"name": "Gut Stab [Lævateinn]",
+					"entries": [
+						"If you are Grappling a creature, you gain advantage on attack rolls against it. Additionally, if you hit 3 or more attacks against the Grappled creature, they must make a Constitution saving throw. On a failed save, they gain an Internal Injury from the Lingering Injuries table. On a successful save, they instead receive a Festering Wound."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Complete and Total Extermination [Lævateinn]",
+					"entries": [
+						"As an Action, you can make an attack roll against a creature that you can see within 30 feet of you. If it hits, you throw your sword at them, piercing their gut and dealing {@damage 3d8} Piercing damage and {@damage 3d8} Fire damage, as well as 8 counts of {@condition Bleed|TheUndertomesGeneralRules} and {@condition Burn|TheUndertomesGeneralRules}. They must then make a Constitution saving throw as you attempt to cleave the sword out of them. On a failed save, they take an additional {@damage 5d8} Slashing damage and you sever one of their limbs off in a non-lethal way. If this would reduce them to 0 hit points, you bissect them instead, melting their insides. On a successful save, they only take half the damage and suffer no additional effects."
+					]
+				}
+			]
 		}
 	],
 	"condition": [
@@ -1104,9 +1387,26 @@
 				"A creature suffering from Severed Tendons has had their movement options sliced clean through, reducing their movement speed by 5-ft. per count of the Condition. Furthermore, this debilitation hinders them further the worse it gets, having the creature suffer a cumulative negative modifier to Dexterity skill checks and saving throws for each 2 count.",
 				"One count is removed per hour spent without gaining more count or upon recovering any amount of Hit Points. All counts are removed upon being the target of the Restoration or {@spell Greater Restoration} spells."
 			]
+		},
+		{
+			"name": "Vengeance Mark",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"During combat, the enemy that dealt the most damage to you or your allies this round gains a Vengeance Mark. This lasts until the end of the next round, or until you fall {@condition unconscious}. If no enemy has dealt damage this turn, the stack of Vengeance Mark is given to the enemy that last attempted to attack you or an allied creature. If two enemies dealt the same amount of highest damage, the stack of Vengeance Mark goes to the latest enemy that dealt this damage. Outside of combat, whenever someone rolls an ability check to hurt or damage your character or their reputation, they will also gain a point of Vengeance Mark until your next short rest. If combat is initiated right after an instance of this by rolling an initiative check, then the enemy with the highest initiative roll gains Vengeance Mark until the end of the first round of combat."
+			]
 		}
 	],
 	"optionalfeature": [
+		{
+			"name": "Fighting Style: Sacrifice",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": [
+				"FS:F"
+			],
+			"entries": [
+				"As a Reaction when you see a friendly creature within 30 feet of you miss an attack roll, you may immediately use your remaining movement speed to jump towards them and make an attack roll against the creature they tried to hit if it is within reach. If you're successful, you deal damage to both creatures, but an additional {@damage 1d6} bludgeoning damage to the creature you hit. This damage cannot be diminished or prevented in any way, and they suffer any statuses as normal."
+			]
+		},
 		{
 			"name": "The Disgrace",
 			"source": "TheUndertomesProjectMoon",
@@ -1125,6 +1425,248 @@
 						"You gain 4 {@condition Poise|TheUndertomesGeneralRules} count at the start of your turns. Whenever you deal damage, you deal an additional amount of damage equal to half your current {@condition Poise|TheUndertomesGeneralRules} count, to a maximum value equal to your proficiency bonus.",
 						"Whenever you would inflict {@condition Burn|TheUndertomesGeneralRules} or {@condition Tremor|TheUndertomesGeneralRules}, you inflict an additional count.",
 						"Additionally, the anxiety to re-instate your greatness has you become even quicker on your feet as it grows. Each time an attack hits you, your AC increases by a +1 bonus modifier. You lose this bonus whenever you are missed with an attack."
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "First Seal Removed: Lævateinn",
+			"source": "TheUndertomesProjectMoon",
+			"type": "M",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 6,
+			"weaponCategory": "martial",
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"property": [
+				"H",
+				"2H"
+			],
+			"bonusWeapon": "+1",
+			"entries": [
+				"A legendary sword acquired very deep underground after defeating a deadly guardian. Not everyone can wield it, and even less can unlock its full powers.",
+				"While attuned to it, you have a +1 bonus to attack and damage rolls made with this magic weapon, and you gain the following characteristics (if any of them require a save DC, it is equal to 8 + your proficiency bonus + your Strength modifier):",
+				{
+					"type": "entries",
+					"name": "Burning Hot",
+					"entries": [
+						"You gain Resistance to Fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Follow-Up Attack",
+					"entries": [
+						"Whenever you take the Attack action, you may use a Bonus Action to attack an additional time, but you don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative, and you don't inflict any Conditions."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wounding Inferno",
+					"entries": [
+						"The first time you hit a creature with this weapon, they suffer 1 count of {@condition Bleed|TheUndertomesGeneralRules} and {@condition Burn|TheUndertomesGeneralRules}, your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Slam Them Down",
+					"entries": [
+						"You can use an Action to slam your sword into the ground, turning a 10-foot area around you into Difficult Terrain. All creatures within that area must make a Constitution saving throw. On a failed save, they take {@damage 3d6} bludgeoning damage and fall {@condition Prone}. On a successful save, they only take half that damage and suffer no additional effects."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Looks Like I Gotta Unbox the Second Layer, too.",
+					"entries": [
+						"Upon reaching level 10 in the Vengeance Fighter class or being a worthy wielder of the sword, this Greatsword becomes able to turn into {@item Second Seal Removed: Lævateinn|TheUndertomesProjectMoon}. To do so, upon hitting a creature with an attack, you may choose to unseal the sword and release the casing on top of them. They must make a Dexterity saving throw. On a failed save, they take {@damage 2d8} bludgeoning damage and become {@condition Frightened} until the start of your next turn. On a successful save, they only take half the damage and suffer no additional effects."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lævateinn",
+			"source": "TheUndertomesProjectMoon",
+			"type": "M",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 6,
+			"weaponCategory": "martial",
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"property": [
+				"H",
+				"2H"
+			],
+			"bonusWeapon": "+3",
+			"entries": [
+				"A legendary sword acquired very deep underground after defeating a deadly guardian. Not everyone can wield it, and even less can unlock its full powers.",
+				"While attuned to it, you have a +3 bonus to attack and damage rolls made with this magic weapon, as well as an extra {@damage 2d6} Fire damage. You also gain the following characteristics (if any of them require a save DC, it is equal to 8 + your proficiency bonus + your Strength modifier):",
+				{
+					"type": "entries",
+					"name": "Scorching Hot",
+					"entries": [
+						"You gain Immunity to Fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Armor of the Fire Giant",
+					"entries": [
+						"As a Bonus Action, for 1 minute you gain a +1 bonus to your Armor Class. Additionally, whenever a creature hits you with an attack roll, they take {@damage 1d8} Fire damage. Once you use this ability, you can't use it again until you finish a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Follow-Up Attack",
+					"entries": [
+						"Whenever you take the Attack action, you may use a Bonus Action to attack an additional time, but you don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative, and you don't inflict any Conditions."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wounding Inferno",
+					"entries": [
+						"Whenever you hit a creature with this weapon, they suffer 1 count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Melt Away and Die",
+					"entries": [
+						"On a Critical Hit with this weapon, the target creature's skin blackens like charcoal, their veins glowing orange like lava. For the next minute, they suffer a {@dice 1d8} penalty on all ability checks and saving throws. If you score another Critical hit against the same creature, no matter when, they must succeed on a Constitution saving throw or be immediately killed, their body melting away into nothing."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Slam Them Down",
+					"entries": [
+						"You can use an Action to slam your sword into the ground, turning a 20-foot area around you into Difficult Terrain filled with molten lava. All creatures within that area must make a Constitution saving throw. On a failed save, they take {@damage 8d6} bludgeoning damage and fall {@condition Prone}. On a successful save, they only take half that damage and suffer no additional effects. Any creature other than you that enters the area for the first time on their turn or starts their turn within the area immediately takes {@damage 1d6} Fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Burn Through Any Opposition",
+					"entries": [
+						"As an action, you can touch a nonmagical flammable object with this sword and cause it to ignite. If the object isn't being worn or carried, it is reduced to ash at the end of your turn. Additionally, as an action, you can touch a nonmagical wall, floor, or similar structure and melt a 5-foot cube of it, provided the material can be melted by heat."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sealed Lævateinn",
+			"source": "TheUndertomesProjectMoon",
+			"type": "M",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 6,
+			"weaponCategory": "martial",
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"property": [
+				"H",
+				"2H"
+			],
+			"entries": [
+				"A legendary sword acquired very deep underground after defeating a deadly guardian. Not everyone can wield it, and even less can unlock its full powers.",
+				"While attuned to it, you gain the following characteristics (if any of them require a save DC, it is equal to 8 + your proficiency bonus + your Strength modifier):",
+				{
+					"type": "entries",
+					"name": "Burning Hot",
+					"entries": [
+						"You gain Resistance to Fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Follow-Up Attack",
+					"entries": [
+						"Whenever you take the Attack action, you may use a Bonus Action to attack an additional time, but you don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative, and you don't inflict any Conditions."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Slam Them Down",
+					"entries": [
+						"You can use an Action to slam your sword into the ground, turning a 10-foot area around you into Difficult Terrain. All creatures within that area must make a Constitution saving throw. On a failed save, they take {@damage 1d6} bludgeoning damage and fall {@condition Prone}. On a successful save, they only take half that damage and suffer no additional effects."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Time to Unpack!",
+					"entries": [
+						"Upon reaching level 7 in the Vengeance Fighter class or being a worthy wielder of the sword, this Greatsword becomes able to turn into {@item First Seal Removed: Lævateinn|TheUndertomesProjectMoon}. To do so, upon hitting a creature with an attack, you may choose to unseal the sword and release the casing on top of them. They must make a Dexterity saving throw. On a failed save, they take {@damage 1d8} bludgeoning damage and become {@condition Frightened} until the start of your next turn. On a successful save, they only take half the damage and suffer no additional effects."
+					]
+				}
+			]
+		},
+		{
+			"name": "Second Seal Removed: Lævateinn",
+			"source": "TheUndertomesProjectMoon",
+			"type": "M",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 6,
+			"weaponCategory": "martial",
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"property": [
+				"H",
+				"2H"
+			],
+			"bonusWeapon": "+2",
+			"entries": [
+				"A legendary sword acquired very deep underground after defeating a deadly guardian. Not everyone can wield it, and even less can unlock its full powers.",
+				"While attuned to it, you have a +2 bonus to attack and damage rolls made with this magic weapon, as well as {@damage 1d6} additional Fire damage. You also gain the following characteristics (if any of them require a save DC, it is equal to 8 + your proficiency bonus + your Strength modifier):",
+				{
+					"type": "entries",
+					"name": "Burning Hot",
+					"entries": [
+						"You gain Resistance to Fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Armor of the Fire Giant",
+					"entries": [
+						"As a Bonus Action, for 1 minute you gain a +1 bonus to your Armor Class. Additionally, whenever a creature hits you with an attack roll, they take {@damage 1d8} Fire damage. Once you use this ability, you can't use it again until you finish a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Follow-Up Attack",
+					"entries": [
+						"Whenever you take the Attack action, you may use a Bonus Action to attack an additional time, but you don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative, and you don't inflict any Conditions."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wounding Inferno",
+					"entries": [
+						"The first time you hit a creature with this weapon, they suffer 1 count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Slam Them Down",
+					"entries": [
+						"You can use an Action to slam your sword into the ground, turning a 20-foot area around you into Difficult Terrain. All creatures within that area must make a Constitution saving throw. On a failed save, they take {@damage 4d6} bludgeoning damage and fall {@condition Prone}. On a successful save, they only take half that damage and suffer no additional effects."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Burn Through Any Opposition",
+					"entries": [
+						"As an action, you can touch a nonmagical flammable object with this sword and cause it to ignite. If the object isn't being worn or carried, it is reduced to ash at the end of your turn. Additionally, as an action, you can touch a nonmagical wall, floor, or similar structure and melt a 5-foot cube of it, provided the material can be melted by heat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unsealed Phenomenon: Lævateinn",
+					"entries": [
+						"Upon reaching level 15 in the Vengeance Fighter class or being a worthy wielder of the sword, this Greatsword becomes able to turn into {@item Lævateinn|TheUndertomesProjectMoon}. To do so, upon hitting a creature with an attack, you may choose to unseal the sword and release the casing on top of them. They must make a Dexterity saving throw. On a failed save, they take {@damage 4d8} bludgeoning damage and become {@condition Frightened} until the start of your next turn. On a successful save, they only take half the damage and suffer no additional effects."
 					]
 				}
 			]
