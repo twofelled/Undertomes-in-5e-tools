@@ -203,10 +203,10 @@
 						{
 							"type": "list",
 							"items": [
-								"{@item First Seal Removed: Lævateinn|TheUndertomesProjectMoon}",
-								"{@item Lævateinn|TheUndertomesProjectMoon}",
 								"{@item Sealed Lævateinn|TheUndertomesProjectMoon}",
-								"{@item Second Seal Removed: Lævateinn|TheUndertomesProjectMoon}"
+								"{@item First Seal Removed: Lævateinn|TheUndertomesProjectMoon}",
+								"{@item Second Seal Removed: Lævateinn|TheUndertomesProjectMoon}",
+								"{@item Lævateinn|TheUndertomesProjectMoon}",
 							]
 						}
 					]
