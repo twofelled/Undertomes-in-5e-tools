@@ -94,7 +94,7 @@ New brews should be added to the most appropriate existing Tome. Create a new To
 5. Check every internal reference, dependency, feature UID, and renderer tags. Failure to do so might cause the rendered to break.
 6. Load both files in 5e.tools and test the pages.
 7. Commit the updated JSON without replacing or altering unrelated public brews.
-8. Create a Pull Request with said commit and it will be merged if it passes steps 5 and 6. 
+8. Create a Pull Request with said commit and it will be merged if it passes steps 5 and 6.
 
 ### Useful references
 
