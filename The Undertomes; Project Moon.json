@@ -1,10 +1,12 @@
 {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
 		"sources": [
 			{
 				"json": "TheUndertomesProjectMoon",
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
+				"url": "https://www.patreon.com/collection/786363",
 				"version": "0.5.0",
 				"authors": [
 					"The Undertomes"
@@ -13,7 +15,6 @@
 					"Twofell",
 					"Akari"
 				],
-				"url": "https://www.patreon.com/collection/786363",
 				"color": "3d2d1d",
 				"colorNight": "ffe6b7"
 			}
@@ -206,7 +207,7 @@
 								"{@item Sealed Lævateinn|TheUndertomesProjectMoon}",
 								"{@item First Seal Removed: Lævateinn|TheUndertomesProjectMoon}",
 								"{@item Second Seal Removed: Lævateinn|TheUndertomesProjectMoon}",
-								"{@item Lævateinn|TheUndertomesProjectMoon}",
+								"{@item Lævateinn|TheUndertomesProjectMoon}"
 							]
 						}
 					]
