@@ -1,0 +1,1129 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheUndertomesGeneralRules",
+				"abbreviation": "TUGR",
+				"full": "The Undertomes General Rules Compendium",
+				"version": "1.0.0",
+				"authors": [
+					"The Undertomes"
+				],
+				"convertedBy": [
+					"Twofell",
+					"Akari"
+				],
+				"dateReleased": "2026-07-27",
+				"url": "https://theundertomes.crd.co/#",
+				"color": "910060",
+				"colorNight": "cf0057"
+			}
+		],
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1785187088,
+		"dateLastModified": 1785188641
+	},
+	"book": [
+		{
+			"name": "The Undertomes General Rules Compendium",
+			"id": "TheUndertomesGeneralRules",
+			"source": "TheUndertomesGeneralRules",
+			"group": "homebrew",
+			"author": "The Undertomes",
+			"published": "2026-07-27",
+			"contents": [
+				{
+					"name": "Limbus Company Conditions",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"Burn",
+						"Charge",
+						"Rupture",
+						"Tremor",
+						"Tremor Burst",
+						"Bleed",
+						"Poise",
+						"Sinking",
+						"Minor Conditions",
+						"Haste",
+						"Immobilized",
+						"Heavy Blood",
+						"Tremor Subtypes",
+						"Tremor - Hemorrhage",
+						"Tremor - Scorch",
+						"General Subtypes",
+						"Immolation",
+						"Nails"
+					]
+				},
+				{
+					"name": "Weapon Properties",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"Assist",
+						"Burst",
+						"Chain-Through",
+						"Concealed",
+						"Draw",
+						"Entrench",
+						"Hemorrhaging",
+						"Mesmerizing",
+						"Lobbing",
+						"Reload",
+						"Set",
+						"Splash",
+						"SteelHack"
+					]
+				},
+				{
+					"name": "Wondrous Pets & Friends",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": [
+						"Hit Points",
+						"Reaching 0 Hit Points"
+					]
+				},
+				{
+					"name": "Deployable Tools",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"Repairing Tools",
+						"Deployable Tool Properties",
+						"Active",
+						"Adherent",
+						"Arcane",
+						"Bulky",
+						"Contact",
+						"Concealed",
+						"Construct",
+						"Cumbersome",
+						"Durability",
+						"Far-Mount",
+						"Instant",
+						"Mount",
+						"Multiple",
+						"Primal",
+						"Reliquary",
+						"Sensor",
+						"Sturdy",
+						"Timed"
+					]
+				},
+				{
+					"name": "Core Bursts",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					}
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "TheUndertomesGeneralRules",
+			"source": "TheUndertomesGeneralRules",
+			"data": [
+				{
+					"type": "section",
+					"name": "Limbus Company Conditions",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Burn",
+							"entries": [
+								"A Burning creature is set ablaze constantly, taking an amount of {@damage d4} fire damage equal to the number of Burn count on itself at the end of their turn, also halving its total count.",
+								"When at one Burn count, it extinguishes at the end of the creature's turn."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Charge",
+							"entries": [
+								"A creature that is Charging is amassing an amount of energy - electrical, magical or otherwise, having jolts and arcs surround her body as the quantity intensifies.",
+								"Charge and its unique counterparts do not affect a character by itself, instead being a renewable resource to be spent for activating certain abilities and effects."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Rupture",
+							"entries": [
+								"A creature suffering from the Rupture Condition takes an amount of extra damage die equal to half their current Rupture count whenever they suffer an attack hit. The additional damage die depend on the attacking creature's Proficiency Bonus, being {@damage d4} at +2 Bonus, {@damage d6} at +3 Bonus, {@damage d8} at +4 Bonus, {@damage d10} at +5 Bonus, a {@damage d12} for +6 Bonus and finally {@damage 2d6} at +7 Bonus and greater.",
+								"Once an attack successfully hits and the condition is triggered, they lose all of their remaining Rupture count.",
+								"Ex: If a creature suffering from 5 Rupture would suffer a hit from a creature with a +4 Proficiency Bonus, they would take an additional {@damage 3d8} damage."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tremor",
+							"entries": [
+								"A creature suffering from Tremor is one suffering from immeasurable shaking and vibrations inside their body.",
+								"When a Tremoring creature suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage d4} thunder damage equal to their current Tremor count, then losing all remaining count.",
+								"The Condition is also lost after combat is over or at the end of the next short or long rest, if it was gained outside of combat."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tremor Burst",
+							"entries": [
+								"Tremor Burst is not a Condition, but instead a trigger for the {@condition Tremor|TheUndertomesGeneralRules} Condition which is caused by some feats, spells or other abilities."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Bleed",
+							"entries": [
+								"A Bleeding creature is well, bleeding! They take {@damage 1d4} damage when they perform any action ( Each attack is considered a different action, this also includes Bonus Actions, Legendary Actions, Lair Actions and Reactions, but not Free Actions ), and then Bleed is reduced by a count. They may have all Bleed count removed if any creature passes a successful {@skill Medicine} check on them as an Action. Otherwise, half their current Bleed count is removed upon receiving healing through an item or through a 4th level or lower spell. It is also fully removed upon the use of an item such as a {@item potion of greater healing|DMG|potion of Greater Healing} or a 5th level or greater spell.",
+								"On the case of casting a spell, they suffer an amount of {@damage d4} damage and lose an amount count equal to the spell's level plus one. ( Cantrips only deal {@damage 1d4} damage, 1st Level Spells deal {@damage 2d4} and so on. ) If a creature is suffering from lesser count than the spell slot level spent, they still suffer the maximum damage and remain at a single count.",
+								"The DC for this is 10 + their current Bleed count. If they have only one Bleed count, it may only be reduced through a {@skill Medicine} check."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Poise",
+							"entries": [
+								"A creature benefitting from being Poised has their stance slowly being perfected to enter \"the zone\" while fighting, being able to perform a Posture Critical hit whenever they roll at least a 19 on attack, before adding any modifiers. This threshold is reduced by each additional count of Poise they have after the first, up to 4 ( Triggering a Posture Critical Hit on a roll of 16 or higher) and removing all Poise count from them when they land a Posture Critical hit.",
+								"When this effect is triggered, this creature deals an additional {@damage 2d6} damage on a hit of type equal to your attacks damage type.",
+								"If they have 6 or more stacks of Poise, they deal an extra {@damage d6} of damage for each two count above 6, to a maximum of {@damage 6d6} total. A Posture Critical Hit is not a regular Critical Hit."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sinking",
+							"entries": [
+								"A creature that is Sinking has trouble focusing on anything as a deep unease washes over them, making way for pure leg-shaking terror or difficulty performing what they must. While suffering Sinking the afflicted creature has a negative modifier to Attack Rolls for each 3 Sinking afflicted to them, to a maximum of -5. Additionally, they have their Wisdom Saving Throws reduced by a negative modifier for each 10 Sinking, to a maximum of -3.",
+								"Sinking count is halved at the end of a creatures turn, rounded up. Upon having one count remaining it is removed entirely instead.",
+								"Ex: A creature with 12 stacks of Sinking suffers a -4 penalty to Hit. Additionally, that creature has their Wisdom Saving Throws reduced by a negative modifier for each 10 Sinking, to a maximum of -3."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Minor Conditions",
+							"entries": []
+						},
+						{
+							"type": "entries",
+							"name": "Haste",
+							"entries": [
+								"A creature that is going through Haste has a spring to their step, pushing themselves to move faster or are being carried through magical effects to become nimble as the breeze.",
+								"This creature gains 5-ft. of additional walking speed and, if already available, flying speed for each Haste count they are benefitting from, to a maximum value of 5 times their proficiency bonus plus 5. All count of the Condition is lost at the start of the creature's next turn."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Immobilized",
+							"entries": [
+								"A creature suffering from Immobilized is one who's suffering to move their stiffening limbs and joints. While enduring Immobilized, they take a penalty equal to the count of Immobilized they are currently afflicted with to all of their attack rolls, ability checks and saving throws. All Immobilized stacks are removed at the end of the creature's turn or after a minute has passed outside of combat."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Heavy Blood",
+							"entries": [
+								"Heavily Bleeding creatures are bleeding intensely, instead causing the afflicted creature to suffer {@damage 2d6} damage on the same triggers as the {@condition Bleed|TheUndertomesGeneralRules} Condition and 2 count are removed every time it is triggered. The {@skill Medicine} Check required to remove this Condition is increased by 5."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tremor Subtypes",
+							"entries": []
+						},
+						{
+							"type": "entries",
+							"name": "Tremor - Hemorrhage",
+							"entries": [
+								"A creature suffering from Tremor - Hemorrhage is one that is currently bleeding out from countless cuts that move and worsen inside their being.",
+								"A creature with Tremor - Hemorrhage counts suffers {@damage 1d4} damage whenever they perform any action ( Each Attack counts as a different Action, also including Bonus Actions and Reactions, but not Free Actions ) and then the Condition's count is reduced by one count. Creatures that have no blood are immune to this effect.",
+								"When a creature with Tremor - Hemorrhage suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage d6} damage equal to the total count of the Condition they are currently suffering from, then losing all remaining counts of the Condition. The Condition is also lost after the creature is knocked {@condition Unconscious}, If they are healed to their Maximum Hit Points they instantly lose all counts of the Condition, also losing 2 counts whenever they are healed by any amount of Hit Points."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tremor - Scorch",
+							"entries": [
+								"A creature suffering from Tremor - Scorch is one currently suffering from a blazing inferno that is eating them from inside out, with each flicker of flame reverberating across their entire being.",
+								"A creature with Tremor - Scorch counts suffers an amount of {@damage d4} fire damage equal to their current Tremor - Scorch count divided by 5, to a maximum of {@damage 8d4} per turn.",
+								"When a creature with Tremor - Scorch suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage d6} fire damage equal to the total count of Tremor - Scorch they currently have, then losing all counts of Tremor - Scorch. The Condition is also lost after the creature is knocked {@condition Unconscious}, if they are fully submerged in non-flammable liquid or combat is over or on the next short rest, if it was gained outside of combat."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "General Subtypes",
+							"entries": []
+						},
+						{
+							"type": "entries",
+							"name": "Immolation",
+							"entries": [
+								"A creature beset by Immolation is suffering from the holiest of flames, taking an amount of {@damage d4} radiant damage equal to their current Immolation count at the end of their turns, also halving its total count. When at one Immolation count, it extinguishes at the end of the creature's turn."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Nails",
+							"entries": [
+								"A creature suffering from Nails has a number of them embedded in their flesh, drawing out blood and the faith of certain individuals in equal measure. At the end of their turns, a Nailed creature halves their Nail count and gains the same value halved as {@condition Bleed|TheUndertomesGeneralRules} count instead.",
+								"Fanatical creatures gain a +1 bonus modifier to attack rolls against Nailed creatures for each 15 Nails* they are currently suffering from, to a maximum of +3."
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Weapon Properties",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Assist",
+							"entries": [
+								"A weapon with the Assist property is one that was designed to aid in defending the wielder, yet it's usage makes it cumbersome to wield anything too big at the same time. While wielding an Assist weapon you gain a +1 bonus modifier to your Armor Class, but you cannot benefit from wielding Heavy weapons or a {@item Shield|PHB}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Burst",
+							"entries": [
+								"Weapons with the Burst property are ones that can be fired or used in a quick burst of attacks that compromise accuracy for the chance of more damage. You may benefit from Burst weapons whenever you take the {@action Attack} action, choosing to replace a singular attack you would be able to make with a number of attacks displayed in parenthesis next to this property. You may choose only one target for each burst of attacks, being able to switch between targets with each differing attack replaced to do so.",
+								"You may do so for each attack you would usually be able to make, but suffer a negative modifier starting at a value equal to your Dexterity modifier minus the first number in parenthesis (Minimum of 1), further subtracting one for each individual attack made after the first. This negative modifier is reduced by 2 if you are wielding your weapon with two hands and fully reset at the end of your turns.",
+								"You do not add your ability modifier to damage dealt by this Property's feature, and the damage dealt by a burst shot may differ from the original damage that would be dealt by the weapon. If so, this value is displayed after the number of attacks made in a burst.",
+								"Ex: As a level 5 Fighter you have two attacks as per the {@action Attack} Action. You may perform one normal attack and then choose to use the feature from a Burst (3) weapon, performing three attacks against the same target. You have a Dexterity modifier of 3, thus having no negative modifier for the first roll in your burst, then a -1 for the second and a -2 for the third."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Chain-Through",
+							"entries": [
+								"A weapon with the Chain-through property has an easy way of cutting into targets after initially being lodged onto them. These are saws, barbed axes and even barbed spears which can be wedged, pushed and pulled for a nasty amount of damage even if the target tries to dodge away. While dealing damage with a Chain-Through weapon, provided you haven't missed your previous attack, you deal at least half the value of damage die you'd roll if you had rolled lower than that.",
+								"Ex: If you, a Paladin, deal {@damage 2d8} slashing damage + {@damage 2d8} radiant damage with a Chainsword, if you roll a total of 2 slashing and 2 radiant damage, you instead deal 8 slashing and 8 radiant damage on that hit."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Concealed",
+							"entries": [
+								"A weapon with the Concealed property is perfect for hiding in-between clothes or other belongings, seeming like a harmless trinket until it is drawn. While not being held, you may use your Bonus Action to suddenly draw it with a free hand and perform a weapon attack roll against a creature within reach. If you had no free hands, you instantly swap one of your held items with the Concealed weapon. You also gain a +5 bonus modifier on {@skill Stealth} checks to hide a Concealed weapon."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Draw",
+							"entries": [
+								"A weapon with the Draw property is one meant to deliver its full force when unsheathed instead of over various strikes. While sheathed, your next unsheathed attack made with a Draw weapon gains a bonus modifier to hit equal to half it's wielder's proficiency bonus, rounded down, and deals an additional damage die on a hit. After being unsheathed, it's wielder may spend one of their attacks as part of the {@action Attack} action to sheathe it."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Entrench",
+							"entries": [
+								"A weapon with the Entrench property carries an enormous punch but also a considerable amount of blowback whenever it is fired or swung. Whenever you perform an attack with it, your remaining movement speed is reduced by the value in parenthesis beside this property. If two numbers are shown, these are in order the amount of movement speed reduced by one handed attacks and two handed attacks."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hemorrhaging",
+							"entries": [
+								"A serrated weapon causes a stack of {@condition Bleed|TheUndertomesGeneralRules} whenever you hit with it, provided the roll equals the value presented alongside the property before any modifiers."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mesmerizing",
+							"entries": [
+								"( Also known as Funny ) Mesmerizing weapons aren't made just to be used with the usual strength of technique that a swordmaster or a great archer would have, no. They instead rely on another technique: that of the spectacle! You may use your Charisma modifier instead of Strength while using these weapons."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Lobbing",
+							"entries": [
+								"A lobbing weapon isn't just thrown straight ahead, instead aiming up to strike down from afar. Lobbing weapons ignore cover if that cover isn't at least as tall as their short range, as per the Range or Thrown properties."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Reload",
+							"entries": [
+								"Weapons with the Reload property have a limited amount of rounds that can be shot before needing to be reloaded. A Reload weapon needs to be reloaded after a certain amount of attacks, with this value being found in parenthesis following the property. To do so, you must spend your Action or Bonus Action to do so - Nevertheless, you cannot take the {@action Attack} action using the reloaded weapon on the same turn you reload it."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Set",
+							"entries": [
+								"A weapon with the Set property is instead multiple weapons that can be used together or a stock that is easily replenished in the heat of battle, whether they are thrown and lost or easily breakable upon impact. The maximum amount of uses these weapons have is shown in parenthesis after the weapon property, with you having the ability to easily produce or procure more at the end of a short or long rest. A lack of a number instead indicates that the weapons may be used infinitely."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Splash",
+							"entries": [
+								"A weapon with the splash property has a tendency to cover an area of effect in its strikes or have a small splash zone where hits go off to. While you wield a Splash weapon to hit a target, all other hostile creatures within 5-ft. of the target take damage equal to the value in parenthesis beside this property. By default the damage type is the same as the weapon's first presented damage type, or denoted if otherwise."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "SteelHack",
+							"entries": [
+								"A weapon with the SteelHack property is designed to have sliding or otherwise transmutative mechanisms to allow it to exist in multiple forms at once. The base weapon is described in the initial weapon text, with a secondary one being presented below it for each alternative form, which may change its properties, damage and so on. Ammunition stashed in a SteelHack weapon remains inside it even if its current form wouldn't use it, requiring a form-change to rip it out. Additionally, changing a weapon's form this way usually takes a Bonus Action, with any deviations of that rule being specified in parenthesis beside the property as A for Action and FA for a Free Action that may be taken at any time."
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Wondrous Pets & Friends",
+					"entries": [
+						"A “Wondrous Pet“ is the mechanical term this document uses to refer to, well, pets! A Pet in this way is a magical being that while attuned, will always remain within a 60-feet radius of its perceived owner. They do not require food nor sleep, but will gladly partake in either joy.",
+						"A Pet does not partake in combat initiative, instead it is treated like any other magic item when called upon for an active or passive ability it grants.",
+						"Additionally, it has no stat block of its own, instead only providing static benefits to its master. Much like the {@spell Find Familiar} spell, a pet may be commanded with a free action to move and to enter or exit an extradimensional space where it is kept safe. It automatically enters that space if it would be immediately be put in harms way, instead remaining safe.",
+						"If the {@spell Dispel Magic} spell is cast on the Pet, it vanishes for one minute, and then rematerializes after this time. During its vanishing, you cannot benefit from its abilities.",
+						"In the case that the “Pet” is instead a Friend or otherwise similarly sentient and possibly humanoid creature with their own will and volitions, they still try to stick close to you and keep out of harms way, but cannot ( if they aren't inherently magical ) enter the aforementioned extradimensional space.",
+						"Otherwise, in the case that the setting calls for the destructability or otherwise harm of a Wondrous Pet or Friend, they have a pool of Hit Points that matches their attuned master's level and their rarity, as per the following table:",
+						{
+							"type": "table",
+							"caption": "Hit Points",
+							"colLabels": [
+								"Hit Die Pool",
+								"Rarity"
+							],
+							"colStyles": [
+								"col-8",
+								"col-4"
+							],
+							"rows": [
+								[
+									"{@dice 1d4} per Player Level + Level",
+									"Common"
+								],
+								[
+									"{@dice 1d6} per Player Level + Level",
+									"Uncommon"
+								],
+								[
+									"{@dice 1d8} per Player Level + Level",
+									"Rare"
+								],
+								[
+									"{@dice 1d10} per Player Level + Level",
+									"Very Rare"
+								],
+								[
+									"{@dice 1d12} per Player Level + Level",
+									"Legendary"
+								]
+							]
+						},
+						"You may roll on this table when first attuning to them.",
+						{
+							"type": "entries",
+							"name": "Reaching 0 Hit Points",
+							"entries": [
+								"Upon reaching 0 Hit Points, various things may happen depending on the Setting's intended tone and should be discussed between the Players and Dungeon Master when including Wondrous Pets & Friends into their setting. These are as follows:",
+								{
+									"type": "list",
+									"items": [
+										"The Pet is knocked {@condition Unconscious} until the end of battle and loses its effects until the next short rest.",
+										"The Pet initiates Death Saving Throws like a Player Character would, dying upon three failures. While {@condition Unconscious}, it does not provide any benefits.",
+										"If a Pet or Friend dies, you may choose to either have them be able to be brought back through a {@spell Revivify} or similar spell, through a ritual similar in cost to the {@spell Find Familiar} spell that any Spellcaster may perform or have them permanently die."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Deployable Tools",
+					"entries": [
+						"Deployable tools are traps or other mechanisms that a character may employ in dire times. They are placed down within an unnocupied 5-ft reach by spending your Bonus Action during your turn and have a trigger according to its properties, as shown below their name, much like weapon properties. If a Tool requires a Saving Throw to be passed, it will be displayed before it's properties, with the DC's associated Ability Score being placed in parentheses, and below that it's effect(s) when trigger. Tools usually occupy a 5-ft by 5-ft square. You may also spend your Bonus Action to retrieve a Tool.",
+						"Unless specified, all Deployable Tools only trigger against creatures hostile to who deployed it.",
+						"All Tools have a Durability Property, which denominates how many times they may be activated until they break down and require repairs. A broken down Tool may be repaired by a blacksmith for half of it's buying price or during a Long Rest spending one use of a Repair Kit during a Long Rest, where at least one Character must spend their time repairing or re-stocking the Tool. Otherwise, a Player Character with a number of levels in the Artificer Class may fix up to their Proficiency Modifier's worth of Tools during a Long Rest. To do so, they must meet a minimum level requirement according to the Tool's rarity, as follows:",
+						{
+							"type": "table",
+							"caption": "Repairing Tools",
+							"colLabels": [
+								"Artificer Level",
+								"Maximum Rarity"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6"
+							],
+							"rows": [
+								[
+									"1",
+									"Common"
+								],
+								[
+									"3",
+									"Uncommon"
+								],
+								[
+									"8",
+									"Rare"
+								],
+								[
+									"12",
+									"Very Rare"
+								],
+								[
+									"16",
+									"Legendary"
+								]
+							]
+						},
+						"Furthermore, Artificers may choose to use their Spell Save DC instead of the Deployable Tool's when it is triggered, instead of the Tool's original Saving Throw required. This also applies to the Artificer's Spell Attack Modifier in the case the Deployable Tool performs attacks.",
+						{
+							"type": "entries",
+							"name": "Deployable Tool Properties",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Active",
+									"entries": [
+										"An Active {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} requires active usage from a creature who must spend their Action while within 5-ft of the Tool to trigger it."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Adherent",
+									"entries": [
+										"An Adherent {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is one that can easily cling to any even surface, being able to be placed on unoccupied ceilings or walls."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Arcane",
+									"entries": [
+										"An Arcane {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is one commonly used by scholars and people attuned to the arcane, such as Wizards and Sorcerers. Characters with levels in these classes may repair up to their Proficiency Bonus' worth of Relicary Tools during a Long Rest as if they were an Artificer, also being able to choose using their own Spell Save DC and Spell Attack Modifier for these Tools."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Bulky",
+									"entries": [
+										"A Bulky {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} requires more space than usual for its operation. This space is listed in parentheses after this property is listed."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Contact",
+									"entries": [
+										"A Contact {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} triggers whenever a creature moves into the area it occupies."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Concealed",
+									"entries": [
+										"A Concealed Tool is made hard to perceive. All Creatures have Disadvantage on {@skill Perception} Checks to find it, with the tool having a Passive {@skill Stealth} Score displayed in parenthesis following this property."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Construct",
+									"entries": [
+										"A Construct {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} has the same Resistances as most of its kind, being a mechanical mess of machinery in its operation. It has Resistance to acid damage, Immunity to poison and psychic damage and the {@condition Charmed}, {@condition Frightened}, {@condition Poisoned}, {@condition Prone} and {@condition Incapacitated} Conditions."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Cumbersome",
+									"entries": [
+										"A Cumbersome {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is particularly harder to deploy. You must instead spend an Action to deploy this {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool}."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Durability",
+									"entries": [
+										"A {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool}'s Durability measures how many activations a Tool can handle before needing repairs or re-stocking. This value displayed in parenthesis after this property."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Far-Mount",
+									"entries": [
+										"A Far-Mount {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} can be easily tossed and assemble itself. You may deploy a Far-Mountable Tool on any unoccupied space within a radius of yourself as shown by the number of feet within parentheses following this property's listing."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Instant",
+									"entries": [
+										"An Instant {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is one that does not keep functioning in the field as long as it still has Durability, instead having it's Durability consumed whenever it is placed down, usually because this {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} comes in sets or may be used repeatedly. After a placed Instant Tool is triggered, it is destroyed, with only it's pieces remaining for posterior repairs or resupply."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Mount",
+									"entries": [
+										"A Mount {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} may be mounted by a creature standing in the same space as it by them spending their Action or Bonus Action to do so. While mounted their movement speed is 0 and the Bonus Modifier gained from their Dexterity Modifier on Dexterity saving throws can only be a maximum of 2. A creature may spend a Free Action to dismount. Mount {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool}s usually require a mounted creature's Action to be used."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Multiple",
+									"entries": [
+										"A Multiple {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is actually a set of Tools that may be placed down multiple times while it still has Durability, such as {@item Caltrops|PHB} being thrown from a bag."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Primal",
+									"entries": [
+										"A Primal {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is one commonly used by those who are surrounded with nature, such as Druids and Rangers. Characters with levels in these classes may repair up to their Proficiency Bonus' worth of Reliquary Tools during a Long Rest as if they were an Artificer, also being able to choose using their own Spell Save DC and Spell Attack Modifier for these Tools."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Reliquary",
+									"entries": [
+										"A Relicary {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is one commonly used by churches, such as Clerics and Paladins. Characters with levels in these classes may repair up to their Proficiency Bonus' worth of Reliquary Tools during a Long Rest as if they were an Artificer, also being able to choose using their own Spell Save DC and Spell Attack Modifier for these Tools."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Sensor",
+									"entries": [
+										"A Sensor {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} triggers whenever a creature of your choice moves in or outside of the range that follows this property in parenthesis."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Sturdy",
+									"entries": [
+										"A Sturdy {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is unlike others, having no Durability and instead possessing it's own AC and Maximum Hit Points, displayed respectively in parenthesis following this property. They are usually Immune to psychic and poison damage, Vulnerable to Acid damage and are Immune to the {@condition Charmed}, {@condition Frightened}, {@condition Grappled}, {@condition Poisoned} and {@condition Prone} Conditions, unless stated otherwise."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Timed",
+									"entries": [
+										"A Timed Deployable Tool triggers on a timer, usually at Initiative Count 1 or at whatever count that is lower than yours when it has been set. If you have none, you may choose from 15 below. The Trap only triggers after any other creature with the same Initiative Count has acted."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Core Bursts",
+					"entries": [
+						"\"…In order to use Shin, one must clear their mind of all emotions and then tap into their most intense memories…\"",
+						"Upon reaching a certain level of awareness and strength, certain people may come to develop a manifestation of their inner self, coming not only to understand what they are but to push that understanding outwards like an expanding force unique to them alone. This is a force composed of a mastery and understanding of your emotions and how you wish to impose that will on the world.",
+						"Upon reaching 10th level, you may choose to gain a Core Burst as per what best fits your person, activating it with a Bonus Action during your turn. This effect may come to manifest as a small effect surrounding you like an aura, such as crackling lightning forming whenever you move or smoke raising from your feet. This lasts for up to one minute or until you are knocked {@condition Unconscious}.",
+						"This process is exhausting to the mind, being able to be used once per long rest. You may instead use your Core Burst twice per long rest upon reaching 20th level. You may choose to push yourself particularly hard and activate your Core Burst after all uses have been expended, but you gain a point of {@condition Exhaustion} when it ends."
+					]
+				}
+			]
+		}
+	],
+	"condition": [
+		{
+			"name": "Burn",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A Burning creature is set ablaze constantly, taking an amount of {@damage d4} fire damage equal to the number of Burn count on itself at the end of their turn, also halving its total count.",
+				"When at one Burn count, it extinguishes at the end of the creature's turn."
+			]
+		},
+		{
+			"name": "Charge",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature that is Charging is amassing an amount of energy - electrical, magical or otherwise, having jolts and arcs surround her body as the quantity intensifies.",
+				"Charge and its unique counterparts do not affect a character by itself, instead being a renewable resource to be spent for activating certain abilities and effects."
+			]
+		},
+		{
+			"name": "Rupture",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature suffering from the Rupture Condition takes an amount of extra damage die equal to half their current Rupture count whenever they suffer an attack hit. The additional damage die depend on the attacking creature's Proficiency Bonus, being {@damage d4} at +2 Bonus, {@damage d6} at +3 Bonus, {@damage d8} at +4 Bonus, {@damage d10} at +5 Bonus, a {@damage d12} for +6 Bonus and finally {@damage 2d6} at +7 Bonus and greater.",
+				"Once an attack successfully hits and the condition is triggered, they lose all of their remaining Rupture count.",
+				"Ex: If a creature suffering from 5 Rupture would suffer a hit from a creature with a +4 Proficiency Bonus, they would take an additional {@damage 3d8} damage."
+			]
+		},
+		{
+			"name": "Tremor",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature suffering from Tremor is one suffering from immeasurable shaking and vibrations inside their body.",
+				"When a Tremoring creature suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage d4} thunder damage equal to their current Tremor count, then losing all remaining count.",
+				"The Condition is also lost after combat is over or at the end of the next short or long rest, if it was gained outside of combat."
+			]
+		},
+		{
+			"name": "Bleed",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A Bleeding creature is well, bleeding! They take {@damage 1d4} damage when they perform any action ( Each attack is considered a different action, this also includes Bonus Actions, Legendary Actions, Lair Actions and Reactions, but not Free Actions ), and then Bleed is reduced by a count. They may have all Bleed count removed if any creature passes a successful {@skill Medicine} check on them as an Action. Otherwise, half their current Bleed count is removed upon receiving healing through an item or through a 4th level or lower spell. It is also fully removed upon the use of an item such as a {@item potion of greater healing|DMG|potion of Greater Healing} or a 5th level or greater spell.",
+				"On the case of casting a spell, they suffer an amount of {@damage d4} damage and lose an amount count equal to the spell's level plus one. ( Cantrips only deal {@damage 1d4} damage, 1st Level Spells deal {@damage 2d4} and so on. ) If a creature is suffering from lesser count than the spell slot level spent, they still suffer the maximum damage and remain at a single count.",
+				"The DC for this is 10 + their current Bleed count. If they have only one Bleed count, it may only be reduced through a {@skill Medicine} check."
+			]
+		},
+		{
+			"name": "Poise",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature benefitting from being Poised has their stance slowly being perfected to enter \"the zone\" while fighting, being able to perform a Posture Critical hit whenever they roll at least a 19 on attack, before adding any modifiers. This threshold is reduced by each additional count of Poise they have after the first, up to 4 ( Triggering a Posture Critical Hit on a roll of 16 or higher) and removing all Poise count from them when they land a Posture Critical hit.",
+				"When this effect is triggered, this creature deals an additional {@damage 2d6} damage on a hit of type equal to your attacks damage type.",
+				"If they have 6 or more stacks of Poise, they deal an extra {@damage d6} of damage for each two count above 6, to a maximum of {@damage 6d6} total. A Posture Critical Hit is not a regular Critical Hit."
+			]
+		},
+		{
+			"name": "Sinking",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature that is Sinking has trouble focusing on anything as a deep unease washes over them, making way for pure leg-shaking terror or difficulty performing what they must. While suffering Sinking the afflicted creature has a negative modifier to Attack Rolls for each 3 Sinking afflicted to them, to a maximum of -5. Additionally, they have their Wisdom Saving Throws reduced by a negative modifier for each 10 Sinking, to a maximum of -3.",
+				"Sinking count is halved at the end of a creatures turn, rounded up. Upon having one count remaining it is removed entirely instead.",
+				"Ex: A creature with 12 stacks of Sinking suffers a -4 penalty to Hit. Additionally, that creature has their Wisdom Saving Throws reduced by a negative modifier for each 10 Sinking, to a maximum of -3."
+			]
+		},
+		{
+			"name": "Haste",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature that is going through Haste has a spring to their step, pushing themselves to move faster or are being carried through magical effects to become nimble as the breeze.",
+				"This creature gains 5-ft. of additional walking speed and, if already available, flying speed for each Haste count they are benefitting from, to a maximum value of 5 times their proficiency bonus plus 5. All count of the Condition is lost at the start of the creature's next turn."
+			]
+		},
+		{
+			"name": "Immobilized",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature suffering from Immobilized is one who's suffering to move their stiffening limbs and joints. While enduring Immobilized, they take a penalty equal to the count of Immobilized they are currently afflicted with to all of their attack rolls, ability checks and saving throws. All Immobilized stacks are removed at the end of the creature's turn or after a minute has passed outside of combat."
+			]
+		},
+		{
+			"name": "Heavy Blood",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"Heavily Bleeding creatures are bleeding intensely, instead causing the afflicted creature to suffer {@damage 2d6} damage on the same triggers as the {@condition Bleed|TheUndertomesGeneralRules} Condition and 2 count are removed every time it is triggered. The {@skill Medicine} Check required to remove this Condition is increased by 5."
+			]
+		},
+		{
+			"name": "Tremor - Hemorrhage",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature suffering from Tremor - Hemorrhage is one that is currently bleeding out from countless cuts that move and worsen inside their being.",
+				"A creature with Tremor - Hemorrhage counts suffers {@damage 1d4} damage whenever they perform any action ( Each Attack counts as a different Action, also including Bonus Actions and Reactions, but not Free Actions ) and then the Condition's count is reduced by one count. Creatures that have no blood are immune to this effect.",
+				"When a creature with Tremor - Hemorrhage suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage d6} damage equal to the total count of the Condition they are currently suffering from, then losing all remaining counts of the Condition. The Condition is also lost after the creature is knocked {@condition Unconscious}, If they are healed to their Maximum Hit Points they instantly lose all counts of the Condition, also losing 2 counts whenever they are healed by any amount of Hit Points."
+			]
+		},
+		{
+			"name": "Tremor - Scorch",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature suffering from Tremor - Scorch is one currently suffering from a blazing inferno that is eating them from inside out, with each flicker of flame reverberating across their entire being.",
+				"A creature with Tremor - Scorch counts suffers an amount of {@damage d4} fire damage equal to their current Tremor - Scorch count divided by 5, to a maximum of {@damage 8d4} per turn.",
+				"When a creature with Tremor - Scorch suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage d6} fire damage equal to the total count of Tremor - Scorch they currently have, then losing all counts of Tremor - Scorch. The Condition is also lost after the creature is knocked {@condition Unconscious}, if they are fully submerged in non-flammable liquid or combat is over or on the next short rest, if it was gained outside of combat."
+			]
+		},
+		{
+			"name": "Immolation",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature beset by Immolation is suffering from the holiest of flames, taking an amount of {@damage d4} radiant damage equal to their current Immolation count at the end of their turns, also halving its total count. When at one Immolation count, it extinguishes at the end of the creature's turn."
+			]
+		},
+		{
+			"name": "Nails",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature suffering from Nails has a number of them embedded in their flesh, drawing out blood and the faith of certain individuals in equal measure. At the end of their turns, a Nailed creature halves their Nail count and gains the same value halved as {@condition Bleed|TheUndertomesGeneralRules} count instead.",
+				"Fanatical creatures gain a +1 bonus modifier to attack rolls against Nailed creatures for each 15 Nails* they are currently suffering from, to a maximum of +3."
+			]
+		}
+	],
+	"itemProperty": [
+		{
+			"abbreviation": "AST",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Assist",
+			"entries": [
+				"A weapon with the Assist property is one that was designed to aid in defending the wielder, yet it's usage makes it cumbersome to wield anything too big at the same time. While wielding an Assist weapon you gain a +1 bonus modifier to your Armor Class, but you cannot benefit from wielding Heavy weapons or a {@item Shield|PHB}."
+			]
+		},
+		{
+			"abbreviation": "BST",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Burst",
+			"entries": [
+				"Weapons with the Burst property are ones that can be fired or used in a quick burst of attacks that compromise accuracy for the chance of more damage. You may benefit from Burst weapons whenever you take the {@action Attack} action, choosing to replace a singular attack you would be able to make with a number of attacks displayed in parenthesis next to this property. You may choose only one target for each burst of attacks, being able to switch between targets with each differing attack replaced to do so.",
+				"You may do so for each attack you would usually be able to make, but suffer a negative modifier starting at a value equal to your Dexterity modifier minus the first number in parenthesis (Minimum of 1), further subtracting one for each individual attack made after the first. This negative modifier is reduced by 2 if you are wielding your weapon with two hands and fully reset at the end of your turns.",
+				"You do not add your ability modifier to damage dealt by this Property's feature, and the damage dealt by a burst shot may differ from the original damage that would be dealt by the weapon. If so, this value is displayed after the number of attacks made in a burst.",
+				"Ex: As a level 5 Fighter you have two attacks as per the {@action Attack} Action. You may perform one normal attack and then choose to use the feature from a Burst (3) weapon, performing three attacks against the same target. You have a Dexterity modifier of 3, thus having no negative modifier for the first roll in your burst, then a -1 for the second and a -2 for the third."
+			]
+		},
+		{
+			"abbreviation": "CHT",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Chain-Through",
+			"entries": [
+				"A weapon with the Chain-through property has an easy way of cutting into targets after initially being lodged onto them. These are saws, barbed axes and even barbed spears which can be wedged, pushed and pulled for a nasty amount of damage even if the target tries to dodge away. While dealing damage with a Chain-Through weapon, provided you haven't missed your previous attack, you deal at least half the value of damage die you'd roll if you had rolled lower than that.",
+				"Ex: If you, a Paladin, deal {@damage 2d8} slashing damage + {@damage 2d8} radiant damage with a Chainsword, if you roll a total of 2 slashing and 2 radiant damage, you instead deal 8 slashing and 8 radiant damage on that hit."
+			]
+		},
+		{
+			"abbreviation": "CNC",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Concealed",
+			"entries": [
+				"A weapon with the Concealed property is perfect for hiding in-between clothes or other belongings, seeming like a harmless trinket until it is drawn. While not being held, you may use your Bonus Action to suddenly draw it with a free hand and perform a weapon attack roll against a creature within reach. If you had no free hands, you instantly swap one of your held items with the Concealed weapon. You also gain a +5 bonus modifier on {@skill Stealth} checks to hide a Concealed weapon."
+			]
+		},
+		{
+			"abbreviation": "DRW",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Draw",
+			"entries": [
+				"A weapon with the Draw property is one meant to deliver its full force when unsheathed instead of over various strikes. While sheathed, your next unsheathed attack made with a Draw weapon gains a bonus modifier to hit equal to half it's wielder's proficiency bonus, rounded down, and deals an additional damage die on a hit. After being unsheathed, it's wielder may spend one of their attacks as part of the {@action Attack} action to sheathe it."
+			]
+		},
+		{
+			"abbreviation": "ENT",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Entrench",
+			"entries": [
+				"A weapon with the Entrench property carries an enormous punch but also a considerable amount of blowback whenever it is fired or swung. Whenever you perform an attack with it, your remaining movement speed is reduced by the value in parenthesis beside this property. If two numbers are shown, these are in order the amount of movement speed reduced by one handed attacks and two handed attacks."
+			]
+		},
+		{
+			"abbreviation": "HEM",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Hemorrhaging",
+			"entries": [
+				"A serrated weapon causes a stack of {@condition Bleed|TheUndertomesGeneralRules} whenever you hit with it, provided the roll equals the value presented alongside the property before any modifiers."
+			]
+		},
+		{
+			"abbreviation": "MES",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Mesmerizing",
+			"entries": [
+				"( Also known as Funny ) Mesmerizing weapons aren't made just to be used with the usual strength of technique that a swordmaster or a great archer would have, no. They instead rely on another technique: that of the spectacle! You may use your Charisma modifier instead of Strength while using these weapons."
+			]
+		},
+		{
+			"abbreviation": "LOB",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Lobbing",
+			"entries": [
+				"A lobbing weapon isn't just thrown straight ahead, instead aiming up to strike down from afar. Lobbing weapons ignore cover if that cover isn't at least as tall as their short range, as per the Range or thrown properties."
+			]
+		},
+		{
+			"abbreviation": "RLD",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Reload",
+			"entries": [
+				"Weapons with the Reload property have a limited amount of rounds that can be shot before needing to be reloaded. A Reload weapon needs to be reloaded after a certain amount of attacks, with this value being found in parenthesis following the property. To do so, you must spend your Action or Bonus Action to do so - Nevertheless, you cannot take the {@action Attack} action using the reloaded weapon on the same turn you reload it."
+			]
+		},
+		{
+			"abbreviation": "SET",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Set",
+			"entries": [
+				"A weapon with the Set property is instead multiple weapons that can be used together or a stock that is easily replenished in the heat of battle, whether they are thrown and lost or easily breakable upon impact. The maximum amount of uses these weapons have is shown in parenthesis after the weapon property, with you having the ability to easily produce or procure more at the end of a short or long rest. A lack of a number instead indicates that the weapons may be used infinitely."
+			]
+		},
+		{
+			"abbreviation": "SPL",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Splash",
+			"entries": [
+				"A weapon with the splash property has a tendency to cover an area of effect in its strikes or have a small splash zone where hits go off to. While you wield a Splash weapon to hit a target, all other hostile creatures within 5-ft. of the target take damage equal to the value in parenthesis beside this property. By default the damage type is the same as the weapon's first presented damage type, or denoted if otherwise."
+			]
+		},
+		{
+			"abbreviation": "STH",
+			"source": "TheUndertomesGeneralRules",
+			"name": "SteelHack",
+			"entries": [
+				"A weapon with the SteelHack property is designed to have sliding or otherwise transmutative mechanisms to allow it to exist in multiple forms at once. The base weapon is described in the initial weapon text, with a secondary one being presented below it for each alternative form, which may change its properties, damage and so on. Ammunition stashed in a SteelHack weapon remains inside it even if its current form wouldn't use it, requiring a form-change to rip it out. Additionally, changing a weapon's form this way usually takes a Bonus Action, with any deviations of that rule being specified in parenthesis beside the property as A for Action and FA for a Free Action that may be taken at any time."
+			]
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Tremor Burst",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "V",
+			"entries": [
+				"Tremor Burst is not a Condition, but instead a trigger for the {@condition Tremor|TheUndertomesGeneralRules} Condition which is caused by some feats, spells or other abilities."
+			]
+		},
+		{
+			"name": "Wondrous Pets & Friends",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A “Wondrous Pet“ is the mechanical term this document uses to refer to, well, pets! A Pet in this way is a magical being that while attuned, will always remain within a 60-feet radius of its perceived owner. They do not require food nor sleep, but will gladly partake in either joy.",
+				"A Pet does not partake in combat initiative, instead it is treated like any other magic item when called upon for an active or passive ability it grants.",
+				"Additionally, it has no stat block of its own, instead only providing static benefits to its master. Much like the {@spell Find Familiar} spell, a pet may be commanded with a free action to move and to enter or exit an extradimensional space where it is kept safe. It automatically enters that space if it would be immediately be put in harms way, instead remaining safe.",
+				"If the {@spell Dispel Magic} spell is cast on the Pet, it vanishes for one minute, and then rematerializes after this time. During its vanishing, you cannot benefit from its abilities.",
+				"In the case that the “Pet” is instead a Friend or otherwise similarly sentient and possibly humanoid creature with their own will and volitions, they still try to stick close to you and keep out of harms way, but cannot ( if they aren't inherently magical ) enter the aforementioned extradimensional space.",
+				"Otherwise, in the case that the setting calls for the destructability or otherwise harm of a Wondrous Pet or Friend, they have a pool of Hit Points that matches their attuned master's level and their rarity, as per the following table:",
+				{
+					"type": "table",
+					"colLabels": [
+						"Hit Die Pool",
+						"Rarity"
+					],
+					"colStyles": [
+						"col-8",
+						"col-4"
+					],
+					"rows": [
+						[
+							"{@dice 1d4} per Player Level + Level",
+							"Common"
+						],
+						[
+							"{@dice 1d6} per Player Level + Level",
+							"Uncommon"
+						],
+						[
+							"{@dice 1d8} per Player Level + Level",
+							"Rare"
+						],
+						[
+							"{@dice 1d10} per Player Level + Level",
+							"Very Rare"
+						],
+						[
+							"{@dice 1d12} per Player Level + Level",
+							"Legendary"
+						]
+					]
+				},
+				"You may roll on this table when first attuning to them.",
+				"Upon reaching 0 Hit Points, various things may happen depending on the Setting's intended tone and should be discussed between the Players and Dungeon Master when including Wondrous Pets & Friends into their setting. These are as follows:",
+				{
+					"type": "list",
+					"items": [
+						"The Pet is knocked {@condition Unconscious} until the end of battle and loses its effects until the next short rest.",
+						"The Pet initiates Death Saving Throws like a Player Character would, dying upon three failures. While {@condition Unconscious}, it does not provide any benefits.",
+						"If a Pet or Friend dies, you may choose to either have them be able to be brought back through a {@spell Revivify} or similar spell, through a ritual similar in cost to the {@spell Find Familiar} spell that any Spellcaster may perform or have them permanently die."
+					]
+				}
+			]
+		},
+		{
+			"name": "Deployable Tools",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"Deployable tools are traps or other mechanisms that a character may employ in dire times. They are placed down within an unnocupied 5-ft reach by spending your Bonus Action during your turn and have a trigger according to its properties, as shown below their name, much like weapon properties. If a Tool requires a Saving Throw to be passed, it will be displayed before it's properties, with the DC's associated Ability Score being placed in parentheses, and below that it's effect(s) when trigger. Tools usually occupy a 5-ft by 5-ft square. You may also spend your Bonus Action to retrieve a Tool.",
+				"Unless specified, all Deployable Tools only trigger against creatures hostile to who deployed it.",
+				"All Tools have a Durability Property, which denominates how many times they may be activated until they break down and require repairs. A broken down Tool may be repaired by a blacksmith for half of it's buying price or during a Long Rest spending one use of a Repair Kit during a Long Rest, where at least one Character must spend their time repairing or re-stocking the Tool. Otherwise, a Player Character with a number of levels in the Artificer Class may fix up to their Proficiency Modifier's worth of Tools during a Long Rest. To do so, they must meet a minimum level requirement according to the Tool's rarity, as follows:",
+				{
+					"type": "table",
+					"colLabels": [
+						"Artificer Level",
+						"Maximum Rarity"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6"
+					],
+					"rows": [
+						[
+							"1",
+							"Common"
+						],
+						[
+							"3",
+							"Uncommon"
+						],
+						[
+							"8",
+							"Rare"
+						],
+						[
+							"12",
+							"Very Rare"
+						],
+						[
+							"16",
+							"Legendary"
+						]
+					]
+				},
+				"Furthermore, Artificers may choose to use their Spell Save DC instead of the Deployable Tool's when it is triggered, instead of the Tool's original Saving Throw required. This also applies to the Artificer's Spell Attack Modifier in the case the Deployable Tool performs attacks."
+			]
+		},
+		{
+			"name": "Active",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"An Active {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} requires active usage from a creature who must spend their Action while within 5-ft of the Tool to trigger it."
+			]
+		},
+		{
+			"name": "Adherent",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"An Adherent {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is one that can easily cling to any even surface, being able to be placed on unoccupied ceilings or walls."
+			]
+		},
+		{
+			"name": "Arcane",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"An Arcane {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is one commonly used by scholars and people attuned to the arcane, such as Wizards and Sorcerers. Characters with levels in these classes may repair up to their Proficiency Bonus' worth of Relicary Tools during a Long Rest as if they were an Artificer, also being able to choose using their own Spell Save DC and Spell Attack Modifier for these Tools."
+			]
+		},
+		{
+			"name": "Bulky",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Bulky {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} requires more space than usual for its operation. This space is listed in parentheses after this property is listed."
+			]
+		},
+		{
+			"name": "Contact",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Contact {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} triggers whenever a creature moves into the area it occupies."
+			]
+		},
+		{
+			"name": "Concealed",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Concealed Tool is made hard to perceive. All Creatures have Disadvantage on {@skill Perception} Checks to find it, with the tool having a Passive {@skill Stealth} Score displayed in parenthesis following this property."
+			]
+		},
+		{
+			"name": "Construct",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Construct {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} has the same Resistances as most of its kind, being a mechanical mess of machinery in its operation. It has Resistance to acid damage, Immunity to poison and psychic damage and the {@condition Charmed}, {@condition Frightened}, {@condition Poisoned}, {@condition Prone} and {@condition Incapacitated} Conditions."
+			]
+		},
+		{
+			"name": "Cumbersome",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Cumbersome {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is particularly harder to deploy. You must instead spend an Action to deploy this {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool}."
+			]
+		},
+		{
+			"name": "Durability",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool}'s Durability measures how many activations a Tool can handle before needing repairs or re-stocking. This value displayed in parenthesis after this property."
+			]
+		},
+		{
+			"name": "Far-Mount",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Far-Mount {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} can be easily tossed and assemble itself. You may deploy a Far-Mountable Tool on any unoccupied space within a radius of yourself as shown by the number of feet within parentheses following this property's listing."
+			]
+		},
+		{
+			"name": "Instant",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"An Instant {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is one that does not keep functioning in the field as long as it still has Durability, instead having it's Durability consumed whenever it is placed down, usually because this {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} comes in sets or may be used repeatedly. After a placed Instant Tool is triggered, it is destroyed, with only it's pieces remaining for posterior repairs or resupply."
+			]
+		},
+		{
+			"name": "Mount",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Mount {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} may be mounted by a creature standing in the same space as it by them spending their Action or Bonus Action to do so. While mounted their movement speed is 0 and the Bonus Modifier gained from their Dexterity Modifier on Dexterity saving throws can only be a maximum of 2. A creature may spend a Free Action to dismount. Mount {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool}s usually require a mounted creature's Action to be used."
+			]
+		},
+		{
+			"name": "Multiple",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Multiple {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is actually a set of Tools that may be placed down multiple times while it still has Durability, such as {@item Caltrops|PHB} being thrown from a bag."
+			]
+		},
+		{
+			"name": "Primal",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Primal {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is one commonly used by those who are surrounded with nature, such as Druids and Rangers. Characters with levels in these classes may repair up to their Proficiency Bonus' worth of Reliquary Tools during a Long Rest as if they were an Artificer, also being able to choose using their own Spell Save DC and Spell Attack Modifier for these Tools."
+			]
+		},
+		{
+			"name": "Reliquary",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Relicary {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is one commonly used by churches, such as Clerics and Paladins. Characters with levels in these classes may repair up to their Proficiency Bonus' worth of Reliquary Tools during a Long Rest as if they were an Artificer, also being able to choose using their own Spell Save DC and Spell Attack Modifier for these Tools."
+			]
+		},
+		{
+			"name": "Sensor",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Sensor {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} triggers whenever a creature of your choice moves in or outside of the range that follows this property in parenthesis."
+			]
+		},
+		{
+			"name": "Sturdy",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Sturdy {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} is unlike others, having no Durability and instead possessing it's own AC and Maximum Hit Points, displayed respectively in parenthesis following this property. They are usually Immune to psychic and poison damage, Vulnerable to Acid damage and are Immune to the {@condition Charmed}, {@condition Frightened}, {@condition Grappled}, {@condition Poisoned} and {@condition Prone} Conditions, unless stated otherwise."
+			]
+		},
+		{
+			"name": "Timed",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A Timed {@variantrule Deployable Tools|TheUndertomesGeneralRules|Deployable Tool} triggers on a timer, usually at Initiative Count 1 or at whatever count that is lower than yours when it has been set. If you have none, you may choose from 15 below. The Trap only triggers after any other creature with the same Initiative Count has acted."
+			]
+		},
+		{
+			"name": "Core Bursts",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"\"…In order to use Shin, one must clear their mind of all emotions and then tap into their most intense memories…\"",
+				"Upon reaching a certain level of awareness and strength, certain people may come to develop a manifestation of their inner self, coming not only to understand what they are but to push that understanding outwards like an expanding force unique to them alone. This is a force composed of a mastery and understanding of your emotions and how you wish to impose that will on the world.",
+				"Upon reaching 10th level, you may choose to gain a Core Burst as per what best fits your person, activating it with a Bonus Action during your turn. This effect may come to manifest as a small effect surrounding you like an aura, such as crackling lightning forming whenever you move or smoke raising from your feet. This lasts for up to one minute or until you are knocked {@condition Unconscious}.",
+				"This process is exhausting to the mind, being able to be used once per long rest. You may instead use your Core Burst twice per long rest upon reaching 20th level. You may choose to push yourself particularly hard and activate your Core Burst after all uses have been expended, but you gain a point of {@condition Exhaustion} when it ends."
+			]
+		}
+	]
+}
