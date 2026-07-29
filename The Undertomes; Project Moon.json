@@ -52,6 +52,10 @@
 							"depth": 1
 						},
 						{
+							"header": "Druid",
+							"depth": 1
+						},
+						{
 							"header": "Fighter",
 							"depth": 1
 						},
@@ -186,6 +190,22 @@
 									"classSource": "PHB",
 									"collapsed": true,
 									"shortName": "Fluttering Life"
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Druid",
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Circle of the Iron Maiden",
+									"className": "Druid",
+									"classSource": "PHB",
+									"collapsed": true,
+									"shortName": "Iron Maiden"
 								}
 							]
 						},
@@ -476,6 +496,20 @@
 				"Aura of the Big Brother|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|7",
 				"Sibling Encouragement|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|15",
 				"Complete and Total Extermination!!|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|20"
+			]
+		},
+		{
+			"name": "Circle of the Iron Maiden",
+			"shortName": "Iron Maiden",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Circle of the Iron Maiden|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|2",
+				"My Precious Artwork|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|6",
+				"Corpus Ribcage Arrangements|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|10",
+				"Favoritism|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|10",
+				"Facsimile of Perfected Life|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|14"
 			]
 		}
 	],
@@ -1554,6 +1588,63 @@
 				"{@b Never Forget.} If slights were committed against your family, write them down in the book of vengeance. Never allow whoever dared to stand against one of your siblings to see the light of day.",
 				"{@b Love Your Siblings.} Your brothers and sisters are your loyal family and must be treated with respect. Their slights can be forgiven, and they deserve compliments and rewards when successfully achieving their goals and your own.",
 				"{@b Recover What Was Stolen!} This is an optional Tenet. You might have lost something extremely precious to you, like hair coupons to an incredible salon of complete and total lusciousness. You and your family will hunt this thief to the ends of the earth, and you will make sure they pays for their crimes."
+			"name": "Circle of the Iron Maiden",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Maiden",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"entries": [
+				"Druidism is regarded as an ancient tradition relating to the natural world and sometimes even abhoring that of technological advancement that stiffles that natural growth of all things. Despite that, or even because of that there is a small, peculiar circle of druids which choose to embrace that technology - that so called tainted metal to replicate nature itself, a controversial medium for a pure passion of this so called “artwork”.",
+				"Those which follow the circle of the Iron Maiden have stripped themselves of their supple flesh and instead addorn it as material for their creations, embellishing the natural world with their very self for the sake of spreading their unbridled joy and vision of the world around them. They also do such in a way that encapsulates the moment of lightning striking the ground or a volcano erupting - a slow, deliberate sudden moment where they may spend months and years under their iron shell only to enrichen a glimpse of the presence of their body underneath.",
+				"They may not be well seen in druid communities, but one thing is certain: the passion these folk have for their art is unrivaled, going toe to toe with even that of a bards love for the arts.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Biomimeticism: Art Imitates Life|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Giving Form to Shape|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Artist's Zone|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rattling Mind|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|2"
+				}
+			]
+		},
+		{
+			"name": "Biomimeticism: Art Imitates Life",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Maiden",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"entries": [
+				"{@i “Aesthetics concerns itself entirely with the visible, yet this self-evident familiarity often invites neglect that overlooks the inherent significance of what is seen...”}",
+				"You are a very unique type of druid, the one who wishes to transcend the binds of their flesh by imitating nature the best they can: constructing and shaping a body sculpted in the image of what once was. You, unlike the vast majority of other circles, embrace the touch of metal while extracting and re-shaping the natural form to become a better meld of your view of reality.",
+				"As a form of repression to better understand the limits of your body, you've stowed away the fruits of your slow labour into a metallic armor that paradoxically hides and defines your form. You are always in this Iron Maiden Form until you spend one of your Wildshape uses as a Bonus Action to enter your Flowing State Form, as per described in the Features below.",
+				"You, however, do not limit yourself to using your own body as material, also acquiring one {@condition Corpus Ingredients|TheUndertomesProjectMoon} count whenever you successfully deal damage to a creature within 15-ft. of you. You have a count limit equal to double your proficiency bonus, and due to a tendency to dutifully spend any leftovers on smaller projects during a short or long rest, you may only have up to your proficiency bonus worth of {@condition Corpus Ingredients|TheUndertomesProjectMoon} after such. You may spend count for the following:",
+				{
+					"type": "list",
+					"items": [
+						"You may spend up to your proficiency bonus' amount of {@condition Corpus Ingredients|TheUndertomesProjectMoon} before performing an attack to deal an additional 2 {@condition Bleed|TheUndertomesGeneralRules} count on a hit per {@condition Corpus Ingredients|TheUndertomesProjectMoon} spent.",
+						"You may spend up to half your proficiency bonus' worth of {@condition Corpus Ingredients|TheUndertomesProjectMoon} before performing an attack to gain a bonus modifier to hit equal to half your proficiency bonus."
+					]
+				},
+				"Additionally, your obsession with the humanoid form doesn't stop only at your art, no, your imitation of life extends to what you see from other beings. Whenever you use the Wildshape feature you may transform into Humanoids instead of Beasts, following the usual rules for the Feature. If the Humanoid would be carrying any items in its monster sheet, you create exact copies of them as long as they aren't unique to that creature, and if you copy something akin to a wizard's grimoire, you have the practical content of their spells in Druidic, but not any personal notes and such. Your appearance is always metallic and can be discerned easily to be an imitation by other creatures.",
+				{
+					"type": "inset",
+					"name": "Designer's Note",
+					"entries": [
+						"This subclass is intended to be played while locking you out of the usual Wildshape rules to turn into Beasts. If for any reason you'd rather maintain this for your druid, consider that you alter your Form as if the metallic plates that compose your body shifted and melded together to become whatever animal you wish to become, instead of being the usual magical transformation."
+					]
+				}
 			],
 			"header": 1
 		},
@@ -1583,6 +1674,27 @@
 						["17th", "{@spell flame strike}, {@spell hold monster}"]
 					]
 				}
+			"name": "Giving Form to Shape",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Maiden",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"entries": [
+				"{@i “It is because of this that Faust forged this panoply. Not merely to provide a veil behind which the bashful Fascia might reside, but also to stage a dual aesthetic: the weighted inertia of the armored body...”}",
+				"You have constructed or even grown a metallic armor that encases your entire body most of the time, only being doffed when you need to put on a magnificent display of power and artistry - a show of the humanoid form at its peak. While not in your Flowing Form, you are in Iron Maiden Form, which affects you in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"Your movement speed is reduced by 10-ft. and any effects that would give you additional movement speed is halved. ( Rounded up. )",
+						"While not donning any armor your AC is equal to 11 + your Constitution modifier + your Wisdom modifier.",
+						"You are considered proficient with Martial Weapons, but may only add half your proficiency bonus to attacks made with them.",
+						"You are considered proficient with Heavy Armor and suffer no penalties to Stealth skill checks while donning it. When wearing this armor, you usually implement it as an outer layer of your Iron Maiden shell."
+					]
+				},
+				"Additionally, whenever an attack misses you and the difference between the attack and your AC is equal to or greater than a value of 10 - your proficiency bonus, you may spend your Reaction to perform a melee weapon attack against the attacker. You may otherwise cast a cantrip that has a spell attack against the same target.",
+				"Furthermore, while in this Form you may use your Bonus Action to revest your body with {@condition Corpus Ingredients|TheUndertomesProjectMoon}, spending 3 count to grant yourself Resistance to your choice of bludgeoning, piercing or slashing damage until the start of your next turn. Upon reaching 8th level, you may spend 6 count instead to grant yourself Resistance to any damage type for the same duration."
 			],
 			"header": 1
 		},
@@ -1599,6 +1711,28 @@
 				"You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works. If there is at least 1 member of the Middle within 10 feet of you, you may spend an additional use of Channel Divinity before needing a Short or Long Rest.",
 				"{@b Sibling Retaliation.} As a Bonus Action, until the start of your next turn, you can take 1 additional Reaction per Round, even if you have already spent your usual Reaction. When a friendly creature within 10 feet of you is attacked, you can use a Reaction to punch or kick the attacker as long as they are within reach or you have enough movement speed to reach them. You make an Unnarmed Attack against them, and the enemy suffers either 1 count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}, your choice. If the friendly creature that was attacked was from the Middle, you deal an additional dice of unnarmed attack damage and inflict 1 additional count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}.",
 				"{@b Vengeance Tattoo Resonance.} As a Bonus Action, you can use your tattoos to improve your physical capabilities. For 1 minute, your AC increases by 2, and you gain Temporary Hit Points in a number of d8 equal to your Proficiency Bonus. Additionally, you gain advantage on all Strength rolls, and you can jump twice the height and distance you would normally be able to without taking fall damage."
+			"name": "Artist's Zone",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Maiden",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"entries": [
+				"{@i “Against the beautiful liberation of the repressed flesh upon shedding the encasement.”}",
+				"Freeing your body is a spectacle in of itself, the act of repressing your flesh being like marinating a great meal only to reveal its glory sporadically to ensure that this exhibition will be as close to perfection as can be. Whenever you enter your Flowing Form, you gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"Your movement speed increases by 5-ft. and whenever you take the {@action Dash} Action, your AC increases by 2 until the end of your turn.",
+						"Any armor you were wearing is cast off with your Iron Maiden, instead granting you an AC equal to 12 + your Wisdom Modifier.",
+						"You are considered proficient with Martial Weapons and you always deal half your proficiency bonus in {@condition Bleed|TheUndertomesGeneralRules} count whenever you hit a creature.",
+						"You may choose, whenever you suffer damage, to become Vulnerable to its damage type for the attack. When you do so, you gain one count of {@condition Corpus Ingredients|TheUndertomesProjectMoon} for each 8 damage suffered this way.",
+						"You may use your spell attack modifier for melee weapon attacks."
+					]
+				},
+				"Additionally, whenever you hit a creature you may spend up to half your proficiency bonus' worth of {@condition Corpus Ingredients|TheUndertomesProjectMoon} to enrichen your weapons thirst for even more material, dealing an additional {@damage 1d4} damage of the weapon's type on that attack. This increases to {@damage 1d6} damage when you reach 8th level in Druid, and finally {@damage 1d8} at 14th level.",
+				"Furthermore, choose one Charisma skill you are proficient in when first gaining this feature. Whenever you enter your Flowing Form, you are considered to have Expertise with it instead."
 			],
 			"header": 1
 		},
@@ -1616,6 +1750,16 @@
 				"When you would normally attune with a weapon, instead you etch a tattoo reminiscent of it in your body, being able to use its damage as unarmed attack damage and gaining all the benefits you would normally get from attacking with it. You can only have 1 weapon tattoo from this feature at a time. This is still considered as being attuned to the weapon.",
 				"Additionally, during combat, the enemy that dealt the most damage to you or your allies this round gains a {@condition Vengeance Mark|TheUndertomesProjectMoon}. This lasts until the end of the next round, or until you fall unconscious. If no enemy has dealt damage this turn, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} is given to the enemy that last attempted to attack you or an allied creature. If two enemies dealt the same amount of highest damage, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} goes to the latest enemy that dealt this damage. Outside of combat, whenever someone rolls an ability check to hurt or damage your character or their reputation, they will also gain a point of {@condition Vengeance Mark|TheUndertomesProjectMoon} until your next short rest. If combat is initiated right after an instance of this by rolling an initiative check, then the enemy with the highest initiative roll gains {@condition Vengeance Mark|TheUndertomesProjectMoon} until the end of the first round of combat.",
 				"Whenever you hit an enemy with counts of {@condition Vengeance Mark|TheUndertomesProjectMoon}, they suffer 1 count of {@condition Bleed|TheUndertomesGeneralRules} and {@condition Burn|TheUndertomesGeneralRules}."
+			"name": "Rattling Mind",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Maiden",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"entries": [
+				"{@i “A spark of inspiration.”}",
+				"Art permeates your breathing like oxygen invades the lung. You gain Proficiency in one Charisma skill of your choice and one Artisan's Tools of your choice. You may use Wisdom in place of Charisma when attempting Skill Checks."
 			],
 			"header": 1
 		},
@@ -1669,6 +1813,93 @@
 				},
 				"Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.",
 				"{@b MY HAIR COUPOOOOOOOOOOONS!!!!} Once per Long Rest, you can use an Action to Jump up to 50 feet in the air, then fall in a space within range. You do not take fall famage, and all terrain within 30 feet of your landing becomes Difficult Terrain, except for you and other Middle-aligned creatures. If the space is occupied, the creature must perform a Constitution saving throw. On a failed save, you slam their head against the ground, dealing {@damage 8d12} bludgeoning damage and Paralyzing them. On a successful save, they take only half that damage and suffer no additional effects. A creature Paralyzed this way rerolls this saving throw at the end of each of their turns, ending the effect on a success. If the creature had 50 hit points or fewer, regardless of if they failed or succeeded in the saving throw, they immediately explode from the impact and die."
+			"name": "My Precious Artwork",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Maiden",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 6,
+			"entries": [
+				"{@i “Have you woken up, Fascia? Faust has been waiting—there is a new friend Faust wants to introduce to Fascia.”}",
+				"An artists creation must be seeded and grown carefully, and you have planted your own - cultivating it with the flesh of your own corpus and that of which you gather in your daily exhibitions of violence and/or bodily harm. You have begun created a masterwork, it is a Martial Melee weapon that you are considered Attuned with at all times. It counts as a magic item for the purposes of bypassing Resistances and it usually takes the shape of a greatsword you can wield with but a single hand, an extension of your own body. It deals {@damage 1d6} slashing damage and has the Finesse property.",
+				"Over the course of a long rest you may spend an amount of {@condition Corpus Ingredients|TheUndertomesProjectMoon} equal to your proficiency modifier to permanently upgrade it, as per the following:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Enhance Corporal Handling.} You focus on bettering the handling of your masterwork, granting it a +1 bonus modifier to attack and damage rolls. When taken again, this upgrade increases by +1, to a maximum of +3.",
+						"{@b Addition of Spinal Spikes.} You sharpen the puncturing edges of your masterwork to better cut an exhibition, increasing its damage die to {@damage 1d8}. Upon taking this upgrade again, it becomes an {@damage 1d10}, and if taken once more, an {@damage 1d12}.",
+						"{@b Versatile Vertebrae.} You improve how grasp-able your work is to the public, granting your masterwork the Versatile property. If your weapon deals {@damage 1d12} damage, it has Versatile ({@damage 2d6}).",
+						"{@b Ripper Ribcages.} You inlay the blade with smaller, cracked ribs for a lasting impression. You deal an additional {@condition Bleed|TheUndertomesGeneralRules} count on a hit with your masterwork.",
+						"{@b Elongated Chords.} You extrapolate your work with femurs woven into the spinal chord of your masterwork to grant it the Reach weapon property.",
+						"{@b Condensation of Ideas.} You trepidatiously realize the need to lay it on thick at times. You may stick your masterwork in the ground as a Bonus Action during your turn, and then spend a Free Action before or after any creature acts to pull a small cord connecting it to you as long as you are within 60-ft. of it. When you do so, a cluster of constricted veins erupts violently from the blade - coating a 15-ft. radius around the weapon in powerful lashes. All creatures within that reach must pass a Dexterity Saving throw or suffer {@damage 2d12} slashing damage and become Grappled, being able to attempt to break free against the same DC as a Bonus Action during their subsequent turns. You may do this an amount of times equal to half your proficiency bonus per short or long rest. You may pick your blade up as a Bonus Action.",
+						"{@b Action Painting.} You experiment with your art to make it pop more, like an artery bursting. Whenever you hit a creature and the difference between your roll and their AC is 3 or greater, or if you forego receiving {@condition Corpus Ingredients|TheUndertomesProjectMoon} from this hit, you may deliver a gashing puncture that splatters their blood toward a 15-ft. line in any angle behind them, rending the liquid a cutting surface upon itself. All creatures within that range must pass a Dexterity Saving throw or suffer an amount of d4 slashing damage and Bleed count equal to half your proficiency bonus.",
+						"{@b Cutaneous Arrangement.} You grant your weapon thicker skin when suffering criticism. While wielded with two hands, you gain a +1 bonus modifier to your AC while in Flowing Form.",
+						"{@b Additional Handiwork.} You stitch a few extra grippers so you can more easily handle certain other business as necessary. You may cast Druid spells' somatic components while wielding this weapon in either or both hands.",
+						"{@b Wing Tendons.} You construct a pile of muscles into pseudo-wings to aid your artwork in soaring high and far. This weapon gains the Thrown (30/60-ft.) property.",
+						"{@b Devoration of Inspiration.} You break down a magical weapon to feed it to your masterwork. It inherits any traits of the consumed weapon, such as the Vorpal enchantment, but cannot gain any bonuses to hit or damage from doing so. It however can gain additional damage die and you may only benefit from a single magic item being devoured at any given time, replacing the oldest enchantment when consuming another.",
+						"{@b Shifting Presentation.} You change how your weapon presents itself in a regulated setting. When you take this upgrade, you may change your masterworks damage type to your choice of acidic, bludgeoning, piercing or necrotic damage."
+					]
+				},
+				"You may take each upgrade only once, with the exception of being able to take upgrades marked by your Masterwork's Symbol an additional time upon reaching 8th and 14th levels in Druid. Due to the limits of your own developing flash, your maximum amount of upgrades is equal to your proficiency bonus and you may exchange an existing one with the same process of creating one. Whenever this feature asks for a saving throw, the Save DC is equal to your Druid Spell Save DC.",
+				"Additionally upon reaching 6th level, you may perform an additional attack as part of your Attack Action while in Flowing Form."
+			]
+		},
+		{
+			"name": "Corpus Ribcage Arrangements",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Maiden",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 10,
+			"entries": [
+				"{@i “These blood vessels are sufficiently thick. Not bad at all.”}",
+				"Your armored state has been perfected like the bark of a tree, splintering off when hurt and stabbing back at its attackers. Whenever you roll Initiative, you may also roll an amount of Hit Die up to half your proficiency bonus, then gaining that value plus your Wisdom Modifier's worth of Temporary Hit Points. You instantly lose these when entering Flowing Form. While these Temporary Hit Points remain, whenever another creature deals damage to you through a weapon attack they suffer 2 {@condition Bleed|TheUndertomesGeneralRules} count.",
+				"While in Iron Maiden Form you've developed a new ways to move, throwing your weight in one direction at the risk of becoming rattled. Once per turn you may spend 5-ft. of movement as a Free Action to instantly move up to a 15-ft. line. If you would collide with a creature or object that is at least small, that target must pass a Dexterity saving throw against your Druid Spell DC or suffer half your proficiency bonus' worth of d6 bludgeoning damage on a failure. On a success or if you don't hit anything, you trip and must attempt that saving throw yourself instead, suffering the same consequences on a failure.",
+				"Additionally you have learnt how to distort your voice well in the chambers of your second skin, granting you Advantage on Deception checks and other creatures Disadvantage on attempting Insight checks targetting you, provided you are in Iron Maiden Form."
+			]
+		},
+		{
+			"name": "Favoritism",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Maiden",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 10,
+			"entries": [
+				"{@i “A Critique Salon! Exhilarating Prospect.”}",
+				"Your ability to interact with the body - the corpus of living creatures has evolved beautifully through criticism and hard work, rendering you a better artist than ever before. Whenever you would gain {@condition Corpus Ingredients|TheUndertomesProjectMoon} in this Form, gain an additional count.",
+				"Upon reaching 10th level you may perform a second additional attack as part of your Attack Action while in Flowing Form.",
+				"Additionally, this improvement also expanded your horizons on how to work your materials, granting you the ability to spend 4 {@condition Corpus Ingredients|TheUndertomesProjectMoon} when entering your Flowing Form to instantly re-roll your Initiative, taking the higher value for the rest of the combat. You may also spend 6 count when you must attempt a Dexterity saving throw to instead use your Wisdom modifier instead of Dexterity.",
+				"Furthermore, criticism and sudden bursts of shared inspiration have become a true driving force for you. Whenever you would benefit from a Bardic Inspiration, Flash of Genius or a similar beneficial class ability, you may add an additional bonus modifier equal to half your Wisdom modifier to the affected roll."
+			]
+		},
+		{
+			"name": "Facsimile of Perfected Life",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Maiden",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 14,
+			"entries": [
+				"{@i “At long last, Faust has completed the masterpiece that even the Maestro will have no choice but to approve.”}",
+				"The stride toward becoming an artist - the brutal steps taken in reflecting your artwork itself - it has all culminated into who you are now. What you are now. You have transcended the repressed flesh and became a living embodiment of your love of nature and of humanity itself, represented in each threaded tendon and re-shaped muscle. You gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"While in your Iron Maiden Form, your base AC is now 13 + your Constitution modifier + your Wisdom modifier and you are considered resistant to non-magical bludgeoning, piercing and slashing attacks.",
+						"While in your Flowing Form you gain an additional 5-ft. of movement and deal an additional 2 damage on a hit against Bleeding creatures.",
+						"You have Expertise in any skill checks revolving around Artisan's Tools you are proficient in. You also gain Expertise in the Performance skill for producing and enacting your art.",
+						"You may spend a Bonus Action to successfully discern the intent behind any creation of another creature, such as a forged weapon or artwork."
+					]
+				},
+				"Additionally, you may now spend your Bonus Action while within 5-ft. of a non-summoned corpse that has been dead for less than a day to do the following artworks:",
+				"{@b Minimalist Manifesto.} A small prompt to keep yourself sharp with the removal of corpus. When creating this sculpture you instantly gain your proficiency bonus' worth of {@condition Corpus Ingredients|TheUndertomesProjectMoon}.",
+				"{@b Cascading Columnal Crevice.} A bundle of nerves and bones ready to explode out at the most minimal movement. Whenever a creature moves into or out of 5-ft. of this sculpture you may spend your Reaction to whistle in the right frequency to set it off. It lashes out in an explosion of vine-like blood vessels and spike-ish bone, forcing all creatures within a 15-ft. radius to pass a Dexterity saving throw against your Druid Spell Save DC or suffer {@damage 5d10} slashing damage and 4 {@condition Bleed|TheUndertomesGeneralRules} count.",
+				"{@b Horrifyingly Beautiful Creation.} You produce your standard artwork. Hostile creatures and creatures not familiar with your work must pass a Wisdom saving throw against your Druid Spell Save DC when first seeing it or suffer {@damage 3d8} psychic damage and become Frightened of you and your sculpture for one minute, being able to re-attempt this saving throw at the end of their subsequent turns. Whenever they do so, they instantly suffer an additional {@damage 2d8} psychic damage."
 			]
 		}
 	],
@@ -1798,6 +2029,13 @@
 			"entries": [
 				"A creature with this Condition has been enraptured by the god-rending melody of your carnage, and can't help but want to partake in it as musician and instrument, dealing and suffering an additional amount of damage equal to your Charisma modifier whenever they deal or suffer damage ( respectively ) equal to your 3 times your Rhythm count that they currently have. Whenever a creature declines receiving Rhythm, they halve the counts of the Condition they currently have, rounded up. Additionally, if a creature with this Condition benefits from your Bardic Inspiration rolls the minimum value rolled is always equal to their current Rhythm count, being increased if it was lower.",
 				"A creature with Rhythm gain an additional count whenever they first kill a creature during a round, except for summoned creatures. Additionally, a creature with 3 or more count may spend one count to perform an additional weapon attack or cast an additional spell of 3rd level or lower during their turn."
+			]
+		},
+		{
+			"name": "Corpus Ingredients",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"You, however, do not limit yourself to using your own body as material, also acquiring one Corpus Ingredients count whenever you successfully deal damage to a creature within 15-ft. of you. You have a count limit equal to double your proficiency bonus, and due to a tendency to dutifully spend any leftovers on smaller projects during a short or long rest, you may only have up to your proficiency bonus worth of Corpus Ingredients after such."
 			]
 		}
 	],
