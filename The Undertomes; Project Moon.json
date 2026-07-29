@@ -1588,6 +1588,9 @@
 				"{@b Never Forget.} If slights were committed against your family, write them down in the book of vengeance. Never allow whoever dared to stand against one of your siblings to see the light of day.",
 				"{@b Love Your Siblings.} Your brothers and sisters are your loyal family and must be treated with respect. Their slights can be forgiven, and they deserve compliments and rewards when successfully achieving their goals and your own.",
 				"{@b Recover What Was Stolen!} This is an optional Tenet. You might have lost something extremely precious to you, like hair coupons to an incredible salon of complete and total lusciousness. You and your family will hunt this thief to the ends of the earth, and you will make sure they pays for their crimes."
+			]
+		},
+		{
 			"name": "Circle of the Iron Maiden",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Druid",
@@ -1674,6 +1677,9 @@
 						["17th", "{@spell flame strike}, {@spell hold monster}"]
 					]
 				}
+			]
+		},
+		{
 			"name": "Giving Form to Shape",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Druid",
@@ -1711,6 +1717,9 @@
 				"You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works. If there is at least 1 member of the Middle within 10 feet of you, you may spend an additional use of Channel Divinity before needing a Short or Long Rest.",
 				"{@b Sibling Retaliation.} As a Bonus Action, until the start of your next turn, you can take 1 additional Reaction per Round, even if you have already spent your usual Reaction. When a friendly creature within 10 feet of you is attacked, you can use a Reaction to punch or kick the attacker as long as they are within reach or you have enough movement speed to reach them. You make an Unnarmed Attack against them, and the enemy suffers either 1 count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}, your choice. If the friendly creature that was attacked was from the Middle, you deal an additional dice of unnarmed attack damage and inflict 1 additional count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}.",
 				"{@b Vengeance Tattoo Resonance.} As a Bonus Action, you can use your tattoos to improve your physical capabilities. For 1 minute, your AC increases by 2, and you gain Temporary Hit Points in a number of d8 equal to your Proficiency Bonus. Additionally, you gain advantage on all Strength rolls, and you can jump twice the height and distance you would normally be able to without taking fall damage."
+			]
+		},
+		{
 			"name": "Artist's Zone",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Druid",
@@ -1750,6 +1759,9 @@
 				"When you would normally attune with a weapon, instead you etch a tattoo reminiscent of it in your body, being able to use its damage as unarmed attack damage and gaining all the benefits you would normally get from attacking with it. You can only have 1 weapon tattoo from this feature at a time. This is still considered as being attuned to the weapon.",
 				"Additionally, during combat, the enemy that dealt the most damage to you or your allies this round gains a {@condition Vengeance Mark|TheUndertomesProjectMoon}. This lasts until the end of the next round, or until you fall unconscious. If no enemy has dealt damage this turn, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} is given to the enemy that last attempted to attack you or an allied creature. If two enemies dealt the same amount of highest damage, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} goes to the latest enemy that dealt this damage. Outside of combat, whenever someone rolls an ability check to hurt or damage your character or their reputation, they will also gain a point of {@condition Vengeance Mark|TheUndertomesProjectMoon} until your next short rest. If combat is initiated right after an instance of this by rolling an initiative check, then the enemy with the highest initiative roll gains {@condition Vengeance Mark|TheUndertomesProjectMoon} until the end of the first round of combat.",
 				"Whenever you hit an enemy with counts of {@condition Vengeance Mark|TheUndertomesProjectMoon}, they suffer 1 count of {@condition Bleed|TheUndertomesGeneralRules} and {@condition Burn|TheUndertomesGeneralRules}."
+			]
+		},
+		{
 			"name": "Rattling Mind",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Druid",
@@ -1813,6 +1825,9 @@
 				},
 				"Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.",
 				"{@b MY HAIR COUPOOOOOOOOOOONS!!!!} Once per Long Rest, you can use an Action to Jump up to 50 feet in the air, then fall in a space within range. You do not take fall famage, and all terrain within 30 feet of your landing becomes Difficult Terrain, except for you and other Middle-aligned creatures. If the space is occupied, the creature must perform a Constitution saving throw. On a failed save, you slam their head against the ground, dealing {@damage 8d12} bludgeoning damage and Paralyzing them. On a successful save, they take only half that damage and suffer no additional effects. A creature Paralyzed this way rerolls this saving throw at the end of each of their turns, ending the effect on a success. If the creature had 50 hit points or fewer, regardless of if they failed or succeeded in the saving throw, they immediately explode from the impact and die."
+			]
+		},
+		{
 			"name": "My Precious Artwork",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Druid",
