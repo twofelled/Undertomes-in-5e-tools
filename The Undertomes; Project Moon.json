@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "0.5.0",
+				"version": "0.7.0",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -15,7 +15,8 @@
 			}
 		],
 		"optionalFeatureTypes": {
-			"CB": "Core Burst"
+			"CB": "Core Burst",
+			"MT": "Middle Tattoo"
 		},
 		"edition": "classic",
 		"status": "ready",
@@ -63,6 +64,10 @@
 							"depth": 1
 						},
 						{
+							"header": "Paladin",
+							"depth": 1
+						},
+						{
 							"header": "Ranger",
 							"depth": 1
 						}
@@ -85,12 +90,48 @@
 					"headers": []
 				},
 				{
-					"name": "Core Bursts",
+					"name": "Feats",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 4
 					},
-					"headers": ["The Disgrace"]
+					"headers": ["Ink Thicker Than Blood"]
+				},
+				{
+					"name": "Backgrounds",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					},
+					"headers": ["Newfoundling"]
+				},
+				{
+					"name": "Optional Features",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 6
+					},
+					"headers": [
+						"Tattoos of Grievance Expansion",
+						"Tattoo of Passion",
+						"Tattoo of Skull Bursting",
+						"Tattoo of Needle Fractures",
+						"Tattoo of Vicious Burns",
+						"Tattoo of Turtle Skin",
+						"Tattoo of Mutual Discombobulation",
+						"Tattoo of Entrenched Ankles",
+						"Tattoo of Threadmarks",
+						"Tattoo of an Thunderstorm",
+						"Tattoo of Starburst"
+					]
+				},
+				{
+					"name": "Core Bursts",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 7
+					},
+					"headers": ["The Custodian", "The Ward", "The Disgrace"]
 				}
 			]
 		}
@@ -202,6 +243,22 @@
 						},
 						{
 							"type": "entries",
+							"name": "Paladin",
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Oath of Loyalty",
+									"className": "Paladin",
+									"classSource": "PHB",
+									"collapsed": true,
+									"shortName": "Loyalty"
+								}
+							]
+						},
+						{
+							"type": "entries",
 							"name": "Ranger",
 							"entries": [
 								{
@@ -225,7 +282,8 @@
 						{
 							"type": "list",
 							"items": [
-								"{@optfeature Fighting Style: Sacrifice|TheUndertomesProjectMoon}"
+								"{@optfeature Fighting Style: Sacrifice|TheUndertomesProjectMoon}",
+								"{@optfeature Relocator Fighting Style|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -240,7 +298,63 @@
 								"{@item Sealed Lævateinn|TheUndertomesProjectMoon}",
 								"{@item First Seal Removed: Lævateinn|TheUndertomesProjectMoon}",
 								"{@item Second Seal Removed: Lævateinn|TheUndertomesProjectMoon}",
-								"{@item Lævateinn|TheUndertomesProjectMoon}"
+								"{@item Lævateinn|TheUndertomesProjectMoon}",
+								"{@item Little Book of Vengeance|TheUndertomesProjectMoon}",
+								"{@item Young Book of Vengeance|TheUndertomesProjectMoon}",
+								"{@item Golden HHair Coupon|TheUndertomesProjectMoon}",
+								"{@item Sunglasses of Surmountable Style|TheUndertomesProjectMoon}",
+								"{@item Chains of Loyalty|TheUndertomesProjectMoon}",
+								"{@item Knuckles of Loyalty|TheUndertomesProjectMoon}",
+								"{@item Premium Brand Top Sib's Hair Gel|TheUndertomesProjectMoon}",
+								"{@item Adhesive of Moral Reinforcement|TheUndertomesProjectMoon}",
+								"{@item Beating Box|TheUndertomesProjectMoon}",
+								"{@item Tattoo Set of Confidence|TheUndertomesProjectMoon}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Feats",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@feat Ink Thicker Than Blood|TheUndertomesProjectMoon}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Backgrounds",
+					"entries": [
+						{
+							"type": "statblock",
+							"prop": "background",
+							"source": "TheUndertomesProjectMoon",
+							"name": "Newfoundling"
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Optional Features",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Tattoos of Grievance Expansion",
+							"entries": [
+								"{@optfeature Tattoo of Passion|TheUndertomesProjectMoon}",
+								"{@optfeature Tattoo of Skull Bursting|TheUndertomesProjectMoon}",
+								"{@optfeature Tattoo of Needle Fractures|TheUndertomesProjectMoon}",
+								"{@optfeature Tattoo of Vicious Burns|TheUndertomesProjectMoon}",
+								"{@optfeature Tattoo of Turtle Skin|TheUndertomesProjectMoon}",
+								"{@optfeature Tattoo of Mutual Discombobulation|TheUndertomesProjectMoon}",
+								"{@optfeature Tattoo of Entrenched Ankles|TheUndertomesProjectMoon}",
+								"{@optfeature Tattoo of Threadmarks|TheUndertomesProjectMoon}",
+								"{@optfeature Tattoo of an Thunderstorm|TheUndertomesProjectMoon}",
+								"{@optfeature Tattoo of Starburst|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -251,21 +365,23 @@
 					"entries": [
 						{
 							"type": "entries",
+							"name": "The Custodian",
+							"entries": [
+								"{@optfeature The Custodian|TheUndertomesProjectMoon}"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Ward",
+							"entries": [
+								"{@optfeature The Ward|TheUndertomesProjectMoon}"
+							]
+						},
+						{
+							"type": "entries",
 							"name": "The Disgrace",
 							"entries": [
-								"{@i \"I'll be damned before I let you ruin this! Not after toiling like a goddamn dog for decades, climbing up the ranks...!\"}",
-								"What have you done? You should already know the answer to that question, after all it has been repeated in your head as often as you can recall. There's something you did, of your fault and folly, that has rendered you a complete and utter disgrace to those around you, a shame that would be best left erased. Yet still, your exhausted, spiteful fingers grip onto your remaining life like a starving animal does to its last meal.",
-								"This {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst} is recommended for characters who have screwed up phenomenally and even more-so as that failure being of their on fault. That single event is something that has defined them more than anything else in the past, even more-so if they were someone important before their horrid fall from grace. These are often seem as bitter and arrogant people.",
-								"Upon activation of your {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst}, you gain the following effects:",
-								{
-									"type": "list",
-									"items": [
-										"Hatred, spite and bitterness overtake your emotions to create a rage-fueled drive towards all your actions, granting you Immunity to becoming {@condition Frightened} or {@condition Charmed}.",
-										"You gain 4 {@condition Poise|TheUndertomesGeneralRules} count at the start of your turns. Whenever you deal damage, you deal an additional amount of damage equal to half your current {@condition Poise|TheUndertomesGeneralRules} count, to a maximum value equal to your proficiency bonus.",
-										"Whenever you would inflict {@condition Burn|TheUndertomesGeneralRules} or {@condition Tremor|TheUndertomesGeneralRules}, you inflict an additional count.",
-										"Additionally, the anxiety to re-instate your greatness has you become even quicker on your feet as it grows. Each time an attack hits you, your AC increases by a +1 bonus modifier. You lose this bonus whenever you are missed with an attack."
-									]
-								}
+								"{@optfeature The Disgrace|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -367,6 +483,19 @@
 				"College of the Screaming Melody|Bard|PHB|Screaming Melody|TheUndertomesProjectMoon|3",
 				"Rampant Melody|Bard|PHB|Screaming Melody|TheUndertomesProjectMoon|6",
 				"Rhythmaniac|Bard|PHB|Screaming Melody|TheUndertomesProjectMoon|14"
+			]
+		},
+		{
+			"name": "Oath of Loyalty",
+			"shortName": "Loyalty",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Oath of Loyalty|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|3",
+				"Aura of the Big Brother|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|7",
+				"Sibling Encouragement|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|15",
+				"Complete and Total Extermination!!|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|20"
 			]
 		},
 		{
@@ -1415,6 +1544,53 @@
 			]
 		},
 		{
+			"name": "Oath of Loyalty",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Loyalty",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i “Damn, passed out already, huh. Now that grudge is going into the Book of Vengeance... I'll avenge you soon.”}",
+				"Paladins that follow the Oath of Loyalty have a duty to their companions, their family. They will raise them to become the best versions of themselves and protect them from all harm. In return, their bonds will become unbreakable, and there will be no battle great enough to bring them down.",
+				"The faction of the Middle, an organization that preaches that all who are a part of it are siblings and must be there for each other, while avenging every misdeed done to its members, is where these Paladins usually hail from. This organization can be flavored however you want in your world, if it even exists, but it must maintain the familial ties that its members follow.",
+				"While a Paladin that follows the Oath of Loyalty will never forgive a mistake committed against them by those who are not family, it is generally considered right to look the other way and forgive your siblings for their errors. After all, family is family, and blood is thicker than water.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Loyalty|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Watch Your Back!|Paladin|PHB|Loyalty|TheUndertomesProjectMoon|3"
+				}
+			]
+		},
+		{
+			"name": "Tenets of Loyalty",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Loyalty",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i “The Middle remembers. It doesn't matter what I did here; the Middle will remember everyone and everything that dared to turn their back on it.”}",
+				"The tenets of a Paladin that assumes the Oath of Loyalty require an unshakable bond between them and their family.",
+				"{@b Never Forget.} If slights were committed against your family, write them down in the book of vengeance. Never allow whoever dared to stand against one of your siblings to see the light of day.",
+				"{@b Love Your Siblings.} Your brothers and sisters are your loyal family and must be treated with respect. Their slights can be forgiven, and they deserve compliments and rewards when successfully achieving their goals and your own.",
+				"{@b Recover What Was Stolen!} This is an optional Tenet. You might have lost something extremely precious to you, like hair coupons to an incredible salon of complete and total lusciousness. You and your family will hunt this thief to the ends of the earth, and you will make sure they pays for their crimes."
+			]
+		},
+		{
 			"name": "Circle of the Iron Maiden",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Druid",
@@ -1476,6 +1652,34 @@
 			"header": 1
 		},
 		{
+			"name": "Oath Spells",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Loyalty",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"You gain oath spells at the paladin levels listed in the Oath of Loyalty Spells table. See the Sacred Oath class feature for how oath spells work.",
+				{
+					"type": "table",
+					"caption": "Oath of Loyalty Spells",
+					"colLabels": ["Paladin Level", "Spells"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						["3rd", "{@spell hellish rebuke}, {@spell jump}"],
+						["5th", "{@spell enhance ability}, {@spell shatter}"],
+						["9th", "{@spell fear}, {@spell haste}"],
+						[
+							"13th",
+							"{@spell dominate beast}, {@spell fire shield}"
+						],
+						["17th", "{@spell flame strike}, {@spell hold monster}"]
+					]
+				}
+			]
+		},
+		{
 			"name": "Giving Form to Shape",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Druid",
@@ -1499,6 +1703,21 @@
 				"Furthermore, while in this Form you may use your Bonus Action to revest your body with {@condition Corpus Ingredients|TheUndertomesProjectMoon}, spending 3 count to grant yourself Resistance to your choice of bludgeoning, piercing or slashing damage until the start of your next turn. Upon reaching 8th level, you may spend 6 count instead to grant yourself Resistance to any damage type for the same duration."
 			],
 			"header": 1
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Loyalty",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i “Well, then why'd you go narkin' us if you knew what was comin', eh?”}",
+				"You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works. If there is at least 1 member of the Middle within 10 feet of you, you may spend an additional use of Channel Divinity before needing a Short or Long Rest.",
+				"{@b Sibling Retaliation.} As a Bonus Action, until the start of your next turn, you can take 1 additional Reaction per Round, even if you have already spent your usual Reaction. When a friendly creature within 10 feet of you is attacked, you can use a Reaction to punch or kick the attacker as long as they are within reach or you have enough movement speed to reach them. You make an Unnarmed Attack against them, and the enemy suffers either 1 count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}, your choice. If the friendly creature that was attacked was from the Middle, you deal an additional dice of unnarmed attack damage and inflict 1 additional count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}.",
+				"{@b Vengeance Tattoo Resonance.} As a Bonus Action, you can use your tattoos to improve your physical capabilities. For 1 minute, your AC increases by 2, and you gain Temporary Hit Points in a number of d8 equal to your Proficiency Bonus. Additionally, you gain advantage on all Strength rolls, and you can jump twice the height and distance you would normally be able to without taking fall damage."
+			]
 		},
 		{
 			"name": "Artist's Zone",
@@ -1527,6 +1746,22 @@
 			"header": 1
 		},
 		{
+			"name": "Watch Your Back!",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Loyalty",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i “C'mon, don't get yourself written up in the Book for a few coins, yeah?”}",
+				"Your body is a lethal weapon, and you don't need swords or lances when you have punches and kicks. Your unarmed attacks are considered Heavy Weapons and now deal {@damage 1d6} + your Strength modifier in damage. This number increases to {@damage 1d8} at level 5, {@damage 1d10} at level 11 and {@damage 1d12} at level 17.",
+				"When you would normally attune with a weapon, instead you etch a tattoo reminiscent of it in your body, being able to use its damage as unarmed attack damage and gaining all the benefits you would normally get from attacking with it. You can only have 1 weapon tattoo from this feature at a time. This is still considered as being attuned to the weapon.",
+				"Additionally, during combat, the enemy that dealt the most damage to you or your allies this round gains a {@condition Vengeance Mark|TheUndertomesProjectMoon}. This lasts until the end of the next round, or until you fall unconscious. If no enemy has dealt damage this turn, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} is given to the enemy that last attempted to attack you or an allied creature. If two enemies dealt the same amount of highest damage, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} goes to the latest enemy that dealt this damage. Outside of combat, whenever someone rolls an ability check to hurt or damage your character or their reputation, they will also gain a point of {@condition Vengeance Mark|TheUndertomesProjectMoon} until your next short rest. If combat is initiated right after an instance of this by rolling an initiative check, then the enemy with the highest initiative roll gains {@condition Vengeance Mark|TheUndertomesProjectMoon} until the end of the first round of combat.",
+				"Whenever you hit an enemy with counts of {@condition Vengeance Mark|TheUndertomesProjectMoon}, they suffer 1 count of {@condition Bleed|TheUndertomesGeneralRules} and {@condition Burn|TheUndertomesGeneralRules}."
+			]
+		},
+		{
 			"name": "Rattling Mind",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Druid",
@@ -1539,6 +1774,58 @@
 				"Art permeates your breathing like oxygen invades the lung. You gain Proficiency in one Charisma skill of your choice and one Artisan's Tools of your choice. You may use Wisdom in place of Charisma when attempting Skill Checks."
 			],
 			"header": 1
+		},
+		{
+			"name": "Aura of the Big Brother",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Loyalty",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 7,
+			"entries": [
+				"{@i “... The one that's gonna exterminate the whole bloody lot o' you bastards!”}",
+				"You emit a powerful and intimidating aura out to a range of 10 feet. If all friendly creatures within the aura have more than half of their hit points, they gain a +2 to their Charisma-based rolls.",
+				"When a friendly creature within the aura has less than half of their Hit Points, other creatures can choose to become Vengeful at the start of their turn. A Vengeful creature takes a penalty of -3 to their AC and whenever they're hit they suffer 1 count of {@condition Immobilized|TheUndertomesGeneralRules} but always doubles their bludgeoning, slashing and piercing damage dice against a creature that attacked them or a friendly creature they know within the last turn. Additionally, if these creatures would suffer counts of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}, they suffer double that amount on the first time they gain one of these Conditions before the start of their next turn.",
+				"When you reach 18th level in this class, the range of the aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Sibling Encouragement",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Loyalty",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 15,
+			"entries": [
+				"{@i “Oh? Well, look at that. Not bad. Here, you earned a 'good-job' kitty sticker for your Book.”}",
+				"You carry with you several gifts and stickers to celebrate when one of your loyal siblings and companions perform a feat you deem worthy enough. As a Bonus Action, you gift them with a kitty sticker or a small trinket, inspiring joy in their heart and a willingness to make you even prouder, gaining a bonus of +1 to their AC, to a maximum of 2, and {@dice 2d6} Temporary Hit Points, as well as advantage on their first attack roll each turn for the duration. The happiness from these stickers and trinkets last for 1 minute once received.",
+				"You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses on a Long Rest."
+			]
+		},
+		{
+			"name": "Complete and Total Extermination!!",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Loyalty",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 20,
+			"entries": [
+				"{@i “Scurry off and lick your wounds, 'cuz by the time I return, there'll be enough pain to go around for the whole gang.”}",
+				"For a while, you are able to show your siblings the true apex of an elder brother. As a bonus action, you gain the following benefits for 1 minute:",
+				{
+					"type": "list",
+					"items": [
+						"At the start of your turn, you choose a creature within 30 feet of you to gain a {@condition Vengeance Mark|TheUndertomesProjectMoon}.",
+						"A creature with {@condition Vengeance Mark|TheUndertomesProjectMoon} has Vulnerability to Bludgeoning damage for the first attack they receive each Round.",
+						"Once per turn when you hit a creature, you can force them to roll a Constitution saving throw. On a failed save, they take an additional dice of damage equal to your unarmed attack and are sent flying back in a 30-foot line and fall Prone. Any creature within that line takes {@damage 1d8} Bludgeoning damage and must succeed on a Dexterity saving throw or fall Prone. If there is a non-magical structure in their way, the structure is destroyed and they take an additional {@damage 1d8} dice of bludgeoning damage."
+					]
+				},
+				"Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.",
+				"{@b MY HAIR COUPOOOOOOOOOOONS!!!!} Once per Long Rest, you can use an Action to Jump up to 50 feet in the air, then fall in a space within range. You do not take fall famage, and all terrain within 30 feet of your landing becomes Difficult Terrain, except for you and other Middle-aligned creatures. If the space is occupied, the creature must perform a Constitution saving throw. On a failed save, you slam their head against the ground, dealing {@damage 8d12} bludgeoning damage and Paralyzing them. On a successful save, they take only half that damage and suffer no additional effects. A creature Paralyzed this way rerolls this saving throw at the end of each of their turns, ending the effect on a success. If the creature had 50 hit points or fewer, regardless of if they failed or succeeded in the saving throw, they immediately explode from the impact and die."
+			]
 		},
 		{
 			"name": "My Precious Artwork",
@@ -1795,6 +2082,203 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "The Custodian",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["CB"],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"cha": 18
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@i “Listen. We live in a binary world. The world that is luscious... and the world that is bristly. Are you aware of their differences?”}",
+				"Style, force and loyalty are words that radiate through your gait wherever you walk, exhaling a powerful aura that booms through the hearts of others, either shaking them to the core or having them fall under the protection of your beat.",
+				"This {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst} is recommended for characters who are great leaders and bolster both courage and imperativeness toward their fellows, taking care of any under them like a grand family that extends far beyond the bonds of blood. These are driven by and for their groups and factions as the first thing in their world, going to great lengths just to make sure they are happy and safe, also being reasonably vengeful at whoever wrongs them and their kin.",
+				"Upon activation of your {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst}, the following apply:",
+				{
+					"type": "list",
+					"items": [
+						"Describe how your presence extends like a bursting melody that has others quake in their boots. When first triggering this Burst, all hostile creatures that can see or hear you within a 360-ft. radius must pass a Charisma saving throw or become {@condition Frightened} of you for the next minute, also being able to retry this saving throw to end the Condition early at the end of their subsequent turns. While Frightened, a creature under this Condition suffers 2 {@condition Immobilized|TheUndertomesGeneralRules} count at the start of their turns, losing one count after each ability check, saving throw or attack roll.",
+						"You feel a surge of power at your fingertips - Confidence made manifest in pure, raw bravado. You gain unarmed weapons that you are proficient with in the shape of your fists and legs for the duration. These have the Finesse and Mesmerizing properties, dealing {@damage 1d8} bludgeoning damage on a hit. If you already had an Unarmed Strike option, you instead deal an additional {@damage 1d6} bludgeoning damage on your Unarmed Strike hits.",
+						"Your feet are stepping on air when it comes to being near those you care about. As a Bonus Action during your turns you may instantly move upwards to 30-ft. in a single leap, having to end your movement within 5-ft. of a friendly creature within that reach. If you are to occupy the same space as a hostile creature you may attempt a Shove attempt against them as part of the same Bonus Action, pushing them 5-ft. toward any direction and taking their space on a success or being forced to land within 5-ft. of that creature on a failure.",
+						"Whenever you hit a creature that has {@condition Vengeance Mark|TheUndertomesProjectMoon} with an Unarmed Strike, you deal an additional {@damage 1d6} bludgeoning damage against them and may choose to instantly push them back 5-ft."
+					]
+				}
+			]
+		},
+		{
+			"name": "The Ward",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["CB"],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 15
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@i “Anyhoo, has anyone here actually read 'The Cloudburst Blade?' If ya did, well... if I may have but 3—no, 4 hours of your time, good sir...”}",
+				"To be a ward is to be a waif in your life, you might still be under the graces of your master - your captor - your guardian, whatever they may be to you, and you may still somewhat believe in them but your heart, so carefully forged, has already seen through cracks that you might not be so keen to accept.",
+				"This {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst} is recommended for characters that are living a dichotomy of being attached to a reality that they hold immense fervour toward, but also having that reality being no more than a farce that could break under their feet at any moment. They are those who possess immense knowledge of specific topics but may seem sheltered to the outside world or have trouble accepting certain truths no matter how hard they stare them in the eye.",
+				"Upon activation of your {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst}, you gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"The sheer energy pent up in you bursts out like a fire, granting you an additional 10-ft. of movement speed and having all your weapon or spell attacks inflict an additional 2 {@condition Burn|TheUndertomesGeneralRules} count.",
+						"Your fervour is a dual-edged blade, both blinding you to what would leave most quaking but also obfuscating certain alluring dangers. You are Immune to being Frightened but suffer Disadvantage on saving throws against being Charmed.",
+						"You gain proficiency in the History skill, or Expertise if you were already proficient. You and your DM may discuss a topic of particular interest to your character when first taking this Core Burst, then gaining Advantage on History skill checks related to this interest after it is agreed by you and the DM. Additionally, you gain one of the following depending on your current relation to your guardian or symbol of affection:",
+						"{@b House of Glass Dreams.} If your relationship is of admiration or an otherwise positive outlook to this false idol, whenever you perform a Critical Hit or have success in a skill check or saving throw within sight of your idol, they may spend their Reaction to Praise you. When they do so, you may add a {@dice 1d8} bonus modifier to one roll of your choice until the end of your next turn and may only do so before you roll.",
+						"{@b House of Scattered Hopes.} If your relationship has been broken or is otherwise negative to this false idol, you suffer a {@dice 1d6} negative modifier to all rolls while you can see them within 160-ft. of you as a powerful heartache easily overtakes you. However, after this pain your broken hopes can still be picked up and become stronger through your turmoil. Whenever you have a Critical Success or have success in a skill check or saving throw you gain Confidence. You may spend one Confidence after you roll any of the aforementioned rolls to add an additional {@dice 1d6} to the final result, and may hold up to three Confidence count, which is only reset after a short or long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Tattoo of Passion",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["MT"],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"Whenever you hit a creature with an Unarmed Strike, you inflict 1 {@condition Burn|TheUndertomesGeneralRules} count. Additionally, you gain advantage on Performance checks whenever performing with ( or to impress ) other friendly creatures or against a hostile creature."
+			]
+		},
+		{
+			"name": "Tattoo of Skull Bursting",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["MT"],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"Whenever you hit a Grappled creature you may choose to suplex them and cause them to become Prone. When you do so, for the remainder of the duration this creature remains Prone you may choose to re-roll any damage die against them, taking the greater result. You may do so once per die."
+			]
+		},
+		{
+			"name": "Tattoo of Needle Fractures",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["MT"],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"You can sink the ink in this tattoo to create binding points in your muscles that take out the force of whatever hits you as a Reaction you may take whenever you suffer damage. When you do so, reduce the damage taken by your choice between your current amount of tattoos or proficiency bonus. You cannot reduce force damage this way and may use this tattoo an amount of times equal to your proficiency bonus, regaining spent uses after a short or long rest."
+			]
+		},
+		{
+			"name": "Tattoo of Vicious Burns",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["MT"],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"You learn the {@spell vicious mockery} spell. Whenever you causa damage to another creature using it, you may choose to fire damage instead of psychic and one {@condition Burn|TheUndertomesGeneralRules} for each damage die rolled. If you are not a spellcaster your DC for this spell's saving throw is 10 + your Charisma modifier + your proficiency bonus + any bonuses gained from being Attuned to a magical weapon."
+			]
+		},
+		{
+			"name": "Tattoo of Turtle Skin",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["MT"],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"You may spend your Bonus Action to have the ink from this tattoo spread out and flow over your skin, creating a protective layer over it. As long as you aren't wearing armor or are wearing a Tattoo Set armor, you gain a bonus modifier to your AC equal to half your current magical Tattoo count until the start of your next turn. For each attack performed against you in that duration this modifier is reduced by one. You may use this tattoo an amount of times equal to half your proficiency bonus, regaining spent uses after a long rest."
+			]
+		},
+		{
+			"name": "Tattoo of Mutual Discombobulation",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["MT"],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"Once per turn you may choose to change one of your attacks as part of the Attack Action with a Headbutt. To do so you perform a melee Unarmed Strike that you are proficient in against a creature within 5-ft. of you. On a hit, you deal {@damage 2d10} bludgeoning damage and inflict half your proficiency bonus' worth of {@condition Immobilized|TheUndertomesGeneralRules} count, then suffering half the damage dealt yourself and the same amount of the Condition's count. When you gain it this way, you only lose this count at the end of your next turn."
+			]
+		},
+		{
+			"name": "Tattoo of Entrenched Ankles",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["MT"],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"You gain 10-ft. move speed. Whenever you attempt to climb a surface, you can spend up to 10-ft. of walking speed at a time to successfully climb the same amount of feet spent by kicking and locking your feet into the surface, remaining there without falling at the end of your turns."
+			]
+		},
+		{
+			"name": "Tattoo of Threadmarks",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["MT"],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"As an Action during your turn you may brace yourself for a violent sprint. When you do so, you gain 30-ft. of walking speed until the end of your turn and any damage dealt to you through Opportunity Attacks is halved. Whenever you move through another creature's space they must pass a Dexterity saving throw or be caught in your wild trample, being knocked Prone on a failure and suffering an amount of d10 bludgeoning damage equal to your proficiency bonus, or half that value on a success. The DC for this is 8 + your Strength modifier + your proficiency bonus. When you do so you may choose to Grapple up to your Strength modifier's worth of creatures instead of Knocking them Prone, then knocking them Prone in a pile onto of any unoccupied space within 5-ft. of you at the end of your turn. You may use this ability an amount of times equal to half your proficiency bonus, regaining spent uses after a long rest."
+			]
+		},
+		{
+			"name": "Tattoo of an Thunderstorm",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["MT"],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"Whenever you would be forced to attempt a Dexterity saving throw to resist the effects of a spell or attack that affects a radius, line or sphere that has a physical form ( Such as a Fireball, Lightning Bolt, Ballista Bolt or Cannonball ) and pass, you may spend your Reaction to suffer no damage if you would take half and punch through the attack, redirecting it to instead hit another point of your choice within 60-ft. of you. When you do so, all creatures within this new area must attempt the same saving throw against the original DC. You may use this ability an amount of times equal to half your proficiency bonus, regaining spent uses after a long rest."
+			]
+		},
+		{
+			"name": "Tattoo of Starburst",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["MT"],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"Whenever you deal a Critical Hit against a target creature, you deal an additional 2 damage die equal to the attack's current damage. Additionally, you inflict an amount of {@condition Bleed|TheUndertomesGeneralRules} and {@condition Immobilized|TheUndertomesGeneralRules} count against the hit creature equal to the amount of damage die rolled and when you perform this your fists burst into bright-light that covers an 30-ft. area around you. All hostile creatures within that reach must then pass a Constitution saving throw or be Blinded until the end of their next turn."
+			]
+		},
+		{
+			"name": "Relocator Fighting Style",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["FS:F"],
+			"entries": [
+				"Wielding certain weapons that are a menace from afar has become second nature to you, and you have learnt how to better grip and shove all on your way to shape the battlefield to your liking. Whenever you hit with a weapon that has the Reach property, you may move the target up to 5-ft. closer to you if they were within 10-ft. of you or push them away if they were within 5-ft. of you."
+			]
 		}
 	],
 	"item": [
@@ -2014,6 +2498,463 @@
 					"name": "Unsealed Phenomenon: Lævateinn",
 					"entries": [
 						"Upon reaching level 15 in the Vengeance Fighter class or being a worthy wielder of the sword, this Greatsword becomes able to turn into {@item Lævateinn|TheUndertomesProjectMoon}. To do so, upon hitting a creature with an attack, you may choose to unseal the sword and release the casing on top of them. They must make a Dexterity saving throw. On a failed save, they take {@damage 4d8} bludgeoning damage and become {@condition Frightened} until the start of your next turn. On a successful save, they only take half the damage and suffer no additional effects."
+					]
+				}
+			]
+		},
+		{
+			"name": "Little Book of Vengeance",
+			"wondrous": true,
+			"rarity": "uncommon",
+			"entries": [
+				"Prerequisites: Be part of the Middle through a Subclass, Background or Feat.",
+				"This Book of Vengeance is awarded to all Little Brothers and Sisters of the Middle, and is connected to all other Books of Vengeance of the organization. Anything that is written in the book is shared among all Books of Vengeance, and no matter its size, it manages to magically contain every single page of vengeance. You can read its contents as a free action, and your DM will let you know whether there is any mission currently available for you to undertake and exact vengeance for the Middle.",
+				"Additionally, you can write down someone's name on the Book of Vengeance, and any other person that carries a Book of Vengeance will be able to read it and hunt that creature to earn the rewards below.",
+				"When you complete a quest from the Little Book of Vengeance, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Until the next long rest, with every attack that you hit, you deal {@damage 1d4} extra damage of the same type as the attack.",
+						"Until the next long rest, you gain advantage on an ability check of your choice."
+					]
+				}
+			],
+			"source": "TheUndertomesProjectMoon"
+		},
+		{
+			"name": "Young Book of Vengeance",
+			"wondrous": true,
+			"rarity": "rare",
+			"entries": [
+				"Prerequisites: Be part of the Middle through a Subclass, Background or Feat.",
+				"This Book of Vengeance is awarded to all Young Brothers and Sisters of the Middle, and is connected to all other Books of Vengeance of the organization. Anything that is written in the book is shared among all Books of Vengeance, and no matter its size, it manages to magically contain every single page of vengeance. You can read its contents as a free action, and your DM will let you know whether there is any mission currently available for you to undertake and exact vengeance for the Middle.",
+				"Additionally, you can write down someone's name on the Book of Vengeance, and any other person that carries a Book of Vengeance will be able to read it and hunt that creature to earn the rewards below.",
+				"When you complete a quest from the Young Book of Vengeance, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Until the next long rest, with every attack that you hit, you deal {@damage 1d6} extra damage of the same type as the attack.",
+						"Until the next long rest, you gain advantage on two ability checks of your choice.",
+						"You gain a single point of Inspiration that can be used until your next Long Rest."
+					]
+				},
+				"{@note Little siblings usually take easier quests, suited for players from levels 1 - 5. Young siblings take quests from levels 6 - 10, Big siblings take levels 11 - 17 and Great siblings take quests from levels 18 and above.}"
+			],
+			"source": "TheUndertomesProjectMoon"
+		},
+		{
+			"name": "Golden HHair Coupon",
+			"wondrous": true,
+			"rarity": "very rare",
+			"value": 5000000,
+			"weight": 0,
+			"entries": [
+				"This is a golden ticket to utmost lusciousness, separating those with bristly hair from gods in humanoid form. This ticket is glistening gold, resembling the quality of shininess provided to follicles upon its use and has ancient engravings to allow use for any reputable and/or irreputable hair salon, filling the stylist with vigour and granting them the capability to cultivate the mane of dreams even if they wouldn't be able to cut a shrub with their fingers.",
+				"This item may be given to any hair stylist over the course of downtime or a long-rest for you to receive a luscious hair cut, consuming the item in the process. Any stylist must pass a DC 30 Wisdom saving throw or be compelled to give you the hair cut for free, as per the ticket demands. This process takes approximately 30 minutes, and afterward your Charisma score increases by 4, to a maximum of 24. Additionally, you permanently gain Proficiency in one Charisma skill of your choice and Expertise in another Charisma skill of your choice.",
+				"If you have not the access to a hair stylist at the given moment, you may read upon the faint engraving at this hair coupon's title, which at first seemed like a misprint doubling the “H” is actually fine print for “Haunted”, indicating the capability of invoking a stylish poltergeist that will give you the hair cut instead of a living being in exchange for the ticket when it is folded neatly and then cut in two, as part of the phantom's ghastly ritual of utter lavishness.",
+				"{@b Cursed: Smells Like Chocolate.} This item is a magnet to be stolen by lowly street dogs, as such any other creature has Advantage on Stealth and Sleight of Hands to steal this item. When stolen, the thief permanently gains {@condition Vengeance Mark|TheUndertomesProjectMoon}, even if they die and are revived. You deal an additional {@damage 1d10} bludgeoning damage on Unarmed Strikes against that creature."
+			],
+			"source": "TheUndertomesProjectMoon"
+		},
+		{
+			"name": "Sunglasses of Surmountable Style",
+			"wondrous": true,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"value": 1526000,
+			"weight": 0.08,
+			"entries": [
+				"A pair of golden trimmed and purple lensed sunglasses that radiates stylishness, being one of the few that most people can and should accept to be worn even during night. It is a symbol of class and power within certain families.",
+				"{@b Advanced Lusciousness} Your Charisma score becomes 23 while Attuned to this item as long as it was lower than this value. Additionally, if you weren't proficient in the Persuasion or Intimidation skills you still add half your proficiency bonus to skill checks of either.",
+				"{@b Curricular in Castigation.} Let your heart beat and be beaten in the name of the family. At the start of your turn you may spend a Bonus Action to adjust your sunglasses and let them shine with a challenge to all - kill you or die trying. You gain Vulnerability to all damage types until the start of your next turn. At the start of your next turn and until its end any damage you deal to others has them be considered Vulnerable to that damage type. If you or a creature made Vulnerable this way would have Resistance to a damage type, they only take an amount of damage equal to the normal damage they would take plus half that same damage. If either were Immune to a damage type, they suffer that damage as if they were not Immune instead.",
+				"{@b Quality Eye Protection.} You gain Advantage on rolls against effects that would cause you to be blinded. These glasses are just that good."
+			],
+			"source": "TheUndertomesProjectMoon"
+		},
+		{
+			"name": "Chains of Loyalty",
+			"type": "M",
+			"rarity": "common",
+			"value": 7500,
+			"weight": 4,
+			"weaponCategory": "martial",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"property": ["F", "R", "MES|TheUndertomesGeneralRules"],
+			"entries": [
+				"A set of heavy, ostentatious golden chains that are usually rolled up around the wrists and forearms as a symbol of loyalty and the weight of family. To be used they are gripped in the hand and swung like a whip.",
+				"If you have any levels in a Middle subclass or the Sibling Background you are considered proficient in this weapon even if you normally wouldn't be."
+			],
+			"source": "TheUndertomesProjectMoon"
+		},
+		{
+			"name": "Knuckles of Loyalty",
+			"type": "M",
+			"rarity": "common",
+			"value": 8500,
+			"weight": 4,
+			"weaponCategory": "martial",
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"property": [
+				"F",
+				"MES|TheUndertomesGeneralRules",
+				"UNR|TheUndertomesProjectMoon"
+			],
+			"entries": [
+				"A set of heavy golden knuckledusters, housing enough weight to break a face and still retain their luscious shine.",
+				"If you have any levels in a Middle subclass or the Sibling Background you are considered proficient in this weapon even if you normally wouldn't be."
+			],
+			"source": "TheUndertomesProjectMoon"
+		},
+		{
+			"name": "Premium Brand Top Sib's Hair Gel",
+			"type": "R",
+			"rarity": "uncommon",
+			"value": 33300,
+			"weight": 2,
+			"weaponCategory": "simple",
+			"dmg1": "3d4",
+			"dmgType": "C",
+			"range": "30/60",
+			"property": [
+				"T",
+				"LOB|TheUndertomesGeneralRules",
+				"MES|TheUndertomesGeneralRules",
+				"SET|TheUndertomesGeneralRules",
+				"SPL|TheUndertomesGeneralRules"
+			],
+			"entries": [
+				"A premium brand of hair gel that leaves you cool to the touch.",
+				"Whenever you hit a friendly creature using this item, you may choose to instead of chucking the bottle full force at their head, having it be a glorious splatter of gel onto their hair. When you do so, you deal no damage and the creature gain a +1 to their Charisma modifier until the end of their next turn."
+			],
+			"source": "TheUndertomesProjectMoon"
+		},
+		{
+			"name": "Adhesive of Moral Reinforcement",
+			"wondrous": true,
+			"rarity": "uncommon",
+			"value": 16500,
+			"weight": 0,
+			"entries": [
+				"A small sheet of powerfully adorable stickers that can be glued to others to fill them with great happiness.",
+				"This sheet holds 5 Stickers that may be spent in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"You may spend a single Sticker to glue it to another creature within 5-ft. of you as a Bonus Action, giving them positive reinforcement and {@dice 1d6} temporary Hit Points. While these Hit Points remain they may once per turn add an additional {@dice 1d4} bonus modifier to an ability check, attack roll or saving throw before or after rolling the die, but before the DM determines a result.",
+						"You may spend two Stickers at once as an Action to attempt to make another creature within 5-ft. of you find some happiness in their life, instantly causing them to be affected by the {@spell calm emotions} spell with a DC of 10 + your proficiency bonus + your Charisma modifier. Irrelevant to this effect's result, the creature feels a little less sad from being recognized in some way.",
+						"You may spend three Stickers at once as an Action to overwhelm another creature within 5-ft. of you with resolve, granting them the effects of the {@spell heroism} spell for the next minute. The temporary Hit Points gained through this are instead {@dice 3d4} temporary Hit Points plus your Charisma modifier."
+					]
+				},
+				"After its effects, any Stickers glued remain through fire and rain, clinging to belongings like memories. Memories are important, after all."
+			],
+			"source": "TheUndertomesProjectMoon"
+		},
+		{
+			"name": "Beating Box",
+			"type": "M",
+			"rarity": "uncommon",
+			"value": 12000,
+			"weight": 15,
+			"weaponCategory": "martial",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"property": ["F", "R", "MES|TheUndertomesGeneralRules"],
+			"entries": [
+				"An overwhelmingly sturdy boombox that has been attached to a set of golden chains. Its beats are solid, ground-breaking and positively skull-crushing.",
+				"Bards are considered Proficient with this weapon.",
+				"While used by a Bard, this weapon counts as a musical instrument that may be used for Spellcasting and Performance checks. Additionally under the same condition this weapon gains the Splash (1d6) property and may be used to deal thunder damage instead of bludgeoning, as a Bard best knows how to lay a beatdown with sound alone."
+			],
+			"source": "TheUndertomesProjectMoon"
+		},
+		{
+			"name": "Tattoo Set of Confidence",
+			"type": "LA",
+			"rarity": "uncommon",
+			"value": 26000,
+			"weight": 0,
+			"ac": 12,
+			"entries": [
+				"A set of intricate tattoos that make use of their wearer's confidence to harden muscles to protect the flesh from any damage the user would suffer. These are usually worn with leather or pelt-based clothing onto to further bolster their wearer's confidence in themselves.",
+				"This armor is a set of tattoos that glow whenever active, as such it cannot be doffed without specialized means yet may be covered by other clothing or even armor. While wearing armor over a Tattoo Set, you must choose to benefit from the effects of only one of the armors.",
+				"Due to the glow of these tattoos you have Disadvantage on Stealth checks unless you are proficient in the Deception skill or have expertise in the Stealth skill, as you are more knowledgeable on how to mask such unnatural lights as a common part of the scenery or obfuscate that glow altogether."
+			],
+			"source": "TheUndertomesProjectMoon"
+		}
+	],
+	"subclassFluff": [
+		{
+			"name": "Oath of Loyalty",
+			"shortName": "Loyalty",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"entries": [
+				"{@i “Damn, passed out already, huh. Now that grudge is going into the Book of Vengeance... I'll avenge you soon.”}",
+				"Paladins that follow the Oath of Loyalty have a duty to their companions, their family. They will raise them to become the best versions of themselves and protect them from all harm. In return, their bonds will become unbreakable, and there will be no battle great enough to bring them down.",
+				"The faction of the Middle, an organization that preaches that all who are a part of it are siblings and must be there for each other, while avenging every misdeed done to its members, is where these Paladins usually hail from. This organization can be flavored however you want in your world, if it even exists, but it must maintain the familial ties that its members follow.",
+				"While a Paladin that follows the Oath of Loyalty will never forgive a mistake committed against them by those who are not family, it is generally considered right to look the other way and forgive your siblings for their errors. After all, family is family, and blood is thicker than water."
+			]
+		}
+	],
+	"itemProperty": [
+		{
+			"name": "Unarmed",
+			"abbreviation": "UNR",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A weapon with the Unarmed property is usually light enough to be worn over the hands as more of an accessory than a tool. While wielding those, you count any attacks done with them as unarmed weapon attacks."
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Ink Thicker Than Blood",
+			"source": "TheUndertomesProjectMoon",
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"cha": 12
+						}
+					],
+					"other": "You aren't of a Middle Subclass"
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": ["str", "cha"],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You've found yourself a place in a greater family and it shows in your skin with pride and pomp. When you take this Feature, consider how your character was first introduced to the Middle, how they came to join and how they look up to their older Siblings. Nevertheless, you gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"Your choice of your Strength or Charisma scores increase by 1, to a maximum value of 20.",
+						"You instantly gain a 3rd level Tattoo of the Middle, as per the Path of Grievance's rules. You gain an additional one upon reaching 6th level, another at 10th and a final one at 14th level.",
+						"During combat, the enemy that dealt the most damage to you or your allies this round gains a {@condition Vengeance Mark|TheUndertomesProjectMoon}. This lasts until the end of the next round, or until you fall unconscious. If no enemy has dealt damage this turn, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} is given to the enemy that last attempted to attack you or an allied creature. This applies after any other Middle Subclass characters application, going toward the creature that dealt the second most damage if applicable. Outside of combat, whenever someone rolls an ability check to hurt or damage your character or their reputation, they will also gain a point of {@condition Vengeance Mark|TheUndertomesProjectMoon} until your next short rest. If combat is initiated right after an instance of this by rolling an initiative check, then the enemy with the highest initiative roll gains {@condition Vengeance Mark|TheUndertomesProjectMoon} until the end of the first round of combat.",
+						"Whenever you hit an enemy with a stack of {@condition Vengeance Mark|TheUndertomesProjectMoon}, they gain 1 stack of {@condition Bleed|TheUndertomesGeneralRules}."
+					]
+				},
+				"When first you take this Feature you gain a {@item Little Book of Vengeance|TheUndertomesProjectMoon} from another Sibling that acts as a courier for you."
+			]
+		}
+	],
+	"background": [
+		{
+			"name": "Newfoundling",
+			"source": "TheUndertomesProjectMoon",
+			"skillProficiencies": [
+				{
+					"intimidation": true,
+					"history": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyGamingSet": 1,
+					"anyMusicalInstrument": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"A set of fancy clothes bearing purple all over them",
+						"a Family-gifted boombox",
+						"at least two sets of golden chains",
+						"a wallet containing 10 gp and another 5 GP's worth of beer and other party drinks"
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Feature: Middle Finger to the World",
+					"entries": [
+						"Your family has gotten your back no matter what happens, but that can hardly matter when you are adventuring nigh and high with other folk, so they provide you the best they can when you're away from them. You have a 25% discount on any magical tattoos you'd purchase for yourself or trusted creatures.",
+						"Additionally, whenever you are within Middle controlled territory you have advantage on Intimidation rolls and other siblings will easily provide food and shelter for you and any friends you bring along.",
+						"Alternatively, with your DM's permission ( or if you are playing with '24 Backgrounds in general ) gain the {@feat Ink Thicker Than Blood|TheUndertomesProjectMoon} Feat."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"The vast majority of those adopted into the Middle are colourful figures who are a living party unto themselves, with many was to show that. Despite the seeming union of the faction as a whole, there are those who are around for power rather than just the ones who are looking for true loyalty and camaraderie. Nevertheless, a great knowledge for their extensive grudges is a must for any of them.",
+						"The Middle is defined by some form of relation to the rest of the gang, be that a quirk toward them or a way you particularly enjoy being part of the whole thing.",
+						{
+							"type": "table",
+							"caption": "Familial Quirk",
+							"colLabels": ["d8", "Familial Quirk"],
+							"colStyles": ["col-2 text-center", "col-10"],
+							"rows": [
+								[
+									"1",
+									"I spend an embarrassingly massive amount of gold on cute stickers to award to others."
+								],
+								[
+									"2",
+									"I look up to others easily and feel afraid of disappointing them."
+								],
+								[
+									"3",
+									"Blasting loud music is the same as breathing to you, screw what others say."
+								],
+								[
+									"4",
+									"I write every. Single. Little. Slight. In the book. No exceptions."
+								],
+								[
+									"5",
+									"I spend excessive time every single day taking care of your luscious mane of hair."
+								],
+								[
+									"6",
+									"I tend to butt heads with your siblings often in good humour, making sure everyone has enough strength to carry their chains."
+								],
+								[
+									"7",
+									"I are a collector of trivia and information about each persons tattoos, usually recognizing people by their ink before their faces."
+								],
+								[
+									"8",
+									"I always look cool to your younger siblings and you don't know why. After all, its simply your job to take care of them."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Personality Trait",
+							"colLabels": ["d6", "Personality Trait"],
+							"colStyles": ["col-2 text-center", "col-10"],
+							"rows": [
+								[
+									"1",
+									"I meet any slight with immediate retribution in the form of violence."
+								],
+								[
+									"2",
+									"I tend to give others a second chance, even if it is after giving them a well-deserved punch."
+								],
+								[
+									"3",
+									"If my neck-line isn't invisible from the sheer weight of my chains, I am not stylish enough."
+								],
+								[
+									"4",
+									"I can't calm down without a good beat in the background."
+								],
+								[
+									"5",
+									"I live my life by the book, both in vengeance and in my lifestyle, preferring to have my routines be sacred and unchanging."
+								],
+								[
+									"6",
+									"I can't deal with technicalities and hedge-cases that are complex, so I just always default to the worst case scenario on the basis of a single coin flip."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Ideal",
+							"colLabels": ["d6", "Ideal"],
+							"colStyles": ["col-2 text-center", "col-10"],
+							"rows": [
+								[
+									"1",
+									"The reason I joined the family is freedom, I want to do whatever the hell I want whenever I want! (Chaotic)"
+								],
+								[
+									"2",
+									"Loyalty to your fellow is the most important thing in life. Breaking away from that is unforgivable. (Lawful)"
+								],
+								[
+									"3",
+									"I enjoy loud music. Environments with clear regulation are also favorable. (Neutral)"
+								],
+								[
+									"4",
+									"This is all about having a good time for me, what's truly right is making sure our little siblings are fine while the oldest to try and deal fairly with whatever comes our way. (Good)"
+								],
+								[
+									"5",
+									"Taking care of those close to you is important. (Any)"
+								],
+								[
+									"6",
+									"So what if I want to take some things for myself first? Family is about making sacrifices, after all. (Evil)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Bond",
+							"colLabels": ["d6", "Bond"],
+							"colStyles": ["col-2 text-center", "col-10"],
+							"rows": [
+								[
+									"1",
+									"Some asshole stole something precious from me. I want it back."
+								],
+								[
+									"2",
+									"At first I was nothing more than just related to someone from the Middle, but after certain events that took them away from me I decided to enter in their honour."
+								],
+								["3", "I want to become a Great Sibling."],
+								[
+									"4",
+									"Some freakish calamity overtook the branch of the Middle that I am a part of, and I'm still picking myself up from the floor after that."
+								],
+								[
+									"5",
+									"Out of all my siblings there are a handful some that I consider the closest to me."
+								],
+								[
+									"6",
+									"My Book of Vengeance is to become the most well-written and well-executed Artifact in the history of the Middle."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Flaw",
+							"colLabels": ["d6", "Flaw"],
+							"colStyles": ["col-2 text-center", "col-10"],
+							"rows": [
+								[
+									"1",
+									"In the end I see that the Middle really is just a bunch of nobodies clinging to one another. They're as expendable to me like any other joe, the only difference is that they're loyal."
+								],
+								[
+									"2",
+									"I lose my cool way too quickly at the slightest transgression."
+								],
+								[
+									"3",
+									"I can't find it in myself to forgive anyone who has wronged me, and much less so whenever someone crossed one of my loved ones."
+								],
+								[
+									"4",
+									"I believe that rules exist for a reason, and must not be broken in any circumstance."
+								],
+								[
+									"5",
+									"Doubts about joining have began clinging to me after joining and I don't know what to do."
+								],
+								[
+									"6",
+									"I expect loyalty to be repaid with absolute obedience."
+								]
+							]
+						}
 					]
 				}
 			]
