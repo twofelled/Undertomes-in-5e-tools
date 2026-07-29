@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "0.7.1",
+				"version": "0.7.2",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -21,7 +21,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1785289515
+		"dateLastModified": 1785289587
 	},
 	"book": [
 		{
