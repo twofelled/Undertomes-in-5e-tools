@@ -5,24 +5,22 @@
 				"json": "TheUndertomesGeneralRules",
 				"abbreviation": "TUGR",
 				"full": "The Undertomes General Rules Compendium",
-				"version": "1.0.0",
-				"authors": [
-					"The Undertomes"
-				],
-				"convertedBy": [
-					"Twofell",
-					"Akari"
-				],
+				"version": "1.0.1",
+				"authors": ["The Undertomes"],
+				"convertedBy": ["Twofell", "Akari"],
 				"dateReleased": "2026-07-27",
 				"url": "https://theundertomes.crd.co/#",
 				"color": "910060",
 				"colorNight": "cf0057"
 			}
 		],
+		"optionalFeatureTypes": {
+			"WP": "Wondrous Pets"
+		},
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785187088,
-		"dateLastModified": 1785188641
+		"dateLastModified": 1785364108
 	},
 	"book": [
 		{
@@ -88,10 +86,7 @@
 						"type": "chapter",
 						"identifier": 3
 					},
-					"headers": [
-						"Hit Points",
-						"Reaching 0 Hit Points"
-					]
+					"headers": ["Hit Points", "Reaching 0 Hit Points"]
 				},
 				{
 					"name": "Deployable Tools",
@@ -395,14 +390,8 @@
 						{
 							"type": "table",
 							"caption": "Hit Points",
-							"colLabels": [
-								"Hit Die Pool",
-								"Rarity"
-							],
-							"colStyles": [
-								"col-8",
-								"col-4"
-							],
+							"colLabels": ["Hit Die Pool", "Rarity"],
+							"colStyles": ["col-8", "col-4"],
 							"rows": [
 								[
 									"{@dice 1d4} per Player Level + Level",
@@ -454,35 +443,14 @@
 						{
 							"type": "table",
 							"caption": "Repairing Tools",
-							"colLabels": [
-								"Artificer Level",
-								"Maximum Rarity"
-							],
-							"colStyles": [
-								"col-6 text-center",
-								"col-6"
-							],
+							"colLabels": ["Artificer Level", "Maximum Rarity"],
+							"colStyles": ["col-6 text-center", "col-6"],
 							"rows": [
-								[
-									"1",
-									"Common"
-								],
-								[
-									"3",
-									"Uncommon"
-								],
-								[
-									"8",
-									"Rare"
-								],
-								[
-									"12",
-									"Very Rare"
-								],
-								[
-									"16",
-									"Legendary"
-								]
+								["1", "Common"],
+								["3", "Uncommon"],
+								["8", "Rare"],
+								["12", "Very Rare"],
+								["16", "Legendary"]
 							]
 						},
 						"Furthermore, Artificers may choose to use their Spell Save DC instead of the Deployable Tool's when it is triggered, instead of the Tool's original Saving Throw required. This also applies to the Artificer's Spell Attack Modifier in the case the Deployable Tool performs attacks.",
@@ -883,35 +851,14 @@
 				"Otherwise, in the case that the setting calls for the destructability or otherwise harm of a Wondrous Pet or Friend, they have a pool of Hit Points that matches their attuned master's level and their rarity, as per the following table:",
 				{
 					"type": "table",
-					"colLabels": [
-						"Hit Die Pool",
-						"Rarity"
-					],
-					"colStyles": [
-						"col-8",
-						"col-4"
-					],
+					"colLabels": ["Hit Die Pool", "Rarity"],
+					"colStyles": ["col-8", "col-4"],
 					"rows": [
-						[
-							"{@dice 1d4} per Player Level + Level",
-							"Common"
-						],
-						[
-							"{@dice 1d6} per Player Level + Level",
-							"Uncommon"
-						],
-						[
-							"{@dice 1d8} per Player Level + Level",
-							"Rare"
-						],
-						[
-							"{@dice 1d10} per Player Level + Level",
-							"Very Rare"
-						],
-						[
-							"{@dice 1d12} per Player Level + Level",
-							"Legendary"
-						]
+						["{@dice 1d4} per Player Level + Level", "Common"],
+						["{@dice 1d6} per Player Level + Level", "Uncommon"],
+						["{@dice 1d8} per Player Level + Level", "Rare"],
+						["{@dice 1d10} per Player Level + Level", "Very Rare"],
+						["{@dice 1d12} per Player Level + Level", "Legendary"]
 					]
 				},
 				"You may roll on this table when first attuning to them.",
@@ -936,35 +883,14 @@
 				"All Tools have a Durability Property, which denominates how many times they may be activated until they break down and require repairs. A broken down Tool may be repaired by a blacksmith for half of it's buying price or during a Long Rest spending one use of a Repair Kit during a Long Rest, where at least one Character must spend their time repairing or re-stocking the Tool. Otherwise, a Player Character with a number of levels in the Artificer Class may fix up to their Proficiency Modifier's worth of Tools during a Long Rest. To do so, they must meet a minimum level requirement according to the Tool's rarity, as follows:",
 				{
 					"type": "table",
-					"colLabels": [
-						"Artificer Level",
-						"Maximum Rarity"
-					],
-					"colStyles": [
-						"col-6 text-center",
-						"col-6"
-					],
+					"colLabels": ["Artificer Level", "Maximum Rarity"],
+					"colStyles": ["col-6 text-center", "col-6"],
 					"rows": [
-						[
-							"1",
-							"Common"
-						],
-						[
-							"3",
-							"Uncommon"
-						],
-						[
-							"8",
-							"Rare"
-						],
-						[
-							"12",
-							"Very Rare"
-						],
-						[
-							"16",
-							"Legendary"
-						]
+						["1", "Common"],
+						["3", "Uncommon"],
+						["8", "Rare"],
+						["12", "Very Rare"],
+						["16", "Legendary"]
 					]
 				},
 				"Furthermore, Artificers may choose to use their Spell Save DC instead of the Deployable Tool's when it is triggered, instead of the Tool's original Saving Throw required. This also applies to the Artificer's Spell Attack Modifier in the case the Deployable Tool performs attacks."
