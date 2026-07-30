@@ -1,0 +1,1384 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "UndertomesDistrict11",
+        "abbreviation": "TUD11",
+        "full": "District 11's Travel Brochure",
+        "url": "https://theundertomes.crd.co/",
+        "version": "1.1.0",
+        "authors": ["The Undertomes' Community"],
+        "convertedBy": ["Twofell", "Bishop"],
+        "color": "69d20c",
+        "colorNight": "aaff55"
+      }
+    ],
+    "optionalFeatureTypes": {
+      "D11CB": "Cult Boon",
+      "D11EC": "E.G.O. Corrosion",
+      "WP": "Wondrous Pet"
+    },
+    "edition": "classic",
+    "status": "ready",
+    "dateAdded": 1785355200,
+    "dateLastModified": 1785355200
+  },
+  "item": [
+    {
+      "name": "Bongy Plush",
+      "source": "UndertomesDistrict11",
+      "wondrous": true,
+      "rarity": "artifact",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #PhyrrhicRed."]
+        },
+        "A creature attuned to this object has their carrying capacity treated as 20 times greater than it would be without being attuned.",
+        "On melee weapon attacks using Strength, the creature gains a +1 to damage for every 20lbs it is carrying, and additionally, for every 100lbs the creature carries, it gains a +1 to hit. The additional damage is of the same type as the weapon used."
+      ],
+      "reqAttune": true
+    },
+    {
+      "name": "Bottle of Terrible Tears",
+      "source": "UndertomesDistrict11",
+      "wondrous": true,
+      "rarity": "rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Frost."]
+        },
+        "You carry a flask full of strange green tears, mysterious of origin yet beneficial for you at least. This flask holds a maximum of six charges. Charges do not replenish. As a Bonus Action, you may choose to either Drink or Splash.",
+        {
+          "type": "entries",
+          "name": "Splash",
+          "entries": [
+            "Expend all charges. Make a ranged attack against a target within 10ft. On a hit, they take {@damage 3d8} Acid damage and can't regain Hit Points until the start of your next turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Drink",
+          "entries": [
+            "While holding the flask, you can use a bonus action to expend up to 6 charges. You regain 7 Hit Points for each charge expended, then take 6 Acid damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Conceited Doll's Blood-Soaked Talisman",
+      "source": "UndertomesDistrict11",
+      "wondrous": true,
+      "rarity": "rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Akari."]
+        },
+        "A golden talisman that you attach to your skin, littered with runic inscriptions etched in blood. When you attune to this item, an amount of talismans equal to 1 + your proficiency bonus also attach themselves to your skin. For every talisman attached to you, this item has a charge. While attuned to this item, you can spend these charges to activate the following abilities:",
+        {
+          "type": "entries",
+          "name": "To Protect From Sorrow",
+          "entries": [
+            "Whenever an ally within sight is inflicted with a status effect Condition, you may use your reaction to spend 1 charge per count of status the target would be inflicted with. A number of talismans equal to the charges spent fly off of your skin and attach themselves to that ally, absorbing a count of said status per talisman. Afterwards, the talismans fly back to you and the blood begins to glow purple. You gain each count of status effect that was absorbed. This only applies for Undertomes status effects such as {@condition Burn|TheUndertomesGeneralRules}, {@condition Bleed|TheUndertomesGeneralRules}, {@condition Tremor|TheUndertomesGeneralRules}, etc., and cannot be used to negate standard 5e conditions such as prone, frightened, charmed, paralyzed, restrained, etc.",
+            "You may alternatively use this ability on yourself, with the only difference being that the talismans don't leave your body."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "To Strike Away Inhibition",
+          "entries": [
+            "Whenever you or an ally hit a target within 5 feet from you, before rolling for damage, you may use your reaction spend any number of these talismans' charges and empower the attack. These talismans wrap around the attacker's weapon. For each charge spent, the attack deals a number of additional damage dice, the value of which changes if the weapon had or lacked either the light or heavy properties:",
+            {
+              "type": "table",
+              "colLabels": ["Weapon", "Additional Damage"],
+              "colStyles": ["col-6", "col-6 text-center"],
+              "rows": [
+                ["Light", "1d8 per charge spent"],
+                ["Neither", "1d6 per charge spent"],
+                ["Heavy", "1d4 per charge spent"]
+              ]
+            },
+            "Afterwards, the blood on the talismans glows a brilliant scarlet, and you take half of the additional damage dealt."
+          ]
+        },
+        "This item regains all expended charges after a long rest."
+      ],
+      "reqAttune": true
+    },
+    {
+      "name": "Furor beneath Brass",
+      "source": "UndertomesDistrict11",
+      "wondrous": true,
+      "rarity": "rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Twofell."]
+        },
+        "A pair of blazing brass horns rises from the circlet when it is donned, growing from the wearer’s brow. Whenever the wearer is struck, their vision becomes singed with red, wrath simmering in their mind.",
+        {
+          "type": "entries",
+          "name": "E.G.O. Resonance (Capote)",
+          "entries": [
+            "These horns count as {@item Furor beneath Brass|UndertomesDistrict11|Capote (Horns)}. While you are attuned to a {@item Crushing Resentment|UndertomesDistrict11|Capote (Weapon)}, you can use the horns’ magical properties without being attuned to them. While wearing these horns and a {@item Matador's Mantle|UndertomesDistrict11|Capote (Cape)} and wielding a {@item Crushing Resentment|UndertomesDistrict11|Capote (Weapon)}, whenever the horns cause a creature to gain {@condition Burn|TheUndertomesGeneralRules} count, that creature also gains 1 {@condition Tremor|TheUndertomesGeneralRules} count."
+          ]
+        },
+        "While wearing these horns, you have resistance to fire damage.",
+        "When you take damage from a creature you can see within 60 feet of you, you can use your reaction to engulf that creature in flame. The creature must make a DC 13 Dexterity saving throw. On a failed save, it takes {@damage 2d8} fire damage and gains 2 {@condition Burn|TheUndertomesGeneralRules} count. On a successful save, it takes half as much damage and gains no {@condition Burn|TheUndertomesGeneralRules} count.",
+        "Once this property has been used, it can’t be used again until the next dawn."
+      ],
+      "reqAttune": true
+    },
+    {
+      "name": "Helapoiesis Bullet",
+      "source": "UndertomesDistrict11",
+      "wondrous": true,
+      "rarity": "artifact",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #PhyrrhicRed."]
+        },
+        "K Corp.'s Singularity, condensed to its most potent form, a single special bullet that is applied to one's heart.",
+        "This object can be built into a melee weapon over the course of a short rest by somebody proficient with smith's tools. The first time the person holding this item would drop to 0 hit points as a result of taking damage from a melee weapon or spell attack, they may instead choose to immediately heal half of their maximum hit points, and may spend an amount of hit die equal to their proficiency bonus to heal the total of the roll, as the bullet automatically fires into their heart.",
+        "As a result of the fluid still being within the creature's bloodstream, they are resistant to all damage until the end of the round, as it rapidly regenerates their wounds as they form."
+      ],
+      "reqAttune": true
+    },
+    {
+      "name": "Helmet of Head Chicken",
+      "source": "UndertomesDistrict11",
+      "wondrous": true,
+      "rarity": "rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Frost."]
+        },
+        {
+          "type": "quote",
+          "entries": ["Chicken is chicken, duh."]
+        },
+        "A deceased body of what was once animated poultry. It oddly perfectly fits around a humanoid's head. Attuning to and wearing this helmet grants you +1 AC and Resistance to Fire damage."
+      ],
+      "reqAttune": true,
+      "bonusAc": "+1"
+    },
+    {
+      "name": "Matador's Mantle",
+      "source": "UndertomesDistrict11",
+      "wondrous": true,
+      "rarity": "rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Twofell."]
+        },
+        "This broad red cape is blackened and burnt along its trim. Flames cling to the fabric as it billows, leaving scorch marks in the wearer’s wake.",
+        {
+          "type": "entries",
+          "name": "E.G.O. Resonance (Capote)",
+          "entries": [
+            "This cape counts as {@item Matador's Mantle|UndertomesDistrict11|Capote (Cape)}. While you are attuned to a {@item Crushing Resentment|UndertomesDistrict11|Capote (Weapon)}, you can use the cape’s magical properties without being attuned to it. While wearing this cape and {@item Furor beneath Brass|UndertomesDistrict11|Capote (Horns)} and wielding a {@item Crushing Resentment|UndertomesDistrict11|Capote (Weapon)}, whenever the cape causes a creature to gain {@condition Tremor|TheUndertomesGeneralRules} count, that creature also gains 1 {@condition Burn|TheUndertomesGeneralRules} count."
+          ]
+        },
+        "The cape has 3 charges and regains all expended charges daily at dawn.",
+        "When a hostile creature you can see within 30 feet of you willingly moves at least 10 feet toward one of your allies or would hit one of your allies with a melee attack, you can expend 1 charge to use your reaction to move up to 30 feet in a straight line toward the triggering creature. You must end this movement in an unoccupied space within your melee reach of that creature.",
+        "This movement can provoke opportunity attacks. Until the movement ends, you have resistance to bludgeoning, piercing and slashing damage from nonmagical attacks.",
+        "If the triggering event was an attack, the ally gains a +2 bonus to its AC against that attack, potentially causing the attack to miss.",
+        "At the end of this movement, you can make one melee weapon attack against the triggering creature as part of the same reaction. On a hit, the creature gains 2 {@condition Tremor|TheUndertomesGeneralRules} count. It must also succeed on a DC 15 Wisdom saving throw or have its speed reduced to 0 until the end of the current turn."
+      ],
+      "reqAttune": true
+    },
+    {
+      "name": "Shielded Sorrows",
+      "source": "UndertomesDistrict11",
+      "type": "S",
+      "rarity": "very rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Oixie."]
+        },
+        "When attuned to this shield you gain a +3 AC. For each attack missed while attuned to this shield, you gain a one stack of Unresolved Sorrow, each stack increases your to hit by +1 to maximum of 3.",
+        "Once you’ve reached 3 Unresolved Sorrow your attacks now inflict the first enemy you hit with Wavering Emotions.",
+        "When a creature is inflicted with Wavering Emotions, it must roll a d4 at the start of its turn, losing the status once the outcome is determined. On an odd roll the creature's AC is lowered by 2, on an even roll its hit modifier is lowered by 2. The creature keeps this debuff until the start of its next turn.",
+        "Lose all stacks of Unresolved Sorrow at combat end."
+      ],
+      "reqAttune": true,
+      "bonusAc": "+3"
+    },
+    {
+      "name": "Club of Dark Poultry",
+      "source": "UndertomesDistrict11",
+      "type": "M",
+      "rarity": "rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Frost."]
+        },
+        "A long stick with a once vigorous and now dead Headchicken attached to the end. This is a +1 Mace that deals Fire damage instead of Bludgeoning. Killing a creature with this weapon has a chance to transform it.",
+        "When killing a creature with this weapon, roll a 1d4. On a roll of 1-2, it transforms into a chicken drumstick along with anything non-magical it was wearing and holding. On a roll of 3-4, nothing happens."
+      ],
+      "weaponCategory": "simple",
+      "baseItem": "mace|phb",
+      "bonusWeapon": "+1",
+      "dmg1": "1d6",
+      "dmgType": "F",
+      "property": []
+    },
+    {
+      "name": "Crushing Resentment",
+      "source": "UndertomesDistrict11",
+      "type": "M",
+      "rarity": "very rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Twofell."]
+        },
+        "This molten brass hammer has been warped by its own relentless heat. Countless impacts have left its head misshapen, yet the metal still burns with fury.",
+        {
+          "type": "entries",
+          "name": "E.G.O. Resonance (Capote)",
+          "entries": [
+            "This weapon counts as {@item Crushing Resentment|UndertomesDistrict11|Capote (Weapon)}. While you are attuned to it, you can use the magical properties of any other {@item Furor beneath Brass|UndertomesDistrict11|Capote} {@item Matador's Mantle|UndertomesDistrict11|item} you wear without being attuned to that item."
+          ]
+        },
+        "You gain a +2 bonus to attack and damage rolls made with this magic weapon.",
+        "When you hit a creature with this weapon, you can cause it to gain either 1 {@condition Burn|TheUndertomesGeneralRules} count or 1 {@condition Tremor|TheUndertomesGeneralRules} count.",
+        {
+          "type": "entries",
+          "name": "Kindled Impact",
+          "entries": [
+            "Once on each of your turns, after you hit a creature with this weapon, you can deal an extra {@damage 1d6} fire damage to the creature if it has at least 1 {@condition Burn|TheUndertomesGeneralRules} count and 1 {@condition Tremor|TheUndertomesGeneralRules} count."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Resentment",
+          "entries": [
+            "When you would deal the extra damage from Kindled Impact to a creature, you can expend one use of this property to cause the creature to suffer {@variantrule Tremor Burst|TheUndertomesGeneralRules} instead.",
+            "If the creature also has {@condition Burn|TheUndertomesGeneralRules} count, the attack deals an extra {@damage 1d4} fire damage for each {@condition Burn|TheUndertomesGeneralRules} count it has above 3, to a maximum of {@damage 5d4}. Its {@condition Burn|TheUndertomesGeneralRules} count is then halved, rounded down.",
+            "You gain {@condition Burn|TheUndertomesGeneralRules} count equal to the total amount of {@condition Burn|TheUndertomesGeneralRules} count and {@condition Tremor|TheUndertomesGeneralRules} count the creature lost as a result of this property. Neither this extra fire damage nor the damage caused by {@variantrule Tremor Burst|TheUndertomesGeneralRules} is increased if the triggering attack is a critical hit.",
+            "You can use Resentment a number of times equal to your proficiency bonus and you regain all expended uses when you finish a long rest."
+          ]
+        }
+      ],
+      "reqAttune": true,
+      "weaponCategory": "martial",
+      "baseItem": "warhammer|phb",
+      "bonusWeapon": "+2",
+      "dmg1": "1d8",
+      "dmg2": "1d10",
+      "dmgType": "B",
+      "property": ["V"]
+    },
+    {
+      "name": "Helapoiesis Administering Device",
+      "source": "UndertomesDistrict11",
+      "type": "R",
+      "rarity": "very rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #AroAceBrit."]
+        },
+        "Any Ranged Ammo using Weapon",
+        "A singluarlity infused weapon capable of administering the Singularity of K Corp from long range, as well as other effects to assist it’s target. You have a +2 bonus to attack and damage rolls made with this magic weapon, and have a number of “Bullets” equal to two times your proficeny bonus. You may expend a bullet and an attack to fire one of the following:",
+        {
+          "type": "entries",
+          "name": "Recovery Bullet",
+          "entries": [
+            "The target of this shot recovers an amount of Hit Points equal to the result of rolling an amount of their Hit Die equal to your proficiency bonus. If a creature has multiple different types of hit die, you may choose which to roll from among them. You do not deal any damage to the target, and this shot automatically hits."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Shield Bullet",
+          "entries": [
+            "The target of this bullet gains an amount of temporary Hit Points equal to the result of rolling an amount of their Hit Die equal to your proficiency bonus This Temporary HP wares off after a minute. If a creature has multiple different types of hit die, you may choose which to roll from among them. You do not deal any damage to the target, and this shot automatically hits."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Movement Bullet",
+          "entries": [
+            "Roll to hit your target, if you hit you may decrease their movement speeds by your proficiency bonus times 5 until the end of their next turn. You do not deal any damage to the target."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Execution Bullet",
+          "entries": [
+            "Roll to hit your target, if you hit you deal extra necrotic damage equal a number of D6’s, where that number is your proficiency bonus."
+          ]
+        },
+        "You may only expend one bullet per turn, and you regain all bullets after a long rest.",
+        {
+          "type": "quote",
+          "entries": [
+            "Managerial Bullets with the capability to heal physical damage. These bullets, manufactured thanks to our Nano Technology Agreement with K Corporation, can speed up the body’s recovery."
+          ]
+        }
+      ],
+      "bonusWeapon": "+2",
+      "typeAlt": "GV|DMG"
+    },
+    {
+      "name": "OuroBoros Atelier \"Chulainn\" Precision Rifle",
+      "source": "UndertomesDistrict11",
+      "type": "R",
+      "rarity": "very rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Mai."]
+        },
+        "A single-shot precision rifle specially designed to firing a singularity-amplified cartridge. Comes in a package deal with the bullets.",
+        "This magic weapon has +3 to hit and to damage. You gain a number of {@item OuroBoros Atelier \"Gáe Bulg\" Cell Proliferation Round|UndertomesDistrict11|\"Gáe Bulg\" Cell Proliferation Rounds} equal to your Proficiency Bonus + 1 when first gaining this item. This item is not disabled or damaged by {@item OuroBoros Atelier \"Gáe Bulg\" Cell Proliferation Round|UndertomesDistrict11|\"Gáe Bulg\" Cell Proliferation Rounds}."
+      ],
+      "weaponCategory": "martial",
+      "dmg1": "1d10",
+      "dmgType": "P",
+      "range": "30/300",
+      "property": ["A", "LD"],
+      "bonusWeapon": "+3"
+    },
+    {
+      "name": "OuroBoros Atelier \"Gáe Bulg\" Cell Proliferation Round",
+      "source": "UndertomesDistrict11",
+      "type": "A",
+      "rarity": "very rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Mai."]
+        },
+        "A heavy, dense cartridge packed with a singularity-amplified payload that causes rapid cancerous cell growth in tissue in the form of spikes or stakes. It's growth, however, is limited without the prescence of organic matter around it to fuel further cell proliferation. Not recommended for unspecialized firearms, as it is propelled with a unique gunpowder-singularity mixture that can create a sort of “spear” of flesh as the cartridge exits the barrel in firearms, damaging the barrel and rendering it unfireable until cleared and repaired.",
+        "When hitting a creature, this round deals {@damage 6d8} piercing damage. The targeted creature must make a Constitution saving throw (10 + your Proficiency Bonus), or have fleshy spikes begin to grow in their body, gaining one stack of {@condition Marrowing Growth|UndertomesDistrict11} as fleshy spikes begin to puncture them from within.",
+        "This cartridge immediately damages the firearm firing it, rendering it permanently unusable after firing unless repaired."
+      ]
+    },
+    {
+      "name": "Twin-Bladed Excision Staff",
+      "source": "UndertomesDistrict11",
+      "type": "M",
+      "rarity": "none",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Bishop."]
+        },
+        "This polearm of polished metal is a marvel in simplicity of design and as a means to execute clean-up duties, bolstering a twinned pair of blades at each end which act as counter-weights for one another, the Excision Staff stands as a standard for K. Corp troops which require extreme violence as a basic course of action.",
+        "This weapon inflicts 1 {@condition Rupture|TheUndertomesGeneralRules} count whenever it is used to hit a target.",
+        {
+          "type": "entries",
+          "name": "Follow-Up",
+          "entries": [
+            "A weapon with the Follow-Up property is specially made to quickly chain an additional attack in any given situation. Provided you have attempted to hit a creature using this weapon during your current turn you may spend your Bonus Action to perform an additional attack against a target within reach. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative."
+          ]
+        }
+      ],
+      "weaponCategory": "martial",
+      "dmg1": "1d10",
+      "dmgType": "B",
+      "property": ["2H", "H", "R"]
+    },
+    {
+      "name": "The Spanner",
+      "source": "UndertomesDistrict11",
+      "type": "M",
+      "rarity": "varies",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Dr. Peter J. Pyro."]
+        },
+        "Coming from a humble fixer office in the backstreets of K Corp, a weapon specialized to shake an enemy to their very core while keeping a bit of distance.",
+        "The Spanner is a long metal polearm with a wrench like head, akin to an actual spanner, that is specalized to inflict {@condition Tremor|TheUndertomesGeneralRules} and tears enemies down with their thundering bursts!",
+        {
+          "type": "entries",
+          "name": "Office Grade",
+          "entries": [
+            "These unique {@condition Tremor|TheUndertomesGeneralRules} based weapons can in a few varieties with according rarity to compensate. +1 (Uncommon), +2 (Rare), and of course +3 (Very Rare). This weapon can be upgraded for the appropriate gold cost of the current rarity of the weapon subtracted from the next rarity you which to purchase at the workshops where this weapon is made."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "{@item The Spanner (UN)|UndertomesDistrict11}",
+            "{@item The Spanner (R)|UndertomesDistrict11}",
+            "{@item The Spanner (VR)|UndertomesDistrict11}"
+          ]
+        }
+      ],
+      "weaponCategory": "martial",
+      "dmg1": "1d10",
+      "dmgType": "B",
+      "property": ["2H", "H", "R"]
+    },
+    {
+      "name": "The Spanner (UN)",
+      "source": "UndertomesDistrict11",
+      "type": "M",
+      "rarity": "uncommon",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Dr. Peter J. Pyro."]
+        },
+        {
+          "type": "list",
+          "items": [
+            "You have a +1 to attack and damage rolls.",
+            "Whenever you hit an enemy with {@item The Spanner|UndertomesDistrict11} you apply 1 additional count of {@condition Tremor|TheUndertomesGeneralRules} count.",
+            "As an action you may make a weapon attack against an enemy on hit you deal your normal damage and trigger a {@variantrule Tremor Burst|TheUndertomesGeneralRules}."
+          ]
+        }
+      ],
+      "weaponCategory": "martial",
+      "dmg1": "1d10",
+      "dmgType": "B",
+      "property": ["2H", "H", "R"]
+    },
+    {
+      "name": "The Spanner (R)",
+      "source": "UndertomesDistrict11",
+      "type": "M",
+      "rarity": "rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Dr. Peter J. Pyro."]
+        },
+        {
+          "type": "list",
+          "items": [
+            "You have a +2 to attack and damage rolls.",
+            "Whenever you hit an enemy with {@item The Spanner|UndertomesDistrict11} you apply 2 additional counts of {@condition Tremor|TheUndertomesGeneralRules} count.",
+            "After you land an attack, immediately as a Bonus Action, you may attempt to grapple them with the head of your Spanner. If you are successful, the enemy is grappled and you can only attack them, and attacks made against the enemy deal an additional count of {@condition Tremor|TheUndertomesGeneralRules}.",
+            "As an action you may make a weapon attack against an enemy on hit you deal your normal damage and trigger a {@variantrule Tremor Burst|TheUndertomesGeneralRules}."
+          ]
+        }
+      ],
+      "weaponCategory": "martial",
+      "dmg1": "1d10",
+      "dmgType": "B",
+      "property": ["2H", "H", "R"]
+    },
+    {
+      "name": "The Spanner (VR)",
+      "source": "UndertomesDistrict11",
+      "type": "M",
+      "rarity": "very rare",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Dr. Peter J. Pyro."]
+        },
+        {
+          "type": "list",
+          "items": [
+            "You have a +3 to attack and damage rolls.",
+            "Whenever you hit an enemy with {@item The Spanner|UndertomesDistrict11} you apply 3 additional counts of {@condition Tremor|TheUndertomesGeneralRules} count.",
+            "After you land an attack, immediately as a Bonus Action, you may attempt to grapple them with the head of your Spanner. If you are successful, the enemy is grappled and you can only attack them, and attacks made against the enemy deal an additional count of {@condition Tremor|TheUndertomesGeneralRules}.",
+            "As an action you may make a weapon attack against an enemy on hit you deal your normal damage and trigger a {@variantrule Tremor Burst|TheUndertomesGeneralRules}.",
+            "At the beginning of your turn if your within 30ft of a creature suffering from {@condition Tremor|TheUndertomesGeneralRules} you gain a count of {@condition Tremor - Sync|UndertomesDistrict11}."
+          ]
+        }
+      ],
+      "weaponCategory": "martial",
+      "dmg1": "1d10",
+      "dmgType": "B",
+      "property": ["2H", "H", "R"]
+    },
+    {
+      "name": "Wishmaker's Shamanic Staff",
+      "source": "UndertomesDistrict11",
+      "type": "M",
+      "rarity": "uncommon",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Akari."]
+        },
+        "An old, weathered staff carved from the boughs of an ancient tree, with golden talismans attached to it like a serpent constricting its prey. You gain a +1 to attack and damage rolls made with this weapon. This weapon has 1d8 charges & regains 1d4 of them after a long rest.",
+        {
+          "type": "entries",
+          "name": "The Shaman's Wit",
+          "entries": [
+            "Whenever the effects of an Undertomes status effect—such as {@condition Burn|TheUndertomesGeneralRules}, {@condition Poise|TheUndertomesGeneralRules}, {@condition Bleed|TheUndertomesGeneralRules}, etc.—would trigger on a creature within sight, you may spend any number of charges to absorb a count per charge spent."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "The Shaman's Might",
+          "entries": [
+            "When you hit with this weapon while it has absorbed counts of a status through the above feature, before rolling damage, you may discharge the conditions & amplify your attack based on what was absorbed:",
+            {
+              "type": "list",
+              "items": [
+                "{@b Burn.} The talismans glow a blazing orange, igniting your wrath. You deal an additional {@damage 2d6} fire damage & inflict 1/2 of the absorbed {@condition Burn|TheUndertomesGeneralRules} counts.",
+                "{@b Bleed.} The talismans begin oozing out a glowing, crimson liquid, making you feel a vampiric hunger for blood. You heal for 1/4 of the damage dealt & inflict half the absorbed {@condition Bleed|TheUndertomesGeneralRules} count.",
+                "{@b Tremor.} The talismans flicker to a dull yellow, lulling you both into a relaxed laze. You deal one less dice of damage & inflict a number of {@condition Tremor|TheUndertomesGeneralRules} count equal to the amount absorbed + 2.",
+                "{@b Rupture.} The talismans shine with a beautiful hue of teal that makes the target drop their guard. The target gains half the absorbed {@condition Rupture|TheUndertomesGeneralRules} count & has their AC reduced by 1.",
+                "{@b Sinking.} The talismans blink a melancholic blue, striking your heart with sorrow. You inflict half the absorbed {@condition Sinking|TheUndertomesGeneralRules} count & the target must make a DC 15 Wisdom save or be frightened.",
+                "{@b Poise.} The talismans shift to a soothing blue. You gain half the absorbed {@condition Poise|TheUndertomesGeneralRules} counts & can reroll this attack.",
+                "{@b Charge.} The talismans glare an electric blue. You gain half the absorbed {@condition Charge|TheUndertomesGeneralRules} & make an additional attack with its damage halved."
+              ]
+            }
+          ]
+        }
+      ],
+      "reqAttune": true,
+      "weaponCategory": "simple",
+      "baseItem": "quarterstaff|phb",
+      "bonusWeapon": "+1"
+    }
+  ],
+  "spell": [
+    {
+      "name": "Cast Flesh",
+      "source": "UndertomesDistrict11",
+      "level": 6,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "A quarter-pound of lean meat, 5 milliliters liquid blood, a pomegranate seed"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Mai."]
+        },
+        "Plant a seed of rapidly-expanding flesh in the ground. A mass of contracting hardened flesh grows from this seed that you can choose the shape of upon casting. This mass can occupy a maximum area of 30 total feet in squares or a maximum radius of 10 feet, and it has a maximum height of 15 feet. It contracts to the touch and is somewhat spongey, but stiff when impacted with great force. It cannot be hollow or otherwise contain open space within the mass. The mass anchors itself via the growing flesh, allowing it to be stable over empty gaps in a manner akin to a bridge. It has an Armor Class of 8 and 100 total Hit Points for the whole mass. Any flesh cut off or otherwise separated from the mass quickly dies and rots away.",
+        "Creatures who make melee attacks or otherwise directly damage the wall while touching it must make a Dexterity saving throw or be pushed 10 ft. away from the wall as the flesh contracts and expands in an attempt to push them away.",
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 7th level or higher, the maximum area and radius of this mass increases by 5 feet, and it's total Hit Points increases by {@dice 1d8}."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fervent Adoration",
+      "source": "UndertomesDistrict11",
+      "level": 7,
+      "school": "E",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "Sheet music"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #PyrrhicRed."]
+        },
+        "An enchanting, singular note rings out, to a point you choose within range then blossoms into a song of unmitigated, primal beauty. Each creature of your choice in a 60-foot radius must make a Wisdom saving throw. On a failure, they gain a bonus to their damage equal to their proficiency bonus, and must use the Random Targeting Rule to decide who to attack. You may use your reaction to reroll a singular result once per round."
+      ]
+    },
+    {
+      "name": "Marination Beam",
+      "source": "UndertomesDistrict11",
+      "level": 2,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "s": true,
+        "m": "A Ball of Spices to Scrape Off"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Bishop."]
+        },
+        "You point your finger at one target within range that you can see, then having a spicy beam emanate toward that spot, forcing the target to pass a Dexterity saving throw or become engulfed by a stream of magical spices that cling to them. On a failure, other creatures gain Advantage on Perception checks to find them and the next time they would suffer a Bite attack or a similarly consuming attack ( Such as a Wraith's Life Drain ) they suffer an additional {@damage 2d8} damage that cannot be reduced through any means. The creature who deals this damage recovers an amount of Hit Points equal to the damage dealt by these additional damage die.",
+        "After triggering its healing effect, this spell's effects immediately end. The specific spices used by this spell can be of any odour and flavour of the caster's choice.",
+        "Druids may cast this spell while in Wildshape, albeit at a reduced range of 30-ft.",
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@damage 1d8} for each slot level above 2nd."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Artificer",
+            "source": "TCE"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    }
+  ],
+  "race": [
+    {
+      "name": "Inbervulpes",
+      "source": "UndertomesDistrict11",
+      "size": ["M", "S"],
+      "speed": 35,
+      "lineage": "VRGR",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #zachsonicmee."]
+        },
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": ["You are a Humanoid."]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium or Small. You choose the size when you select this race."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": ["Your walking speed is 35 feet."]
+        },
+        {
+          "type": "entries",
+          "name": "Vulpine Hearing",
+          "entries": [
+            "You have the ears of a fox, and gain the hearing that comes with it. You have advantage on Wisdom (Perception) checks that rely on hearing."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ragged Tail",
+          "entries": [
+            "You have an extraordinarily massive tail, one so massive that it's difficult to groom and has grown to become unkempt and bristly, and many objects have begun to be losged into of it. Your tail counts as a natural weapon, having the Finesse property and dealing {@damage 1d4} + your Strength modifier Piercing damage and inflicting rupture equal to half your proficiency bonus (rounded down) on a hit. Once per turn you may perform a followup attack with your tail after having performed a melee weapon attack, and may do so an amount of times equal to your proficiency bonus, as your tail would otherwise jab the objects inside of it further into your body from such hasty usage. You must finish a short or long rest before you can use your tail's followup attack feature again."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Eroded Optimism/Ragged Pessimism",
+          "entries": [
+            "You've weathered countless trials and tribulations, having been through the worst of life's storms. You are not affected by difficult terrain caused by rain or areas filled with sharp objects, and choose between one of the following features depending on how your outlook has been shaped by your experiences:",
+            {
+              "type": "entries",
+              "name": "Ray of Sun After Rain",
+              "entries": [
+                "Despite it all, you still believe that one day, the clouds will part, and the sun will shine on you once more. You gain resistance to psychic damage and your hit point maximum increases by 1, and it increases by 1 every time you gain a level. Additionally, once per round when an ally within your movement speed is targeted by an attack or saving throw and you have leftover movement speed to reach them, you may move to a space within 5 ft. of that ally and force the attack or saving throw to target yourself instead, even if the saving throw's area of effect would ordinarily include that ally, acting as an umbrella to them. You may only shield the same ally every other turn, and if an opponent would make multiple attacks toward that ally when you use this feature they must pass make an attack against your AC to target and hit that ally."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Rain of Tears",
+              "entries": [
+                "Your spirit and your trust has been eroded by this cruel world, and your heart has been steeled in turn. You have advantage on death saving throws, and raise either your Constitution, Strength, or Dexterity score by 1. You have disadvantage on insight checks to tell whether a person is genuine, as having been stabbed in the back over and over again has taught you that everyone is lying, or at very least has some sort of agenda."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dandyman",
+      "source": "UndertomesDistrict11",
+      "size": ["M", "S"],
+      "speed": {
+        "walk": 30,
+        "fly": 10
+      },
+      "ability": [
+        {
+          "cha": 2,
+          "str": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Frost."]
+        },
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid. You are also treated as a Fey for certain effects that specify such."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium or Small. You choose the size when you select this race."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": ["Your walking speed is 30 feet."]
+        },
+        {
+          "type": "entries",
+          "name": "Gelatinous Mass",
+          "entries": [
+            "As a bonus action, you may conjure and immediately chug down a cocktail mix of your own body's slime-like substance to grow in size. Your Size increases by one stage and you gain a +1 to AC for 1 minute. At any time before this duration ends, you may choose to, as a bonus action, belch out the consumable, decreasing your size back to normal and making a special ranged attack against an creature within 30ft. On hit, the creature takes {@damage 1d8} Acid damage and must make a Constitution Saving Throw (DC = 10 + your prof bonus + Charisma modifier). On a failure, they become Charmed until the end of your next turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Tiny Wings",
+          "entries": [
+            "You have two very small but usable wings on your body. Due to their miniature size, you have a flying speed of 10ft."
+          ]
+        }
+      ]
+    }
+  ],
+  "feat": [
+    {
+      "name": "Fried Chicken Master",
+      "source": "UndertomesDistrict11",
+      "prerequisite": [
+        {
+          "other": "proficiency in Cook's utensils"
+        }
+      ],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Blade."]
+        },
+        "With one hour of work or when you finish a long rest you create a number of fried delicacies equal to your proficiency bonus from the list below. All leftovers mysteriously vanish after 8 hours.",
+        "A creature who consumes one of these meals gains its associated benefit for 8 hours or until it consumes another one.",
+        {
+          "type": "entries",
+          "name": "Hot ‘n Juicy Drumstick",
+          "entries": [
+            "When inflicting {@condition Burn|TheUndertomesGeneralRules} you inflict 1 additional count."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Dry-to-the-Bone Breast",
+          "entries": [
+            "When inflicting {@condition Rupture|TheUndertomesGeneralRules} you inflict 1 additional count."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "‘Boneless’ Wings",
+          "entries": [
+            "When inflicting {@condition Sinking|TheUndertomesGeneralRules} you inflict 1 additional count."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Chicken Tendies",
+          "entries": [
+            "Whenever you would regain hit points you regain 1 additional hit point."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Tangy Chicken Thigh",
+          "entries": [
+            "Once per turn you may deal an additional 3 damage to targets that act after you in initiative."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Medic Adept",
+      "source": "UndertomesDistrict11",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Frost."]
+        },
+        "You gain proficiency in the Medicine skill. If you were already proficient, you may add your proficiency bonus to any rolls you make with that Skill.",
+        "Additionally, during a short rest, you can make a DC 10 Intelligence (Medicine) Check targeting a willing creature. On a sucsess, the creature then rolls 1 of its Hit Die plus half of your Intelligence modifier (rounded down) and gains that much HP. On a failure, they regain half the roll of 1 of its Hit Die."
+      ]
+    },
+    {
+      "name": "Overtime",
+      "source": "UndertomesDistrict11",
+      "prerequisite": [
+        {
+          "level": 4
+        }
+      ],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Blade."]
+        },
+        "When you expend the last use of a feature or ability that has a limit equal to half your proficiency bonus you can immediately gain a stack of exhaustion to regain all uses of the feature.",
+        "You may benefit from this feat a number of times equal to half your proficiency bonus per long rest."
+      ]
+    },
+    {
+      "name": "Gene code: K",
+      "source": "UndertomesDistrict11",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Oixie."]
+        },
+        "Upon taking this feature your Constitution Attribute Score is reduced to 14 unless it is lower already. It may not be increased beyond 14.",
+        "Your blood has been altered to become a consistent source of healing.",
+        "At the start of your turns when you have at least 1 Hit Point remaining while in combat, you heal an amount of Hit Points equal to your proficiency bonus.",
+        "As a bonus action on your turns you can spend up to 3 Hit Dice to heal yourself or a friendly creature within 5-ft. If this was used to heal an ally you take the rolled amount as fixed damage to yourself, as you forcefully harm yourself to provide your aid.",
+        "If you are lacking the Hit Die required to use this feature, you gain 1 Point of Exhaustion instead, as your body begins to tire from the overuse of your altered blood.",
+        "During a long rest you only recover half of your maximum amount of Hit Dice.",
+        "If your Hit Dice are fully expended by this feat, your next long rest will take twice as long for you to be back in proper condition."
+      ]
+    }
+  ],
+  "optionalfeature": [
+    {
+      "name": "Corrosive Chamber",
+      "source": "UndertomesDistrict11",
+      "featureType": ["EI"],
+      "prerequisite": [
+        {
+          "spell": ["eldritch blast#c"],
+          "level": 8
+        }
+      ],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Frost."]
+        },
+        "You launch a bolt of acidic energy from your palm, melting and decaying all that stand in your way. {@spell eldritch blast|PBH|Eldritch Blast} now deals Acid damage instead of Force damage. This damage treats resistances as normal and immunity to Acid as resistance.",
+        "Additionally, whenever you hit a creature with {@spell eldritch blast|PBH|Eldritch Blast}, you may expend and roll 1 of your Hit Die plus half your Constitution modifier (rounded down) then regain that much Hit Points."
+      ]
+    },
+    {
+      "name": "The Technology Liberation Alliance",
+      "source": "UndertomesDistrict11",
+      "featureType": ["D11CB"],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Dr. Peter J. Pyro."]
+        },
+        {
+          "type": "entries",
+          "name": "Unseen Saboteurs",
+          "entries": [
+            "There are many sympathizers to your cause littering the city and thus have left little presents in the city's surveillance system. You learn the Invisibility to Cameras spell and can cast it once without expending a spell slot. You regain the ability to cast it in this way when you finish a short or long rest. Intelligence is your spellcasting ability for this spell."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "WE WILL NOT BE SILENCED",
+          "entries": [
+            "Code embedded into the systems, the same that let you remain unseen, has a secondary functionality. Cameras and all footage/recordings of you, after joining the alliance, heavily distort your figure making you look no more then a blurry mess on cameras and footage, though it makes you stand out so much more."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "E.G.O. Corrosion: Red Sheet",
+      "source": "UndertomesDistrict11",
+      "featureType": ["D11EC"],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Twofell."]
+        },
+        "E.G.O. Corrosions function as Dark Gifts. A creature can normally possess only one E.G.O. Corrosion.",
+        "Yellow orange and purple talismans cling to your skin, gathering around your face and joints. Removed sheets vanish, then quietly return in new places when you aren’t looking. When {@condition Corroded|UndertomesDistrict11}, the talismans spread until they completely bind your body. Your limbs move in sharp, puppetlike jerks as loose sheets whip around you, fastening themselves to anything you strike.",
+        "Once on each of your turns, when you hit a creature with an attack, you can cause it to suffer 1 {@condition Rupture|TheUndertomesGeneralRules} count. When you do so, you also suffer 1 {@condition Rupture|TheUndertomesGeneralRules} count. A talisman tears from your body and attaches itself to the creature, while another tightens around you.",
+        {
+          "type": "entries",
+          "name": "Corrosion Trigger",
+          "entries": [
+            "At the end of your turn, if you have 5 or more {@condition Rupture|TheUndertomesGeneralRules} count, you become {@condition Corroded|UndertomesDistrict11}. Once you become {@condition Corroded|UndertomesDistrict11} in this way, you can’t do so again until you finish a short or long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Talisman Removal",
+          "entries": [
+            "While {@condition Corroded|UndertomesDistrict11}, your speed increases by 10 feet. When you hit a creature with an attack, you can choose to transfer all your {@condition Rupture|TheUndertomesGeneralRules} count to it. When you do, each other creature of your choice within 10 feet of the target suffers 2 {@condition Rupture|TheUndertomesGeneralRules} count.deals Acid damage instead of Force damage. This damage treats resistances as normal and immunity to Acid as resistance."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "E.G.O. Corrosion: Sunshower",
+      "source": "UndertomesDistrict11",
+      "featureType": ["D11EC"],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Twofell."]
+        },
+        "E.G.O. Corrosions function as Dark Gifts. A creature can normally possess only one E.G.O. Corrosion.",
+        "A cold drizzle follows you wherever you go, even beneath shelter. Damp, pale fabric gathers around your shoulders and ghostly pointed ears form beneath your hair. When {@condition Corroded|UndertomesDistrict11}, your body becomes lean and a broken umbrella pierces through your back. Rain pours continuously around you, following your every movement.",
+        "When a creature you can see within 30 feet of you damages you, you can cause it to suffer 2 {@condition Sinking|TheUndertomesGeneralRules} count. Once you use this property, you can’t use it again until the start of your next turn. Cold rain gathers over the creature and weighs heavily upon it.",
+        {
+          "type": "entries",
+          "name": "Corrosion Trigger",
+          "entries": [
+            "At the end of your turn, if you have no more than half your hit point maximum and no conscious ally is within 10 feet of you, you become {@condition Corroded|UndertomesDistrict11}. Once you become {@condition Corroded|UndertomesDistrict11} in this way, you can’t do so again until you finish a short or long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Abandoned Rain",
+          "entries": [
+            "While {@condition Corroded|UndertomesDistrict11}, rain lightly obscures the area within 15 feet of you. Once on each of your turns, when you hit a creature with an attack, it takes an extra {@damage 2d6} psychic damage and suffers 3 {@condition Sinking|TheUndertomesGeneralRules} count. The rain briefly gathers into a crushing torrent around the creature.",
+            "Whenever a creature damages you while you are {@condition Corroded|UndertomesDistrict11}, it suffers 2 {@condition Sinking|TheUndertomesGeneralRules} count. If it already has at least 3 {@condition Sinking|TheUndertomesGeneralRules} count, its speed is reduced by 10 feet until the end of its next turn. Rain gathering around into a crushing torrent to those that strike you.",
+            "At the start of each creature’s turn within the rain, if it has {@condition Sinking|TheUndertomesGeneralRules} count, it must succeed on a Wisdom saving throw against a DC equal to 8 + your proficiency bonus + your Constitution modifier or be unable to take reactions until the start of its next turn."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "E.G.O. Corrosion: Sloshing",
+      "source": "UndertomesDistrict11",
+      "featureType": ["D11EC"],
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Twofell."]
+        },
+        "E.G.O. Corrosions function as Dark Gifts. A creature can normally possess only one E.G.O. Corrosion.",
+        "You constantly feel faintly intoxicated, though the sensation never impairs you. Any beverage you drink tastes like sweet wine and a faint scent of fermented fruit follows you. When {@condition Corroded|UndertomesDistrict11}, thick green fluid envelops your body like an oversized, unsteady suit. Your skin stretches, every step produces a wet slosh with each impact sending visible ripples through your bloated form.",
+        "When you drink a potion, you gain temporary hit points equal to twice your proficiency bonus + your Constitution modifier, to a minimum of 1 temporary hit point. The potion’s contents briefly turn green and syrupy before the fluid settles around your body. Once you gain temporary hit points from this property, you can’t do so again until you finish a long rest.",
+        {
+          "type": "entries",
+          "name": "Corrosion Trigger",
+          "entries": [
+            "When the last of the temporary hit points granted by this dark gift is lost, you become {@condition Corroded|UndertomesDistrict11}. Once you become {@condition Corroded|UndertomesDistrict11} in this way, you can’t do so again until you finish a short or long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Swollen",
+          "entries": [
+            "When you become {@condition Corroded|UndertomesDistrict11}, you gain temporary hit points equal to your level + twice your proficiency bonus. These temporary hit points vanish when your corrosion ends. While you have these temporary hit points, you have resistance to acid and poison damage, but your speed is reduced by 10 feet. Your enlarged, fluid-filled form sways heavily and absorbs impacts with rippling waves.",
+            "Whenever another creature within 5 feet of you hits you with an attack, it suffers 1 {@condition Tremor|TheUndertomesGeneralRules} count. The impact travels through the fluid around you and returns as a violent vibration.",
+            "When the last of these temporary hit points is lost, each other creature within 10 feet of you suffers 2 {@condition Tremor|TheUndertomesGeneralRules} count and then suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules}. The swollen coating collapses outwards in a wave of green fluid.",
+            "While {@condition Corroded|UndertomesDistrict11}, if you end your turn without dealing damage to another creature, you regain temporary hit points equal to your proficiency bonus, up to your level + twice your proficiency bonus."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mutant Headchicken (Bongy)",
+      "source": "UndertomesDistrict11",
+      "featureType": ["WP"],
+      "entries": [
+        {
+          "type": "entries",
+          "entries": ["Wondrous Pet, Rare (Requires Attunement)"]
+        },
+        {
+          "type": "quote",
+          "entries": ["Created by #Bishop."]
+        },
+        {
+          "type": "quote",
+          "entries": ["Behold their adorable behinds!"]
+        },
+        "Vile, violent and voracious the untamed Mutant Headchicken is a fearsome beast for sure. Weighing about the same of a regular chicken but exhibiting a shockingly pleasant odour for its appearance, it stands short as a powerful companion when properly attended to. ( Through head pats, regular spice dosage and letting it gladiate amongst its brethren every once in a while, obviously. )",
+        {
+          "type": "entries",
+          "name": "Oogly Boogly Googly Eyes",
+          "entries": [
+            "The Bongy's extremely dense and obnoxiously dispersed field of vision displayed by the Headchicken may come in handy at times, as whenever a creature you can see or hear within 60-ft. of you attempts an Insight check you may use your Reaction to impose a -5 negative modifier on the roll by having the almighty Bongy telepathically (un)focus the target from whatever it was doing."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spicy Dancer",
+          "entries": [
+            "Once per long rest you may command the marvelous Bongy to perform an outlasting performance near a piece of food or healing item of your choice. That item becomes a Papa Approved Spicy item which restores an additional 1d12 Hit Points when consumed, or gaining any surplus of that value in Temporary Hit Points if the consumer was already at maximum hit points. This may be done repeatedly on the same item to make it become an Extra Spicy item, increasing its extra healing die by one until it is an Extra Extra Extra Spicy item. (4d12) If it was a piece of food that wouldn't recover Hit Points at all, it instead heals a singular Hit Point when it would be consumed."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "I mean. Its Cute. To Someone.",
+          "entries": [
+            "Whenever you would attempt a Persuasion check against another creature, the abominably adorable Bongy WILL attempt to help you. Your DM determines if it is effective as per the target creature's own preferences, granting you Expertise on this check if they find the Headchicken cute, loveable, midly entertaining or delicious. If you already had Expertise on this check, quadruple the value instead. If they find it disgusting, bothersome, annoying, insufferable, an affront to all that is holy or kind of ugly you instead roll with a -1 negative modifier. If they don't care, the Bongy still does it despite the futility of it's action, for it finds purpose in being there for you."
+          ]
+        }
+      ]
+    }
+  ],
+  "condition": [
+    {
+      "name": "Tremor - Sync",
+      "source": "UndertomesDistrict11",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Dr. Peter J. Pyro."]
+        },
+        "A creature benefiting from Tremor - Sync has fully synchronized with the {@condition Tremor|TheUndertomesGeneralRules} they inflict to make better use of the rhythmic pulses within their opponents bodies.",
+        "While attacking a creature suffering from {@condition Tremor|TheUndertomesGeneralRules}, the afflicted creatures a -1 penalty to AC per 5 stacks of {@condition Tremor|TheUndertomesGeneralRules} to a max of 5. You lose one count of this at end of round, falling out of rhythm."
+      ]
+    },
+    {
+      "name": "Marrowing Growth",
+      "source": "UndertomesDistrict11",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Mai."]
+        },
+        "At the start of each of the afflicted creature's turn, they must make a Constitution saving throw (10 + your Proficiency Bonus). On a failure, the growth expands, giving the creature another stack of Marrowing Growth. After the saving throw, the creature takes {@damage 1d4} piercing damage for each stack of Marrowing Growth. Non-organic creatures (i.e. Creatures not mostly composed of organic matter) cannot gain more than 6 Marrowing Growth.",
+        "This effect can only be removed via {@spell Lesser Restoration}, {@spell Greater Restoration}, or similar effects."
+      ]
+    },
+    {
+      "name": "Corroded",
+      "source": "UndertomesDistrict11",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": ["Created by #Twofell."]
+        },
+        "When a creature becomes Corroded, the E.G.O. overtakes its sense of self and transforms it into an unstable likeness of the Mostrosity it resembles. The transformation lasts for 1 minute, during which the creature can’t distinguish friend from foe. It is considered a Monstrosity in addition to its other creature types.",
+        "At the start of each of its turns, the nearest other creature it can see or hear becomes its target. If multiple creatures are equally near, determine the target randomly. The Corroded creature must move toward the target by the most direct route and use its action to attack it, if able. If it can’t attack the target, it must take the Dash action to move toward it.",
+        "At the end of each of its turns, the creature must make a DC 20 Charisma saving throw, ending the corrosion on a successful save. The corrosion also ends if the creature is incapacitated."
+      ]
+    }
+  ],
+  "book": [
+    {
+      "name": "District 11's Travel Brochure",
+      "id": "UndertomesDistrict11",
+      "source": "UndertomesDistrict11",
+      "group": "homebrew",
+      "author": "The Undertomes' Community",
+      "published": "2026-07-29",
+      "contents": [
+        {
+          "name": "Welcome to District 11",
+          "headers": [],
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 1
+          }
+        },
+        {
+          "name": "Wondrous Items",
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 2
+          },
+          "headers": [
+            "Bongy Plush",
+            "Bottle of Terrible Tears",
+            "Conceited Doll's Blood-Soaked Talisman",
+            "Furor beneath Brass",
+            "Helapoiesis Bullet",
+            "Helmet of Head Chicken",
+            "Matador's Mantle",
+            "Shielded Sorrows"
+          ]
+        },
+        {
+          "name": "Wondrous Pets",
+          "headers": ["Mutant Headchicken (Bongy)"],
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 3
+          }
+        },
+        {
+          "name": "Weapons",
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 4
+          },
+          "headers": [
+            "Club of Dark Poultry",
+            "Crushing Resentment",
+            "Helapoiesis Administering Device",
+            "OuroBoros Atelier \"Chulainn\" Precision Rifle",
+            "OuroBoros Atelier \"Gáe Bulg\" Cell Proliferation Round",
+            "Twin-Bladed Excision Staff",
+            "The Spanner",
+            "Wishmaker's Shamanic Staff"
+          ]
+        },
+        {
+          "name": "Spells",
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 5
+          },
+          "headers": ["Cast Flesh", "Fervent Adoration", "Marination Beam"]
+        },
+        {
+          "name": "Races",
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 6
+          },
+          "headers": ["Inbervulpes", "Dandyman"]
+        },
+        {
+          "name": "Feats",
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 7
+          },
+          "headers": [
+            "Fried Chicken Master",
+            "Medic Adept",
+            "Overtime",
+            "Gene code: K"
+          ]
+        },
+        {
+          "name": "Optional Features",
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 8
+          },
+          "headers": [
+            "Corrosive Chamber",
+            "The Technology Liberation Alliance",
+            "E.G.O. Corrosion: Red Sheet",
+            "E.G.O. Corrosion: Sunshower",
+            "E.G.O. Corrosion: Sloshing"
+          ]
+        },
+        {
+          "name": "Conditions",
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 9
+          },
+          "headers": ["Tremor - Sync", "Marrowing Growth", "Corroded"]
+        }
+      ]
+    }
+  ],
+  "bookData": [
+    {
+      "id": "UndertomesDistrict11",
+      "source": "UndertomesDistrict11",
+      "data": [
+        {
+          "type": "section",
+          "name": "Welcome to District 11",
+          "entries": [
+            {
+              "type": "quote",
+              "entries": [
+                "If you want to be a leader, you’d best remember to nip any rising problem in its bud. The faster, the better."
+              ]
+            },
+            "This Compendium is the result of the work of the Undertomes' Community over the course of our first Brewathon event!",
+            "Following the primer theme of Limbus Company's District 11, we hope you enjoy what everyone has cooked up!"
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Wondrous Items",
+          "entries": [
+            {
+              "type": "list",
+              "items": [
+                "{@item Bongy Plush|UndertomesDistrict11} — Created by #PhyrrhicRed.",
+                "{@item Bottle of Terrible Tears|UndertomesDistrict11} — Created by #Frost.",
+                "{@item Conceited Doll's Blood-Soaked Talisman|UndertomesDistrict11} — Created by #Akari.",
+                "{@item Furor beneath Brass|UndertomesDistrict11} — Created by #Twofell.",
+                "{@item Helapoiesis Bullet|UndertomesDistrict11} — Created by #PhyrrhicRed.",
+                "{@item Helmet of Head Chicken|UndertomesDistrict11} — Created by #Frost.",
+                "{@item Matador's Mantle|UndertomesDistrict11} — Created by #Twofell.",
+                "{@item Shielded Sorrows|UndertomesDistrict11} — Created by #Oixie."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Wondrous Pets",
+          "entries": [
+            {
+              "type": "list",
+              "items": [
+                "{@optfeature Mutant Headchicken (Bongy)|UndertomesDistrict11} — Created by #Bishop."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Weapons",
+          "entries": [
+            {
+              "type": "list",
+              "items": [
+                "{@item Club of Dark Poultry|UndertomesDistrict11} — Created by #Frost.",
+                "{@item Crushing Resentment|UndertomesDistrict11} — Created by #Twofell.",
+                "{@item Helapoiesis Administering Device|UndertomesDistrict11} — Created by #AroAceBrit.",
+                "{@item OuroBoros Atelier \"Chulainn\" Precision Rifle|UndertomesDistrict11} — Created by #Mai.",
+                "{@item OuroBoros Atelier \"Gáe Bulg\" Cell Proliferation Round|UndertomesDistrict11} — Created by #Mai.",
+                "{@item Twin-Bladed Excision Staff|UndertomesDistrict11} — Created by #Bishop.",
+                "{@item The Spanner|UndertomesDistrict11} — Created by #Dr. Peter J. Pyro.",
+                "{@item Wishmaker's Shamanic Staff|UndertomesDistrict11} — Created by #Akari."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Spells",
+          "entries": [
+            "{@spell Cast Flesh|UndertomesDistrict11} — Created by #Mai.",
+            "{@spell Fervent Adoration|UndertomesDistrict11} — Created by #PyrrhicRed.",
+            "{@spell Marination Beam|UndertomesDistrict11} — Created by #Bishop."
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Races",
+          "entries": [
+            "{@race Inbervulpes|UndertomesDistrict11} — Created by #zachsonicmee",
+            "{@race Dandyman|UndertomesDistrict11} — Created by #Frost."
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Feats",
+          "entries": [
+            "{@feat Fried Chicken Master|UndertomesDistrict11} — Created by #Blade.",
+            "{@feat Medic Adept|UndertomesDistrict11} — Created by #Frost.",
+            "{@feat Overtime|UndertomesDistrict11} — Created by #Blade.",
+            "{@feat Gene code: K|UndertomesDistrict11} — Created by #Oixie."
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Optional Features",
+          "entries": [
+            "{@optfeature Corrosive Chamber|UndertomesDistrict11} — Created by #Frost.",
+            "{@optfeature The Technology Liberation Alliance|UndertomesDistrict11} — Created by #Dr. Peter J. Pyro.",
+            "{@optfeature E.G.O. Corrosion: Red Sheet|UndertomesDistrict11} — Created by #Twofell",
+            "{@optfeature E.G.O. Corrosion: Sunshower|UndertomesDistrict11} — Created by #Twofell",
+            "{@optfeature E.G.O. Corrosion: Sloshing|UndertomesDistrict11} — Created by #Twofell."
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Conditions",
+          "entries": [
+            "{@condition Tremor - Sync|UndertomesDistrict11} — Created by #Dr. Peter J. Pyro.",
+            "{@condition Marrowing Growth|UndertomesDistrict11} — Created by #Mai.",
+            "{@condition Corroded|UndertomesDistrict11}"
+          ]
+        }
+      ]
+    }
+  ]
+}
