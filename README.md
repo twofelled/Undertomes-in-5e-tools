@@ -30,15 +30,23 @@ The collection is divided into three main files. The ***General Rules Compendium
 | Tome | Required | Raw JSON URL |
 | --- | :---: | --- |
 | **General Rules** | Yes | [Add The Undertomes: General Rules Compendium](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20General%20Rules%20Compendium.json) |
-| **Project Moon** | Yes | [Add The Undertomes: Project Moon](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Project%20Moon.json) |
+| **Project Moon** | No | [Add The Undertomes: Project Moon](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Project%20Moon.json) |
+| **Brewathon #1 - District 11's Travel Brochure** | No | [Add District 11's Travel Brochure](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Project%20Moon.json) |
+
 | **Others** | WIP | Will be listed here when available. |
 
 For copying:
 
+#### General Rules
 ```text
 https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20General%20Rules%20Compendium.json
 ```
+#### Project Moon
+```text
+https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Project%20Moon.json
+```
 
+#### Brewathon #1 - District 11's Travel Brochure
 ```text
 https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Project%20Moon.json
 ```
