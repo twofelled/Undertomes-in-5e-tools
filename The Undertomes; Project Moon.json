@@ -324,22 +324,6 @@
 									"shortName": "Night Awl"
 								}
 							]
-						},
-						{
-							"type": "entries",
-							"name": "Wizard",
-							"entries": [
-								{
-									"type": "statblock",
-									"prop": "subclass",
-									"source": "TheUndertomesProjectMoon",
-									"name": "Aromancer Arcane Tradition",
-									"className": "Wizard",
-									"classSource": "PHB",
-									"collapsed": true,
-									"shortName": "Aromancer"
-								}
-							]
 						}
 					]
 				},
@@ -652,19 +636,6 @@
 				"Chink in One's Armor|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|9",
 				"Seize Ya Chance|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|13",
 				"A Tool That Punctures a Hole in the Heart|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|17"
-			]
-		},
-		{
-			"name": "Aromancer Arcane Tradition",
-			"shortName": "Aromancer",
-			"source": "TheUndertomesProjectMoon",
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassFeatures": [
-				"Aromancer Arcane Tradition|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|2",
-				"Ammunition Flare|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|6",
-				"A Void that Cannot be Filled|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|10",
-				"Full Bloom|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|14"
 			]
 		}
 	],
@@ -2529,86 +2500,6 @@
 			]
 		},
 		{
-			"name": "Whithering Flesh",
-			"source": "TheUndertomesProjectMoon",
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Aromancer",
-			"subclassSource": "TheUndertomesProjectMoon",
-			"level": 2,
-			"entries": [
-				"{@i \"To think that the fairy tale would wither into such an anticlimactic ending. Hah. Should've spared myself the trouble of hearing it out.\"}",
-				"Wizards that follow the Aromarcane Tradition are known for the vast gardens and lush jungles they have cultivated. No matter the condition of the terrain, you are always able to make a plant grow as long as you take care of it. When looking at a plant, you are immediately able to tell what it needs and how it feels. While you cannot hold a conversation with them, you're able to convey simple messages to plants and Plant creatures.",
-				"When you take care of a garden, the flora within it will always start to look well, even if they were cursed or poisoned. You are able to tell the source of any poison or curse made to specifically target any orchard or garden. Any Difficult Terrain caused by plants is considered normal terrain to you."
-			]
-		},
-		{
-			"name": "Bang, Bang",
-			"source": "TheUndertomesProjectMoon",
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Aromancer",
-			"subclassSource": "TheUndertomesProjectMoon",
-			"level": 2,
-			"entries": [
-				"{@i \"Blow. Well? Did that clear your head?\"}",
-				"During your studies, you have crafted two arcane weapons: Solitude, a {@item pistol|DMG|Pistol}, and Spring's Genesis, a {@item light crossbow|PHB|Light Crossbow}. These weapons are magical and can be used by you as spellcasting focuses for your Wizard spells. You are considered Proficient with these weapons, also being able to use your Intelligence modifier instead of Dexterity for ranged weapon attacks using these weapons. They function only while wielded by you, and if either weapon is lost or destroyed, you can recreate it during a Long Rest.",
-				"Creatures hit by the {@item pistol|DMG|Pistol} suffer your choice of 1 count of {@condition Tremor|TheUndertomesGeneralRules} or {@variantrule Tremor Burst|TheUndertomesGeneralRules}. Creatures hit by the {@item light crossbow|PHB|Light Crossbow} suffer 3 counts of {@condition Sinking|TheUndertomesGeneralRules}.",
-				"{@b Stories that Never Cease.} As a Bonus Action while casting a single-target Spell, if you have cast at least 4 spells from the same Spell Level prior to this, the next spell you cast is able to target an additional number of enemies equal to half your Proficiency Bonus, provided they're under the spell's range and are suffering from a Condition. You can only use this ability once per Long Rest.",
-				{
-					"type": "inset",
-					"name": "Designer's Note",
-					"entries": [
-						"if Pistols aren't allowed in your setting, feel free to use a Short Bow or anything else that's similar enough."
-					]
-				}
-			]
-		},
-		{
-			"name": "Ammunition Flare",
-			"source": "TheUndertomesProjectMoon",
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Aromancer",
-			"subclassSource": "TheUndertomesProjectMoon",
-			"level": 6,
-			"entries": [
-				"{@i \"I'll fire into you a void that cannot be filled.\"}",
-				"You've studied ways to modify common ammunition to suit your needs, carrying your aroma far away. When you cast a Spell of 1st level of higher that deals damage to a creature or forces it to roll a Saving Throw, they suffer 2 counts of {@condition Faint Aroma|TheUndertomesProjectMoon}.",
-				"When you spend ammunition instead of a Spell Slot to hit a creature with one of your weapons, you can choose one of the options below. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses on a Long Rest:",
-				"{@b Solitude.} The creature must roll a Wisdom Saving Throw. On a failed save, they take {@damage 4d6} Necrotic damage and must roll on the Short-Term Madness table, gaining that Madness for a minute. On a successful save, they take half as much damage and don't suffer any additional effects. The creature can reroll the Saving Throw at the end of each of their turns, ending the effect on a success.",
-				"{@b Spring's Genesis.} The creature must roll a Dexterity Saving Throw. On a failed save, they take {@damage 3d8} Poison damage and become {@condition restrained} as powerful vines constrict around their body. On a successful save, they take half as much damage and don't suffer any additional effects. When a creature {@condition restrained} this way starts their turn, they take an additional {@damage 1d8} Poison damage from the vines. They can reroll the Saving Throw at the end of each of their turns, ending the effect on a success. If they die while {@condition restrained} this way, a large field of flowers immediately blooms in a 15 foot radius around them, centered on their corpse."
-			]
-		},
-		{
-			"name": "A Void that Cannot be Filled",
-			"source": "TheUndertomesProjectMoon",
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Aromancer",
-			"subclassSource": "TheUndertomesProjectMoon",
-			"level": 10,
-			"entries": [
-				"{@i \"... Be buried in the dust.\"}",
-				"After immersing yourself in a world or aromas, your nose is well trained to pick apart different smells. Creatures hit by the {@item pistol|DMG|Pistol} now suffer 4 counts of {@condition Tremor|TheUndertomesGeneralRules} or {@variantrule Tremor Burst|TheUndertomesGeneralRules}, your choice. Creatures hit by the {@item light crossbow|PHB|Light Crossbow} now suffer 6 counts of {@condition Sinking|TheUndertomesGeneralRules}. Additionally, you can now identify the origin of any smell, your olfactory sense becomes as developed as that of a dog and you gain advantage on {@skill Perception} ability checks as long as you can use your olfactory sense."
-			]
-		},
-		{
-			"name": "Full Bloom",
-			"source": "TheUndertomesProjectMoon",
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Aromancer",
-			"subclassSource": "TheUndertomesProjectMoon",
-			"level": 14,
-			"entries": [
-				"{@i \"No accidents to prevent, no aftermath to clean up. Tsk. Let's go back.\"}",
-				"People will study your developments in the field of natural magic for generations to come. Spells you cast that create or summon any sort of plants gain double the Range and Duration. Additionally, you have developed your own version of the {@spell entangle} spell, which is now found in your Spellbook.",
-				"When you cast Entangle, you can change the required Saving Throw upon casting to be any different status of your choice. Furthermore, a creature {@condition restrained} by it suffers 3 counts of {@condition Sinking|TheUndertomesGeneralRules} and 2 counts of {@condition Tremor|TheUndertomesGeneralRules} each turn, as well as an additional Condition of your choice between {@condition charmed} or {@condition frightened}.",
-				"{@b Magnificent End.} Once per Long Rest, you can cast one of your 7th-level Spells or higher through your {@item light crossbow|PHB|Light Crossbow}. It gains the range of a 15-foot line, affecting every creature in that line. You may increase this line by a maximum of 25 additional feet, but you gain a point of {@condition exhaustion} for each 5 feet you add to it."
-			]
-		},
-		{
 			"name": "Path of the Hammer of Faith",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Barbarian",
@@ -2677,28 +2568,6 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Wall Stitcher|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|3"
-				}
-			]
-		},
-		{
-			"name": "Aromancer Arcane Tradition",
-			"source": "TheUndertomesProjectMoon",
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Aromancer",
-			"subclassSource": "TheUndertomesProjectMoon",
-			"level": 2,
-			"entries": [
-				"{@i \"Go back to the grave... with all that desires to live.\"}",
-				"Wizards of the Aromarcane Tradition also dabble in botanics, studying several different plants, their environments and effects on animals and the bodies of all different races.",
-				"When playing an Aromarcane Wizard, try to have someone in tune with nature. Maybe they're not a botanist like most, but they can understand the natural cycle and apply it to their magical theorems. Plants, flowers and their growth are a beautiful canvas, or perhaps just a means to an end. Either way, the fragrance of blossoming buds follows you where you go.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Whithering Flesh|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|2"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Bang, Bang|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|2"
 				}
 			]
 		}
@@ -2894,23 +2763,6 @@
 				"A creature suffering from {@condition Fatal Wound|TheUndertomesProjectMoon} isn't long for this world, having a clear and brittle opening to the doorway that leads to their demise.",
 				"While suffering from the Condition, this creature has their movement speed reduced by 10-ft. and whenever they suffer a {@variantrule Tremor Burst|TheUndertomesGeneralRules} they also suffer 6 {@condition Bleed|TheUndertomesGeneralRules} count. Furthermore, a creature has their minimum Critical Hit threshold increased by one, ex: They suffer a Critical Hit on an attack roll of 19-20. A Critical Hit against them triggers {@variantrule Tremor Burst|TheUndertomesGeneralRules} and then removes their {@condition Fatal Wound|TheUndertomesProjectMoon} Condition.",
 				"A creature suffering from this Condition cannot gain or have any Open or {@condition Deep Wound|TheUndertomesProjectMoon} count, which is instantly removed if gained or sustained."
-			]
-		},
-		{
-			"name": "Faint Aroma",
-			"source": "TheUndertomesProjectMoon",
-			"entries": [
-				"The smell of death is sometimes akin to that of a gentle orchard. Creatures suffering from {@condition Faint Aroma|TheUndertomesProjectMoon} gain the following conditions:",
-				{
-					"type": "list",
-					"items": [
-						"Whenever you lose counts of {@condition Sinking|TheUndertomesGeneralRules}, gain the same amount of counts of {@condition Faint Aroma|TheUndertomesProjectMoon}.",
-						"When you suffer a {@variantrule Tremor Burst|TheUndertomesGeneralRules}, you and up to 3 random creatures within 15 feet of you suffer 2 counts of {@condition Faint Aroma|TheUndertomesProjectMoon}.",
-						"When you reach the maximum amount of counts, suffer 7 counts of {@condition Tremor|TheUndertomesGeneralRules} and trigger {@variantrule Tremor Burst|TheUndertomesGeneralRules}, then take {@damage 1d6} Cold damage for each 3 count of {@condition Sinking|TheUndertomesGeneralRules} you have and lose all counts of {@condition Faint Aroma|TheUndertomesProjectMoon}. After this, you become Immune to gaining counts of {@condition Faint Aroma|TheUndertomesProjectMoon} until the end of your next turn.",
-						"If you die, a random creature within 15 feet of you suffers half of your counts of {@condition Faint Aroma|TheUndertomesProjectMoon}."
-					]
-				},
-				"A creature can only have a maximum of 15 counts of {@condition Faint Aroma|TheUndertomesProjectMoon} at a time."
 			]
 		},
 		{
