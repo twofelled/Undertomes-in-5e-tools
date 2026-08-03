@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "0.7.2",
+				"version": "0.7.22",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -21,7 +21,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1785289587
+		"dateLastModified": 1785789862
 	},
 	"book": [
 		{
@@ -147,6 +147,22 @@
 					"entries": [
 						{
 							"type": "entries",
+							"name": "Artificer",
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Corporist Specialization",
+									"className": "Artificer",
+									"classSource": "TCE",
+									"collapsed": true,
+									"shortName": "Corporist"
+								}
+							]
+						},
+						{
+							"type": "entries",
 							"name": "Barbarian",
 							"entries": [
 								{
@@ -158,6 +174,16 @@
 									"classSource": "PHB",
 									"collapsed": true,
 									"shortName": "Precognition"
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Path of the Hammer of Faith",
+									"className": "Barbarian",
+									"classSource": "PHB",
+									"collapsed": true,
+									"shortName": "Hammer of Faith"
 								}
 							]
 						},
@@ -270,6 +296,48 @@
 									"classSource": "PHB",
 									"collapsed": true,
 									"shortName": "Spada Palermitana"
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Fell Memoir Ranger Archetype",
+									"className": "Ranger",
+									"classSource": "PHB",
+									"collapsed": true,
+									"shortName": "Fell Memoir"
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Rogue",
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Night Awl Roguish Archetype",
+									"className": "Rogue",
+									"classSource": "PHB",
+									"collapsed": true,
+									"shortName": "Night Awl"
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Wizard",
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Aromancer Arcane Tradition",
+									"className": "Wizard",
+									"classSource": "PHB",
+									"collapsed": true,
+									"shortName": "Aromancer"
 								}
 							]
 						}
@@ -283,7 +351,8 @@
 							"type": "list",
 							"items": [
 								"{@optfeature Fighting Style: Sacrifice|TheUndertomesProjectMoon}",
-								"{@optfeature Relocator Fighting Style|TheUndertomesProjectMoon}"
+								"{@optfeature Relocator Fighting Style|TheUndertomesProjectMoon}",
+								"{@optfeature Headshot Focus Fighting Style|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -308,7 +377,8 @@
 								"{@item Premium Brand Top Sib's Hair Gel|TheUndertomesProjectMoon}",
 								"{@item Adhesive of Moral Reinforcement|TheUndertomesProjectMoon}",
 								"{@item Beating Box|TheUndertomesProjectMoon}",
-								"{@item Tattoo Set of Confidence|TheUndertomesProjectMoon}"
+								"{@item Tattoo Set of Confidence|TheUndertomesProjectMoon}",
+								"{@item Cursed Fireworks|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -361,6 +431,19 @@
 				},
 				{
 					"type": "section",
+					"name": "Spells",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@spell Summon Wartime Rainfall|TheUndertomesProjectMoon}",
+								"{@spell Frontliner's Baton March|TheUndertomesProjectMoon}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
 					"name": "Core Bursts",
 					"entries": [
 						{
@@ -382,6 +465,13 @@
 							"name": "The Disgrace",
 							"entries": [
 								"{@optfeature The Disgrace|TheUndertomesProjectMoon}"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Veteran",
+							"entries": [
+								"{@optfeature The Veteran|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -510,6 +600,71 @@
 				"Corpus Ribcage Arrangements|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|10",
 				"Favoritism|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|10",
 				"Facsimile of Perfected Life|Druid|PHB|Iron Maiden|TheUndertomesProjectMoon|14"
+			]
+		},
+		{
+			"name": "Path of the Hammer of Faith",
+			"shortName": "Hammer of Faith",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Path of the Hammer of Faith|Barbarian|PHB|Hammer of Faith|TheUndertomesProjectMoon|3",
+				"Nail Down Purification of Filth|Barbarian|PHB|Hammer of Faith|TheUndertomesProjectMoon|6",
+				"A Thorn of Intense Will|Barbarian|PHB|Hammer of Faith|TheUndertomesProjectMoon|10",
+				"Profigy of Divine Purity|Barbarian|PHB|Hammer of Faith|TheUndertomesProjectMoon|14"
+			]
+		},
+		{
+			"name": "Corporist Specialization",
+			"shortName": "Corporist",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassFeatures": [
+				"Corporist Specialization|Artificer|TCE|Corporist|TheUndertomesProjectMoon|3",
+				"Artful Extra Attack|Artificer|TCE|Corporist|TheUndertomesProjectMoon|5",
+				"Gallery Ingredient \u2014 A Bloodied Ring|Artificer|TCE|Corporist|TheUndertomesProjectMoon|9",
+				"Greta's Melody \u2014 Anatomization of the Unanatomized by the Anatomized|Artificer|TCE|Corporist|TheUndertomesProjectMoon|15"
+			]
+		},
+		{
+			"name": "Fell Memoir Ranger Archetype",
+			"shortName": "Fell Memoir",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Fell Memoir Ranger Archetype|Ranger|PHB|Fell Memoir|TheUndertomesProjectMoon|3",
+				"Target Watch|Ranger|PHB|Fell Memoir|TheUndertomesProjectMoon|7",
+				"Volatilized Rush|Ranger|PHB|Fell Memoir|TheUndertomesProjectMoon|11",
+				"Memoir of a War-torn Veteran|Ranger|PHB|Fell Memoir|TheUndertomesProjectMoon|15"
+			]
+		},
+		{
+			"name": "Night Awl Roguish Archetype",
+			"shortName": "Night Awl",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Night Awl Roguish Archetype|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|3",
+				"Chink in One's Armor|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|9",
+				"Seize Ya Chance|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|13",
+				"A Tool That Punctures a Hole in the Heart|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|17"
+			]
+		},
+		{
+			"name": "Aromancer Arcane Tradition",
+			"shortName": "Aromancer",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Aromancer Arcane Tradition|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|2",
+				"Ammunition Flare|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|6",
+				"A Void that Cannot be Filled|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|10",
+				"Full Bloom|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|14"
 			]
 		}
 	],
@@ -886,7 +1041,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"{@i \"Remember not only to refill what you have burned out but also to add new knowledge into your repositories.”\"}",
+				"{@i \"Remember not only to refill what you have burned out but also to add new knowledge into your repositories.\"\"}",
 				"Knowledge and the body are an organism when in combination, the brain's synapses leading to the fists clenching and bursting forward in a coordinated transfer of energy for devastating power. Monks who dwell in the sects of Enlightenment know this well, and cultivate their minds to accumulate as much intelligence as possible, then taking it apart crumb by crumb to fuel their arts.",
 				"Often cloistered with their fellows, these are also the keepers of vast reliquaries that do well in archival and retrieval of all manner of great item that was misplaced or forlorn to time, also holding out special holdings in the nourishing of young minds within their ranks, often acting as orphanages just as well.",
 				{
@@ -1144,7 +1299,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i \"… But she took me in and put a roof over my head. Fed me. Taught me this… bloody incredible swordfighting style—the sort a lowly vagrant like me would never have had the chance to learn.\"}",
+				"{@i \"… But she took me in and put a roof over my head. Fed me. Taught me this… bloody incredible swordfighting style\u2014the sort a lowly vagrant like me would never have had the chance to learn.\"}",
 				"The Palermitan Style of Swordplay is an art form that you've got etched deep in your bones, your muscles swerving in pendulum arcs as naturally as you draw out your opponent's breath. This is done through dual weapons, allowing you to make perfected use of Two-Weapon Fighting:",
 				{
 					"type": "list",
@@ -1246,7 +1401,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"{@i “Heh. Why work with your brains when you've got the brawn?”}",
+				"{@i \"Heh. Why work with your brains when you've got the brawn?\"}",
 				"The Vengeance Martial Archetype is selfish and unstoppable. You want personal vengeance against the world, and other people around you are just pawns for you to sacrifice in order to achieve that vengeance and the heights of greatness.",
 				"You belong to the Middle, a faction that treats all of their members like family, and mistreating one of theirs earns the ire of the entire group. Within, family forgives tiny missteps, but outsiders do not receive such mercy. However, you also believe thay a little sacrifice is nothing for the family, and will use your brothers and sisters to aid in your ascension, even if that costs them their lives.",
 				"Vengeance Fighters are very strong, but also uncaring. They trick you into believing you're a part of their inner circle, then use you for their own gains. You may play as a character that eventually comes to realize the wrong in their ways, but remember to always keep a desire for vengeance deep within your heart.",
@@ -1270,7 +1425,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i “Kiddo, remember what Mama told you? You ever find anything you don't like, you can talk to me about it!”}",
+				"{@i \"Kiddo, remember what Mama told you? You ever find anything you don't like, you can talk to me about it!\"}",
 				"During combat, the enemy that dealt the most damage to you or your allies this round gains a {@condition Vengeance Mark|TheUndertomesProjectMoon}. This lasts until the end of the next round, or until you fall {@condition unconscious}. If no enemy has dealt damage this turn, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} is given to the enemy that last attempted to attack you or an allied creature. If two enemies dealt the same amount of highest damage, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} goes to the latest enemy that dealt this damage. Outside of combat, whenever someone rolls an ability check to hurt or damage your character or their reputation, they will also gain a point of {@condition Vengeance Mark|TheUndertomesProjectMoon} until your next short rest. If combat is initiated right after an instance of this by rolling an initiative check, then the enemy with the highest initiative roll gains {@condition Vengeance Mark|TheUndertomesProjectMoon} until the end of the first round of combat.",
 				"Whenever you hit an enemy with counts of {@condition Vengeance Mark|TheUndertomesProjectMoon}, they suffer 1 count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}."
 			]
@@ -1285,7 +1440,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i “Hah. What's a couple of pointed fingers when this sword of legends… is resting all snug and sweet in my hands?”}",
+				"{@i \"Hah. What's a couple of pointed fingers when this sword of legends… is resting all snug and sweet in my hands?\"}",
 				"You have discovered a legendary relic, but its power is currently sealed. The mythical Greatsword {@item Lævateinn|TheUndertomesProjectMoon} requires a specific type of user to attune with it. You are no such user, but you will still attempt to draw out as much power from it as you can. You have the {@item Sealed Lævateinn|TheUndertomesProjectMoon} Greatsword, you are always attuned to it and it cannot be destroyed. If it is lost, you can magically teleport it to your location during a Long Rest.",
 				"When you attack a creature with {@condition Vengeance Mark|TheUndertomesProjectMoon} with your {@item Lævateinn|TheUndertomesProjectMoon}, you may choose one of the following options once per turn:",
 				{
@@ -1310,20 +1465,20 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"{@i “Welcome to the kill zone!”}",
+				"{@i \"Welcome to the kill zone!\"}",
 				"As a member of the Middle, you do not lack the powerful magical tattoos they are known to boast. You may attune to an additional number of tattoos equal to half your Proficiency Bonus. Additionally, whenever you finish a Short or a Long Rest, you may choose 3 tattoos from the list below to have active (if any of them requires a save DC, it is equal to 8 + your Proficiency Bonus + your Strength modifier):",
 				{
 					"type": "entries",
 					"name": "Tattoo of Manipulation",
 					"entries": [
-						"Upon getting this Tattoo, you gain proficiency in the Persuasion or the Deception skill, your choice. If you already have Proficiency in the chosen skill, you gain Expertise instead."
+						"Upon getting this Tattoo, you gain proficiency in the Persuasion or the {@skill Deception} skill, your choice. If you already have Proficiency in the chosen skill, you gain Expertise instead."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Tattoo of Deep Wounds",
 					"entries": [
-						"When you hit a creature, you may choose to inflict the {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} condition on them as long as they have {@condition Bleed|TheUndertomesGeneralRules} counts. Once they are cured of the {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} condition, they become Immune to it for 10 minutes. {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} instead causes the afflicted creature to suffer {@damage 2d6} damage on the same triggers as the previous Condition and 2 stacks are removed every time it is triggered. The Medicine Check required to remove this Condition is increased by 5."
+						"When you hit a creature, you may choose to inflict the {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} condition on them as long as they have {@condition Bleed|TheUndertomesGeneralRules} counts. Once they are cured of the {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} condition, they become Immune to it for 10 minutes. {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} instead causes the afflicted creature to suffer {@damage 2d6} damage on the same triggers as the previous Condition and 2 stacks are removed every time it is triggered. The {@skill Medicine} Check required to remove this Condition is increased by 5."
 					]
 				},
 				{
@@ -1392,7 +1547,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i “I don't need some stupid crutch like that “Core Burst (心)” crap. I just gotta pull as much power as I can from these tattoos and grit my teeth, and I'll overpower your fancy little tricks no problem.”}",
+				"{@i \"I don't need some stupid crutch like that \"Core Burst (心)\" crap. I just gotta pull as much power as I can from these tattoos and grit my teeth, and I'll overpower your fancy little tricks no problem.\"}",
 				"You live in a dangerous world, so your solution was to become the most dangerous thing within it and not just survive, but rule it. Whenever you use your {@classFeature Second Wind|Fighter|PHB|1} ability when you have half of your hit points or less, for 1 minute you gain Resistance to all damage types except Psychic or Force, and the first time you hit an attack every turn, you heal hit points equal to {@dice 1d10} + your constitution modifier.",
 				"When you use this ability, you can only use it again after a Long Rest."
 			]
@@ -1407,7 +1562,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"{@i “Heh. Why work with your brains when you've got the brawn?”}",
+				"{@i \"Heh. Why work with your brains when you've got the brawn?\"}",
 				"You don't take shit from anyone, or anything, and you make that very clear with every step you take. Your speed increases by 10 feet. After you use your {@classFeature Indomitable|Fighter|PHB|9} ability, regardless of if you failed or succeeded, you may immediately use your remaining movement speed to move towards the source that forced you to make a saving throw. You can make an unarmed attack against it, as if you had your Tattoo of Stomping active, except it deals double the damage dice. If the source is an object or a structure, it takes double damage from this attack.",
 				"Additionally, if you have taken the {@optfeature Fighting Style: Sacrifice|TheUndertomesProjectMoon}, you may choose to double the damage dice of your attack once per Long Rest, but both creatures will take the doubled damage, and it cannot be diminished or prevented in any way by the friendly creature. If the friendly creature is a Middle's Blade Rogue, then both them and the creature become Vulnerable to the damage types of your attack as well."
 			]
@@ -1422,7 +1577,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"{@i “Hahahahaha! Having a good time, Kiddo? Mama's the best, huh?”}",
+				"{@i \"Hahahahaha! Having a good time, Kiddo? Mama's the best, huh?\"}",
 				"You've heard the destructive desire of the sword would eventually corrupt your spirit - bullshit, you're as sane as the day you killed for this thing. As long as you're holding {@item Lævateinn|TheUndertomesProjectMoon}, you gain the following abilities:",
 				{
 					"type": "entries",
@@ -1449,8 +1604,8 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"{@i “I know it hurts, but please, stop struggling…!”}",
-				"{@i “I promise, nothing could make as fascinating music as a human can… Nothing!”}",
+				"{@i \"I know it hurts, but please, stop struggling…!\"}",
+				"{@i \"I promise, nothing could make as fascinating music as a human can… Nothing!\"}",
 				"Rockin' is all that a bard of the magnanimous and great COLLEGE OF THE SCREAMING MELODY needs to be alive, to be able to shred flesh with metal and have music be performed by each dying noise and beating gargle of another - Ah! Pure ecstasy.",
 				"Of course, people - MOST people don't understand the artistry at work upon taking apart the human body to find the music inside, so these bards either take to being secretive in their work, only forming the occasional band perofrmance with their fellows or they swing the complete other way in an obsessive opulence that rivals even that of paladins!",
 				{
@@ -1473,7 +1628,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i “I promise, nothing could make as fascinating music as a human can… Nothing!”}",
+				"{@i \"I promise, nothing could make as fascinating music as a human can… Nothing!\"}",
 				"Music isn't just an art form limited to the conveniently well-accepted instruments that all other bards partake in playing, no, hardly! You have come to understand that there is no greater song machine other than the meticulous inner-workings of living beings when they are subject to glorious torment, and you have done your utmost to become proficient in playing them!",
 				"You may perform melodic attacks as an Action during your turn provided you are wielding an Instrument you are proficient in. A melodic attack is an advanced artform comprised of absolutely shredding with your instruments, blowing your targets minds or even setting them ablaze with sheer, overwhelming fervour for the melody. You are proficient with these attacks and use your Charisma modifier for their rolls, dealing {@damage 2d4} plus your Charisma modifier's worth of thunder damage on a hit, also inflicting 2 {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules} count.",
 				"You may choose which of the Conditions to inflict and how to partition them. The amount inflicted increases to 3 count upon reaching 8th level in Bard.",
@@ -1491,7 +1646,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i “If everyone threw their bodies into me, it'll certainly create an even sweeter melody”}",
+				"{@i \"If everyone threw their bodies into me, it'll certainly create an even sweeter melody\"}",
 				"A lively life is one that is marched with an entire band and not a single sad little player, after all, how are you going to play without plentiful instruments?! That thought has crawled in the back of your mind enough times for you to consider the occasional welcoming of others into your melody and actually learning how they tick from the outside in. You gain proficiency in the {@skill Nature} skill, or Expertise if you were already proficient. Charisma is your Ability Modifier for this skill.",
 				"Additionally, whenever a creature attempts a Strength, Dexterity, Constitution or Charisma ability check you may spent your Reaction to play a backing track to hype them - and yourself - up, granting them half your Charisma modifier as a bonus modifier to their roll. If they still fail, the sounds of their broken body fill you with joy, with that creature suffering an amount of {@damage d8} bludgeoning damage equal to half their proficiency bonus and you instantly recovering one use of your {@classFeature Bardic Inspiration|Bard|PHB|1}. This must be done before they roll. You may only use this feature an amount of times equal to half your proficiency bonus per short or long rest."
 			]
@@ -1506,8 +1661,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i “This way, just a little closer… Hahah! Perfect! That scream, weaving into a ninth chord!”}",
-				"{@i “Such wondrous… harmony.”}",
+				"{@i \"This way, just a little closer… Hahah! Perfect! That scream, weaving into a ninth chord!\"}",
+				"{@i \"Such wondrous… harmony.\"}",
 				"Ah, the sweet, sweet and tender dance of notes fluttering down your instrument is ecstasy for your brain! However, you have come to learn that the true bliss comes from creating a twinned harmony by pulling the cords of other's bodies, mangling them to make truly divine music! Whenever you make a melodious attack for the first time during your turn, you may perform an additional melodious attack as part of the same action for each time you've rolled a 20 or greater on the dice roll, including modifiers. This value is diminished by one per melodious attack hit as part of this Action, with it being reset at the end of your turn. You may make one additional attack at 6th level and a second upon reaching 12th level in Bard. You may select the same creature as the target of these additional attacks.",
 				"You have a +1 bonus modifier to this roll for each sum of 3 {@condition Bleed|TheUndertomesGeneralRules} and {@condition Burn|TheUndertomesGeneralRules} count the target is suffering from, to a maximum value of +5. This is considered a direct increase to your roll's base result for the sakes of triggering additional attacks.",
 				"When you perform your first melodious attack during your turn you may spend a Bard spell slot to empower your music. You gain the following as part of this Action:",
@@ -1535,7 +1690,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"{@i “Make me move… Light my path with the songs!”}",
+				"{@i \"Make me move… Light my path with the songs!\"}",
 				"No one should, could or would stop you now, they can't stop either when the rhythm that pervades their soul! Your jam sessions have evolved, short strums to melodies to whole shows played over the battle stage and others finally have a shot of truly, lastingly connecting to the song that rips at your heart's strings! At the end of your turns, all creatures who have spent a use of your {@classFeature Bardic Inspiration|Bard|PHB|1} die during this combat may choose to gain one count of {@condition Rhythm|TheUndertomesProjectMoon}. While creatures have this Condition you are considered to be Concentrating on it, with all creatures' count being lost if you lose Concentration. This counts an additional Concentration for the purpose of still being able to concentrate on other spells.",
 				"A creature with this Condition has been enraptured by the god-rending melody of your carnage, and can't help but want to partake in it as musician and instrument, dealing and suffering an additional amount of damage equal to your Charisma modifier whenever they deal or suffer damage ( respectively ) equal to your 3 times your {@condition Rhythm|TheUndertomesProjectMoon} count that they currently have. Whenever a creature declines receiving {@condition Rhythm|TheUndertomesProjectMoon}, they halve the counts of the Condition they currently have, rounded up. Additionally, if a creature with this Condition benefits from your {@classFeature Bardic Inspiration|Bard|PHB|1} rolls the minimum value rolled is always equal to their current {@condition Rhythm|TheUndertomesProjectMoon} count, being increased if it was lower.",
 				"A creature with {@condition Rhythm|TheUndertomesProjectMoon} gain an additional count whenever they first kill a creature during a round, except for summoned creatures. Additionally, a creature with 3 or more count may spend one count to perform an additional weapon attack or cast an additional spell of 3rd level or lower during their turn.",
@@ -1552,7 +1707,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"{@i “Damn, passed out already, huh. Now that grudge is going into the Book of Vengeance... I'll avenge you soon.”}",
+				"{@i \"Damn, passed out already, huh. Now that grudge is going into the Book of Vengeance... I'll avenge you soon.\"}",
 				"Paladins that follow the Oath of Loyalty have a duty to their companions, their family. They will raise them to become the best versions of themselves and protect them from all harm. In return, their bonds will become unbreakable, and there will be no battle great enough to bring them down.",
 				"The faction of the Middle, an organization that preaches that all who are a part of it are siblings and must be there for each other, while avenging every misdeed done to its members, is where these Paladins usually hail from. This organization can be flavored however you want in your world, if it even exists, but it must maintain the familial ties that its members follow.",
 				"While a Paladin that follows the Oath of Loyalty will never forgive a mistake committed against them by those who are not family, it is generally considered right to look the other way and forgive your siblings for their errors. After all, family is family, and blood is thicker than water.",
@@ -1583,7 +1738,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"{@i “The Middle remembers. It doesn't matter what I did here; the Middle will remember everyone and everything that dared to turn their back on it.”}",
+				"{@i \"The Middle remembers. It doesn't matter what I did here; the Middle will remember everyone and everything that dared to turn their back on it.\"}",
 				"The tenets of a Paladin that assumes the Oath of Loyalty require an unshakable bond between them and their family.",
 				"{@b Never Forget.} If slights were committed against your family, write them down in the book of vengeance. Never allow whoever dared to stand against one of your siblings to see the light of day.",
 				"{@b Love Your Siblings.} Your brothers and sisters are your loyal family and must be treated with respect. Their slights can be forgiven, and they deserve compliments and rewards when successfully achieving their goals and your own.",
@@ -1599,7 +1754,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 2,
 			"entries": [
-				"Druidism is regarded as an ancient tradition relating to the natural world and sometimes even abhoring that of technological advancement that stiffles that natural growth of all things. Despite that, or even because of that there is a small, peculiar circle of druids which choose to embrace that technology - that so called tainted metal to replicate nature itself, a controversial medium for a pure passion of this so called “artwork”.",
+				"Druidism is regarded as an ancient tradition relating to the natural world and sometimes even abhoring that of technological advancement that stiffles that natural growth of all things. Despite that, or even because of that there is a small, peculiar circle of druids which choose to embrace that technology - that so called tainted metal to replicate nature itself, a controversial medium for a pure passion of this so called \"artwork\".",
 				"Those which follow the circle of the Iron Maiden have stripped themselves of their supple flesh and instead addorn it as material for their creations, embellishing the natural world with their very self for the sake of spreading their unbridled joy and vision of the world around them. They also do such in a way that encapsulates the moment of lightning striking the ground or a volcano erupting - a slow, deliberate sudden moment where they may spend months and years under their iron shell only to enrichen a glimpse of the presence of their body underneath.",
 				"They may not be well seen in druid communities, but one thing is certain: the passion these folk have for their art is unrivaled, going toe to toe with even that of a bards love for the arts.",
 				{
@@ -1629,7 +1784,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 2,
 			"entries": [
-				"{@i “Aesthetics concerns itself entirely with the visible, yet this self-evident familiarity often invites neglect that overlooks the inherent significance of what is seen...”}",
+				"{@i \"Aesthetics concerns itself entirely with the visible, yet this self-evident familiarity often invites neglect that overlooks the inherent significance of what is seen...\"}",
 				"You are a very unique type of druid, the one who wishes to transcend the binds of their flesh by imitating nature the best they can: constructing and shaping a body sculpted in the image of what once was. You, unlike the vast majority of other circles, embrace the touch of metal while extracting and re-shaping the natural form to become a better meld of your view of reality.",
 				"As a form of repression to better understand the limits of your body, you've stowed away the fruits of your slow labour into a metallic armor that paradoxically hides and defines your form. You are always in this Iron Maiden Form until you spend one of your Wildshape uses as a Bonus Action to enter your Flowing State Form, as per described in the Features below.",
 				"You, however, do not limit yourself to using your own body as material, also acquiring one {@condition Corpus Ingredients|TheUndertomesProjectMoon} count whenever you successfully deal damage to a creature within 15-ft. of you. You have a count limit equal to double your proficiency bonus, and due to a tendency to dutifully spend any leftovers on smaller projects during a short or long rest, you may only have up to your proficiency bonus worth of {@condition Corpus Ingredients|TheUndertomesProjectMoon} after such. You may spend count for the following:",
@@ -1688,7 +1843,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 2,
 			"entries": [
-				"{@i “It is because of this that Faust forged this panoply. Not merely to provide a veil behind which the bashful Fascia might reside, but also to stage a dual aesthetic: the weighted inertia of the armored body...”}",
+				"{@i \"It is because of this that Faust forged this panoply. Not merely to provide a veil behind which the bashful Fascia might reside, but also to stage a dual aesthetic: the weighted inertia of the armored body...\"}",
 				"You have constructed or even grown a metallic armor that encases your entire body most of the time, only being doffed when you need to put on a magnificent display of power and artistry - a show of the humanoid form at its peak. While not in your Flowing Form, you are in Iron Maiden Form, which affects you in the following ways:",
 				{
 					"type": "list",
@@ -1696,7 +1851,7 @@
 						"Your movement speed is reduced by 10-ft. and any effects that would give you additional movement speed is halved. ( Rounded up. )",
 						"While not donning any armor your AC is equal to 11 + your Constitution modifier + your Wisdom modifier.",
 						"You are considered proficient with Martial Weapons, but may only add half your proficiency bonus to attacks made with them.",
-						"You are considered proficient with Heavy Armor and suffer no penalties to Stealth skill checks while donning it. When wearing this armor, you usually implement it as an outer layer of your Iron Maiden shell."
+						"You are considered proficient with Heavy Armor and suffer no penalties to {@skill Stealth} skill checks while donning it. When wearing this armor, you usually implement it as an outer layer of your Iron Maiden shell."
 					]
 				},
 				"Additionally, whenever an attack misses you and the difference between the attack and your AC is equal to or greater than a value of 10 - your proficiency bonus, you may spend your Reaction to perform a melee weapon attack against the attacker. You may otherwise cast a cantrip that has a spell attack against the same target.",
@@ -1713,7 +1868,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"{@i “Well, then why'd you go narkin' us if you knew what was comin', eh?”}",
+				"{@i \"Well, then why'd you go narkin' us if you knew what was comin', eh?\"}",
 				"You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works. If there is at least 1 member of the Middle within 10 feet of you, you may spend an additional use of Channel Divinity before needing a Short or Long Rest.",
 				"{@b Sibling Retaliation.} As a Bonus Action, until the start of your next turn, you can take 1 additional Reaction per Round, even if you have already spent your usual Reaction. When a friendly creature within 10 feet of you is attacked, you can use a Reaction to punch or kick the attacker as long as they are within reach or you have enough movement speed to reach them. You make an Unnarmed Attack against them, and the enemy suffers either 1 count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}, your choice. If the friendly creature that was attacked was from the Middle, you deal an additional dice of unnarmed attack damage and inflict 1 additional count of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}.",
 				"{@b Vengeance Tattoo Resonance.} As a Bonus Action, you can use your tattoos to improve your physical capabilities. For 1 minute, your AC increases by 2, and you gain Temporary Hit Points in a number of d8 equal to your Proficiency Bonus. Additionally, you gain advantage on all Strength rolls, and you can jump twice the height and distance you would normally be able to without taking fall damage."
@@ -1728,7 +1883,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 2,
 			"entries": [
-				"{@i “Against the beautiful liberation of the repressed flesh upon shedding the encasement.”}",
+				"{@i \"Against the beautiful liberation of the repressed flesh upon shedding the encasement.\"}",
 				"Freeing your body is a spectacle in of itself, the act of repressing your flesh being like marinating a great meal only to reveal its glory sporadically to ensure that this exhibition will be as close to perfection as can be. Whenever you enter your Flowing Form, you gain the following:",
 				{
 					"type": "list",
@@ -1754,7 +1909,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"{@i “C'mon, don't get yourself written up in the Book for a few coins, yeah?”}",
+				"{@i \"C'mon, don't get yourself written up in the Book for a few coins, yeah?\"}",
 				"Your body is a lethal weapon, and you don't need swords or lances when you have punches and kicks. Your unarmed attacks are considered Heavy Weapons and now deal {@damage 1d6} + your Strength modifier in damage. This number increases to {@damage 1d8} at level 5, {@damage 1d10} at level 11 and {@damage 1d12} at level 17.",
 				"When you would normally attune with a weapon, instead you etch a tattoo reminiscent of it in your body, being able to use its damage as unarmed attack damage and gaining all the benefits you would normally get from attacking with it. You can only have 1 weapon tattoo from this feature at a time. This is still considered as being attuned to the weapon.",
 				"Additionally, during combat, the enemy that dealt the most damage to you or your allies this round gains a {@condition Vengeance Mark|TheUndertomesProjectMoon}. This lasts until the end of the next round, or until you fall unconscious. If no enemy has dealt damage this turn, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} is given to the enemy that last attempted to attack you or an allied creature. If two enemies dealt the same amount of highest damage, the stack of {@condition Vengeance Mark|TheUndertomesProjectMoon} goes to the latest enemy that dealt this damage. Outside of combat, whenever someone rolls an ability check to hurt or damage your character or their reputation, they will also gain a point of {@condition Vengeance Mark|TheUndertomesProjectMoon} until your next short rest. If combat is initiated right after an instance of this by rolling an initiative check, then the enemy with the highest initiative roll gains {@condition Vengeance Mark|TheUndertomesProjectMoon} until the end of the first round of combat.",
@@ -1770,7 +1925,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 2,
 			"entries": [
-				"{@i “A spark of inspiration.”}",
+				"{@i \"A spark of inspiration.\"}",
 				"Art permeates your breathing like oxygen invades the lung. You gain Proficiency in one Charisma skill of your choice and one Artisan's Tools of your choice. You may use Wisdom in place of Charisma when attempting Skill Checks."
 			],
 			"header": 1
@@ -1784,7 +1939,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 7,
 			"entries": [
-				"{@i “... The one that's gonna exterminate the whole bloody lot o' you bastards!”}",
+				"{@i \"... The one that's gonna exterminate the whole bloody lot o' you bastards!\"}",
 				"You emit a powerful and intimidating aura out to a range of 10 feet. If all friendly creatures within the aura have more than half of their hit points, they gain a +2 to their Charisma-based rolls.",
 				"When a friendly creature within the aura has less than half of their Hit Points, other creatures can choose to become Vengeful at the start of their turn. A Vengeful creature takes a penalty of -3 to their AC and whenever they're hit they suffer 1 count of {@condition Immobilized|TheUndertomesGeneralRules} but always doubles their bludgeoning, slashing and piercing damage dice against a creature that attacked them or a friendly creature they know within the last turn. Additionally, if these creatures would suffer counts of {@condition Bleed|TheUndertomesGeneralRules} or {@condition Burn|TheUndertomesGeneralRules}, they suffer double that amount on the first time they gain one of these Conditions before the start of their next turn.",
 				"When you reach 18th level in this class, the range of the aura increases to 30 feet."
@@ -1799,7 +1954,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 15,
 			"entries": [
-				"{@i “Oh? Well, look at that. Not bad. Here, you earned a 'good-job' kitty sticker for your Book.”}",
+				"{@i \"Oh? Well, look at that. Not bad. Here, you earned a 'good-job' kitty sticker for your Book.\"}",
 				"You carry with you several gifts and stickers to celebrate when one of your loyal siblings and companions perform a feat you deem worthy enough. As a Bonus Action, you gift them with a kitty sticker or a small trinket, inspiring joy in their heart and a willingness to make you even prouder, gaining a bonus of +1 to their AC, to a maximum of 2, and {@dice 2d6} Temporary Hit Points, as well as advantage on their first attack roll each turn for the duration. The happiness from these stickers and trinkets last for 1 minute once received.",
 				"You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses on a Long Rest."
 			]
@@ -1813,14 +1968,14 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 20,
 			"entries": [
-				"{@i “Scurry off and lick your wounds, 'cuz by the time I return, there'll be enough pain to go around for the whole gang.”}",
+				"{@i \"Scurry off and lick your wounds, 'cuz by the time I return, there'll be enough pain to go around for the whole gang.\"}",
 				"For a while, you are able to show your siblings the true apex of an elder brother. As a bonus action, you gain the following benefits for 1 minute:",
 				{
 					"type": "list",
 					"items": [
 						"At the start of your turn, you choose a creature within 30 feet of you to gain a {@condition Vengeance Mark|TheUndertomesProjectMoon}.",
 						"A creature with {@condition Vengeance Mark|TheUndertomesProjectMoon} has Vulnerability to Bludgeoning damage for the first attack they receive each Round.",
-						"Once per turn when you hit a creature, you can force them to roll a Constitution saving throw. On a failed save, they take an additional dice of damage equal to your unarmed attack and are sent flying back in a 30-foot line and fall Prone. Any creature within that line takes {@damage 1d8} Bludgeoning damage and must succeed on a Dexterity saving throw or fall Prone. If there is a non-magical structure in their way, the structure is destroyed and they take an additional {@damage 1d8} dice of bludgeoning damage."
+						"Once per turn when you hit a creature, you can force them to roll a Constitution saving throw. On a failed save, they take an additional dice of damage equal to your unarmed attack and are sent flying back in a 30-foot line and fall {@condition Prone}. Any creature within that line takes {@damage 1d8} Bludgeoning damage and must succeed on a Dexterity saving throw or fall {@condition Prone}. If there is a non-magical structure in their way, the structure is destroyed and they take an additional {@damage 1d8} dice of bludgeoning damage."
 					]
 				},
 				"Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.",
@@ -1836,7 +1991,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 6,
 			"entries": [
-				"{@i “Have you woken up, Fascia? Faust has been waiting—there is a new friend Faust wants to introduce to Fascia.”}",
+				"{@i \"Have you woken up, Fascia? Faust has been waiting\u2014there is a new friend Faust wants to introduce to Fascia.\"}",
 				"An artists creation must be seeded and grown carefully, and you have planted your own - cultivating it with the flesh of your own corpus and that of which you gather in your daily exhibitions of violence and/or bodily harm. You have begun created a masterwork, it is a Martial Melee weapon that you are considered Attuned with at all times. It counts as a magic item for the purposes of bypassing Resistances and it usually takes the shape of a greatsword you can wield with but a single hand, an extension of your own body. It deals {@damage 1d6} slashing damage and has the Finesse property.",
 				"Over the course of a long rest you may spend an amount of {@condition Corpus Ingredients|TheUndertomesProjectMoon} equal to your proficiency modifier to permanently upgrade it, as per the following:",
 				{
@@ -1869,10 +2024,10 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 10,
 			"entries": [
-				"{@i “These blood vessels are sufficiently thick. Not bad at all.”}",
+				"{@i \"These blood vessels are sufficiently thick. Not bad at all.\"}",
 				"Your armored state has been perfected like the bark of a tree, splintering off when hurt and stabbing back at its attackers. Whenever you roll Initiative, you may also roll an amount of Hit Die up to half your proficiency bonus, then gaining that value plus your Wisdom Modifier's worth of Temporary Hit Points. You instantly lose these when entering Flowing Form. While these Temporary Hit Points remain, whenever another creature deals damage to you through a weapon attack they suffer 2 {@condition Bleed|TheUndertomesGeneralRules} count.",
 				"While in Iron Maiden Form you've developed a new ways to move, throwing your weight in one direction at the risk of becoming rattled. Once per turn you may spend 5-ft. of movement as a Free Action to instantly move up to a 15-ft. line. If you would collide with a creature or object that is at least small, that target must pass a Dexterity saving throw against your Druid Spell DC or suffer half your proficiency bonus' worth of d6 bludgeoning damage on a failure. On a success or if you don't hit anything, you trip and must attempt that saving throw yourself instead, suffering the same consequences on a failure.",
-				"Additionally you have learnt how to distort your voice well in the chambers of your second skin, granting you Advantage on Deception checks and other creatures Disadvantage on attempting Insight checks targetting you, provided you are in Iron Maiden Form."
+				"Additionally you have learnt how to distort your voice well in the chambers of your second skin, granting you Advantage on {@skill Deception} checks and other creatures Disadvantage on attempting {@skill Insight} checks targetting you, provided you are in Iron Maiden Form."
 			]
 		},
 		{
@@ -1884,7 +2039,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 10,
 			"entries": [
-				"{@i “A Critique Salon! Exhilarating Prospect.”}",
+				"{@i \"A Critique Salon! Exhilarating Prospect.\"}",
 				"Your ability to interact with the body - the corpus of living creatures has evolved beautifully through criticism and hard work, rendering you a better artist than ever before. Whenever you would gain {@condition Corpus Ingredients|TheUndertomesProjectMoon} in this Form, gain an additional count.",
 				"Upon reaching 10th level you may perform a second additional attack as part of your Attack Action while in Flowing Form.",
 				"Additionally, this improvement also expanded your horizons on how to work your materials, granting you the ability to spend 4 {@condition Corpus Ingredients|TheUndertomesProjectMoon} when entering your Flowing Form to instantly re-roll your Initiative, taking the higher value for the rest of the combat. You may also spend 6 count when you must attempt a Dexterity saving throw to instead use your Wisdom modifier instead of Dexterity.",
@@ -1900,14 +2055,14 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 14,
 			"entries": [
-				"{@i “At long last, Faust has completed the masterpiece that even the Maestro will have no choice but to approve.”}",
+				"{@i \"At long last, Faust has completed the masterpiece that even the Maestro will have no choice but to approve.\"}",
 				"The stride toward becoming an artist - the brutal steps taken in reflecting your artwork itself - it has all culminated into who you are now. What you are now. You have transcended the repressed flesh and became a living embodiment of your love of nature and of humanity itself, represented in each threaded tendon and re-shaped muscle. You gain the following:",
 				{
 					"type": "list",
 					"items": [
 						"While in your Iron Maiden Form, your base AC is now 13 + your Constitution modifier + your Wisdom modifier and you are considered resistant to non-magical bludgeoning, piercing and slashing attacks.",
 						"While in your Flowing Form you gain an additional 5-ft. of movement and deal an additional 2 damage on a hit against Bleeding creatures.",
-						"You have Expertise in any skill checks revolving around Artisan's Tools you are proficient in. You also gain Expertise in the Performance skill for producing and enacting your art.",
+						"You have Expertise in any skill checks revolving around Artisan's Tools you are proficient in. You also gain Expertise in the {@skill Performance} skill for producing and enacting your art.",
 						"You may spend a Bonus Action to successfully discern the intent behind any creation of another creature, such as a forged weapon or artwork."
 					]
 				},
@@ -1915,6 +2070,636 @@
 				"{@b Minimalist Manifesto.} A small prompt to keep yourself sharp with the removal of corpus. When creating this sculpture you instantly gain your proficiency bonus' worth of {@condition Corpus Ingredients|TheUndertomesProjectMoon}.",
 				"{@b Cascading Columnal Crevice.} A bundle of nerves and bones ready to explode out at the most minimal movement. Whenever a creature moves into or out of 5-ft. of this sculpture you may spend your Reaction to whistle in the right frequency to set it off. It lashes out in an explosion of vine-like blood vessels and spike-ish bone, forcing all creatures within a 15-ft. radius to pass a Dexterity saving throw against your Druid Spell Save DC or suffer {@damage 5d10} slashing damage and 4 {@condition Bleed|TheUndertomesGeneralRules} count.",
 				"{@b Horrifyingly Beautiful Creation.} You produce your standard artwork. Hostile creatures and creatures not familiar with your work must pass a Wisdom saving throw against your Druid Spell Save DC when first seeing it or suffer {@damage 3d8} psychic damage and become Frightened of you and your sculpture for one minute, being able to re-attempt this saving throw at the end of their subsequent turns. Whenever they do so, they instantly suffer an additional {@damage 2d8} psychic damage."
+			]
+		},
+		{
+			"name": "Self-Destructive Purge",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Hammer of Faith",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"She is right\u2014I must carry out more purification... That will then purify my mind with certainty.\"}",
+				"{@condition Nails|TheUndertomesProjectMoon|Nails} are cold, hard reminders of what must be brought down to the ground, so that they may never raise from their filth again. You employ their rusty points with great pride, even if you feel your mind is rusting itself at times, yet that is of no matter. After all, true faith demands effort and sacrifice.",
+				"Whenever you deal damage with melee weapon attacks to a creature, you also inflict an amount of {@condition Nails|TheUndertomesProjectMoon} count equal to half your proficiency bonus. These {@condition Nails|TheUndertomesProjectMoon|Nails} stick out of their flesh and body like a flare guiding your fervent belief to hammer them down once dutifully prepared.",
+				"Additionally, whenever you enter your Rage you may choose to instead enter a state of sheer {@condition Fanatic|TheUndertomesProjectMoon|Fanaticism}. While in that stage you have all the features you'd gain by being Raging, alongside the following:",
+				{
+					"type": "list",
+					"items": [
+						"Your faith burns brighter than anything, drawing holy wrath down the wounds poked into your foes. You deal an additional {@damage 1d6} radiant damage on and inflict {@condition Immolation|TheUndertomesProjectMoon} count equal to the target's {@condition Nails|TheUndertomesProjectMoon} count on a melee weapon attack hit.",
+						"Your blind fanaticism may propel you to do grand things, but it also has you convinced of certain tribulations you simply must suffer entirely. Whenever you would be forced to make a saving throw or ability check, you may roll a {@dice d4}. On an odd result, you gain a bonus modifier equal to your proficiency bonus. On an even result, you get the same value as a negative modifier to the roll. If you are below half your Maximum Hit Points, you must always roll this {@dice d4}.",
+						"At the end of your turns you suffer {@damage 1d10} psychic damage that cannot be reduced or increased through any means, as the toll of your position is taken. Additionally you have Vulnerability against psychic damage while below half your Maximum Hit Points."
+					]
+				}
+			]
+		},
+		{
+			"name": "Disgust of the Faithful",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Hammer of Faith",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"That filth... I'll purge it off you!\"}",
+				"There are horrific things in this world that you just can't brush aside, beings whose sheer existence fills your mouth with the bitter taste of sin. They must be purged. When you first gain this subclass, choose one of the following creature types aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead to become the Target of your Ire. Alternatively, you can select two races of humanoid as Targets.",
+				"You inflict 2 additional {@condition Nails|TheUndertomesProjectMoon} count against Targets of your Ire and you may make an additional attack as part of the Attack Action against them during your turns.",
+				"You may change the creature type only when going through substantial character development or at levels where you would gain Ability Score Improvements, with you DM's permission."
+			]
+		},
+		{
+			"name": "Scripture of Truth Within",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Hammer of Faith",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"To purge the grounds with fire, and build anew a clean world.\"}",
+				"You have read the sacred texts again and again, seared them into your retinae and punched them through your heart. You gain proficiency in the {@skill Religion} skill, or Expertise if you were already Proficient."
+			]
+		},
+		{
+			"name": "Nail Down Purification of Filth",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Hammer of Faith",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 6,
+			"entries": [
+				"{@i \"I skewered sixteen today. Tomorrow, I will nail and cremate twice as many. Huhu... It gets fun as you keep at it, doesn't it?\"}",
+				"Your faith drives you not only to simply nail the unworthy, you are driven instead to purge their souls and provide space for a new world where all the faithful can be whole under your grace. You gain the following means of purification:",
+				"{@b Crucifixion.} You may spend your Action to build up the grave to a new world free of filth. You may consume 8 {@condition Nails|TheUndertomesProjectMoon} count on a target within melee reach to perform a melee weapon attack against them. On a hit, they have their binds pierce through their limbs and bind them to a single place to suffer divine retribution. That creature suffers {@damage 2d12} piercing damage and becomes Immobilized until the start of your next turn. After recovering from this Condition, they suffer 8 count of {@condition Immolation|TheUndertomesProjectMoon}. A creature crucified this way becomes overtaken by the adrenaline due to the extreme pain inflicted onto them, gaining a +5 to their AC against being crucified for one minute.",
+				"{@b Immolating Pyre.} Whenever you hit a {@condition Burn|TheUndertomesGeneralRules|Burning} creature, you may consume 6 {@condition Nails|TheUndertomesProjectMoon} count to flare the flames of your faith that have eaten at their soul. Any {@condition Burn|TheUndertomesGeneralRules} count on the target instantly becomes {@condition Immolation|TheUndertomesProjectMoon} and any {@condition Bleed|TheUndertomesGeneralRules} count becomes {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} instead. {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} instead causes the afflicted creature to suffer {@damage 2d6} damage on the same triggers as the previous Condition and 2 stacks are removed every time it is triggered. The {@skill Medicine} Check required to remove this Condition is increased by 5.",
+				"{@b Wedge the Unruly.} Whenever you hit a creature with a melee weapon attack while Raging, you may forgo inflicting {@condition Nails|TheUndertomesProjectMoon|Nails} and instead 2 {@condition Nails|TheUndertomesProjectMoon} Count against them. You instead inflict an additional d6 radiant damage on that attack equal to half your proficiency bonus.",
+				"You may only use one of these abilities per turn, but may use them multiple times if able.",
+				"Additionally, you always deal an additional d6 radiant damage against the Target of your Ire, yet your growing obsession grows worse with each passing day, causing you to suffer {@damage 1d12} psychic damage that cannot be reduced through any means if you end your turn without killing a Target of your Ire, provided there is one you can see within 60-ft. of you."
+			]
+		},
+		{
+			"name": "A Thorn of Intense Will",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Hammer of Faith",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 10,
+			"entries": [
+				"{@i \"The power to cleanse filth with fire... Indeed, it was certainly a good idea to listen to her.\"}",
+				"Doubting your faith has become a far-away thought of times long gone, it has seeped through your bones and granted you the willpower to trudge through anything. Whenever you kill a creature during Rage, your desire to purge screams with pride. You gain an additional attack as part of your Attack Action until the end of your next turn and instantly gain {@dice 1d12} Temporary Hit Points which last until the end of your next turn.",
+				"Additionally, whenever you fail an ability check, you may choose to suffer {@damage 1d12} psychic damage to grant yourself an {@dice 1d6} bonus modifier to your next ability check within one hour. If this ability check would affect, is targeted at or against a Target of your Ire, gain a {@dice 2d4} bonus modifier instead."
+			]
+		},
+		{
+			"name": "Profigy of Divine Purity",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Hammer of Faith",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 14,
+			"entries": [
+				"{@i \"It's only natural. Because I... am the chosen one... Isn't that right?\"}",
+				"You have risen way past the ranks of your fellows to be that which grips divinity itself and holds it high as the guiding star to your people, enabling you to reach a state that can be considered nothing short of sanctified. Your abilities are improved in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"Whenever you enter Rage and become {@condition Fanatic|TheUndertomesProjectMoon} the very air around you changes. Every creature within a 60-ft. radius may also choose to become a {@condition Fanatic|TheUndertomesProjectMoon}. Every hostile creature within reach must pass a Wisdom saving throw or become {@condition frightened}. If they choose to become {@condition Fanatic|TheUndertomesProjectMoon}, they are also {@condition charmed} by you while you are Raging. This save DC is 8 + your proficiency bonus + your choice of your Strength or Constitution modifier.",
+						"You and any other {@condition Fanatic|TheUndertomesProjectMoon} creatures within 30-ft. of you while you are a {@condition Fanatic|TheUndertomesProjectMoon} yourself gain a +2 bonus to Wisdom saving throws, Advantage against being {@condition frightened} and Immunity to being {@condition charmed}.",
+						"Creatures who became {@condition Fanatic|TheUndertomesProjectMoon} through you inflict one {@condition Nails|TheUndertomesProjectMoon} count on a hit and suffer one roll of their Hit Die of psychic damage at the end of their turns. This damage cannot be reduced in any way.",
+						"Creatures Immobilized by your Crucifixion ability are instead {@condition paralyzed} until the end of your next turn.",
+						"You also gain a +1 modifier to damage for every +1 modifier attack rolls granted by creatures suffering from {@condition Nails|TheUndertomesProjectMoon|Nails}.",
+						"You cannot have your Hit Points reduced below 1 by psychic damage.",
+						"If you would be a target to an effect that would cause you to become or {@condition frightened} you may once per long rest spend your Reaction to instantly become a {@condition Fanatic|TheUndertomesProjectMoon} until the source of the Condition is dead or has been out of your sight for at least an hour. If you become or {@condition frightened}, your faith crumbles and pierces through your mind though. Any positive modifiers you would have to rolls instead become negative modifiers, such as your Strength modifier to attack and you suffer {@damage 2d12} psychic damage at the end of your turns while suffering from the Condition."
+					]
+				},
+				"Additionally, you may indoctrinate other creatures to partake in your faith during long rests. After doing so once, indoctrinated creatures gain an {@dice 1d4} bonus modifier to {@skill Religion} checks until their next long rest. Upon doing so twice, they gain {@dice 1d6} instead. Upon the third time, they become permanently Proficient in the skill instead. If you have Expertise in Religion, any creature who has spent fourteen long rests being indoctrinated by you gains Expertise in Religion permanently."
+			]
+		},
+		{
+			"name": "Corporist Specialization",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Corporist",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"You have decided to lead your very own artistic movement inspired by the hidden beauty inside every living creature. Artificers with the Corporist Specialization aren't afraid to get their hands bloody in search of materials for their craft. To them, the anatomy of every living being is a canvas waiting to be turned into art, and you always research the best methods to heed their call.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Corporist Spells|Artificer|TCE|Corporist|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Anatomize|Artificer|TCE|Corporist|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Magnum Opus: Tibia|Artificer|TCE|Corporist|TheUndertomesProjectMoon|3"
+				}
+			]
+		},
+		{
+			"name": "Corporist Spells",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Corporist",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Corporist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.",
+				{
+					"type": "table",
+					"caption": "Corporist Spells",
+					"colLabels": ["Artificer Level", "Spells"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						[
+							"3rd",
+							"{@spell charm person}, {@spell inflict wounds}"
+						],
+						["5th", "{@spell hold person}, {@spell spike growth}"],
+						["9th", "{@spell animate dead}, {@spell fear}"],
+						[
+							"13th",
+							"{@spell dimension door}, {@spell grasping vine}"
+						],
+						[
+							"17th",
+							"{@spell dominate person}, {@spell raise dead}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Anatomize",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Corporist",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"Let us explore together\u2014the pulsations of your remaining life.\"}",
+				"Taking parts of others for your creations, your art, is something you have learned to do with great pride. You acquire one {@condition Corpus Ingredients|TheUndertomesProjectMoon} count whenever you successfully deal damage to a creature within 15-ft. of you. You have a count limit equal to double your proficiency bonus, and due to a tendency to dutifully spend any leftovers on smaller projects during a short or long rest, you may only have up to your proficiency bonus worth of {@condition Corpus Ingredients|TheUndertomesProjectMoon} after such.",
+				"Additionally, you gain Proficiency with the {@skill Nature} skill. If you already have Proficiency with it, you gain Expertise instead. Your anatomical knowledge knows no bounds, and you always have advantage on anatomy-related checks.",
+				"{@b My, How We Love the Flesh and the Blood.} If a {@subclass Iron Maiden|Druid|PHB|TheUndertomesProjectMoon|Circle of the Iron Maiden} Druid is within 30 feet of you and makes an attack roll, you can use your Reaction to give that attack advantage. If it hits, it deals an additional {@damage 1d6} Slashing damage and the creature suffers 1 additional count of {@condition Bleed|TheUndertomesGeneralRules}. This number increases to 2 at level 5, 3 at level 11 and 4 at level 17. After using this ability, if the {@subclass Iron Maiden|Druid|PHB|TheUndertomesProjectMoon|Circle of the Iron Maiden} Druid gains {@condition Corpus Ingredients|TheUndertomesProjectMoon} due to this attack, you gain the same amount."
+			]
+		},
+		{
+			"name": "Magnum Opus: Tibia",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Corporist",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"What do you see... in this piece? I am curious to hear your impressions.\"}",
+				"Your very own body gave birth to the skeletal artifact resting in your hands. It is a Martial Melee weapon that you are considered Attuned with at all times. It counts as a magic item for the purposes of bypassing Resistances and it usually takes the shape of a large sword made out of bones, a complete extension of your old body. It deals {@damage 1d8} slashing damage, has the Reach property, inflicts 1 count of {@condition Bleed|TheUndertomesGeneralRules} and you may choose to use your Intelligence modifier for its attack and damage rolls.",
+				"This weapon is considered an Artifact and can only be destroyed upon a century passing after your death. If it is lost - no, it must never be. Your sole mission must be to keep your Magnum Opus on your person the entire time. You will gain an anxious obsession to recover it otherwise, and will not be able to focus on anything else, gaining disadvantage on any ability checks unrelated to finding it, but advantage on all ability checks related to finding it.",
+				"Over the course of a Long Rest, you may spend an amount of {@condition Corpus Ingredients|TheUndertomesProjectMoon} equal to your Proficiency Modifier to permanently upgrade it, as per the following:",
+				{
+					"type": "list",
+					"items": [
+						"Your attack and damage rolls with your Magnum Opus increase by +1. When you take it again, it increases by +1 again, to a maximum of +3.",
+						"You inflict an additional count of {@condition Bleed|TheUndertomesGeneralRules} on enemies that you hit. Whenever you take this again, you inflict an additional count.",
+						"Your Magnum Opus's damage becomes {@damage 1d10}. When you take it again, it becomes {@damage 1d12}.",
+						"Your Reach extends by 5 feet and the range of all of your abilities extends by 10 feet. When you take it again, both increase by 5 and 10 feet more respectively.",
+						"Rolls of 19 or 20 are considered Critical hits for the purpose of your skills that require Critical Hits. When you take this upgrade again, that number becomes 18.",
+						"You can strip a magical weapon bare and feed its scraps to your Magnum Opus over the course of a long rest. The magical item used is permanently destroyed and your Magnum Opus gains its properties, such as a Vorpal Sword's Vorpal enchantment, but not any increases to attack and damage rolls. You may only benefit from a single magical weapon consumed like this at any given time, needing to strip your work to fit another weapon if you wish to do so.",
+						"You can use a Bonus Action to point your Magnum Opus at a creature and give them advantage on their next ability check, attack roll or saving throw. You can use this ability a number of times equal to your proficiency bonus and you regain all expended uses on a Long Rest.",
+						"After you hit a creature with an attack you can use a Reaction to tear away some of the creature's flesh. They must succeed on a Wisdom saving throw or become {@condition frightened} of you for 1 minute. Creatures {@condition frightened} this way always suffer an additional count of {@condition Bleed|TheUndertomesGeneralRules} whenever it is inflicted and may reroll their saving throws at the end of each of their turn, ending the effect on a success. You can use this ability a number of times equal to your proficiency bonus and you regain all expended uses on a Long Rest.",
+						"You can use a Bonus Action to pose with your Magnum Opus. Choose a creature that you can see within 30 feet of you. They must succeed on a Wisdom saving throw or become {@condition charmed} by you for 1 minute. Creatures that are fighting you have advantage on this saving throw. You can use this ability a number of times equal to your proficiency bonus and you regain all expended uses on a Long Rest.",
+						"You can use an Action to extend your weapon and ensnare someone. Choose a creature that you can see within 30 feet of you. They must succeed on a Dexterity saving throw or become Grappled by you and your weapon for 1 minute, and your movement speed is not halved due to the Grapple. Creatures Grappled this way may reroll their saving throws at the end of each of their turns, ending the effect on a success.",
+						"As an Action, you may cleave your Magnum Opus across a 15-foot cone in front of you. Every creature in this cone must make a Dexterity saving throw. For any creature that fails the save, choose an order. The first one to fail the save takes {@damage 1d6} Slashing damage, the second takes {@damage 2d6}, and this continues to a maximum of {@damage 4d6} Slashing damage. Every creature that failed the save also suffers 2 counts of {@condition Bleed|TheUndertomesGeneralRules}. On a successful save, they only take half damage and suffer no additional effects.",
+						"You may use an Action to thrust your Magnum Opus forward in a 30 foot line. Any creature within that line must succeed on a Dexterity saving throw or become {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding}. {@condition Heavy Blood|TheUndertomesGeneralRules|Heavily Bleeding} instead causes the afflicted creature to suffer {@damage 2d6} damage on the same triggers as the previous Condition and 2 stacks are removed every time it is triggered. The {@skill Medicine} Check required to remove this Condition is increased by 5.",
+						"As part of your attack action, you may attempt a vertical attack roll against a creature within Reach. On a hit, they take the damage they normally would and fall {@condition Prone}. You can use this ability a number of times equal to your proficiency bonus and you regain all expended uses on a Long Rest.",
+						"As an Action, you may spend 3 {@condition Corpus Ingredients|TheUndertomesProjectMoon} to attempt to immobilize a creature that you can see within 30 feet of you. They must succeed on a Dexterity saving throw or become {@condition restrained} for 1 minute. Creatures {@condition restrained} this way may reroll their saving throws at the end of each of their turns, ending the effect on a success. (lvl 9)",
+						"As an Action, you enlarge your sword, making it pierce everything in a 30-foot line. Creatures within that line must make a Dexterity saving throw. On a failure, they take {@damage 5d8} Piercing damage and gain disadvantage on Strength, Dexterity and Constitution saving throws for 1 minute unless they're healed. This cannot be removed while the creature suffering from it is {@condition Bleed|TheUndertomesGeneralRules|Bleeding}. On a successful save, a creature only takes half the amount of damage and suffers no additional effects. (lvl 9)",
+						"As an Action, you shoot a tendon from your sword to wrap around another creature. They must succeed on a Dexterity saving throw or become puppeteered by you. Immediately after failing this saving throw and on your subsequent turns, you may spend a Bonus Action to force the creature to perform any Action it is able to for you on any target within reach. They may reroll their saving throws at the end of each of their turns, ending the effect on a success. You can only use this ability once per Short or Long Rest. (lvl 9)",
+						"As part of your attack action with your Magnum Opus, you may attempt to hit a creature in a vital spot. They must succeed on a Constitution saving throw or become {@condition paralyzed} until the end of your next turn. You can only use this feature once per creature per combat. (lvl 9)",
+						"As part of your attack action with your Magnum Opus, you gut the creature in front of you. They must succeed on a Constitution saving throw or suffer 1 point of {@condition exhaustion}. You can use this ability a number of times equal to your proficiency bonus and you regain all expended uses on a Long Rest. (lvl 9)",
+						"You pierce your Magnum Opus on the floor, extending its bones underground to hit every creature of your choice within 20 feet of you. The area becomes Difficult Terrain for creatures that are not a part of the Ring and the targets must make a Dexterity saving throw. On a failed save, they take {@damage 4d6} Piercing damage and suffer 2 counts of {@condition Bleed|TheUndertomesGeneralRules}, and you may spend 3 {@condition Corpus Ingredients|TheUndertomesProjectMoon} so that the next attack against each of the affected creatures is done with advantage. On a successful save, they take half the damage and suffer no additional effects. You can only use this ability once per Short or Long Rest. (lvl 9)",
+						"Immediately after you kill a creature, you may add parts of its corpse to your Magnum Opus, gaining access to one of their Actions. You can only have 2 different creature actions at a time with this ability. (lvl 15)",
+						"As an Action, you can target a creature that you can see within 30 feet of you and extend your Magnum Opus to reach for it. If they have 50 hit points or fewer, they instantly die. Otherwise, they must make a Dexterity saving throw. On a failed save, they take {@damage 10d8} Piercing damage, suffer 3 counts of {@condition Bleed|TheUndertomesGeneralRules} and are immediately pulled towards you. On a successful save, they only take half the damage and suffer no additional effects. You can only use this ability once per Short or Long Rest. (lvl 15)"
+					]
+				},
+				"You may take each upgrade only once, with the exception of being able to take upgrades marked by your Magnum Opus an additional time upon reaching 5th and 15th levels in Artificer. You are aware that a crowded piece that attempts to convey everything at once is heard by none, so your maximum amount of upgrades is equal to your Known Infusions count and you may exchange an existing one with the same process of creating one. Whenever this feature asks for a saving throw, the Save DC is equal to your Artificer Spell Save DC."
+			]
+		},
+		{
+			"name": "Artful Extra Attack",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Corporist",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 5,
+			"entries": [
+				"{@i \"Please, do share your impressions!\"}",
+				"Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn. Additionally, whenever you land a Critical Hit, you get to add your Charisma modifier to the damage."
+			]
+		},
+		{
+			"name": "Gallery Ingredient \u2014 A Bloodied Ring",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Corporist",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 9,
+			"entries": [
+				"{@i \"Allow me to play the curator for our guests\u2014from kitsch to avant-garde, delving deep into each trend of art movement.\"}",
+				"You have developed an extradimensional key that leads you to your very own Gallery of the Ring within its many Corridors. You now have a small key that can be recreated on a Short or Long Rest if lost or destroyed, destroying the old one upon recreation. You can use an Action to insert it into a door or into a space that could be considered a gate between two rooms or spaces, creating a portal to your personal gallery which you immediately enter. Your gallery is 60 feet long and 35 feet wide, with 20-foot high ceilings. Only creatures you allow inside the gallery can enter it with an Action. The interior is completely white, and furnished with pedestals that you can store your various creations inside. Only you can store, remove or give permission to store or remove items in the pedestals.",
+				"Creatures can remain inside the gallery up to a number of hours equal to twice your Proficiency Bonus. Creatures exit the gallery early if they use a Bonus Action to leave, if you die, or if the key is destroyed. Creatures can only leave if you allow them to or if you're unconscious. When any creature exits the gallery, they appear in the unoccupied space closest to it. Any objects left in the gallery remain there until carried out, but every creature is expelled in a similar manner to you. If the key is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the key's former space. Once you enter the gallery, you can't enter again until you finish a Long Rest.",
+				"The key's AC equals your spell save DC. Its hit points equal your Artificer level plus your Proficiency Bonus, and it is Immune to Poison and Psychic damage.",
+				"Additionally, when you score a Critical Hit, you regain one use of your Flash of Genius ability.",
+				"{@b Installation Art no. 3: Improvised Ribcage.} While inside your gallery, you can use an Action to summon rib cages around a creature that you can see within the gallery in attempts to imprison it. They must succeed on a Dexterity saving throw against your spell save DC or become {@condition restrained} for a minute. They may reroll this saving throw at the end of each of their turns, ending this effect on a success."
+			]
+		},
+		{
+			"name": "Greta's Melody \u2014 Anatomization of the Unanatomized by the Anatomized",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Corporist",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 15,
+			"entries": [
+				"{@i \"What a beautiful hue it has. A piece worthy of its own pedestal.\"}",
+				"You've become a true master of anatomy, able to bend any bone and tendon to your will. If you kill a non-Construct creature of CR 10 or lower, you may choose to store its body with you until your next Long Rest, during which you may transform it into an Automanikin and revive it under your command. This creature has the same stat block as the original creature, except its creature type is Construct. It listens to your commands as a Bonus Action, but will take the Dodge action if not commanded to do anything else during that turn. Alternatively, you can use an Action to transform Humanoids you have killed into Automanikins. Immediately after creating them, you may order them as part of the same Action to do something, and they will attempt to complete that order to the best of their abilities until they die or the order changes. You can have a maximum number of Automanikins equal to your Proficiency Bonus if they're CR 2 or lower Humanoids, or only one if they are non-humanoid or higher than CR 2.",
+				"{@b Closing Time - Installation Art no. 1: Your Flesh and Bones as the Gallery's Seats.} As an Action inside your gallery, you may have any of your art pieces expand their bones and puncture creatures nearby. Choose any number of creatures that you can see up to your Proficiency Bonus. They must succeed on a Dexterity saving throw against your spell save DC or be pierced, taking {@damage 8d6} Piercing damage and having to roll on the Lingering Injuries Table. If this kills a creature, they are immediately added to your gallery as one of its sculptures. Once you use this feature, you can only use it again after a Long Rest."
+			]
+		},
+		{
+			"name": "Memoir of a Fallen Stigma",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Fell Memoir",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"A single bullet ain't enough...\"}",
+				"You and the concept of the hunt have been lost in smoke for years, granting you the capability to make manifest fallen memories as if they were still lingering spirits on the world. Once per long rest you may summon two ghoulish apparitions of conflicts past to occupy any unoccupied space you can see within 60-ft. of you.",
+				"These beings use the {@condition Stigmatized|TheUndertomesProjectMoon} Memory sheet and are unable to speak and are subjugated by your own will, being considered friendly to you regardless of their disposition, they are forced to follow your orders regardless of if it would endanger them.",
+				"The appearance of these creatures are usually that of a hazy selection of faces that you have met and taken down in the past - be they friend or foe. You may Bellow Orders as a Free Action during your turn or between other creature's turns, before or after they act.",
+				{
+					"type": "statblock",
+					"name": "Stigmatized Memory",
+					"source": "TheUndertomesProjectMoon",
+					"tag": "creature"
+				}
+			]
+		},
+		{
+			"name": "Curse-Wrought Bullets",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Fell Memoir",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"There is neither; no fragments of memories, no need to look into them... fire, only fire!\"}",
+				"Whatever you touch eventually becomes tainted by the weight of memories you will never be able to run from, yet you have learnt how to focus the smog on your soul into a single point. At the start of your turns you may choose to have a creature become {@condition Stigmatized|TheUndertomesProjectMoon}, the centre of your everlasting hatred. You may only do so provided there is no creature already {@condition Stigmatized|TheUndertomesProjectMoon}, or you can use your Bonus Action to switch the victim of your Stigma.",
+				"Whenever you hit a creature with a ranged weapon attack you gain 1 {@condition Poise|TheUndertomesGeneralRules} count and inflict 2 {@condition Bleed|TheUndertomesGeneralRules} count, whenever you hit a {@condition Stigmatized|TheUndertomesProjectMoon} creature, gain two additional counts as well.",
+				"Whenever you kill a {@condition Stigmatized|TheUndertomesProjectMoon} creature you gain {@condition Poise|TheUndertomesGeneralRules} count equal to your proficiency bonus and one {@condition Torn Memory|TheUndertomesProjectMoon} count, as the already dissolving mental image of that which you have shattered lingers on in your aim. If you kill or knock a friendly creature {@condition unconscious} you gain one {@condition Torn Memory|TheUndertomesProjectMoon}, yet you may only gain one count per creature per combat.",
+				"During your turn you may spend {@condition Torn Memory|TheUndertomesProjectMoon} as a Free Action you may take once per turn for the following:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Reload, Then Fire.} By spending one {@condition Torn Memory|TheUndertomesProjectMoon} you may perform an additional attack as part of your Attack action during your next turn. This extra attack does not stack. Additionally, any ranged weapons you are wielding are instantly reloaded at the start of your next turn provided you have enough ammunition on your person.",
+						"{@b Designated Target Fire.} By spending at least three {@condition Torn Memory|TheUndertomesProjectMoon} count you may spend your Action to perform a special attack, coating an 15-ft. radius within your weapon's range in a red haze that reeks of lingering sweat and charred hair. All creatures of your choice within that radius must pass a Dexterity saving throw or suffer an amount of d10 piercing damage and a sum of 2 {@condition Bleed|TheUndertomesGeneralRules} count equal to the amount of {@condition Torn Memory|TheUndertomesProjectMoon} spent. Creatures who succeed take half that damage and count instead. Afterward you gain one {@condition Poise|TheUndertomesGeneralRules} count for each creature damaged through this, with an additional 8 {@condition Poise|TheUndertomesGeneralRules} count if you have killed your {@condition Stigmatized|TheUndertomesProjectMoon} creature through this attack. These 8 count do not count toward your turn limit. You cannot gain an amount of {@condition Poise|TheUndertomesGeneralRules} in a single turn greater than double your proficiency bonus through this way."
+					]
+				},
+				"You gain an additional {@condition Poise|TheUndertomesGeneralRules} count and deal an additional {@condition Bleed|TheUndertomesGeneralRules} count from ranged weapon attacks after reaching 8th level in Ranger, and then an additional of each count upon reaching 14th level.",
+				"Whenever asked for a saving throw by a subclass feature, you use your Ranger Spell Save DC. Additionally, any attacks or effects that consume {@condition Torn Memory|TheUndertomesProjectMoon} count as magical attacks for the purposes of bypassing Resistances."
+			]
+		},
+		{
+			"name": "Target Watch",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Fell Memoir",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 7,
+			"entries": [
+				"{@i \"Thus, you sink into a bottomless slumber.\"}",
+				"In any field of battle there is a certain distance you must have in consideration to better deal with trampling down a target with your weapon, but you have learnt how to incarnate a devil from wherever you stand. You may spend your Bonus Action during your turn to shift your stance, changing into one of the following Targetting Settings until the end of your next turn:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Close-Quarters.} You shift back your weapon and prepare to take only pot-shots or use its body to bash at your foes, suffering no Disadvantage on ranged weapon attacks while within 5-ft. of your target. Additionally, you may perform melee weapon attacks using ranged weapons, still counting as a ranged weapon attack and dealing the ranged weapon's original damage die in bludgeoning damage. Your ranged weapons long and short Ranges are halved. (Any distance ending in 5-ft. is rounded down.) Your Sweet-Spot is 10-ft. While on Close-Quarters you gain advantage on {@skill Perception} checks that are within your short range.",
+						"{@b Medium-Range.} Your stance becomes firm and flexible, ready to change at any moment. Your ranged weapon's short range value is decreased by 10-ft., and your long range increases by 10-ft. While on Medium-Range you gain an {@dice 1d4} bonus modifier to {@skill Perception} checks.",
+						"{@b Far-Watch.} Your stance becomes more reserved and rooted, halving your movement speed. Attempting to target a creature within short range applies Disadvantage on your attack roll, but targets within your long range do not. Your long range increases by 20-ft. Your Sweet-Spot is any range greater than your short range plus 15-ft. While on Far-Watch you gain advantage on {@skill Perception} checks that are outside your short range."
+					]
+				},
+				"Each of these Targetting Settings has a Sweet Spot. When you attempt to hit a target within your current Sweet Spot, you gain a +1 to hit against that target and deal an additional damage die matching your wielded weapon's on a hit. Upon targetting a Huge or greater creature, only the spaces in the middle intersections of where they occupy count as a Sweet Spot.",
+				"If you kill your {@condition Stigmatized|TheUndertomesProjectMoon} creature while it is within your current Targeting Setting you gain an additional 8 {@condition Torn Memory|TheUndertomesProjectMoon} count."
+			]
+		},
+		{
+			"name": "Volatilized Rush",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Fell Memoir",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 11,
+			"entries": [
+				"{@i \"Thus, you sink into a bottomless slumber.\"}",
+				"There is smoke in your lungs. You don't know when it got there, or when you failed to exhale it, but that haze has become a part of you. Whenever you would lose {@condition Poise|TheUndertomesGeneralRules} count from triggering a Posture Critical, only halve your current amount instead. Furthermore, whenever you trigger one while having a {@condition Poise|TheUndertomesGeneralRules} count of 10 or greater, you may choose to change the attack's damage type to force damage.",
+				"Additionally, you gain a new way to march on through your {@condition Torn Memory|TheUndertomesProjectMoon|Torn Memories}. You may spend one count when you perform a ranged weapon attack during your turn. When you do so, you can see a series of blazing-red reticules in the air that guide your shot toward the targets heart, considering their AC to be lowered by your proficiency bonus for this attack. On a hit you always trigger a Posture Critical hit and this attack bypasses damage Resistances and considers Immunity to your dealt damage type as only Resistance instead."
+			]
+		},
+		{
+			"name": "Memoir of a War-torn Veteran",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Fell Memoir",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 15,
+			"entries": [
+				"{@i \"Until echoes of gunshots and plumes of smoke bury all that I've ever remembered...!\"}",
+				"Are you in pursuit of a memory of the past or have you become nothing but a blurred memory yourself? Maybe it is your party that grounds you in reality for the brief moments where you remain wholly yourself, or maybe its just the pursuit of the next target that keeps you going. Nevertheless, you have become a veteran in the war that is your life, wringing out every trick you have needed.",
+				{
+					"type": "list",
+					"items": [
+						"While you have at least one {@condition Stigmatized|TheUndertomesProjectMoon} Memory summoned, you may spend your Reaction whenever you take damage to only take half that damage and have all {@condition Stigmatized|TheUndertomesProjectMoon} Memories within 120-ft. reach of you suffer the other half. If a {@condition Stigmatized|TheUndertomesProjectMoon} Memory is killed in this way, you do not receive its benefits.",
+						"Upon rolling Initiative you gain 4 {@condition Poise|TheUndertomesGeneralRules} count and one {@condition Torn Memory|TheUndertomesProjectMoon} count.",
+						"You inflict an additional 3 {@condition Bleed|TheUndertomesGeneralRules} count against creatures within your Sweet Spot.",
+						"Whenever you Critically Hit a creature, you may choose to spend one {@condition Torn Memory|TheUndertomesProjectMoon} to deal an additional {@damage 2d8} piercing damage and also double any Conditions you would inflict.",
+						"For each {@condition Torn Memory|TheUndertomesProjectMoon} count you have you gain a +2 on {@skill Deception} checks to conceal your identity, as wreathes of red flame gradually consume your face like a mask that actively muddies the perception and memories of those that try to recall you, remaining to them as only a weaponized fire in their minds eye."
+					]
+				}
+			]
+		},
+		{
+			"name": "Gap Attack",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Night Awl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"Stay sharp and focus on the fight if you don't want to snuff it.\"}",
+				"Opening a gap for you and your fellows to strike through is a tough opportunity to pass by, so you create it yourself when no one else will. When you deal damage through your Sneak Attack, you may choose to engage in a swift withdrawal of your blade to have the target suffer a count of {@condition Open Wound|TheUndertomesProjectMoon} and an amount of {@condition Bleed|TheUndertomesGeneralRules} count equal to your proficiency bonus.",
+				"Whenever you perform a Sneak Attack you may choose to inflict {@variantrule Tremor Burst|TheUndertomesGeneralRules} after the Sneak Attack.",
+				"Additionally, keeping your step clean and your options open cash in your shot is tantamount to you, granting you half your proficiency bonus' worth of {@condition Haste|TheUndertomesProjectMoon} count on a successful Sneak Attack."
+			]
+		},
+		{
+			"name": "Wall Stitcher",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Night Awl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"We'd better hurry up, or surviving this long will have been for nothing.\"}",
+				"You aren't the top dog and you know that, you don't have the greatest tools nor the greatest skills yet, so you've grown to rely on what you can get everywhere - making the most of what people would just let pass by without another glance. You gain proficiency in your choice of the {@skill Acrobatics} or {@skill Athletics} skill, or Expertise if you were already proficient in the chosen skill.",
+				"Additionally you may cling surfaces to aid in staying still if something would move you, being able to spend your Bonus Action to wedge yourself as long as you are wielding a weapon that deals piercing damage. While wedged on walls and ceilings you do not fall at the end of your turn and once per turn you may spend a free action to attempt jumping 10-ft. upward or downward before wedging yourself in another surface within reach or jump down to the ground. You have Advantage on saving throws against effects that would cause you to be moved or knocked {@condition Prone}, such as being Shoved or the {@spell thunderwave} spell. You may unlatch as a free action.",
+				"While out of combat you gain a base climbing speed equal to half your walking speed as long as you are wielding a weapon that deals piercing damage, as you can take your time to manoeuvre yourself. This increases by 5-ft. if you are wielding another piercing weapon in your other hand."
+			]
+		},
+		{
+			"name": "Chink in One's Armor",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Night Awl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 9,
+			"entries": [
+				"{@i \"You're full of openings.\"}",
+				"Your ability to exploit weaknesses has grown in precision, being able to drive your blade right through even the scales of a dragon to ensure that you'll carve your way out of any bad situation. When your attack roll would trigger a Sneak Attack against a creature that is benefitting from armor or natural armor you may focus to pierce straight through the smallest openings available, considering the target's AC is against this attack to be only 10 + their Dexterity Modifier. On a hit using this ability you also inflict an additional 3 {@condition Bleed|TheUndertomesGeneralRules} count.",
+				"You may use this feature an amount of times equal to your proficiency bonus, restoring spent uses on a long rest.",
+				"Additionally while your {@condition Haste|TheUndertomesProjectMoon} count is 2 or greater creatures have Disadvantage on Opportunity Attacks against you."
+			]
+		},
+		{
+			"name": "Seize Ya Chance",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Night Awl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 13,
+			"entries": [
+				"{@i \"Is this your weak spot?\"}",
+				"You are a masterful being in the art of quickly finishing the broken and the battered with extreme mercy. Whenever you trigger a Sneak Attack against a creature suffering from {@condition Deep Wound|TheUndertomesProjectMoon}, you may choose to plunge your blade deeper for a vicious maiming of that poor soul. They suffer a {@variantrule Tremor Burst|TheUndertomesGeneralRules} and a {@condition Fatal Wound|TheUndertomesProjectMoon} instead. You may use this feature twice per long rest, and an additional third time upon reaching 20th level.",
+				"Additionally, if two other friendly creatures within 15-ft. of you have failed a saving throw or ability check that you passed you may offer them a stop of help through a hasty tip or a quick shove, granting them a bonus modifier to their roll equal to your proficiency bonus, potentially turning a failure into a success. You may do so once per short or long rest. Increases to two times upon reaching 18th level."
+			]
+		},
+		{
+			"name": "A Tool That Punctures a Hole in the Heart",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Night Awl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 17,
+			"entries": [
+				"{@i \"Survival matters the most... I'll do anything for it.\"}",
+				"The rough path that your lifestyle brought you has shaped you into someone who can make the most of themselves and keep living another night no matter which horde comes knocking down your door, no matter the reason why. You gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"When you inflict {@condition Open Wound|TheUndertomesProjectMoon} for the first time, inflict an additional count.",
+						"Whenever you deal piercing damage, deal an additional {@damage 2d6} piercing damage.",
+						"While below half your maximum hit points you gain an additional 10-ft. of movement speed and add half your proficiency bonus as a bonus modifier to Dexterity and Wisdom saving throws.",
+						"While below half your maximum hit points you cannot be targeted by Opportunity Attacks.",
+						"You inflict double the {@condition Bleed|TheUndertomesGeneralRules} count you would when you trigger a Critical Hit."
+					]
+				}
+			]
+		},
+		{
+			"name": "Whithering Flesh",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Aromancer",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"entries": [
+				"{@i \"To think that the fairy tale would wither into such an anticlimactic ending. Hah. Should've spared myself the trouble of hearing it out.\"}",
+				"Wizards that follow the Aromarcane Tradition are known for the vast gardens and lush jungles they have cultivated. No matter the condition of the terrain, you are always able to make a plant grow as long as you take care of it. When looking at a plant, you are immediately able to tell what it needs and how it feels. While you cannot hold a conversation with them, you're able to convey simple messages to plants and Plant creatures.",
+				"When you take care of a garden, the flora within it will always start to look well, even if they were cursed or poisoned. You are able to tell the source of any poison or curse made to specifically target any orchard or garden. Any Difficult Terrain caused by plants is considered normal terrain to you."
+			]
+		},
+		{
+			"name": "Bang, Bang",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Aromancer",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"entries": [
+				"{@i \"Blow. Well? Did that clear your head?\"}",
+				"During your studies, you have crafted two arcane weapons: Solitude, a {@item pistol|DMG|Pistol}, and Spring's Genesis, a {@item light crossbow|PHB|Light Crossbow}. These weapons are magical and can be used by you as spellcasting focuses for your Wizard spells. You are considered Proficient with these weapons, also being able to use your Intelligence modifier instead of Dexterity for ranged weapon attacks using these weapons. They function only while wielded by you, and if either weapon is lost or destroyed, you can recreate it during a Long Rest.",
+				"Creatures hit by the {@item pistol|DMG|Pistol} suffer your choice of 1 count of {@condition Tremor|TheUndertomesGeneralRules} or {@variantrule Tremor Burst|TheUndertomesGeneralRules}. Creatures hit by the {@item light crossbow|PHB|Light Crossbow} suffer 3 counts of {@condition Sinking|TheUndertomesGeneralRules}.",
+				"{@b Stories that Never Cease.} As a Bonus Action while casting a single-target Spell, if you have cast at least 4 spells from the same Spell Level prior to this, the next spell you cast is able to target an additional number of enemies equal to half your Proficiency Bonus, provided they're under the spell's range and are suffering from a Condition. You can only use this ability once per Long Rest.",
+				{
+					"type": "inset",
+					"name": "Designer's Note",
+					"entries": [
+						"if Pistols aren't allowed in your setting, feel free to use a Short Bow or anything else that's similar enough."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ammunition Flare",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Aromancer",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 6,
+			"entries": [
+				"{@i \"I'll fire into you a void that cannot be filled.\"}",
+				"You've studied ways to modify common ammunition to suit your needs, carrying your aroma far away. When you cast a Spell of 1st level of higher that deals damage to a creature or forces it to roll a Saving Throw, they suffer 2 counts of {@condition Faint Aroma|TheUndertomesProjectMoon}.",
+				"When you spend ammunition instead of a Spell Slot to hit a creature with one of your weapons, you can choose one of the options below. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses on a Long Rest:",
+				"{@b Solitude.} The creature must roll a Wisdom Saving Throw. On a failed save, they take {@damage 4d6} Necrotic damage and must roll on the Short-Term Madness table, gaining that Madness for a minute. On a successful save, they take half as much damage and don't suffer any additional effects. The creature can reroll the Saving Throw at the end of each of their turns, ending the effect on a success.",
+				"{@b Spring's Genesis.} The creature must roll a Dexterity Saving Throw. On a failed save, they take {@damage 3d8} Poison damage and become {@condition restrained} as powerful vines constrict around their body. On a successful save, they take half as much damage and don't suffer any additional effects. When a creature {@condition restrained} this way starts their turn, they take an additional {@damage 1d8} Poison damage from the vines. They can reroll the Saving Throw at the end of each of their turns, ending the effect on a success. If they die while {@condition restrained} this way, a large field of flowers immediately blooms in a 15 foot radius around them, centered on their corpse."
+			]
+		},
+		{
+			"name": "A Void that Cannot be Filled",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Aromancer",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 10,
+			"entries": [
+				"{@i \"... Be buried in the dust.\"}",
+				"After immersing yourself in a world or aromas, your nose is well trained to pick apart different smells. Creatures hit by the {@item pistol|DMG|Pistol} now suffer 4 counts of {@condition Tremor|TheUndertomesGeneralRules} or {@variantrule Tremor Burst|TheUndertomesGeneralRules}, your choice. Creatures hit by the {@item light crossbow|PHB|Light Crossbow} now suffer 6 counts of {@condition Sinking|TheUndertomesGeneralRules}. Additionally, you can now identify the origin of any smell, your olfactory sense becomes as developed as that of a dog and you gain advantage on {@skill Perception} ability checks as long as you can use your olfactory sense."
+			]
+		},
+		{
+			"name": "Full Bloom",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Aromancer",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 14,
+			"entries": [
+				"{@i \"No accidents to prevent, no aftermath to clean up. Tsk. Let's go back.\"}",
+				"People will study your developments in the field of natural magic for generations to come. Spells you cast that create or summon any sort of plants gain double the Range and Duration. Additionally, you have developed your own version of the {@spell entangle} spell, which is now found in your Spellbook.",
+				"When you cast Entangle, you can change the required Saving Throw upon casting to be any different status of your choice. Furthermore, a creature {@condition restrained} by it suffers 3 counts of {@condition Sinking|TheUndertomesGeneralRules} and 2 counts of {@condition Tremor|TheUndertomesGeneralRules} each turn, as well as an additional Condition of your choice between {@condition charmed} or {@condition frightened}.",
+				"{@b Magnificent End.} Once per Long Rest, you can cast one of your 7th-level Spells or higher through your {@item light crossbow|PHB|Light Crossbow}. It gains the range of a 15-foot line, affecting every creature in that line. You may increase this line by a maximum of 25 additional feet, but you gain a point of {@condition exhaustion} for each 5 feet you add to it."
+			]
+		},
+		{
+			"name": "Path of the Hammer of Faith",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Hammer of Faith",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"Everything\u2014I'll burn it all... and my whole disgusting life, too.\"}",
+				"Those who thread this Primal Path, the ones who take up the Hammer of Faith and embody it are rare prodigies who wield their irate belief like a weapon of mass distruction on those infidel to their preachings. There is no qualm taken in avoiding violence when needed, nor a sacrifice too great for the good of all.",
+				"These Barbarians are known for their intense fanaticism toward their belief and legends spread about the few who exist, as they often take to battlefields and single handedly decimate hordes upon their single-minded purge toward a pure world, not to mention the sheer brutality that they wield to carry out their wills.",
+				"In worlds such as the Forgotten Realms... No, there is no god of such a world that would be capable of enticing such faith. It is in the creeping shadows of Ravenloft that the names of forgotten gods are both whispered and screeched openly, a faith born from nothing and elevated into itself. In others, such as the futuristic world of Keybreak, these are the ones who neglect the integration of flesh and machinery, tearing it apart with gusto so that every corrupted being will have their rotten soul expunged before they can trace fingers upon the sheep who remain pure yet.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Self-Destructive Purge|Barbarian|PHB|Hammer of Faith|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Disgust of the Faithful|Barbarian|PHB|Hammer of Faith|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Scripture of Truth Within|Barbarian|PHB|Hammer of Faith|TheUndertomesProjectMoon|3"
+				}
+			]
+		},
+		{
+			"name": "Fell Memoir Ranger Archetype",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Fell Memoir",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"It promised to give me a gun that can blow up anything, but the catch was that its last shell would land on the head of my beloved.\"}",
+				"Times of war have long since painted history in their glory and gore, tinting red the lives of various people. Yet there are those who are overtaken by a smoke-like feeling that clings to their skin like a plume of flame just near going off. Those are Fell Memoir Rangers.",
+				"Usually characterized by a worn-out exterior and carrying an equally well-used gun, they roam the lands in search of more and more targets to blow up, living for the perpetual feeling of being in a conflict - of reliving their own memories and destroying that of others they find in their wake. Now, rarely they may be still clinging to some sort of feeling, an unresolved lack in their own recollection that pushes them onward, yet in most cases they are a blaze waiting to grow large enough to overtake everything one may think of.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Memoir of a Fallen Stigma|Ranger|PHB|Fell Memoir|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Curse-Wrought Bullets|Ranger|PHB|Fell Memoir|TheUndertomesProjectMoon|3"
+				}
+			]
+		},
+		{
+			"name": "Night Awl Roguish Archetype",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Night Awl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i \"Be quick in your step, thread the night carefully and get the hell out of dodge before you get snuffed out.\"}",
+				"That is the thing that most Rogues who fit in the Archetype of the Night Awl might find themselves hearing from a captain of their gang or even tell themselves.",
+				"They are usually people who bear through the brunt of a hard life, away from the flashiness of grandiose magic cast by archmages or the jewel-embezzling tales of bards, instead relying only on themselves and maybe a greater criminal organization where they can punch out a place in, carrying with them only a dirk in hand and a clear goal to be reached with finesse and clarity.",
+				"In the Forgotten Realms the Night Awls are a subsidiary of the Zentharim that have earnt themselves some renown, yet through no fault, of their own they are facing adverse times because of poor management. In other worlds such as Keybreak they are small-time info brokers running through the underground webs that connect city to city.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gap Attack|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wall Stitcher|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|3"
+				}
+			]
+		},
+		{
+			"name": "Aromancer Arcane Tradition",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Aromancer",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"entries": [
+				"{@i \"Go back to the grave... with all that desires to live.\"}",
+				"Wizards of the Aromarcane Tradition also dabble in botanics, studying several different plants, their environments and effects on animals and the bodies of all different races.",
+				"When playing an Aromarcane Wizard, try to have someone in tune with nature. Maybe they're not a botanist like most, but they can understand the natural cycle and apply it to their magical theorems. Plants, flowers and their growth are a beautiful canvas, or perhaps just a means to an end. Either way, the fragrance of blossoming buds follows you where you go.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Whithering Flesh|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bang, Bang|Wizard|PHB|Aromancer|TheUndertomesProjectMoon|2"
+				}
 			]
 		}
 	],
@@ -2052,6 +2837,117 @@
 			"entries": [
 				"You, however, do not limit yourself to using your own body as material, also acquiring one Corpus Ingredients count whenever you successfully deal damage to a creature within 15-ft. of you. You have a count limit equal to double your proficiency bonus, and due to a tendency to dutifully spend any leftovers on smaller projects during a short or long rest, you may only have up to your proficiency bonus worth of Corpus Ingredients after such."
 			]
+		},
+		{
+			"name": "Nails",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A creature suffering from {@condition Nails|TheUndertomesProjectMoon|Nails} has a number of them embedded in their flesh, drawing out blood and the faith of certain individuals in equal measure. At the end of their turns, a Nailed creature halves their {@condition Nails|TheUndertomesProjectMoon|Nail} count and gains the same value halved as {@condition Bleed|TheUndertomesGeneralRules} count instead.",
+				"{@condition Fanatic|TheUndertomesProjectMoon|Fanatical} creatures gain a +1 bonus modifier to attack rolls against Nailed creatures for each 15 {@condition Nails|TheUndertomesProjectMoon|Nails} they are currently suffering from, to a maximum of +3."
+			]
+		},
+		{
+			"name": "Immolation",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A creature beset by {@condition Immolation|TheUndertomesProjectMoon} is suffering from the holiest of flames, taking an amount of {@dice d4} radiant damage equal to their current {@condition Immolation|TheUndertomesProjectMoon} count at the end of their turns, also halving its total count. When at one {@condition Immolation|TheUndertomesProjectMoon} count, it extinguishes at the end of the creature's turn."
+			]
+		},
+		{
+			"name": "Haste",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A creature that is going through {@condition Haste|TheUndertomesProjectMoon} has a spring to their step, pushing themselves to move faster or are being carried through magical effects to become nimble as the breeze.",
+				"This creature gains 5-ft. of additional walking speed and, if already available flying speed for each {@condition Haste|TheUndertomesProjectMoon} count they are benefitting from, to a maximum value of 5 times their proficiency bonus plus 5. All count of the Condition is lost at the start of the creature's next turn."
+			]
+		},
+		{
+			"name": "Open Wound",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A creature suffering from {@condition Open Wound|TheUndertomesProjectMoon} has a recent tear or puncture in their flesh that is still oozing with blood, and although they may not yet feel the pain from sheer adrenaline coursing through their body they already have difficulty in moving.",
+				"This creature has their movement speed reduced by 5-ft. per count of the Condition and upon reaching 2 counts, they lose that count and suffer from one count of {@condition Deep Wound|TheUndertomesProjectMoon} instead.",
+				"Additionally, whenever a creature with Open, Deep or {@condition Fatal Wound|TheUndertomesProjectMoon} suffers {@condition Bleed|TheUndertomesGeneralRules} or {@condition Tremor|TheUndertomesGeneralRules} count, they are converted to {@condition Tremor - Hemorrhage|TheUndertomesProjectMoon} count instead. If they were already suffering from any of the two Conditions, their sum is converted as well."
+			]
+		},
+		{
+			"name": "Deep Wound",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A creature suffering from {@condition Deep Wound|TheUndertomesProjectMoon} has had a deep gash form in their body, great enough to assail them with pain constantly - And one that can be pushed to the edge with ease.",
+				"While suffering from the Condition, this creature has their movement speed reduced by 10-ft. and whenever they suffer a {@variantrule Tremor Burst|TheUndertomesGeneralRules} they also suffer 3 {@condition Bleed|TheUndertomesGeneralRules} count. A creature suffering from this Condition cannot gain {@condition Open Wound|TheUndertomesProjectMoon} counts."
+			]
+		},
+		{
+			"name": "Tremor - Hemorrhage",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A creature suffering from {@condition Tremor - Hemorrhage|TheUndertomesProjectMoon} is one that is currently bleeding out from countless cuts that rove and worsen inside their being.",
+				"A creature with {@condition Tremor - Hemorrhage|TheUndertomesProjectMoon} counts suffers {@damage 1d4} damage whenever they perform any action ( Each Attack counts as a different Action, also including Bonus Actions and Reactions, but not Free Actions ) and then the Condition's count is reduced by one count. Creatures that have no blood are immune to this effect.",
+				"When a creature with {@condition Tremor - Hemorrhage|TheUndertomesProjectMoon} suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage 1d6} damage equal to the total count of the Condition they are currently suffering from, then losing all remaining counts of the Condition. The Condition is also lost after the creature is knocked {@condition unconscious}. If they are healed to their Maximum Hit Points they instantly lose all counts of the Condition, also losing 2 counts whenever they are healed by any amount of Hit Points."
+			]
+		},
+		{
+			"name": "Fatal Wound",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A creature suffering from {@condition Fatal Wound|TheUndertomesProjectMoon} isn't long for this world, having a clear and brittle opening to the doorway that leads to their demise.",
+				"While suffering from the Condition, this creature has their movement speed reduced by 10-ft. and whenever they suffer a {@variantrule Tremor Burst|TheUndertomesGeneralRules} they also suffer 6 {@condition Bleed|TheUndertomesGeneralRules} count. Furthermore, a creature has their minimum Critical Hit threshold increased by one, ex: They suffer a Critical Hit on an attack roll of 19-20. A Critical Hit against them triggers {@variantrule Tremor Burst|TheUndertomesGeneralRules} and then removes their {@condition Fatal Wound|TheUndertomesProjectMoon} Condition.",
+				"A creature suffering from this Condition cannot gain or have any Open or {@condition Deep Wound|TheUndertomesProjectMoon} count, which is instantly removed if gained or sustained."
+			]
+		},
+		{
+			"name": "Faint Aroma",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"The smell of death is sometimes akin to that of a gentle orchard. Creatures suffering from {@condition Faint Aroma|TheUndertomesProjectMoon} gain the following conditions:",
+				{
+					"type": "list",
+					"items": [
+						"Whenever you lose counts of {@condition Sinking|TheUndertomesGeneralRules}, gain the same amount of counts of {@condition Faint Aroma|TheUndertomesProjectMoon}.",
+						"When you suffer a {@variantrule Tremor Burst|TheUndertomesGeneralRules}, you and up to 3 random creatures within 15 feet of you suffer 2 counts of {@condition Faint Aroma|TheUndertomesProjectMoon}.",
+						"When you reach the maximum amount of counts, suffer 7 counts of {@condition Tremor|TheUndertomesGeneralRules} and trigger {@variantrule Tremor Burst|TheUndertomesGeneralRules}, then take {@damage 1d6} Cold damage for each 3 count of {@condition Sinking|TheUndertomesGeneralRules} you have and lose all counts of {@condition Faint Aroma|TheUndertomesProjectMoon}. After this, you become Immune to gaining counts of {@condition Faint Aroma|TheUndertomesProjectMoon} until the end of your next turn.",
+						"If you die, a random creature within 15 feet of you suffers half of your counts of {@condition Faint Aroma|TheUndertomesProjectMoon}."
+					]
+				},
+				"A creature can only have a maximum of 15 counts of {@condition Faint Aroma|TheUndertomesProjectMoon} at a time."
+			]
+		},
+		{
+			"name": "Fanatic",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"Whenever you enter your Rage you may choose to instead enter a state of sheer {@condition Fanatic|TheUndertomesProjectMoon|Fanaticism}. While in that stage you have all the features you'd gain by being Raging, alongside the following:",
+				{
+					"type": "list",
+					"items": [
+						"Your faith burns brighter than anything, drawing holy wrath down the wounds poked into your foes. You deal an additional {@damage 1d6} radiant damage on and inflict {@condition Immolation|TheUndertomesProjectMoon} count equal to the target's {@condition Nails|TheUndertomesProjectMoon} count on a melee weapon attack hit.",
+						"Your blind fanaticism may propel you to do grand things, but it also has you convinced of certain tribulations you simply must suffer entirely. Whenever you would be forced to make a saving throw or ability check, you may roll a {@dice d4}. On an odd result, you gain a bonus modifier equal to your proficiency bonus. On an even result, you get the same value as a negative modifier to the roll. If you are below half your Maximum Hit Points, you must always roll this {@dice d4}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Torn Memory",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"Whenever you kill a {@condition Stigmatized|TheUndertomesProjectMoon} creature you gain {@condition Poise|TheUndertomesGeneralRules} count equal to your proficiency bonus and one {@condition Torn Memory|TheUndertomesProjectMoon} count, as the already dissolving mental image of that which you have shattered lingers on in your aim. If you kill or knock a friendly creature {@condition unconscious} you gain one {@condition Torn Memory|TheUndertomesProjectMoon}, yet you may only gain one count per creature per combat.",
+				"During your turn you may spend {@condition Torn Memory|TheUndertomesProjectMoon} as a Free Action you may take once per turn for the following:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Reload, Then Fire.} By spending one {@condition Torn Memory|TheUndertomesProjectMoon} you may perform an additional attack as part of your Attack action during your next turn. This extra attack does not stack. Additionally, any ranged weapons you are wielding are instantly reloaded at the start of your next turn provided you have enough ammunition on your person.",
+						"{@b Designated Target Fire.} By spending at least three {@condition Torn Memory|TheUndertomesProjectMoon} count you may spend your Action to perform a special attack, coating an 15-ft. radius within your weapon's range in a red haze that reeks of lingering sweat and charred hair. All creatures of your choice within that radius must pass a Dexterity saving throw or suffer an amount of d10 piercing damage and a sum of 2 {@condition Bleed|TheUndertomesGeneralRules} count equal to the amount of {@condition Torn Memory|TheUndertomesProjectMoon} spent. Creatures who succeed take half that damage and count instead. Afterward you gain one {@condition Poise|TheUndertomesGeneralRules} count for each creature damaged through this, with an additional 8 {@condition Poise|TheUndertomesGeneralRules} count if you have killed your {@condition Stigmatized|TheUndertomesProjectMoon} creature through this attack. These 8 count do not count toward your turn limit. You cannot gain an amount of {@condition Poise|TheUndertomesGeneralRules} in a single turn greater than double your proficiency bonus through this way."
+					]
+				}
+			]
+		},
+		{
+			"name": "Stigmatized",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"At the start of your turns you may choose to have a creature become {@condition Stigmatized|TheUndertomesProjectMoon}, the centre of your everlasting hatred. You may only do so provided there is no creature already {@condition Stigmatized|TheUndertomesProjectMoon}, or you can use your Bonus Action to switch the victim of your Stigma."
+			]
 		}
 	],
 	"optionalfeature": [
@@ -2097,7 +2993,7 @@
 				}
 			],
 			"entries": [
-				"{@i “Listen. We live in a binary world. The world that is luscious... and the world that is bristly. Are you aware of their differences?”}",
+				"{@i \"Listen. We live in a binary world. The world that is luscious... and the world that is bristly. Are you aware of their differences?\"}",
 				"Style, force and loyalty are words that radiate through your gait wherever you walk, exhaling a powerful aura that booms through the hearts of others, either shaking them to the core or having them fall under the protection of your beat.",
 				"This {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst} is recommended for characters who are great leaders and bolster both courage and imperativeness toward their fellows, taking care of any under them like a grand family that extends far beyond the bonds of blood. These are driven by and for their groups and factions as the first thing in their world, going to great lengths just to make sure they are happy and safe, also being reasonably vengeful at whoever wrongs them and their kin.",
 				"Upon activation of your {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst}, the following apply:",
@@ -2126,7 +3022,7 @@
 				}
 			],
 			"entries": [
-				"{@i “Anyhoo, has anyone here actually read 'The Cloudburst Blade?' If ya did, well... if I may have but 3—no, 4 hours of your time, good sir...”}",
+				"{@i \"Anyhoo, has anyone here actually read 'The Cloudburst Blade?' If ya did, well... if I may have but 3\u2014no, 4 hours of your time, good sir...\"}",
 				"To be a ward is to be a waif in your life, you might still be under the graces of your master - your captor - your guardian, whatever they may be to you, and you may still somewhat believe in them but your heart, so carefully forged, has already seen through cracks that you might not be so keen to accept.",
 				"This {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst} is recommended for characters that are living a dichotomy of being attached to a reality that they hold immense fervour toward, but also having that reality being no more than a farce that could break under their feet at any moment. They are those who possess immense knowledge of specific topics but may seem sheltered to the outside world or have trouble accepting certain truths no matter how hard they stare them in the eye.",
 				"Upon activation of your {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst}, you gain the following:",
@@ -2135,7 +3031,7 @@
 					"items": [
 						"The sheer energy pent up in you bursts out like a fire, granting you an additional 10-ft. of movement speed and having all your weapon or spell attacks inflict an additional 2 {@condition Burn|TheUndertomesGeneralRules} count.",
 						"Your fervour is a dual-edged blade, both blinding you to what would leave most quaking but also obfuscating certain alluring dangers. You are Immune to being Frightened but suffer Disadvantage on saving throws against being Charmed.",
-						"You gain proficiency in the History skill, or Expertise if you were already proficient. You and your DM may discuss a topic of particular interest to your character when first taking this Core Burst, then gaining Advantage on History skill checks related to this interest after it is agreed by you and the DM. Additionally, you gain one of the following depending on your current relation to your guardian or symbol of affection:",
+						"You gain proficiency in the {@skill History} skill, or Expertise if you were already proficient. You and your DM may discuss a topic of particular interest to your character when first taking this Core Burst, then gaining Advantage on {@skill History} skill checks related to this interest after it is agreed by you and the DM. Additionally, you gain one of the following depending on your current relation to your guardian or symbol of affection:",
 						"{@b House of Glass Dreams.} If your relationship is of admiration or an otherwise positive outlook to this false idol, whenever you perform a Critical Hit or have success in a skill check or saving throw within sight of your idol, they may spend their Reaction to Praise you. When they do so, you may add a {@dice 1d8} bonus modifier to one roll of your choice until the end of your next turn and may only do so before you roll.",
 						"{@b House of Scattered Hopes.} If your relationship has been broken or is otherwise negative to this false idol, you suffer a {@dice 1d6} negative modifier to all rolls while you can see them within 160-ft. of you as a powerful heartache easily overtakes you. However, after this pain your broken hopes can still be picked up and become stronger through your turmoil. Whenever you have a Critical Success or have success in a skill check or saving throw you gain Confidence. You may spend one Confidence after you roll any of the aforementioned rolls to add an additional {@dice 1d6} to the final result, and may hold up to three Confidence count, which is only reset after a short or long rest."
 					]
@@ -2152,7 +3048,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you hit a creature with an Unarmed Strike, you inflict 1 {@condition Burn|TheUndertomesGeneralRules} count. Additionally, you gain advantage on Performance checks whenever performing with ( or to impress ) other friendly creatures or against a hostile creature."
+				"Whenever you hit a creature with an Unarmed Strike, you inflict 1 {@condition Burn|TheUndertomesGeneralRules} count. Additionally, you gain advantage on {@skill Performance} checks whenever performing with ( or to impress ) other friendly creatures or against a hostile creature."
 			]
 		},
 		{
@@ -2165,7 +3061,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you hit a Grappled creature you may choose to suplex them and cause them to become Prone. When you do so, for the remainder of the duration this creature remains Prone you may choose to re-roll any damage die against them, taking the greater result. You may do so once per die."
+				"Whenever you hit a Grappled creature you may choose to suplex them and cause them to become {@condition Prone}. When you do so, for the remainder of the duration this creature remains {@condition Prone} you may choose to re-roll any damage die against them, taking the greater result. You may do so once per die."
 			]
 		},
 		{
@@ -2243,7 +3139,7 @@
 				}
 			],
 			"entries": [
-				"As an Action during your turn you may brace yourself for a violent sprint. When you do so, you gain 30-ft. of walking speed until the end of your turn and any damage dealt to you through Opportunity Attacks is halved. Whenever you move through another creature's space they must pass a Dexterity saving throw or be caught in your wild trample, being knocked Prone on a failure and suffering an amount of d10 bludgeoning damage equal to your proficiency bonus, or half that value on a success. The DC for this is 8 + your Strength modifier + your proficiency bonus. When you do so you may choose to Grapple up to your Strength modifier's worth of creatures instead of Knocking them Prone, then knocking them Prone in a pile onto of any unoccupied space within 5-ft. of you at the end of your turn. You may use this ability an amount of times equal to half your proficiency bonus, regaining spent uses after a long rest."
+				"As an Action during your turn you may brace yourself for a violent sprint. When you do so, you gain 30-ft. of walking speed until the end of your turn and any damage dealt to you through Opportunity Attacks is halved. Whenever you move through another creature's space they must pass a Dexterity saving throw or be caught in your wild trample, being knocked {@condition Prone} on a failure and suffering an amount of d10 bludgeoning damage equal to your proficiency bonus, or half that value on a success. The DC for this is 8 + your Strength modifier + your proficiency bonus. When you do so you may choose to Grapple up to your Strength modifier's worth of creatures instead of Knocking them {@condition Prone}, then knocking them {@condition Prone} in a pile onto of any unoccupied space within 5-ft. of you at the end of your turn. You may use this ability an amount of times equal to half your proficiency bonus, regaining spent uses after a long rest."
 			]
 		},
 		{
@@ -2256,7 +3152,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you would be forced to attempt a Dexterity saving throw to resist the effects of a spell or attack that affects a radius, line or sphere that has a physical form ( Such as a Fireball, Lightning Bolt, Ballista Bolt or Cannonball ) and pass, you may spend your Reaction to suffer no damage if you would take half and punch through the attack, redirecting it to instead hit another point of your choice within 60-ft. of you. When you do so, all creatures within this new area must attempt the same saving throw against the original DC. You may use this ability an amount of times equal to half your proficiency bonus, regaining spent uses after a long rest."
+				"Whenever you would be forced to attempt a Dexterity saving throw to resist the effects of a spell or attack that affects a radius, line or sphere that has a physical form ( Such as a {@spell fireball|PHB|Fireball}, {@spell lightning bolt|PHB|Lightning Bolt}, Ballista Bolt or Cannonball ) and pass, you may spend your Reaction to suffer no damage if you would take half and punch through the attack, redirecting it to instead hit another point of your choice within 60-ft. of you. When you do so, all creatures within this new area must attempt the same saving throw against the original DC. You may use this ability an amount of times equal to half your proficiency bonus, regaining spent uses after a long rest."
 			]
 		},
 		{
@@ -2278,6 +3174,83 @@
 			"featureType": ["FS:F"],
 			"entries": [
 				"Wielding certain weapons that are a menace from afar has become second nature to you, and you have learnt how to better grip and shove all on your way to shape the battlefield to your liking. Whenever you hit with a weapon that has the Reach property, you may move the target up to 5-ft. closer to you if they were within 10-ft. of you or push them away if they were within 5-ft. of you."
+			]
+		},
+		{
+			"name": "Headshot Focus Fighting Style",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["FS:F", "FS:R"],
+			"entries": [
+				"You are particular with where you aim your weaponry, focusing for a quick and clean kill whenever able. Whenever you target a creature that has a head with a ranged weapon attack, you may choose to Aim For the Head. When you do so, the following applies:",
+				{
+					"type": "list",
+					"items": [
+						"The Target's Armor Class is increased by their proficiency bonus.",
+						"You cannot hit the target unless you beat their AC, regardless of scoring a Critical Hit.",
+						"If you would Critically Hit yet miss the targets AC, you still roll damage, dealing half that amount as your shot grazes them.",
+						"You Critically Hit on this attack with a Critical Threshold reduced by 2, such as rolling an 18-20 on your dice, before any modifiers."
+					]
+				}
+			]
+		},
+		{
+			"name": "The Veteran",
+			"source": "TheUndertomesProjectMoon",
+			"featureType": ["CB"],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"con": 16
+						},
+						{
+							"dex": 16
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@i \"Thanks to that, I'm free to point the barrel at anyone I want. No matter where I fire it, this shotgun can blast anyone into fireworks like it hit them point blank, how wonderful is that?\"}",
+				"Your life has been a warpath going from battle to battle, conflict to conflict. This might not be in the case of a literal war, but instead of various minor conflicts that have led you along to be hardened by them, granting you an askew view of your surroundings and the people that walk near you.",
+				"This Core Burst is recommended for characters who have been put through conflict for most of their lives be that by their own volition or otherwise. They are often found lurking over memories of their own path or attempting not to overlap their sights with something that isn't really there, but vary wildly in how they cope with their experiences.",
+				"Upon activation of your Core Burst, you gain the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"You gain Resistance to psychic damage and the Frightened Condition.",
+						"You gain {@dice 1d4+1} Poise count at the start of your turns.",
+						"You gain Advantage on ability checks and saving throws against being Grappled or Blinded.",
+						"You are considered Proficient in the {@skill Athletics} skill if you weren't, and to have Expertise in said skill if you were."
+					]
+				},
+				"Additionally, choose one of the following to determine which feature you gain based on your own personality traits. If you see people still as a precious thing and value life greatly, gain this:",
+				{
+					"type": "list",
+					"items": [
+						"Whenever a friendly creature that you can see within 120-ft. of you is healed or protected by another creature, such as per the Protection Fighting Style, you gain Hope For Your Fellows until the end of your next turn. While clinging onto this Hope, you may reduce any damage you suffer by two die that equal double your proficiency bonus. ( Such as a +2 being 2d4, +3 being 2d6 and so on. ) Additionally you may, as a Free Action at the start of your turns, pass this Hope and its effects to a friendly creature within the same reach as first described."
+					]
+				},
+				"If you see people as resources to be spent toward your goal, gain this:",
+				{
+					"type": "list",
+					"items": [
+						"Whenever a friendly creature that you can see within 120-ft. of you suffers damage for the first time in the round, you gain one Poise count. Whenever a friendly creature within that same reach dies or first falls Unconscious during this combat, you gain Woe For Your Foes until the end of your next turn. While clinging into this Despair you may choose to re-roll once any individual damage die you roll on weapon attacks after first rolling them, having to take that result."
+					]
+				},
+				"And finally, if apathy towards life is all that fills you, gain this:",
+				{
+					"type": "list",
+					"items": [
+						"You may spend your Reaction when suffering damage to reduce your damage taken by a value equal to your current Poise count plus your proficiency bonus, as you only try to thread forward in the never-stopping march of life."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Designer's Note",
+					"entries": [
+						"For more information on Core Bursts, see the Fatalist Domain cleric."
+					]
+				}
 			]
 		}
 	],
@@ -2551,8 +3524,8 @@
 			"entries": [
 				"This is a golden ticket to utmost lusciousness, separating those with bristly hair from gods in humanoid form. This ticket is glistening gold, resembling the quality of shininess provided to follicles upon its use and has ancient engravings to allow use for any reputable and/or irreputable hair salon, filling the stylist with vigour and granting them the capability to cultivate the mane of dreams even if they wouldn't be able to cut a shrub with their fingers.",
 				"This item may be given to any hair stylist over the course of downtime or a long-rest for you to receive a luscious hair cut, consuming the item in the process. Any stylist must pass a DC 30 Wisdom saving throw or be compelled to give you the hair cut for free, as per the ticket demands. This process takes approximately 30 minutes, and afterward your Charisma score increases by 4, to a maximum of 24. Additionally, you permanently gain Proficiency in one Charisma skill of your choice and Expertise in another Charisma skill of your choice.",
-				"If you have not the access to a hair stylist at the given moment, you may read upon the faint engraving at this hair coupon's title, which at first seemed like a misprint doubling the “H” is actually fine print for “Haunted”, indicating the capability of invoking a stylish poltergeist that will give you the hair cut instead of a living being in exchange for the ticket when it is folded neatly and then cut in two, as part of the phantom's ghastly ritual of utter lavishness.",
-				"{@b Cursed: Smells Like Chocolate.} This item is a magnet to be stolen by lowly street dogs, as such any other creature has Advantage on Stealth and Sleight of Hands to steal this item. When stolen, the thief permanently gains {@condition Vengeance Mark|TheUndertomesProjectMoon}, even if they die and are revived. You deal an additional {@damage 1d10} bludgeoning damage on Unarmed Strikes against that creature."
+				"If you have not the access to a hair stylist at the given moment, you may read upon the faint engraving at this hair coupon's title, which at first seemed like a misprint doubling the \"H\" is actually fine print for \"Haunted\", indicating the capability of invoking a stylish poltergeist that will give you the hair cut instead of a living being in exchange for the ticket when it is folded neatly and then cut in two, as part of the phantom's ghastly ritual of utter lavishness.",
+				"{@b Cursed: Smells Like Chocolate.} This item is a magnet to be stolen by lowly street dogs, as such any other creature has Advantage on {@skill Stealth} and {@skill Sleight of Hand|Sleight of Hands} to steal this item. When stolen, the thief permanently gains {@condition Vengeance Mark|TheUndertomesProjectMoon}, even if they die and are revived. You deal an additional {@damage 1d10} bludgeoning damage on Unarmed Strikes against that creature."
 			],
 			"source": "TheUndertomesProjectMoon"
 		},
@@ -2565,7 +3538,7 @@
 			"weight": 0.08,
 			"entries": [
 				"A pair of golden trimmed and purple lensed sunglasses that radiates stylishness, being one of the few that most people can and should accept to be worn even during night. It is a symbol of class and power within certain families.",
-				"{@b Advanced Lusciousness} Your Charisma score becomes 23 while Attuned to this item as long as it was lower than this value. Additionally, if you weren't proficient in the Persuasion or Intimidation skills you still add half your proficiency bonus to skill checks of either.",
+				"{@b Advanced Lusciousness} Your Charisma score becomes 23 while Attuned to this item as long as it was lower than this value. Additionally, if you weren't proficient in the Persuasion or {@skill Intimidation} skills you still add half your proficiency bonus to skill checks of either.",
 				"{@b Curricular in Castigation.} Let your heart beat and be beaten in the name of the family. At the start of your turn you may spend a Bonus Action to adjust your sunglasses and let them shine with a challenge to all - kill you or die trying. You gain Vulnerability to all damage types until the start of your next turn. At the start of your next turn and until its end any damage you deal to others has them be considered Vulnerable to that damage type. If you or a creature made Vulnerable this way would have Resistance to a damage type, they only take an amount of damage equal to the normal damage they would take plus half that same damage. If either were Immune to a damage type, they suffer that damage as if they were not Immune instead.",
 				"{@b Quality Eye Protection.} You gain Advantage on rolls against effects that would cause you to be blinded. These glasses are just that good."
 			],
@@ -2664,7 +3637,7 @@
 			"entries": [
 				"An overwhelmingly sturdy boombox that has been attached to a set of golden chains. Its beats are solid, ground-breaking and positively skull-crushing.",
 				"Bards are considered Proficient with this weapon.",
-				"While used by a Bard, this weapon counts as a musical instrument that may be used for Spellcasting and Performance checks. Additionally under the same condition this weapon gains the Splash (1d6) property and may be used to deal thunder damage instead of bludgeoning, as a Bard best knows how to lay a beatdown with sound alone."
+				"While used by a Bard, this weapon counts as a musical instrument that may be used for Spellcasting and {@skill Performance} checks. Additionally under the same condition this weapon gains the Splash (1d6) property and may be used to deal thunder damage instead of bludgeoning, as a Bard best knows how to lay a beatdown with sound alone."
 			],
 			"source": "TheUndertomesProjectMoon"
 		},
@@ -2678,23 +3651,30 @@
 			"entries": [
 				"A set of intricate tattoos that make use of their wearer's confidence to harden muscles to protect the flesh from any damage the user would suffer. These are usually worn with leather or pelt-based clothing onto to further bolster their wearer's confidence in themselves.",
 				"This armor is a set of tattoos that glow whenever active, as such it cannot be doffed without specialized means yet may be covered by other clothing or even armor. While wearing armor over a Tattoo Set, you must choose to benefit from the effects of only one of the armors.",
-				"Due to the glow of these tattoos you have Disadvantage on Stealth checks unless you are proficient in the Deception skill or have expertise in the Stealth skill, as you are more knowledgeable on how to mask such unnatural lights as a common part of the scenery or obfuscate that glow altogether."
+				"Due to the glow of these tattoos you have Disadvantage on {@skill Stealth} checks unless you are proficient in the {@skill Deception} skill or have expertise in the {@skill Stealth} skill, as you are more knowledgeable on how to mask such unnatural lights as a common part of the scenery or obfuscate that glow altogether."
 			],
 			"source": "TheUndertomesProjectMoon"
-		}
-	],
-	"subclassFluff": [
+		},
 		{
-			"name": "Oath of Loyalty",
-			"shortName": "Loyalty",
+			"name": "Cursed Fireworks",
 			"source": "TheUndertomesProjectMoon",
-			"className": "Paladin",
-			"classSource": "PHB",
+			"type": "AF",
+			"rarity": "rare",
+			"weight": 8,
+			"value": 1366600,
+			"weaponCategory": "martial",
+			"dmg1": "3d10",
+			"dmgType": "P",
+			"property": ["A", "H", "RLD", "2H"],
+			"range": "30/120",
+			"reload": 4,
+			"bonusWeapon": "+2",
 			"entries": [
-				"{@i “Damn, passed out already, huh. Now that grudge is going into the Book of Vengeance... I'll avenge you soon.”}",
-				"Paladins that follow the Oath of Loyalty have a duty to their companions, their family. They will raise them to become the best versions of themselves and protect them from all harm. In return, their bonds will become unbreakable, and there will be no battle great enough to bring them down.",
-				"The faction of the Middle, an organization that preaches that all who are a part of it are siblings and must be there for each other, while avenging every misdeed done to its members, is where these Paladins usually hail from. This organization can be flavored however you want in your world, if it even exists, but it must maintain the familial ties that its members follow.",
-				"While a Paladin that follows the Oath of Loyalty will never forgive a mistake committed against them by those who are not family, it is generally considered right to look the other way and forgive your siblings for their errors. After all, family is family, and blood is thicker than water."
+				"A modified lever-action rifle that acts as a shotgun. However, this modification is only the make-up for a much more devilish change that has been granted to this cursed creation.",
+				"You have a +2 bonus to attack and damage rolls made with this magic weapon.",
+				"{@b A Pact With The Devil.} This weapon's long range does not incur Disadvantage on attacks.",
+				"{@b The Power to Tear Open All Sides.} Only one attack may be made using this weapon during your turn. When you do so, all creatures within 5-ft. of the original target are also targeted by the attack. You roll to hit only once and consider that result against the individual AC of each affected creature, also rolling damage only once for all.",
+				"{@b Iron sights on a Hazy Heart.} This weapon is cursed to blow up the beloved persons in one's heart. If you are aware of two people who love each other platonically or romantically and deal damage to one while the other can see or hear, the other also suffers half the damage dealt as psychic damage. Whenever you Reload this weapon, if you have a beloved person yourself they suffer {@damage 3d8} piercing damage upon you firing the last bullet in this weapon's magazine. You may choose to otherwise suffer that damage yourself."
 			]
 		}
 	],
@@ -2777,7 +3757,7 @@
 					"name": "Feature: Middle Finger to the World",
 					"entries": [
 						"Your family has gotten your back no matter what happens, but that can hardly matter when you are adventuring nigh and high with other folk, so they provide you the best they can when you're away from them. You have a 25% discount on any magical tattoos you'd purchase for yourself or trusted creatures.",
-						"Additionally, whenever you are within Middle controlled territory you have advantage on Intimidation rolls and other siblings will easily provide food and shelter for you and any friends you bring along.",
+						"Additionally, whenever you are within Middle controlled territory you have advantage on {@skill Intimidation} rolls and other siblings will easily provide food and shelter for you and any friends you bring along.",
 						"Alternatively, with your DM's permission ( or if you are playing with '24 Backgrounds in general ) gain the {@feat Ink Thicker Than Blood|TheUndertomesProjectMoon} Feat."
 					],
 					"data": {
@@ -2955,6 +3935,203 @@
 								]
 							]
 						}
+					]
+				}
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Summon Wartime Rainfall",
+			"source": "TheUndertomesProjectMoon",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "shell casings"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You crush the metallic casings in your hand and blow their dust upward to form a localized storm cloud that forms various crimson magic circles that pelt down bullet fire as if raindrops. Choose an area you can see within range, a cloud of bullet hail sprouts to cover a 30-ft. by 30-ft. cube centered at that point.",
+				"Any creature must pass a Dexterity saving throw whenever they start or end their turns within that area, suffering {@damage 2d12} piercing damage on a failure, or half on a success. These bullets come from every direction at once, causing Large or greater creatures to suffer one additional damage die as per each additional 5-ft. of space they occupy in a line. ( This only counts a line traced between the start and end of where a creature occupies, such as having Large creatures suffer an additional {@damage 1d12} piercing damage, or Huge ones suffering an additional {@damage 2d12} and so on. )"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@damage 1d12} for each slot level above 3rd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Frontliner's Baton March",
+			"source": "TheUndertomesProjectMoon",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a glass shard from a broken picture holder"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You conjure forth a plume of reddish smoke that lingers on the feet of your target, spreading outwards with movement and reinvigorating spirits as if it were a flare to focus aim onto a single victorious future. The target gains an additional 15-ft. of movement speed until the end of their next turn. At the start of their turn they gain 2 Poise count and gain an additional 2 count for each friendly creature they first enter within 5-ft. of until the end of their turn. Creatures passed by this way gain an amount of Poise count at the end of the runner's turn equal to 2 + the amount of creatures passed by."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"name": "Stigmatized Memory",
+			"source": "TheUndertomesProjectMoon",
+			"size": ["M"],
+			"type": {
+				"type": "undead",
+				"tags": ["humanoid"]
+			},
+			"alignment": ["U"],
+			"ac": [
+				{
+					"ac": 14,
+					"from": ["natural armor"]
+				},
+				{
+					"special": "12 + your PB, chosen when summoning this creature"
+				}
+			],
+			"hp": {
+				"special": "4 times your Ranger level plus your PB"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 15,
+			"dex": 17,
+			"con": 14,
+			"int": 7,
+			"wis": 7,
+			"cha": 4,
+			"skill": {
+				"athletics": "equal to your PB"
+			},
+			"vulnerable": ["radiant"],
+			"resist": ["necrotic", "poison"],
+			"conditionImmune": ["frightened", "poisoned"],
+			"senses": ["darkvision 60 ft."],
+			"passive": 18,
+			"languages": [
+				"understands any you know, but can't speak other than unintelligible murmurs"
+			],
+			"cr": {
+				"cr": "Your PB"
+			},
+			"trait": [
+				{
+					"name": "Designated Execution",
+					"entries": [
+						"Whenever killed by a Fell Memoir Ranger or a creature who similarly clutches memories to use as fuel, the killer deals an additional {@damage 1d8} damage until the end of their next turn. This extra damage is of the same type of the creature's attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shambling Jab",
+					"entries": [
+						"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6} + your Wisdom or Charisma modifier) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Re-Enactment of the War",
+					"entries": [
+						"{@atk rw} {@hitYourSpellAttack} to hit, range 60/90 ft., one target. {@h}2 ({@damage 1d4} + your Wisdom or Charisma modifier) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Obey Firing Order",
+					"entries": [
+						"When ordered by their summoner, the {@condition Stigmatized|TheUndertomesProjectMoon} Memory performs a Shambling Jab attack or a Re-Enactment of the War attack against a target creature of the summoner's choice."
+					]
+				},
+				{
+					"name": "Obey Repositioning Order",
+					"entries": [
+						"When ordered by their summoner, the {@condition Stigmatized|TheUndertomesProjectMoon} Memory spends their Reaction to move up to 20-ft. in any direction of the summoner's choice."
 					]
 				}
 			]
