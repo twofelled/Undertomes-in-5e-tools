@@ -5,7 +5,7 @@
 				"json": "TheUndertomesGeneralRules",
 				"abbreviation": "TUGR",
 				"full": "The Undertomes General Rules Compendium",
-				"version": "1.0.1",
+				"version": "1.0.2",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"dateReleased": "2026-07-27",
@@ -20,7 +20,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785187088,
-		"dateLastModified": 1785364108
+		"dateLastModified": 1785790348
 	},
 	"book": [
 		{
@@ -250,7 +250,7 @@
 							"name": "Tremor - Scorch",
 							"entries": [
 								"A creature suffering from Tremor - Scorch is one currently suffering from a blazing inferno that is eating them from inside out, with each flicker of flame reverberating across their entire being.",
-								"A creature with Tremor - Scorch counts suffers an amount of {@damage d4} fire damage equal to their current Tremor - Scorch count divided by 5, to a maximum of {@damage 8d4} per turn.",
+								"A creature with Tremor - Scorch counts suffers an amount of {@damage d4} fire damage equal to their current Tremor - Scorch count divided by 3, to a maximum of {@damage 8d4} per turn. After suffering this damage, the Condition's total count is halved.",
 								"When a creature with Tremor - Scorch suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage d6} fire damage equal to the total count of Tremor - Scorch they currently have, then losing all counts of Tremor - Scorch. The Condition is also lost after the creature is knocked {@condition Unconscious}, if they are fully submerged in non-flammable liquid or combat is over or on the next short rest, if it was gained outside of combat."
 							]
 						},
