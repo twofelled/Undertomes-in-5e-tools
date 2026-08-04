@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "0.7.23",
+				"version": "0.7.25",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -21,7 +21,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1785789863
+		"dateLastModified": 1785800800
 	},
 	"book": [
 		{
@@ -232,6 +232,16 @@
 									"classSource": "PHB",
 									"collapsed": true,
 									"shortName": "Iron Maiden"
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Circle of the Obsidian Stormrider",
+									"className": "Druid",
+									"classSource": "PHB",
+									"collapsed": true,
+									"shortName": "Obsidian Stormrider"
 								}
 							]
 						},
@@ -636,6 +646,36 @@
 				"Chink in One's Armor|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|9",
 				"Seize Ya Chance|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|13",
 				"A Tool That Punctures a Hole in the Heart|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|17"
+			]
+		},
+		{
+			"name": "Circle of the Obsidian Stormrider",
+			"shortName": "Obsidian Stormrider",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"edition": "classic",
+			"subclassFeatures": [
+				"Circle of the Obsidian Stormrider|Druid|PHB|Obsidian Stormrider|TheUndertomesProjectMoon|2",
+				"Commanding Cry|Druid|PHB|Obsidian Stormrider|TheUndertomesProjectMoon|6",
+				"Adept's Cloud-Spitting Ascent|Druid|PHB|Obsidian Stormrider|TheUndertomesProjectMoon|10",
+				"Seasoned Veteran's Stride|Druid|PHB|Obsidian Stormrider|TheUndertomesProjectMoon|14"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": ["blade ward|phb"]
+					},
+					"prepared": {
+						"3": ["compelled duel|phb", "expeditious retreat|phb"],
+						"5": ["pass without trace|phb", "warding bond|phb"],
+						"7": [
+							"crusader's mantle|phb",
+							"protection from energy|phb"
+						],
+						"9": ["death ward|phb", "stoneskin|phb"]
+					}
+				}
 			]
 		}
 	],
@@ -2570,6 +2610,195 @@
 					"subclassFeature": "Wall Stitcher|Rogue|PHB|Night Awl|TheUndertomesProjectMoon|3"
 				}
 			]
+		},
+		{
+			"name": "Circle of the Obsidian Stormrider",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Obsidian Stormrider",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"entries": [
+				"{@i \"His Majesty's Hongyuan converges with your vision for Hongyuan at its culmination, young Miss.\"}",
+				"Loyal as can be, the druids who form the Circle of the Obsidian Stormrider are hardly connected amongst themselves, instead claiming to hold the force of a hundred men on their own - Often choosing to leash their life to a master to whom they serve diligently.",
+				"At their best, they are houndlike in their loyalty and steadfast in assuring the growth and protection of those who surround them - However, this is two-fold, with some being easily perceived as sticklers for the rules or extremely demanding of their master for their own sake.",
+				"In certain worlds such as in the Forgotten Realms, these can be found as servants of the myriad rich families that litter the lands, often acting as their wardens and caretakers. In others such as Thespis they are roving travellers in search of true guidance toward their future glory, living only to become something grander than they could by their lone selves.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spells List|Druid|PHB|Obsidian Stormrider|TheUndertomesProjectMoon|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Farrier of the Mind|Druid|PHB|Obsidian Stormrider|TheUndertomesProjectMoon|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Obsidian Stormrider's Ascent|Druid|PHB|Obsidian Stormrider|TheUndertomesProjectMoon|2"
+				}
+			]
+		},
+		{
+			"name": "Expanded Spells List",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Obsidian Stormrider",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i \"Thus I felled the rogue rebel as His Majesty has commanded\u2014then, Hongyuan, march on… without fear.\"}",
+				"Your mutations and application of theory into practice grants you access to certain spells. At 2nd level, you learn the {@spell blade ward} cantrip. At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of the Stormrider Spells table.",
+				"Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
+				{
+					"type": "table",
+					"caption": "Circle of the Stormrider Spells",
+					"colLabels": ["Druid Level", "Circle Spells"],
+					"colStyles": ["col-3 text-center", "col-9"],
+					"rows": [
+						[
+							"3rd",
+							"{@spell compelled duel}, {@spell expeditious retreat}"
+						],
+						[
+							"5th",
+							"{@spell pass without trace}, {@spell warding bond}"
+						],
+						[
+							"7th",
+							"{@spell crusader's mantle}, {@spell protection from energy}"
+						],
+						["9th", "{@spell death ward}, {@spell stoneskin}"]
+					]
+				}
+			]
+		},
+		{
+			"name": "Farrier of the Mind",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Obsidian Stormrider",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i \"I ruminate and ruminate upon the fragments of the incident to learn of what I could have done that the young Miss might have lived.\"}",
+				"Like any other steed that has their heart set on accompanying a master, you have learned a trade or two in pursuance of both increasing your usefulness and to remain of sound mind, taking care of yourself even out of battle. You gain proficiency in one {@skill skill} and one {@item Artisan's Tools|PHB|Artisan's Kit} of your choice."
+			]
+		},
+		{
+			"name": "Obsidian Stormrider's Ascent",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Obsidian Stormrider",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i \"Ride, beating of hooves. Rise, grains of sand. Ring, cries of war. Rest, for your flight shall meet a dead end.\"}",
+				"As a Bonus Action you may spend a use of your your Wildshape feature to enter a {@i Stormrider Form} having your body morph and change as a violent gale engulfs it. Your lower body becomes that of a trampling beast for the next minute, granting you the following features:",
+				{
+					"type": "list",
+					"items": [
+						"Your movement speed increases by 10-ft and your legs are changed or reinforced, allowing you to use your Kicks as a natural melee weapon you are Proficient with. These have the Finesse property and deal {@damage 1d8} bludgeoning damage on a hit.",
+						"You may choose to inflict a value of any combination of {@condition Rupture|TheUndertomesGeneralRules} or {@condition Tremor|TheUndertomesGeneralRules} count equal to your proficiency bonus on a melee weapon hit. Additionally, whenever you hit a creature for the first time during your turn they suffer one count of {@condition Concussion|TheUndertomesProjectMoon}.",
+						"For the duration the weapon you wield counts as a Druidic Focus for you to be able to cast Druid spells through it even if you have no free hand to do so.",
+						"When you spend a use of your Wildshape to enter this form, you gain an amount of Temporary Hit Points equal to half your Maximum Hit Points. You may benefit form this a number of times equal to half your proficiency bonus per long rest."
+					]
+				},
+				"Additionally you may spend your Bonus Action to stamp your hooves in the ground and let a building storm gather around you as you kick up the dust in your path. Gaining a cumulative +1 bonus modifier to your Armor Class for each 10-ft. travelled until the end of your turn.",
+				"When you next perform a melee weapon attack you may choose to turn all this momentum into more force for your attack, consuming up to any amount of additional AC gained this way to fling the target toward anywhere within a radius equal to 5-ft. plus an additional 5-ft. per AC consumed this way.",
+				"If this creature falls on a wall or at least medium-sized object, it suffers an amount of d6 bludgeoning damage per 5-ft. travelled. If it falls on another creature, they suffer the same amount of damage and the creature being fallen upon must pass a Dexterity save against your Druid Spell Save DC or suffer the same damage. Creatures who suffer this damage become {@condition prone} afterward and you may choose to trigger {@variantrule Tremor Burst|TheUndertomesGeneralRules} after dealing this damage.",
+				"All bonus Armor Class gained this way is reset to 0 at the start of your next turn and you can't use this ability again until the end of your turn.",
+				"Your {@i Stormrider Form} lasts for up to one minute or until you are knocked {@condition unconscious}. Upon leaving this form you lose any remaining Temporary Hit Points gained from it."
+			]
+		},
+		{
+			"name": "Commanding Cry",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Obsidian Stormrider",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 6,
+			"entries": [
+				"{@i \"Leap upon the first. - And the second. - Break and surmount them.\"}",
+				"There is an order to things that you have long understood, and you have better found a way to convey that to others so that they may find their place in any setting that demands it. You may spend your Bonus Action to shout a Commanding Cry to a creature that can hear you within 60-ft. When you do so, choose one of the following type of order to bark out:",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Charge Forward! [冲锋!]",
+							"entries": [
+								"The target creature gains an +1 bonus modifier to hit and deal double the damage they would to structures and unworn un-carried objects until the end of their next turn. This bonus is increased to a +2 upon you reaching 12th level."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hold the Line! [坚守阵地!]",
+							"entries": [
+								"The target creature gains a +1 bonus modifier to their AC until the start of your next turn. This bonus is increased to a +2 upon you reaching 12th level."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Center Yourself! [静心!]",
+							"entries": [
+								"The target creature gains a {@dice 1d4} bonus modifier to all rolls pertaining to one Skill of your choice for the next minute. This bonus is increased to a {@dice 1d6} upon you reaching 12th level."
+							]
+						}
+					]
+				},
+				"You may use this feature an amount of times equal to your proficiency bonus per long rest."
+			]
+		},
+		{
+			"name": "Adept's Cloud-Spitting Ascent",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Obsidian Stormrider",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 10,
+			"entries": [
+				"{@i \"I have endured it all.\"}",
+				"You have become used to being in your {@i Stormrider Form}, allowing your stance to become perfected. You may perform an additional attack whenever you take the {@action Attack} Action within your {@i Stormrider Form} and your base movement speed is increased by 5-ft.",
+				"Additionally, upon reaching this level you may perform the following as an Action by spending a Druid spell slot:",
+				{
+					"type": "entries",
+					"name": "Obsidian Stormrider's Crescent Decapitator [黑風馬脚月斬]",
+					"entries": [
+						"You swing your weapon wildly as you go on a thundering stampede that covers a 10-ft. wide line that has a length equal to 10-ft. per Spell slot level spent and that you may change the direction of at each 20-ft. travelled. All creatures within that area must pass a Dexterity saving throw against your Druid Spell Save DC or be trampled, suffering an amount of {@damage d10} bludgeoning damage equal to double the Spell slot level spent and being knocked {@condition prone}, then suffering an amount of {@condition Tremor|TheUndertomesGeneralRules} and {@condition Rupture|TheUndertomesGeneralRules} count equal to the Spell slot level spent."
+					]
+				}
+			]
+		},
+		{
+			"name": "Seasoned Veteran's Stride",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Obsidian Stormrider",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 14,
+			"entries": [
+				"{@i \"Thus, the flame of war burns in Hongyuan.To let slip the lessons of the rotten and the festering, to forget the kindness of his ideality, is what has started the fire.\"}",
+				"The way you carry yourself has changed drastically form where you were once but a beast finding your footing, now boasting a confidence and importance with each step taken, be that transformed or not. You gain the following benefits while on your {@i Stormrider Form}:",
+				{
+					"type": "list",
+					"items": [
+						"Whenever you would trigger a {@variantrule Tremor Burst|TheUndertomesGeneralRules} against a creature, it suffers 2 {@condition Rupture|TheUndertomesGeneralRules}. Whenever you would trigger the effects of the latter Condition, you inflict 1 {@condition Tremor|TheUndertomesGeneralRules} count afterward.",
+						"While you have Temporary Hit Points you gain a +2 bonus modifier to your AC. This is reduced to a +1 when none remain.",
+						"While you have no Temporary Hit Points you also gain an additional 5-ft. of movement and may spend your Bonus Action to perform an attack using your Kicks. You do not add your Ability Modifier to this attack's damage roll. When you do so, you may choose to force the target to pass a Strength saving throw against your Druid Spell Save DC or be flung 10-ft. backward in a line of your choice."
+					]
+				},
+				"Additionally, while out of combat you may grant yourself and your allies a moment of collective preparation toward whatever dangers you will face ahead by spending 10 minutes doing so. Upon the completion of these talks and small rituals all creatures involved may end one Condition or Curse to immediately end, or have the first time either would be applied in the next Combat be nullified if they were suffering from neither.",
+				"You may have this moment of preparation once per long rest. Only Curses that could be ended by the {@spell remove curse} spell are affected by this use."
+			]
 		}
 	],
 	"condition": [
@@ -2799,6 +3028,21 @@
 			"source": "TheUndertomesProjectMoon",
 			"entries": [
 				"At the start of your turns you may choose to have a creature become {@condition Stigmatized|TheUndertomesProjectMoon}, the centre of your everlasting hatred. You may only do so provided there is no creature already {@condition Stigmatized|TheUndertomesProjectMoon}, or you can use your Bonus Action to switch the victim of your Stigma."
+			]
+		},
+		{
+			"name": "Concussion",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A creature suffering form a {@condition Concussion|TheUndertomesProjectMoon} has their senses flare up as if a worm was crawling and rattling the inside of their head, making any further breaks all the more painful. While suffering this Condition, they suffer the following:",
+				{
+					"type": "list",
+					"items": [
+						"Whenever the effects of {@condition Rupture|TheUndertomesGeneralRules} are triggered, they count as if the triggering creature's Proficiency Bonus was its actual value plus one.",
+						"Whenever {@variantrule Tremor Burst|TheUndertomesGeneralRules} is triggered, the damage die dealt are one step greater, such as d4s instead being d6s.",
+						"The afflicted creature loses one count of {@condition Concussion|TheUndertomesProjectMoon} at the end of their turns."
+					]
+				}
 			]
 		}
 	],
