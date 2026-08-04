@@ -1,0 +1,199 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheUndertomesPublicLibrary",
+				"abbreviation": "TUPL",
+				"full": "The Undertomes Public Library",
+				"version": "1.0.0",
+				"authors": ["The Undertomes"],
+				"convertedBy": ["Twofell", "Akari"],
+				"dateReleased": "2026-08-03",
+				"url": "https://www.patreon.com/cw/TheUndertomes",
+				"color": "2587c5",
+				"colorNight": "2587c5"
+			}
+		],
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1785800776,
+		"dateLastModified": 1785800776
+	},
+	"subclass": [
+		{
+			"name": "The Uncrowned Undefeated Lioness",
+			"shortName": "Uncrowned Undefeated Lioness",
+			"source": "TheUndertomesPublicLibrary",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"edition": "classic",
+			"subclassFeatures": [
+				"The Uncrowned Undefeated Lioness - Otherwordly Patron|Warlock|PHB|Uncrowned Undefeated Lioness|TheUndertomesPublicLibrary|1",
+				"Calidus Brachium - Barrage|Warlock|PHB|Uncrowned Undefeated Lioness|TheUndertomesPublicLibrary|6",
+				"Hellfire Incarnate|Warlock|PHB|Uncrowned Undefeated Lioness|TheUndertomesPublicLibrary|10",
+				"Exercitus Leonum|Warlock|PHB|Uncrowned Undefeated Lioness|TheUndertomesPublicLibrary|14"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Uncrowned Undefeated Lioness - Otherwordly Patron",
+			"source": "TheUndertomesPublicLibrary",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Uncrowned Undefeated Lioness",
+			"subclassSource": "TheUndertomesPublicLibrary",
+			"level": 1,
+			"entries": [
+				"{@i You have made a pact with an unquenchable avatar of fire, a creature whose only purpose seems to be to grow in size and strength.}",
+				"{@i The Elemental Plane of Fire is used to beings like these, but still she manages to outrank all of them. Like a hunting lioness, she knows which pieces of fuel will make her burn brighter and with much more ferocity. She doesn't simply consume, she observes, she hunts, and she only pounces on worthy prey.}",
+				"{@i In the Material Realm, you act not only as her conduit, but as her fangs, to be sunk into enemies that will increase both your power and hers.}",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Warlock|PHB|Uncrowned Undefeated Lioness|TheUndertomesPublicLibrary|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Calidus Brachium|Warlock|PHB|Uncrowned Undefeated Lioness|TheUndertomesPublicLibrary|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fire Punch|Warlock|PHB|Uncrowned Undefeated Lioness|TheUndertomesPublicLibrary|1"
+				}
+			]
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "TheUndertomesPublicLibrary",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Uncrowned Undefeated Lioness",
+			"subclassSource": "TheUndertomesPublicLibrary",
+			"level": 1,
+			"entries": [
+				"{@i \"I'm gonna kill? every last one of you...!!\"}",
+				"The Uncrowned Undefeated Lioness lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you. Uncrowned Undefeated Lioness Expanded Spells",
+				{
+					"type": "table",
+					"caption": "Uncrowned Undefeated Lioness Spells",
+					"colLabels": ["Spell Level", "Spells"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						[
+							"1st",
+							"{@spell Burning Hands}, {@spell Searing Smite}"
+						],
+						["2nd", "{@spell Heat Metal}, {@spell Scorching Ray}"],
+						["3rd", "{@spell Fireball}, {@spell Glyph of Warding}"],
+						["4th", "{@spell Fire Shield}, {@spell Wall of Fire}"],
+						["5th", "{@spell Flame Strike}, {@spell Immolation|XGE}"]
+					]
+				}
+			]
+		},
+		{
+			"name": "Calidus Brachium",
+			"source": "TheUndertomesPublicLibrary",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Uncrowned Undefeated Lioness",
+			"subclassSource": "TheUndertomesPublicLibrary",
+			"level": 1,
+			"entries": [
+				"{@i \"I'm gonna kill? every last one of you...!!\"}",
+				"The fires from your Patron consume your fists, but they are slowly spreading throughout the rest of your body as well. You gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"You gain access to the {@spell Produce Flame} cantrip, except it sheds bright light on a 20-foot radius and dim light for an additional 20 feet. It deals {@dice 1d10} damage instead of {@dice 1d8}.",
+						"As an action, you can touch up to a 5-foot square of water or ice within 5 feet of you and heat it up, creating steam. For each square affected this way, you generate a 5-foot cube of steam in an adjacent unoccupied space of your choice. Creatures inside the steam gain Heavily Obscured cover, and any hostile creature that moves through a cube of steam on the same turn it was created must successfully pass a Constitution saving throw or take {@dice 1d6} fire damage. This damage increases to {@dice 2d6} on level 6, {@dice 3d6} on level 10 and {@dice 4d6} on level 14. The steam lasts for 1 minute or until dispersed by wind (such as the {@spell gust} cantrip or similar effects).",
+						"When you are hit by an attack that deals cold damage, you can use your reaction to reduce the damage taken by half. When you do so, you may also create a 10-foot line or cone of steam originating from you.",
+						"You gain resistance to fire damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fire Punch",
+			"source": "TheUndertomesPublicLibrary",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Uncrowned Undefeated Lioness",
+			"subclassSource": "TheUndertomesPublicLibrary",
+			"level": 1,
+			"entries": [
+				"{@i \"Looks like you're ready to be devoured by a lion.\"}",
+				"Your patron has taught you not only how to survive, but how to thrive on the battlefield. You gain proficiency with medium armor and shields. Additionally, you gain proficiency in unarmed attacks, and you can use Charisma instead of Strength for the attack and damage rolls of your unarmed strikes.",
+				"Your unarmed strikes deal {@dice 1d4} fire damage. When you hit a creature with an unarmed strike, you can expend a Warlock spell slot to empower the blow with arcane fire, replacing the damage dice with the corresponding one from the table below:",
+				{
+					"type": "table",
+					"caption": "Uncrowned Undefeated Lioness Spells",
+					"colLabels": ["Spell Level", "Spells"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						["1st", "{@dice 2d6}"],
+						["2nd", "{@dice 3d8}"],
+						["3rd", "{@dice 4d10}"],
+						["4th", "{@dice 5d12}"],
+						["5th", "{@dice 12d6}"]
+					]
+				},
+				"Additionally, when you're hit by a melee attack, you can choose to expend a spell slot to diminish that damage by a number of d8s equal to the slot's level"
+			]
+		},
+		{
+			"name": "Calidus Brachium - Barrage",
+			"source": "TheUndertomesPublicLibrary",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Uncrowned Undefeated Lioness",
+			"subclassSource": "TheUndertomesPublicLibrary",
+			"level": 6,
+			"entries": [
+				"{@i \"Do you want me to kill you all right here, right now?\"}",
+				"You no longer accept a beating without punching back, and as you become more attuned to your patron, her ferocity overwhelms you whenever your pride is hurt. When a hostile creature hits you with a melee attack, you can use your reaction to make a melee weapon attack or unarmed strike against a creature within range. On a hit, you deal damage using the dice shown in the 1st level of your Spell Slot Damage Table instead of your normal weapon or unarmed strike damage dice. If the attack hits, you may choose to expend a Warlock spell slot to make a second melee weapon attack as part of the same reaction. This second attack also uses the damage value from the Spell Slot Damage Table corresponding to the spell slot level expended.",
+				"If a creature is reduced to 0 hit points or knocked unconscious by an attack granted by this feature, and you expended a Warlock spell slot as part of that reaction, you regain the expended spell slot.",
+				"Additionally, you can attack twice, instead of once, whenever you take the Attack action on your turn, and your unarmed strikes now deal {@dice 1d6} fire damage and count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+			]
+		},
+		{
+			"name": "Hellfire Incarnate",
+			"source": "TheUndertomesPublicLibrary",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Uncrowned Undefeated Lioness",
+			"subclassSource": "TheUndertomesPublicLibrary",
+			"level": 10,
+			"entries": [
+				"{@i \"I'll turn you into ash and enjoy a nice, long bath!\"}",
+				"You are covered by the fervent flames of pride for the hunt, becoming an apex warrior of the flaming lioness. As an action, you can expend a spell slot to transform your body into pure flames. For 1 minute, until you're knocked unconscious or until you dismiss it as a bonus action, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You are immune to Fire damage and have resistance to Cold damage.",
+						"When you deal fire damage to a creature, that damage ignores resistance. Additionally, creatures that are normally immune to fire damage are instead treated as having resistance to it against your fire damage.",
+						"Whenever you deal fire damage to a creature, you deal an additional {@dice 1d6} fire damage.",
+						"Once per turn, when you hit a creature with a melee weapon or unarmed strike, it must succeed on a Constitution saving throw against your spell save DC or fall {@condition Prone}. On a success, the next time it hits you with a melee attack before the end of its next turn, it takes {@dice 1d6} fire damage.",
+						"Your Armor Class increases by 2."
+					]
+				},
+				"Once you use this feature, you can't do so again until you finish a long rest. You can activate it again by expending a Warlock spell slot, but doing so causes you to take {@dice 1d12} force damage per turn, as the armor eats away at your very essence, turning you into one with the Lioness' pride."
+			]
+		},
+		{
+			"name": "Exercitus Leonum",
+			"source": "TheUndertomesPublicLibrary",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Uncrowned Undefeated Lioness",
+			"subclassSource": "TheUndertomesPublicLibrary",
+			"level": 14,
+			"entries": [
+				"{@i \"You're going to kill all the humans, aren't you? ? But I'm still alive.\"}",
+				"Death, defeat, they are the same thing to your patron, who takes control of souls on the brink of both and burns them for her conquest. As an action, you can expend a Warlock spell slot to touch the body of a creature hostile to you that is either unconscious or at 0 hit points. For 1 minute, they are brought back to life as a {@creature Fire Elemental|MM}, using its stat block. It rolls its own initiative and takes its own turns. If you do not issue it a command, it takes the {@action Dodge} action on its turn. At the end of the duration, or if it drops to 0 hit points, the creature reverts to its original form.",
+				"If you target a willing creature that is a player character who is at 0 hit points or unconscious, they return covered in your Patron's blazes with their full stat block and take their place in initiative. For 1 minute, they are considered revived with half their hit points and conscious. When the duration ends or they drop to 0 hit points again, they fall unconscious but are stabilized. Once this feature ends, they cannot be targeted by it again until they finish a long rest.",
+				"You can use this feature a number of times equal to your Charisma modifier (minimum once), and you regain all expended uses on a long rest. You may only have one creature affected by this feature at a time."
+			]
+		}
+	]
+}

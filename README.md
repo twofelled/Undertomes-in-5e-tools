@@ -10,7 +10,7 @@
 
 **The Undertomes in 5e.tools** is a curated conversion project that makes publicly available Undertomes homebrew content usable in the 2014 version of 5e.tools.
 
-The collection is divided into three main files. The ***General Rules Compendium*** has all the general rules (from conditions to types of items). ***Project Moon*** contains subclasses and related content inspired by Project Moon works. **Others** contains all other content made by The Undertomes.
+The collection is divided into three main files. The ***General Rules Compendium*** has all the general rules (from conditions to types of items). ***Project Moon*** contains subclasses and related content inspired by Project Moon works. ***Public Library*** contains all other content made by The Undertomes.
 And extra files for special tomes and brews released by The Undertomes Team.
 
 ## Installation
@@ -30,8 +30,9 @@ And extra files for special tomes and brews released by The Undertomes Team.
 | --- | :---: | --- |
 | **General Rules** | Yes | [Add The Undertomes: General Rules Compendium](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20General%20Rules%20Compendium.json) |
 | **Project Moon** | No | [Add The Undertomes: Project Moon](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Project%20Moon.json) |
+| **Public Library** | No | [Add The Undertomes: Public Library](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Public%20Library.json) |
 | **Brewathon #1 - District 11's Travel Brochure** | No | [Add District 11's Travel Brochure](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes'%20Community%3B%20District%2011's%20Travel%20Brochure.json) |
-| **Others** | WIP | Will be listed here when available. |
+
 
 For copying:
 
@@ -46,6 +47,11 @@ https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/ma
 #### Brewathon #1 - District 11's Travel Brochure
 ```text
 https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes'%20Community%3B%20District%2011's%20Travel%20Brochure.json
+```
+#### Public Library
+```text
+https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Public%20Library.json
+
 ```
 
 ### Install from downloaded files
