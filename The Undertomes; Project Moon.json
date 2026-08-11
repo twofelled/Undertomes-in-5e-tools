@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "0.8.0",
+				"version": "0.8.1",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -22,7 +22,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1786246800
+		"dateLastModified": 1786424445
 	},
 	"book": [
 		{
@@ -190,17 +190,56 @@
 					]
 				},
 				{
-					"name": "Fell Memoir Ranger Archetype",
+					"name": "The Heishou",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 7
+					},
+					"headers": [
+						{
+							"header": "Conditions",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Lifestew Domain",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 8
+					},
+					"headers": [
+						{
+							"header": "Supporting Material",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Managerial Booster Ticket - Burn Edition",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 9
+					},
+					"headers": [
+						{
+							"header": "Spells",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Fell Memoir Ranger Archetype",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 10
 					}
 				},
 				{
 					"name": "Fragrant Soul",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 8
+						"identifier": 11
 					},
 					"headers": [
 						{
@@ -217,7 +256,7 @@
 					"name": "Haunted Toymaker",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 9
+						"identifier": 12
 					},
 					"headers": [
 						{
@@ -230,7 +269,7 @@
 					"name": "Blackened Hands",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 10
+						"identifier": 13
 					},
 					"headers": [
 						{
@@ -247,70 +286,70 @@
 					"name": "Fighting Styles",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 11
+						"identifier": 14
 					}
 				},
 				{
 					"name": "Bestiary",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 12
+						"identifier": 15
 					}
 				},
 				{
 					"name": "Subclass Options",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 13
+						"identifier": 16
 					}
 				},
 				{
 					"name": "Conditions",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 14
+						"identifier": 17
 					}
 				},
 				{
 					"name": "Spells",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 15
+						"identifier": 18
 					}
 				},
 				{
 					"name": "Feats",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 16
+						"identifier": 19
 					}
 				},
 				{
 					"name": "Backgrounds",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 17
+						"identifier": 20
 					}
 				},
 				{
 					"name": "Weapons",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 18
+						"identifier": 21
 					}
 				},
 				{
 					"name": "Magic Items",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 19
+						"identifier": 22
 					}
 				},
 				{
 					"name": "Core Bursts",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 20
+						"identifier": 23
 					}
 				}
 			]
@@ -374,6 +413,16 @@
 									"classSource": "PHB",
 									"shortName": "Hammer of Faith",
 									"collapsed": true
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Path of the Rooster",
+									"className": "Barbarian",
+									"classSource": "PHB",
+									"shortName": "Rooster",
+									"collapsed": true
 								}
 							]
 						},
@@ -415,6 +464,16 @@
 									"className": "Cleric",
 									"classSource": "PHB",
 									"shortName": "Fatalism",
+									"collapsed": true
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Lifestew Domain",
+									"className": "Cleric",
+									"classSource": "PHB",
+									"shortName": "Lifestew",
 									"collapsed": true
 								}
 							]
@@ -467,6 +526,16 @@
 									"className": "Fighter",
 									"classSource": "PHB",
 									"shortName": "Blackened Hands",
+									"collapsed": true
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Gamefowl Martial Archetype",
+									"className": "Fighter",
+									"classSource": "PHB",
+									"shortName": "Gamefowl",
 									"collapsed": true
 								}
 							]
@@ -3691,6 +3760,107 @@
 				},
 				{
 					"type": "section",
+					"name": "The Heishou",
+					"entries": [
+						{
+							"type": "statblock",
+							"prop": "subclass",
+							"source": "TheUndertomesProjectMoon",
+							"name": "Path of the Rooster",
+							"className": "Barbarian",
+							"classSource": "PHB",
+							"shortName": "Rooster",
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"prop": "subclass",
+							"source": "TheUndertomesProjectMoon",
+							"name": "Gamefowl Martial Archetype",
+							"className": "Fighter",
+							"classSource": "PHB",
+							"shortName": "Gamefowl",
+							"collapsed": true
+						},
+						{
+							"type": "entries",
+							"name": "Conditions",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"{@condition Bloodflame|TheUndertomesProjectMoon}",
+										"{@condition Headless Fowl [无头鸡]|TheUndertomesProjectMoon}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Lifestew Domain",
+					"entries": [
+						{
+							"type": "statblock",
+							"prop": "subclass",
+							"source": "TheUndertomesProjectMoon",
+							"name": "Lifestew Domain",
+							"className": "Cleric",
+							"classSource": "PHB",
+							"shortName": "Lifestew",
+							"collapsed": true
+						},
+						{
+							"type": "entries",
+							"name": "Supporting Material",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"{@condition Well-Fed|TheUndertomesProjectMoon}",
+										"{@item Basillisoup Ladle|TheUndertomesProjectMoon}",
+										"{@creature Basillisoup|TheUndertomesProjectMoon}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Managerial Booster Ticket - Burn Edition",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spells",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"{@spell Combustion Snap|TheUndertomesProjectMoon}",
+										"{@spell Fan the Flame|TheUndertomesProjectMoon}",
+										"{@spell Butterfly's Dragpath|TheUndertomesProjectMoon}",
+										"{@spell Broken Match|TheUndertomesProjectMoon}",
+										"{@spell Candlesetting|TheUndertomesProjectMoon}",
+										"{@spell Cascading Cataclysm|TheUndertomesProjectMoon}",
+										"{@spell Searing Birdcage|TheUndertomesProjectMoon}",
+										"{@spell Pyre of Prophecy|TheUndertomesProjectMoon}"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Shared Condition",
+							"entries": [
+								"{@condition Burn|TheUndertomesGeneralRules}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
 					"name": "Fell Memoir Ranger Archetype",
 					"entries": [
 						{
@@ -3831,7 +4001,8 @@
 							"type": "list",
 							"items": [
 								"{@creature BongBong [Orange]|TheUndertomesProjectMoon}",
-								"{@creature BunBun [Juicy Squeezer - Orange]|TheUndertomesProjectMoon}"
+								"{@creature BunBun [Juicy Squeezer - Orange]|TheUndertomesProjectMoon}",
+								"{@creature Basillisoup|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -3929,7 +4100,10 @@
 								"{@condition Curse|TheUndertomesProjectMoon}",
 								"{@condition Moonlit Azure Blade|TheUndertomesProjectMoon}",
 								"{@condition Thermal Blades|TheUndertomesProjectMoon}",
-								"{@condition Blooming|TheUndertomesProjectMoon}"
+								"{@condition Blooming|TheUndertomesProjectMoon}",
+								"{@condition Bloodflame|TheUndertomesProjectMoon}",
+								"{@condition Headless Fowl [无头鸡]|TheUndertomesProjectMoon}",
+								"{@condition Well-Fed|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -3954,7 +4128,15 @@
 								"{@spell Baleful Brand|TheUndertomesProjectMoon}",
 								"{@spell First Lightlock|TheUndertomesProjectMoon}",
 								"{@spell Sense Quarry|TheUndertomesProjectMoon}",
-								"{@spell Binding Chains|TheUndertomesProjectMoon}"
+								"{@spell Binding Chains|TheUndertomesProjectMoon}",
+								"{@spell Combustion Snap|TheUndertomesProjectMoon}",
+								"{@spell Fan the Flame|TheUndertomesProjectMoon}",
+								"{@spell Butterfly's Dragpath|TheUndertomesProjectMoon}",
+								"{@spell Broken Match|TheUndertomesProjectMoon}",
+								"{@spell Candlesetting|TheUndertomesProjectMoon}",
+								"{@spell Cascading Cataclysm|TheUndertomesProjectMoon}",
+								"{@spell Searing Birdcage|TheUndertomesProjectMoon}",
+								"{@spell Pyre of Prophecy|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -4007,7 +4189,8 @@
 								"{@item Bolt Rifle|TheUndertomesProjectMoon}",
 								"{@item Heavy Gauntlet|TheUndertomesProjectMoon}",
 								"{@item Heavy Revolver|TheUndertomesProjectMoon}",
-								"{@item Single-Stroke Katana|TheUndertomesProjectMoon}"
+								"{@item Single-Stroke Katana|TheUndertomesProjectMoon}",
+								"{@item Basillisoup Ladle|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -4047,7 +4230,8 @@
 								"{@item Bolt Rifle|TheUndertomesProjectMoon}",
 								"{@item Heavy Gauntlet|TheUndertomesProjectMoon}",
 								"{@item Heavy Revolver|TheUndertomesProjectMoon}",
-								"{@item Single-Stroke Katana|TheUndertomesProjectMoon}"
+								"{@item Single-Stroke Katana|TheUndertomesProjectMoon}",
+								"{@item Basillisoup Ladle|TheUndertomesProjectMoon}"
 							]
 						}
 					]
@@ -4218,8 +4402,8 @@
 			"subclassFeatures": [
 				"Corporist Specialization|Artificer|TCE|Corporist|TheUndertomesProjectMoon|3",
 				"Artful Extra Attack|Artificer|TCE|Corporist|TheUndertomesProjectMoon|5",
-				"Gallery Ingredient — A Bloodied Ring|Artificer|TCE|Corporist|TheUndertomesProjectMoon|9",
-				"Greta's Melody — Anatomization of the Unanatomized by the Anatomized|Artificer|TCE|Corporist|TheUndertomesProjectMoon|15"
+				"Gallery Ingredient - A Bloodied Ring|Artificer|TCE|Corporist|TheUndertomesProjectMoon|9",
+				"Greta's Melody - Anatomization of the Unanatomized by the Anatomized|Artificer|TCE|Corporist|TheUndertomesProjectMoon|15"
 			]
 		},
 		{
@@ -4431,6 +4615,49 @@
 				"Woven Blessings|Warlock|PHB|The Living Will|TheUndertomesProjectMoon|6",
 				"Locked Potential|Warlock|PHB|The Living Will|TheUndertomesProjectMoon|10",
 				"Unerring Undertaker, Unavoidable|Warlock|PHB|The Living Will|TheUndertomesProjectMoon|14"
+			]
+		},
+		{
+			"name": "Path of the Rooster",
+			"shortName": "Rooster",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"edition": "classic",
+			"subclassFeatures": [
+				"Path of the Rooster|Barbarian|PHB|Rooster|TheUndertomesProjectMoon|3",
+				"Flame Rooster's Death Defiance [炎鳥不死戦]|Barbarian|PHB|Rooster|TheUndertomesProjectMoon|6",
+				"Mutilating Talons|Barbarian|PHB|Rooster|TheUndertomesProjectMoon|10",
+				"Bloodflame Massacre [血炎亂舞]|Barbarian|PHB|Rooster|TheUndertomesProjectMoon|14"
+			]
+		},
+		{
+			"name": "Gamefowl Martial Archetype",
+			"shortName": "Gamefowl",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"edition": "classic",
+			"subclassFeatures": [
+				"Gamefowl Martial Archetype|Fighter|PHB|Gamefowl|TheUndertomesProjectMoon|3",
+				"Fuel My Rampage|Fighter|PHB|Gamefowl|TheUndertomesProjectMoon|7",
+				"Headless Fowl|Fighter|PHB|Gamefowl|TheUndertomesProjectMoon|10",
+				"Rooster's Battle Techniques|Fighter|PHB|Gamefowl|TheUndertomesProjectMoon|15",
+				"True Battle-Craze|Fighter|PHB|Gamefowl|TheUndertomesProjectMoon|18"
+			]
+		},
+		{
+			"name": "Lifestew Domain",
+			"shortName": "Lifestew",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"edition": "classic",
+			"subclassFeatures": [
+				"Lifestew Domain|Cleric|PHB|Lifestew|TheUndertomesProjectMoon|1",
+				"Channel Divinity: Summon Stew Cauldron|Cleric|PHB|Lifestew|TheUndertomesProjectMoon|2",
+				"Spice of Life|Cleric|PHB|Lifestew|TheUndertomesProjectMoon|6",
+				"Meal of a Lifetime|Cleric|PHB|Lifestew|TheUndertomesProjectMoon|17"
 			]
 		}
 	],
@@ -5065,7 +5292,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i \"… But she took me in and put a roof over my head. Fed me. Taught me this… bloody incredible swordfighting style—the sort a lowly vagrant like me would never have had the chance to learn.\"}",
+				"{@i \"… But she took me in and put a roof over my head. Fed me. Taught me this… bloody incredible swordfighting style-the sort a lowly vagrant like me would never have had the chance to learn.\"}",
 				"The Palermitan Style of Swordplay is an art form that you've got etched deep in your bones, your muscles swerving in pendulum arcs as naturally as you draw out your opponent's breath. This is done through dual weapons, allowing you to make perfected use of Two-Weapon Fighting:",
 				{
 					"type": "list",
@@ -5757,7 +5984,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 6,
 			"entries": [
-				"{@i \"Have you woken up, Fascia? Faust has been waiting—there is a new friend Faust wants to introduce to Fascia.\"}",
+				"{@i \"Have you woken up, Fascia? Faust has been waiting-there is a new friend Faust wants to introduce to Fascia.\"}",
 				"An artists creation must be seeded and grown carefully, and you have planted your own - cultivating it with the flesh of your own corpus and that of which you gather in your daily exhibitions of violence and/or bodily harm. You have begun created a masterwork, it is a Martial Melee weapon that you are considered Attuned with at all times. It counts as a magic item for the purposes of bypassing Resistances and it usually takes the shape of a greatsword you can wield with but a single hand, an extension of your own body. It deals {@damage 1d6} slashing damage and has the Finesse property.",
 				"Over the course of a long rest you may spend an amount of {@condition Corpus Ingredients|TheUndertomesProjectMoon} equal to your proficiency modifier to permanently upgrade it, as per the following:",
 				{
@@ -5847,7 +6074,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"{@i \"She is right—I must carry out more purification... That will then purify my mind with certainty.\"}",
+				"{@i \"She is right-I must carry out more purification... That will then purify my mind with certainty.\"}",
 				"{@condition Nails|TheUndertomesProjectMoon|Nails} are cold, hard reminders of what must be brought down to the ground, so that they may never raise from their filth again. You employ their rusty points with great pride, even if you feel your mind is rusting itself at times, yet that is of no matter. After all, true faith demands effort and sacrifice.",
 				"Whenever you deal damage with melee weapon attacks to a creature, you also inflict an amount of {@condition Nails|TheUndertomesProjectMoon} count equal to half your proficiency bonus. These {@condition Nails|TheUndertomesProjectMoon|Nails} stick out of their flesh and body like a flare guiding your fervent belief to hammer them down once dutifully prepared.",
 				"Additionally, whenever you enter your Rage you may choose to instead enter a state of sheer {@condition Fanatic|TheUndertomesProjectMoon|Fanaticism}. While in that stage you have all the features you'd gain by being Raging, alongside the following:",
@@ -6014,7 +6241,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"{@i \"Let us explore together—the pulsations of your remaining life.\"}",
+				"{@i \"Let us explore together-the pulsations of your remaining life.\"}",
 				"Taking parts of others for your creations, your art, is something you have learned to do with great pride. You acquire one {@condition Corpus Ingredients|TheUndertomesProjectMoon} count whenever you successfully deal damage to a creature within 15-ft. of you. You have a count limit equal to double your proficiency bonus, and due to a tendency to dutifully spend any leftovers on smaller projects during a short or long rest, you may only have up to your proficiency bonus worth of {@condition Corpus Ingredients|TheUndertomesProjectMoon} after such.",
 				"Additionally, you gain Proficiency with the {@skill Nature} skill. If you already have Proficiency with it, you gain Expertise instead. Your anatomical knowledge knows no bounds, and you always have advantage on anatomy-related checks.",
 				"{@b My, How We Love the Flesh and the Blood.} If a {@subclass Iron Maiden|Druid|PHB|TheUndertomesProjectMoon|Circle of the Iron Maiden} Druid is within 30 feet of you and makes an attack roll, you can use your Reaction to give that attack advantage. If it hits, it deals an additional {@damage 1d6} Slashing damage and the creature suffers 1 additional count of {@condition Bleed|TheUndertomesGeneralRules}. This number increases to 2 at level 5, 3 at level 11 and 4 at level 17. After using this ability, if the {@subclass Iron Maiden|Druid|PHB|TheUndertomesProjectMoon|Circle of the Iron Maiden} Druid gains {@condition Corpus Ingredients|TheUndertomesProjectMoon} due to this attack, you gain the same amount."
@@ -6076,7 +6303,7 @@
 			]
 		},
 		{
-			"name": "Gallery Ingredient — A Bloodied Ring",
+			"name": "Gallery Ingredient - A Bloodied Ring",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Artificer",
 			"classSource": "TCE",
@@ -6084,7 +6311,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 9,
 			"entries": [
-				"{@i \"Allow me to play the curator for our guests—from kitsch to avant-garde, delving deep into each trend of art movement.\"}",
+				"{@i \"Allow me to play the curator for our guests-from kitsch to avant-garde, delving deep into each trend of art movement.\"}",
 				"You have developed an extradimensional key that leads you to your very own Gallery of the Ring within its many Corridors. You now have a small key that can be recreated on a Short or Long Rest if lost or destroyed, destroying the old one upon recreation. You can use an Action to insert it into a door or into a space that could be considered a gate between two rooms or spaces, creating a portal to your personal gallery which you immediately enter. Your gallery is 60 feet long and 35 feet wide, with 20-foot high ceilings. Only creatures you allow inside the gallery can enter it with an Action. The interior is completely white, and furnished with pedestals that you can store your various creations inside. Only you can store, remove or give permission to store or remove items in the pedestals.",
 				"Creatures can remain inside the gallery up to a number of hours equal to twice your Proficiency Bonus. Creatures exit the gallery early if they use a Bonus Action to leave, if you die, or if the key is destroyed. Creatures can only leave if you allow them to or if you're unconscious. When any creature exits the gallery, they appear in the unoccupied space closest to it. Any objects left in the gallery remain there until carried out, but every creature is expelled in a similar manner to you. If the key is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the key's former space. Once you enter the gallery, you can't enter again until you finish a Long Rest.",
 				"The key's AC equals your spell save DC. Its hit points equal your Artificer level plus your Proficiency Bonus, and it is Immune to Poison and Psychic damage.",
@@ -6093,7 +6320,7 @@
 			]
 		},
 		{
-			"name": "Greta's Melody — Anatomization of the Unanatomized by the Anatomized",
+			"name": "Greta's Melody - Anatomization of the Unanatomized by the Anatomized",
 			"source": "TheUndertomesProjectMoon",
 			"className": "Artificer",
 			"classSource": "TCE",
@@ -6303,7 +6530,7 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"{@i \"Everything—I'll burn it all... and my whole disgusting life, too.\"}",
+				"{@i \"Everything-I'll burn it all... and my whole disgusting life, too.\"}",
 				"Those who thread this Primal Path, the ones who take up the Hammer of Faith and embody it are rare prodigies who wield their irate belief like a weapon of mass distruction on those infidel to their preachings. There is no qualm taken in avoiding violence when needed, nor a sacrifice too great for the good of all.",
 				"These Barbarians are known for their intense fanaticism toward their belief and legends spread about the few who exist, as they often take to battlefields and single handedly decimate hordes upon their single-minded purge toward a pure world, not to mention the sheer brutality that they wield to carry out their wills.",
 				"In worlds such as the Forgotten Realms... No, there is no god of such a world that would be capable of enticing such faith. It is in the creeping shadows of Ravenloft that the names of forgotten gods are both whispered and screeched openly, a faith born from nothing and elevated into itself. In others, such as the futuristic world of Keybreak, these are the ones who neglect the integration of flesh and machinery, tearing it apart with gusto so that every corrupted being will have their rotten soul expunged before they can trace fingers upon the sheep who remain pure yet.",
@@ -6406,7 +6633,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"{@i \"Thus I felled the rogue rebel as His Majesty has commanded—then, Hongyuan, march on… without fear.\"}",
+				"{@i \"Thus I felled the rogue rebel as His Majesty has commanded-then, Hongyuan, march on… without fear.\"}",
 				"Your mutations and application of theory into practice grants you access to certain spells. At 2nd level, you learn the {@spell blade ward} cantrip. At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of the Stormrider Spells table.",
 				"Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
 				{
@@ -6575,7 +6802,7 @@
 					"type": "entries",
 					"name": "Fragrant Soul Origins",
 					"entries": [
-						"Sorcerers who exhibit a Fragrant Soul are obvious to the naked eye, with leaves and branches growing from their bodies like a natural expansion—not to mention the eponymous smell from their eternal partial bloom.",
+						"Sorcerers who exhibit a Fragrant Soul are obvious to the naked eye, with leaves and branches growing from their bodies like a natural expansion-not to mention the eponymous smell from their eternal partial bloom.",
 						"These sorcerers may come from various origins, with only a few presented below, but most of the times they have deep ties to the nature of the world itself or its evolution, man-made or otherwise.",
 						{
 							"type": "table",
@@ -7071,7 +7298,7 @@
 			"level": 8,
 			"header": 1,
 			"entries": [
-				"{@i \"...Yet my visage, seared and scorched, permits me not a day of reprieve from pain—oh, how it aches even under the gentlest sun.\"}",
+				"{@i \"...Yet my visage, seared and scorched, permits me not a day of reprieve from pain-oh, how it aches even under the gentlest sun.\"}",
 				"You gain the ability to channel the Will through your fingertips so your swings may always find their mark, even if that puts you in harm's way. When you miss an attack roll, you may choose to still roll damage and deal half the result still, but suffer the same damage dealt. This does not count as a hit for other effects purposes and inflicts only half any Condition/Effect count that would be inflicted.",
 				"You may do this an amount of times equal to your proficiency bonus per short or long rest. Additionally, once per long rest you may consume one count of {@condition Procuration [Hermes]|TheUndertomesProjectMoon} to always deal full damage on a missed attack, but you still suffer half of that damage."
 			]
@@ -7236,7 +7463,7 @@
 			"entries": [
 				"A Haunted Toymaker does not simply make playthings for children and adults alike, but tense and dangerous objects that could prove lethal to any inexperienced handler. They implement a mixture of sharpness and dark magic in their inventions for a myriad of reasons, such as revenge, a twisted sense of pride or personal entertainment.",
 				"If you're going to play as a Haunted Toymaker, be sure to let your party know. You will likely follow the trope of a mad scientist or someone equally unhinged, and not all groups mesh well with a strong personality like that. Haunted Toymakers are always looking for new cursed items to turn into child's play and victims to be the target of their inventions. You will want to create things normal people would naturally shun and you want to not only give them the chance to shine but to take revenge on those that would leak down on their nature.",
-				"In the Forgotten Realms, every toy store has at least one of these—no Artificer is completely rid of sparks of madness; Haunted Toymakers simply own it. In Ravenloft, these specialists take a more sinister turn, usually leaving their constructs in unassuming houses to terrorize their inhabitants. In the high fantasy world of Aster, those haunted by the corrupting influence of Salem, The Great Witch, might dedicate themselves to the craft of the abominable.",
+				"In the Forgotten Realms, every toy store has at least one of these-no Artificer is completely rid of sparks of madness; Haunted Toymakers simply own it. In Ravenloft, these specialists take a more sinister turn, usually leaving their constructs in unassuming houses to terrorize their inhabitants. In the high fantasy world of Aster, those haunted by the corrupting influence of Salem, The Great Witch, might dedicate themselves to the craft of the abominable.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Tool Proficiency|Artificer|TCE|Haunted Toymaker|TheUndertomesProjectMoon|3"
@@ -7390,7 +7617,7 @@
 			"level": 15,
 			"entries": [
 				"{@i \"Scissors beats rock. Teehee! That means you lose!\"}",
-				"Enough time has passed, and your companions no longer fear your creations, but embrace them as a part of who you are—certainly that is true. Whenever a friendly creature is within 5 feet of one of your toys, they gain the following benefits:",
+				"Enough time has passed, and your companions no longer fear your creations, but embrace them as a part of who you are-certainly that is true. Whenever a friendly creature is within 5 feet of one of your toys, they gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -7412,7 +7639,7 @@
 			"level": 3,
 			"entries": [
 				"You have sworn yourself to a life of dedication. There are 108 Heroes that have earned the title of a Star, and your sole goal is to make the Dihui (地會) Star become the one true name people call you by. You utilize the power of Iaido to quickly unsheathe your sword to match your enemies' attacks with expertise and perfection.",
-				"In the Forgotten Realms, Monks of the Way of the Bright Star all train under a single roof, then travel to accomplish the tasks set forth by their master so that they can become the next Bright Star, ready to guide the next generation of Monks. In Ravenloft, the sect is much more violent, aiming to kill all other students so that the best and brightest star may stand victorious at the end of the night—it is a matter of hunt and be hunted across the mists. In the cyberpunk world of Genesis, no longer do stars shine in the sky, and Monks of this Monastery will only know they have ascended once they accomplish the impossible—a cut so vast and seamless that the light from the city will be erased, giving way to a beautiful, and naturally illuminated night sky.",
+				"In the Forgotten Realms, Monks of the Way of the Bright Star all train under a single roof, then travel to accomplish the tasks set forth by their master so that they can become the next Bright Star, ready to guide the next generation of Monks. In Ravenloft, the sect is much more violent, aiming to kill all other students so that the best and brightest star may stand victorious at the end of the night-it is a matter of hunt and be hunted across the mists. In the cyberpunk world of Genesis, no longer do stars shine in the sky, and Monks of this Monastery will only know they have ascended once they accomplish the impossible-a cut so vast and seamless that the light from the city will be erased, giving way to a beautiful, and naturally illuminated night sky.",
 				"Monks of the Way of the Bright Star are diligent students and unerring followers of their master. Consider making a serious character that focuses on nothing else but their goal to reach perfection. If you don't want to play a serious character, what they cannot differ from is their love for the blade and the way, and their desire to see it through, completed.",
 				{
 					"type": "refSubclassFeature",
@@ -7507,9 +7734,9 @@
 			"subclassSource": "TheUndertomesProjectMoon",
 			"level": 3,
 			"entries": [
-				"Those who have taken the Oath of Procuration are those who have given up their own desires and judgement in search of executing the Living Will's whims and no more, taking satisfaction in their actions without a second thought—become akin to a guardian devil to whatever it is that such a force comes to desire.",
+				"Those who have taken the Oath of Procuration are those who have given up their own desires and judgement in search of executing the Living Will's whims and no more, taking satisfaction in their actions without a second thought-become akin to a guardian devil to whatever it is that such a force comes to desire.",
 				"Their personalities might vary, yet a significant characteristic shared among the majority is a seeming lack of a core emotion or understanding of their own actions that can be perceived from how they act. Another characteristic is usually how they are bound in chains, waiting for their unbinding per the Will's whim, and with those chains also always carrying around a device that gives them orders, which is treated much akin to a holy symbol in how fervently they believe in it and cherish it.",
-				"In worlds such as the Forgotten Realms, the Will might be a byproduct of the fallen city Netheryl, now using their paladins and shaping them to become great weapons of war and destruction so that the return of such a civilization will then become inevitable. In others, such as Thespis, the tribes of the Lizardmen Nushae have one such Paladin that transforms and shifts without the use of a Wyrdstone—instead channeling the Wyrd directly to enact its lord's will upon the material plane.",
+				"In worlds such as the Forgotten Realms, the Will might be a byproduct of the fallen city Netheryl, now using their paladins and shaping them to become great weapons of war and destruction so that the return of such a civilization will then become inevitable. In others, such as Thespis, the tribes of the Lizardmen Nushae have one such Paladin that transforms and shifts without the use of a Wyrdstone-instead channeling the Wyrd directly to enact its lord's will upon the material plane.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Tenets of Procuration|Paladin|PHB|Procuration|TheUndertomesProjectMoon|3"
@@ -8493,6 +8720,301 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Path of the Rooster",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Rooster",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"{@i “Is that it?! Where are the rest? Where?! I ain't stopping 'till- [inhales] … Fine… Keep it down. I've got to keep this down… or I won't get to fight another day.“}",
+				"Barbarians following the Path of the Rooster have been permanently changed by a powerful magic likening their appearance and instincts to those of the same animal. Usually members of the Heishou Packs, these Barbarians are commanded by the highest payers or strongest authorities, the ones holding the leash of their Packs, to wreak havoc and destruction upon their enemies. In the Forgotten Realms, these Barbarians are usually part of a gang of bandits hired for their lust for battle, unafraid to die in combat as long as they can take out one more enemy. You were born, or transformed, to fight until your last breath.",
+				{
+					"type": "entries",
+					"name": "Peck 'Em",
+					"entries": [
+						"{@i “Ya-hah! Now are the rest? Where?! I ain't stopping 'till there's no more of 'em to peck… For to keep this down… or I won't get to fight another day!“}",
+						"Your body has been altered to sport powerful feathers made to boost your aggression despite damage to yourself. You gain resistance to fire damage, and once per short rest you can use a Reaction when you would take fall damage to negate that damage instead, as long as you didn't fall more than 100 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bloody Storm of Blades",
+					"entries": [
+						"{@i “Ah… and here I thought I'd manage to keep it cool all day today.”}",
+						"You do not simply rage, your fury and lust for battle boil and spill over like an erupting volcano. While you are raging, once per turn when you hit an attack, you gain 1 count of {@condition Bloodflame|TheUndertomesProjectMoon}. Additionally, you gain 1 count of {@condition Bloodflame|TheUndertomesProjectMoon} when you score a critical hit, when you attack a creature with half or less of its total hit points, or when a creature dies or falls unconscious within 15 feet of you.",
+						"While you have counts of {@condition Bloodflame|TheUndertomesProjectMoon}, your attacks also deal 1 count of {@condition Rupture|TheUndertomesGeneralRules} to the target and 2 counts of {@condition Burn|TheUndertomesGeneralRules} to yourself. While you have counts of {@condition Burn|TheUndertomesGeneralRules}, you won't stop raging even if you haven't attacked a hostile creature or taken damage, and you add +1 to your rage damage bonus for every 2 counts of {@condition Burn|TheUndertomesGeneralRules} you have on yourself, to a maximum of +3."
+					]
+				}
+			]
+		},
+		{
+			"name": "Flame Rooster's Death Defiance [炎鳥不死戦]",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Rooster",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 6,
+			"entries": [
+				"{@i “Roosters crow only when the lord holding our leash commands us to.”}",
+				"Roosters never die, they're simply out of breath, ready to recover and burst back into the fight like a living inferno. If your hit points drop to 0 or you become {@condition Unconscious}, you can use a reaction to immediately deplete all of your counts of {@condition Burn|TheUndertomesGeneralRules} or half the counts of {@condition Burn|TheUndertomesGeneralRules} on a creature within 15 feet of you and lose the {@condition Unconscious} condition, recover 1 hit point and gain {@dice 1d10} temporary hit points for each count of {@condition Burn|TheUndertomesGeneralRules} depleted this way. After this, you can immediately start Raging and move up to your movement speed towards a creature to perform an attack roll. If you score a critical hit or reduce the creature to 0 hit points with this attack, you gain an additional {@dice 1d10} temporary hit points.",
+				"You can use this feature once, and you regain all expended uses on a long rest. Upon reaching level 14, you can use it twice."
+			]
+		},
+		{
+			"name": "Mutilating Talons",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Rooster",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 10,
+			"entries": [
+				"{@i “Listen… I did this for you instead of indulgin' my fighting urges. Remember, that, yeah?”}",
+				"Your feathers have grown more fierce, are burning hotter, and you can't wait to dispense all of that fury on your enemies. While you have counts of {@condition Bloodflame|TheUndertomesProjectMoon}, you now deal 2 counts of {@condition Rupture|TheUndertomesGeneralRules} to the target and 4 counts of {@condition Burn|TheUndertomesGeneralRules} to yourself. While you have 4 or more counts of {@condition Burn|TheUndertomesGeneralRules} on yourself, your {@condition Bloodflame|TheUndertomesProjectMoon} applies thrice its amount as {@condition Burn|TheUndertomesGeneralRules} on enemies. If you have {@condition Bloodflame|TheUndertomesProjectMoon} or counts of {@condition Burn|TheUndertomesGeneralRules}, you get to do an extra attack once per turn. For each consecutive attack that you hit on the same creature this turn, you deal an additional {@dice 1d6} fire damage to them as long as you have counts of {@condition Bloodflame|TheUndertomesProjectMoon}."
+			]
+		},
+		{
+			"name": "Bloodflame Massacre [血炎亂舞]",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Rooster",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 14,
+			"entries": [
+				"{@i “Hah, what's that? You lot haven't had your fill just yet, either…? Fine! Come and get me!”}",
+				"The oil you use to ignite your sword is now coursing through your veins, and every single part of you is itching to start a conflagration. While you're raging, you can use a Reaction when you take Fire damage to immediately make an attack against a creature within reach. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses on a long rest.",
+				"Whenever you bring a creature to 0 hit points after an attack, you can immediately walk up to 15 feet and make another attack roll against a creature within reach.",
+				"{@b Rooster's Rampaging Blades Under the Ensanguined Heaven.} Once per long rest, as an Action you can take when you have half of your hit points or less, you open your wings and coat your weapons and yourself in flammable oil, gaining 4 counts of {@condition Burn|TheUndertomesGeneralRules}. You can reach each creature in a 20-foot-radius sphere around you without spending movement speed. You can make a number of attack rolls against them equal to half the count of {@condition Burn|TheUndertomesGeneralRules} on yourself. Your weapon damage dice for all of these attacks is {@dice 1d4} fire damage, but you can still apply your Rage bonus to them. If you reduce a creature to 0 hit points this way, your damage dice becomes {@dice 1d6} for the duration."
+			]
+		},
+		{
+			"name": "Gamefowl Martial Archetype",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Gamefowl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"entries": [
+				"Most Fighters live for fighting, simple as it may be, but none embody the vital need for pure, unadulterated violence as the Gamefowl Martial Archetype, defined by being an opportunistic and usually battle-crazed bundle of blades who craves nothing more than a good fight.",
+				"By using a special technique to ignite their blades in oil and then spark that with their victim's blood, they turn the battlefield into a searing inferno as they rush around, seeking not the greatest fight possible like a grandious warrior wanting glory, but like a mad rooster needing to feed on the greatest amount of battles possible, being proficient at finalizing creatures and heading onto the next as soon as possible.",
+				"In realms such as Fâerun, they are found as a Mercenary Group with the same namesake as the Archetype, a bunch of warriors with barely any hierarchy, only waiting to be leased by whatever lord of the land they aimlessly wander into so they can incur the wrath of their flock onto some poor target.",
+				{
+					"type": "entries",
+					"name": "{@condition Bloodflame|TheUndertomesProjectMoon} Sword",
+					"entries": [
+						"Through a rare technique you've managed to procure an efficient way to enchant your blade to ignite when soaked in blood, turning it into oil to fuel your violence. While you have a free hand you gain one count of {@condition Bloodflame|TheUndertomesProjectMoon} whenever you deal damage to a creature that has below half its Maximum Hit Points. You also gain one count of {@condition Bloodflame|TheUndertomesProjectMoon} whenever a creature is knocked {@condition Unconscious} or is killed within 15-ft of you.",
+						"While you have {@condition Bloodflame|TheUndertomesProjectMoon}, you may easily coat your swings into a pure blaze, causing you to deal an additional {@dice 1d6} fire damage per count of {@condition Bloodflame|TheUndertomesProjectMoon} and also inflict two times your {@condition Bloodflame|TheUndertomesProjectMoon} count of {@condition Burn|TheUndertomesGeneralRules} on melee weapon attacks, You may have up to three counts of {@condition Bloodflame|TheUndertomesProjectMoon} at any given time, losing one whenever you deal damage to a creature and at the end of combat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Battle Roosting",
+					"entries": [
+						"In the high tide of battle you may wish to fan the flames so a fight is brought straight to you, disregarding your safety just for more violence. As a Bonus Action during your turn you may let out a battle-crazed screech, causing all creatures around 30-ft of you to have Advantage on attacks against you. Furthermore, when you do this you deal additional damage on melee weapon attacks equal to the target's {@condition Burn|TheUndertomesGeneralRules} stacks, for a maximum amount equal to your Proficiency Bonus. The type of this additional damage is the same as your weapon's.",
+						"These effects last until the start of your next turn and you may use this feature an amount of times equal to half your Proficiency Bonus (Rounded Down) per Short or Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rooster's Flight",
+					"entries": [
+						"Through magical mutations that have pinions grow upon your arms to aid with your movement or special training that have you feel as if you could fly, you have achieved a point where your movement is leagues above the usual person. You gain Proficiency in Athletics, or Expertise if you were already Proficient in this skill. Furthermore, as a Reaction to when you would take fall damage you may attempt to catch yourself on any footholds on walls nearby or to soften your fall as you can by attempting an Athletics Skill Check with a DC that equals 13 + 1 for each 10-ft you fell. On a Success, you take no damage from falling."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fuel My Rampage",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Gamefowl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 7,
+			"entries": [
+				"You have become a fearsome, opportunistic beast. Whenever you knock a hostile creature {@condition Unconscious} or kill them, you may spend your Reaction to move up to your base movement speed towards a creature within reach and perform a melee weapon attack against them if able. In addition you are healed by half a roll of your Second Wind ability when you land a Critical Hit against a hostile creature, knock them {@condition Unconscious} or kill them."
+			]
+		},
+		{
+			"name": "Headless Fowl",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Gamefowl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 10,
+			"entries": [
+				"Death's door has now been a far thought in your head, barely considered even as you stand by it - Your desire for more always fueling your will to move foward to the next fight, no matter what. When you would be knocked {@condition Unconscious}, once per Long Rest, you instead suffer the {@condition Headless Fowl [无头鸡]|TheUndertomesProjectMoon} condition.",
+				"While in this state you have Disadvantage on any Saving Throws and Skill Checks, but may still move as your body acts upon its instincts looking for more fights. Whenever you inflict {@condition Burn|TheUndertomesGeneralRules} on another creature, you deal one more count of the condition and you deal an additional damage die on every melee weapon attack, with its damage type being the same as your weapon's. You must roll a Death Saving Throws at the end of your turn and automatically regain half your Maximum Hit Points if you pass three Death Saving Throws, however instead of taking damage when a creature would deal any to you, you instead fail one Death Saving Throw per creature, per turn. You may benefit from Fuel My Rampage while like this."
+			]
+		},
+		{
+			"name": "Rooster's Battle Techniques",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Gamefowl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 15,
+			"entries": [
+				"You've developed and mastered techniques using your {@condition Bloodflame|TheUndertomesProjectMoon} Sword that would make a normal person easily burn themselves from mishandling. These techniques can be used by spending two {@condition Bloodflame|TheUndertomesProjectMoon} during your turn, and you can only benefit from one at any given turn. They are as follows:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Pecking Storm.} You spend a Bonus Action to perform half your total attacks you may perform during your turn (Rounded Down) as extra melee weapon attacks against a target within reach.",
+						"{@b Overwhelm.} You spend your Action to deliver a particularly powerful strike with your blade, sinking it into the target and burning them from the inside out. You perform a melee weapon attack against a target within reach, on a hit they suffer 6 {@condition Burn|TheUndertomesGeneralRules} count and suffer {@dice 1d6} burn damage per count they are currently suffering from, to a maximum of {@dice 12d6}. This attack ignores Resistance to fire damage and treats Immune creatures as if they were only Resistant instead.",
+						"{@b Rooster's Flight.} You spend your Action to perform up to your maximum amount of attacks' worth of melee weapon attacks against creatures within your reach, moving up to 15-ft in a direction of your choice every time you do so. When you move this way, creatures have Disadvantage on Opportunity Attacks against you."
+					]
+				}
+			]
+		},
+		{
+			"name": "True Battle-Craze",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Gamefowl",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 18,
+			"entries": [
+				"Upón going near your breaking point, you only feel more at ease for breaking other's. While at or below half your Hit Points, you gain the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"You deal an additional {@condition Burn|TheUndertomesGeneralRules} count on every attack.",
+						"You gain an additional {@condition Bloodflame|TheUndertomesProjectMoon} when you would gain it.",
+						"You deal two additional weapon damage die on attacks.",
+						"You are considered Proficient on Wisdom, Intelligence and Charisma Saving Throws against spell effects."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lifestew Domain",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Lifestew",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 1,
+			"entries": [
+				"{@i “Salutations!!!!!! I implore thee to try this soup!!!!“}",
+				"None are more warm-hearted and kind than the ones who follow the Lifestew Domain, focused on hailing the ancient Basillisoups's word of keeping anyone and everyone well fed through cold winters and harsh famines alike. A member of the Lifestew Domain usually starts out working to aid in their soup-kitchen bases, yet adventures call to them like a second nature, looking both for new ingredients they can bolster their order with or hungry mouthes to taste the delights of Dragonstew!",
+				"In some realms such as Fáerun, the clerics of this domain ride along the sword coast in their mighty chariot-train pulled by the very divine beasts that they consider so beloved, aiding any settlement they come across and bringing a happiness unlike no other to the festivals of the world, being sought after to calm down and pacify even the most starve-crazed monsters and bandit groups, one of their main tenets being that all creatures deserve to be well-fed in the end.",
+				"At each indicated cleric level, add the listed spells to your spells prepared.",
+				{
+					"type": "table",
+					"caption": "Lifestew Domain Spells",
+					"colLabels": ["Cleric Spells", "Spells"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						[
+							"1st",
+							"{@spell animal friendship}, {@spell catapult|XGE}"
+						],
+						[
+							"3rd",
+							"{@spell Aganazzar's scorcher|XGE}, {@spell flaming sphere}"
+						],
+						[
+							"5th",
+							"{@spell elemental weapon}, {@spell Leomund's tiny hut}"
+						],
+						["7th", "{@spell dominate beast}, {@spell polymorph}"],
+						["9th", "{@spell awaken}, {@spell conjure elemental}"]
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragonstew Kitchen",
+					"entries": [
+						"Among the countless cookbooks you've memorized and holy precepts that were gotten to an art, you've also attained the skill to unite both in the divine objective of keeping a belly fed. As such, you know a ritual to summon a {@item Basillisoup Ladle|TheUndertomesProjectMoon} that you're proficient in during a long rest, which remains with you until its destroyed, lost or you summon another one, where the old one vanishes. You may use this Ladle as a holy symbol.",
+						"Furthermore, you've also mastered the art onto preparing enchanted food to give poor souls their deserved nourishment no matter what; Whenever you deal fire damage to a friendly creature who has the {@condition Well-Fed|TheUndertomesProjectMoon} condition, they instead ignore fire Resistance or Immunity and heal the target by half the damage dealt, as they have a chance to consume the food flying at them.",
+						"A creature may benefit from this only once per turn. When you apply {@condition Burn|TheUndertomesGeneralRules} through a Ladle ( By attacking with it or using it to cast your Cleric Spells ), they are instead healed by half the hit points they would suffer as per the Condition's fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sanctified Cook",
+					"entries": [
+						"In a kitchen you are a ruler, the kitchen utensils being your noble knights to serve as you will. You gain proficiency in Cook's Utensils and during a short rest you may prepare a feast for your allies, be it a good old Dragonstew or even varying with a Dracopie, either ways your delicious food grants them the {@condition Well-Fed|TheUndertomesProjectMoon} condition until the next short or long rest, alongside a number of {@dice d4} temporary hit-points equal equal to half your Proficiency Bonus, rounded down. These temporary hit-points last until {@condition Well-Fed|TheUndertomesProjectMoon} wears off.",
+						"Upon reaching 6th level your cooking improves, causing a {@condition Well-Fed|TheUndertomesProjectMoon} creature to gain Resistance against the Fire and at 12th level, Cold damage as well."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity: Summon Stew Cauldron",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Lifestew",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 2,
+			"entries": [
+				"With a chattering incantation you summon forth a huge soup cauldron that occupies a 5-ft an space thats within touch range of yourself, blessed to fulfil your duty of cooking. Once per combat, any friendly creature may spend their bonus action to drink from its glorious soup while within 5-ft of it, recovering an amount of {@dice d8} hit points equal to half your proficiency bonus, rounded down, and gaining the {@condition Well-Fed|TheUndertomesProjectMoon} condition, if they didn't have it already. Whenever a hostile creature or one you deem unworthy attempts to drink from the cauldron, they take the same amount they would be healed for as fire damage.",
+				"While within 5-ft of the cauldron you may spend your bonus action to add a Magical Ingredient to the brew, as described on the list below:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Grilled Ginger.} A specially spicy pepper that teems with flickering flames. A creature who ingests this peppery brew deals an additional stack of {@condition Burn|TheUndertomesGeneralRules} when they hit an attack, for up to 2 times per turn. This lasts as long as they are {@condition Well-Fed|TheUndertomesProjectMoon}.",
+						"{@b Life Lettuce.} Crunchy and makes you feel fresh as a newborn leaf. A creature who ingests this alleviating brew is instead healed by an amount of {@dice d8} hit points equal to the Lifestew Cleric's proficiency bonus.",
+						"{@b Guiding Guarana.} This ingredient is famous for how its refreshing, calming the mind to focus on what it needs to. While {@condition Well-Fed|TheUndertomesProjectMoon} a creature who ingests this brew may add a {@dice 1d4} bonus modifier to their skill checks. After doing so, they can only add this bonus again after failing another skill check.",
+						"{@b Brutal Beef.} Hard to chew and extremely juicy, this ingredient packs a punch by itself. A creature who ingests this thick brew has advantage on Strength Saving Throws and ability checks. This lasts as long as they are {@condition Well-Fed|TheUndertomesProjectMoon}.",
+						"{@b Monster Mash.} This is undescribable but a great remedy to poison. A(n unlucky) creature who ingests this (???) brew instantly vomits. this clears their body of any poisons or non-magical diseases currently affecting them. If the ingesting creature was suffering from the poisoned condition, they may choose to instead hold the vomit in, performing an melee ranged attack they are proficient in choosing a target creature within 5-ft of them as a free action during the end of their turn. On a hit the target takes {@dice 3d4} poison damage and gains the poisoned condition instead."
+					]
+				},
+				"You may add a Magical Ingredient an amount of times equal to half your proficiency bonus per long rest, rounded down. The cauldron has an amout of hit points equal to 10 * your level in Cleric and an AC of 13 + your proficiency bonus. When it would be reduced to 0 hit points, the iron cauldron crumbles to dust while the soup explodes violently, forcing any creature within a 15-ft radius to pass a Dexterity Saving Throw equal to your cleric Spell Saving Throw or suffer {@dice 4d8} fire damage and 4 stacks of {@condition Burn|TheUndertomesGeneralRules}.",
+				"This cauldron may be drawn from an amount of times equal to your proficiency bonus, becoming inert and empty after all uses are consumed."
+			]
+		},
+		{
+			"name": "Spice of Life",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Lifestew",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 6,
+			"entries": [
+				"The noses of cooks long past have been reached by your delightful cooking and they have chosen to give you the blessing of special ingredients to create a True Dragonlife Stew, a magnificent meal meant for the servants of the Lifestew that has a chef transcend their mundane existance and become akin to the mighty {@creature Basillisoup|TheUndertomesProjectMoon}. As an action you may take once per long rest, you produce a True Dragonlife Stew and consume it, gaining the {@condition Well-Fed|TheUndertomesProjectMoon} Condition and the effects of the following ingredients while you have it:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Jesty Jallapeños.} You gain a breath weapon as a great fire starts swirling in your gut! You may spend your action to spew fire in a 30-ft cone in any direction, having any creature within this range have to perform a Dexterity Saving Throw, suffering {@dice 5d8} fire damage and 4 {@condition Burn|TheUndertomesGeneralRules} on a failure or half the damage and half the stacks on a success. After using this feature you must roll a {@dice d6} at the start of your next turns only, regaining the ability to use it upon rolling a 5 or a 6. If you were poisoned and consumed a stew with Monster Mash, this Saving Throw becomes a Constitution Saving Throw and in addition to other effects any creature who fails also becomes poisoned for one minute, being able to re-attempt this Saving Throw at the end of their turns.",
+						"{@b Clawing Crawfish.} Great draconic claws morph from your fingers and a tail sprouts from your lower back! You gain natural weapons in the form of claws and a tail, the former dealing {@dice 2d4} slashing damage on a hit and having the finesse traits while the latter deals {@dice 1d12} bludgeoning damage and has the reach trait.",
+						"{@b Thick Tomatoes.} Your legs transform to be durable and powerful, springing with each step. You gain an additional 10-ft of walking speed and proficiency with the Athletics skill, or expertise if you were already proficient.",
+						"{@b Careful Carrots.} Your eyes gain a yellowish tone and slit pupils, becoming fully draconic. You gain advantage on Perception skill checks, can't be surprised and can see Invisible creatures as if they were colorless sillouettes over the world."
+					]
+				},
+				"Furthermore, you may throw one of these ingredients into your Stew Cauldron as a bonus action on your turn, granting any friendly creature who drinks this it's associated effect. This counts to the amount of times you may throw an ingredient in, and you may add a Spice of Life ingredient once per long rest. If you are knocked {@condition Unconscious} you lose the effects of your True Dragonlife Stew as your stomach becomes upset from not being to enjoy its grace fully."
+			]
+		},
+		{
+			"name": "Meal of a Lifetime",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Lifestew",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 17,
+			"entries": [
+				"You've learnt how to become the best chef possible, a true believer and follower of the Lifestew. As such, you gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"You may throw up to two ingredients from your Spice of Life feat into your Stew Cauldron per long rest instead of one.",
+						"When you consume your True Dragonlife Stew, you may dedicate a portion of it to the great Basillisoups. Because of the greatness you've achieved with the pieces of food you make, a mighty {@creature Basillisoup|TheUndertomesProjectMoon} appears on the same square as you, having you ride it valiantly into battle. It takes it's turn alongside yours in Initiative, where you may have it move as a free action and spend your action or bonus action to command it to take one of its own. You may spend your reaction for it to take a reaction of its own when triggered."
+					]
+				}
+			]
 		}
 	],
 	"condition": [
@@ -8954,6 +9476,27 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Bloodflame",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"While you have {@condition Bloodflame|TheUndertomesProjectMoon}, you may easily coat your swings into a pure blaze, causing you to deal an additional {@damage 1d6} fire damage per count of {@condition Bloodflame|TheUndertomesProjectMoon} and also inflict two times your {@condition Bloodflame|TheUndertomesProjectMoon} count of {@condition Burn|TheUndertomesGeneralRules} on melee weapon attacks. You may have up to three counts of {@condition Bloodflame|TheUndertomesProjectMoon} at any given time, losing one whenever you deal damage to a creature and at the end of combat."
+			]
+		},
+		{
+			"name": "Headless Fowl [无头鸡]",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"While in this state you have Disadvantage on any Saving Throws and Skill Checks, but may still move as your body acts upon its instincts looking for more fights. Whenever you inflict {@condition Burn|TheUndertomesGeneralRules} on another creature, you deal one more count of the condition and you deal an additional damage die on every melee weapon attack, with its damage type being the same as your weapon's. You must roll a Death Saving Throws at the end of your turn and automatically regain half your Maximum Hit Points if you pass three Death Saving Throws, however instead of taking damage when a creature would deal any to you, you instead fail one Death Saving Throw per creature, per turn. You may benefit from Fuel My Rampage while like this."
+			]
+		},
+		{
+			"name": "Well-Fed",
+			"source": "TheUndertomesProjectMoon",
+			"entries": [
+				"A creature remains {@condition Well-Fed|TheUndertomesProjectMoon} until the next short or long rest. At 6th level, it has Resistance against Fire damage and at 12th level, Cold damage as well."
+			]
 		}
 	],
 	"optionalfeature": [
@@ -9028,7 +9571,7 @@
 				}
 			],
 			"entries": [
-				"{@i \"Anyhoo, has anyone here actually read 'The Cloudburst Blade?' If ya did, well... if I may have but 3—no, 4 hours of your time, good sir...\"}",
+				"{@i \"Anyhoo, has anyone here actually read 'The Cloudburst Blade?' If ya did, well... if I may have but 3-no, 4 hours of your time, good sir...\"}",
 				"To be a ward is to be a waif in your life, you might still be under the graces of your master - your captor - your guardian, whatever they may be to you, and you may still somewhat believe in them but your heart, so carefully forged, has already seen through cracks that you might not be so keen to accept.",
 				"This {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst} is recommended for characters that are living a dichotomy of being attached to a reality that they hold immense fervour toward, but also having that reality being no more than a farce that could break under their feet at any moment. They are those who possess immense knowledge of specific topics but may seem sheltered to the outside world or have trouble accepting certain truths no matter how hard they stare them in the eye.",
 				"Upon activation of your {@variantrule Core Bursts|TheUndertomesGeneralRules|Core Burst}, you gain the following:",
@@ -10397,6 +10940,21 @@
 				"A sleek sword meant to end fights quickly after it's drawn from its sheath."
 			],
 			"source": "TheUndertomesProjectMoon"
+		},
+		{
+			"name": "Basillisoup Ladle",
+			"source": "TheUndertomesProjectMoon",
+			"type": "M",
+			"rarity": "none",
+			"weaponCategory": "exotic",
+			"dmg1": "1d8",
+			"dmgType": "F",
+			"property": ["R", "2H"],
+			"entries": [
+				"A large pole made by the clerics who follow the Lifestew, it dons a beak-like apparatus at its end that contains everflowing soup. It's scalding hot and exceedingly tough to handle by someone who knows not the ways of the stew.",
+				"{@b Stir the Stew.} You may spend your bonus action to magically reheat the stew inside the ladle, having it become piping hot for this turn. When you do so, it deals an additional {@damage 1d8|d8} fire damage and inflicts a total of 3 {@condition Burn|TheUndertomesGeneralRules}. This lasts until the start of your next turn, where it becomes Warm, dealing regular damage and 1 {@condition Burn|TheUndertomesGeneralRules} only. After another turn, it becomes cold, dealing cold damage instead.",
+				"{@b Force-Feed.} As an action during your turn, you may perform a melee weapon attack against a prone creature to force-feed it. On a hit, you deal an additional {@damage 1d8|d8} of fire damage and inflict 4 {@condition Burn|TheUndertomesGeneralRules} on that creature."
+			]
 		}
 	],
 	"itemProperty": [
@@ -11772,6 +12330,558 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Combustion Snap",
+			"source": "TheUndertomesProjectMoon",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You snap your fingers together, causing a burst of flame to abruptly erupt at the surface of another creature's body. You make one ranged spell attack against that creature, dealing {@damage 1d4} fire damage and 1 {@condition Burn|TheUndertomesGeneralRules|Burn} count on a hit.",
+				"You create more than one burst when you reach higher levels: two bursts at 5th level, three bursts at 11th level and four bursts at 17th level. You can cause these bursts at the same target or at different ones. Make a separate attack roll for each target, hitting or missing all bursts dedicated to the same target depending on the result.",
+				"If you could deal additional {@condition Burn|TheUndertomesGeneralRules|Burn} count on hits through external effects, you may only deal up to half your proficiency bonus' worth of the count per burst instead."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fan the Flame",
+			"source": "TheUndertomesProjectMoon",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "A torn off moth wing"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You mystically extend the wing in your hand to become a blazing fan and then beat it, causing a great scorching gale to overtake the area within range. All creatures of your choice must pass a Constitution saving throw or suffer 1 {@condition Burn|TheUndertomesGeneralRules|Burn} count and then have all failing creature's count of the Condition be summed up and then divided equally amongst them."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Butterfly's Dragpath",
+			"source": "TheUndertomesProjectMoon",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": false
+				}
+			],
+			"entries": [
+				"You make a rift in space appear at a point within range, to where a massive blazing talon bears down and drags through a 30-ft. long, 10-ft. wide line of your choice. This area is engulfed in flame for the duration, causing any creature inside that area to suffer 2 {@condition Burn|TheUndertomesGeneralRules|Burn} count whenever they end or start their turn atop the area.",
+				"This flame cannot be put out by non-magical water or wind, but will be extinguished by effects such as the {@spell gust of wind} spell. Surmountable fuel may be thrown into the fire as a Bonus Action, such as an Oil (Flask), causing it to rage on stronger and deal an additional {@condition Burn|TheUndertomesGeneralRules|Burn} count whenever the Condition is applied. The same happens through spells such as {@spell grease} being cast atop this zone, also effectively expanding its area to cover wherever it is covered by the {@spell grease} spell.",
+				"This fire may deal a total of 6 {@condition Burn|TheUndertomesGeneralRules|Burn} count per turn start or end."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Broken Match",
+			"source": "TheUndertomesProjectMoon",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "An intact match"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You lit the match between your fingers and use it to draw out four symbols of floating ember in the air, connecting them to up to three {@condition Burn|TheUndertomesGeneralRules|Burning} creatures within range. You then strike through all these symbols with the match, instantly making it and the target creatures burst in flame.",
+				"These target creatures instantly suffer the effects of their {@condition Burn|TheUndertomesGeneralRules|Burn} count twice, halving their count each time they suffer it. If a target is suffering from {@condition Tremor - Scorch|TheUndertomesGeneralRules}, you may choose to trigger {@condition Tremor - Scorch|TheUndertomesGeneralRules} once instead."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the targets must pass a Wisdom saving throw or suffer an amount burn count after triggering the Condition equal to three times each slot level above 3rd on a failure."
+					]
+				}
+			]
+		},
+		{
+			"name": "Candlesetting",
+			"source": "TheUndertomesProjectMoon",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "Dry meat and tallow"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure three red candles in unoccupied spaces of your choice within range that float in the air as if they have been affixed to empty space. These look like strips of tallow interwoven, and may be alight by a creature hitting them with a melee attack ( They have an AC of 14 ) or by spending their Bonus Action to do so.",
+				"After being set alight, these candles' bursting flames cling and surround the weapons of creatures of your choice within 15-ft. of each respective candle, having them deal one {@condition Burn|TheUndertomesGeneralRules|Burn} count on melee weapon attack hits for the duration.",
+				"Lit candles are small sized objects that have an amount of Maximum Hit Points equal to 4 times the spell slot level used to cast this spell. Upon falling below one Hit Point, the candle becomes unlit and must be lit again. These candles have a +0 modifier to saving throws except for Constitution and Charisma, to which they use a bonus modifier equal to half the spell slot level used to cast this spell. They also Resist fire damage and are Vulnerable to cold and thunder damage.",
+				"A creature may benefit from dealing up an amount of additional {@condition Burn|TheUndertomesGeneralRules|Burn} count from this spell's effects equal to 2 plus the spell slot level used to cast this spell.",
+				"If this spell is cast at 6th level or higher you may meld up to two Candles into the same space, causing them to become a pillar of tallow and flame that grants two {@condition Burn|TheUndertomesGeneralRules|Burn} additional count instead of one and have a range of 30-ft. instead. These Candles count as medium sized objects and have Maximum Hit Points equal to 8 times the spell slot level."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you summon an additional Candle for each spell slot used above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Cascading Cataclysm",
+			"source": "TheUndertomesProjectMoon",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "Gunpowder on your lips"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You click your tongue in a frequency that causes flames to burst out and rage in a blazing howl. One {@condition Burn|TheUndertomesGeneralRules|Burning} creature within reach must pass a Dexterity saving throw or combust violently, suffering an amount of {@damage d8} fire damage equal to half their current {@condition Burn|TheUndertomesGeneralRules|Burn} count ( To a maximum of {@damage 6d8} ) and suffering the same value of {@condition Burn|TheUndertomesGeneralRules|Burn} count, ( Max. 6 ) or half that damage and count.",
+				"All creatures within 15-ft. of the initial target must pass a Dexterity saving throw or suffer half that damage and count. If the initial target failed, you may choose to have one already {@condition Burn|TheUndertomesGeneralRules|Burning} creature within that reach make a Wisdom saving throw instead, causing them to explode on a failure and suffer the same as the initial effects of this spell.",
+				"You may make creatures explode in this way for an amount of times equal to the Spell Slot Level spent to cast this spell, and must always target a creature who has not yet attempted this spell's Wisdom saving throw to explode."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Searing Birdcage",
+			"source": "TheUndertomesProjectMoon",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "The burnt feather of a goose"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You invoke the spirit of a flaming goose that manifests above a target creature within reach and have it then judge their sins. The creature must pass a Wisdom saving throw or suffer {@damage 4d4} fire damage and 4 {@condition Burn|TheUndertomesGeneralRules|Burn} count.",
+				"If the creature has committed any of the following since the start of their last turn, they suffer additional effects upon failing this saving throw:",
+				{
+					"type": "list",
+					"items": [
+						"Killed or knocked another creature {@condition Unconscious}.",
+						"Cast a spell by spending a spell slot.",
+						"Spoke ill or disrespected the core beliefs of a non-Evil aligned deity."
+					]
+				},
+				"Upon committing any of these sins, the creature suffers {@damage 4d12} fire damage instead as a cage of searing feathers comes to bind them. They also suffer 8 {@condition Burn|TheUndertomesGeneralRules|Burn} count instead, have their movement speed reduced to 0-ft. and a -3 negative modifier to Dexterity saving throws until the end of their next turn.",
+				"If they have committed two or more of these sins, they have Disadvantage on the saving throw."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, you may select an additional target for each slot level above 5th."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pyre of Prophecy",
+			"source": "TheUndertomesProjectMoon",
+			"level": 7,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": false
+				}
+			],
+			"entries": [
+				"Through whispers of shattered texts and precognition of old you cause a burning pyre to burst out from an unnocupied 10-ft. by 10-ft. space within reach, rising to stand tall and cause life to burn bright.",
+				"This Pyre is a large object that has an AC of 17, Resistance to Fire and Radiant damage and is Vulnerable to cold damage. It does not benefit from this Resistance toward suffering {@condition Burn|TheUndertomesGeneralRules|Burn} damage.",
+				"The Pyre demands the extinguishment of all around it, constantly emanating scorching air that causes all creatures within 30-ft. of it to suffer 2 {@condition Burn|TheUndertomesGeneralRules|Burn} at the end of their turns. At the start of a creatures turn they must pass a Wisdom saving throw or suffer 6 {@condition Burn|TheUndertomesGeneralRules|Burn} count if they are inside this area.",
+				"Furthermore, this Pyre makes burns inside its reach feel like one is being pressed against hell itself, increasing {@condition Burn|TheUndertomesGeneralRules|Burn} damage to {@dice d8|d8s} instead of {@dice d4|d4s} and {@condition Tremor - Scorch|TheUndertomesGeneralRules}'s end of turn damage to {@dice d8|d8s} as well. The Condition's burst damage becomes {@dice d10|d10s} instead of {@dice d6|d6s}.",
+				"At the end of your turns, the Pyre gains 2 {@condition Burn|TheUndertomesGeneralRules|Burn} count per creature inside it's area, to a minimum of 2, and suffers the Condition's damage at the start of your subsequent turns."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, you may select an additional target for each slot level above 5th."
+					]
+				}
+			]
 		}
 	],
 	"monster": [
@@ -12068,6 +13178,102 @@
 					"name": "Bestiary",
 					"entries": [
 						"A mysterious insect-like creature with acidic insides that, when in contact with air or diluted enough, turns into a sweet beverage. This creature seems to prefer easier prey and prioritizes attacking targets that are slow, usually going for those with less movement or that are lower in the initiative count."
+					]
+				}
+			]
+		},
+		{
+			"name": "Basillisoup",
+			"source": "TheUndertomesProjectMoon",
+			"size": ["L"],
+			"type": "beast",
+			"alignment": ["U"],
+			"ac": [
+				{
+					"ac": 11,
+					"from": ["natural armor"]
+				}
+			],
+			"hp": {
+				"average": 132,
+				"formula": "12d10 + 72"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 19,
+			"dex": 12,
+			"con": 22,
+			"int": 3,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"athletics": "+7"
+			},
+			"resist": ["cold"],
+			"immune": ["fire"],
+			"conditionImmune": ["charmed", "frightened"],
+			"senses": ["darkvision 60 ft."],
+			"passive": 11,
+			"languages": ["-"],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Delicious Looks",
+					"entries": [
+						"Any non {@condition Well-Fed|TheUndertomesProjectMoon} creature who ends its turn near the {@creature Basillisoup|TheUndertomesProjectMoon} feels a terrible hunger washing over them, forcing them to pass a {@dc 17} Constitution Saving Throw or take {@damage 2d10} psychic damage."
+					]
+				},
+				{
+					"name": "Everwarm Feed",
+					"entries": [
+						"When the {@creature Basillisoup|TheUndertomesProjectMoon} would be targeted by fire damage, it is instead healed by that amount as the warmth keeps the stew inside it warmer."
+					]
+				},
+				{
+					"name": "The Original Ladle",
+					"entries": [
+						"The {@creature Basillisoup|TheUndertomesProjectMoon} is a mythical beast of legend that inspired the creation of {@creature Basillisoup|TheUndertomesProjectMoon} Ladles, as such while another creature is mounted on the {@creature Basillisoup|TheUndertomesProjectMoon}, it's attacks count as if they were made with Ladles."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Basillisoup makes two attacks in any order."
+					]
+				},
+				{
+					"name": "Fiery Beak",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage plus 10 ({@damage 2d8 + 6}) fire damage, and the target suffers 3 stacks of {@condition Burn|TheUndertomesGeneralRules}."
+					]
+				},
+				{
+					"name": "Spit Stew",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 30 ft., one target. {@h}12 ({@damage 3d4 + 6}) fire damage, and the target creature suffers 6 {@condition Burn|TheUndertomesGeneralRules} stacks as a ball of scalding soup burns them."
+					]
+				},
+				{
+					"name": "Tail Swipe",
+					"entries": [
+						"The Basillisoup spins around, flinging its massive tail at any hostile creature within a 15-ft radius of itself, forcing them to make a {@dc 15} Strength Saving Throw or be knocked {@condition Prone}."
+					]
+				},
+				{
+					"name": "Seasoning Breath {@recharge 5}",
+					"entries": [
+						"The Basillisoup exhales burning hot seasoning dust in a 30-foot cone. Each creature in that range must make a {@dc 17} Dexterity saving throw, taking 40 ({@damage 10d8}) fire damage and becoming seasoned on a failed save, or half as much damage on a succesful one. A seasoned creature takes an additional {@damage 2d8} damage of the attacks original damage type when hit with a Beak or Bite attack and suffers double the stacks of {@condition Burn|TheUndertomesGeneralRules} the next time the Condition is applied onto them."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Hungry Beast",
+					"entries": [
+						"When the Basillisoup would be targeted by a ranged attack it may spend its reaction to perform an {@skill Athletics} check against a DC equal to the value rolled to hit it. On a success, it devours the attack whole in its head-pot, spitting it out at the attacker as a {@atk rw} ({@hit 9} to hit) and dealing the same amount of dice that would be dealt to it + 6 as fire damage."
 					]
 				}
 			]
