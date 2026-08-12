@@ -5,7 +5,7 @@
 				"json": "TheUndertomesGeneralRules",
 				"abbreviation": "TUGR",
 				"full": "The Undertomes General Rules Compendium",
-				"version": "1.0.2",
+				"version": "1.0.5",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"dateReleased": "2026-07-27",
@@ -20,7 +20,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785187088,
-		"dateLastModified": 1785790348
+		"dateLastModified": 1786574500
 	},
 	"book": [
 		{
@@ -70,7 +70,10 @@
 						"Chain-Through",
 						"Concealed",
 						"Draw",
+						"Ennervate",
 						"Entrench",
+						"Blazing",
+						"Blast Cartridge",
 						"Hemorrhaging",
 						"Mesmerizing",
 						"Lobbing",
@@ -81,10 +84,18 @@
 					]
 				},
 				{
-					"name": "Wondrous Pets & Friends",
+					"name": "Armor Properties",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 3
+					},
+					"headers": ["Imposing", "Impenetrable"]
+				},
+				{
+					"name": "Wondrous Pets & Friends",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
 					},
 					"headers": ["Hit Points", "Reaching 0 Hit Points"]
 				},
@@ -92,7 +103,7 @@
 					"name": "Deployable Tools",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 4
+						"identifier": 5
 					},
 					"headers": [
 						"Repairing Tools",
@@ -121,8 +132,22 @@
 					"name": "Core Bursts",
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 5
+						"identifier": 6
 					}
+				},
+				{
+					"name": "Equipment Rules",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 7
+					},
+					"headers": [
+						"Reloading and Ammunition Swapping",
+						"Installing and Uninstalling Prosthetics",
+						"Professional Installation and Removal Costs",
+						"Prosthesis Installation DC Modifiers",
+						"Surgery Accidents"
+					]
 				}
 			]
 		}
@@ -321,6 +346,13 @@
 						},
 						{
 							"type": "entries",
+							"name": "Ennervate",
+							"entries": [
+								"A weapon with the {@i Ennervate} property is usually a living, breathing thing - Feeding on that very same life to fuel a diverse spectrum of effects. These are found under their own section of the {@i Ennervating} weapon and may be activated by sacrificing an amount of Hit Points equal to the number listed within parenthesis beside this property."
+							]
+						},
+						{
+							"type": "entries",
 							"name": "Entrench",
 							"entries": [
 								"A weapon with the Entrench property carries an enormous punch but also a considerable amount of blowback whenever it is fired or swung. Whenever you perform an attack with it, your remaining movement speed is reduced by the value in parenthesis beside this property. If two numbers are shown, these are in order the amount of movement speed reduced by one handed attacks and two handed attacks."
@@ -328,9 +360,23 @@
 						},
 						{
 							"type": "entries",
+							"name": "Blazing",
+							"entries": [
+								"With the right angle, a weapon with the {@i Blazing} property ignites the air in a furious blaze., Whenever your base dice roll is equal to or greater than the first value displayed in parenthesis besides this property, you apply an amount of {@condition Burn|TheUndertomesGeneralRules} count equal to the second value presented."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Blast Cartridge",
+							"entries": [
+								"A weapon that boasts the {@i Blast Cartridge} property is inlaid with a firing mechanism that can be triggered whenever you hit a creature with it, spending one appropriate piece of ammunition to do so. ( Usually a bullet. ) Whenever you do, you inflict additional damage equal to the value in parenthesis beside this property."
+							]
+						},
+						{
+							"type": "entries",
 							"name": "Hemorrhaging",
 							"entries": [
-								"A serrated weapon causes a stack of {@condition Bleed|TheUndertomesGeneralRules} whenever you hit with it, provided the roll equals the value presented alongside the property before any modifiers."
+								"Meant to cause deep gashes and cuts, a {@i Hemorrhaging} weapon excels at drawing out blood. Whenever your base dice roll to hit a creature is equal or greater to than the first number presented in parenthesis beside this property, you inflict {@condition Bleed|TheUndertomesGeneralRules} count equal to the second value presented."
 							]
 						},
 						{
@@ -344,7 +390,7 @@
 							"type": "entries",
 							"name": "Lobbing",
 							"entries": [
-								"A lobbing weapon isn't just thrown straight ahead, instead aiming up to strike down from afar. Lobbing weapons ignore cover if that cover isn't at least as tall as their short range, as per the Range or Thrown properties."
+								"A lobbing weapon isn't just thrown straight ahead, instead aiming up to strike down from afar. Lobbing weapons ignore cover if that cover isn't at least as tall as their short range, as per the Range or thrown properties."
 							]
 						},
 						{
@@ -373,6 +419,26 @@
 							"name": "SteelHack",
 							"entries": [
 								"A weapon with the SteelHack property is designed to have sliding or otherwise transmutative mechanisms to allow it to exist in multiple forms at once. The base weapon is described in the initial weapon text, with a secondary one being presented below it for each alternative form, which may change its properties, damage and so on. Ammunition stashed in a SteelHack weapon remains inside it even if its current form wouldn't use it, requiring a form-change to rip it out. Additionally, changing a weapon's form this way usually takes a Bonus Action, with any deviations of that rule being specified in parenthesis beside the property as A for Action and FA for a Free Action that may be taken at any time."
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Armor Properties",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Imposing",
+							"entries": [
+								"An {@i Imposing} armor set is the kind of clothing that demands some level of respect, no matter from whom. You benefit from having your {@skill Intimidation} skill modifier be at least the value displayed in Parenthesis, if it was any lower."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Impenetrable",
+							"entries": [
+								"An armor seat with the {@i Impenetrable} property has remarkably good stopping power against piercing forces and other kinds of missiles. Your AC against attacks that would deal piercing damage or that are otherwise missiles ( such as arrows, bullets or certain ranged spells ) is considered to be higher by a value presented in parenthesis near this property. Additionally, whenever you would suffer damage through one such attack it is reduced by an amount equal to double the value presented in parenthesis."
 							]
 						}
 					]
@@ -597,6 +663,108 @@
 						"Upon reaching 10th level, you may choose to gain a Core Burst as per what best fits your person, activating it with a Bonus Action during your turn. This effect may come to manifest as a small effect surrounding you like an aura, such as crackling lightning forming whenever you move or smoke raising from your feet. This lasts for up to one minute or until you are knocked {@condition Unconscious}.",
 						"This process is exhausting to the mind, being able to be used once per long rest. You may instead use your Core Burst twice per long rest upon reaching 20th level. You may choose to push yourself particularly hard and activate your Core Burst after all uses have been expended, but you gain a point of {@condition Exhaustion} when it ends."
 					]
+				},
+				{
+					"type": "section",
+					"name": "Equipment Rules",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Reloading and Ammunition Swapping",
+							"entries": [
+								"A creature may Reload their weapon as usual even if they still have bullets left to spend, recuperating any ammunition they haven't shot. They may also use different Ammunition Types, such as {@i Arcana Shot} or {@i Propulsion Rounds} when Reloading their weapon, consuming an amount of the chosen ammunition equal to the weapon's Reload value. If unloaded, any un-shot ammunition is recovered."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Installing and Uninstalling Prosthetics",
+							"entries": [
+								"In a Setting or table where downtime should matter more, you may have the process of acquiring any given Prosthesis for part replacement and upkeep be only the first step in benefitting from such. There are two means of installing Prosthesis, either with the aid of a professional in a specialized clinic/workshop or trying to do so by yourself.",
+								"When relying on a Professional such as a surgeon, ripperdoc or meister to do so, you have the limb successfully installed or removed after 8 hours spent in surgery. These are the usual costs for such operations:",
+								{
+									"type": "table",
+									"caption": "Professional Installation and Removal Costs",
+									"colLabels": ["Prosthesis Rarity", "Price"],
+									"colStyles": ["col-6", "col-6"],
+									"rows": [
+										["Common", "45 GP."],
+										["Uncommon", "500 GP."],
+										["Rare", "1.250 GP."],
+										["Very Rare", "5.000 GP."],
+										["Legendary", "15.000 GP."],
+										["Artifact", "100.000 GP."]
+									]
+								},
+								"When relying on yourself or attempting to install a Prosthetic on another creature, you must spend 8 hours of uninterrupted work to do so, also requiring to pass a {@skill Sleight of Hand} check of which you may choose to use either your Dexterity or Intelligence modifier to do so. The base DC for this check is 10, with the following modifiers:",
+								{
+									"type": "table",
+									"caption": "Prosthesis Installation DC Modifiers",
+									"colLabels": ["Cause", "Modifier"],
+									"colStyles": ["col-6", "col-6"],
+									"rows": [
+										["Common Rarity", "+0"],
+										["Uncommon Rarity", "+2"],
+										["Rare Rarity", "+4"],
+										["Very Rare Rarity", "+6"],
+										["Legendary Rarity", "+8"],
+										["Artifact Rarity", "+15"],
+										["Unstable Work Environment", "+5"],
+										["Specialized Work Environment", "-5"],
+										[
+											"Artificer Levels",
+											"Negative modifier equal to Artificer level."
+										],
+										["Proficiency in Tinker's Tools", ""]
+									]
+								},
+								"For further clarification, an {@i Unstable Work Environment} might consist as a specially dirty or unsanitary place or an active war zone where the surgeon simply cannot focus properly. On the other hand, an {@i Specialized Work Environment} is a clinic, workshop or anything of the sort. This is ultimately up to the DM's clarification of the current environment. On a failed check, the item is not spent but you must roll on the {@i Surgery Accidents} table:",
+								{
+									"type": "table",
+									"caption": "Surgery Accidents",
+									"colLabels": [
+										"{@dice d8}",
+										"Surgery Accidents"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"min": 1,
+													"max": 3
+												}
+											},
+											"Nothing too egregious happens and any damage caused to the patient is negligible."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"min": 3,
+													"max": 7
+												}
+											},
+											"There are some mild wounds that will last for a while, causing the patient's Maximum Hit Points to be reduced by an amount equal to double the Rarity Modifier of the Prosthetic as per the above table. ( To a minimum of 2. ) These Maximum Hit Points are recovered at a rate of 1 per short rest and 5 per long rest."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 8
+												}
+											},
+											"What have you done. The patient must roll on the {@table Lingering Injuries|DMG} table and suffer its consequences."
+										]
+									]
+								},
+								"If you are attempting to remove a limb, the DC is increased by twice the patient's proficiency bonus instead."
+							]
+						}
+					]
 				}
 			]
 		}
@@ -725,7 +893,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Assist",
 			"entries": [
-				"A weapon with the Assist property is one that was designed to aid in defending the wielder, yet it's usage makes it cumbersome to wield anything too big at the same time. While wielding an Assist weapon you gain a +1 bonus modifier to your Armor Class, but you cannot benefit from wielding Heavy weapons or a {@item Shield|PHB}."
+				"{@b Assist.} A weapon with the Assist property is one that was designed to aid in defending the wielder, yet it's usage makes it cumbersome to wield anything too big at the same time. While wielding an Assist weapon you gain a +1 bonus modifier to your Armor Class, but you cannot benefit from wielding Heavy weapons or a {@item Shield|PHB}."
 			]
 		},
 		{
@@ -733,7 +901,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Burst",
 			"entries": [
-				"Weapons with the Burst property are ones that can be fired or used in a quick burst of attacks that compromise accuracy for the chance of more damage. You may benefit from Burst weapons whenever you take the {@action Attack} action, choosing to replace a singular attack you would be able to make with a number of attacks displayed in parenthesis next to this property. You may choose only one target for each burst of attacks, being able to switch between targets with each differing attack replaced to do so.",
+				"{@b Burst.} Weapons with the Burst property are ones that can be fired or used in a quick burst of attacks that compromise accuracy for the chance of more damage. You may benefit from Burst weapons whenever you take the {@action Attack} action, choosing to replace a singular attack you would be able to make with a number of attacks displayed in parenthesis next to this property. You may choose only one target for each burst of attacks, being able to switch between targets with each differing attack replaced to do so.",
 				"You may do so for each attack you would usually be able to make, but suffer a negative modifier starting at a value equal to your Dexterity modifier minus the first number in parenthesis (Minimum of 1), further subtracting one for each individual attack made after the first. This negative modifier is reduced by 2 if you are wielding your weapon with two hands and fully reset at the end of your turns.",
 				"You do not add your ability modifier to damage dealt by this Property's feature, and the damage dealt by a burst shot may differ from the original damage that would be dealt by the weapon. If so, this value is displayed after the number of attacks made in a burst.",
 				"Ex: As a level 5 Fighter you have two attacks as per the {@action Attack} Action. You may perform one normal attack and then choose to use the feature from a Burst (3) weapon, performing three attacks against the same target. You have a Dexterity modifier of 3, thus having no negative modifier for the first roll in your burst, then a -1 for the second and a -2 for the third."
@@ -744,7 +912,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Chain-Through",
 			"entries": [
-				"A weapon with the Chain-through property has an easy way of cutting into targets after initially being lodged onto them. These are saws, barbed axes and even barbed spears which can be wedged, pushed and pulled for a nasty amount of damage even if the target tries to dodge away. While dealing damage with a Chain-Through weapon, provided you haven't missed your previous attack, you deal at least half the value of damage die you'd roll if you had rolled lower than that.",
+				"{@b Chain-Through.} A weapon with the Chain-through property has an easy way of cutting into targets after initially being lodged onto them. These are saws, barbed axes and even barbed spears which can be wedged, pushed and pulled for a nasty amount of damage even if the target tries to dodge away. While dealing damage with a Chain-Through weapon, provided you haven't missed your previous attack, you deal at least half the value of damage die you'd roll if you had rolled lower than that.",
 				"Ex: If you, a Paladin, deal {@damage 2d8} slashing damage + {@damage 2d8} radiant damage with a Chainsword, if you roll a total of 2 slashing and 2 radiant damage, you instead deal 8 slashing and 8 radiant damage on that hit."
 			]
 		},
@@ -753,7 +921,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Concealed",
 			"entries": [
-				"A weapon with the Concealed property is perfect for hiding in-between clothes or other belongings, seeming like a harmless trinket until it is drawn. While not being held, you may use your Bonus Action to suddenly draw it with a free hand and perform a weapon attack roll against a creature within reach. If you had no free hands, you instantly swap one of your held items with the Concealed weapon. You also gain a +5 bonus modifier on {@skill Stealth} checks to hide a Concealed weapon."
+				"{@b Concealed.} A weapon with the Concealed property is perfect for hiding in-between clothes or other belongings, seeming like a harmless trinket until it is drawn. While not being held, you may use your Bonus Action to suddenly draw it with a free hand and perform a weapon attack roll against a creature within reach. If you had no free hands, you instantly swap one of your held items with the Concealed weapon. You also gain a +5 bonus modifier on {@skill Stealth} checks to hide a Concealed weapon."
 			]
 		},
 		{
@@ -761,7 +929,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Draw",
 			"entries": [
-				"A weapon with the Draw property is one meant to deliver its full force when unsheathed instead of over various strikes. While sheathed, your next unsheathed attack made with a Draw weapon gains a bonus modifier to hit equal to half it's wielder's proficiency bonus, rounded down, and deals an additional damage die on a hit. After being unsheathed, it's wielder may spend one of their attacks as part of the {@action Attack} action to sheathe it."
+				"{@b Draw.} A weapon with the Draw property is one meant to deliver its full force when unsheathed instead of over various strikes. While sheathed, your next unsheathed attack made with a Draw weapon gains a bonus modifier to hit equal to half it's wielder's proficiency bonus, rounded down, and deals an additional damage die on a hit. After being unsheathed, it's wielder may spend one of their attacks as part of the {@action Attack} action to sheathe it."
 			]
 		},
 		{
@@ -769,7 +937,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Entrench",
 			"entries": [
-				"A weapon with the Entrench property carries an enormous punch but also a considerable amount of blowback whenever it is fired or swung. Whenever you perform an attack with it, your remaining movement speed is reduced by the value in parenthesis beside this property. If two numbers are shown, these are in order the amount of movement speed reduced by one handed attacks and two handed attacks."
+				"{@b Entrench.} A weapon with the Entrench property carries an enormous punch but also a considerable amount of blowback whenever it is fired or swung. Whenever you perform an attack with it, your remaining movement speed is reduced by the value in parenthesis beside this property. If two numbers are shown, these are in order the amount of movement speed reduced by one handed attacks and two handed attacks."
 			]
 		},
 		{
@@ -777,7 +945,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Hemorrhaging",
 			"entries": [
-				"A serrated weapon causes a stack of {@condition Bleed|TheUndertomesGeneralRules} whenever you hit with it, provided the roll equals the value presented alongside the property before any modifiers."
+				"{@b Hemorrhaging.} Meant to cause deep gashes and cuts, a {@i Hemorrhaging} weapon excels at drawing out blood. Whenever your base dice roll to hit a creature is equal or greater to than the first number presented in parenthesis beside this property, you inflict {@condition Bleed|TheUndertomesGeneralRules} count equal to the second value presented."
 			]
 		},
 		{
@@ -785,7 +953,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Mesmerizing",
 			"entries": [
-				"( Also known as Funny ) Mesmerizing weapons aren't made just to be used with the usual strength of technique that a swordmaster or a great archer would have, no. They instead rely on another technique: that of the spectacle! You may use your Charisma modifier instead of Strength while using these weapons."
+				"{@b Mesmerizing.} ( Also known as Funny ) Mesmerizing weapons aren't made just to be used with the usual strength of technique that a swordmaster or a great archer would have, no. They instead rely on another technique: that of the spectacle! You may use your Charisma modifier instead of Strength while using these weapons."
 			]
 		},
 		{
@@ -793,7 +961,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Lobbing",
 			"entries": [
-				"A lobbing weapon isn't just thrown straight ahead, instead aiming up to strike down from afar. Lobbing weapons ignore cover if that cover isn't at least as tall as their short range, as per the Range or thrown properties."
+				"{@b Lobbing.} A lobbing weapon isn't just thrown straight ahead, instead aiming up to strike down from afar. Lobbing weapons ignore cover if that cover isn't at least as tall as their short range, as per the Range or thrown properties."
 			]
 		},
 		{
@@ -801,7 +969,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Reload",
 			"entries": [
-				"Weapons with the Reload property have a limited amount of rounds that can be shot before needing to be reloaded. A Reload weapon needs to be reloaded after a certain amount of attacks, with this value being found in parenthesis following the property. To do so, you must spend your Action or Bonus Action to do so - Nevertheless, you cannot take the {@action Attack} action using the reloaded weapon on the same turn you reload it."
+				"{@b Reload.} Weapons with the Reload property have a limited amount of rounds that can be shot before needing to be reloaded. A Reload weapon needs to be reloaded after a certain amount of attacks, with this value being found in parenthesis following the property. To do so, you must spend your Action or Bonus Action to do so - Nevertheless, you cannot take the {@action Attack} action using the reloaded weapon on the same turn you reload it."
 			]
 		},
 		{
@@ -809,7 +977,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Set",
 			"entries": [
-				"A weapon with the Set property is instead multiple weapons that can be used together or a stock that is easily replenished in the heat of battle, whether they are thrown and lost or easily breakable upon impact. The maximum amount of uses these weapons have is shown in parenthesis after the weapon property, with you having the ability to easily produce or procure more at the end of a short or long rest. A lack of a number instead indicates that the weapons may be used infinitely."
+				"{@b Set.} A weapon with the Set property is instead multiple weapons that can be used together or a stock that is easily replenished in the heat of battle, whether they are thrown and lost or easily breakable upon impact. The maximum amount of uses these weapons have is shown in parenthesis after the weapon property, with you having the ability to easily produce or procure more at the end of a short or long rest. A lack of a number instead indicates that the weapons may be used infinitely."
 			]
 		},
 		{
@@ -817,7 +985,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "Splash",
 			"entries": [
-				"A weapon with the splash property has a tendency to cover an area of effect in its strikes or have a small splash zone where hits go off to. While you wield a Splash weapon to hit a target, all other hostile creatures within 5-ft. of the target take damage equal to the value in parenthesis beside this property. By default the damage type is the same as the weapon's first presented damage type, or denoted if otherwise."
+				"{@b Splash.} A weapon with the splash property has a tendency to cover an area of effect in its strikes or have a small splash zone where hits go off to. While you wield a Splash weapon to hit a target, all other hostile creatures within 5-ft. of the target take damage equal to the value in parenthesis beside this property. By default the damage type is the same as the weapon's first presented damage type, or denoted if otherwise."
 			]
 		},
 		{
@@ -825,7 +993,47 @@
 			"source": "TheUndertomesGeneralRules",
 			"name": "SteelHack",
 			"entries": [
-				"A weapon with the SteelHack property is designed to have sliding or otherwise transmutative mechanisms to allow it to exist in multiple forms at once. The base weapon is described in the initial weapon text, with a secondary one being presented below it for each alternative form, which may change its properties, damage and so on. Ammunition stashed in a SteelHack weapon remains inside it even if its current form wouldn't use it, requiring a form-change to rip it out. Additionally, changing a weapon's form this way usually takes a Bonus Action, with any deviations of that rule being specified in parenthesis beside the property as A for Action and FA for a Free Action that may be taken at any time."
+				"{@b SteelHack.} A weapon with the SteelHack property is designed to have sliding or otherwise transmutative mechanisms to allow it to exist in multiple forms at once. The base weapon is described in the initial weapon text, with a secondary one being presented below it for each alternative form, which may change its properties, damage and so on. Ammunition stashed in a SteelHack weapon remains inside it even if its current form wouldn't use it, requiring a form-change to rip it out. Additionally, changing a weapon's form this way usually takes a Bonus Action, with any deviations of that rule being specified in parenthesis beside the property as A for Action and FA for a Free Action that may be taken at any time."
+			]
+		},
+		{
+			"abbreviation": "ENV",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Ennervate",
+			"entries": [
+				"{@b Ennervate.} A weapon with the {@i Ennervate} property is usually a living, breathing thing - Feeding on that very same life to fuel a diverse spectrum of effects. These are found under their own section of the {@i Ennervating} weapon and may be activated by sacrificing an amount of Hit Points equal to the number listed within parenthesis beside this property."
+			]
+		},
+		{
+			"abbreviation": "BLZ",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Blazing",
+			"entries": [
+				"{@b Blazing.} With the right angle, a weapon with the {@i Blazing} property ignites the air in a furious blaze., Whenever your base dice roll is equal to or greater than the first value displayed in parenthesis besides this property, you apply an amount of {@condition Burn|TheUndertomesGeneralRules} count equal to the second value presented."
+			]
+		},
+		{
+			"abbreviation": "BLC",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Blast Cartridge",
+			"entries": [
+				"{@b Blast Cartridge.} A weapon that boasts the {@i Blast Cartridge} property is inlaid with a firing mechanism that can be triggered whenever you hit a creature with it, spending one appropriate piece of ammunition to do so. ( Usually a bullet. ) Whenever you do, you inflict additional damage equal to the value in parenthesis beside this property."
+			]
+		},
+		{
+			"abbreviation": "IMP",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Imposing",
+			"entries": [
+				"{@b Imposing.} An {@i Imposing} armor set is the kind of clothing that demands some level of respect, no matter from whom. You benefit from having your {@skill Intimidation} skill modifier be at least the value displayed in Parenthesis, if it was any lower."
+			]
+		},
+		{
+			"abbreviation": "IPN",
+			"source": "TheUndertomesGeneralRules",
+			"name": "Impenetrable",
+			"entries": [
+				"{@b Impenetrable.} An armor seat with the {@i Impenetrable} property has remarkably good stopping power against piercing forces and other kinds of missiles. Your AC against attacks that would deal piercing damage or that are otherwise missiles ( such as arrows, bullets or certain ranged spells ) is considered to be higher by a value presented in parenthesis near this property. Additionally, whenever you would suffer damage through one such attack it is reduced by an amount equal to double the value presented in parenthesis."
 			]
 		}
 	],
@@ -1049,6 +1257,98 @@
 				"Upon reaching a certain level of awareness and strength, certain people may come to develop a manifestation of their inner self, coming not only to understand what they are but to push that understanding outwards like an expanding force unique to them alone. This is a force composed of a mastery and understanding of your emotions and how you wish to impose that will on the world.",
 				"Upon reaching 10th level, you may choose to gain a Core Burst as per what best fits your person, activating it with a Bonus Action during your turn. This effect may come to manifest as a small effect surrounding you like an aura, such as crackling lightning forming whenever you move or smoke raising from your feet. This lasts for up to one minute or until you are knocked {@condition Unconscious}.",
 				"This process is exhausting to the mind, being able to be used once per long rest. You may instead use your Core Burst twice per long rest upon reaching 20th level. You may choose to push yourself particularly hard and activate your Core Burst after all uses have been expended, but you gain a point of {@condition Exhaustion} when it ends."
+			]
+		},
+		{
+			"name": "Reloading and Ammunition Swapping",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"A creature may Reload their weapon as usual even if they still have bullets left to spend, recuperating any ammunition they haven't shot. They may also use different Ammunition Types, such as {@i Arcana Shot} or {@i Propulsion Rounds} when Reloading their weapon, consuming an amount of the chosen ammunition equal to the weapon's Reload value. If unloaded, any un-shot ammunition is recovered."
+			]
+		},
+		{
+			"name": "Installing and Uninstalling Prosthetics",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"In a Setting or table where downtime should matter more, you may have the process of acquiring any given Prosthesis for part replacement and upkeep be only the first step in benefitting from such. There are two means of installing Prosthesis, either with the aid of a professional in a specialized clinic/workshop or trying to do so by yourself.",
+				"When relying on a Professional such as a surgeon, ripperdoc or meister to do so, you have the limb successfully installed or removed after 8 hours spent in surgery. These are the usual costs for such operations:",
+				{
+					"type": "table",
+					"caption": "Professional Installation and Removal Costs",
+					"colLabels": ["Prosthesis Rarity", "Price"],
+					"colStyles": ["col-6", "col-6"],
+					"rows": [
+						["Common", "45 GP."],
+						["Uncommon", "500 GP."],
+						["Rare", "1.250 GP."],
+						["Very Rare", "5.000 GP."],
+						["Legendary", "15.000 GP."],
+						["Artifact", "100.000 GP."]
+					]
+				},
+				"When relying on yourself or attempting to install a Prosthetic on another creature, you must spend 8 hours of uninterrupted work to do so, also requiring to pass a {@skill Sleight of Hand} check of which you may choose to use either your Dexterity or Intelligence modifier to do so. The base DC for this check is 10, with the following modifiers:",
+				{
+					"type": "table",
+					"caption": "Prosthesis Installation DC Modifiers",
+					"colLabels": ["Cause", "Modifier"],
+					"colStyles": ["col-6", "col-6"],
+					"rows": [
+						["Common Rarity", "+0"],
+						["Uncommon Rarity", "+2"],
+						["Rare Rarity", "+4"],
+						["Very Rare Rarity", "+6"],
+						["Legendary Rarity", "+8"],
+						["Artifact Rarity", "+15"],
+						["Unstable Work Environment", "+5"],
+						["Specialized Work Environment", "-5"],
+						[
+							"Artificer Levels",
+							"Negative modifier equal to Artificer level."
+						],
+						["Proficiency in Tinker's Tools", ""]
+					]
+				},
+				"For further clarification, an {@i Unstable Work Environment} might consist as a specially dirty or unsanitary place or an active war zone where the surgeon simply cannot focus properly. On the other hand, an {@i Specialized Work Environment} is a clinic, workshop or anything of the sort. This is ultimately up to the DM's clarification of the current environment. On a failed check, the item is not spent but you must roll on the {@i Surgery Accidents} table:",
+				{
+					"type": "table",
+					"caption": "Surgery Accidents",
+					"colLabels": ["{@dice d8}", "Surgery Accidents"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 1,
+									"max": 3
+								}
+							},
+							"Nothing too egregious happens and any damage caused to the patient is negligible."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 4,
+									"max": 7
+								}
+							},
+							"There are some mild wounds that will last for a while, causing the patient's Maximum Hit Points to be reduced by an amount equal to double the Rarity Modifier of the Prosthetic as per the above table. ( To a minimum of 2. ) These Maximum Hit Points are recovered at a rate of 1 per short rest and 5 per long rest."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 8
+								}
+							},
+							"What have you done. The patient must roll on the {@table Lingering Injuries|DMG} table and suffer its consequences."
+						]
+					]
+				},
+				"If you are attempting to remove a limb, the DC is increased by twice the patient's proficiency bonus instead."
 			]
 		}
 	]
