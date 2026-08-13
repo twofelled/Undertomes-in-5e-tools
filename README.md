@@ -32,6 +32,7 @@ And extra files for special tomes and brews released by The Undertomes Team.
 | **Project Moon** | No | [Add The Undertomes: Project Moon](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Project%20Moon.json) |
 | **Public Library** | No | [Add The Undertomes: Public Library](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Public%20Library.json) |
 | **Brewathon #1 - District 11's Travel Brochure** | No | [Add District 11's Travel Brochure](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes'%20Community%3B%20District%2011's%20Travel%20Brochure.json) |
+| **Brewathon #2 - The Campfire Spook Book** | No | [Add The Campfire Spook Book](https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes'%20Community%3B%20Campfire%20Spook%20Book.json) |
 
 
 For copying:
@@ -47,6 +48,10 @@ https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/ma
 #### Brewathon #1 - District 11's Travel Brochure
 ```text
 https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes'%20Community%3B%20District%2011's%20Travel%20Brochure.json
+```
+#### Brewathon #2 - The Campfire Spook Book
+```text
+https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes'%20Community%3B%20Campfire%20Spook%20Book.json
 ```
 #### Public Library
 ```text
