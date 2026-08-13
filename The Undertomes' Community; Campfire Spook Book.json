@@ -9,13 +9,13 @@
 				"url": "https://www.patreon.com/TheUndertomes/posts/brewathon-2-book-166526637",
 				"authors": ["The Undertomes' Community"],
 				"convertedBy": ["Twofell", "Bishop"],
-				"version": "1.0.5",
+				"version": "1.0.6",
 				"color": "B83A46",
 				"colorNight": "F47A84"
 			}
 		],
 		"dateAdded": 1786580000,
-		"dateLastModified": 1786589000,
+		"dateLastModified": 1786590000,
 		"edition": "classic",
 		"optionalFeatureTypes": {
 			"WP": "Wondrous Pet",
@@ -129,7 +129,7 @@
 						"When the claws become super heated, they cut through anything with ease. Doing double damage to objects and structures, as you slash through everything in your way. You also inflict 3 stacks of {@condition Burn|TheUndertomesGeneralRules} with each strike, inflicting no stacks on those caught by the splash damage."
 					]
 				},
-				"{@b Sync: Terror of Knowhere.} While attuned to both {@item Haket|UndertomesBrewathon2} and {@item The Boots of Speed|UndertomesBrewathon2}, you become sync'd with both items, gaining additional benefits from both. Once sync'd, the claw's SteelHack property can be changed as a free action, rather than as a bonus action. The Boots of Speed also instead become a pair of sneakers (or whatever is deemed cool in your eyes!). The Boots no longer have their time limit, and can also be activated with a free action.",
+				"{@b Sync: Terror of Knowhere.} While attuned to both {@item Haket|UndertomesBrewathon2} and {@item Boots of Speed|DMG}, you become sync'd with both items, gaining additional benefits from both. Once sync'd, the claw's SteelHack property can be changed as a free action, rather than as a bonus action. The Boots of Speed also instead become a pair of sneakers (or whatever is deemed cool in your eyes!). The Boots no longer have their time limit, and can also be activated with a free action.",
 				"{@b Bloodthirst.} While Sync: Terror of Knowhere is considered active, you gain access to this feature once per long rest. As an action on your turn, your face is shrouded in darkness, leaving only the glow of your eyes as you hone into your bloodlust. During this action, you have the benefits of the dash action, and can make an attack against any creature you come within 5ft. of. You can only attack a creature like this once per use.",
 				"This feature can only be used once per long rest, regaining it after a long rest."
 			],
