@@ -1,0 +1,2078 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "UndertomesBrewathon2",
+				"abbreviation": "TUC:H",
+				"full": "The Campfire Spook-Book - Brewathon #2",
+				"authors": ["The Undertomes' Community"],
+				"convertedBy": ["Twofell", "Bishop"],
+				"version": "1.0.3",
+				"color": "B83A46",
+				"colorNight": "F47A84"
+			}
+		],
+		"dateAdded": 1786580000,
+		"dateLastModified": 1786587600,
+		"edition": "classic",
+		"optionalFeatureTypes": {
+			"WP": "Wondrous Pet",
+			"OR": "Optional Rogue Feature"
+		}
+	},
+	"itemProperty": [
+		{
+			"name": "Siege",
+			"abbreviation": "SIE",
+			"source": "UndertomesBrewathon2",
+			"entries": [
+				"{@b Siege.} Siege weapons deal double damage to objects and structures."
+			]
+		},
+		{
+			"name": "Strike",
+			"abbreviation": "STK",
+			"source": "UndertomesBrewathon2",
+			"entries": [
+				"{@b Strike.} Strike weapons are meant to be swung or fired once while taking action, and usually do so in beneficial and powerful ways. As an action or bonus action you quickly draw and perform a weapon attack roll against a creature within reach, gaining a bonus modifier to hit equal to half its wielder's proficiency bonus, rounded down, and deals an additional damage die on a hit. After doing so the weapon is quickly reconcealed or sheathed. This weapons features also benefit from these properties. You may only use this weapon once a turn."
+			]
+		},
+		{
+			"name": "Sync",
+			"abbreviation": "SYN",
+			"source": "UndertomesBrewathon2",
+			"entries": [
+				"{@b Sync.} Items with the sync property gain additional benefits and often features when attuned to the matching item or items alongside it. If the item is of artifact rarity or otherwise specified, the items fuse together taking only one attunement slot together."
+			]
+		}
+	],
+	"condition": [
+		{
+			"name": "Corruption II deniwtretnl",
+			"source": "UndertomesBrewathon2",
+			"entries": [
+				"Let us become one. Corrupting bioresonant energy breaks down reality, inwards, outwards, intertwined.",
+				"Creatures afflicted with this status must roll {@dice 3d8} at the start of each round to determine a certain statistic they must reroll.",
+				{
+					"type": "table",
+					"colLabels": ["{@dice d8}", "Statistic"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 1,
+									"max": 6
+								}
+							},
+							"Their respective Attribute Score in order, from Strength to Charisma."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 7
+								}
+							},
+							"Their movement speed."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 8
+								}
+							},
+							"Their Armor Class."
+						]
+					]
+				},
+				"They must then roll 3{@dice d20+1} to determine the new number for the given statistic. This number is not affected by any modifiers and is solely based on the roll.",
+				"In addition, creatures affected by this status twist and bend in shape and form, growing cancerous tumors and flesh as reality bends to make afflicted creatures suffer."
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Haket",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Oixie."]
+				},
+				"A set of large metal claws that replace your entire forearm and hands. The claws are incredibly durable and are capable of slashing through things with ease, as well as having the capability of super heating to further slash through anything that proves too resilient. To have attuned to these Claws... There must have been nothing but blood lust in mind.",
+				"To attune to these claws, you must lop off both of your arms just below the elbow, or have already had them gone. The metal then sears into your flesh and is bound permanently, only being able to be removed with something akin to {@spell Greater Restoration|PHB} or {@spell Wish|PHB}.",
+				"While attuned to these claws you'll find most normal tasks difficult, as these are designed purely for killing. You can no longer perform any tasks that require handiwork, and things as simple as eating or opening a door become difficult to do on your own. (This is mostly flavorful, but should you or your DM desire you could make certain tasks require skill checks to ensure your claws perform a task delicately.)",
+				"These claws will also replace your natural weapon should you have them.",
+				"{@b Slash.} These claws provide a +3 bonus to attack and damage rolls.",
+				"{@b Annihilation in F# Minor.} As an action on your turn you dig your claws into the ground and begin running with them, leaving a trail as you move. During this action, you have the benefits of the dash action, running towards a creature and making a single attack against them. This attack receives a bonus to hit for every 30 feet traveled, this applying to the splash damage as well.",
+				"This feature can only be used once per long rest, regaining it after a long rest.",
+				"{@b Blooddrenched.} As a reaction to when a creature is downed or killed within 60ft. of you, you move up to half your movement speed and make an attack against a creature you enter within 5ft. of.",
+				{
+					"type": "variantInner",
+					"name": "Natural State Claws (SteelHack).",
+					"entries": [
+						"{@damage 3d4} Slashing - Finesse, Hemorrhaging (15).",
+						"The claws in a nonheated state slash through targets leaving cuts and gashes, causing them to bleed from your every strike. On a natural roll of 15 or higher, inflict a stack of bleed on the target."
+					]
+				},
+				{
+					"type": "variantInner",
+					"name": "Super Heated Claws (SteelHack).",
+					"entries": [
+						"{@damage 2d7} Fire - Finesse, Splash ({@damage 2d4})",
+						"When the claws become super heated, they cut through anything with ease. Doing double damage to objects and structures, as you slash through everything in your way. You also inflict 3 stacks of {@condition Burn|TheUndertomesGeneralRules} with each strike, inflicting no stacks on those caught by the splash damage."
+					]
+				},
+				"{@b Sync: Terror of Knowhere.} While attuned to both {@item Haket|UndertomesBrewathon2} and {@item The Boots of Speed|UndertomesBrewathon2}, you become sync'd with both items, gaining additional benefits from both. Once sync'd, the claw's SteelHack property can be changed as a free action, rather than as a bonus action. The Boots of Speed also instead become a pair of sneakers (or whatever is deemed cool in your eyes!). The Boots no longer have their time limit, and can also be activated with a free action.",
+				"{@b Bloodthirst.} While Sync: Terror of Knowhere is considered active, you gain access to this feature once per long rest. As an action on your turn, your face is shrouded in darkness, leaving only the glow of your eyes as you hone into your bloodlust. During this action, you have the benefits of the dash action, and can make an attack against any creature you come within 5ft. of. You can only attack a creature like this once per use.",
+				"This feature can only be used once per long rest, regaining it after a long rest."
+			],
+			"type": "M",
+			"bonusWeapon": "3",
+			"reqAttune": true,
+			"property": [
+				"SYN|UndertomesBrewathon2",
+				"STH|TheUndertomesGeneralRules",
+				"HEM|TheUndertomesGeneralRules",
+				"SPL|TheUndertomesGeneralRules"
+			]
+		},
+		{
+			"name": "Pursuer",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Oixie."]
+				},
+				"An all black longsword with an almost plastic looking material to it? It's simple design shouldn't be scoffed at however as it still seems more than capable of making someone die of death... Attuning to this sword gives you quite the appetite for fresh meat as well, whatever that means.",
+				"Whenever you hit a creature using this weapon, they suffer 3 {@condition Bleed|TheUndertomesGeneralRules} count.",
+				"{@b “Ahh, fresh meat”.} This longsword grants a +3 bonus to attack and damage rolls made with it and unarmed strikes. Creatures with stacks of {@condition Bleed|TheUndertomesGeneralRules} give you a +5 bonus to tracking them, and can't benefit from being {@condition Invisible}.",
+				"{@b Cleave.} As an action or bonus action, you move up to 10ft. Regardless of if you have the remaining movement speed. Then make an attack against a creature within reach, inflicting 5 Heavy {@condition Bleed|TheUndertomesGeneralRules} on a hit. This feature recharges on a roll of a 6, rolling a {@dice d6} at the end of your turn to determine if it recharges.",
+				"{@b Howl.} As an action, you let out a guttural howl. Forcing any creature within 50ft. To make a DC 20 Constitution saving throw or have their movement speed reduced by 10 feet. For each creature affected by this feature, gain an additional 5ft. to your own movement speed. This feature is expended upon use, and recharges at the dawn of the next day. Any bonuses or detriments from this feature expire at the dawn of the next day as well.",
+				"{@b Stalk.} As an action on your turn you readjust your skeletal structure into an odd pattern, granting yourself Invisibility until you take an action on your turn or choose to unshroud yourself. While shrouded, you gain a +5 to stealth checks, and your Cleave and Howl features are replaced with Lunge and Chomp respectively, and contain separate cooldowns from the base features. This feature can be used a number of times equal to your dexterity modifier, and regains all charges at dawn.",
+				"{@b Lunge.} While shrouded, as an action you quickly unshroud and prepare to strike through everything in a straight line. Make one attack roll for every creature in a 20ft. straight line, dashing through anything that isn't a wall or object and arriving on the other end of the line without provoking opportunity attacks. This feature recharges on a roll of a 6, rolling a {@dice d6} at the end of your turn to determine if it recharges.",
+				"{@b Chomp.} While shrouded, as an action you quickly unshroud and bite into a creature within reach, using this weapon's hit and damage stats when rolling the attack. Once the damage is determined it is then halved (rounded down), and you heal the other half as hp. This feature can be used 3 times, and regains all charges at dawn."
+			],
+			"type": "M",
+			"bonusWeapon": "3",
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"reqAttune": true,
+			"property": ["H", "V", "F", "STK|UndertomesBrewathon2"]
+		},
+		{
+			"name": "The Family Butcher",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Dr. Peter J. Pyro."]
+				},
+				"The Family Butcher is a pale yellow well worn chainsaw. With small splatters of dried blood near the tip of the saw, the hand grip has a slight groove, and the saw smells faintly of blood.",
+				"{@b Massacre.} This saw grants a +3 bonus to attack and damage rolls made with it. When you hit with an attack using it, the target suffers 2 stacks of {@condition Bleed|TheUndertomesGeneralRules}.",
+				"{@b Farmhand.} While attuned your Constitution score increases by 2, to a maximum of 26.",
+				"{@b Chainsaw Sweep.} As a bonus action you may begin to rev the chainsaw readying up for a devastating sweep attack targeting a creature you can see within your movement speed's range. Then as an action you move within 5ft of your target and attempt to strike them with your saw 4 times. If all 4 attacks land the target is inflicted with a non-reducible count of Heavy {@condition Bleed|TheUndertomesGeneralRules}. If you instead miss any of the attacks you immediately go into a frenzied tantrum swingy wildly around you, all creatures within 5ft of you are subjected to your missed attack and damage roll, you turn also ends thereafter. You can only do this once per long rest, but if you reduce a creature to 0 hit points that was suffering from {@condition Bleed|TheUndertomesGeneralRules} or Heavy {@condition Bleed|TheUndertomesGeneralRules} you gain a use of this ability that can only be used on your next turn.",
+				"{@b Award Winning Chili.} While attuned to the saw you have expertise in cook's utensils, advantage on any checks relating to cooking or sourcing food. Although the only food you will prepare has to have meat in it, generally of the humanoid variety. When a creature consumes your meal they expend half their current hit die and regain the amount in hit points, they then must make a Wisdom save equal to 8 + your proficiency bonus + your wisdom score. If they fail they become fascinated and happily satisfied with your meal, all they will want to consume is something similar to the meal you prepared.",
+				"{@b Family Man.} When an ally within 30ft of you is subjected to an attack roll, as a reaction, you may move to them and take the attack in their stead. When you do this your ally is considered guarded meaning any attack rolls directed at that ally are redirected toward you as long as you are within 5ft of them.",
+				"{@b Destroying the Saw.} To destroy the saw you must take it out to the country side along with the current attuner and their closest ally, one they would die to protect. You must make a circle in a wheat/cornfield placing the chainsaw in the center and both the attuner and their closest ally at opposite ends. Then you must butcher the attuner's closest ally and make sure they witness it, letting the blood from the body seep into the ground around the saw. Then with a single heavy blow you can shatter the chainsaw into pieces, rendering it inert."
+			],
+			"type": "M",
+			"bonusWeapon": "3",
+			"dmg1": "2d8",
+			"dmgType": "S",
+			"reqAttune": true,
+			"property": [
+				"H",
+				"2H",
+				"SIE|UndertomesBrewathon2",
+				"CHT|TheUndertomesGeneralRules"
+			]
+		},
+		{
+			"name": "The Rapier",
+			"source": "UndertomesBrewathon2",
+			"rarity": "very rare",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Blade."]
+				},
+				"A broken hilt of a rapier with a strange mercury-like substance leaking from the top, while held by a creature attuned to it, the liquid metal reforms the blade and its hand guard.",
+				"While attuned you gain a +2 bonus to attack and damage rolls made with this weapon.",
+				"{@b Bane of Insectoids.} The Rapier does double damage with attacks made against insects and arachnids.",
+				"{@b Lunge.} The Rapier has 6 charges as a bonus action you can expend a charge to pull the rapier back causing the blade to coil back in a spring before launching forward in a 30ft line, if you collide with an object you are launched back 10ft. If you collide with a creature you can make an attack against them as part of the same action, on a hit the creature takes {@dice 2d8} piercing damage. Regardless of if the attack hits you are launched back 10ft. The Rapier regains all charges after one minute has passed since you last used this feature."
+			],
+			"type": "M",
+			"bonusWeapon": "2",
+			"baseItem": "Rapier|PHB",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"reqAttune": true,
+			"property": ["F", "L"]
+		},
+		{
+			"name": "Thirteen",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Dr. Peter J. Pyro."]
+				},
+				"Friday and Thirteen could be found together or separately. ",
+				"Thirteen is an old blood stained 22-inch utility machete brown composite handle. While wielding it if it catches the glint of a full moon you swear you can see a masked figure staring at you in the blade's reflection.",
+				"{@b New Blood.} This machete grants +3 bonus to attack and damage rolls made with it. Additionally the machete also functions as a vorpal sword and all damage you deal counts as siege damage.",
+				"{@b Mythical Strength.} While attuned your Strength score increases by 2, to a maximum of 26.",
+				"{@b Creative Killing.} While you possess the machete, you are proficient in improvised attacks and you may add the machete's bonus to attack and damage rolls to said attacks. Additionally you deal an extra damage die for improvised attacks as per the following:",
+				{
+					"type": "table",
+					"colLabels": ["Object Size", "Additional Damage"],
+					"colStyles": ["col-2 text-center", "col-2"],
+					"rows": [
+						["Tiny", "{@damage 1d4}+your Strength mod"],
+						["Small", "{@damage 1d6}+your Strength mod"],
+						["Medium", "{@damage 1d8}+your Strength mod"],
+						["Large", "{@damage 1d10}+your Strength mod"],
+						["Huge", "{@damage 1d12}+your Strength mod"]
+					]
+				},
+				"{@b Never Hike Alone.} While wielding the machete as a bonus action you may temporarily turn into an {@condition Invisible} force, while like this your movement speed is doubled and you can move through any creature's space. When you make an attack you may do so at advantage and deal an additional weapon damage die or if you make a grapple check you do so at advantage, if you already have advantage then you may reroll an additional time. You cannot use this feature two rounds in a round.",
+				"{@b Sync: Friday the Thirteenth} If you are attuned to both {@item Friday|UndertomesBrewathon2} and {@item Thirteen|UndertomesBrewathon2}, you gain the following abilities:",
+				"{@b Kill Count.} When a creature is within your reach, you may make a grapple check against them as part of the attack action or an action itself. If you successfully grapple the creature, you instantly/brutally kill them in an over the top kind of way. Any creature that witnesses this killing believes you to be an irredeemable monster and is terrified of you. You cannot do this again until the next dawn.",
+				"{@b Final Friday.} If you are outright killed, your body, Friday, and Thirteen will seemingly all be destroyed in a way that is impossible to check if you are trully gone (i.e. Falling of a cliff, being buried alive, drowning, etc.) In a years time, on Friday the 13th, or its closest equivalent, you return to life with only the mask and machete within 13 miles of where you were slain. You are a {@creature revenant|MM|Revenant} now, your goal is to take revenge on those who killed you, if they are on another plane of existence or dead already, you instead go in the following order: friends, family, close acquaintances, someone in the general area. You know where your target is as long as they are on the same plane of existence as you. As well, if you die like this, you return to life 24 hours after death. If your body is destroyed, you reform within 1 mile of the place of your death at a spot determined by the DM. With both Friday and Thirteen appearing on your person. You also count as Undead as well as your previous creature types."
+			],
+			"type": "M",
+			"bonusWeapon": "3",
+			"baseItem": "Rapier|PHB",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"reqAttune": true,
+			"property": ["F", "L", "SYN|UndertomesBrewathon2"]
+		},
+		{
+			"name": "A Golden Spear",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Mai."]
+				},
+				{
+					"type": "quote",
+					"entries": ["THIS GOD WON'T FORGIVE YOU"]
+				},
+				"A golden spear emanating bioresonant energy. It's very existence is a wound in reality.",
+				"As an action, you may choose to make an attack with this item. It has +5 to hit and uses Strength as its modifier.",
+				"On hit, the spear deals damage equal to 1/4th of the maximum health of the target, and inflicts {@condition orruption II deniwtretnl|UndertomesBrewathon2} until the end of combat. It then breaks, rendering it unusable."
+			],
+			"wondrous": true,
+			"reqAttune": true
+		},
+		{
+			"name": "Bear that Bears the Brunt",
+			"source": "UndertomesBrewathon2",
+			"rarity": "rare",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Twofell."]
+				},
+				"This small brown teddy bear has no seams or signs of wear. It is always faintly warm when held, and resting your head against its chest reveals a slow, distant heartbeat.",
+				"The bear has a Suffering score, which begins at O and can't exceed 50. As its Suffering increases, the bear becomes visibly damaged: its fabric Splits, its stuffing spills out, and it loses one of its button eyes.",
+				"{@b Hexing Wounds.} Roll a {@dice d4}. The creature suffers 1 count of the corresponding condition: {@condition Bleed|TheUndertomesGeneralRules} on a 1, Curse on a 2, Nails on a 3, or Needle on a 4.",
+				"{@b A Hurt Kindly Taken.} When you take damage while carrying the bear, you can use your reaction to reduce the damage by {@dice 2d10} + your proficiency bonus. The bear's Suffering increases by the amount of damage prevented. If the damage was dealt by creature within 60 feet of you, activate Hexing Wounds against it.",
+				"{@b Pain Remembered.} When the bear's Suffering reaches 50, its curse awakens. It turns its damaged face toward you, and you become aware of the nature of its curse. You gain one level of {@condition Exhaustion} as the feeling of betrayal drains you mentally, and the bear begins its rampage.",
+				"While the bear is rampaging, you can't use A Hurt Kindly Taken. At the start of each of your turns, you take {@dice 2d10} psychic damage, which can't be reduced or prevented, and the bear's Suffering decreases by the damage taken. If its Suffering remains above 0, activate Hexing Wounds against yourself. The rampage ends when the bear's Suffering reaches 0 or when this psychic damage reduces you to 0 hit points. If it reduces you to 0 hit points, you are {@condition Unconscious} and stable. When the rampage ends, all counts inflicted by the bear are removed.",
+				"{@b } Casting {@spell Mending|PHB} on the bear reduces its Suffering by {@dice 1d6}. Alternatively, a creature proficient with weaver's tools can spend 1 hour during a short or long rest repairing it, reducing its Suffering by {@dice 2d10}."
+			],
+			"wondrous": true,
+			"reqAttune": true
+		},
+		{
+			"name": "The Jacket",
+			"source": "UndertomesBrewathon2",
+			"rarity": "rare",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Mai."]
+				},
+				"A surplus military jacket, weathered, worn, and torn in certain spots. No matter who wears it, it is always slightly baggy to the wearer.",
+				"You feel like you have lost something important to you while wearing it.",
+				"{@b No Rest for the Damned.} While wearing this jacket, damage taken and how it is perceived is heavily altered. The wearer's Hit Points now function differently: their Hit Points while wearing this jacket are equal to their Constitution Modifier plus their Proficiency Bonus (minimum of 3, maximum of 4). Every time an enemy deals an instance of damage to them, it counts as one point of damage. They can only heal for one Hit Point per instance of healing.",
+				"When taking lethal damage, they gain one stack of {@condition Exhaustion}.",
+				{
+					"type": "quote",
+					"entries": [
+						"I will chase this until my bones wear away, until I collapse..."
+					]
+				},
+				"{@b To See Them Again.} Wearing this jacket fuels you with a sense of purpose to pursue your goals with feverish desperation. Once per day, if the wearer takes a lethal instance of damage while wearing this jacket, they may instead choose to power through and ignore it, remaining at 1 HP.",
+				{
+					"type": "quote",
+					"entries": ["I miss my wife."]
+				},
+				"{@b Suicidal Persistence.} While wearing this jacket, whenever the wearer takes lethal damage, this jacket gains +1 to the maximum Hit Points the wearer can have. Alternatively, the DM may choose moments when the jacket gains this bonus.",
+				{
+					"type": "quote",
+					"entries": [
+						"Each tear and each patch represents a memory, a scar, a step forward in the dark."
+					]
+				}
+			],
+			"wondrous": true,
+			"reqAttune": true
+		},
+		{
+			"name": "Fritz Camera",
+			"source": "UndertomesBrewathon2",
+			"rarity": "very rare",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Frost."]
+				},
+				{
+					"type": "quote",
+					"entries": [
+						"There's no way a camera can kill people, that's stupid."
+					]
+				},
+				"What appears to be a mundane small handheld camera turns out to be a powerful magic item far more dangerous.",
+				"Up to three times per Long Rest, you may snap a photo of a creature. The camera will then print out a precognitive photograph showing an event that will happen to said creature later on.",
+				"During combat, you may, as a Bonus Action, take a photo of a creature. That creature makes a Wisdom Saving Throw (DC = 16), taking {@dice 3d4} Radiant damage on a failure and is {@condition Blinded} until the end of its next turn."
+			],
+			"wondrous": true,
+			"weight": 1,
+			"value": 12000
+		},
+		{
+			"name": "Shoes Washed Red",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Twofell."]
+				},
+				"These pale dancing shoes absorb any blood that touches them while remaining clean themselves. While wearing them, your walking speed increases by 10 feet, and you leave no footprints unless you choose to do So.",
+				"The shoes can hold up to 5 Stains, which appear to you as blood rising through them.",
+				"{@b The Stain Remains.} When you cause a creature with more than 1 Hit Die to become Bloodied or reduce it to 0 hit points, the shoes gain 1 Stain. They can gain only 1 Stain from a creature during a turn.",
+				"{@b Continue the Dance.} When you hit a creature with a melee attack, you can expend all the shoes' Stains. The attack deals an extra {@dice 1d6} necrotic damage for each Stain expended, and the target suffers an equal number of {@condition Bleed|TheUndertomesGeneralRules} count. If the attack causes a Humanoid to become Bloodied, you can preserve one expended Stain as a Special Stain bearing that Humanoid's identity. The shoes can hold only one Special Stain at a time. Once you use this property, you can't use it again until you finish a long rest.",
+				"{@b An Innocence Stolen.} As an action while the Humanoid marked by the Special Stain is Bloodied and within 30 feet of you, you can permanently exchange your physical appearance and voice with theirs. The Special Stain then disappears. This exchange doesn't affect either creature's statistics, equipment, memories, or other traits. A {@spell Remove Curse|PHB} spell cast using a spell slot of 5th level or higher on either creature ends the exchange for both creatures. Ending your attunement to the shoes doesn't end the exchange.",
+				"{@b Curse.} At the end of your turn, if the shoes have 5 Stains, they lose all their Stains and become blood-red until the next dawn. You suffer 5 {@condition Bleed|TheUndertomesGeneralRules} count, and while the shoes remain blood-red, blood can't be cleaned from your clothing and you have disadvantage on Charisma checks other than Charisma (Intimidation) checks.",
+				"These shoes are cursed. Attuning to them extends the curse to you. While cursed, you can't remove the shoes or end your attunement to them willingly. The identify spell reveals that the shoes are cursed but doesn't reveal the nature of the curse, which is revealed when the shoes first become blood-red. A {@spell Remove Curse|PHB} spell ends the curse on you, allowing you to remove the shoes and end your attunement to them."
+			],
+			"wondrous": true,
+			"reqAttune": true,
+			"curse": true
+		},
+		{
+			"name": "Tarnished Charm",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #SaviorGaming."]
+				},
+				"A needle appearing identical to various magic tattoos, but whose tattoo evokes superstitions of malevolent spirits through its ink.",
+				"{@b Sinister Marks.} Tarnished Charm grants the user the ability to utilize sinful markings, catching their opposition off-guard. As a Bonus Action, you may etch a Sinful Trap into your current space. You may only have a number of Sinful Traps active equal to your proficiency bonus, with your oldest one becoming inert if you would exceed it. You are always aware of where your Sinful Traps are, regardless of distance. Other creatures are unaware of your Sinful Traps unless they make a Wisdom (Perception) check against your Dexterity(Stealth) check.",
+				"{@b Dreadful Visage.} When an creature moves within 10 ft. of a Sinful Trap, it triggers. When a Sinful Trap is triggered, that creature must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Wisdom modifier) or become {@condition Frightened}. If a creature was aware of your Sinful Trap, it makes this saving throw with advantage. While {@condition Frightened} this way, a creature has their movement speed halved. After a Sinful Trap is triggered, it disappears until re-etched.",
+				"{@b Manifested Terror.} If a creature triggers a Sinful Trap, as a Reaction, you may immediately teleport to that Sinful Trap and make an attack roll or cast a cantrip at them as part of this Reaction. If the creature is {@condition Frightened}, you have advantage on this attack roll.",
+				"{@b Destroying the Tattoo.} To destroy the tattoo, the needle must be placed in the middle of a ritual circle, with four glyph of wardings etched into each quarter of the ritual circle (choosing a different damage type for each glyph). If these conditions are met, a non-evil spellcaster may perform a ritual over the course of one hour to purify the needle before the glyphs of warding destroy it."
+			],
+			"wondrous": true,
+			"reqAttune": true
+		},
+		{
+			"name": "Friday",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Dr. Peter J. Pyro."]
+				},
+				"Friday is a aged hockey mask with a red chevron just above the eyes and one just below the eyes leading to the nose. Whenever a creature holds the mask up to their face they can hear a voice faintly whispering \"ki ki ki ma ma ma\". The mask automatically adjusts its size for the creature attuned to it.",
+				"{@b Buried, But Not Dead.} While attuned to Friday you don't need to eat, drink, or breath, are immune to poison and disease and cannot age or be magically aged. Additionally you don't need to sleep, you an finish a long rest in 4 hours by simply doing light activates.",
+				"{@b Drowned, From Negligence.} You have a strong fear of deep bodies of water, thalassophobia, You additionally cannot swim and instead sink to the bottom of whatever body of water you are in, gaining a Underwater Walk speed equal to double your overland walk speed.",
+				"{@b He Was Human, Once.} While attuned you Constitution score increases by 2, to a maximum of 26.",
+				"{@b Man of No Words.} While wearing Friday, you cannot speak or communicate telepathically. Additionally the eye holes of the mask darken obscuring others view of your eyes, you can see just fine but they can't see your eyes. Granting you advantage on intimidations checks.",
+				"{@b He's Relentless.} While wearing Friday, if you drop to 0 hit points you get up at the beginning of your next turn healing to half your maximum hit points and gain Unstoppable, you are immune to all status conditions and ignore difficult terrain, until the end of your next turn.",
+				"{@b Final Chapter.} While attuned to Friday, if you have no more than half your hit points left or the current turn counter has ticked to 5 in initiative you enter an Enraged state. While enraged you can use 5ft of your movement to smash through doors of any kind, or any walls made of soft material and you have advantage on all strength based checks and attack rolls."
+			],
+			"wondrous": true,
+			"reqAttune": true
+		},
+		{
+			"name": "The Lament Configuration",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Chaos."]
+				},
+				{
+					"type": "quote",
+					"entries": ["The Box. You opened it. They came."]
+				},
+				"The Lament Configuration is an intricate brass puzzle box covered in shifting geometric engravings. It cannot be forced open or damaged by mundane means. Those who glimpse it often find themselves returning to it, driven by irresistible curiosity.",
+				"{@b You Called.} Whenever a creature spends at least 1 minute handling the box, it must succeed on a {@dc 18} Wisdom saving throw. On a failure, the creature becomes Obsessed. While Obsessed the creature must spend at least 1 hour of each long rest attempting to solve it, has disadvantage on Wisdom ({@skill Perception}) checks made to notice anything except the box, and is unwilling to willingly part with the box. When taking lethal damage, they gain one stack of {@condition Exhaustion}.",
+				"{@b THE TRUTH IS IN HERE.} The puzzle requires 6 successful checks with each attempt taking 10 minutes. Choose Intelligence ({@skill Investigation}), Intelligence ({@skill Arcana}), or Dexterity ({@skill Sleight of Hand}). The DC begins at 15 and increases by 1 after every success. Every failure causes the solver to roll on the table below.",
+				{
+					"type": "table",
+					"caption": "The Lament Configuration",
+					"colLabels": ["{@dice d6}", "Effect"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"Take {@damage 4d6} psychic damage."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"Take {@damage 4d6} psychic damage."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"One random memory vanishes until the next dawn."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"Invisible hooks rake your skin. Gain one level of {@condition Exhaustion}."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 5
+								}
+							},
+							"Blood pours from your eyes for one minute. You are {@condition Blinded} until the end of your next turn."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 6
+								}
+							},
+							"You glimpse another place. Gain advantage on your next check to solve the box."
+						]
+					]
+				},
+				"{@b THE BOX.} When the final movement clicks... The walls split apart with metallic screams as hooked chains burst into reality. Every creature within 60 feet must succeed on a {@dc 19} Dexterity saving throw or take {@damage 8d10} piercing damage and become {@condition Restrained}. The chains ignore nonmagical cover.",
+				"{@b I CAME.} One minute after the box opens, {@dice 2d4} Cenobites emerge from the tear in reality. Use modified stat blocks such as Chain Devils, Erinyes, Deathlocks, or custom fiends with the following shared trait: {@b Sensational.} Whenever a creature takes psychic, necrotic, or piercing damage within 60 feet, the Cenobite regains hit points equal to half the damage dealt.",
+				"{@b Final Solution.} The Cenobites do not immediately attack. Instead, their leader addresses the creature who solved the box, and they are offered a choice to accept or refuse.",
+				{
+					"type": "table",
+					"colLabels": ["ACCEPT", "REFUSE"],
+					"colStyles": ["text-center", "text-center"],
+					"rows": [
+						[
+							"The creature willingly goes with them. Its body dissapears into chains and they are gone. The box vanishes to somehwere on the mortal plane",
+							"The Cenobites smile. They insiste the invitation has already been accepted. Roll initiative."
+						]
+					]
+				},
+				"Either way the gateway to the Cenobite's realm remains open for five minutes and acts as the {@spell Gate|PHB} spell."
+			],
+			"wondrous": true,
+			"reqAttune": true
+		},
+		{
+			"name": "The Necronomicon",
+			"source": "UndertomesBrewathon2",
+			"rarity": "very rare",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Frost."]
+				},
+				"This item takes on the form of a leather and old dirty book, its texture feels like skin. As an Action, you may release a dark torrent of energy in a 60ft sphere around you. Any living creatures, including yourself, take {@damage 2d4} Necrotic damage. Any corpses, however, will be reanimated as 'Evil Dead', they resemble themselves but look...different, act...different.",
+				"Evil Dead use the {@creature Zombie|MM} statblock and act hostile towards everyone around them including this items user and each other."
+			],
+			"wondrous": true,
+			"curse": true,
+			"weight": 1,
+			"value": 25000
+		},
+		{
+			"name": "The Unwilting Rose",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Twofell."]
+				},
+				"This rose never wilts and requires neither soil, sunlight, nor water. Before it is attuned to, its petals are a colorless white. When a creature attunes to the rose, its petals assume a color unique to that creature. The rose retains this color until the attunement ends.",
+				"{@b Unfading Protection.} Whenever you would take damage while the rose has at least one petal, that damage is reduced to 0, regardless of its type or amount.",
+				"Because you take no damage, you don't make a Constitution saving throw to maintain concentration, and effects that occur only when you take damage don't occur. Any other effects caused by the attack, spell, or other effect still apply.",
+				"{@b Cursed.} When you attune to the rose, your life becomes bound to it, revealing its true nature. The Unwilting Rose becomes {@item The Rose with Enumerable Petals|UndertomesBrewathon2}."
+			],
+			"wondrous": true,
+			"reqAttune": true,
+			"curse": true
+		},
+		{
+			"name": "The Rose With Enumerable Petals",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Twofell."]
+				},
+				"This rose never wilts and requires neither soil, sunlight, nor water. Before it is attuned to, its petals are a colorless white. When a creature attunes to the rose, its petals assume a color unique to that creature. The rose retains this color until the attunement ends.",
+				"{@b Fading Protection.} Whenever you would take damage while the rose has at least one petal, that damage is reduced to 0, regardless of its type or amount. One petal then falls from the rose and withers into dust.",
+				"Because you take no damage, you don't make a Constitution saving throw to maintain concentration, and effects that occur only when you take damage don't occur. Any other effects caused by the attack, spell, or other effect still apply.",
+				"When you finish a short rest, the rose regrows a number of lost petals equal to your proficiency bonus. When you finish a long rest, it regrows all its lost petals. The rose can't have more petals than its petal maximum.",
+				"{@b Cursed: A Life Measured in Petals.} When your life becomes bound to the rose, it produces a number of petals equal to your Constitution score. This number is the rose's petal maximum for as long as you remain bound to it, but can change if your Constitution score changes.",
+				"While you are bound to the rose, your current hit points and hit point maximum are each equal to the number of petals remaining on it and can't be changed by any other means. You can't regain hit points or gain temporary hit points except by restoring petals to the rose.",
+				"A creature holding the rose can use an action to pluck one of its petals. When the rose loses its final petal, you die.",
+				"Once your life becomes bound to the rose, you can't voluntarily end your attunement to it. A {@spell Remove Curse|PHB} spell cast on you using a spell slot of 7th level or higher breaks the bond and ends your attunement to the rose. The spell has no effect on the bond if cast using a spell slot of 6th level or lower.",
+				"When the bond ends, your hit point maximum returns to what it would be without the rose. Your current hit points remain unchanged. The rose then returns to its form as The Unwilting Rose."
+			],
+			"wondrous": true,
+			"reqAttune": true,
+			"curse": true
+		}
+	],
+	"spell": [
+		{
+			"name": "Fragile Promise",
+			"source": "UndertomesBrewathon2",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "spool of thread"
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": ["dispel"]
+				}
+			],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Blade."]
+				},
+				"You tie a strand of thread to you and another willing 'Humanoid' creature, if both creatures remain connected by this tread for the duration you swap bodies.",
+				"Both your game statistics are swapped but you both keep your original wisdom, intelligence and charisma score, as well as all any class features either of you had prior.",
+				"The effects of this spell are permanent and can not be dispelled by anything short of a {@spell Wish|PHB} spell."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Horrible Death",
+			"source": "UndertomesBrewathon2",
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a tooth, an eye"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Mai."]
+				},
+				"You attempt to enchant a creature you touch with the illusion that they are dying in a horrific manner. The creature must make a Wisdom saving throw or be suddenly tormented with extremely vivid and realistic hallucinations of them dying in drawn-out, painful, and particularly traumatic ways. The pain they feel will be realistic to how much pain the given manner of death would inflict, and without magical senses, it is indistinguishable from reality. During the duration of this spell, they are {@condition Frightened} and {@condition Paralyzed} and must continually make Wisdom saving throws to break the enchantment. After the enchantment is broken or when you stop concentrating on this spell, the victim gains a level of {@condition Exhaustion}."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 7th-level spell slot, the duration is concentration, up to 30 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "The Door Gag",
+			"source": "UndertomesBrewathon2",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Oixie."]
+				},
+				{
+					"type": "quote",
+					"entries": ["Like, we gotta get out of here!"]
+				},
+				"Upon casting this spell, you conjure 6 average sized doors in positions of your choosing within 120ft. of you. These doors cannot be placed within a 5 foot radius of each other, and are each marked with a number 1-6. When entering a door the creature must roll a {@dice d6} to determine the door they exit from, instantly doing so once the result is determined.",
+				"When coming within 10ft. of a door a creature may choose to comically run to it and go through it as a reaction.",
+				"Also when a creature is standing within 10ft of the door, as a reaction if an enemy approaches them, they can run through the door as they attempt to escape from danger.",
+				"Any creature of any size may go through these doors, as they squeeze their way into it if they are too large, or find a humorous way to open it if they are too small."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Teeth Hell",
+			"source": "UndertomesBrewathon2",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a scalpel & the mouth of a dragon ripped from its head"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Akari."]
+				},
+				"You slash the scalpel across your face & carve out your own mouth, taking {@damage 3d12} slashing damage as you replace it with the dragon's, brilliant red runes on the fangs declaring you as the Core. A flood of malevolent energy ripples throughout the surrounding terrain, before reality itself seems to scream in agony & distort. Everything-creatures included-within range is ripped free from their current plane & transported into a twisted demiplane of your creation.",
+				"This demiplane is a grotesque & fleshy, circular hellscape with gums for ground & walls of hardened blood-like bricks, littered with teeth growing in their cracks. A creature who is pulled into this demiplane must make a Wisdom saving throw or be afflicted with an effect from the Long Term Madness table. If they fail this saving throw by ten or more, they are instead inflicted with an effect from the Indefinite Madness table. Regardless of the creature's save, these Madness effects cannot be removed through any means lesser than a {@spell Wish|PHB} spell.",
+				"This demiplane lasts for as long as you maintain Concentration, if the Core is not destroyed. The Core merges with your body when the spell is cast, & you may choose how it changes your appearance. Otherwise, you may choose not to merge with it. If so, the Core is a tangled, tree-like mound of gummy flagella & teeth with umbilical cord-like growths attached to the demiplane's ceiling that automatically reattach to the Core if they're severed.",
+				"It has an AC of 14, 250 hit points, & resistance to nonmagical piercing & slashing damage. If the Core is destroyed, you take damage equal to the final blow that destroyed it & must make a Constitution saving throw with a DC equal to 13 + the amount of turns the demiplane was active for. On a failure, you suffer {@damage 4d12} psychic damage and 2 points of {@condition Exhaustion}.",
+				{
+					"type": "entries",
+					"name": "Taste Test",
+					"entries": [
+						"Forked tendrils covered in thorn-like growths of toothed cilia shoot out from the walls towards a point of your choice within sight, piercing through a 45-foot long, 5-foot wide line. Creatures within that range take {@damage 1d12} piercing damage and 2 counts of Bleed. They must make a Strength saving throw or you heal for half the total damage dealt to all creatures, as they fail to stop the teeth from feeding on their skin. If this attack fails to deal damage, it embeds itself into the wall and you suffer the same amount of damage but no counts of Bleed. If you took damage from this attack, you don't heal from it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gnashing",
+					"entries": [
+						"A loud, gross rumbling echoes throughout the fleshy caverns of the hellscape, before the walls, floor and ceilings shift. All creatures within a 25-foot cube centered at a point within 60 feet must make a Dexterity saving throw or take {@damage 3d8} bludgeoning damage and a Tremor Burst, as the surrounding area contorts into a pillar attempting to crush them. If the target took an amount of thunder damage from the Tremor Burst that is equal or less than the bludgeoning damage dealt by this effect, they are knocked {@condition Prone}. If this thunder damage exceeded the bludgeoning damage dealt, they are {@condition Stunned}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Devour",
+					"entries": [
+						"You sink into the floor with a stomach-churning squelch, and are able to move through it as if you had a burrow speed equal to your Dexterity score times your proficiency bonus. You may reappear above ground near a creature, making a melee spell attack against them as the draconic mouth glows with malevolent energy. If this attack hits, you bury the rune-inscribed fangs deep into the creature's flesh, forcing them to make a Constitution saving throw. On a failure, the creature's maximum hit points are reduced by {@dice 2d6} and they have disadvantage on their next Strength, Dexterity, or Constitution saving throw."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	],
+	"race": [
+		{
+			"name": "Anemoales",
+			"source": "UndertomesBrewathon2",
+			"size": ["S", "M"],
+			"speed": 30,
+			"ability": [
+				{
+					"int": 2,
+					"con": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Oixie."]
+				},
+				"{@b Susceptible to Extreme Cold.} You are Vulnerable to cold damage.",
+				"{@b Outward Appearance.} This race takes on more human appearances, or whatever is deemed as normal. Their true body is something far more grotesque so much so that the average person would lose all senses if they witnessed it.",
+				"{@b Natural Modification.} The body of this race is capable of changing their body for both combat purposes and normal use. As a bonus action you may reshape part of your body into a weapon that uses your proficiency bonus + a statistic of your choosing to hit, and deals {@damage 1d6} + a statistic of your choosing damage. This attack can do piercing, slashing, or bludgeoning, but must be altered as a bonus action to swap the damage type. This is a melee weapon that can be given one of the following properties: Finesse, heavy, light, or reach.",
+				"{@b Unimaginable Intelligence.} This race has an intelligence almost unmatched. You are quick to learn and understand things with ease compared to the average person. You gain a +2 on checks made with skills and tools you are proficient with. And half the amount of time required to learn new languages or tools."
+			],
+			"creatureTypes": ["aberration"],
+			"vulnerable": ["cold"]
+		},
+		{
+			"name": "Self-Portrait",
+			"source": "UndertomesBrewathon2",
+			"size": ["M"],
+			"speed": 30,
+			"ability": [
+				{
+					"cha": 2,
+					"int": 1
+				}
+			],
+			"creatureTypes": ["aberration"],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Akari."]
+				},
+				"{@b Age.} As well, an animated portrait, you don't typically age as a human or other species would. You do, however, need to make sure you don't get dirty or tampered with in order to preserve your canvas. If either of these occur, you can make a DC 12 {@skill Medicine|PHB} check while out of combat to clean and/or repair your canvas body.",
+				"{@b Alignment.} Self-Portraits are very unique, given that they reflect the innermost self of their creators; thus, typically they share an Alignment with their creator.",
+				"{@b Splatter Paint.} You learn the {@spell Magic Missile|PHB} spell and can cast it at 1st-level a number of times equal to your proficiency bonus without spending a spell slot. When you cast it this way, paint globs off of your body and erupts towards a target as flavor for the spell. Roll a {@dice d10} as per the table to the right, changing the spell's damage type depending on the result:",
+				{
+					"type": "table",
+					"caption": "Splatter Paint Table",
+					"colLabels": ["{@dice d10}", "Damage Type"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"Fire"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"Cold"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"Poison"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"Lightning"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 5
+								}
+							},
+							"Acid"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 6
+								}
+							},
+							"Thunder"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 7
+								}
+							},
+							"Psychic"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 8
+								}
+							},
+							"Necrotic"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 9
+								}
+							},
+							"Radiant"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 10
+								}
+							},
+							"Your choice of bludgeoning, piercing, or slashing damage"
+						]
+					]
+				},
+				"{@b Subraces.} Your creator has painted you to depict a certain type of emotion they hold buried within themself. You gain additional features depending on which you choose.",
+				{
+					"type": "list",
+					"items": [
+						"{@race Self-Portrait (Selflessness)|UndertomesBrewathon2}",
+						"{@race Self-Portrait (Outrage)|UndertomesBrewathon2}",
+						"{@race Self-Portrait (Nihilism)|UndertomesBrewathon2}"
+					]
+				}
+			]
+		},
+		{
+			"name": "Self-Portrait (Selflessness)",
+			"source": "UndertomesBrewathon2",
+			"size": ["M"],
+			"speed": 30,
+			"ability": [
+				{
+					"cha": 2,
+					"int": 1
+				}
+			],
+			"creatureTypes": ["aberration"],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Akari."]
+				},
+				"{@b Age.} As well, an animated portrait, you don't typically age as a human or other species would. You do, however, need to make sure you don't get dirty or tampered with in order to preserve your canvas. If either of these occur, you can make a DC 12 {@skill Medicine|PHB} check while out of combat to clean and/or repair your canvas body.",
+				"{@b Alignment.} Self-Portraits are very unique, given that they reflect the innermost self of their creators; thus, typically they share an Alignment with their creator.",
+				"{@b Splatter Paint.} You learn the {@spell Magic Missile|PHB} spell and can cast it at 1st-level a number of times equal to your proficiency bonus without spending a spell slot. When you cast it this way, paint globs off of your body and erupts towards a target as flavor for the spell. Roll a {@dice d10} as per the table to the right, changing the spell's damage type depending on the result:",
+				{
+					"type": "table",
+					"caption": "Splatter Paint Table",
+					"colLabels": ["{@dice d10}", "Damage Type"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"Fire"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"Cold"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"Poison"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"Lightning"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 5
+								}
+							},
+							"Acid"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 6
+								}
+							},
+							"Thunder"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 7
+								}
+							},
+							"Psychic"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 8
+								}
+							},
+							"Necrotic"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 9
+								}
+							},
+							"Radiant"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 10
+								}
+							},
+							"Your choice of bludgeoning, piercing, or slashing damage"
+						]
+					]
+				},
+				"{@b Selflessness.} Your creator has painted you to depict an entity for aid and support. Perhaps they were old and frail, or maybe extremely shy.",
+				"{@b Radiance.} When you hit a creature with the {@spell Magic Missile|PHB} spell as per your Splatter Paint feature, you can cast it again targeting an ally creature. This creature instead gains a number of temporary hit points equal to the damage dealt."
+			]
+		},
+		{
+			"name": "Self-Portrait (Outrage)",
+			"source": "UndertomesBrewathon2",
+			"size": ["M"],
+			"speed": 30,
+			"ability": [
+				{
+					"cha": 2,
+					"int": 1
+				}
+			],
+			"creatureTypes": ["aberration", "fiend"],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Akari."]
+				},
+				"{@b Age.} As well, an animated portrait, you don't typically age as a human or other species would. You do, however, need to make sure you don't get dirty or tampered with in order to preserve your canvas. If either of these occur, you can make a DC 12 {@skill Medicine|PHB} check while out of combat to clean and/or repair your canvas body.",
+				"{@b Alignment.} Self-Portraits are very unique, given that they reflect the innermost self of their creators; thus, typically they share an Alignment with their creator.",
+				"{@b Splatter Paint.} You learn the {@spell Magic Missile|PHB} spell and can cast it at 1st-level a number of times equal to your proficiency bonus without spending a spell slot. When you cast it this way, paint globs off of your body and erupts towards a target as flavor for the spell. Roll a {@dice d10} as per the table to the right, changing the spell's damage type depending on the result:",
+				{
+					"type": "table",
+					"caption": "Splatter Paint Table",
+					"colLabels": ["{@dice d10}", "Damage Type"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"Fire"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"Cold"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"Poison"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"Lightning"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 5
+								}
+							},
+							"Acid"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 6
+								}
+							},
+							"Thunder"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 7
+								}
+							},
+							"Psychic"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 8
+								}
+							},
+							"Necrotic"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 9
+								}
+							},
+							"Radiant"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 10
+								}
+							},
+							"Your choice of bludgeoning, piercing, or slashing damage"
+						]
+					]
+				},
+				"{@b Outrage.} Your creator has painted you to vent out the boiling, infernal rage they've bottled up inside. Maybe out of trauma, or habit.",
+				"{@b Ire.} When you damage a creature with the {@spell Magic Missile|PHB} spell as per your Splatter Paint feature, you can use your bonus action to make a ranged spell attack against the same creature. This attack doesn't deal damage on a hit, but it does inflict a number of {@condition Burn|TheUndertomesGeneralRules} counts equal to half the damage dealt, rounded down. If you'd miss with this attack, you gain said {@condition Burn|TheUndertomesGeneralRules} counts instead of the creature."
+			]
+		},
+		{
+			"name": "Self-Portrait (Nihilism)",
+			"source": "UndertomesBrewathon2",
+			"size": ["M"],
+			"speed": 30,
+			"ability": [
+				{
+					"cha": 2,
+					"int": 1
+				}
+			],
+			"creatureTypes": ["aberration", "monstrosity"],
+			"entries": [
+				"{@b Age.} As well, an animated portrait, you don't typically age as a human or other species would. You do, however, need to make sure you don't get dirty or tampered with in order to preserve your canvas. If either of these occur, you can make a DC 12 {@skill Medicine|PHB} check while out of combat to clean and/or repair your canvas body.",
+				"{@b Alignment.} Self-Portraits are very unique, given that they reflect the innermost self of their creators; thus, typically they share an Alignment with their creator.",
+				"{@b Splatter Paint.} You learn the {@spell Magic Missile|PHB} spell and can cast it at 1st-level a number of times equal to your proficiency bonus without spending a spell slot. When you cast it this way, paint globs off of your body and erupts towards a target as flavor for the spell. Roll a {@dice d10} as per the table to the right, changing the spell's damage type depending on the result:",
+				{
+					"type": "table",
+					"caption": "Splatter Paint Table",
+					"colLabels": ["{@dice d10}", "Damage Type"],
+					"colStyles": ["col-2 text-center", "col-10"],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"Fire"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"Cold"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"Poison"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"Lightning"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 5
+								}
+							},
+							"Acid"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 6
+								}
+							},
+							"Thunder"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 7
+								}
+							},
+							"Psychic"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 8
+								}
+							},
+							"Necrotic"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 9
+								}
+							},
+							"Radiant"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 10
+								}
+							},
+							"Your choice of bludgeoning, piercing, or slashing damage"
+						]
+					]
+				},
+				"{@b Nihilism.} Your creator has painted you during dark, bleak times in their life as a coping mechanism. Thus, you tend to have shared and adapted to their melancholic nature.",
+				"{@b Snag.} When you damage a creature with the {@spell Magic Missile|PHB} spell as per your Splatter Paint feature, their movement speed is halved and they must make a DC 13 Wisdom saving throw. On a failure, they are {@condition Frightened} of you until the end of your next turn."
+			]
+		},
+		{
+			"name": "Replika",
+			"source": "UndertomesBrewathon2",
+			"size": ["S", "M", "L"],
+			"speed": 30,
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"creatureTypes": ["construct"],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Blade & Mai."]
+				},
+				{
+					"type": "entries",
+					"name": "Facsimile of Life",
+					"entries": [
+						"You are considered humanoid for the sake of spells and effects that restore Hit Points."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Degrading Memory",
+					"entries": [
+						"A Replika's memory isn't as great as their human counterparts, you have disadvantage on any check made to accurately recall anything you seen or heard from more than a month ago."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Persona Synchronization",
+					"entries": [
+						"A Replika's specialization and appearance is determined by their classification. Choose one of the following classifications."
+					]
+				},
+				{
+					"type": "list",
+					"items": [
+						"{@race LSTR Replika Model|UndertomesBrewathon2}",
+						"{@race KLBR Replika Model|UndertomesBrewathon2}",
+						"{@race MNHR Replika Model|UndertomesBrewathon2}",
+						"{@race STCR Replika Model|UndertomesBrewathon2}"
+					]
+				}
+			]
+		},
+		{
+			"name": "LSTR Replika Model",
+			"source": "UndertomesBrewathon2",
+			"size": ["M"],
+			"speed": 30,
+			"ability": [
+				{
+					"con": 1,
+					"wis": 2
+				}
+			],
+			"creatureTypes": ["construct"],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Blade & Mai."]
+				},
+				{
+					"type": "entries",
+					"name": "Facsimile of Life",
+					"entries": [
+						"You are considered humanoid for the sake of spells and effects that restore Hit Points."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Degrading Memory",
+					"entries": [
+						"A Replika's memory isn't as great as their human counterparts, you have disadvantage on any check made to accurately recall anything you seen or heard from more than a month ago."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Embedded Memories",
+					"entries": [
+						"You gain proficiency in medium armor and firearms."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Repair Logic Module",
+					"entries": [
+						"As an action you can determine the best way to fix a broken object without needing to make a check, additionally you can treat any roll of 9 or lower as a 10 for checks made to repair nonmagical objects or medicine checks made to tend to yourself or other Replikas."
+					]
+				}
+			]
+		},
+		{
+			"name": "KLBR Replika Model",
+			"source": "UndertomesBrewathon2",
+			"size": ["M"],
+			"speed": 30,
+			"ability": [
+				{
+					"con": 1,
+					"int": 2
+				}
+			],
+			"creatureTypes": ["construct"],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Blade & Mai."]
+				},
+				{
+					"type": "entries",
+					"name": "Facsimile of Life",
+					"entries": [
+						"You are considered humanoid for the sake of spells and effects that restore Hit Points."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Degrading Memory",
+					"entries": [
+						"A Replika's memory isn't as great as their human counterparts, you have disadvantage on any check made to accurately recall anything you seen or heard from more than a month ago."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Embedded Memories",
+					"entries": [
+						"You learn the {@spell Message|PHB} cantrip. Starting at level 3 you can cast the {@spell Dissonant Whispers|PHB} spell with this trait. Starting at level 5 you can also cast the {@spell Detect Thoughts|PHB} spell with this trait. Once you cast Dissonant Whispers or Detect Thoughts with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence is your spell casting modifier for these spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bioresonance Network",
+					"entries": [
+						"Over the course of a long rest you can psychically resonate with willing humanoids or your fellow Replika, while within one mile of a resonated creature you can speak to them telepathically as well as read its surface thoughts, the target is aware of you doing this. You can have a number of resonates equal to your proficiency bonus, fellow KLBR units do not count against this limit and allows you to share their resonates, effectively doubling your bandwidth. Additionally as part of the same long rest you can forgo a number of your attunement slots to gain an additional number of resonates equal to your proficiency bonus times the number of slots expended. You can end your 'attunement' to this feature as part of a long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "MNHR Replika Model",
+			"source": "UndertomesBrewathon2",
+			"size": ["L"],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 1,
+					"con": 2
+				}
+			],
+			"creatureTypes": ["construct"],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Blade & Mai."]
+				},
+				{
+					"type": "entries",
+					"name": "Facsimile of Life",
+					"entries": [
+						"You are considered humanoid for the sake of spells and effects that restore Hit Points."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Degrading Memory",
+					"entries": [
+						"A Replika's memory isn't as great as their human counterparts, you have disadvantage on any check made to accurately recall anything you seen or heard from more than a month ago."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Embedded Memories",
+					"entries": [
+						"You gain proficiency in Heavy Armor and the Persuasion skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "High-Security Plating",
+					"entries": [
+						"Your reinforced frame is directly integrated into a powerful suit of power armor, your base armor class is equal to 14 + your constitution modifier, you are always considered to be wearing heavy armor. Due to your integrated armor you gain no benefit from wearing other armors but you may benefit from shields as normal. Additionally as a bonus action you can open or close your visor, While your visor is down you gain an +1 bonus to your armor class. While it is open you gain a bonus to charisma checks equal to your constitution modifier."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hazardous Environment Worker",
+					"entries": [
+						"You suffer no ill effects from extreme weather or radiation, additionally while your visor is closed you can breathe in airless environments and are immune to the effects of any harmful gas that surrounds you."
+					]
+				}
+			]
+		},
+		{
+			"name": "STCR Replika Model",
+			"source": "UndertomesBrewathon2",
+			"size": ["L"],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 1,
+					"con": 2
+				}
+			],
+			"creatureTypes": ["construct"],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Blade & Mai."]
+				},
+				{
+					"type": "entries",
+					"name": "Facsimile of Life",
+					"entries": [
+						"You are considered humanoid for the sake of spells and effects that restore Hit Points."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Degrading Memory",
+					"entries": [
+						"A Replika's memory isn't as great as their human counterparts, you have disadvantage on any check made to accurately recall anything you seen or heard from more than a month ago."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Embedded Memories",
+					"entries": [
+						"You gain proficiency in medium weapons and shields."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Martial Overseer",
+					"entries": [
+						"You may choose two of the following Battle Master Maneuvers to learn. You may each twice per long rest. Their saving throw Difficulty Classes are calculated as 8 + your proficiency bonus + your Strength modifier.",
+						{
+							"type": "list",
+							"items": [
+								"Commander's Strike.",
+								"Commander's Presence.",
+								"Maneuvering Attack.",
+								"Tactical Assessment.",
+								"Brace.",
+								"Menacing Attack."
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Cat Who Knows",
+			"source": "UndertomesBrewathon2",
+			"featureType": ["WP"],
+			"entries": [
+				{
+					"type": "entries",
+					"entries": ["Wondrous Pet, Very Rare (Requires Attunement)"]
+				},
+				{
+					"type": "quote",
+					"entries": ["Created by #Twofell."]
+				},
+				"This small black cat appears in places it could not possibly have reached. It is capable of speech, speaking Common and Infernal, often choosing not to answer when questions are thrown its way. For the purpose of spells and other effects that detect creature types, the cat is a fiend.",
+				"{@b A Word of Warning.} When you make an Intelligence (Investigation) or Wisdom (Perception) check to detect a trap, hidden passage, ambush, or environmental hazard, you can ask the cat for guidance. You have advantage on the check, but the warning is audible out to 30 feet. Once used, this property can't be used again until you finish a short or long rest.",
+				"{@b Remember This Place.} When you finish a short or long rest, you can designate that location as your safe place, replacing any previous safe place. The cat's crystal pendant can project an image of this location.",
+				"{@b The Story Continues.} When you are reduced to 0 hit points but not killed outright, the cat can cause you to drop to 1 hit point instead. You and the cat then teleport to an unoccupied space within 10 feet of your safe place, provided it is on the same plane of existence. Once used, this property can't be used again for 7 days.",
+				"{@b An Ulterior Motive.} When you first attune to the cat, the GM secretly determines an objective for it. When the cat uses The Story Continues, it can instead teleport you to a location it has visited within 1 mile of that objective and on the same plane of existence."
+			]
+		},
+		{
+			"name": "Baby Graboid",
+			"source": "UndertomesBrewathon2",
+			"featureType": ["WP"],
+			"entries": [
+				{
+					"type": "entries",
+					"entries": ["Wondrous Pet, Rare"]
+				},
+				{
+					"type": "quote",
+					"entries": ["Created by #Frost."]
+				},
+				{
+					"type": "quote",
+					"entries": [
+						"They only respond to vibrations, right? Couldn't we... distract them somehow?"
+					]
+				},
+				"{@b Tremors.} This larger than normal worm-like entity is beige in color and has sandy rough skin. This pet is blind entirely as it has no eyes, instead relying on the smallest of vibrations to pick up on. This creature has Tremorsense up to 120ft.",
+				"{@b Burrower.} As a Bonus Action, you may command the Graboid to burrow underground. On your next turn and onwards, as a Bonus Action, you may order it to burrow upwards and bite a creature within range and of your choice in the leg. The creature must make a Constiution Saving Throw (DC = 15) or become {@condition Restrained} until the end of your next turn."
+			]
+		},
+		{
+			"name": "Baby Shrieker",
+			"source": "UndertomesBrewathon2",
+			"featureType": ["WP"],
+			"entries": [
+				{
+					"type": "entries",
+					"entries": ["Wondrous Pet, Rare"]
+				},
+				{
+					"type": "quote",
+					"entries": ["Created by #Frost."]
+				},
+				{
+					"type": "quote",
+					"entries": [
+						"Shriekers. They're ambush hunters. They make a loud screeching sound just before they attack, ergo the name. A large, bony frill on their head is like an infrared camera of sorts."
+					]
+				},
+				"{@b Heat Tracker.} This creature cannot see or hear anything but instead has a thermal heat vision. This creature has Blindsight and Tremorsense up to 60ft, tracking things using their heat signature.",
+				"{@b Ear-Piercing Call.} As a Bonus Action, you may scream, yell or shout at the Shrieker to cause it to let out a much louder scream in return. Any creature within 30ft must make a Wisdom Saving Throw (DC = 15) or become {@condition Frightened} of you until the end of your next turn."
+			]
+		},
+		{
+			"name": "Papineau",
+			"source": "UndertomesBrewathon2",
+			"featureType": ["WP"],
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"Wondrous Friend, Very Rare (Requires Attunement)"
+					]
+				},
+				{
+					"type": "quote",
+					"entries": ["Created by #Akari."]
+				},
+				"A bearded, burly and rather intimidating man who has tagged along for your journey, despite the horrors you have/will have faced. A bit eccentric and self-righteous, though his undeniably radiant heart of gold fuels his unwavering determination to maintain; to purge that which tarnishes his land and to strive against the eternal force of entropy. (Dirt. He's talking about dirt. He's a janitor.) Papineau will remain loyal and an ally to you and your allies as long as any of you are not hostile to him. While Papineau is an ally, you gain the following benefits:",
+				"{@b Mackinaw's Shroud.} You gain resistance to cold damage. Once per short or long rest, Papineau will defend you from harm, stalwart as always—allowing you to reduce the damage by {@dice 1d10} + your Constitution modifier.",
+				"{@b It Doesn't Require Papineau's Head.} Three times per long rest, you may use your reaction for Papineau to rally you with an inspiring shout, cry, or speech. You end the {@condition Charmed} or {@condition Frightened} conditions on up to {@dice 1d4} allies, including yourself.",
+				"{@b Sweep.} You can use your bonus action to request for Papineau to clean the area. He pulls out a mop, broom, or other cleaning utensil and gets to work immediately. You may designate a target area for him to clean; that area is treated as if it were under the effects of the {@spell Dust Devil|XGE} spell, cast at 3rd-level. You may use this ability a number of times equal to your proficiency bonus per long rest.",
+				"{@b Joyeuse, Mark of the Legendary Mopsmith: Mr. Cleaner.} Once per week, you may have Papineau utter the command words \"I have abandoned all hope. All I have left is duty.\" to his mop, triggering the Mark of the Legendary Mopsmith: Mr. Cleaner. The next time an ally within sight of Papineau would suffer from a Condition other than {@condition Prone}, he may sweep them off their feet and stand them back up. The radiant energy of Joyeuse washes over them, removing that Condition from the target creature. If that Condition has counts/stacks, that creature removes half of them. The next time an enemy within sight of Papineau is struck by an ally, Papineau may assist in the assault. Papineau makes a melee weapon attack with Joyeuse ({@dice 1d20+11}) at the target hostile creature. On a hit, the target takes {@dice 1d8} bludgeoning damage + {@dice 2d4} radiant damage for each status condition (including Undertomes status effects) they are currently afflicted with, to a maximum of {@dice 10d4}."
+			]
+		},
+		{
+			"name": "The Pursuer (Pet)",
+			"source": "UndertomesBrewathon2",
+			"featureType": ["WP"],
+			"entries": [
+				{
+					"type": "entries",
+					"entries": ["Wondrous Pet, Artifact, Cursed"]
+				},
+				{
+					"type": "quote",
+					"entries": ["Created by #Mai."]
+				},
+				{
+					"type": "quote",
+					"entries": [
+						"I have been called Esau, Abel, Medea. I have been called a thousand things, yet in all I am but one; that which gives chase."
+					]
+				},
+				"A specter made of black fire and brimstone, borne of great resentment by those betrayed, and targeting those who have betrayed.",
+				"{@b To the Ends of the Earth.} The Pursuer is a dark specter that hunts and haunts those who have gravely wronged others. At all times, this creature pursues its owner with a movement speed of 30 feet at the start of each round, or always at a speed of around 3.5 miles per hour. The Pursuer cannot be contained by physical or magical means, and even if contained, it will break out through sheer force of will. It cannot be killed, banished, or otherwise removed. If The Pursuer is within 30 feet of its owner for more than one turn, at the end of the round, it will Chase.",
+				"{@b Chase.} The Pursuer charges 30 feet straight towards its owner. Any creatures caught within a 30 by 5 foot (length and width respectively) line of this dash will take {@dice 12d12} necrotic damage as the specter's black fire instantly burns them viciously. If its owner is caught in this line, the owner is instantly killed and the specter ceases chasing its owner permanently.",
+				"{@b Anima Sola.} Twice per day, as a bonus action, the owner of The Pursuer is able to bind the specter in black chains for one round, briefly stopping it from chasing as it thrashes against its bindings. While bound, The Pursuer cannot deal damage when touched and it cannot move. At the end of the round, the chains break and the specter immediately Chases.",
+				"{@b Penitent and Forgiven.} The Pursuer will cease hunting its owner if the owner sincerely shows penitence for their transgressions against and are forgiven by the one who they betrayed."
+			]
+		},
+		{
+			"name": "The Traditional Item Merchant",
+			"source": "UndertomesBrewathon2",
+			"featureType": ["WP"],
+			"entries": [
+				{
+					"type": "entries",
+					"entries": ["Wondrous Pet, Artifact, Cursed"]
+				},
+				{
+					"type": "quote",
+					"entries": ["Created by #Mai."]
+				},
+				{
+					"type": "quote",
+					"entries": ["Bis vincit, que se vincet in Victoria"]
+				},
+				"An odd short young...man?...wearing a toad mask with a bloated neck just like a toad's. He knows 'you!' very well.",
+				"{@b Merchandise.} Your TIM will magically collect all nearby Uncommon or lower items not being carried or worn when you leave an area of importance, keeping them as its \"Merchandise\". These can be useless, very weird or useful depending on the situation.",
+				"{@b Shopkeeper.} Your TIM can sell items that it has collected from its Merchandise ability to you. Depending on its mood, it may provide a discount.",
+				"{@b I Am A Cat.} Your TIM carries a disturbingly human-like cat mask with it and can don it. When commanding it to as a Bonus Action, it will let out a creepy low pitch 'meow'. Creatures within 10ft of the TIM must make a Wisdom Saving Throw (DC = 10 + proficiency bonus) or suffer the {@condition Frightened} condition until the end of your next turn as creatures become unnerved by the unnatural sound."
+			]
+		},
+		{
+			"name": "Chain-Ripping Blast",
+			"source": "UndertomesBrewathon2",
+			"featureType": ["EI"],
+			"prerequisite": [
+				{
+					"spell": ["Eldritch Blast"]
+				}
+			],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Frost."]
+				},
+				"Instead of launching one blast of energy, you split it up into several smaller ones which travel like a chain, ripping through an enemy. Instead of dealing {@damage 1d10} Force damage, you deal {@damage 2d4} Force damage and inflict 2 {@condition Bleed|TheUndertomesGeneralRules} on a hit."
+			]
+		},
+		{
+			"name": "Bloodletting Attack",
+			"source": "UndertomesBrewathon2",
+			"featureType": ["OTH"],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Akari."]
+				},
+				"Beginning at 1st level, you've shaped your bloodthirst into a whetstone for your blade. Once per turn, you can forgo the Sneak Attack bonus. Instead, you deal {@damage 2d6} less damage to one creature you hit with an attack. This cannot reduce the damage of this attack below 5.",
+				"The attack must be made with a melee weapon that lacks the heavy property. On a hit, you inflict a number of {@condition Bleed|TheUndertomesGeneralRules} counts equal to half the amount of damage subtracted from the attack, rounded down, as you specifically target arteries and areas of limbs that would cause the most bleeding.",
+				"The target of this attack makes a Constitution saving throw against a DC equal to 8 + your proficiency bonus + half the amount of {@condition Bleed|TheUndertomesGeneralRules} counts they have. On a success, the target reduces their total {@condition Bleed|TheUndertomesGeneralRules} counts by an amount equal to half their Constitution modifier, rounded down. If the target has a negative Constitution modifier, their {@condition Bleed|TheUndertomesGeneralRules} counts aren't reduced.",
+				"On a failure, they have disadvantage on ability checks or any task that involves using the bloodied limb, such as swinging a sword with a wounded arm. The DM has the final say on whether or not a creature would have this penalty to doing a certain task.",
+				"If the target critically fails this saving throw, their total {@condition Bleed|TheUndertomesGeneralRules} counts are reduced by half (rounded down) and become {@condition Bleed|TheUndertomesGeneralRules|Heavy Bleed} stacks.",
+				"You can use this feature a number of times equal to your proficiency bonus. You regain half the expended uses on a short rest, and all expended uses on a long rest.",
+				"The damage reduction changes as you gain levels in this class, as shown below:",
+				{
+					"type": "table",
+					"caption": "Bloodletting Attack Damage Reduction",
+					"colLabels": ["Rogue Level", "Damage Reduction"],
+					"colStyles": ["col-6 text-center", "col-6 text-center"],
+					"rows": [
+						["3rd Level", "{@damage 2d4}"],
+						["5th Level", "{@damage 1d12}"],
+						["7th Level", "{@damage 1d10}"],
+						["9th Level", "{@damage 1d8}"],
+						["11th Level", "{@damage 1d6}"],
+						["13th Level", "{@damage 1d4}"]
+					]
+				},
+				"Starting when you reach 15th level in this class, the damage starts increasing instead of decreasing, as follows:",
+				{
+					"type": "table",
+					"caption": "Bloodletting Attack Damage Increase",
+					"colLabels": ["Rogue Level", "Damage Increase"],
+					"colStyles": ["col-6 text-center", "col-6 text-center"],
+					"rows": [
+						["15th Level", "{@damage 2d4}"],
+						["17th Level", "{@damage 3d4}"],
+						["19th Level", "{@damage 4d4}"]
+					]
+				}
+			]
+		}
+	],
+	"book": [
+		{
+			"name": "The Campfire Spook-Book",
+			"id": "UndertomesBrewathon2",
+			"source": "UndertomesBrewathon2",
+			"group": "homebrew",
+			"author": "The Undertomes' Community",
+			"published": "2026-08-12",
+			"cover": {
+				"type": "external",
+				"url": "https://c10.patreonusercontent.com/4/patreon-media/p/post/166526637/28fdc62e822d40468a04cb980884c8d8/eyJxIjoxMDAsIndlYnAiOjB9/1.png?token-hash=YxGI52NDvk9CTXucnrvOCLqtCGFrJH6zoUtPy91Z5-s%3D&token-time=1787875200"
+			},
+			"coverCredit": "Document design by Bishop.",
+			"contents": [
+				{
+					"name": "Welcome to the Campfire Spook-Book",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					}
+				},
+				{
+					"name": "Wondrous Items",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"A Golden Spear",
+						"Bear that Bears the Brunt",
+						"The Jacket",
+						"Fritz Camera",
+						"Shoes Washed Red",
+						"Tarnished Charm",
+						"Friday",
+						"The Lament Configuration",
+						"The Necronomicon",
+						"The Unwilting Rose",
+						"The Rose With Enumerable Petals"
+					]
+				},
+				{
+					"name": "Wondrous Pets",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": [
+						"Cat Who Knows",
+						"Baby Graboid",
+						"Baby Shrieker",
+						"Papineau",
+						"The Pursuer (Pet)",
+						"The Traditional Item Merchant"
+					]
+				},
+				{
+					"name": "Weapons",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"Haket",
+						"Pursuer",
+						"The Family Butcher",
+						"The Rapier",
+						"Thirteen"
+					]
+				},
+				{
+					"name": "Spells",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					},
+					"headers": [
+						"Fragile Promise",
+						"Horrible Death",
+						"The Door Gag",
+						"Teeth Hell"
+					]
+				},
+				{
+					"name": "Races",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 6
+					},
+					"headers": [
+						"Anemoales",
+						"Self-Portrait",
+						"Self-Portrait (Selflessness)",
+						"Self-Portrait (Outrage)",
+						"Self-Portrait (Nihilism)",
+						"Replika",
+						"LSTR Replika Model",
+						"KLBR Replika Model",
+						"MNHR Replika Model",
+						"STCR Replika Model"
+					]
+				},
+				{
+					"name": "Optional Features",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 7
+					},
+					"headers": ["Chain-Ripping Blast", "Bloodletting Attack"]
+				},
+				{
+					"name": "Conditions",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 8
+					},
+					"headers": ["orruption II deniwtretnl"]
+				},
+				{
+					"name": "Item Properties",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 9
+					},
+					"headers": ["Siege", "Strike", "Sync"]
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "UndertomesBrewathon2",
+			"source": "UndertomesBrewathon2",
+			"data": [
+				{
+					"type": "section",
+					"name": "Welcome to the Campfire Spook-Book",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://c10.patreonusercontent.com/4/patreon-media/p/post/166526637/28fdc62e822d40468a04cb980884c8d8/eyJxIjoxMDAsIndlYnAiOjB9/1.png?token-hash=YxGI52NDvk9CTXucnrvOCLqtCGFrJH6zoUtPy91Z5-s%3D&token-time=1787875200"
+							},
+							"title": "The Campfire Spook-Book",
+							"altText": "Cover of The Campfire Spook-Book, Brewathon #2",
+							"width": 1275,
+							"height": 1650,
+							"maxWidth": 600
+						},
+						"This Compendium is the result of the work of the Undertomes' Community over the course of our second Brewathon event!",
+						"Following the primer theme of the Horror genre, we hope you enjoy what everyone has cooked up!",
+						{
+							"type": "quote",
+							"entries": ["Be afraid. Be very afraid."]
+						},
+						{
+							"type": "entries",
+							"name": "Contributors",
+							"entries": [
+								"Akari, AroAceBrit, Blade, Chaos, Dr. J. Peter Pyro, Frost, Mai, Oixie, SaviorGaming, and Twofell."
+							]
+						},
+						"Document Design by Bishop."
+					]
+				},
+				{
+					"type": "section",
+					"name": "Wondrous Items",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@item A Golden Spear|UndertomesBrewathon2} — Created by #Mai.",
+								"{@item Bear that Bears the Brunt|UndertomesBrewathon2} — Created by #Twofell.",
+								"{@item The Jacket|UndertomesBrewathon2} — Created by #Mai.",
+								"{@item Fritz Camera|UndertomesBrewathon2} — Created by #Frost.",
+								"{@item Shoes Washed Red|UndertomesBrewathon2} — Created by #Twofell.",
+								"{@item Tarnished Charm|UndertomesBrewathon2} — Created by #SaviorGaming.",
+								"{@item Friday|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro.",
+								"{@item The Lament Configuration|UndertomesBrewathon2} — Created by #Chaos.",
+								"{@item The Necronomicon|UndertomesBrewathon2} — Created by #Frost.",
+								"{@item The Unwilting Rose|UndertomesBrewathon2} — Created by #Twofell.",
+								"{@item The Rose With Enumerable Petals|UndertomesBrewathon2} — Created by #Twofell."
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Wondrous Pets",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@optfeature Cat Who Knows|UndertomesBrewathon2} — Created by #Twofell.",
+								"{@optfeature Baby Graboid|UndertomesBrewathon2} — Created by #Frost.",
+								"{@optfeature Baby Shrieker|UndertomesBrewathon2} — Created by #Frost.",
+								"{@optfeature Papineau|UndertomesBrewathon2} — Created by #Akari.",
+								"{@optfeature The Pursuer (Pet)|UndertomesBrewathon2} — Created by #Mai.",
+								"{@optfeature The Traditional Item Merchant|UndertomesBrewathon2} — Created by #Mai."
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Weapons",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@item Haket|UndertomesBrewathon2} — Created by #Oixie.",
+								"{@item Pursuer|UndertomesBrewathon2} — Created by #Oixie.",
+								"{@item The Family Butcher|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro.",
+								"{@item The Rapier|UndertomesBrewathon2} — Created by #Blade.",
+								"{@item Thirteen|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro."
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Spells",
+					"entries": [
+						"{@spell Fragile Promise|UndertomesBrewathon2} — Created by #Blade.",
+						"{@spell Horrible Death|UndertomesBrewathon2} — Created by #Mai.",
+						"{@spell The Door Gag|UndertomesBrewathon2} — Created by #Oixie.",
+						"{@spell Teeth Hell|UndertomesBrewathon2} — Created by #Akari."
+					]
+				},
+				{
+					"type": "section",
+					"name": "Races",
+					"entries": [
+						"{@race Anemoales|UndertomesBrewathon2} — Created by #Oixie.",
+						"{@race Self-Portrait|UndertomesBrewathon2} — Created by #Akari.",
+						"{@race Self-Portrait (Selflessness)|UndertomesBrewathon2} — Created by #Akari.",
+						"{@race Self-Portrait (Outrage)|UndertomesBrewathon2} — Created by #Akari.",
+						"{@race Self-Portrait (Nihilism)|UndertomesBrewathon2} — Created by #Akari.",
+						"{@race Replika|UndertomesBrewathon2} — Created by #Blade & Mai.",
+						"{@race LSTR Replika Model|UndertomesBrewathon2} — Created by #Blade & Mai.",
+						"{@race KLBR Replika Model|UndertomesBrewathon2} — Created by #Blade & Mai.",
+						"{@race MNHR Replika Model|UndertomesBrewathon2} — Created by #Blade & Mai.",
+						"{@race STCR Replika Model|UndertomesBrewathon2} — Created by #Blade & Mai."
+					]
+				},
+				{
+					"type": "section",
+					"name": "Optional Features",
+					"entries": [
+						"{@optfeature Chain-Ripping Blast|UndertomesBrewathon2} — Created by #Frost.",
+						"{@optfeature Bloodletting Attack|UndertomesBrewathon2} — Created by #Akari."
+					]
+				},
+				{
+					"type": "section",
+					"name": "Conditions",
+					"entries": [
+						"{@condition Corruption II deniwtretnl|UndertomesBrewathon2} — Created by #Mai."
+					]
+				},
+				{
+					"type": "section",
+					"name": "Item Properties",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@itemProperty Siege|UndertomesBrewathon2}.",
+								"{@itemProperty Strike|UndertomesBrewathon2} — Created by #Oixie.",
+								"{@itemProperty Sync|UndertomesBrewathon2} — Created by #Oixie."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
