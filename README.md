@@ -56,7 +56,6 @@ https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/ma
 #### Public Library
 ```text
 https://raw.githubusercontent.com/twofelled/Undertomes-in-5e-tools/refs/heads/main/The%20Undertomes%3B%20Public%20Library.json
-
 ```
 
 ### Install from downloaded files
