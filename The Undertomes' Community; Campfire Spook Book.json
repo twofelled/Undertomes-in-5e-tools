@@ -9,13 +9,13 @@
 				"url": "https://www.patreon.com/TheUndertomes/posts/brewathon-2-book-166526637",
 				"authors": ["The Undertomes' Community"],
 				"convertedBy": ["Twofell", "Bishop"],
-				"version": "1.0.7",
+				"version": "1.1.0",
 				"color": "B83A46",
 				"colorNight": "F47A84"
 			}
 		],
 		"dateAdded": 1786580000,
-		"dateLastModified": 1786598659,
+		"dateLastModified": 1786662993,
 		"edition": "classic",
 		"optionalFeatureTypes": {
 			"WP": "Wondrous Pet",
@@ -257,6 +257,55 @@
 			"dmgType": "S",
 			"reqAttune": true,
 			"property": ["F", "L", "SYN|UndertomesBrewathon2"]
+		},
+		{
+			"name": "Dream Demon",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Dr. Peter J. Pyrostein."]
+				},
+				"Dream Demon is an old leather glove with old metal plates bolted to its back and extending to the four foremost fingers, each of which ends in an attached blade. While wearing the glove, you swear you can hear a deep, faint, echoing laugh.",
+				"{@b One, Two, Freddy's Coming For You.} This bladed glove grants a +3 bonus to your spell save DC, spell attack rolls, and attack and damage rolls made with it. In addition, any Illusion or Conjuration spell you cast using the glove as a spellcasting focus is cast as though using a spell slot one level higher than the slot you expended.",
+				"{@b Dream Master.} Dream Demon allows you to cast a special version of the {@spell Dream|PHB} spell. The spell's range becomes 8 miles, and you can target any sleeping creature of your choice within range. In addition to the spell's normal effects, you can torment the target in its dreams. The target must make a Wisdom saving throw against your spell save DC, doing so with disadvantage. If the target is afraid of you, the save DC increases by 5.",
+				"On a failed save, you twist the target's dream into a nightmarish hellscape of your choosing. When you appear in this nightmare, you assume a demonic form of your choice, which becomes the signature appearance that surviving victims recall. While the target remains in the nightmare, you can torture or toy with it as you see fit, causing it to take {@damage 5d10} damage of a type appropriate to the torment. If this damage reduces the target to 0 hit points, it dies outside the dream, and the marks and injuries inflicted within the dream appear on its corpse. Each time the target takes this damage, it can repeat the saving throw. On a success, Dream Warrior begins. If the target succeeds on its initial saving throw, it instead experiences a pleasant dream undisturbed by your attempt to torment it. You can end the spell at any time during its duration.",
+				"{@b Dream Warrior.} When a target succeeds on a repeated saving throw against Dream Master, you immediately enter combat with it within the dream. At the start of each of its turns, the target can make a {@dc 15} Wisdom check. On a success, it wrestles control of the dreamscape from you and can manipulate it as it desires. Once the target has wrestled control from you, you can attempt to flee the dream at the start of each of your turns by making a spellcasting ability check contested by the target's Wisdom check. On a success, you flee the dream, ending the spell.",
+				"{@b Destroying the Glove.} To destroy the glove, it must be placed on hollow ground alongside the remains of its previous wielder. You must then wait until a new moon rises. While the new moon is in the sky, the glove and remains must be doused in holy water blessed by a cleric of a good-aligned god. The same cleric must then present its holy symbol and bless the glove and remains, causing them to disintegrate."
+			],
+			"type": "M",
+			"weaponCategory": "simple",
+			"bonusWeapon": "3",
+			"dmg1": "4d4",
+			"dmgType": "P",
+			"reqAttune": "by a creature of non-good alignment",
+			"property": ["F"]
+		},
+		{
+			"name": "Evil Incarnate",
+			"source": "UndertomesBrewathon2",
+			"rarity": "artifact",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Dr. Peter J. Pyro."]
+				},
+				"Evil Incarnate appears identical to a chef's knife, but you swear that when the moon strikes it just right, you can glimpse an indescribable darkness in the blade's reflection.",
+				"{@b Just a Kitchen Knife.} This totally normal knife grants a +3 bonus to attack and damage rolls made with it. When you hit with an attack using it, the target takes an extra {@damage 3d8} necrotic damage. In addition, whenever a creature sees Evil Incarnate, it mistakes the weapon for an ordinary kitchen knife and dismisses it as such. Its true nature can be revealed only by an {@spell Identify|PHB} spell.",
+				"{@b Shape in the Brush.} While the knife is in your possession, your proficiency bonus is doubled for any Dexterity ({@skill Stealth}) check you make, you have advantage on Dexterity ({@skill Stealth}) checks, and you are always under the effects of a {@spell Pass without Trace|PHB} spell. In addition, you can't be tracked by magical means.",
+				"{@b Stalker.} While hidden from a creature, you can stalk it. For each hour you stalk the creature, you gain a cumulative +1 bonus to attack and damage rolls against it, to a maximum bonus of +3. If you remain undetected for the duration of the stalk and stalk the creature for at least 1 hour, the next attack you make against it is a critical hit.",
+				"{@b Evil Within.} If you are reduced to 0 hit points or knocked {@condition Prone} while wielding the knife, you vanish at the start of your next turn and reappear standing in an unoccupied space within 120 feet of the space you left, preferably outside the line of sight of other creatures. You then regain hit points equal to half your hit point maximum. Once you use this property, you can't use it again until you finish a long rest.",
+				"{@b Destroying the Knife.} To destroy the knife, it must first go without drawing blood for 1 year. It must then be placed on hollow ground on October 31, Halloween, or the closest equivalent. With these conditions met, the knife can be damaged and destroyed, but no trace of it can remain. If any trace remains, the knife reappears fully intact in an unoccupied space next to the evilest Humanoid on the Material Plane."
+			],
+			"type": "M",
+			"baseItem": "Dagger|PHB",
+			"bonusWeapon": "3",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"range": "40/70",
+			"reqAttune": "by a creature of non-good alignment",
+			"property": ["F", "L", "T"]
 		},
 		{
 			"name": "A Golden Spear",
@@ -2009,6 +2058,8 @@
 						{
 							"type": "list",
 							"items": [
+								"{@item Dream Demon|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro.",
+								"{@item Evil Incarnate|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro.",
 								"{@item Haket|UndertomesBrewathon2} — Created by #Oixie.",
 								"{@item Pursuer|UndertomesBrewathon2} — Created by #Oixie.",
 								"{@item The Family Butcher|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro.",
