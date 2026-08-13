@@ -9,13 +9,13 @@
 				"url": "https://www.patreon.com/TheUndertomes/posts/brewathon-2-book-166526637",
 				"authors": ["The Undertomes' Community"],
 				"convertedBy": ["Twofell", "Bishop"],
-				"version": "1.0.4",
+				"version": "1.0.5",
 				"color": "B83A46",
 				"colorNight": "F47A84"
 			}
 		],
 		"dateAdded": 1786580000,
-		"dateLastModified": 1786588000,
+		"dateLastModified": 1786589000,
 		"edition": "classic",
 		"optionalFeatureTypes": {
 			"WP": "Wondrous Pet",
