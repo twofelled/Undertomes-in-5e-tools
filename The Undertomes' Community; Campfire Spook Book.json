@@ -9,13 +9,13 @@
 				"url": "https://www.patreon.com/TheUndertomes/posts/brewathon-2-book-166526637",
 				"authors": ["The Undertomes' Community"],
 				"convertedBy": ["Twofell", "Bishop"],
-				"version": "1.0.6",
+				"version": "1.0.7",
 				"color": "B83A46",
 				"colorNight": "F47A84"
 			}
 		],
 		"dateAdded": 1786580000,
-		"dateLastModified": 1786590000,
+		"dateLastModified": 1786598659,
 		"edition": "classic",
 		"optionalFeatureTypes": {
 			"WP": "Wondrous Pet",
@@ -248,13 +248,13 @@
 				"{@b Never Hike Alone.} While wielding the machete as a bonus action you may temporarily turn into an {@condition Invisible} force, while like this your movement speed is doubled and you can move through any creature's space. When you make an attack you may do so at advantage and deal an additional weapon damage die or if you make a grapple check you do so at advantage, if you already have advantage then you may reroll an additional time. You cannot use this feature two rounds in a round.",
 				"{@b Sync: Friday the Thirteenth} If you are attuned to both {@item Friday|UndertomesBrewathon2} and {@item Thirteen|UndertomesBrewathon2}, you gain the following abilities:",
 				"{@b Kill Count.} When a creature is within your reach, you may make a grapple check against them as part of the attack action or an action itself. If you successfully grapple the creature, you instantly/brutally kill them in an over the top kind of way. Any creature that witnesses this killing believes you to be an irredeemable monster and is terrified of you. You cannot do this again until the next dawn.",
-				"{@b Final Friday.} If you are outright killed, your body, Friday, and Thirteen will seemingly all be destroyed in a way that is impossible to check if you are trully gone (i.e. Falling of a cliff, being buried alive, drowning, etc.) In a years time, on Friday the 13th, or its closest equivalent, you return to life with only the mask and machete within 13 miles of where you were slain. You are a {@creature revenant|MM|Revenant} now, your goal is to take revenge on those who killed you, if they are on another plane of existence or dead already, you instead go in the following order: friends, family, close acquaintances, someone in the general area. You know where your target is as long as they are on the same plane of existence as you. As well, if you die like this, you return to life 24 hours after death. If your body is destroyed, you reform within 1 mile of the place of your death at a spot determined by the DM. With both Friday and Thirteen appearing on your person. You also count as Undead as well as your previous creature types."
+				"{@b Final Friday.} If you are outright killed, your body, Friday, and Thirteen will seemingly all be destroyed in a way that is impossible to check if you are trully gone (i.e. Falling of a cliff, being buried alive, drowning, etc.) In a years time, on Friday the 13th, or its closest equivalent, you return to life with only the mask and machete within 13 miles of where you were slain. You are a {@creature revenant|MM|Revenant} now, your goal is to take revenge on those who killed you, if they are on another plane of existence or dead already, you instead go in the following order: friends, family, close acquaintances, someone in the general area. You know where your target is as long as they are on the same plane of existence as you. As well, if you die like this, you return to life 24 hours after death. If your body is destroyed, you reform within 1 mile of the place of your death at a spot determined by the DM. With both Friday and Thirteen appearing on your person. You also count as Undead as well as your previous creature types.",
+				"{@b Destroying the Mask and Machete.} To destroy them both, obtain an item from someone the Revenant was strongly attached to in life, like a best friend, loved one, family (ECT), and giving it to someone who is the same Race/Gender. Then the person must appoarch them and make a DC 20 Deception check to calm the revenant down temporarily, using this time you must remove the mask and the current target of the revenant's hatred must deal a fatal blow to the revenant's head with a sharp weapon. This kills the revenant permanently sending thier soul to Hell (or its closest equivalent). Then the Mask and Machete must be submerged in fresh water (IE: Lake Water) and scrubbed clean of any dirt, grim, or blood, finally the one who rolled Deception on the revenant must assure the Mask/Machete that it's alright and its time to rest now. Causing them both to dissolve in the water"
 			],
 			"type": "M",
 			"bonusWeapon": "3",
-			"baseItem": "Rapier|PHB",
-			"dmg1": "1d8",
-			"dmgType": "P",
+			"dmg1": "1d6",
+			"dmgType": "S",
 			"reqAttune": true,
 			"property": ["F", "L", "SYN|UndertomesBrewathon2"]
 		},
