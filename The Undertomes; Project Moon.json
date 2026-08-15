@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "0.8.1",
+				"version": "0.8.2",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -22,7 +22,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1786424445
+		"dateLastModified": 1786822000
 	},
 	"book": [
 		{
@@ -4567,7 +4567,7 @@
 						"9": ["sending|phb", "thunder step|xge"],
 						"13": [
 							"divination|phb",
-							"weaver's write|TheUndertomesProjectMoon"
+							"Weaver's Wright|TheUndertomesProjectMoon"
 						],
 						"17": ["destructive wave|phb", "steel wind strike|xge"]
 					}
@@ -7818,7 +7818,7 @@
 						["9th", "{@spell sending}, {@spell thunder step|XGE}"],
 						[
 							"13th",
-							"{@spell divination}, {@spell Weaver's Wright|TheUndertomesProjectMoon|Weaver's Write}"
+							"{@spell divination}, {@spell Weaver's Wright|TheUndertomesProjectMoon}"
 						],
 						[
 							"17th",
@@ -10670,6 +10670,7 @@
 			"name": "Adhesive of Moral Reinforcement",
 			"wondrous": true,
 			"rarity": "uncommon",
+			"charges": 5,
 			"value": 16500,
 			"weight": 0,
 			"entries": [
@@ -10728,7 +10729,7 @@
 			"weaponCategory": "martial",
 			"dmg1": "3d10",
 			"dmgType": "P",
-			"property": ["A", "H", "RLD", "2H"],
+			"property": ["A", "H", "RLD|TheUndertomesGeneralRules", "2H"],
 			"range": "30/120",
 			"reload": 4,
 			"bonusWeapon": "+2",
@@ -10775,8 +10776,9 @@
 		{
 			"name": "Still-Warm Coffee",
 			"source": "TheUndertomesProjectMoon",
+			"type": "FD",
 			"rarity": "rare",
-			"consumable": true,
+			"miscTags": ["CNS"],
 			"entries": [
 				"A cup of coffee that never loses its warmth, no matter how many days it spends out in the cold. This item holds no nutritional value, but drinking from it brings a powerful boost. As a bonus action, you can drink from this beverage to give yourself {@dice 1d10} temporary hit points. If you have all of your Hit Points, you also gain advantage on your first attack each turn for 1 minute.",
 				"If you drink more than 1 Still-warm Coffee before a Long rest, you suffer 1 point of {@condition Exhaustion} when its effects wear off."
@@ -10865,8 +10867,9 @@
 		{
 			"name": "BongBong Orange",
 			"source": "TheUndertomesProjectMoon",
+			"type": "FD",
 			"rarity": "uncommon",
-			"consumable": true,
+			"miscTags": ["CNS"],
 			"entries": [
 				"This slimy, yet delicious bubble dropped from a verminous creature is extremely healthy and, sadly, addictive. As a Bonus Action, any creature may eat this or feed it to a willing creature. The creature regains {@dice 6d4 + 6} hit points. They must succeed on a Wisdom saving throw (DC 14) or become addicted to the substance and unable to heal from anything else or eat anything else until their next Long Rest. This DC increases by 2 each time this item is consumed before a Long Rest."
 			],
@@ -11437,6 +11440,9 @@
 		{
 			"name": "Summon Wartime Rainfall",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["piercing"],
+			"savingThrow": ["dexterity"],
+			"areaTags": ["C"],
 			"level": 3,
 			"school": "C",
 			"time": [
@@ -11499,6 +11505,7 @@
 		{
 			"name": "Frontliner's Baton March",
 			"source": "TheUndertomesProjectMoon",
+			"areaTags": ["MT"],
 			"level": 4,
 			"school": "A",
 			"time": [
@@ -11549,6 +11556,9 @@
 		{
 			"name": "Sprouting Strike",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["piercing"],
+			"spellAttack": ["R"],
+			"areaTags": ["ST"],
 			"level": 1,
 			"school": "T",
 			"time": [
@@ -11611,6 +11621,10 @@
 		{
 			"name": "Blooming Manifestation",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["bludgeoning"],
+			"conditionInflict": ["prone"],
+			"savingThrow": ["dexterity"],
+			"areaTags": ["MT"],
 			"level": 2,
 			"school": "C",
 			"time": [
@@ -11681,6 +11695,8 @@
 		{
 			"name": "Rattling Smite",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["thunder"],
+			"areaTags": ["ST"],
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -11739,6 +11755,9 @@
 		{
 			"name": "Shock Bubbles",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["thunder"],
+			"spellAttack": ["R"],
+			"areaTags": ["MT"],
 			"level": 2,
 			"school": "V",
 			"time": [
@@ -11820,6 +11839,9 @@
 		{
 			"name": "Time for Harvest",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["piercing"],
+			"spellAttack": ["R"],
+			"areaTags": ["ST"],
 			"level": 4,
 			"school": "C",
 			"time": [
@@ -11897,6 +11919,8 @@
 		{
 			"name": "Curse of Eroding Will",
 			"source": "TheUndertomesProjectMoon",
+			"savingThrow": ["charisma"],
+			"areaTags": ["ST"],
 			"level": 5,
 			"school": "E",
 			"time": [
@@ -11955,6 +11979,8 @@
 		{
 			"name": "Heart-Breaking Smite",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["cold"],
+			"areaTags": ["ST"],
 			"level": 2,
 			"school": "V",
 			"time": [
@@ -12006,6 +12032,7 @@
 		{
 			"name": "Weaver's Wright",
 			"source": "TheUndertomesProjectMoon",
+			"areaTags": ["MT"],
 			"level": 4,
 			"school": "A",
 			"time": [
@@ -12065,6 +12092,9 @@
 		{
 			"name": "Baleful Brand",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["acid", "psychic"],
+			"spellAttack": ["R"],
+			"areaTags": ["ST"],
 			"level": 5,
 			"school": "V",
 			"time": [
@@ -12122,6 +12152,9 @@
 		{
 			"name": "First Lightlock",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["piercing", "slashing"],
+			"spellAttack": ["R"],
+			"areaTags": ["ST"],
 			"level": 0,
 			"school": "V",
 			"time": [
@@ -12196,6 +12229,7 @@
 		{
 			"name": "Sense Quarry",
 			"source": "TheUndertomesProjectMoon",
+			"areaTags": ["MT", "R"],
 			"level": 2,
 			"school": "D",
 			"time": [
@@ -12262,6 +12296,8 @@
 		{
 			"name": "Binding Chains",
 			"source": "TheUndertomesProjectMoon",
+			"savingThrow": ["strength"],
+			"areaTags": ["ST"],
 			"level": 4,
 			"school": "V",
 			"time": [
@@ -12334,6 +12370,9 @@
 		{
 			"name": "Combustion Snap",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["fire"],
+			"spellAttack": ["R"],
+			"areaTags": ["ST"],
 			"level": 0,
 			"school": "V",
 			"time": [
@@ -12390,6 +12429,8 @@
 		{
 			"name": "Fan the Flame",
 			"source": "TheUndertomesProjectMoon",
+			"savingThrow": ["constitution"],
+			"areaTags": ["MT", "R"],
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -12461,6 +12502,8 @@
 		{
 			"name": "Butterfly's Dragpath",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["fire"],
+			"areaTags": ["L"],
 			"level": 2,
 			"school": "C",
 			"time": [
@@ -12535,6 +12578,8 @@
 		{
 			"name": "Broken Match",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["fire"],
+			"areaTags": ["MT"],
 			"level": 3,
 			"school": "C",
 			"time": [
@@ -12604,6 +12649,8 @@
 		{
 			"name": "Candlesetting",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["fire"],
+			"areaTags": ["MT", "R"],
 			"level": 3,
 			"school": "C",
 			"time": [
@@ -12681,6 +12728,9 @@
 		{
 			"name": "Cascading Cataclysm",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["fire"],
+			"savingThrow": ["dexterity", "wisdom"],
+			"areaTags": ["MT", "R"],
 			"level": 4,
 			"school": "V",
 			"time": [
@@ -12738,6 +12788,9 @@
 		{
 			"name": "Searing Birdcage",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["fire"],
+			"savingThrow": ["wisdom"],
+			"areaTags": ["ST"],
 			"level": 5,
 			"school": "A",
 			"time": [
@@ -12813,6 +12866,9 @@
 		{
 			"name": "Pyre of Prophecy",
 			"source": "TheUndertomesProjectMoon",
+			"damageInflict": ["fire"],
+			"savingThrow": ["wisdom"],
+			"areaTags": ["Q", "R"],
 			"level": 7,
 			"school": "C",
 			"time": [
