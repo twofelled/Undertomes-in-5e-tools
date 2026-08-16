@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "0.8.2",
+				"version": "0.8.4",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -22,7 +22,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1786822000
+		"dateLastModified": 1786910000
 	},
 	"book": [
 		{
@@ -651,6 +651,16 @@
 									"classSource": "PHB",
 									"shortName": "Middle's Blade",
 									"collapsed": true
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TheUndertomesProjectMoon",
+									"name": "Soldato Tuttofare Roguish Archetype",
+									"className": "Rogue",
+									"classSource": "PHB",
+									"shortName": "Soldato Tuttofare",
+									"collapsed": true
 								}
 							]
 						},
@@ -710,6 +720,16 @@
 							"className": "Ranger",
 							"classSource": "PHB",
 							"shortName": "Spada Palermitana",
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"prop": "subclass",
+							"source": "TheUndertomesProjectMoon",
+							"name": "Soldato Tuttofare Roguish Archetype",
+							"className": "Rogue",
+							"classSource": "PHB",
+							"shortName": "Soldato Tuttofare",
 							"collapsed": true
 						}
 					]
@@ -4586,6 +4606,21 @@
 				"Crossing Dervish|Rogue|PHB|Middle's Blade|TheUndertomesProjectMoon|9",
 				"You're Gonna Burn Up|Rogue|PHB|Middle's Blade|TheUndertomesProjectMoon|13",
 				"Violet~ Breaking Slam|Rogue|PHB|Middle's Blade|TheUndertomesProjectMoon|17"
+			]
+		},
+		{
+			"name": "Soldato Tuttofare Roguish Archetype",
+			"shortName": "Soldato Tuttofare",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 1,
+			"edition": "classic",
+			"subclassFeatures": [
+				"Soldato Tuttofare Roguish Archetype|Rogue|PHB|Soldato Tuttofare|TheUndertomesProjectMoon|3",
+				"Thruster Compression Bullets|Rogue|PHB|Soldato Tuttofare|TheUndertomesProjectMoon|9",
+				"Class and Respect|Rogue|PHB|Soldato Tuttofare|TheUndertomesProjectMoon|13",
+				"L'ascesa del Vice-capitano|Rogue|PHB|Soldato Tuttofare|TheUndertomesProjectMoon|17"
 			]
 		},
 		{
@@ -9012,6 +9047,281 @@
 					"items": [
 						"You may throw up to two ingredients from your Spice of Life feat into your Stew Cauldron per long rest instead of one.",
 						"When you consume your True Dragonlife Stew, you may dedicate a portion of it to the great Basillisoups. Because of the greatness you've achieved with the pieces of food you make, a mighty {@creature Basillisoup|TheUndertomesProjectMoon} appears on the same square as you, having you ride it valiantly into battle. It takes it's turn alongside yours in Initiative, where you may have it move as a free action and spend your action or bonus action to command it to take one of its own. You may spend your reaction for it to take a reaction of its own when triggered."
+					]
+				}
+			]
+		},
+		{
+			"name": "Soldato Tuttofare Roguish Archetype",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Soldato Tuttofare",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"page": 1,
+			"entries": [
+				"{@i \"... I failed to complete my duties. This is but a punishment I deserve.\"}",
+				"Stern, rigid and hierarchical. That is the life of any Rogue who has become a Soldato Tuttofare - A foot soldier meant to do anything and everything asked by their superiors in whatever great organization they have found themselves in, be that carrying ammunition to dishing out horrible gashes in cost-effective close-quarters combat.",
+				"These are obedient people, for better or worse - Unrelenting in their rulekeeping to a fault, but they often tend to hold themselves to the same standards as they do others, being second to none in reliableness to those who have managed to stand at their side literally and figuratively.",
+				"In worlds such as that of Faerun, a Soldato Tuttofare Rogue might find themselves serving in the Zentharim as one of its many agents, or in others such as that of Keybreak they are one of the many, many people vying for a higher position in one of the Ringed Cities' megacorporations' military forces.",
+				"Homebrew Written by Zero.",
+				"Document Design by Bishop.",
+				"With Special Thanks to our well behaved Patrons!",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Under the Thumb of Greater People|Rogue|PHB|Soldato Tuttofare|TheUndertomesProjectMoon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Downcast Gaze|Rogue|PHB|Soldato Tuttofare|TheUndertomesProjectMoon|3"
+				}
+			]
+		},
+		{
+			"name": "Under the Thumb of Greater People",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Soldato Tuttofare",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"page": 2,
+			"header": 1,
+			"entries": [
+				"{@i \"I listen carefully to every order I'm given. I... just look to the ground to not risk staring at my superiors straight in their eyes.\"}",
+				"There's a great organization you have joined, and you've been elected an acceptable enough cadet to be imparted with particular training toward attaining a certain role within the faction. Choose between the Ammunition Tributary and Warden of Respect features to gain one of them:",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Ammunition Tributary|Rogue|PHB|Soldato Tuttofare|TheUndertomesProjectMoon|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Warden of Respect|Rogue|PHB|Soldato Tuttofare|TheUndertomesProjectMoon|3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ammunition Tributary",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Soldato Tuttofare",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"page": 2,
+			"header": 2,
+			"entries": [
+				"{@i \"Let's get ready... Before our superiors with even higher authority have to intervene...\"}",
+				"You've been taught - No, you've had the rules etched to your very brainstem lest it is removed. You are to distinguish between bullet types, know how to produce them when asked to and when to spend them yourself. You are proficient in Firearms and may, once per turn after triggering a {@classFeature Sneak Attack|Rogue|PHB|1}, draw from your Reserves by rolling on the following table:",
+				{
+					"type": "table",
+					"caption": "Ammunition Types",
+					"colLabels": ["{@dice d4}", "Ammunition Type", "Effects"],
+					"colStyles": ["col-1 text-center", "col-3", "col-8"],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"Armor Piercing Rounds",
+							"Attack rolls made with this ammunition consider the target's AC as if it were one number lower."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"Flame Rounds",
+							"Damage rolls made with this ammunition deal fire damage and inflict {@condition Burn|TheUndertomesGeneralRules} count equal to half of the user's proficiency bonus."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"Frost Rounds",
+							"Damage rolls made with this ammunition deal cold damage and cause the target to suffer a stacking -1 modifier to their attack rolls until the start of the user's next turn."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"Shock Rounds",
+							"Damage rolls made with this ammunition force the target to make a Strength check against a DC equal to 8 plus your Dexterity modifier plus your proficiency bonus, suffering {@damage 2d8} an additional thunder damage and being pushed back 10-ft. on a hit."
+						]
+					]
+				},
+				"After doing so, you immediately Reload your currently wielded firearm with the resulting ammunition type. It counts as an amount of bullets appropriate to your currently wielded weapon's Reload property.",
+				"These ammunition types have their effects take place whenever you hit a creature on an attack made with them, for an amount of attacks equal to the remaining bullets before you need to reload as per the Reload property.",
+				"Additionally, you have been imparted with the knowledge of how to make the most of any ammunitions gunpowder, causing your ranged weapon attacks to inflict an amount {@condition Burn|TheUndertomesGeneralRules} count equal to half the damage die they would deal, to a minimum of one.",
+				"Upon reaching 5th level you may toss that Ammunition toward another creature within 30-ft. of you, instantly Reloading their weapon with the rolled ammunition instead."
+			]
+		},
+		{
+			"name": "Warden of Respect",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Soldato Tuttofare",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"page": 2,
+			"header": 2,
+			"entries": [
+				"{@i \"... Anyone in The Thumb has to know how to wield bayonets. Nothing like the sharp blade and the hard stock of a rifle in situations when we can't use ammunition.\"}",
+				"The way of the bayonet has been sliced into your memories, every movement and way to swing it - You know it. You also know how to best attach them to ranged weapons, requiring only a Dagger or similar light weapon to add onto a ranged weapon over a short or long rest.",
+				"When you attach a bayonet to a ranged weapon, you may also use it as a melee weapon you are proficient with. This weapon has gains the finesse property and retains the two-handed property if it had it, dealing a dice one step lower than the weapon's ranged damage dice (Such as a ranged weapon that deals {@damage 1d6} would deal {@damage 1d4}, an {@damage 1d8} would become an {@damage 1d6} and so on.) of a damage type of your choice between slashing or piercing damage.",
+				"You do not suffer Disadvantage on ranged attack rolls while a target is within 5-ft. of you when using a weapon with a bayonet and inflict {@condition Burn|TheUndertomesGeneralRules} count equal to the amount of damage die you would roll on a weapon attack hit.",
+				"Upon reaching 5th level your footwork has also improved to keep some distance between you and your target, increasing your AC by one until the start of your next turn whenever you hit a creature with melee weapon attacks. Your AC is increased by an additional point for the duration whenever you use your {@classFeature Sneak Attack|Rogue|PHB|1}."
+			]
+		},
+		{
+			"name": "Downcast Gaze",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Soldato Tuttofare",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 3,
+			"page": 2,
+			"header": 1,
+			"entries": [
+				"{@i \"I have to... try my best to uphold the perfect manners and etiquette.\"}",
+				"Those above you are the only ones allowed to look up to the sky, you've taken that to mean that you also must keep sure of the presence of all that dwell on the ground beside you, granting you Proficiency in the {@skill Perception} skill. Additionally, that exceptional precision has made it so that whenever you trigger a {@classFeature Sneak Attack|Rogue|PHB|1} you can also trigger a {@variantrule Tremor Burst|TheUndertomesGeneralRules}."
+			]
+		},
+		{
+			"name": "Thruster Compression Bullets",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Soldato Tuttofare",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 9,
+			"page": 3,
+			"entries": [
+				"{@i \"Daring to breathe when you haven't even followed the underboss's command? Now that's quite discourteous.\"}",
+				"There is a special kind of ammunition that runs through your organization, Scorch Propellant Round, a kind of which you have just been trust to carry around and use at your own discretion - Of course, with the possibility of upper sight regarding it as unnecessary, so think well when spending these bullets. You have an amount of Scorch Propellant Round equal to your proficiency bonus, being able to resupply half of them at a short rest and all over a long rest. You may use them according to the 3rd level feature you have chosen, as per the following:",
+				{
+					"type": "entries",
+					"name": "Ammunition Tributary",
+					"entries": [
+						"You have learned how to use these Scorch Propellant Round on your ranged fire, being able to instantly replace a regular bullet and spend one such Round before rolling a ranged weapon attack on your turn.",
+						"When you do so, the bullet's propellant systems supercharge the shot, causing it to easily pierce through any targets in a line equal to the short Range of your wielded weapon. You make one ranged weapon attack roll once, counting the result against all targets within reach and dealing damage to any whose AC you'd beat, also inflicting {@condition Burn|TheUndertomesGeneralRules} count equal to your proficiency bonus. You may then choose to convert the targets current count into {@condition Tremor - Scorch|TheUndertomesGeneralRules}.",
+						"Additionally, you may roll an additional ranged weapon attack and take the lower result to target any additional creatures that would be within a line equal to your long range. On a hit you deal half that {@condition Burn|TheUndertomesGeneralRules} count instead. If you would deal {@classFeature Sneak Attack|Rogue|PHB|1} damage this way to multiple creatures, you only deal half that damage instead."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Warden of Respect",
+					"entries": [
+						"You have learned how to use these Scorch Propellant Round on to further the impact and speed of your melee swings, being able to instantly chamber and spend one such Round before rolling a melee weapon attack on your turn.",
+						"Whenever you do so, your weapon flares in flame as it swings through the air, dealing an additional amount of d8 fire damage and {@condition Burn|TheUndertomesGeneralRules} count equal to half your proficiency bonus. You may also choose to convert the targets {@condition Burn|TheUndertomesGeneralRules} count into {@condition Tremor - Scorch|TheUndertomesGeneralRules} as well.",
+						"Additionally, whenever you hit a creature with this attack you may immediately spend another Round to make an additional melee weapon attack against the same target benefitting from the same bonuses. You may do so until you perform a total amount of attacks equal to half your proficiency bonus."
+					]
+				}
+			]
+		},
+		{
+			"name": "Class and Respect",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Soldato Tuttofare",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 13,
+			"page": 3,
+			"entries": [
+				"{@i \"I'm a Soldato Secondo, you know...? It's about time I moved away from ammo cleaning duty to something more important, like ammo carrying duty for the esteemed Capos.\"}",
+				"You've managed to be recognized as a decent enough soldier to reach a higher rank within your organization, benefitting from all the little amenities that can come with - But also being granted the great deal of importance to deliver orders to others in a clean and concise manner.",
+				"You may spend your Bonus Action to give an Order to a friendly creature within 30-ft. that can hear and understand you, granting them an {@dice 1d6} bonus modifier to their next skill check. You may also do so as a Reaction whenever they are about to make a skill check. You may use this feature an amount of times equal to your proficiency bonus per long rest.",
+				"This has also been ingrained through the very act of teaching, allowing you to spend a long rest teaching another creature that can understand you on tactics regarding a Skill you are Proficient in. They gain Proficiency in that skill until your next long rest. If you grant them Proficiency in the same skill six times in a row, they become permanently Proficient with that skill. (A creature may only gain proficiency in a only a single skill like this.)"
+			]
+		},
+		{
+			"name": "L'ascesa del Vice-capitano",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Soldato Tuttofare",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 17,
+			"page": 4,
+			"entries": [
+				"{@i \"Hierarchy is absolute for the Thumb. To us, it's as natural as the fact of nature that spilt blood only flows downwards, not up.\"}",
+				"Hardly just some soldier anymore, you've managed to reach a position of some importance within your organization - A trusted steward to actual captains, a high-achiever between your ilk or even simply a dreadfully good shot. Upon reaching this level, you gain a Feature equivalent to the Feature chosen at 3rd level and may do the following during your turn:",
+				"{@b Custode della Regola.} You are both beholder and beholdent of the Rules of your organization, and also the acting executor of every single line. Once per long rest you may spend your Action to rally your comrades, granting all creatures of your choice within 60-ft. that can understand you a +2 bonus modifier to hit and double that value to damage rolls until the end of your next turn.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Summary Judgement|Rogue|PHB|Soldato Tuttofare|TheUndertomesProjectMoon|17"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ferrous Discipline|Rogue|PHB|Soldato Tuttofare|TheUndertomesProjectMoon|17"
+				}
+			]
+		},
+		{
+			"name": "Summary Judgement",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Soldato Tuttofare",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 17,
+			"page": 4,
+			"header": 1,
+			"entries": [
+				"{@i \"Obey the orders issued by your superior unconditionally, and do not question the intentions of your superior. Kill if you're told to kill, and die if you're told to die.\"}",
+				"The trust put upon you is something that would crush the stature of those which are lower than you, the implicit recognition of the Bosses that you are the one whose judgement will be performed upon the bodies of all that illicit quick punishment. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your experience and discipline has made any gun in your hands seem like it were a higher grade than it really is. You consider any ranged weapon you are wielding to deal magical damage for the purposes of bypassing Resistances and they are also considered to be at least a +2 Weapon, if it was any lower than that.",
+						"Whenever you take the Take Aim Bonus Action, your next ranged weapon attack gains a +2 bonus modifier to hit and is considered a Critical Hit on a dice result of 19-20.",
+						"Any time you would roll on the Ammunition Tributary table, before you roll you may choose to instead choose to draw the Round of your choice. You may do so an amount of times equal to your proficiency bonus per long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ferrous Discipline",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Soldato Tuttofare",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 17,
+			"page": 4,
+			"header": 1,
+			"entries": [
+				"{@i \"Not even the Thumb, one of the Five Fingers sitting at the apex of the Backstreets, can just waste bullets willy-nilly... Some just stick to raw strength, though\"}",
+				"Most of your subordinates still rely solely on their allotted rounds to finish their work, but you've become more self reliant despite the fact that you're allowed an even greater amount of ammo. Your bayonet fighting rips through the battlefield better than most bullets, and you have come a long way into being a threat to your underlings - for its hard for them to keep their eyes away. You gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
+						"Your nasty bladework has become an urban legend amongst your subordinates. You consider any melee weapon you are wielding to deal magical damage for the purposes of bypassing Resistances and they are also considered to be at least a +2 Weapon, if it was any lower than that.",
+						"Whenever you would make a melee weapon attack you may choose to instantly move up to 10-ft. in any direction of your choice without spending additional movement, provided you will reach a target.",
+						"You have an additional 4 Scorch Propellant Rounds.",
+						"In the case you are ever without a weapon, your fists have become quite the reliable tool, calloused enough to hit like pure iron and counting as natural melee weapons that you are proficient with. These have the Finesse and Light properties and deal {@damage 1d6} bludgeoning damage on a hit, and although they cannot benefit from your Round they deal an 4 {@condition Burn|TheUndertomesGeneralRules} count on a hit."
 					]
 				}
 			]
