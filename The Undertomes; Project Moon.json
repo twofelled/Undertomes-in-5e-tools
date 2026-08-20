@@ -353,8 +353,7 @@
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 11
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Fragrant Soul",
@@ -672,96 +671,84 @@
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 23
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Bestiary",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 24
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Subclass Options",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 25
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Conditions",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 26
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Spells",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 27
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Feats",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 28
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Races",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 29
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Backgrounds",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 30
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Weapons",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 31
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Magic Items",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 32
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Traps and Hazards",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 33
-					},
-					"headers": []
+					}
 				},
 				{
 					"name": "Core Bursts",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 34
-					},
-					"headers": []
+					}
 				}
 			]
 		}
@@ -18334,7 +18321,6 @@
 				"At 10th level, you can order the {@creature All-Around Helper|TheUndertomesProjectMoon|All-Around Helper} to use its Thorough Cleaning action.",
 				{
 					"type": "statblock",
-					"prop": "monster",
 					"source": "TheUndertomesProjectMoon",
 					"name": "{@creature All-Around Helper|TheUndertomesProjectMoon|All-Around Helper}"
 				}
