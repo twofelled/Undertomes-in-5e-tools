@@ -5,7 +5,7 @@
 				"json": "TheUndertomesPublicLibrary",
 				"abbreviation": "TUPL",
 				"full": "The Undertomes Public Library",
-				"version": "1.0.0",
+				"version": "1.1.0",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"dateReleased": "2026-08-03",
@@ -17,7 +17,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785800776,
-		"dateLastModified": 1785800776
+		"dateLastModified": 1787262300
 	},
 	"subclass": [
 		{
@@ -193,6 +193,322 @@
 				"Death, defeat, they are the same thing to your patron, who takes control of souls on the brink of both and burns them for her conquest. As an action, you can expend a Warlock spell slot to touch the body of a creature hostile to you that is either unconscious or at 0 hit points. For 1 minute, they are brought back to life as a {@creature Fire Elemental|MM}, using its stat block. It rolls its own initiative and takes its own turns. If you do not issue it a command, it takes the {@action Dodge} action on its turn. At the end of the duration, or if it drops to 0 hit points, the creature reverts to its original form.",
 				"If you target a willing creature that is a player character who is at 0 hit points or unconscious, they return covered in your Patron's blazes with their full stat block and take their place in initiative. For 1 minute, they are considered revived with half their hit points and conscious. When the duration ends or they drop to 0 hit points again, they fall unconscious but are stabilized. Once this feature ends, they cannot be targeted by it again until they finish a long rest.",
 				"You can use this feature a number of times equal to your Charisma modifier (minimum once), and you regain all expended uses on a long rest. You may only have one creature affected by this feature at a time."
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Mythos Vessel",
+			"source": "TheUndertomesPublicLibrary",
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				"Your body has been modified to withstand its internal Mana and an immense amount of energy without breaking down. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"If you have access to Spellcasting, once per Long Rest, as a Reaction to casting a Spell below 6th-level, you can choose to not spend the Spell Slot. Upon reaching level 11, you can do this twice per Long Rest.",
+						"If you don't have access to Spellcasting, once per Long Rest, as a Reaction to being subject to a spell or magical effect that requires a Saving Throw, you may choose to roll with advantage. Upon reaching level 11, you can do this twice per Long Rest.",
+						"You ignore the prerequisite of Dominant Feats that require you to not be a Dominant."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dominant of Ramuh",
+			"source": "TheUndertomesPublicLibrary",
+			"prerequisite": [
+				{
+					"level": 11,
+					"ability": [
+						{
+							"cha": 18
+						}
+					],
+					"other": "No other Dominant feat"
+				}
+			],
+			"entries": [
+				"{@i \"An ancient, ageless mage bearing the dazzling power of lightning.\"}",
+				"You were born with or have gained the ability to control an Eikon of Lightning. If any abilities in this feat require a Saving Throw, the DC equals your spell save DC or 8 + your Charisma modifier + your proficiency bonus. You gain the following abilities:",
+				{
+					"type": "entries",
+					"name": "Blind Justice.",
+					"entries": [
+						"As a Bonus Action, you summon a sphere of electricity to charge your enemies. Choose a creature that you can see within 30 feet of you to make a Dexterity saving throw. On a failed save, it takes {@damage 1d8} lightning damage and the sphere becomes attached to it for up to 1 minute or until it uses an Action to get rid of it. On a successful save, it takes half as much damage and suffers no additional effects. While a creature has a sphere of electricity attached to it, each attack that hits it deals an additional {@damage 1d6} lightning damage, and each creature within 30 feet of it with a sphere attached to it also takes this damage. The initial damage increases to {@damage 2d8} at level 5, {@damage 3d8} at level 11, and {@damage 4d8} at level 17. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eikon Priming.",
+					"entries": [
+						"You can use an Action to summon the Eikon through your body, gaining the appearance of Ramuh. For 10 minutes, your size becomes Gargantuan, you gain immunity to lightning damage, and you learn the following spells, which you can cast without expending material components. Choose Intelligence, Wisdom, or Charisma as your spellcasting ability when you first unlock this feature:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "At will:",
+									"entry": "{@spell Shocking Grasp}, {@spell Lightning Lure|TCE}"
+								},
+								{
+									"type": "item",
+									"name": "3/Day:",
+									"entry": "{@spell Call Lightning}, {@spell Lightning Arrow}, {@spell Lightning Bolt}, {@spell Witch Bolt}"
+								},
+								{
+									"type": "item",
+									"name": "1/Day each:",
+									"entry": "{@spell Chain Lightning}, {@spell Storm Sphere|XGE}"
+								}
+							]
+						},
+						"Once you use this ability, you can't use it again until you finish a Long Rest unless you suffer 1 point of Exhaustion to activate it."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dominant of Ifrit",
+			"source": "TheUndertomesPublicLibrary",
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"con": 18
+						}
+					],
+					"other": "No other Dominant feat"
+				}
+			],
+			"entries": [
+				"{@i \"A powerful djinn with control over scorching flames hot enough to turn the whole world to ashes.\"}",
+				"You were born with or have gained the ability to control an Eikon of Fire. If any abilities in this feat require a Saving Throw, the DC equals your spell save DC or 8 + your Constitution modifier + your proficiency bonus. You gain the following abilities:",
+				{
+					"type": "entries",
+					"name": "Will-o'-the-Wykes.",
+					"entries": [
+						"As a Bonus Action, you can summon small fireballs to constantly float around you in a 5-foot circle. The first time a hostile creature enters this area or ends its turn within this area, it takes {@damage 1d6} fire damage. This damage increases to {@damage 2d6} at level 5, {@damage 3d6} at level 11, and {@damage 4d6} at level 20. The fireballs have Hit Points equal to 5 times your level. Whenever you are hit by an Attack Roll, the damage is directed to your fireballs instead. They have vulnerability to cold damage. The fireballs disappear after 1 minute. Once you use this ability, you can't use it again until you finish a Short or Long Rest unless you suffer 1 point of Exhaustion."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ignition.",
+					"entries": [
+						"As a Bonus Action, you launch yourself forward with a burst of flames in a straight line of 15 feet. Each enemy in that line must make a Dexterity saving throw. On a failed save, it takes {@damage 2d10} fire damage, and the farthest creature in the line that failed the saving throw becomes {@condition Stunned}. On a successful save, it takes half as much damage and suffers no additional effects. You can use this ability a number of times equal to half your proficiency bonus, and you regain all expended uses when you finish a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Limit Break.",
+					"entries": [
+						"As a Bonus Action, you are able to give yourself a temporary strength boost as your skin burns like charcoal and a deep fire can be seen roaring beneath it. For 1 minute, you deal an additional {@damage 1d4} fire damage with each of your attacks, and your speed increases by 10 feet. When you move, you do not provoke Opportunity Attacks. Once you use this ability, you can't use it again until you finish a Long Rest unless you suffer 1 point of Exhaustion."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eikon Priming.",
+					"entries": [
+						"Upon reaching level 11, you can use an Action to summon the Eikon through your body, gaining the appearance of Ifrit. For 10 minutes, your size becomes Gargantuan, you gain immunity to fire damage, and you learn the following spells, which you can cast without expending material components. Choose Intelligence, Wisdom, or Charisma as your spellcasting ability when you first unlock this feature:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "At will:",
+									"entry": "{@spell Fire Bolt}, {@spell Produce Flame}"
+								},
+								{
+									"type": "item",
+									"name": "3/Day:",
+									"entry": "{@spell Chromatic Orb}, {@spell Fireball}, {@spell Flaming Sphere}, {@spell Hellish Rebuke}, {@spell Scorching Ray}"
+								},
+								{
+									"type": "item",
+									"name": "1/Day each:",
+									"entry": "{@spell Fire Shield}, {@spell Flame Strike}, {@spell Wall of Fire}"
+								}
+							]
+						},
+						"Once you use this ability, you can't use it again until you finish a Long Rest unless you suffer 1 point of Exhaustion to activate it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tectonic Stomp (Recharge 5-6).",
+					"entries": [
+						"While you have your Eikon Primed, you can use a Bonus Action to stomp the ground, turning everything within 30 feet of you into Difficult Terrain that does not hinder your movement. Every creature in the area must make a Constitution saving throw. On a failed save, it takes {@damage 6d8} fire damage and becomes {@condition Deafened} from the strike of your feet upon the ground. On a successful save, it takes half as much damage and suffers no additional effects."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dominant of the Phoenix",
+			"source": "TheUndertomesPublicLibrary",
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"wis": 18
+						}
+					],
+					"other": "No other Dominant feat"
+				}
+			],
+			"entries": [
+				"{@i \"An eternal, undying bird. Its tears are rumored to have curative properties, and it is said that he who tastes the Phoenix's blood will have eternal life.\"}",
+				"You were born with or have gained the ability to control an Eikon of Fire. If any abilities in this feat require a Saving Throw, the DC equals your spell save DC or 8 + your Wisdom modifier + your proficiency bonus. You gain the following abilities:",
+				{
+					"type": "entries",
+					"name": "Phoenix Shift.",
+					"entries": [
+						"If you have the {@feat Mythos Vessel|TheUndertomesPublicLibrary} feat, you can use a Bonus Action to teleport to an unoccupied space that you can see within 60 feet of you. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rising Flames.",
+					"entries": [
+						"As an Action, choose one creature within 10 feet of you. It must make a Constitution saving throw as you summon fiery wings to lift it with a burning gale. On a failed save, it takes {@damage 1d10} fire damage and is sent flying 10 feet into the air in a direction of your choice if it is at most one size larger than you or smaller. On a successful save, it takes half as much damage and suffers no additional effects. The damage increases to {@damage 2d10} at level 5, {@damage 3d10} at level 11, and {@damage 4d10} at level 17. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Scarlet Cyclone.",
+					"entries": [
+						"As an Action, you create wings of a phoenix and spin around, possibly burning those around you. Every creature of your choice within 10 feet of you must make a Dexterity saving throw. On a failed save, it takes {@damage 1d6} fire damage. On a successful save, it takes half as much damage. The damage increases to {@damage 2d6} at level 5, {@damage 3d6} at level 11, and {@damage 4d6} at level 17. Once you use this ability, you can't use it again until you finish a Long Rest unless you suffer 1 point of Exhaustion."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eikon Priming.",
+					"entries": [
+						"Upon reaching level 11, you can use an Action to summon the Eikon through your body, gaining the appearance of the Phoenix. For 10 minutes, your size becomes Gargantuan, you gain immunity to fire damage, you gain a flying speed of 90 feet, and you learn the following spells, which you can cast without expending material components. Choose Intelligence, Wisdom, or Charisma as your spellcasting ability when you first unlock this feature:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "At will:",
+									"entry": "{@spell Fire Bolt}, {@spell Produce Flame}"
+								},
+								{
+									"type": "item",
+									"name": "3/Day:",
+									"entry": "{@spell Fireball}, {@spell Flaming Sphere}, {@spell Hellish Rebuke}, {@spell Scorching Ray}"
+								},
+								{
+									"type": "item",
+									"name": "1/Day each:",
+									"entry": "{@spell Fire Shield}, {@spell Flame Strike}, {@spell Wall of Fire}"
+								}
+							]
+						},
+						"Once you use this ability, you can't use it again until you finish a Long Rest unless you suffer 1 point of Exhaustion to activate it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Heatwave.",
+					"entries": [
+						"While you have your Eikon Primed, you can use a Reaction when a creature within 500 feet of you makes a Ranged Attack against you to cancel that Ranged Attack and immediately deal {@damage 3d8} fire damage to it as you release a lance of fire from your mouth that melts the attack. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Flames of Rebirth.",
+					"entries": [
+						"While you have your Eikon Primed, you can use an Action to create a pillar of fire 30 feet wide and 100 feet tall within 100 feet of you. This pillar lasts for 1 minute, but you must concentrate on it as if concentrating on a spell. When a hostile creature first enters or ends its turn in the area, it must make a Constitution saving throw. On a failed save, it takes {@damage 6d6} fire damage. On a successful save, it takes half as much damage. When a friendly creature first enters or ends its turn in the area, it regains {@dice 4d6} Hit Points. Once you use this ability, you can't use it again until you finish a Long Rest unless you suffer 1 point of Exhaustion."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dominant of Shiva",
+			"source": "TheUndertomesPublicLibrary",
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 18
+						}
+					],
+					"other": "No other Dominant feat"
+				}
+			],
+			"entries": [
+				"{@i \"The empress of ice, wreathed in frost. She is known for her signature move, 'Diamond Dust,' which freezes everything in an instant.\"}",
+				"You were born with or have gained the ability to control an Eikon of Ice. If any abilities in this feat require a Saving Throw, the DC equals your spell save DC or 8 + your Dexterity modifier + your proficiency bonus. You gain the following abilities:",
+				{
+					"type": "entries",
+					"name": "Cold Snap.",
+					"entries": [
+						"As a Reaction when you're hit by a Melee Attack, you manifest a cape of ice and slide away from your attacker. You take half the damage you would normally take from the attack and can move up to half your movement speed without provoking Opportunity Attacks. Additionally, the creature that attacked you must succeed on a Constitution saving throw or become {@condition Stunned} until the start of its next turn. Once you use this ability, you can't use it again until you finish a Long Rest unless you suffer 1 point of Exhaustion."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mesmerize.",
+					"entries": [
+						"As an Action, you manifest several ice crystals around you and launch them at a creature that you can see within 60 feet of you, forcing it to make a Dexterity saving throw. On a failed save, it takes {@damage 1d10} cold damage and, if its size is Medium or smaller, is pulled 10 feet toward you. On a successful save, it takes half as much damage and suffers no additional effects. The damage increases to {@damage 2d10} at level 5, {@damage 3d10} at level 11, and {@damage 4d10} at level 17. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rime.",
+					"entries": [
+						"As an Action, you conjure a 5-foot-tall ice crystal at a point that you can see within 30 feet of you, and any creature standing on that point must make a Dexterity saving throw. On a failed save, it takes {@damage 1d8} cold damage and becomes stuck inside the ice crystal. On a successful save, it takes half as much damage and isn't trapped inside the ice crystal. The ice crystal has Hit Points equal to 5 times your level, immunity to cold, poison, and psychic damage, and vulnerability to fire damage. If it isn't destroyed before then, it melts within 24 hours. Any creature that ends its turn within 10 feet of the ice crystal immediately takes {@damage 1d6} cold damage from the frigid air. The initial damage increases to {@damage 2d8} at level 5, {@damage 3d8} at level 11, and {@damage 4d8} at level 17. Once you use this ability, you can't use it again until you finish a Long Rest unless you suffer 1 point of Exhaustion."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eikon Priming.",
+					"entries": [
+						"Upon reaching level 11, you can use an Action to summon the Eikon through your body, gaining the appearance of Shiva. For 10 minutes, your size becomes Gargantuan, you gain immunity to cold damage, and you learn the following spells, which you can cast without expending material components. Choose Intelligence, Wisdom, or Charisma as your spellcasting ability when you first unlock this feature:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "At will:",
+									"entry": "{@spell Ray of Frost}"
+								},
+								{
+									"type": "item",
+									"name": "3/Day:",
+									"entry": "{@spell Armor of Agathys}, {@spell Elemental Weapon}, {@spell Hunger of Hadar}, {@spell Ice Knife|XGE}"
+								},
+								{
+									"type": "item",
+									"name": "1/Day each:",
+									"entry": "{@spell Cone of Cold}, {@spell Fire Shield}, {@spell Ice Storm}, {@spell Otiluke's Freezing Sphere}, {@spell Wall of Ice}"
+								}
+							]
+						},
+						"Once you use this ability, you can't use it again until you finish a Long Rest unless you suffer 1 point of Exhaustion to activate it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ice Age.",
+					"entries": [
+						"While you have your Eikon Primed, you can use an Action to form a massive tidal wave of ice that sweeps across the battlefield. You create a 60-foot horizontal line within 40 feet of you. Any creature within that line must make a Dexterity saving throw. On a failed save, it takes {@damage 8d6} cold damage and is pushed back 15 feet. On a successful save, it takes half as much damage and suffers no additional effects. However, you may instead choose to charge your Ice Age for 1 turn, using an Action to do so. On your next turn, you may use another Action to use this ability, but it instead deals {@damage 20d6} cold damage. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Diamond Dust.",
+					"entries": [
+						"While you have your Eikon Primed, you can use an Action to change the weather within 1 mile of you to a powerful blizzard for 1 minute. Any creature that starts its turn within this blizzard must succeed on a Constitution saving throw or take {@damage 1d12} cold damage. For every consecutive turn that a creature fails this saving throw, the number of damage dice increases by one. If you suffer 1 point of Exhaustion, the blizzard may last 10 minutes instead. It lasts 1 hour for 3 points of Exhaustion and an entire day for 5 points of Exhaustion. Once you use this ability, you can't use it again until you finish a Long Rest."
+					]
+				}
 			]
 		}
 	]
