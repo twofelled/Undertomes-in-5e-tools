@@ -7,7 +7,7 @@
 				"abbreviation": "TUC:D11",
 				"full": "District 11's Travel Brochure - Brewathon #1",
 				"url": "https://www.patreon.com/TheUndertomes/posts/brewathon-1-11s-165201066",
-				"version": "1.2.1",
+				"version": "1.2.2",
 				"authors": ["The Undertomes' Community"],
 				"convertedBy": ["Twofell", "Bishop"],
 				"color": "69d20c",
@@ -22,7 +22,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785355200,
-		"dateLastModified": 1786584000
+		"dateLastModified": 1787593576
 	},
 	"item": [
 		{
@@ -33,7 +33,7 @@
 			"entries": [
 				{
 					"type": "quote",
-					"entries": ["Created by #PhyrrhicRed."]
+					"entries": ["Created by #PyrrhicRed."]
 				},
 				"A creature attuned to this object has their carrying capacity treated as 20 times greater than it would be without being attuned.",
 				"On melee weapon attacks using Strength, the creature gains a +1 to damage for every 20lbs it is carrying, and additionally, for every 100lbs the creature carries, it gains a +1 to hit. The additional damage is of the same type as the weapon used."
@@ -136,17 +136,16 @@
 			"name": "Helapoiesis Bullet",
 			"source": "UndertomesBrewathon1",
 			"wondrous": true,
-			"rarity": "artifact",
+			"rarity": "very rare",
 			"entries": [
 				{
 					"type": "quote",
-					"entries": ["Created by #PhyrrhicRed."]
+					"entries": ["Created by #PyrrhicRed."]
 				},
 				"K Corp.'s Singularity, condensed to its most potent form, a single special bullet that is applied to one's heart.",
 				"This object can be built into a melee weapon over the course of a short rest by somebody proficient with smith's tools. The first time the person holding this item would drop to 0 hit points as a result of taking damage from a melee weapon or spell attack, they may instead choose to immediately heal half of their maximum hit points, and may spend an amount of hit die equal to their proficiency bonus to heal the total of the roll, as the bullet automatically fires into their heart.",
 				"As a result of the fluid still being within the creature's bloodstream, they are resistant to all damage until the end of the round, as it rapidly regenerates their wounds as they form."
-			],
-			"reqAttune": true
+			]
 		},
 		{
 			"name": "Helmet of Head Chicken",
@@ -1328,11 +1327,11 @@
 						{
 							"type": "list",
 							"items": [
-								"{@item Bongy Plush|UndertomesBrewathon1} — Created by #PhyrrhicRed.",
+								"{@item Bongy Plush|UndertomesBrewathon1} — Created by #PyrrhicRed.",
 								"{@item Bottle of Terrible Tears|UndertomesBrewathon1} — Created by #Frost.",
 								"{@item Conceited Doll's Blood-Soaked Talisman|UndertomesBrewathon1} — Created by #Akari.",
 								"{@item Furor beneath Brass|UndertomesBrewathon1} — Created by #Twofell.",
-								"{@item Helapoiesis Bullet|UndertomesBrewathon1} — Created by #PhyrrhicRed.",
+								"{@item Helapoiesis Bullet|UndertomesBrewathon1} — Created by #PyrrhicRed.",
 								"{@item Helmet of Head Chicken|UndertomesBrewathon1} — Created by #Frost.",
 								"{@item Matador's Mantle|UndertomesBrewathon1} — Created by #Twofell.",
 								"{@item Shielded Sorrows|UndertomesBrewathon1} — Created by #Oixie."
