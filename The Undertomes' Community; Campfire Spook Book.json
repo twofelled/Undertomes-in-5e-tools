@@ -9,13 +9,13 @@
 				"url": "https://www.patreon.com/TheUndertomes/posts/brewathon-2-book-166526637",
 				"authors": ["The Undertomes' Community"],
 				"convertedBy": ["Twofell", "Bishop"],
-				"version": "1.1.0",
+				"version": "1.1.1",
 				"color": "B83A46",
 				"colorNight": "F47A84"
 			}
 		],
 		"dateAdded": 1786580000,
-		"dateLastModified": 1786662993,
+		"dateLastModified": 1787980429,
 		"edition": "classic",
 		"optionalFeatureTypes": {
 			"WP": "Wondrous Pet",
@@ -1286,6 +1286,10 @@
 			],
 			"creatureTypes": ["aberration", "monstrosity"],
 			"entries": [
+				{
+					"type": "quote",
+					"entries": ["Created by #Akari."]
+				},
 				"{@b Age.} As well, an animated portrait, you don't typically age as a human or other species would. You do, however, need to make sure you don't get dirty or tampered with in order to preserve your canvas. If either of these occur, you can make a DC 12 {@skill Medicine|PHB} check while out of combat to clean and/or repair your canvas body.",
 				"{@b Alignment.} Self-Portraits are very unique, given that they reflect the innermost self of their creators; thus, typically they share an Alignment with their creator.",
 				"{@b Splatter Paint.} You learn the {@spell Magic Missile|PHB} spell and can cast it at 1st-level a number of times equal to your proficiency bonus without spending a spell slot. When you cast it this way, paint globs off of your body and erupts towards a target as flavor for the spell. Roll a {@dice d10} as per the table to the right, changing the spell's damage type depending on the result:",

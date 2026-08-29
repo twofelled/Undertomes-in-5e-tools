@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "0.9.2",
+				"version": "0.9.3",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -23,7 +23,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1787365000
+		"dateLastModified": 1787980429
 	},
 	"book": [
 		{
@@ -7382,6 +7382,7 @@
 			"subclassFeatures": [
 				"Bloody Barber Specialization|Artificer|TCE|Bloody Barber|TheUndertomesProjectMoon|3",
 				"Sewing Marcation|Artificer|TCE|Bloody Barber|TheUndertomesProjectMoon|5",
+				"Magical Tailoring|Artificer|TCE|Bloody Barber|TheUndertomesProjectMoon|9",
 				"Corteous Dress Making|Artificer|TCE|Bloody Barber|TheUndertomesProjectMoon|15"
 			]
 		},
@@ -16146,6 +16147,37 @@
 					]
 				},
 				"Designer's Note. You gain the ability to use the abilities which refer to Flash of Genius beginning at 7th level, where you would gain it. Before that, you can use this ability once per long rest."
+			]
+		},
+		{
+			"name": "Magical Tailoring",
+			"source": "TheUndertomesProjectMoon",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Bloody Barber",
+			"subclassSource": "TheUndertomesProjectMoon",
+			"level": 9,
+			"entries": [
+				"By now, you've learned more than one great trick for your needlework, and you know how to put that to practice along other tiny inventions.",
+				"Upon reaching 9th level, you may, with your {@item weaver's tools|PHB|Weaver's Tools} in hand, imbue any piece of clothin with the following traits:",
+				{
+					"type": "list",
+					"items": [
+						"The piece of clothing may be touched by its wearer through a bonus action to start or stop emitting a bright light for 15-feet and a dim light for an additional 15-feet.",
+						"The piece of clothing may play a song without lyrics when tapped, which can be heard for up to 30-feet away. This song may be up to three minutes long.",
+						"At its wearer's will, this piece of clothing may start billowing as if put against a light breeze, become moist as if it entered a body of water or dry up instantly.",
+						"You may choose static effects to appear within the piece of clothing, this effect can be picture, up to 40 words of text, lines and shapes, or a mixture of these elements, as you like. You may also choose to make small effects appear around the piece of clothing, such as sparks of lightning or a constant dripping of an illusory liquid."
+					]
+				},
+				"Additionally, when you do this during a short or long rest, you may further enchant this piece of clothing, with the limit that you can only enchant clithing in this way for a number of times equal to half your Proficiency Bonus, rounded down. You may choose one enchantment presented below for each piece of clothing:",
+				{
+					"type": "list",
+					"items": [
+						"You may grant the wearer five of their hit dice as temporary Hit Points that last until reduced or until your next short or long rest. When taking damage while there are Temporary Hit Points remaining, the wearer is considered to have vulnerability against fire damage as it burns away the clothingm, but any damage remaining after the clothing is destroyed is negated.",
+						"You may grant the wearer the traits of one of your Hardblood Accesories"
+					]
+				},
+				"When a piece of clothing you've created or enchanted through Magical Tailoring or {@subclassFeature Fashionista's Supplies|artificer|TCE|Bloody Barber|TheUndertomesProjectMoon|3|TheUndertomesProjectMoon} is destroyed, you gain a +1 bonus modifier to hit and to damage against the creature who caused its destruction until the end of your next turn, as rage fills you for such diselegance."
 			]
 		},
 		{
