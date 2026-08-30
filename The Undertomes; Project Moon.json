@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "1.0.0",
+				"version": "1.0.1",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -23,7 +23,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1788070000
+		"dateLastModified": 1788125782
 	},
 	"book": [
 		{
@@ -5672,7 +5672,7 @@
 								{
 									"type": "list",
 									"items": [
-										"{@itemProperty Hemorrhaging|TheUndertomesGeneralRules}"
+										"{@itemProperty HEM|TheUndertomesGeneralRules|Hemorrhaging}"
 									]
 								}
 							]
@@ -24606,7 +24606,7 @@
 			"entries": [
 				"An overwhelmingly sturdy boombox that has been attached to a set of golden chains. Its beats are solid, ground-breaking and positively skull-crushing.",
 				"Bards are considered Proficient with this weapon.",
-				"While used by a Bard, this weapon counts as a musical instrument that may be used for Spellcasting and {@skill Performance} checks. Additionally under the same condition this weapon gains the Splash (1d6) property and may be used to deal thunder damage instead of bludgeoning, as a Bard best knows how to lay a beatdown with sound alone."
+				"While used by a Bard, this weapon counts as a musical instrument that may be used for Spellcasting and {@skill Performance} checks. Additionally under the same condition this weapon gains the {@itemProperty SPL|TheUndertomesGeneralRules|Splash} ({@damage 1d6}) property and may be used to deal thunder damage instead of bludgeoning, as a Bard best knows how to lay a beatdown with sound alone."
 			],
 			"source": "TheUndertomesProjectMoon"
 		},
@@ -24812,7 +24812,8 @@
 			"entries": [
 				"A powerful weapon made to take targets down from afar, possessing a bolt-action mechanism to fire rounds at unparalleled speed and force."
 			],
-			"source": "TheUndertomesProjectMoon"
+			"source": "TheUndertomesProjectMoon",
+			"reload": 1
 		},
 		{
 			"name": "Heavy Gauntlet",
@@ -24850,7 +24851,8 @@
 			"entries": [
 				"A steel-made revolver capable of causing heavy damage, but remaining unwieldy due to it's unwieldy kickback."
 			],
-			"source": "TheUndertomesProjectMoon"
+			"source": "TheUndertomesProjectMoon",
+			"reload": 6
 		},
 		{
 			"name": "Single-Stroke Katana",
@@ -25096,10 +25098,20 @@
 			"weaponCategory": "martial",
 			"bonusWeapon": "+1",
 			"entries": [
-				"attunement) 1 lb. (435 kg) {@dice 1d6} piercing - reach This spear seems to always change its shape slightly when looked at for a second time, as it still seeks its form much after it's left a forge. When attuned to, its wielder can feel the spear always trying to explore the back of its thoughts, so it may finally find what it wants to be.",
-				"While unformed, its black surface nearly seems like a child's scribbles, with crude little drawings detailing it. You have a +1 bonus to attack and damage rolls made with this magic weapon. Moment of Clarity.",
-				"While attuned, if either your Intelligence or Wisdom scores are higher than 14, you may sometimes reach a special synchrony with the spear. Whenever you roll an 18 or higher to hit, before any modifiers, the spear coalesces into a more tangible form, becoming smoother and more well finished. It remains like that for a minute, and for the duration it deals {@damage 1d8} piercing damage and gives a +2 bonus to hit and to damage rolls instead of a +1."
-			]
+				"This spear seems to always change its shape slightly when looked at for a second time, as it still seeks its form much after it's left a forge. When attuned to, its wielder can feel the spear always trying to explore the back of its thoughts, so it may finally find what it wants to be.",
+				"While unformed, its black surface nearly seems like a child's scribbles, with crude little drawings detailing it. You have a +1 bonus to attack and damage rolls made with this magic weapon.",
+				{
+					"type": "entries",
+					"name": "Moment of Clarity.",
+					"entries": [
+						"While attuned, if either your Intelligence or Wisdom scores are higher than 14, you may sometimes reach a special synchrony with the spear. Whenever you roll an 18 or higher to hit, before any modifiers, the spear coalesces into a more tangible form, becoming smoother and more well finished. It remains like that for a minute, and for the duration it deals {@damage 1d8} piercing damage and gives a +2 bonus to hit and to damage rolls instead of a +1."
+					]
+				}
+			],
+			"weight": 1,
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"property": ["R"]
 		},
 		{
 			"name": "Lureberries",
@@ -25140,11 +25152,28 @@
 			"type": "M",
 			"weaponCategory": "martial",
 			"entries": [
-				"attunement) 1 lb. (435 kg) {@dice 1d12} thunder - versatile(d12),reach A massive silver bell held at the end of a quarterstaff. Its sound, when played near a creature can be made to reverberade so loud it hurts.",
-				"Rumours say that this bell was crafted by a lone druid who'd tend to the animals every single day, playing the bell twice when the critters grew old and perished. After centuries of this, the souls of the animals laid to rest grew to miss their old friend, and the ringing of that peaceful bell, still holding on for the chance another creature could come and play it for them. Don't Leave Us.",
-				"When you become attuned to this weapon, the spirits of various critters hold onto you for their comfort. If you attempt to unattune from this weapon, you must pass a DC 16 Wisdom saving throw. On a failure, you take 2 points of exhaustion as you feel a shortness of breath overtake you, as if you were being clung to tightly.",
-				"We'll Help. If you would be reduced below one hit point, you instead mantain one hit point until the end of your next turn, as the spirits of wildlife keep you wide awake for a last chance of success, lest they are left alone because of the claws of death once more."
-			]
+				"A massive silver bell held at the end of a quarterstaff. Its sound, when played near a creature can be made to reverberade so loud it hurts.",
+				"Rumours say that this bell was crafted by a lone druid who'd tend to the animals every single day, playing the bell twice when the critters grew old and perished. After centuries of this, the souls of the animals laid to rest grew to miss their old friend, and the ringing of that peaceful bell, still holding on for the chance another creature could come and play it for them.",
+				{
+					"type": "entries",
+					"name": "Don't Leave Us.",
+					"entries": [
+						"When you become attuned to this weapon, the spirits of various critters hold onto you for their comfort. If you attempt to unattune from this weapon, you must pass a DC 16 Wisdom saving throw. On a failure, you take 2 points of exhaustion as you feel a shortness of breath overtake you, as if you were being clung to tightly."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "We'll Help.",
+					"entries": [
+						"If you would be reduced below one hit point, you instead mantain one hit point until the end of your next turn, as the spirits of wildlife keep you wide awake for a last chance of success, lest they are left alone because of the claws of death once more."
+					]
+				}
+			],
+			"weight": 1,
+			"dmg1": "1d12",
+			"dmg2": "1d12",
+			"dmgType": "T",
+			"property": ["V", "R"]
 		},
 		{
 			"name": "The Red Axe",
@@ -25157,11 +25186,21 @@
 			"dmgType": "S",
 			"weight": 5,
 			"entries": [
-				"versatile(d10), Hemorrhaging(15-20) A true lumberjack doesn't mind how tired he is, nor what kind of wood he cuts into. There will never be greater elation than feeling the warmth of freshly cut sap dig into their fingernails as they once again fell another, nor when they hear the logs roll over. This handaxe reeks of blood yet it looks incredibly well preserved, almost hypnotic.",
-				"When you attune to this weapon, you cannot unattune from it, save for the effects of the {@spell remove curse|PHB|Remove Curse} spell. Sanguine Desire. While attuned to this weapon, all your senses feel heightened, mere passing moments of joy turn into elation, small annoyances into heavy grievances and so on.",
-				"As such, you gain advantage on any {@skill Performance} checks, as they become much more genuine, yet your clouded judgement has you suffer disadvantage on any {@skill Insight} checks. Additionally, there is a bloodlust that instills in you, feeling completely natural. When you reduce a creature below 1 hit point during combat, this weapon gains a cumulative +1 bonus to hit and to its damage rolls, to a maximum of +3.",
-				"You cannot deal non-lethal damage with this weapon, nor use any other weapon to attack while attuned to the Red Axe. Additionally, in the same turn when you kill a creature, you must spend all your remaining attacks to slash at the body, all to satiate your bloodlust."
-			]
+				"{@itemProperty HEM|TheUndertomesGeneralRules|Hemorrhaging} (15-20)",
+				"A true lumberjack doesn't mind how tired he is, nor what kind of wood he cuts into. There will never be greater elation than feeling the warmth of freshly cut sap dig into their fingernails as they once again fell another, nor when they hear the logs roll over. This handaxe reeks of blood yet it looks incredibly well preserved, almost hypnotic.",
+				"When you attune to this weapon, you cannot unattune from it, save for the effects of the {@spell remove curse|PHB|Remove Curse} spell.",
+				{
+					"type": "entries",
+					"name": "Sanguine Desire.",
+					"entries": [
+						"While attuned to this weapon, all your senses feel heightened, mere passing moments of joy turn into elation, small annoyances into heavy grievances and so on.",
+						"As such, you gain advantage on any {@skill Performance} checks, as they become much more genuine, yet your clouded judgement has you suffer disadvantage on any {@skill Insight} checks. Additionally, there is a bloodlust that instills in you, feeling completely natural. When you reduce a creature below 1 hit point during combat, this weapon gains a cumulative +1 bonus to hit and to its damage rolls, to a maximum of +3.",
+						"You cannot deal non-lethal damage with this weapon, nor use any other weapon to attack while attuned to the Red Axe. Additionally, in the same turn when you kill a creature, you must spend all your remaining attacks to slash at the body, all to satiate your bloodlust."
+					]
+				}
+			],
+			"dmg2": "1d10",
+			"property": ["V", "HEM|TheUndertomesGeneralRules"]
 		},
 		{
 			"name": "Flesh Pipe",
@@ -25189,15 +25228,36 @@
 			"weight": 6,
 			"bonusWeapon": "+2",
 			"entries": [
-				"This weapon has the {@itemProperty Hemorrhaging|TheUndertomesGeneralRules} property (18-20).",
-				"A fully metallic guitar featuring a buzzsaw as its base, rendering it useful in the act of both shredding a chord or shredding another creature to bits. Despite being in its lonesome, this guitar always sounds as if it were plugged to an amplifier. While attuned, if you are proficient with any string instruments, you are considered proficient with the Saw Guitar.",
-				"Additionally, you may choose for Charisma to be your main modifier using this weapon instead of Strength, it also counts as a bardic focus. You have a +2 bonus to attack and damage rolls made with this magic weapon, and it may hold up to 8 charges. You may spend them to use the abilities described below.",
-				"Charges are restored by {@dice 1d4+1} at dawn, or by 1 whenever your bardic inspiration is used by another creature. The abilities below have a range of a 30-feet radius with you as its center, and only willing creatures of your choice may be affected unless described as otherwise. Please work harder!You may spend your action and 3 charges to turn your playing into a resolute, low-tone solo, droning in the background of the fight.",
-				"Until the end of your next turn, all willing creatures listening to you feel an urge to push themselves to no end. They suffer a penalty of -2 AC, yet gain a +2 to hit with their attacks. Additionally, you gain a +1 bonus to your own AC per creature affected by this.",
-				"Lets make music! As an action, you may spend 4 charge and start playing a frenetic solo, contagiating any willing creature so they give their maximum. Until the start of your next turn, all creatures affected by this deal a critical hit on one value less, such as a roll of 19 before any modifiers being considered a critical hit.",
-				"Additionally, affected all creatures deal an additional {@dice 1d8} dice of slashing damage. Harmony of Despair. When a friendly creature reduces a creature below one hit point within this weapons range, you may spend 6 charge and use your reaction to start harmonizing the sounds of tearing flesh with your guitar.",
-				"The creature downed automatically takes a hit as its flesh begins to be cut, as if the buzzsaw were on them, and all hostile creatures within reach must pass a Charisma Saving throw against your Spell Save DC or take {@dice 3d8} + your Charisma modifier in psychic damage, as the harmony cuts through their mind. If any creature would be knocked below one hit point by Harmony of Despair, the same creatures must repeat the Saving Throw, taking the same damage on failure. This repeats for a maximum of two times."
-			]
+				"This weapon has the {@itemProperty HEM|TheUndertomesGeneralRules|Hemorrhaging} property (18-20).",
+				"A fully metallic guitar featuring a buzzsaw as its base, rendering it useful in the act of both shredding a chord or shredding another creature to bits. Despite being in its lonesome, this guitar always sounds as if it were plugged to an amplifier.",
+				"While attuned, if you are proficient with any string instruments, you are considered proficient with the Saw Guitar. Additionally, you may choose for Charisma to be your main modifier using this weapon instead of Strength, it also counts as a bardic focus. You have a +2 bonus to attack and damage rolls made with this magic weapon, and it may hold up to 8 charges. You may spend them to use the abilities described below.",
+				"Charges are restored by {@dice 1d4+1} at dawn, or by 1 whenever your bardic inspiration is used by another creature. The abilities below have a range of a 30-feet radius with you as its center, and only willing creatures of your choice may be affected unless described as otherwise.",
+				{
+					"type": "entries",
+					"name": "Please work harder!",
+					"entries": [
+						"You may spend your action and 3 charges to turn your playing into a resolute, low-tone solo, droning in the background of the fight.",
+						"Until the end of your next turn, all willing creatures listening to you feel an urge to push themselves to no end. They suffer a penalty of -2 AC, yet gain a +2 to hit with their attacks. Additionally, you gain a +1 bonus to your own AC per creature affected by this."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lets make music!",
+					"entries": [
+						"As an action, you may spend 4 charge and start playing a frenetic solo, contagiating any willing creature so they give their maximum. Until the start of your next turn, all creatures affected by this deal a critical hit on one value less, such as a roll of 19 before any modifiers being considered a critical hit.",
+						"Additionally, affected all creatures deal an additional {@dice 1d8} dice of slashing damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Harmony of Despair.",
+					"entries": [
+						"When a friendly creature reduces a creature below one hit point within this weapons range, you may spend 6 charge and use your reaction to start harmonizing the sounds of tearing flesh with your guitar.",
+						"The creature downed automatically takes a hit as its flesh begins to be cut, as if the buzzsaw were on them, and all hostile creatures within reach must pass a Charisma Saving throw against your Spell Save DC or take {@dice 3d8} + your Charisma modifier in psychic damage, as the harmony cuts through their mind. If any creature would be knocked below one hit point by Harmony of Despair, the same creatures must repeat the Saving Throw, taking the same damage on failure. This repeats for a maximum of two times."
+					]
+				}
+			],
+			"property": ["HEM|TheUndertomesGeneralRules"]
 		},
 		{
 			"name": "Manatek Charger",
@@ -25219,9 +25279,9 @@
 			"dmg1": "2d4",
 			"dmgType": "S",
 			"weight": 6,
-			"property": ["R"],
+			"property": ["R", "2H"],
 			"entries": [
-				"handed This polearm ending in a circular shape with a smiling face drawn on it has spikes protuding from its head, as a saw lays concealed inside. As a reaction taken when you deal damage to a creature using this weapon, you may turn on the grinder, forcing the creature to pass a Constitution Saving Throw whose DC is equal to your 8 + Strength modifier + your Proficiency Bonus or take an addiitonal {@damage 4d4} slashing damage."
+				"This polearm ending in a circular shape with a smiling face drawn on it has spikes protuding from its head, as a saw lays concealed inside. As a reaction taken when you deal damage to a creature using this weapon, you may turn on the grinder, forcing the creature to pass a Constitution Saving Throw whose DC is equal to your 8 + Strength modifier + your Proficiency Bonus or take an addiitonal {@damage 4d4} slashing damage."
 			]
 		},
 		{
@@ -25262,11 +25322,39 @@
 			"range": "60/90",
 			"entries": [
 				"An ebony colored pistol with fancy white engravings at its sides. Holding it gives a sense of determination to follow ones duty, yet when held alone you can sense a feeling of longing for its other wing. This Weapon has its own ammunition that is created magically when you reload, which you can do as a bonus action.",
-				"Reloading this way grants you 12 bullets for both Departure and Homecoming. You have a +2 to attack and damage rolls using this weapon, in addition to the following: TwinWings. This weapon's properties shown below are only active if you are attuned to both Departure in the Shade and Pale Homecoming.",
-				"In addition to those abilities, while attuned to both any damage you deal with this weapon also counts as radiant damage for the purposes of overcoming resistance and vulnerability. Absorbing the Light. The damage inflicted by this weapon fuels souls to keep on fighting for peace.",
-				"Every time you deal damage with it, this weapon and Pale Homecoming gain 1 collective charge. Upon delivering a critical hit against a hostile creature, you gain 2 charges instead. All charges . dissipate at the end of combat or after one minute.",
-				"You start combat without charges. Calm in the Shade. When you spend your bonus action with this weapon, you may spend a number of charges to heal yourself.",
-				"You're healed by {@dice 1d8+1} per 2 charges spent, to a maximum of 8 charges spent. Gravekeeper's Duty. As part of your attack action, you may trade one of your attacks to cast the {@spell spare the dying|PHB|Spare the Dying} spell without expending a spell slot by using 2 charges."
+				"Reloading this way grants you 12 bullets for both Departure and Homecoming. You have a +2 to attack and damage rolls using this weapon, in addition to the following:",
+				{
+					"type": "entries",
+					"name": "TwinWings.",
+					"entries": [
+						"This weapon's properties shown below are only active if you are attuned to both Departure in the Shade and Pale Homecoming.",
+						"In addition to those abilities, while attuned to both any damage you deal with this weapon also counts as radiant damage for the purposes of overcoming resistance and vulnerability."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Absorbing the Light.",
+					"entries": [
+						"The damage inflicted by this weapon fuels souls to keep on fighting for peace.",
+						"Every time you deal damage with it, this weapon and Pale Homecoming gain 1 collective charge. Upon delivering a critical hit against a hostile creature, you gain 2 charges instead. All charges dissipate at the end of combat or after one minute.",
+						"You start combat without charges."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Calm in the Shade.",
+					"entries": [
+						"When you spend your bonus action with this weapon, you may spend a number of charges to heal yourself.",
+						"You're healed by {@dice 1d8+1} per 2 charges spent, to a maximum of 8 charges spent."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gravekeeper's Duty.",
+					"entries": [
+						"As part of your attack action, you may trade one of your attacks to cast the {@spell spare the dying|PHB|Spare the Dying} spell without expending a spell slot by using 2 charges."
+					]
+				}
 			]
 		},
 		{
@@ -25279,13 +25367,33 @@
 			"dmg1": "1d8",
 			"dmgType": "R",
 			"weight": 5,
-			"property": ["A"],
+			"property": ["A", "S"],
 			"range": "60/90",
 			"entries": [
-				"special. An ivory colored pistol with ornate black engravings at its sides. Holding it makes you feel at peace with yourself, yet when held alone the weapon also emits a sense of loneliness.",
-				"This Weapon has its own ammunition that is created magically when you reload, which you can do as a bonus action. Reloading this way grants you 12 bullets for both Homecoming and Departrure. You have a +2 to attack and damage rolls using this weapon, in addition to the following: TwinWings.",
-				"This weapon's properties shown below are only active if you are attuned to both Pale Homecoming and Departure in the Shade. In addition to those abilities, while attuned to both any damage you deal with this weapon also counts as necrotic damage for the purposes of overcoming resistance and vulnerability. {@condition Shimmering|TheUndertomesProjectMoon} Light. As part of your Attack action, you may spend charges to switch one of your attacks to instead shoot a friendly creature within reach.",
-				"This shot does not deal damage, instead healing them for an amount of {@dice 1d6+1} for each 2 charges spent. Fear Not Death. As a reaction to when a creature within 30-feet of you becomes {@condition Frightened} or {@condition Charmed}, you may spend 4 charges and 6 ammunition to offload a hail of magical bullets that restore their mental state, ending the condition instantly."
+				"An ivory colored pistol with ornate black engravings at its sides. Holding it makes you feel at peace with yourself, yet when held alone the weapon also emits a sense of loneliness.",
+				"This Weapon has its own ammunition that is created magically when you reload, which you can do as a bonus action. Reloading this way grants you 12 bullets for both Homecoming and Departrure. You have a +2 to attack and damage rolls using this weapon, in addition to the following:",
+				{
+					"type": "entries",
+					"name": "TwinWings.",
+					"entries": [
+						"This weapon's properties shown below are only active if you are attuned to both Pale Homecoming and Departure in the Shade. In addition to those abilities, while attuned to both any damage you deal with this weapon also counts as necrotic damage for the purposes of overcoming resistance and vulnerability."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shimmering Light.",
+					"entries": [
+						"As part of your Attack action, you may spend charges to switch one of your attacks to instead shoot a friendly creature within reach.",
+						"This shot does not deal damage, instead healing them for an amount of {@dice 1d6+1} for each 2 charges spent."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fear Not Death.",
+					"entries": [
+						"As a reaction to when a creature within 30-feet of you becomes {@condition Frightened} or {@condition Charmed}, you may spend 4 charges and 6 ammunition to offload a hail of magical bullets that restore their mental state, ending the condition instantly."
+					]
+				}
 			]
 		},
 		{
@@ -25318,17 +25426,36 @@
 			"dmg1": "4d8",
 			"dmgType": "O",
 			"weight": 6,
-			"property": ["A"],
+			"property": ["A", "LD"],
 			"range": "30/120",
 			"bonusWeapon": "+3",
 			"entries": [
-				"loading. This rifle inlaid with blue accents reeks of faint traces of contractual magic. When you would be about to attune to this weapon, it speaks to you inside your head as if possessed, explaining its curse and asking if you do want to use its bullets.",
-				"If you say no, you become unable to attune to it for the next 24 hours, if you say yes, you become attuned to it. It does not ever speak again, yet those who plead for it to go away say that they can hear the rifle laughing. You have a +3 bonus to attack and damage rolls made with this magic weapon, and it also has the following effects: Magic Bullets.",
-				"When you shoot with this weapon, a magic portal opens at its barrels end, turning a bullet into a line of destruction. When you target a creature, all other creatures in a line from it to you are caught in the bullets wake. When you roll to hit, your roll counts as if you were attacking all creatures in this path, dealing the weapons damage if it would hit their AC.",
-				"Devil's Six. When you hit another creature with this weapon, its critical hit threshold is reduced by 5. Number of Divine Deliverance.",
-				"Every time you shoot with this weapon, wether you hit or miss, add a +1 to a counter. After this counter reaches 7, the counter resets and Seven Bullets binds your fingers and arms in tight chains, spectral in their appearence and freezing to the touch. They manipulate you to take a shot aimed at your closest loved one, such as a spouse, best friend and so on.",
-				"This shot ignores range, instead automatically hitting any creature fitting that criteria as long as they are within a 3-mile radius. If there would be no creature that counts for this available in the area or otherwise, Seven Bullets targets you instead. The damage for this attack is doubled."
-			]
+				"This rifle inlaid with blue accents reeks of faint traces of contractual magic. When you would be about to attune to this weapon, it speaks to you inside your head as if possessed, explaining its curse and asking if you do want to use its bullets.",
+				"If you say no, you become unable to attune to it for the next 24 hours, if you say yes, you become attuned to it. It does not ever speak again, yet those who plead for it to go away say that they can hear the rifle laughing. You have a +3 bonus to attack and damage rolls made with this magic weapon, and it also has the following effects:",
+				{
+					"type": "entries",
+					"name": "Magic Bullets.",
+					"entries": [
+						"When you shoot with this weapon, a magic portal opens at its barrels end, turning a bullet into a line of destruction. When you target a creature, all other creatures in a line from it to you are caught in the bullets wake. When you roll to hit, your roll counts as if you were attacking all creatures in this path, dealing the weapons damage if it would hit their AC."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Devil's Six.",
+					"entries": [
+						"When you hit another creature with this weapon, its critical hit threshold is reduced by 5."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Number of Divine Deliverance.",
+					"entries": [
+						"Every time you shoot with this weapon, wether you hit or miss, add a +1 to a counter. After this counter reaches 7, the counter resets and Seven Bullets binds your fingers and arms in tight chains, spectral in their appearence and freezing to the touch. They manipulate you to take a shot aimed at your closest loved one, such as a spouse, best friend and so on.",
+						"This shot ignores range, instead automatically hitting any creature fitting that criteria as long as they are within a 3-mile radius. If there would be no creature that counts for this available in the area or otherwise, Seven Bullets targets you instead. The damage for this attack is doubled."
+					]
+				}
+			],
+			"reqAttune": true
 		},
 		{
 			"name": "Forgotten Saint's Spear",
@@ -25342,7 +25469,7 @@
 			"property": ["R", "2H"],
 			"bonusWeapon": "+1",
 			"entries": [
-				"This spear is still warm to the touch, despite being made of what seems to be congealed blood and dry sinew. When it pierces another creature, it drinks blood as if that would bring back the Old God it used to be wielded in service of. You have a +1 bonus to attack and damage rolls made with this magic weapon, and when you hit a creature using this weapon and its roll before modifiers is within the range of 17-20, the target suffers a stack of {@condition Bleed|TheUndertomesGeneralRules} {@condition Bleed|TheUndertomesGeneralRules} that cannot be removed unless the creature takes fire damage, as the Spear grows sharp thorns inside their flesh, those being torn off and stuck inside when you reel the spear back."
+				"This spear is still warm to the touch, despite being made of what seems to be congealed blood and dry sinew. When it pierces another creature, it drinks blood as if that would bring back the Old God it used to be wielded in service of. You have a +1 bonus to attack and damage rolls made with this magic weapon, and when you hit a creature using this weapon and its roll before modifiers is within the range of 17-20, the target suffers a stack of {@condition Bleed|TheUndertomesGeneralRules} that cannot be removed unless the creature takes fire damage, as the Spear grows sharp thorns inside their flesh, those being torn off and stuck inside when you reel the spear back."
 			]
 		},
 		{
@@ -25401,8 +25528,8 @@
 			"property": ["H", "2H"],
 			"bonusWeapon": "+1",
 			"entries": [
-				"This sword's blade is a great rectangle of a darkened metal. Its wrapped in several bandages that somehow never shred as its swung around, and can't be dislodged by any means. You have a +1 bonus to attack and damage rolls made with this magic weapon, additioanlly when you hit a creature they gain one stack of Sin Sin until the end of combat.",
-				"When you hit a creature with Sin Sin you gain an additional +1 to your attack and damage modifiers for each 2 stacks of Sin on the creature, to a maximum bonus of +3. If a Creature has 5 or more stacks of Sin, you may, as an action, perform Justice, you perform an attack with advantage against the target, and they take an additional d8 radiant damage per stack of Sin on them, then removing every stack of Sin they had."
+				"This sword's blade is a great rectangle of a darkened metal. Its wrapped in several bandages that somehow never shred as its swung around, and can't be dislodged by any means. You have a +1 bonus to attack and damage rolls made with this magic weapon, additioanlly when you hit a creature they gain one stack of Sin until the end of combat.",
+				"When you hit a creature with Sin you gain an additional +1 to your attack and damage modifiers for each 2 stacks of Sin on the creature, to a maximum bonus of +3. If a Creature has 5 or more stacks of Sin, you may, as an action, perform Justice, you perform an attack with advantage against the target, and they take an additional d8 radiant damage per stack of Sin on them, then removing every stack of Sin they had."
 			]
 		},
 		{
@@ -25424,8 +25551,8 @@
 			"wondrous": true,
 			"entries": [
 				"A pair of a flowing crimson hood, blood-red in its color, and a metalic facemask with grafitti resembling the toothy grin of a predator. When attuned to this item, you feel constantly reminded of your grudges and the monsters that lurk around the world, unpunished. Once per long rest, you may declare a creature your quarry, your thoughts scarcely being able to leave the thought of the creature for the rest of the day.",
-				"You gain disadvantage to Intelligence skill checks unrelated to the creature, their place or region of residence and anything that wouldn't be pertinent to hunting this quarry. This lasts until your next long rest, yet you also gain a +2 to {@skill Perception}, {@skill Investigation} and {@skill Survival} rolls to locate or perceive your quarry, additionally can always know their location if you have inflicted the {@condition Bleed|TheUndertomesGeneralRules} {@condition Bleed|TheUndertomesGeneralRules} condition on them, as you see a red outline of their body if you are within a 300- feet radius of them. You also gain a +2 to hit this creature with weapon attacks, and gain the following bonus action, which you can also take as part of your attack action: Hunter's Advance.",
-				"You lunge at your target with eviscerating strikes, aimed right at their arteries. Until the end of your turn, your attacks deal 1 stack of {@condition Bleed|TheUndertomesGeneralRules} {@condition Bleed|TheUndertomesGeneralRules} on hit. You may use this bonus action a number of times equal to half your proficiency modifier, regaining expended uses on a long rest."
+				"You gain disadvantage to Intelligence skill checks unrelated to the creature, their place or region of residence and anything that wouldn't be pertinent to hunting this quarry. This lasts until your next long rest, yet you also gain a +2 to {@skill Perception}, {@skill Investigation} and {@skill Survival} rolls to locate or perceive your quarry, additionally can always know their location if you have inflicted the {@condition Bleed|TheUndertomesGeneralRules} condition on them, as you see a red outline of their body if you are within a 300- feet radius of them. You also gain a +2 to hit this creature with weapon attacks, and gain the following bonus action, which you can also take as part of your attack action: Hunter's Advance.",
+				"You lunge at your target with eviscerating strikes, aimed right at their arteries. Until the end of your turn, your attacks deal 1 stack of {@condition Bleed|TheUndertomesGeneralRules} on hit. You may use this bonus action a number of times equal to half your proficiency modifier, regaining expended uses on a long rest."
 			]
 		},
 		{
@@ -25437,11 +25564,18 @@
 			"dmg1": "2d4",
 			"dmgType": "S",
 			"weight": 10,
-			"property": ["V"],
+			"property": ["V", "S"],
 			"entries": [
-				"Special This weapon possesses an ingenous design with a retractable blade for ease of porting, possessing both a defensive and offensive mode. It usually sits in its defensive state, granting you a +1 bonus to your AC while wielding it with two hands. Switch.",
-				"As a bonus action during your turn, you may switch this weapons mode, raising it to the air, unlocking its restraints and turning the blade outwardly, forming a great scythe. The weapon loses its original traits and gains the Two- Handed, Heavy and Hemorrhaging(15) properties, dealing {@damage 2d8} slashing damage on a hit. In addition, you deal +2 weapon damage on hits against creatures below their hit point maximum."
-			]
+				"This weapon possesses an ingenous design with a retractable blade for ease of porting, possessing both a defensive and offensive mode. It usually sits in its defensive state, granting you a +1 bonus to your AC while wielding it with two hands.",
+				{
+					"type": "entries",
+					"name": "Switch.",
+					"entries": [
+						"As a bonus action during your turn, you may switch this weapons mode, raising it to the air, unlocking its restraints and turning the blade outwardly, forming a great scythe. The weapon loses its original traits and gains the Two-Handed, Heavy and {@itemProperty HEM|TheUndertomesGeneralRules|Hemorrhaging} (15) properties, dealing {@damage 2d8} slashing damage on a hit. In addition, you deal +2 weapon damage on hits against creatures below their hit point maximum."
+					]
+				}
+			],
+			"dmg2": "2d6"
 		},
 		{
 			"name": "Primal Claws of Scarring",
@@ -25622,7 +25756,7 @@
 			"entries": [
 				"This black, metalic facemask covers the bottom of nose, the mouth and both cheeks in a giant row of teeth that when attuned, fuses to the wearer's face, leading to their stomach when opened. While attuned to this item, you feel a constant peckishness about you, and you may actively indulge in that desire for food with a natural Bite attack you gain. You are proficient with this bite attack, it is considered a melee attack which deals {@damage 1d8} piercing damage and you are healed by half the damage dealt after a hit using it, as you tear off and consume part of a targets flesh.",
 				"You do not heal from undead and construct creatures. As an action during your turn, you may gorge yourself on a dead body of a creature of Medium or Large size within 5- feet of yourself. When you do so, you rapidly consume it as a whole, recovering {@damage 3d8+4} hit points, with a bonus {@damage 2d8+2} hit points if it was a large creature.",
-				"This item has 3 stages of power, and it is natively in its 1st stage. It evolves or dissolves into another stage as the value of SMILE SMILE reaches certain numbers. SMILE is a counter for each dead body consumed using the Mask of Teething Maws, of which you gain 1 point when you consume a dead body, and lose 1 point for each week you go without consuming a dead body.",
+				"This item has 3 stages of power, and it is natively in its 1st stage. It evolves or dissolves into another stage as the value of SMILE reaches certain numbers. SMILE is a counter for each dead body consumed using the Mask of Teething Maws, of which you gain 1 point when you consume a dead body, and lose 1 point for each week you go without consuming a dead body.",
 				"STAGE I. You feel a ravenous hunger at most times, yet can barely push back from the urge to bite down the first thing you can see. If suffer from a negative modifier to all your rolls equal to the amount of negative SMILE points you have, if you haven't eaten.",
 				"STAGE II. Hunger's need turns to desire, gluttonous joy. Your Bite natural attack grows in strength, gaining a +1 to hit and for its damage roll, also now dealing {@damage 2d8} piercing damage.",
 				"Additionally, your movement speed is increased by 10-feet. You reach STAGE II with 4 SMILE points. STAGE III.",
@@ -25665,7 +25799,7 @@
 				"As an action, you point Paradise Lost at a creature within 60-feet of yourself and spend any number of charges to heal them for an amount of d4+1 hit points per charge spent. Minor Miracle of Pain. As an action, you point Paradise Lost at a hostile creature within 60-feet of yourself and spend any number of charges to deal an amount of d6+1 necrotic damage per charge spent.",
 				"Miracle of Semi-Omnipresence. You may spend 5 charges to cast the {@spell Step Through Heaven's Door|TheUndertomesProjectMoon} spell without spending a spell slot. When cast like this, if you do so within the next minute, spend 2 charges to cast the spell again and being teleported to your original space, or the nearest unnocupied space.",
 				"Punishment of the Bad Apple. You may spend 15 charges to cast the {@spell Paradisiac Rapture|TheUndertomesProjectMoon} spell without spending spell slots. Punishment of Debauchery.",
-				"You spend 15 charges to cast the {@spell Fear of God [Cleric Only]|TheUndertomesProjectMoon|Fear of God} {@spell Fear of God [Cleric Only]|TheUndertomesProjectMoon|Fear of God} spell without spending a spell slot. When cast this way, all sources of damage caused by this spell deal an additional two dice of damage. Greater Miracle of God's Love.",
+				"You spend 15 charges to cast the {@spell Fear of God [Cleric Only]|TheUndertomesProjectMoon|Fear of God} spell without spending a spell slot. When cast this way, all sources of damage caused by this spell deal an additional two dice of damage. Greater Miracle of God's Love.",
 				"As a bonus action during your turn, you may spend a number of charges to restore a spell slot whose level equals half the charges spent, to a maximum of spending 10 charges to regain a 5th level spell slot. When you do this, you may choose to regain multiple uses of the same level of spell slot, such as spending 12 charges to regain three 3rd level spell slots. Whenever you do this, you feel your devotion deepen greatly."
 			]
 		},
@@ -25810,10 +25944,17 @@
 			"value": 3000,
 			"dmg1": "1d6",
 			"dmgType": "P",
-			"property": ["F", "L", "S"],
+			"property": ["F", "L", "S", "HEM|TheUndertomesGeneralRules"],
 			"entries": [
-				"This weapon has the {@itemProperty Hemorrhaging|TheUndertomesGeneralRules} property.",
-				"A grimy iron needle that has rusted over with dried blood over its length. It is unusually large, reaching the size of a rapier. Special: Pinned. When you hit a creature with this item, you may choose to stick it to their body. While stuck, any melee weapon attacks against the creature are considered to have the Hemorrhaging(16-20) weapon property and it may only be removed by the creature spending their Bonus Action to do so, also causing them to suffer {@damage 1d6} piercing damage and suffering 2 {@condition Bleed|TheUndertomesGeneralRules|Bleed} Count."
+				"This weapon has the {@itemProperty HEM|TheUndertomesGeneralRules|Hemorrhaging} property (16-20).",
+				"A grimy iron needle that has rusted over with dried blood over its length. It is unusually large, reaching the size of a rapier.",
+				{
+					"type": "entries",
+					"name": "Special: Pinned.",
+					"entries": [
+						"When you hit a creature with this item, you may choose to stick it to their body. While stuck, any melee weapon attacks against the creature are considered to have the Hemorrhaging(16-20) weapon property and it may only be removed by the creature spending their Bonus Action to do so, also causing them to suffer {@damage 1d6} piercing damage and suffering 2 {@condition Bleed|TheUndertomesGeneralRules|Bleed} Count."
+					]
+				}
 			]
 		},
 		{
@@ -25941,9 +26082,10 @@
 			"dmgType": "S",
 			"weight": 2,
 			"entries": [
-				"This weapon has the {@itemProperty Hemorrhaging|TheUndertomesGeneralRules} property.",
+				"This weapon has the {@itemProperty HEM|TheUndertomesGeneralRules|Hemorrhaging} property (15-20).",
 				"A crude lead-made hand-axe with sharp points sawed off of its edge. These nearly pierce skin on simple touch."
-			]
+			],
+			"property": ["HEM|TheUndertomesGeneralRules"]
 		},
 		{
 			"name": "Stake",
@@ -25955,9 +26097,9 @@
 			"dmg1": "1",
 			"dmgType": "P",
 			"weight": 1,
-			"property": ["L"],
+			"property": ["L", "HEM|TheUndertomesGeneralRules"],
 			"entries": [
-				"This weapon has the {@itemProperty Hemorrhaging|TheUndertomesGeneralRules} property.",
+				"This weapon has the {@itemProperty HEM|TheUndertomesGeneralRules|Hemorrhaging} property (14-20).",
 				"A simple wooden stake that was carved until deep wounds could be punctured with its use."
 			]
 		},
@@ -26057,9 +26199,10 @@
 			"dmg1": "1d4",
 			"dmgType": "P",
 			"weight": 1,
-			"property": ["F", "L", "T"],
+			"range": "20/60",
+			"property": ["F", "L", "T", "HEM|TheUndertomesGeneralRules"],
 			"entries": [
-				"This weapon has the {@itemProperty Hemorrhaging|TheUndertomesGeneralRules} property.",
+				"This weapon has the {@itemProperty HEM|TheUndertomesGeneralRules|Hemorrhaging} property (15-20).",
 				"This easily concealed blade can be worn as a brooch and easily be mistaken as one, having a mechanism to fully unsheathe its sharpened blade quickly when needed. You have advantage on {@skill Stealth} Checks to keep this weapon concealed."
 			]
 		},
@@ -26087,7 +26230,8 @@
 			"value": 8500,
 			"entries": [
 				"A Shawl fashioned for quick donning and practical movement while in a hunt. Its hem is lined with sharp emblems, either of holy symbols for protection or those resembling an old hunting order. This Shawl has six Vein Splitters spread around his hem, which you can spend to throw as part of your attack action. A Vein Splitter thrown this way is lost when thrown but inflicts {@condition Bleed|TheUndertomesGeneralRules|Bleed} as per Hemorrhaging as long as it hits a creature who isn't immune to the condition. As an action while wearing this armor you may swiftly spin around, forcing all creatures within 5-ft of you to pass Dexterity Saving Throw whose DC 8 + Your Proficiency Modifier + Your Dexterity Modifier or suffer a number of d4 slashing damage plus the same number in {@condition Bleed|TheUndertomesGeneralRules|Bleed} stacks, or half on a success. This number is equal to half the amount of Vein Splitters still attached to it, rounded up. You may replace up to your Proficiency Modifier's worth of Vein Splitters to the hem of the shawl by using a separate Vein Splitter or by spending 20 gp per replaced part."
-			]
+			],
+			"ac": 12
 		},
 		{
 			"name": "Firing Gauntlet",
@@ -26160,7 +26304,7 @@
 			"value": 8000,
 			"entries": [
 				"This bullet is a marvel at providing a surge of speed to any weapon its spent on, commonly used to gain immense acceleration and throw opponents off or give way for more openings in rapid succession. These will leave higher-ups in life feel like they've been given leftovers, but they suffice for most jobs.",
-				"These can only be used in a Weapon that has the {@itemProperty Blast Cartridge|TheUndertomesGeneralRules} property for melee weapon attacks.",
+				"These can only be used in a Weapon that has the {@itemProperty BLC|TheUndertomesGeneralRules|Blast Cartridge} property for melee weapon attacks.",
 				"Whenever you attack with a weapon that spent one such round, you gain 2 {@condition Poise|TheUndertomesGeneralRules} count."
 			]
 		},
@@ -26172,7 +26316,7 @@
 			"value": 600,
 			"entries": [
 				"It works like a double jab, one punch to scrape off the armor, the second one to punch through. What can you say? Its the old reliable.",
-				"Whenever you spend one such round to fire, the target for this attack is considered to have a -1 negative modifier to their AC if they are benefiting from any kind of armor. These bullets consider the {@itemProperty Impenetrable|TheUndertomesGeneralRules} armor property's benefit to AC as if it were halved, rounded down."
+				"Whenever you spend one such round to fire, the target for this attack is considered to have a -1 negative modifier to their AC if they are benefiting from any kind of armor. These bullets consider the {@itemProperty IPN|TheUndertomesGeneralRules|Impenetrable} armor property's benefit to AC as if it were halved, rounded down."
 			]
 		},
 		{
@@ -26227,7 +26371,7 @@
 			"value": 175000,
 			"entries": [
 				"A bullet not meant only to fire its load, but instead designed with the purpose of causing a continuous heat blast to supercharge the weapon's usage momentarily through a devastating shot or blazing swipe. These aren't the standard issue certain great organization use, but it fits the bill for a replacement.",
-				"These can only be used in a Weapon that has the {@itemProperty Blast Cartridge|TheUndertomesGeneralRules} property.",
+				"These can only be used in a Weapon that has the {@itemProperty BLC|TheUndertomesGeneralRules|Blast Cartridge} property.",
 				"Whenever you deal damage with a weapon that spent one such round, you also inflict an additional 2 {@condition Burn|TheUndertomesGeneralRules} count."
 			]
 		},
@@ -26262,11 +26406,11 @@
 			"range": "60/90",
 			"bonusWeapon": "+2",
 			"entries": [
-				"{@itemProperty Blast Cartridge|TheUndertomesGeneralRules} ({@damage 1d8})",
+				"{@itemProperty BLC|TheUndertomesGeneralRules|Blast Cartridge} ({@damage 1d8})",
 				"This rapier's blade is divided into many segments that won't break easily, unlike its most famous wielder. Would you believe it if you were told that even those that can soar as high as monsters in the night can fall in such an ugly manner?",
 				"Whenever you hit a target with this weapon, gain one {@condition Poise|TheUndertomesGeneralRules} count. If you score a Critical Hit, gain 4 Poise instead. These values cannot be increased through any means. Whenever you trigger a Posture Critical, you may also choose to trigger {@variantrule Tremor Burst|TheUndertomesGeneralRules}.",
 				"You may use this weapon as a ranged weapon. When you do so, it deals {@damage 2d4} piercing damage.",
-				"You have a +2 bonus modifier to attack and damage rolls while using this weapon. Whenever you use it's {@itemProperty Blast Cartridge|TheUndertomesGeneralRules} ability you bypass Piercing damage Resistance, consider Piercing Immunity as Resistance and ignore the target's {@itemProperty Impenetrable|TheUndertomesGeneralRules} armor property, if applicable.",
+				"You have a +2 bonus modifier to attack and damage rolls while using this weapon. Whenever you use it's {@itemProperty BLC|TheUndertomesGeneralRules|Blast Cartridge} ability you bypass Piercing damage Resistance, consider Piercing Immunity as Resistance and ignore the target's {@itemProperty IPN|TheUndertomesGeneralRules|Impenetrable} armor property, if applicable.",
 				"This weapon's Blast-Cartridge ability can only be activated by expending Acceleration Rounds. When you do so, you gain a +1 bonus modifier to the attack roll and also receive 2 Poise count before the attack is rolled. Attacks from this weapon that would benefit form the Blast-Cartridge property are considered to have the Reach property.",
 				"You may use your Bonus Action and spend a bullet as per the Blast-Cartridge property to immediately perform am additional melee weapon attack with each weapon you are wielding against a target within hit. If you kill the target using this, you instantly gain 6 Poise count.",
 				{
@@ -26291,10 +26435,10 @@
 			"dmgType": "P",
 			"property": ["A", "BLC|TheUndertomesGeneralRules", "F"],
 			"entries": [
-				"{@itemProperty Blast Cartridge|TheUndertomesGeneralRules} ({@damage 1d6})",
+				"{@itemProperty BLC|TheUndertomesGeneralRules|Blast Cartridge} ({@damage 1d6})",
 				"Featuring a segmented blade, this sword can be unlocked to act as a whip just as well as hold its ground on close quarter combats - its flexibility making creating openings a much easier ordeal.",
 				"Whenever you hit a target with this weapon, gain one {@condition Poise|TheUndertomesGeneralRules} count. This value cannot be increased through any means.",
-				"This weapon's {@itemProperty Blast Cartridge|TheUndertomesGeneralRules} ability can only be activated by expending Acceleration Rounds. When you do so, you gain a +1 bonus modifier to the attack roll and also receive 2 Poise count before the attack is rolled.",
+				"This weapon's {@itemProperty BLC|TheUndertomesGeneralRules|Blast Cartridge} ability can only be activated by expending Acceleration Rounds. When you do so, you gain a +1 bonus modifier to the attack roll and also receive 2 Poise count before the attack is rolled.",
 				"You may use your Bonus Action and spend a bullet as per the Blast-Cartridge property to immediately perform an additional melee weapon attack against a target you've hit with a melee attack using this weapon. Attacks from this weapon that would benefit form the Blast-Cartridge property are considered to have the Reach property."
 			]
 		},
@@ -26317,13 +26461,13 @@
 			],
 			"range": "45/90",
 			"entries": [
-				"{@itemProperty Blast Cartridge|TheUndertomesGeneralRules} ({@damage 2d8})",
+				"{@itemProperty BLC|TheUndertomesGeneralRules|Blast Cartridge} ({@damage 2d8})",
 				"The north of the City's cold has a need to be quickly cut through to maintain an orderly schedule, and through the ingenuity of certain workshop masters a heavy-duty weapon design has been created to reflect that very need. Boasting a mounted with high calibre gun parts and an even heavier blade, the Heavy Triggerblade is a weapon that demands respect to itself, rather than only representing something to the wielder.",
 				{
 					"type": "entries",
 					"name": "Bulky Reload.",
 					"entries": [
-						"Due to the insane calibre this weapon boasts, you may only spend your Action to fully reload it, or load a single bullet in as a Bonus Action. This weapon uses the Reload property for both regular ranged attacks and to benefit from {@itemProperty Blast Cartridge|TheUndertomesGeneralRules}, accepting only Heavy Blast Rounds for any kind of fire."
+						"Due to the insane calibre this weapon boasts, you may only spend your Action to fully reload it, or load a single bullet in as a Bonus Action. This weapon uses the Reload property for both regular ranged attacks and to benefit from {@itemProperty BLC|TheUndertomesGeneralRules|Blast Cartridge}, accepting only Heavy Blast Rounds for any kind of fire."
 					]
 				},
 				{
@@ -26358,7 +26502,7 @@
 			"entries": [
 				"A bolt-action rifle with a burgundy stock and several intricate mechanisms to accept both regular and propulsion bullets that is commonly used by the Thumb. Its sleek design make it so a propulsion round can be placed on the side and have its momentum used for an exceptionally fast flurry of slashes at one given time.",
 				"Attacks made with this weapon inflict one additional {@condition Burn|TheUndertomesGeneralRules} count on a hit.",
-				"If attached with any kind of Bayonet or you would otherwise be able to make melee weapon attacks with this weapon, it gains the {@itemProperty Blast Cartridge|TheUndertomesGeneralRules} (2d4) property and you may use either Acceleration or Propulsion Rounds with it. This weapon is considered to have the Reload (2) property when pertaining to Blast-Cartridge uses.",
+				"If attached with any kind of Bayonet or you would otherwise be able to make melee weapon attacks with this weapon, it gains the {@itemProperty BLC|TheUndertomesGeneralRules|Blast Cartridge} (2d4) property and you may use either Acceleration or Propulsion Rounds with it. This weapon is considered to have the Reload (2) property when pertaining to Blast-Cartridge uses.",
 				"Additionally, you may target creatures up to 15-ft. away from you while using this property, instantly repositioning yourself to be standing atop an unoccupied space within 5-ft. of them and then attacking.",
 				"You may use your Bonus Action and spend a bullet as per the Blast-Cartridge property to immediately perform an additional melee weapon attack against a target you've hit with a melee attack using this weapon."
 			],
@@ -26453,7 +26597,7 @@
 			"weight": 4,
 			"ac": 11,
 			"entries": [
-				"{@itemProperty Imposing|TheUndertomesGeneralRules} (1)",
+				"{@itemProperty IMP|TheUndertomesGeneralRules|Imposing} (1)",
 				"A set of formal clothes and hat emblazoned in the signature burgundy coloured fabrics of the Thumb and stricken with dusty golden inlays. Even the lowest of the organization demand respect, as they are still representative of the whole.",
 				{
 					"type": "entries",
@@ -26462,7 +26606,8 @@
 						"An Imposing armor set is the kind of clothing that demands some level of respect, no matter from whom. You benefit from having your Intimidation skill modifier be at least the value displayed in Parenthesis, if it was any lower."
 					]
 				}
-			]
+			],
+			"property": ["IMP|TheUndertomesGeneralRules"]
 		},
 		{
 			"name": "The Thumb's Capo Uniform",
@@ -26473,8 +26618,12 @@
 			"weight": 6,
 			"ac": 13,
 			"entries": [
-				"{@itemProperty Imposing|TheUndertomesGeneralRules} (4), {@itemProperty Impenetrable|TheUndertomesGeneralRules} (1)",
+				"{@itemProperty IMP|TheUndertomesGeneralRules|Imposing} (4), {@itemProperty IPN|TheUndertomesGeneralRules|Impenetrable} (1)",
 				"Meant for the distinguished members of the Thumb, this set of clothes might not seem to have as much variation from the Capo's underlings beside the ability to have its golden inlays customized to show a variety of images, but it actually boasts a considerable upgrade in the form of nueovo fabric. To eyes who aren't to be removed, this uniform is a sign to pay respect."
+			],
+			"property": [
+				"IMP|TheUndertomesGeneralRules",
+				"IPN|TheUndertomesGeneralRules"
 			]
 		},
 		{
@@ -26487,7 +26636,7 @@
 			"ac": 14,
 			"dexterityMax": 4,
 			"entries": [
-				"{@itemProperty Imposing|TheUndertomesGeneralRules} (8), {@itemProperty Impenetrable|TheUndertomesGeneralRules} (3)",
+				"{@itemProperty IMP|TheUndertomesGeneralRules|Imposing} (8), {@itemProperty IPN|TheUndertomesGeneralRules|Impenetrable} (3)",
 				"An outfit that was assembled with a single goal in mind: to be gazed up upon and have the viewer feel ashamed of their own lack of station. Fitted with the finest nueovo fabric to boast comfort, style and resistance as to allow the wearer to take bullets without flinching, this uniform is meant only for those who have already managed to raise their hands to pass judgement and bear the weight of hierarchy upon their backs.",
 				{
 					"type": "entries",
@@ -26496,6 +26645,10 @@
 						"An armor seat with the Impenetrable property has remarkably good stopping power against piercing forces and other kinds of missiles. Your AC against attacks that would deal piercing damage or that are otherwise missiles ( such as arrows, bullets or certain ranged spells ) is considered to be higher by a value presented in parenthesis near this property. Additionally, whenever you would suffer damage through one such attack it is reduced by an amount equal to double the value presented in parenthesis."
 					]
 				}
+			],
+			"property": [
+				"IMP|TheUndertomesGeneralRules",
+				"IPN|TheUndertomesGeneralRules"
 			]
 		},
 		{
@@ -26545,7 +26698,7 @@
 					"type": "entries",
 					"name": "Insegne del Pollice.",
 					"entries": [
-						"This gilded hand is a heavy weight. Not for you, the bearer, but if you ever need to remind someone else of their place. While attached, it counts as a natural melee weapon you are proficient with, deals {@damage 2d4} bludgeoning damage plus two {@condition Burn|TheUndertomesGeneralRules} count on a hit and has the ammunition, finesse, light, range (30/45-ft.) and reload(3) properties.",
+						"This gilded hand is a heavy weight. Not for you, the bearer, but if you ever need to remind someone else of their place. While attached, it counts as a natural melee weapon you are proficient with, deals {@damage 2d4} bludgeoning damage plus two {@condition Burn|TheUndertomesGeneralRules} count on a hit and has the ammunition, finesse, light, range (30/45-ft.) and {@itemProperty RLD|TheUndertomesGeneralRules|Reload} (3) properties.",
 						"You may fold one of its fingers to reveal a series of revolver-like firing chambers as well, allowing it to reliably act akin to a magnum on a short-hand. While used as a ranged weapon, it deals {@damage 2d6} piercing damage and 4 Burn count on a hit."
 					]
 				},
@@ -26754,14 +26907,6 @@
 			"property": ["H", "2H"],
 			"rarity": "unknown (magic)",
 			"entries": [
-				"Weapon, special",
-				"Major tier Martial Melee Weapon",
-				{
-					"type": "entries",
-					"name": "100 lbs.",
-					"entries": ["(45.3 kg)"]
-				},
-				"{@dice 2d6} bludgeoning - heavy, two-handed",
 				"This is a magical weapon that adds +1 to your attack and damage rolls for each 3 points of {@condition Coffin|TheUndertomesProjectMoon} you have. Additionally, whenever you hit a creature with this weapon, you deal {@dice 1d6} additional psychic damage.",
 				"You can summon Requiem with a bonus action, and you automatically wield it. If you were already wielding a weapon, you stow it as a part of the same bonus action. Whenever Requiem is summoned or as an action on your turn, each creature of your choice within 30 feet of you must make a Wisdom saving throw against your spell save DC or become {@condition Frightened} of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Requiem's {@condition Frightened} condition for the next 24 hours. Requiem may be wielded by its summoner as if ignoring the Heavy property, and only one of it may be summoned at any given time.",
 				{
@@ -26800,7 +26945,13 @@
 			"property": ["A", "2H", "S"],
 			"entries": [
 				"Tough and sturdy, this shotgun delivers a nasty blow to anything stupid enough to remain near it.",
-				"Special. When fired, any creatures 5-feet around your target suffers half the damage dealt on a shot if the dice rolled to hit is higher than their AC, as the spread catches them."
+				{
+					"type": "entries",
+					"name": "Special.",
+					"entries": [
+						"When fired, any creatures 5-feet around your target suffers half the damage dealt on a shot if the dice rolled to hit is higher than their AC, as the spread catches them."
+					]
+				}
 			],
 			"range": "15/30"
 		},
@@ -26816,7 +26967,13 @@
 			"property": ["A", "H", "2H", "S"],
 			"entries": [
 				"Because of its heavy weight and hefty recoil, this weapon is best used while stationary. Despite the drawbacks, it is a master of the battlefield when used right.",
-				"Special. If you have not moved within the last Initiative round, you manage to focus more before taking any shots. You gain a +1 to hit and to damage rolls for your next attack. Your Critical Hit Threshold is also lowered by one. (Triggering on a 19-20.)"
+				{
+					"type": "entries",
+					"name": "Special.",
+					"entries": [
+						"If you have not moved within the last Initiative round, you manage to focus more before taking any shots. You gain a +1 to hit and to damage rolls for your next attack. Your Critical Hit Threshold is also lowered by one. (Triggering on a 19-20.)"
+					]
+				}
 			],
 			"range": "30/120"
 		}
@@ -27109,8 +27266,8 @@
 			"entries": [
 				"There is a wound within you that will never heal, and every small \"no\" you hear only pokes at the scabs. As such, when you are neglected by a creature during a social interaction, you may channel this frustration in further actions. Whenever you are rejected, you gain one Frustration Dice.",
 				"Those are d4s and you may have up to your proficiency modifiers worth of them at any given time, and you may spend them when you fail skill checks to use your frustration to seek success, although scuffed. However, you have a disadvantage equal to one roll of your Frustration Dice against any creature who had caused you to gain one within the last week. Hemorrhaging Weapon Property.",
-				"A serrated weapon causes a stack of {@condition Bleed|TheUndertomesGeneralRules} {@condition Bleed|TheUndertomesGeneralRules} whenever you hit with it, provided the roll equals the value presented alongside the property before any modifiers. {@condition Bleed|TheUndertomesGeneralRules} A bleeding bleed creature is well, creature is well, bleeding bleed ! You take {@dice 1d4} damage when you performany action ( Each attack is considered a different action, this also includes Bonus Actions and Reactions, but not Free Actions ), and then is reduced by one count. You may heal or have {@condition Bleed|TheUndertomesGeneralRules} {@condition Bleed|TheUndertomesGeneralRules} fully removed if you or another creature passes a succesful medicine check on you.",
-				"The DC for this is 10 + The number of counts you currently have. If you have only one count of {@condition Bleed|TheUndertomesGeneralRules} {@condition Bleed|TheUndertomesGeneralRules}, it will not be removed upon taking damage and must be removed through a medicine check."
+				"A serrated weapon causes a stack of {@condition Bleed|TheUndertomesGeneralRules} whenever you hit with it, provided the roll equals the value presented alongside the property before any modifiers. {@condition Bleed|TheUndertomesGeneralRules} A bleeding bleed creature is well, creature is well, bleeding bleed ! You take {@dice 1d4} damage when you performany action ( Each attack is considered a different action, this also includes Bonus Actions and Reactions, but not Free Actions ), and then is reduced by one count. You may heal or have {@condition Bleed|TheUndertomesGeneralRules} fully removed if you or another creature passes a succesful medicine check on you.",
+				"The DC for this is 10 + The number of counts you currently have. If you have only one count of {@condition Bleed|TheUndertomesGeneralRules}, it will not be removed upon taking damage and must be removed through a medicine check."
 			]
 		},
 		{
@@ -31940,7 +32097,7 @@
 				}
 			],
 			"entries": [
-				"Even the earth must take to the air at times, all to reach its very own garden of Eden. You crush the bramble between your fingers, its thorny length becoming much larger, covering both of your hands in wings that quickly extend outward in an explosion of spikes. All creatures within a 15-feet radius of yourself must pass a Dexterity Saving Throw or take {@damage 5d8} piercing damage and suffer 3 stacks of {@condition Bleed|TheUndertomesGeneralRules} {@condition Bleed|TheUndertomesGeneralRules}, or only taking half the damage on a success."
+				"Even the earth must take to the air at times, all to reach its very own garden of Eden. You crush the bramble between your fingers, its thorny length becoming much larger, covering both of your hands in wings that quickly extend outward in an explosion of spikes. All creatures within a 15-feet radius of yourself must pass a Dexterity Saving Throw or take {@damage 5d8} piercing damage and suffer 3 stacks of {@condition Bleed|TheUndertomesGeneralRules}, or only taking half the damage on a success."
 			],
 			"classes": {
 				"fromClassList": [
