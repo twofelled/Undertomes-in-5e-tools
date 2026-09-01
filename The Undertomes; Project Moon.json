@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "1.0.1",
+				"version": "1.0.2",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -23,7 +23,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1788125782
+		"dateLastModified": 1788237633
 	},
 	"book": [
 		{
@@ -19287,7 +19287,7 @@
 							"This ink represents landscapes that warmed both of your hearts, forming an ever-living wanderlust of what once came to pass and what may then become. You and the linked creature can use a bonus action to see and hear through each other's senses while becoming {@condition Blinded} and {@condition Deafened} to your own surroundings. Only one of you can use this feature actively. Additionally, if any of you use the Help action on one another you may add the helping creature's modifier to your own, provided they are proficient in the required skill check."
 						],
 						[
-							"",
+							"Gathering Cumulus",
 							"Union formed in life and immortalized in ink. You and the linked creature may use your reaction when another attempts a roll to give the roll an additional {@dice 1d6} bonus modifier. You cannot re-use this feat to give your linked creature a bonus until they give you said bonus, or vice versa. Additionally, you are always aware of the general direction of each other and gain advantage on skill checks for tracking each other."
 						]
 					],
