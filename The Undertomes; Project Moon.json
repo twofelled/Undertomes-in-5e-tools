@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "1.0.2",
+				"version": "1.0.3",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -23,7 +23,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1788237633
+		"dateLastModified": 1788288005
 	},
 	"book": [
 		{
@@ -9366,6 +9366,40 @@
 				"Target Marked|Warlock|PHB|Lifestop|TheUndertomesProjectMoon|6",
 				"Active Reload|Warlock|PHB|Lifestop|TheUndertomesProjectMoon|10",
 				"Full-Stop to Life|Warlock|PHB|Lifestop|TheUndertomesProjectMoon|14"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"1": [
+							"Disruptive Bullet|TheUndertomesProjectMoon",
+							"Suppressive Fire|TheUndertomesProjectMoon"
+						],
+						"3": [
+							"Congealed Shot|TheUndertomesProjectMoon",
+							"Shrapnel Shot|TheUndertomesProjectMoon"
+						],
+						"5": [
+							"Booster Shot|TheUndertomesProjectMoon",
+							"Lead Bullet|TheUndertomesProjectMoon"
+						],
+						"7": [
+							"Timed Detonation Bullet|TheUndertomesProjectMoon",
+							"Brainburst Bullet|TheUndertomesProjectMoon"
+						],
+						"9": ["Atelier Logic Caliber|TheUndertomesProjectMoon"]
+					}
+				}
+			],
+			"subclassSpells": [
+				"Disruptive Bullet|TheUndertomesProjectMoon",
+				"Suppressive Fire|TheUndertomesProjectMoon",
+				"Congealed Shot|TheUndertomesProjectMoon",
+				"Shrapnel Shot|TheUndertomesProjectMoon",
+				"Booster Shot|TheUndertomesProjectMoon",
+				"Lead Bullet|TheUndertomesProjectMoon",
+				"Timed Detonation Bullet|TheUndertomesProjectMoon",
+				"Brainburst Bullet|TheUndertomesProjectMoon",
+				"Atelier Logic Caliber|TheUndertomesProjectMoon"
 			]
 		},
 		{
@@ -20830,11 +20864,26 @@
 					"colLabels": ["Spell Level", "Expanded Ammunition"],
 					"colStyles": ["col-2 text-center", "col-10"],
 					"rows": [
-						["1st", "Disruptive Bullet, Suppressive Fire"],
-						["2nd", "Congealed Shot, Shrapnel Shot"],
-						["3rd", "Booster Shot, Lead Bullet"],
-						["4th", "Timed Detonation Bullet, Brainburst Bullet"],
-						["5th", "Atelier Logic Caliber"]
+						[
+							"1st",
+							"{@spell Disruptive Bullet|TheUndertomesProjectMoon}, {@spell Suppressive Fire|TheUndertomesProjectMoon}"
+						],
+						[
+							"2nd",
+							"{@spell Congealed Shot|TheUndertomesProjectMoon}, {@spell Shrapnel Shot|TheUndertomesProjectMoon}"
+						],
+						[
+							"3rd",
+							"{@spell Booster Shot|TheUndertomesProjectMoon}, {@spell Lead Bullet|TheUndertomesProjectMoon}"
+						],
+						[
+							"4th",
+							"{@spell Timed Detonation Bullet|TheUndertomesProjectMoon}, {@spell Brainburst Bullet|TheUndertomesProjectMoon}"
+						],
+						[
+							"5th",
+							"{@spell Atelier Logic Caliber|TheUndertomesProjectMoon}"
+						]
 					],
 					"caption": "Expanded Spell List"
 				},
@@ -20851,14 +20900,26 @@
 							"colLabels": ["Spell Level", "Expanded Ammunition"],
 							"colStyles": ["col-2 text-center", "col-10"],
 							"rows": [
-								["1st", "Disruptive Bullet, Suppressive Fire"],
-								["2nd", "Congealed Shot, Shrapnel Shot"],
-								["3rd", "Booster Shot, Lead Bullet"],
+								[
+									"1st",
+									"{@item Disruptive Bullet|TheUndertomesProjectMoon}, {@item Suppressive Fire|TheUndertomesProjectMoon}"
+								],
+								[
+									"2nd",
+									"{@item Congealed Shot|TheUndertomesProjectMoon}, {@item Shrapnel Shot|TheUndertomesProjectMoon}"
+								],
+								[
+									"3rd",
+									"{@item Booster Shot|TheUndertomesProjectMoon}, {@item Lead Bullet|TheUndertomesProjectMoon}"
+								],
 								[
 									"4th",
-									"Timed Detonation Bullet, Brainburst Bullet"
+									"{@item Timed Detonation Bullet|TheUndertomesProjectMoon}, {@item Brainburst Bullet|TheUndertomesProjectMoon}"
 								],
-								["5th", "Atelier Logic Caliber Bullet"]
+								[
+									"5th",
+									"{@item Atelier Logic Caliber Bullet|TheUndertomesProjectMoon}"
+								]
 							],
 							"caption": "Expanded Ammunition List"
 						}
@@ -26916,6 +26977,101 @@
 						"As an action, you may open Requiem and attempt to lock a creature inside it. The target must make a Dexterity saving throw against your spell save DC or become stuck inside Requiem for 1 minute, being able to reroll the saving throw at the end of their turn. Whenever you attack a target, the creature inside Requiem takes {@dice 3d6} piercing damage as it's punctured by the spikes inside it. If it's killed that way, you gain 3 stacks of {@condition Coffin|TheUndertomesProjectMoon} instead of one. You may only attempt to lock a creature of Large size or smaller with this feature and Large creatures have advantage on this saving throw."
 					]
 				}
+			]
+		},
+		{
+			"name": "Disruptive Bullet",
+			"source": "TheUndertomesProjectMoon",
+			"type": "A",
+			"rarity": "none",
+			"entries": [
+				"{@i 1st-level Expanded Ammunition}",
+				"Also called thundershot, this bullet doesn't pack much of a punch but manages to disorient a person long enough to be helpful.",
+				"When used, you may choose a target within your Marksman Weapon's range and perform a ranged weapon attack against them, on a hit you deal {@dice SLd4} thunder damage and they suffer a penalty to Concentration checks and to any roll pertaining Interacting with an Object until the end of their next turn, as exceedingly loud ringing in their ears impedes them from doing so. This penalty's value is equal to half your PB times SL."
+			]
+		},
+		{
+			"name": "Suppressive Fire",
+			"source": "TheUndertomesProjectMoon",
+			"type": "A",
+			"rarity": "none",
+			"entries": [
+				"{@i 1st-level Expanded Ammunition}",
+				"Although not very practical for inflicting great damage, this magazine contains a series of compact bullets useful to effectively pin down a target. When used, you may choose a target within your Marksman Weapon's range, it must pass a Dexterity Saving Throw or suffer immense hardship to leave its position, having their movement speed reduced by 5 * SL, to a minimum of 5-feet. In addition, if the target does move during this duration, the next attack aimed against them has your SL as a bonus modifier to hit."
+			]
+		},
+		{
+			"name": "Congealed Shot",
+			"source": "TheUndertomesProjectMoon",
+			"type": "A",
+			"rarity": "none",
+			"entries": [
+				"{@i 2nd-level Expanded Ammunition}",
+				"This bullet features a smooth gelatin congealed within its casing which explodes after hitting a target. When used, you may choose any point within your Marksman Weapon's range to shoot. When the bullet hits a surface, it detonates in the form of a 5-ft large sphere of gelatin.",
+				"If this gelatin hits a creature, they must perform a Strength Saving Throw or be pushed in the opposite direction of where they were hit for up to 10 * SL feet, with Large or greater creatures having advantage on this Saving Throw.",
+				"After being deployed, any creature within 5-feet of the gelatin may use their bonus action to hop onto the Gelatin, being flung in the air on a long jump for the same distance as if they would be hit in length and half that number, rounded down, of height, or the inverse if they choose to perform a high jump."
+			]
+		},
+		{
+			"name": "Shrapnel Shot",
+			"source": "TheUndertomesProjectMoon",
+			"type": "A",
+			"rarity": "none",
+			"entries": [
+				"{@i 2nd-level Expanded Ammunition}",
+				"Various steel pellets are found within this bullet's shell, having a second ignition trigger after hitting a target and exploding to expand its field of effect. When used, you may choose a point within your Marksman Weapon's range, all creatures within a 5 * SL radius of the point must pass a Dexterity Saving Throw or suffer SL die of damage plus your Charisma Modifier, with the type of die and damage matches the Marksman Weapon's. On a success, creatures take half the damage rolled"
+			]
+		},
+		{
+			"name": "Booster Shot",
+			"source": "TheUndertomesProjectMoon",
+			"type": "A",
+			"rarity": "none",
+			"entries": [
+				"{@i 3rd-level Expanded Ammunition}",
+				"Instead of the usual shell, this piece of ammunition is a syringe which will inject its contents upon piercing a target. When used, you may choose any creature within your Marksman Weapon's range, firing a healing round at them. They are healed by {@dice SLd6|SL d6} hit points and gain a +2 bonus to Constitution Saving Throws against being poisoned for the next hour, as the medicine strengthens their immune system temporarily."
+			]
+		},
+		{
+			"name": "Lead Bullet",
+			"source": "TheUndertomesProjectMoon",
+			"type": "A",
+			"rarity": "none",
+			"entries": [
+				"{@i 3rd-level Expanded Ammunition}",
+				"Simple, effective. This bullet is made of solid lead, containing only a handful of poisons and acids applied. When used, you make a ranged weapon attack with your Marksman Weapon. On hit, in addition to its normal damage inflicted, the target must pass a Constitution Saving Throw or suffer from the {@condition Poisoned} Condition for the next minute, repeating this Constitution Saving Throw at the end of their turns. On the first failure of this Saving Throw and on subsequent Saving Throws at the end of their turn, regardless of their outcome, the {@condition Poisoned} creature also suffers {@dice SLd8|SL d8} poison damage. Creatures immune to poison damage instead treat this damage as if they only had resistance."
+			]
+		},
+		{
+			"name": "Timed Detonation Bullet",
+			"source": "TheUndertomesProjectMoon",
+			"type": "A",
+			"rarity": "none",
+			"entries": [
+				"{@i 4th-level Expanded Ammunition}",
+				"Waiting for the second time to press the trigger is often harder than landing the shot. This bullet contains a small incendiary explosive capable of causing a big wreck. When used, you make a ranged weapon attack against a target within your range. On a hit, a Detonation Bullet is lodged inside them.",
+				"You may, as a free action taken whenever there is no ongoing roll, pull a trigger to have the explosive perform its role. The creature containing the bullet must pass a Constitution Saving Throw or take SL * d12 fire damage as if they were Vulnerable to fire damage, or half this damage on a success. In the case of a failure, all creatures within a 15-feet radius of the detonation must pass a Dexterity Saving Throw or take SL * d8 fire damage, or half on a success."
+			]
+		},
+		{
+			"name": "Brainburst Bullet",
+			"source": "TheUndertomesProjectMoon",
+			"type": "A",
+			"rarity": "none",
+			"entries": [
+				"{@i 4th-level Expanded Ammunition}",
+				"Sometimes the best choice is to fully attempt to break a targets mind before their body. When used, you force a target creature within your range to attempt a Charisma Saving Throw, on a success they take {@dice 3d4} psychic damage. On a failure, they take {@dice 3d4} psychic damage upon failing and suffer an additional {@dice 2d4} psychic damage at the end of each of their subsequent turns, as the bullet pulses with psionic energy that causes massive aching. This lasts for up to one minute and the target may attempt the Charisma Saving Throw again after suffering the psychic damage at the end of their turn. On a success, the effect ends early but they suffer a parting echo of the psionic pain, taking {@dice 4d8} psychic damage."
+			]
+		},
+		{
+			"name": "Atelier Logic Caliber Bullet",
+			"source": "TheUndertomesProjectMoon",
+			"type": "A",
+			"rarity": "none",
+			"entries": [
+				"{@i 5th-level Expanded Ammunition}",
+				"Have you wanted a smart, heat-seeking round? The Atelier Logic Caliber Bullet is laid in silver and expensive, extravagant technology to maximize its hit chance.",
+				"When used, you make a ranged weapon attack against a target within your range, you have a +3 to hit with this bullet. This attack's Critical Hit range is changed to a minimum of SL-20. On a Critical Hit, this attack instantly kills a creature with SL * 25 Hit Points or lower."
 			]
 		},
 		{
@@ -34038,6 +34194,280 @@
 						"For each 2 Spell Slot Levels spent above 2nd, the damage of this spell increases by {@dice 2d6} and it inflicts an additional {@condition Tremor|TheUndertomesGeneralRules}."
 					]
 				}
+			]
+		},
+		{
+			"name": "Disruptive Bullet",
+			"source": "TheUndertomesProjectMoon",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"m": "a Marksman Weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"damageInflict": ["thunder"],
+			"spellAttack": ["R"],
+			"entries": [
+				"Also called thundershot, this bullet doesn't pack much of a punch but manages to disorient a person long enough to be helpful.",
+				"When used, you may choose a target within your Marksman Weapon's range and perform a ranged weapon attack against them, on a hit you deal {@dice SLd4} thunder damage and they suffer a penalty to Concentration checks and to any roll pertaining Interacting with an Object until the end of their next turn, as exceedingly loud ringing in their ears impedes them from doing so. This penalty's value is equal to half your PB times SL."
+			]
+		},
+		{
+			"name": "Suppressive Fire",
+			"source": "TheUndertomesProjectMoon",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"m": "a Marksman Weapon"
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"savingThrow": ["dexterity"],
+			"entries": [
+				"Although not very practical for inflicting great damage, this magazine contains a series of compact bullets useful to effectively pin down a target. When used, you may choose a target within your Marksman Weapon's range, it must pass a Dexterity Saving Throw or suffer immense hardship to leave its position, having their movement speed reduced by 5 * SL, to a minimum of 5-feet. In addition, if the target does move during this duration, the next attack aimed against them has your SL as a bonus modifier to hit."
+			]
+		},
+		{
+			"name": "Congealed Shot",
+			"source": "TheUndertomesProjectMoon",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"m": "a Marksman Weapon"
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"savingThrow": ["strength"],
+			"areaTags": ["S"],
+			"entries": [
+				"This bullet features a smooth gelatin congealed within its casing which explodes after hitting a target. When used, you may choose any point within your Marksman Weapon's range to shoot. When the bullet hits a surface, it detonates in the form of a 5-ft large sphere of gelatin.",
+				"If this gelatin hits a creature, they must perform a Strength Saving Throw or be pushed in the opposite direction of where they were hit for up to 10 * SL feet, with Large or greater creatures having advantage on this Saving Throw.",
+				"After being deployed, any creature within 5-feet of the gelatin may use their bonus action to hop onto the Gelatin, being flung in the air on a long jump for the same distance as if they would be hit in length and half that number, rounded down, of height, or the inverse if they choose to perform a high jump."
+			]
+		},
+		{
+			"name": "Shrapnel Shot",
+			"source": "TheUndertomesProjectMoon",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"m": "a Marksman Weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"savingThrow": ["dexterity"],
+			"areaTags": ["R"],
+			"entries": [
+				"Various steel pellets are found within this bullet's shell, having a second ignition trigger after hitting a target and exploding to expand its field of effect. When used, you may choose a point within your Marksman Weapon's range, all creatures within a 5 * SL radius of the point must pass a Dexterity Saving Throw or suffer SL die of damage plus your Charisma Modifier, with the type of die and damage matches the Marksman Weapon's. On a success, creatures take half the damage rolled"
+			]
+		},
+		{
+			"name": "Booster Shot",
+			"source": "TheUndertomesProjectMoon",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"m": "a Marksman Weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"miscTags": ["HL"],
+			"entries": [
+				"Instead of the usual shell, this piece of ammunition is a syringe which will inject its contents upon piercing a target. When used, you may choose any creature within your Marksman Weapon's range, firing a healing round at them. They are healed by {@dice SLd6|SL d6} hit points and gain a +2 bonus to Constitution Saving Throws against being poisoned for the next hour, as the medicine strengthens their immune system temporarily."
+			]
+		},
+		{
+			"name": "Lead Bullet",
+			"source": "TheUndertomesProjectMoon",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"m": "a Marksman Weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"damageInflict": ["poison"],
+			"conditionInflict": ["poisoned"],
+			"savingThrow": ["constitution"],
+			"spellAttack": ["R"],
+			"entries": [
+				"Simple, effective. This bullet is made of solid lead, containing only a handful of poisons and acids applied. When used, you make a ranged weapon attack with your Marksman Weapon. On hit, in addition to its normal damage inflicted, the target must pass a Constitution Saving Throw or suffer from the {@condition Poisoned} Condition for the next minute, repeating this Constitution Saving Throw at the end of their turns. On the first failure of this Saving Throw and on subsequent Saving Throws at the end of their turn, regardless of their outcome, the {@condition Poisoned} creature also suffers {@dice SLd8|SL d8} poison damage. Creatures immune to poison damage instead treat this damage as if they only had resistance."
+			]
+		},
+		{
+			"name": "Timed Detonation Bullet",
+			"source": "TheUndertomesProjectMoon",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"m": "a Marksman Weapon"
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"damageInflict": ["fire"],
+			"savingThrow": ["constitution", "dexterity"],
+			"spellAttack": ["R"],
+			"areaTags": ["R"],
+			"entries": [
+				"Waiting for the second time to press the trigger is often harder than landing the shot. This bullet contains a small incendiary explosive capable of causing a big wreck. When used, you make a ranged weapon attack against a target within your range. On a hit, a Detonation Bullet is lodged inside them.",
+				"You may, as a free action taken whenever there is no ongoing roll, pull a trigger to have the explosive perform its role. The creature containing the bullet must pass a Constitution Saving Throw or take SL * d12 fire damage as if they were Vulnerable to fire damage, or half this damage on a success. In the case of a failure, all creatures within a 15-feet radius of the detonation must pass a Dexterity Saving Throw or take SL * d8 fire damage, or half on a success."
+			]
+		},
+		{
+			"name": "Brainburst Bullet",
+			"source": "TheUndertomesProjectMoon",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"m": "a Marksman Weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"damageInflict": ["psychic"],
+			"savingThrow": ["charisma"],
+			"entries": [
+				"Sometimes the best choice is to fully attempt to break a targets mind before their body. When used, you force a target creature within your range to attempt a Charisma Saving Throw, on a success they take {@dice 3d4} psychic damage. On a failure, they take {@dice 3d4} psychic damage upon failing and suffer an additional {@dice 2d4} psychic damage at the end of each of their subsequent turns, as the bullet pulses with psionic energy that causes massive aching. This lasts for up to one minute and the target may attempt the Charisma Saving Throw again after suffering the psychic damage at the end of their turn. On a success, the effect ends early but they suffer a parting echo of the psionic pain, taking {@dice 4d8} psychic damage."
+			]
+		},
+		{
+			"name": "Atelier Logic Caliber",
+			"source": "TheUndertomesProjectMoon",
+			"level": 5,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"m": "a Marksman Weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"spellAttack": ["R"],
+			"entries": [
+				"Have you wanted a smart, heat-seeking round? The Atelier Logic Caliber Bullet is laid in silver and expensive, extravagant technology to maximize its hit chance.",
+				"When used, you make a ranged weapon attack against a target within your range, you have a +3 to hit with this bullet. This attack's Critical Hit range is changed to a minimum of SL-20. On a Critical Hit, this attack instantly kills a creature with SL * 25 Hit Points or lower."
 			]
 		}
 	],
