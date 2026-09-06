@@ -7,7 +7,7 @@
 				"abbreviation": "TUPM",
 				"full": "The Undertomes Project Moon",
 				"url": "https://www.patreon.com/collection/786363",
-				"version": "1.0.3",
+				"version": "1.0.4",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
 				"color": "3d2d1d",
@@ -23,7 +23,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1785186000,
-		"dateLastModified": 1788288005
+		"dateLastModified": 1788726822
 	},
 	"book": [
 		{
@@ -2399,7 +2399,7 @@
 								{
 									"type": "list",
 									"items": [
-										"{@optfeature Random Targetting|TheUndertomesProjectMoon}",
+										"{@optfeature Random Targeting|TheUndertomesProjectMoon}",
 										"{@optfeature Singleton|TheUndertomesProjectMoon}"
 									]
 								}
@@ -7808,7 +7808,7 @@
 								"{@optfeature Propulsion Chamber Maintenance|TheUndertomesProjectMoon}",
 								"{@optfeature Pushing Scissors|TheUndertomesProjectMoon}",
 								"{@optfeature Quasi-Formed Bloodbag|TheUndertomesProjectMoon}",
-								"{@optfeature Random Targetting|TheUndertomesProjectMoon}",
+								"{@optfeature Random Targeting|TheUndertomesProjectMoon}",
 								"{@optfeature Relocator Fighting Style|TheUndertomesProjectMoon}",
 								"{@optfeature Resist and Bite Fighting Style|TheUndertomesProjectMoon}",
 								"{@optfeature Round Cleanup Fighting Style|TheUndertomesProjectMoon}",
@@ -10840,7 +10840,7 @@
 				"{@i \"These blood vessels are sufficiently thick. Not bad at all.\"}",
 				"Your armored state has been perfected like the bark of a tree, splintering off when hurt and stabbing back at its attackers. Whenever you roll Initiative, you may also roll an amount of Hit Die up to half your proficiency bonus, then gaining that value plus your Wisdom Modifier's worth of Temporary Hit Points. You instantly lose these when entering Flowing Form. While these Temporary Hit Points remain, whenever another creature deals damage to you through a weapon attack they suffer 2 {@condition Bleed|TheUndertomesGeneralRules} count.",
 				"While in Iron Maiden Form you've developed a new ways to move, throwing your weight in one direction at the risk of becoming rattled. Once per turn you may spend 5-ft. of movement as a Free Action to instantly move up to a 15-ft. line. If you would collide with a creature or object that is at least small, that target must pass a Dexterity saving throw against your Druid Spell DC or suffer half your proficiency bonus' worth of d6 bludgeoning damage on a failure. On a success or if you don't hit anything, you trip and must attempt that saving throw yourself instead, suffering the same consequences on a failure.",
-				"Additionally you have learnt how to distort your voice well in the chambers of your second skin, granting you Advantage on {@skill Deception} checks and other creatures Disadvantage on attempting {@skill Insight} checks targetting you, provided you are in Iron Maiden Form."
+				"Additionally you have learnt how to distort your voice well in the chambers of your second skin, granting you Advantage on {@skill Deception} checks and other creatures Disadvantage on attempting {@skill Insight} checks targeting you, provided you are in Iron Maiden Form."
 			]
 		},
 		{
@@ -11263,7 +11263,7 @@
 			"level": 7,
 			"entries": [
 				"{@i \"Thus, you sink into a bottomless slumber.\"}",
-				"In any field of battle there is a certain distance you must have in consideration to better deal with trampling down a target with your weapon, but you have learnt how to incarnate a devil from wherever you stand. You may spend your Bonus Action during your turn to shift your stance, changing into one of the following Targetting Settings until the end of your next turn:",
+				"In any field of battle there is a certain distance you must have in consideration to better deal with trampling down a target with your weapon, but you have learnt how to incarnate a devil from wherever you stand. You may spend your Bonus Action during your turn to shift your stance, changing into one of the following Targeting Settings until the end of your next turn:",
 				{
 					"type": "list",
 					"items": [
@@ -11272,7 +11272,7 @@
 						"{@b Far-Watch.} Your stance becomes more reserved and rooted, halving your movement speed. Attempting to target a creature within short range applies Disadvantage on your attack roll, but targets within your long range do not. Your long range increases by 20-ft. Your Sweet-Spot is any range greater than your short range plus 15-ft. While on Far-Watch you gain advantage on {@skill Perception} checks that are outside your short range."
 					]
 				},
-				"Each of these Targetting Settings has a Sweet Spot. When you attempt to hit a target within your current Sweet Spot, you gain a +1 to hit against that target and deal an additional damage die matching your wielded weapon's on a hit. Upon targetting a Huge or greater creature, only the spaces in the middle intersections of where they occupy count as a Sweet Spot.",
+				"Each of these Targeting Settings has a Sweet Spot. When you attempt to hit a target within your current Sweet Spot, you gain a +1 to hit against that target and deal an additional damage die matching your wielded weapon's on a hit. Upon targeting a Huge or greater creature, only the spaces in the middle intersections of where they occupy count as a Sweet Spot.",
 				"If you kill your {@condition Stigmatized|TheUndertomesProjectMoon} creature while it is within your current Targeting Setting you gain an additional 8 {@condition Torn Memory|TheUndertomesProjectMoon} count."
 			]
 		},
@@ -14242,7 +14242,7 @@
 								],
 								[
 									"All-Devouring Stomach",
-									"You gain an internal organ that devours violence and ill-intent, but it is not a thing for an unbeastly body to bear, causing you to have a -2 negative modifier to hit and to damage rolls while attuned. However, you ignore these negative modifiers when targetting a creature that has dealt damage to you during their last turn until the end of your next turn, instead dealing an additional damage die of the same type as your attack's on a Critical Hit. Furthermore, you deal a Critical Hit against such targets on a dice roll of 19-20."
+									"You gain an internal organ that devours violence and ill-intent, but it is not a thing for an unbeastly body to bear, causing you to have a -2 negative modifier to hit and to damage rolls while attuned. However, you ignore these negative modifiers when targeting a creature that has dealt damage to you during their last turn until the end of your next turn, instead dealing an additional damage die of the same type as your attack's on a Critical Hit. Furthermore, you deal a Critical Hit against such targets on a dice roll of 19-20."
 								]
 							]
 						},
@@ -14823,7 +14823,7 @@
 						],
 						[
 							"7",
-							"INSTEAD: A torrent of gifts pour out of the giftbag. Instead of Santata's Big Surprisese!'s original effect, you roll a number of ranged attack rolls equal to your proficiency bonus against targets you can see within 60-ft. of you. On a hit, roll on the Fine Gifts For All! table and that gift opens targetting the hit creature. On a miss, nothing happens."
+							"INSTEAD: A torrent of gifts pour out of the giftbag. Instead of Santata's Big Surprisese!'s original effect, you roll a number of ranged attack rolls equal to your proficiency bonus against targets you can see within 60-ft. of you. On a hit, roll on the Fine Gifts For All! table and that gift opens targeting the hit creature. On a miss, nothing happens."
 						],
 						[
 							"8",
@@ -14851,7 +14851,7 @@
 						"The Cheerful Spirits grant you an allowance of gold, to which you can instantly spend to take out a non-magical item out of your Giftbox. It is of pristine condition and always wrapped in colorful ribbons. This item fades into snow after a week and the allowance you are granted is of 100 GP on a short rest and 500 GP on a long rest. Any surplus value left over is instantly spent on eggnog during a short or long rest, which grants you and all friendly creatures who spent the long rest with you advantage on their first Charisma check until the next long rest."
 					]
 				},
-				"Furthermore, you can ask them for help in a pinch. Once per long rest you may spend your Action to pour out gifts from your Giftbag, rolling your proficiency bonus' worth of {@dice 1d8|d8} on the Fine Gifts For All! table. You may do so targetting yourself or a willing creature within 5-ft. When you do so, the target may choose to activate any of the Giftboxes effects as part of your Action to pour them out or on a subsequent turn by spending their bonus action. These gifts automatically activate if combat ends."
+				"Furthermore, you can ask them for help in a pinch. Once per long rest you may spend your Action to pour out gifts from your Giftbag, rolling your proficiency bonus' worth of {@dice 1d8|d8} on the Fine Gifts For All! table. You may do so targeting yourself or a willing creature within 5-ft. When you do so, the target may choose to activate any of the Giftboxes effects as part of your Action to pour them out or on a subsequent turn by spending their bonus action. These gifts automatically activate if combat ends."
 			]
 		},
 		{
@@ -21197,7 +21197,7 @@
 			"level": 3,
 			"entries": [
 				"Someone of your standing must always be ready for action when it comes knocking at your door, as it often does for anyone who wishes to bring change about. As such, you are always prepared - After rolling Initiative but before the first creature in the Initiative Order you may take the Ready action.",
-				"Upon reaching 12th level in Artificer, your preparations have come to another level, allowing for a quick witted movement before any others. Once per Long Rest, you may choose to have one extra turn at Initiative count 20, once per combat. During this turn you are only preparing the battlefield, being unable to take the Attack action or the Cast a Spell action if it is targetting a hostile creature or area containing hostile creatures."
+				"Upon reaching 12th level in Artificer, your preparations have come to another level, allowing for a quick witted movement before any others. Once per Long Rest, you may choose to have one extra turn at Initiative count 20, once per combat. During this turn you are only preparing the battlefield, being unable to take the Attack action or the Cast a Spell action if it is targeting a hostile creature or area containing hostile creatures."
 			],
 			"header": 1
 		},
@@ -21425,7 +21425,7 @@
 					"type": "entries",
 					"name": "Continue the Slaughter!",
 					"entries": [
-						"As a bonus action you may have a friendly creature attack with a weapon attack or cantrip attack targetting a creature within reach, as long as they're within your aura. When you do so, they add one roll of your Order Die to the attack roll, and two of them to the damage roll."
+						"As a bonus action you may have a friendly creature attack with a weapon attack or cantrip attack targeting a creature within reach, as long as they're within your aura. When you do so, they add one roll of your Order Die to the attack roll, and two of them to the damage roll."
 					]
 				},
 				{
@@ -22747,7 +22747,7 @@
 			]
 		},
 		{
-			"name": "Random Targetting",
+			"name": "Random Targeting",
 			"source": "TheUndertomesProjectMoon",
 			"featureType": ["OTH"],
 			"entries": [
@@ -24186,7 +24186,7 @@
 				}
 			],
 			"entries": [
-				"This pair of magic pocket watches is inscribed with a particular series of runes to track any who match its own. Once per long rest a creature may spend their action to use their Pocket Watch as an Arcane Focus to cast the {@spell Locate Object} spell targetting all other Watches who match its inscription.",
+				"This pair of magic pocket watches is inscribed with a particular series of runes to track any who match its own. Once per long rest a creature may spend their action to use their Pocket Watch as an Arcane Focus to cast the {@spell Locate Object} spell targeting all other Watches who match its inscription.",
 				"You may take this Infusion repeatedly, creating another pair of Collective's Pocket Watches that may also be linked to the first ones."
 			]
 		},
@@ -27202,7 +27202,6 @@
 				{
 					"type": "list",
 					"items": [
-						"Your Constitution modifier increases by 1, to a maximum of 20.",
 						"You always have a means to procure a way to mask your wound, instantly recovering one roll of your Hit Die in Hit Points during a short rest.",
 						"Whenever your current Hit Points are reduced to or below half their Maximum Value, you enter a {@condition Sizzling Wound|TheUndertomesProjectMoon} state, as your pain soars to an unbearable amount, causing your mind to fully focus on drenching that wound in blood to quench the aching."
 					]
@@ -27482,7 +27481,7 @@
 			"name": "Body Sculpted in War",
 			"source": "TheUndertomesProjectMoon",
 			"entries": [
-				"After adventuring for a while, you've gained a great many deal of scars from your various encounters. Your skin is most likely hoarse to the touch after receiving so much damage, yet knowing your body is etched in the history of your exploits gives some pride, respite or an acknowledgement that you were there. You receive the following benefits: Your Constitution score increases by 1, to a maximum of 20.",
+				"After adventuring for a while, you've gained a great many deal of scars from your various encounters. Your skin is most likely hoarse to the touch after receiving so much damage, yet knowing your body is etched in the history of your exploits gives some pride, respite or an acknowledgement that you were there.","You receive the following benefits:",
 				"Your scars ache from time to time, yet you endure it. As a free action during your turn, you may choose to take 1 bludgeoning damage from them. You may do this a number of times equal to your proficiency modifier, restoring expended uses on a short or long rest.",
 				"So much fighting has allowed you to better resist getting wounded once more. You may spend your reaction when taking any damage type besides force and psychic to gain resistance to that damage type until the start of your next turn. You may do this a number of times equal to your Constitution modifier, regaining expended uses on a long rest."
 			],
@@ -27568,7 +27567,6 @@
 				{
 					"type": "list",
 					"items": [
-						"One ability score of your choice increases by 1, to a maximum of 20.",
 						"When you fail an ability check, you can use your reaction to reroll it with a -2 penalty. You can do this only once per roll and a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest."
 					]
 				}
@@ -27595,7 +27593,6 @@
 				{
 					"type": "list",
 					"items": [
-						"Your Constitution score increases by 1, to a maximum of 20.",
 						"As an action, choose a friendly creature you can see within 60 feet. For 1 minute while you maintain concentration, that creature gains a +2 bonus to AC. Other creatures have disadvantage on attacks against it unless no other conscious creature friendly to it is within 30 feet."
 					]
 				}
@@ -27616,12 +27613,6 @@
 			"source": "TheUndertomesProjectMoon",
 			"entries": [
 				"You were turned into the next generation of {@race Bloodfiend|TheUndertomesProjectMoon|Bloodfiend} by your sire. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"Your Charisma score increases by 1, to a maximum of 20."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Blood Arts",
@@ -27712,12 +27703,6 @@
 			"source": "TheUndertomesProjectMoon",
 			"entries": [
 				"You have become learned in the manipulation of blood. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"Your Intelligence, Wisdom, or Charisma score increases by 1, to a maximum of 20."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Blood Arts",
@@ -27898,7 +27883,6 @@
 				{
 					"type": "list",
 					"items": [
-						"Your Strength or Dexterity score increases by 1, to a maximum of 20.",
 						"You gain proficiency with {@item Serrated Hand-axe|TheUndertomesProjectMoon|Serrated Handaxes}, Stakes, and {@item Stake Crossbow|TheUndertomesProjectMoon|Stake Crossbows}.",
 						"You gain a +2 bonus to ability checks made to perceive or track Vampires, {@race Bloodfiend|TheUndertomesProjectMoon|Bloodfiends}, or another creature that subsists solely on blood."
 					]
@@ -32485,7 +32469,7 @@
 			"entries": [
 				"Summary judgement is in order, despite the veredict. You summon an arcane circle along the surface covered by this spell's range, indiscernible court-room chatter echoing out. Choose up to three creatures within reach, they must pass a Charisma Saving Throw or have ropes of darkness fall from the sky and strangle them by the neck, hoisting them up 5- feet into the air.",
 				"While hanging, these creatures suffer 1 level of Exhaustion at the start of their turn and having their movement speed reduced to 0 feet. To become free from this, the rope holding their neck must be cut. It has an AC of 14 and 50 hit points, alongside having vulnerability to fire and slashing damage.",
-				"The strangled creature has disadvantage to attacks targetting their own rope. Upon being set free, the creatures hanged recover from half their total Exhaustion, rounded up."
+				"The strangled creature has disadvantage to attacks targeting their own rope. Upon being set free, the creatures hanged recover from half their total Exhaustion, rounded up."
 			],
 			"classes": {
 				"fromClassList": [
