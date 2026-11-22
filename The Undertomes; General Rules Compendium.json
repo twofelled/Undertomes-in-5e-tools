@@ -8,7 +8,7 @@
 				"version": "1.0.5",
 				"authors": ["The Undertomes"],
 				"convertedBy": ["Twofell", "Akari"],
-				"dateReleased": "2026-07-27",
+				"dateReleased": "2024-09-13",
 				"url": "https://theundertomes.crd.co/#",
 				"color": "910060",
 				"colorNight": "cf0057"
@@ -29,7 +29,7 @@
 			"source": "TheUndertomesGeneralRules",
 			"group": "homebrew",
 			"author": "The Undertomes",
-			"published": "2026-07-27",
+			"published": "2024-09-13",
 			"contents": [
 				{
 					"name": "Limbus Company Conditions",
@@ -1034,6 +1034,32 @@
 			"name": "Impenetrable",
 			"entries": [
 				"{@b Impenetrable.} An armor seat with the {@i Impenetrable} property has remarkably good stopping power against piercing forces and other kinds of missiles. Your AC against attacks that would deal piercing damage or that are otherwise missiles ( such as arrows, bullets or certain ranged spells ) is considered to be higher by a value presented in parenthesis near this property. Additionally, whenever you would suffer damage through one such attack it is reduced by an amount equal to double the value presented in parenthesis."
+			]
+		},
+		{
+			"name": "Arcana Shot",
+			"source": "TheUndertomesGeneralRules",
+			"abbreviation": "ARC",
+			"entries": [
+				"A weapon with the Arcana-Shot property has a specialized magazine that allows the use of magic-infused bullets. They may be limited in which bullets the magazine accepts, denominated by a string of letters as per the following table:",
+				{
+					"type": "table",
+					"caption": "Arcana Shot Ammunition",
+					"colLabels": ["Damage Type", "Abbreviation"],
+					"colStyles": ["col-8", "col-4"],
+					"rows": [
+						["Acidic", "A"],
+						["Flaming", "F"],
+						["Gravital", "GR"],
+						["Icebound", "I"],
+						["Lightning", "L"],
+						["Necrotic", "N"],
+						["Pure", "P"],
+						["Radiant", "R"],
+						["Thundering", "T"]
+					]
+				},
+				"If no letters are named, that weapon accepts all type of Arcana Shot."
 			]
 		}
 	],
