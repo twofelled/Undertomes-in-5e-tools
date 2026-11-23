@@ -48,8 +48,9 @@
 						"Sinking",
 						"Minor Conditions",
 						"Haste",
+						"Bind",
 						"Immobilized",
-						"Heavy Blood",
+						"Heavy Bleeding",
 						"Tremor Subtypes",
 						"Tremor - Hemorrhage",
 						"Tremor - Scorch",
@@ -244,6 +245,14 @@
 						},
 						{
 							"type": "entries",
+							"name": "Bind",
+							"entries": [
+								"A creature suffering from Bind is being slowed down in some form, reducing their movement speed by 5-ft. per count of the Condition they currently have.",
+								"All count is lost at the end of the creature's next turn."
+							]
+						},
+						{
+							"type": "entries",
 							"name": "Immobilized",
 							"entries": [
 								"A creature suffering from Immobilized is one who's suffering to move their stiffening limbs and joints. While enduring Immobilized, they take a penalty equal to the count of Immobilized they are currently afflicted with to all of their attack rolls, ability checks and saving throws. All Immobilized stacks are removed at the end of the creature's turn or after a minute has passed outside of combat."
@@ -251,7 +260,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Heavy Blood",
+							"name": "Heavy Bleeding",
 							"entries": [
 								"Heavily Bleeding creatures are bleeding intensely, instead causing the afflicted creature to suffer {@damage 2d6} damage on the same triggers as the {@condition Bleed|TheUndertomesGeneralRules} Condition and 2 count are removed every time it is triggered. The {@skill Medicine} Check required to remove this Condition is increased by 5."
 							]
@@ -771,6 +780,23 @@
 	],
 	"condition": [
 		{
+			"name": "Bind",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature suffering from Bind is being slowed down in some form, reducing their movement speed by 5-ft. per count of the Condition they currently have.",
+				"All count is lost at the end of the creature's next turn."
+			]
+		},
+		{
+			"name": "Bleed",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A Bleeding creature is well, bleeding! They take {@damage 1d4} damage when they perform any action ( Each attack is considered a different action, this also includes Bonus Actions, Legendary Actions, Lair Actions and Reactions, but not Free Actions ), and then Bleed is reduced by a count. They may have all Bleed count removed if any creature passes a successful {@skill Medicine} check on them as an Action. Otherwise, half their current Bleed count is removed upon receiving healing through an item or through a 4th level or lower spell. It is also fully removed upon the use of an item such as a {@item potion of greater healing|DMG|potion of Greater Healing} or a 5th level or greater spell.",
+				"On the case of casting a spell, they suffer an amount of {@damage d4} damage and lose an amount count equal to the spell's level plus one. ( Cantrips only deal {@damage 1d4} damage, 1st Level Spells deal {@damage 2d4} and so on. ) If a creature is suffering from lesser count than the spell slot level spent, they still suffer the maximum damage and remain at a single count.",
+				"The DC for this is 10 + their current Bleed count. If they have only one Bleed count, it may only be reduced through a {@skill Medicine} check."
+			]
+		},
+		{
 			"name": "Burn",
 			"source": "TheUndertomesGeneralRules",
 			"entries": [
@@ -787,30 +813,40 @@
 			]
 		},
 		{
-			"name": "Rupture",
+			"name": "Haste",
 			"source": "TheUndertomesGeneralRules",
 			"entries": [
-				"A creature suffering from the Rupture Condition takes an amount of extra damage die equal to half their current Rupture count whenever they suffer an attack hit. The additional damage die depend on the attacking creature's Proficiency Bonus, being {@damage d4} at +2 Bonus, {@damage d6} at +3 Bonus, {@damage d8} at +4 Bonus, {@damage d10} at +5 Bonus, a {@damage d12} for +6 Bonus and finally {@damage 2d6} at +7 Bonus and greater.",
-				"Once an attack successfully hits and the condition is triggered, they lose all of their remaining Rupture count.",
-				"Ex: If a creature suffering from 5 Rupture would suffer a hit from a creature with a +4 Proficiency Bonus, they would take an additional {@damage 3d8} damage."
+				"A creature that is going through Haste has a spring to their step, pushing themselves to move faster or are being carried through magical effects to become nimble as the breeze.",
+				"This creature gains 5-ft. of additional walking speed and, if already available, flying speed for each Haste count they are benefitting from, to a maximum value of 5 times their proficiency bonus plus 5. All count of the Condition is lost at the start of the creature's next turn."
 			]
 		},
 		{
-			"name": "Tremor",
+			"name": "Heavy Bleeding",
 			"source": "TheUndertomesGeneralRules",
 			"entries": [
-				"A creature suffering from Tremor is one suffering from immeasurable shaking and vibrations inside their body.",
-				"When a Tremoring creature suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage d4} thunder damage equal to their current Tremor count, then losing all remaining count.",
-				"The Condition is also lost after combat is over or at the end of the next short or long rest, if it was gained outside of combat."
+				"Heavily Bleeding creatures are bleeding intensely, instead causing the afflicted creature to suffer {@damage 2d6} damage on the same triggers as the {@condition Bleed|TheUndertomesGeneralRules} Condition and 2 count are removed every time it is triggered. The {@skill Medicine} Check required to remove this Condition is increased by 5."
 			]
 		},
 		{
-			"name": "Bleed",
+			"name": "Immobilized",
 			"source": "TheUndertomesGeneralRules",
 			"entries": [
-				"A Bleeding creature is well, bleeding! They take {@damage 1d4} damage when they perform any action ( Each attack is considered a different action, this also includes Bonus Actions, Legendary Actions, Lair Actions and Reactions, but not Free Actions ), and then Bleed is reduced by a count. They may have all Bleed count removed if any creature passes a successful {@skill Medicine} check on them as an Action. Otherwise, half their current Bleed count is removed upon receiving healing through an item or through a 4th level or lower spell. It is also fully removed upon the use of an item such as a {@item potion of greater healing|DMG|potion of Greater Healing} or a 5th level or greater spell.",
-				"On the case of casting a spell, they suffer an amount of {@damage d4} damage and lose an amount count equal to the spell's level plus one. ( Cantrips only deal {@damage 1d4} damage, 1st Level Spells deal {@damage 2d4} and so on. ) If a creature is suffering from lesser count than the spell slot level spent, they still suffer the maximum damage and remain at a single count.",
-				"The DC for this is 10 + their current Bleed count. If they have only one Bleed count, it may only be reduced through a {@skill Medicine} check."
+				"A creature suffering from Immobilized is one who's suffering to move their stiffening limbs and joints. While enduring Immobilized, they take a penalty equal to the count of Immobilized they are currently afflicted with to all of their attack rolls, ability checks and saving throws. All Immobilized stacks are removed at the end of the creature's turn or after a minute has passed outside of combat."
+			]
+		},
+		{
+			"name": "Immolation",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature beset by Immolation is suffering from the holiest of flames, taking an amount of {@damage d4} radiant damage equal to their current Immolation count at the end of their turns, also halving its total count. When at one Immolation count, it extinguishes at the end of the creature's turn."
+			]
+		},
+		{
+			"name": "Nails",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature suffering from Nails has a number of them embedded in their flesh, drawing out blood and the faith of certain individuals in equal measure. At the end of their turns, a Nailed creature halves their Nail count and gains the same value halved as {@condition Bleed|TheUndertomesGeneralRules} count instead.",
+				"Fanatical creatures gain a +1 bonus modifier to attack rolls against Nailed creatures for each 15 Nails* they are currently suffering from, to a maximum of +3."
 			]
 		},
 		{
@@ -823,6 +859,15 @@
 			]
 		},
 		{
+			"name": "Rupture",
+			"source": "TheUndertomesGeneralRules",
+			"entries": [
+				"A creature suffering from the Rupture Condition takes an amount of extra damage die equal to half their current Rupture count whenever they suffer an attack hit. The additional damage die depend on the attacking creature's Proficiency Bonus, being {@damage d4} at +2 Bonus, {@damage d6} at +3 Bonus, {@damage d8} at +4 Bonus, {@damage d10} at +5 Bonus, a {@damage d12} for +6 Bonus and finally {@damage 2d6} at +7 Bonus and greater.",
+				"Once an attack successfully hits and the condition is triggered, they lose all of their remaining Rupture count.",
+				"Ex: If a creature suffering from 5 Rupture would suffer a hit from a creature with a +4 Proficiency Bonus, they would take an additional {@damage 3d8} damage."
+			]
+		},
+		{
 			"name": "Sinking",
 			"source": "TheUndertomesGeneralRules",
 			"entries": [
@@ -832,25 +877,12 @@
 			]
 		},
 		{
-			"name": "Haste",
+			"name": "Tremor",
 			"source": "TheUndertomesGeneralRules",
 			"entries": [
-				"A creature that is going through Haste has a spring to their step, pushing themselves to move faster or are being carried through magical effects to become nimble as the breeze.",
-				"This creature gains 5-ft. of additional walking speed and, if already available, flying speed for each Haste count they are benefitting from, to a maximum value of 5 times their proficiency bonus plus 5. All count of the Condition is lost at the start of the creature's next turn."
-			]
-		},
-		{
-			"name": "Immobilized",
-			"source": "TheUndertomesGeneralRules",
-			"entries": [
-				"A creature suffering from Immobilized is one who's suffering to move their stiffening limbs and joints. While enduring Immobilized, they take a penalty equal to the count of Immobilized they are currently afflicted with to all of their attack rolls, ability checks and saving throws. All Immobilized stacks are removed at the end of the creature's turn or after a minute has passed outside of combat."
-			]
-		},
-		{
-			"name": "Heavy Blood",
-			"source": "TheUndertomesGeneralRules",
-			"entries": [
-				"Heavily Bleeding creatures are bleeding intensely, instead causing the afflicted creature to suffer {@damage 2d6} damage on the same triggers as the {@condition Bleed|TheUndertomesGeneralRules} Condition and 2 count are removed every time it is triggered. The {@skill Medicine} Check required to remove this Condition is increased by 5."
+				"A creature suffering from Tremor is one suffering from immeasurable shaking and vibrations inside their body.",
+				"When a Tremoring creature suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage d4} thunder damage equal to their current Tremor count, then losing all remaining count.",
+				"The Condition is also lost after combat is over or at the end of the next short or long rest, if it was gained outside of combat."
 			]
 		},
 		{
@@ -869,21 +901,6 @@
 				"A creature suffering from Tremor - Scorch is one currently suffering from a blazing inferno that is eating them from inside out, with each flicker of flame reverberating across their entire being.",
 				"A creature with Tremor - Scorch counts suffers an amount of {@damage d4} fire damage equal to their current Tremor - Scorch count divided by 5, to a maximum of {@damage 8d4} per turn.",
 				"When a creature with Tremor - Scorch suffers {@variantrule Tremor Burst|TheUndertomesGeneralRules} by other means, they take a number of {@damage d6} fire damage equal to the total count of Tremor - Scorch they currently have, then losing all counts of Tremor - Scorch. The Condition is also lost after the creature is knocked {@condition Unconscious}, if they are fully submerged in non-flammable liquid or combat is over or on the next short rest, if it was gained outside of combat."
-			]
-		},
-		{
-			"name": "Immolation",
-			"source": "TheUndertomesGeneralRules",
-			"entries": [
-				"A creature beset by Immolation is suffering from the holiest of flames, taking an amount of {@damage d4} radiant damage equal to their current Immolation count at the end of their turns, also halving its total count. When at one Immolation count, it extinguishes at the end of the creature's turn."
-			]
-		},
-		{
-			"name": "Nails",
-			"source": "TheUndertomesGeneralRules",
-			"entries": [
-				"A creature suffering from Nails has a number of them embedded in their flesh, drawing out blood and the faith of certain individuals in equal measure. At the end of their turns, a Nailed creature halves their Nail count and gains the same value halved as {@condition Bleed|TheUndertomesGeneralRules} count instead.",
-				"Fanatical creatures gain a +1 bonus modifier to attack rolls against Nailed creatures for each 15 Nails* they are currently suffering from, to a maximum of +3."
 			]
 		}
 	],
