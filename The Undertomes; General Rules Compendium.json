@@ -149,6 +149,12 @@
 						"Prosthesis Installation DC Modifiers",
 						"Surgery Accidents"
 					]
+				},
+				{
+					"name": "Channelling"
+				},
+				{
+					"name": "Random Targetting"
 				}
 			]
 		}
@@ -774,6 +780,24 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "section",
+					"name": "Channelling",
+					"entries": [
+						"Channelling is a state of being where a creature focused into a single purpose, such as chanting a long rite or amounting a large amount of their magic into a single point.",
+						"This state is entered with certain features and abilities and usually holds effects at the end or start of many turns, with it being broken only when the Channelling creature is knocked {@condition Unconscious}.",
+						"Regardless of what, when a creature is Channelling they instantly spend their Action, Bonus Action or Reaction for the duration of this Channelling state. ( These being henceforth referred to as A, BA and RE for ease. )"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Random Targetting",
+					"entries": [
+						"Sometimes an ability or feature may ask you to choose a random creature. To do so, refer to an order of the possible creatures to be chosen ( Such as groupings of hostile or friendly creatures, also making preferential use of the Initiative order if in combat ) and rolling an appropriate die for the number of creatures.",
+						"For a two or three creatures, simply roll a {@dice d4} or {@dice d6} respectively, with each creature having a \"weight\" of 2 on the roll, such as when rolling a {@dice d6} on a result of 1-2 creature A gets picked, while 3-4 would be creature B and a 5-6 results in creature C.",
+						"For creatures greater than that in an even number, simply roll an appropriate die, such as a {@dice d4} for 4 creatures, {@dice d6} for 6 and so on. In the case of odd creatures, roll the closest die rounded up, such as rolling a {@dice d8} if there are 7 creatures to be chosen. If the result is an unassigned number, simply re-roll until the result is a listed creature, or pick the last creature in order if this is repeated more than twice."
+					]
 				}
 			]
 		}
@@ -1392,6 +1416,26 @@
 					]
 				},
 				"If you are attempting to remove a limb, the DC is increased by twice the patient's proficiency bonus instead."
+			]
+		},
+		{
+			"name": "Channelling",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"Channelling is a state of being where a creature focused into a single purpose, such as chanting a long rite or amounting a large amount of their magic into a single point.",
+				"This state is entered with certain features and abilities and usually holds effects at the end or start of many turns, with it being broken only when the Channelling creature is knocked {@condition Unconscious}.",
+				"Regardless of what, when a creature is Channelling they instantly spend their Action, Bonus Action or Reaction for the duration of this Channelling state. ( These being henceforth referred to as A, BA and RE for ease. )"
+			]
+		},
+		{
+			"name": "Random Targetting",
+			"source": "TheUndertomesGeneralRules",
+			"ruleType": "O",
+			"entries": [
+				"Sometimes an ability or feature may ask you to choose a random creature. To do so, refer to an order of the possible creatures to be chosen ( Such as groupings of hostile or friendly creatures, also making preferential use of the Initiative order if in combat ) and rolling an appropriate die for the number of creatures.",
+				"For a two or three creatures, simply roll a {@dice d4} or {@dice d6} respectively, with each creature having a \"weight\" of 2 on the roll, such as when rolling a {@dice d6} on a result of 1-2 creature A gets picked, while 3-4 would be creature B and a 5-6 results in creature C.",
+				"For creatures greater than that in an even number, simply roll an appropriate die, such as a {@dice d4} for 4 creatures, {@dice d6} for 6 and so on. In the case of odd creatures, roll the closest die rounded up, such as rolling a {@dice d8} if there are 7 creatures to be chosen. If the result is an unassigned number, simply re-roll until the result is a listed creature, or pick the last creature in order if this is repeated more than twice."
 			]
 		}
 	]

@@ -17,7 +17,7 @@
 		"optionalFeatureTypes": {
 			"D11CB": "Cult Boon",
 			"D11EC": "E.G.O. Corrosion",
-			"WP": "Wondrous Pet"
+			"WP": "Wondrous Pets"
 		},
 		"edition": "classic",
 		"status": "ready",
@@ -524,7 +524,7 @@
 					"type": "entries",
 					"name": "The Shaman's Wit",
 					"entries": [
-						"Whenever the effects of an Undertomes status effect—such as {@condition Burn|TheUndertomesGeneralRules}, {@condition Poise|TheUndertomesGeneralRules}, {@condition Bleed|TheUndertomesGeneralRules}, etc.—would trigger on a creature within sight, you may spend any number of charges to absorb a count per charge spent."
+						"Whenever the effects of an Undertomes status effect\u2014such as {@condition Burn|TheUndertomesGeneralRules}, {@condition Poise|TheUndertomesGeneralRules}, {@condition Bleed|TheUndertomesGeneralRules}, etc.\u2014would trigger on a creature within sight, you may spend any number of charges to absorb a count per charge spent."
 					]
 				},
 				{
@@ -613,7 +613,8 @@
 						"source": "PHB"
 					}
 				]
-			}
+			},
+			"savingThrow": ["dexterity"]
 		},
 		{
 			"name": "Fervent Adoration",
@@ -666,7 +667,8 @@
 						"source": "PHB"
 					}
 				]
-			}
+			},
+			"savingThrow": ["wisdom"]
 		},
 		{
 			"name": "Marination Beam",
@@ -868,7 +870,11 @@
 			"source": "UndertomesBrewathon1",
 			"prerequisite": [
 				{
-					"other": "proficiency in Cook's utensils"
+					"proficiency": [
+						{
+							"tool": ["cook's utensils"]
+						}
+					]
 				}
 			],
 			"entries": [
@@ -1297,6 +1303,14 @@
 						"identifier": 9
 					},
 					"headers": ["Tremor - Sync", "Marrowing Growth", "Corroded"]
+				},
+				{
+					"name": "Shared References",
+					"headers": ["Variant Rules"],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 10
+					}
 				}
 			]
 		}
@@ -1339,14 +1353,14 @@
 						{
 							"type": "list",
 							"items": [
-								"{@item Bongy Plush|UndertomesBrewathon1} — Created by #PyrrhicRed.",
-								"{@item Bottle of Terrible Tears|UndertomesBrewathon1} — Created by #Frost.",
-								"{@item Conceited Doll's Blood-Soaked Talisman|UndertomesBrewathon1} — Created by #Akari.",
-								"{@item Furor beneath Brass|UndertomesBrewathon1} — Created by #Twofell.",
-								"{@item Helapoiesis Bullet|UndertomesBrewathon1} — Created by #PyrrhicRed.",
-								"{@item Helmet of Head Chicken|UndertomesBrewathon1} — Created by #Frost.",
-								"{@item Matador's Mantle|UndertomesBrewathon1} — Created by #Twofell.",
-								"{@item Shielded Sorrows|UndertomesBrewathon1} — Created by #Oixie."
+								"{@item Bongy Plush|UndertomesBrewathon1} \u2014 Created by #PyrrhicRed.",
+								"{@item Bottle of Terrible Tears|UndertomesBrewathon1} \u2014 Created by #Frost.",
+								"{@item Conceited Doll's Blood-Soaked Talisman|UndertomesBrewathon1} \u2014 Created by #Akari.",
+								"{@item Furor beneath Brass|UndertomesBrewathon1} \u2014 Created by #Twofell.",
+								"{@item Helapoiesis Bullet|UndertomesBrewathon1} \u2014 Created by #PyrrhicRed.",
+								"{@item Helmet of Head Chicken|UndertomesBrewathon1} \u2014 Created by #Frost.",
+								"{@item Matador's Mantle|UndertomesBrewathon1} \u2014 Created by #Twofell.",
+								"{@item Shielded Sorrows|UndertomesBrewathon1} \u2014 Created by #Oixie."
 							]
 						}
 					]
@@ -1358,7 +1372,7 @@
 						{
 							"type": "list",
 							"items": [
-								"{@optfeature Mutant Headchicken (Bongy)|UndertomesBrewathon1} — Created by #Bishop."
+								"{@optfeature Mutant Headchicken (Bongy)|UndertomesBrewathon1} \u2014 Created by #Bishop."
 							]
 						}
 					]
@@ -1370,14 +1384,14 @@
 						{
 							"type": "list",
 							"items": [
-								"{@item Club of Dark Poultry|UndertomesBrewathon1} — Created by #Frost.",
-								"{@item Crushing Resentment|UndertomesBrewathon1} — Created by #Twofell.",
-								"{@item Helapoiesis Administering Device|UndertomesBrewathon1} — Created by #AroAceBrit.",
-								"{@item OuroBoros Atelier \"Chulainn\" Precision Rifle|UndertomesBrewathon1} — Created by #Mai.",
-								"{@item OuroBoros Atelier \"Gáe Bulg\" Cell Proliferation Round|UndertomesBrewathon1} — Created by #Mai.",
-								"{@item Twin-Bladed Excision Staff|UndertomesBrewathon1} — Created by #Bishop.",
-								"{@item The Spanner|UndertomesBrewathon1} — Created by #Dr. Peter J. Pyro.",
-								"{@item Wishmaker's Shamanic Staff|UndertomesBrewathon1} — Created by #Akari."
+								"{@item Club of Dark Poultry|UndertomesBrewathon1} \u2014 Created by #Frost.",
+								"{@item Crushing Resentment|UndertomesBrewathon1} \u2014 Created by #Twofell.",
+								"{@item Helapoiesis Administering Device|UndertomesBrewathon1} \u2014 Created by #AroAceBrit.",
+								"{@item OuroBoros Atelier \"Chulainn\" Precision Rifle|UndertomesBrewathon1} \u2014 Created by #Mai.",
+								"{@item OuroBoros Atelier \"Gáe Bulg\" Cell Proliferation Round|UndertomesBrewathon1} \u2014 Created by #Mai.",
+								"{@item Twin-Bladed Excision Staff|UndertomesBrewathon1} \u2014 Created by #Bishop.",
+								"{@item The Spanner|UndertomesBrewathon1} \u2014 Created by #Dr. Peter J. Pyro.",
+								"{@item Wishmaker's Shamanic Staff|UndertomesBrewathon1} \u2014 Created by #Akari."
 							]
 						}
 					]
@@ -1386,47 +1400,73 @@
 					"type": "section",
 					"name": "Spells",
 					"entries": [
-						"{@spell Cast Flesh|UndertomesBrewathon1} — Created by #Mai.",
-						"{@spell Fervent Adoration|UndertomesBrewathon1} — Created by #PyrrhicRed.",
-						"{@spell Marination Beam|UndertomesBrewathon1} — Created by #Bishop."
+						"{@spell Cast Flesh|UndertomesBrewathon1} \u2014 Created by #Mai.",
+						"{@spell Fervent Adoration|UndertomesBrewathon1} \u2014 Created by #PyrrhicRed.",
+						"{@spell Marination Beam|UndertomesBrewathon1} \u2014 Created by #Bishop."
 					]
 				},
 				{
 					"type": "section",
 					"name": "Races",
 					"entries": [
-						"{@race Inbervulpes|UndertomesBrewathon1} — Created by #zachsonicmee.",
-						"{@race Dandyman|UndertomesBrewathon1} — Created by #Frost."
+						"{@race Inbervulpes|UndertomesBrewathon1} \u2014 Created by #zachsonicmee.",
+						"{@race Dandyman|UndertomesBrewathon1} \u2014 Created by #Frost."
 					]
 				},
 				{
 					"type": "section",
 					"name": "Feats",
 					"entries": [
-						"{@feat Fried Chicken Master|UndertomesBrewathon1} — Created by #Blade.",
-						"{@feat Medic Adept|UndertomesBrewathon1} — Created by #Frost.",
-						"{@feat Overtime|UndertomesBrewathon1} — Created by #Blade.",
-						"{@feat Gene code: K|UndertomesBrewathon1} — Created by #Oixie."
+						"{@feat Fried Chicken Master|UndertomesBrewathon1} \u2014 Created by #Blade.",
+						"{@feat Medic Adept|UndertomesBrewathon1} \u2014 Created by #Frost.",
+						"{@feat Overtime|UndertomesBrewathon1} \u2014 Created by #Blade.",
+						"{@feat Gene code: K|UndertomesBrewathon1} \u2014 Created by #Oixie."
 					]
 				},
 				{
 					"type": "section",
 					"name": "Optional Features",
 					"entries": [
-						"{@optfeature Corrosive Chamber|UndertomesBrewathon1} — Created by #Frost.",
-						"{@optfeature The Technology Liberation Alliance|UndertomesBrewathon1} — Created by #Dr. Peter J. Pyro.",
-						"{@optfeature E.G.O. Corrosion: Red Sheet|UndertomesBrewathon1} — Created by #Twofell.",
-						"{@optfeature E.G.O. Corrosion: Sunshower|UndertomesBrewathon1} — Created by #Twofell.",
-						"{@optfeature E.G.O. Corrosion: Sloshing|UndertomesBrewathon1} — Created by #Twofell."
+						"{@optfeature Corrosive Chamber|UndertomesBrewathon1} \u2014 Created by #Frost.",
+						"{@optfeature The Technology Liberation Alliance|UndertomesBrewathon1} \u2014 Created by #Dr. Peter J. Pyro.",
+						"{@optfeature E.G.O. Corrosion: Red Sheet|UndertomesBrewathon1} \u2014 Created by #Twofell.",
+						"{@optfeature E.G.O. Corrosion: Sunshower|UndertomesBrewathon1} \u2014 Created by #Twofell.",
+						"{@optfeature E.G.O. Corrosion: Sloshing|UndertomesBrewathon1} \u2014 Created by #Twofell."
 					]
 				},
 				{
 					"type": "section",
 					"name": "Conditions",
 					"entries": [
-						"{@condition Tremor - Sync|UndertomesBrewathon1} — Created by #Dr. Peter J. Pyro.",
-						"{@condition Marrowing Growth|UndertomesBrewathon1} — Created by #Mai.",
+						"{@condition Tremor - Sync|UndertomesBrewathon1} \u2014 Created by #Dr. Peter J. Pyro.",
+						"{@condition Marrowing Growth|UndertomesBrewathon1} \u2014 Created by #Mai.",
 						"{@condition Corroded|UndertomesBrewathon1}"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Shared References",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Variant Rules",
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "variantrule",
+									"name": "Random Targetting",
+									"source": "TheUndertomesGeneralRules",
+									"collapsed": false
+								},
+								{
+									"type": "statblock",
+									"prop": "variantrule",
+									"name": "Wondrous Pets & Friends",
+									"source": "TheUndertomesGeneralRules",
+									"collapsed": false
+								}
+							]
+						}
 					]
 				}
 			]

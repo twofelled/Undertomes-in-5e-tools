@@ -18,8 +18,9 @@
 		"dateLastModified": 1787980429,
 		"edition": "classic",
 		"optionalFeatureTypes": {
-			"WP": "Wondrous Pet",
-			"OR": "Optional Rogue Feature"
+			"WP": "Wondrous Pets",
+			"OR": "Optional Rogue Feature",
+			"TU:ALT:ROG": "Rogue Alternate Class Feature"
 		}
 	},
 	"itemProperty": [
@@ -322,7 +323,7 @@
 				},
 				"A golden spear emanating bioresonant energy. It's very existence is a wound in reality.",
 				"As an action, you may choose to make an attack with this item. It has +5 to hit and uses Strength as its modifier.",
-				"On hit, the spear deals damage equal to 1/4th of the maximum health of the target, and inflicts {@condition orruption II deniwtretnl|UndertomesBrewathon2} until the end of combat. It then breaks, rendering it unusable."
+				"On hit, the spear deals damage equal to 1/4th of the maximum health of the target, and inflicts {@condition Corruption II deniwtretnl|UndertomesBrewathon2} until the end of combat. It then breaks, rendering it unusable."
 			],
 			"wondrous": true,
 			"reqAttune": true
@@ -729,7 +730,8 @@
 						"source": "PHB"
 					}
 				]
-			}
+			},
+			"savingThrow": ["wisdom"]
 		},
 		{
 			"name": "The Door Gag",
@@ -872,7 +874,9 @@
 						"source": "PHB"
 					}
 				]
-			}
+			},
+			"savingThrow": ["constitution", "dexterity", "strength", "wisdom"],
+			"damageInflict": ["bludgeoning", "piercing", "psychic", "slashing"]
 		}
 	],
 	"race": [
@@ -1733,7 +1737,7 @@
 					"entries": ["Created by #Akari."]
 				},
 				"A bearded, burly and rather intimidating man who has tagged along for your journey, despite the horrors you have/will have faced. A bit eccentric and self-righteous, though his undeniably radiant heart of gold fuels his unwavering determination to maintain; to purge that which tarnishes his land and to strive against the eternal force of entropy. (Dirt. He's talking about dirt. He's a janitor.) Papineau will remain loyal and an ally to you and your allies as long as any of you are not hostile to him. While Papineau is an ally, you gain the following benefits:",
-				"{@b Mackinaw's Shroud.} You gain resistance to cold damage. Once per short or long rest, Papineau will defend you from harm, stalwart as always—allowing you to reduce the damage by {@dice 1d10} + your Constitution modifier.",
+				"{@b Mackinaw's Shroud.} You gain resistance to cold damage. Once per short or long rest, Papineau will defend you from harm, stalwart as always\u2014allowing you to reduce the damage by {@dice 1d10} + your Constitution modifier.",
 				"{@b It Doesn't Require Papineau's Head.} Three times per long rest, you may use your reaction for Papineau to rally you with an inspiring shout, cry, or speech. You end the {@condition Charmed} or {@condition Frightened} conditions on up to {@dice 1d4} allies, including yourself.",
 				"{@b Sweep.} You can use your bonus action to request for Papineau to clean the area. He pulls out a mop, broom, or other cleaning utensil and gets to work immediately. You may designate a target area for him to clean; that area is treated as if it were under the effects of the {@spell Dust Devil|XGE} spell, cast at 3rd-level. You may use this ability a number of times equal to your proficiency bonus per long rest.",
 				"{@b Joyeuse, Mark of the Legendary Mopsmith: Mr. Cleaner.} Once per week, you may have Papineau utter the command words \"I have abandoned all hope. All I have left is duty.\" to his mop, triggering the Mark of the Legendary Mopsmith: Mr. Cleaner. The next time an ally within sight of Papineau would suffer from a Condition other than {@condition Prone}, he may sweep them off their feet and stand them back up. The radiant energy of Joyeuse washes over them, removing that Condition from the target creature. If that Condition has counts/stacks, that creature removes half of them. The next time an enemy within sight of Papineau is struck by an ally, Papineau may assist in the assault. Papineau makes a melee weapon attack with Joyeuse ({@dice 1d20+11}) at the target hostile creature. On a hit, the target takes {@dice 1d8} bludgeoning damage + {@dice 2d4} radiant damage for each status condition (including Undertomes status effects) they are currently afflicted with, to a maximum of {@dice 10d4}."
@@ -1808,7 +1812,7 @@
 		{
 			"name": "Bloodletting Attack",
 			"source": "UndertomesBrewathon2",
-			"featureType": ["OTH"],
+			"featureType": ["TU:ALT:ROG"],
 			"entries": [
 				{
 					"type": "quote",
@@ -1846,6 +1850,18 @@
 						["17th Level", "{@damage 3d4}"],
 						["19th Level", "{@damage 4d4}"]
 					]
+				}
+			],
+			"isClassFeatureVariant": true,
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"level": 1
+					}
 				}
 			]
 		}
@@ -1966,7 +1982,7 @@
 						"type": "chapter",
 						"identifier": 8
 					},
-					"headers": ["orruption II deniwtretnl"]
+					"headers": ["Corruption II deniwtretnl"]
 				},
 				{
 					"name": "Item Properties",
@@ -1975,6 +1991,14 @@
 						"identifier": 9
 					},
 					"headers": ["Siege", "Strike", "Sync"]
+				},
+				{
+					"name": "Shared References",
+					"headers": ["Variant Rules"],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 10
+					}
 				}
 			]
 		}
@@ -2023,17 +2047,17 @@
 						{
 							"type": "list",
 							"items": [
-								"{@item A Golden Spear|UndertomesBrewathon2} — Created by #Mai.",
-								"{@item Bear that Bears the Brunt|UndertomesBrewathon2} — Created by #Twofell.",
-								"{@item The Jacket|UndertomesBrewathon2} — Created by #Mai.",
-								"{@item Fritz Camera|UndertomesBrewathon2} — Created by #Frost.",
-								"{@item Shoes Washed Red|UndertomesBrewathon2} — Created by #Twofell.",
-								"{@item Tarnished Charm|UndertomesBrewathon2} — Created by #SaviorGaming.",
-								"{@item Friday|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro.",
-								"{@item The Lament Configuration|UndertomesBrewathon2} — Created by #Chaos.",
-								"{@item The Necronomicon|UndertomesBrewathon2} — Created by #Frost.",
-								"{@item The Unwilting Rose|UndertomesBrewathon2} — Created by #Twofell.",
-								"{@item The Rose With Enumerable Petals|UndertomesBrewathon2} — Created by #Twofell."
+								"{@item A Golden Spear|UndertomesBrewathon2} \u2014 Created by #Mai.",
+								"{@item Bear that Bears the Brunt|UndertomesBrewathon2} \u2014 Created by #Twofell.",
+								"{@item The Jacket|UndertomesBrewathon2} \u2014 Created by #Mai.",
+								"{@item Fritz Camera|UndertomesBrewathon2} \u2014 Created by #Frost.",
+								"{@item Shoes Washed Red|UndertomesBrewathon2} \u2014 Created by #Twofell.",
+								"{@item Tarnished Charm|UndertomesBrewathon2} \u2014 Created by #SaviorGaming.",
+								"{@item Friday|UndertomesBrewathon2} \u2014 Created by #Dr. Peter J. Pyro.",
+								"{@item The Lament Configuration|UndertomesBrewathon2} \u2014 Created by #Chaos.",
+								"{@item The Necronomicon|UndertomesBrewathon2} \u2014 Created by #Frost.",
+								"{@item The Unwilting Rose|UndertomesBrewathon2} \u2014 Created by #Twofell.",
+								"{@item The Rose With Enumerable Petals|UndertomesBrewathon2} \u2014 Created by #Twofell."
 							]
 						}
 					]
@@ -2045,12 +2069,12 @@
 						{
 							"type": "list",
 							"items": [
-								"{@optfeature Cat Who Knows|UndertomesBrewathon2} — Created by #Twofell.",
-								"{@optfeature Baby Graboid|UndertomesBrewathon2} — Created by #Frost.",
-								"{@optfeature Baby Shrieker|UndertomesBrewathon2} — Created by #Frost.",
-								"{@optfeature Papineau|UndertomesBrewathon2} — Created by #Akari.",
-								"{@optfeature The Pursuer (Pet)|UndertomesBrewathon2} — Created by #Mai.",
-								"{@optfeature The Traditional Item Merchant|UndertomesBrewathon2} — Created by #Mai."
+								"{@optfeature Cat Who Knows|UndertomesBrewathon2} \u2014 Created by #Twofell.",
+								"{@optfeature Baby Graboid|UndertomesBrewathon2} \u2014 Created by #Frost.",
+								"{@optfeature Baby Shrieker|UndertomesBrewathon2} \u2014 Created by #Frost.",
+								"{@optfeature Papineau|UndertomesBrewathon2} \u2014 Created by #Akari.",
+								"{@optfeature The Pursuer (Pet)|UndertomesBrewathon2} \u2014 Created by #Mai.",
+								"{@optfeature The Traditional Item Merchant|UndertomesBrewathon2} \u2014 Created by #Mai."
 							]
 						}
 					]
@@ -2062,13 +2086,13 @@
 						{
 							"type": "list",
 							"items": [
-								"{@item Dream Demon|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro.",
-								"{@item Evil Incarnate|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro.",
-								"{@item Haket|UndertomesBrewathon2} — Created by #Oixie.",
-								"{@item Pursuer|UndertomesBrewathon2} — Created by #Oixie.",
-								"{@item The Family Butcher|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro.",
-								"{@item The Rapier|UndertomesBrewathon2} — Created by #Blade.",
-								"{@item Thirteen|UndertomesBrewathon2} — Created by #Dr. Peter J. Pyro."
+								"{@item Dream Demon|UndertomesBrewathon2} \u2014 Created by #Dr. Peter J. Pyro.",
+								"{@item Evil Incarnate|UndertomesBrewathon2} \u2014 Created by #Dr. Peter J. Pyro.",
+								"{@item Haket|UndertomesBrewathon2} \u2014 Created by #Oixie.",
+								"{@item Pursuer|UndertomesBrewathon2} \u2014 Created by #Oixie.",
+								"{@item The Family Butcher|UndertomesBrewathon2} \u2014 Created by #Dr. Peter J. Pyro.",
+								"{@item The Rapier|UndertomesBrewathon2} \u2014 Created by #Blade.",
+								"{@item Thirteen|UndertomesBrewathon2} \u2014 Created by #Dr. Peter J. Pyro."
 							]
 						}
 					]
@@ -2077,41 +2101,41 @@
 					"type": "section",
 					"name": "Spells",
 					"entries": [
-						"{@spell Fragile Promise|UndertomesBrewathon2} — Created by #Blade.",
-						"{@spell Horrible Death|UndertomesBrewathon2} — Created by #Mai.",
-						"{@spell The Door Gag|UndertomesBrewathon2} — Created by #Oixie.",
-						"{@spell Teeth Hell|UndertomesBrewathon2} — Created by #Akari."
+						"{@spell Fragile Promise|UndertomesBrewathon2} \u2014 Created by #Blade.",
+						"{@spell Horrible Death|UndertomesBrewathon2} \u2014 Created by #Mai.",
+						"{@spell The Door Gag|UndertomesBrewathon2} \u2014 Created by #Oixie.",
+						"{@spell Teeth Hell|UndertomesBrewathon2} \u2014 Created by #Akari."
 					]
 				},
 				{
 					"type": "section",
 					"name": "Races",
 					"entries": [
-						"{@race Anemoales|UndertomesBrewathon2} — Created by #Oixie.",
-						"{@race Self-Portrait|UndertomesBrewathon2} — Created by #Akari.",
-						"{@race Self-Portrait (Selflessness)|UndertomesBrewathon2} — Created by #Akari.",
-						"{@race Self-Portrait (Outrage)|UndertomesBrewathon2} — Created by #Akari.",
-						"{@race Self-Portrait (Nihilism)|UndertomesBrewathon2} — Created by #Akari.",
-						"{@race Replika|UndertomesBrewathon2} — Created by #Blade & Mai.",
-						"{@race LSTR Replika Model|UndertomesBrewathon2} — Created by #Blade & Mai.",
-						"{@race KLBR Replika Model|UndertomesBrewathon2} — Created by #Blade & Mai.",
-						"{@race MNHR Replika Model|UndertomesBrewathon2} — Created by #Blade & Mai.",
-						"{@race STCR Replika Model|UndertomesBrewathon2} — Created by #Blade & Mai."
+						"{@race Anemoales|UndertomesBrewathon2} \u2014 Created by #Oixie.",
+						"{@race Self-Portrait|UndertomesBrewathon2} \u2014 Created by #Akari.",
+						"{@race Self-Portrait (Selflessness)|UndertomesBrewathon2} \u2014 Created by #Akari.",
+						"{@race Self-Portrait (Outrage)|UndertomesBrewathon2} \u2014 Created by #Akari.",
+						"{@race Self-Portrait (Nihilism)|UndertomesBrewathon2} \u2014 Created by #Akari.",
+						"{@race Replika|UndertomesBrewathon2} \u2014 Created by #Blade & Mai.",
+						"{@race LSTR Replika Model|UndertomesBrewathon2} \u2014 Created by #Blade & Mai.",
+						"{@race KLBR Replika Model|UndertomesBrewathon2} \u2014 Created by #Blade & Mai.",
+						"{@race MNHR Replika Model|UndertomesBrewathon2} \u2014 Created by #Blade & Mai.",
+						"{@race STCR Replika Model|UndertomesBrewathon2} \u2014 Created by #Blade & Mai."
 					]
 				},
 				{
 					"type": "section",
 					"name": "Optional Features",
 					"entries": [
-						"{@optfeature Chain-Ripping Blast|UndertomesBrewathon2} — Created by #Frost.",
-						"{@optfeature Bloodletting Attack|UndertomesBrewathon2} — Created by #Akari."
+						"{@optfeature Chain-Ripping Blast|UndertomesBrewathon2} \u2014 Created by #Frost.",
+						"{@optfeature Bloodletting Attack|UndertomesBrewathon2} \u2014 Created by #Akari."
 					]
 				},
 				{
 					"type": "section",
 					"name": "Conditions",
 					"entries": [
-						"{@condition Corruption II deniwtretnl|UndertomesBrewathon2} — Created by #Mai."
+						"{@condition Corruption II deniwtretnl|UndertomesBrewathon2} \u2014 Created by #Mai."
 					]
 				},
 				{
@@ -2122,8 +2146,27 @@
 							"type": "list",
 							"items": [
 								"{@itemProperty Siege|UndertomesBrewathon2}.",
-								"{@itemProperty Strike|UndertomesBrewathon2} — Created by #Oixie.",
-								"{@itemProperty Sync|UndertomesBrewathon2} — Created by #Oixie."
+								"{@itemProperty Strike|UndertomesBrewathon2} \u2014 Created by #Oixie.",
+								"{@itemProperty Sync|UndertomesBrewathon2} \u2014 Created by #Oixie."
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Shared References",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Variant Rules",
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "variantrule",
+									"name": "Wondrous Pets & Friends",
+									"source": "TheUndertomesGeneralRules",
+									"collapsed": false
+								}
 							]
 						}
 					]

@@ -12,7 +12,7 @@
 
 ## Choose a file
 
-**For the complete Project Moon collection you can load the Project Moon JSON.** It contains 77 sources, including the General Rules for LC Conditions. Each brew has its own source abbreviation and book, which allows you to filter the content and know if conditions are shared between tomes.
+**For the complete Project Moon collection you can load the Project Moon JSON.** It contains 76 sources, including the General Rules for LC Conditions. Each brew has its own source abbreviation and book, which allows you to filter the content and know if conditions are shared between tomes.
 
 | Collection | Contents | Download |
 | --- | --- | --- |
