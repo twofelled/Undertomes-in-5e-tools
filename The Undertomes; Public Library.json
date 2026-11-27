@@ -427,6 +427,28 @@
 						"While you have your Eikon Primed, you can use an Action to create a pillar of fire 30 feet wide and 100 feet tall within 100 feet of you. This pillar lasts for 1 minute, but you must concentrate on it as if concentrating on a spell. When a hostile creature first enters or ends its turn in the area, it must make a Constitution saving throw. On a failed save, it takes {@damage 6d6} fire damage. On a successful save, it takes half as much damage. When a friendly creature first enters or ends its turn in the area, it regains {@dice 4d6} Hit Points. Once you use this ability, you can't use it again until you finish a Long Rest unless you suffer 1 point of Exhaustion."
 					]
 				}
+			],
+			"foundryActivities": [
+				{
+					"name": "Heatwave",
+					"type": "damage",
+					"activation": {
+						"type": "reaction",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"While you have your Eikon Primed, you can use a Reaction when a creature within 500 feet of you makes a Ranged Attack against you to cancel that Ranged Attack and immediately deal {@damage 3d8} fire damage to it as you release a lance of fire from your mouth that melts the attack. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+					],
+					"damage": {
+						"parts": [
+							{
+								"number": 3,
+								"denomination": 8,
+								"types": ["fire"]
+							}
+						]
+					}
+				}
 			]
 		},
 		{

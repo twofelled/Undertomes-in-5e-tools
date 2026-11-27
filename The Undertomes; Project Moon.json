@@ -8339,8 +8339,8 @@
 								{
 									"type": "statblock",
 									"prop": "condition",
-									"name": "Fragility",
-									"source": "TheUndertomesMG",
+									"name": "Fragile",
+									"source": "TheUndertomesASF",
 									"collapsed": false
 								},
 								{
@@ -8992,8 +8992,8 @@
 						{
 							"type": "statblock",
 							"prop": "condition",
-							"name": "Fragility",
-							"source": "TheUndertomesMG",
+							"name": "Fragile",
+							"source": "TheUndertomesASF",
 							"collapsed": false
 						},
 						{
@@ -9119,8 +9119,8 @@
 								{
 									"type": "statblock",
 									"prop": "condition",
-									"name": "Fragility",
-									"source": "TheUndertomesMG",
+									"name": "Fragile",
+									"source": "TheUndertomesASF",
 									"collapsed": false
 								}
 							]
@@ -12315,7 +12315,7 @@
 									"items": [
 										"{@optfeature Unloved Gift Surprise|TheUndertomesASF}",
 										"{@spell Birth Friendship|TheUndertomesASF}",
-										"{@spell Gift of an Broken Heart|TheUndertomesASF}"
+										"{@spell Gift of a Broken Heart|TheUndertomesASF}"
 									]
 								},
 								{
@@ -16104,7 +16104,7 @@
 					"type": "entries",
 					"name": "To Make // Irrecognizable",
 					"entries": [
-						"Upon reaching 3rd level, you're already used to turning a slab of meat into a surgeon's worst nightmare. When you reduce a creature below one hit point, you may use your reaction to mangle their corpse beyond recognition or salvation. If they somehow survive, they maximum hit points are reduced by one roll of your Sneak Attack die, only being restored by a Restoration spell or greater means. Upon reaching 13th level and using this feature, the damage instead is only recoverable through the means of a Greater Restoration spell or similarly higher level spells.",
+						"Upon reaching 3rd level, you're already used to turning a slab of meat into a surgeon's worst nightmare. When you reduce a creature below one hit point, you may use your reaction to mangle their corpse beyond recognition or salvation. If they somehow survive, they maximum hit points are reduced by one roll of your Sneak Attack die, only being restored by a Restoration spell or greater means. Upon reaching 13th level and using this feature, the damage instead is only recoverable through the means of a {@spell Greater Restoration} spell or similarly higher level spells.",
 						"Additionally, upon doing this, a sense of despair washes over any creature that was able to see the horrible act. Any creature that can see the scene must pass your a Wisdom Saving throw against your Anonymous DC. On a failure, they must either roll a d4 or have the DM choose the most appropriate reaction of theirs to the scene:",
 						{
 							"type": "table",
@@ -16758,7 +16758,7 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 3,
 			"entries": [
-				"You gain proficiency in Cartographer’s Tools and may use them to easily find your way towards any landmark you know, preventing you from becoming lost as long as you can see the starry sky."
+				"You gain proficiency in {@item cartographer's tools|PHB|Cartographer’s Tools} and may use them to easily find your way towards any landmark you know, preventing you from becoming lost as long as you can see the starry sky."
 			]
 		},
 		{
@@ -18534,7 +18534,7 @@
 						"As a part of this channel divinity action, you cast the {@spell Find Steed} spell, except it has the casting time of 1 action and its duration is 1 minute, although you don't need to maintain concentration on it, your mount will disappear by the end of the spell."
 					]
 				},
-				"The form your steed takes when casting the spell this way is always of Dullahan, a headless black horse wreathed in darker shadows. If you already have bonded with a mount through casting Find steed or any other steed spell, you maintain your mount's original stat block, except for the following changes. If you don't have a mount, then Dullahan will use the statblock of Dullahan as described in the end of this document. Additionally, when mounting Dullahan, you may choose whether to take a defensive or offensive stance. If you take the defensive stance, your AC increases by 3, but you take a -2 penalty to attack rolls. If you take the offensive stance, your AC decreases by 3, but you add a +3 bonus to attack and damage rolls. Whenever you kill a creature you gain 1 point of {@condition Coffin|TheUndertomesOA}, however while mounting Dullahan, you gain 2 points of {@condition Coffin|TheUndertomesOA} instead.",
+				"The form your steed takes when casting the spell this way is always of Dullahan, a headless black horse wreathed in darker shadows. If you already have bonded with a mount through casting {@spell Find Steed} or any other steed spell, you maintain your mount's original stat block, except for the following changes. If you don't have a mount, then Dullahan will use the statblock of Dullahan as described in the end of this document. Additionally, when mounting Dullahan, you may choose whether to take a defensive or offensive stance. If you take the defensive stance, your AC increases by 3, but you take a -2 penalty to attack rolls. If you take the offensive stance, your AC decreases by 3, but you add a +3 bonus to attack and damage rolls. Whenever you kill a creature you gain 1 point of {@condition Coffin|TheUndertomesOA}, however while mounting Dullahan, you gain 2 points of {@condition Coffin|TheUndertomesOA} instead.",
 				{
 					"type": "entries",
 					"name": "O, Dullahan...!",
@@ -18918,7 +18918,7 @@
 							"type": "entries",
 							"name": "/PREORDAIN./ [ALT].",
 							"entries": [
-								"You convene with your magicked device for guidance and clearance on what to do in a difficult path. You instantly cast any Divination spell from the Paladin spell list without spending a spell slot. You may only cast these spells as long as you may cast spells of that appropriate level, such as needing to reach at least 5th-level in Paladin to cast the {@spell locate object} spell."
+								"You convene with your magicked device for guidance and clearance on what to do in a difficult path. You instantly cast any {@spell Divination} spell from the Paladin spell list without spending a spell slot. You may only cast these spells as long as you may cast spells of that appropriate level, such as needing to reach at least 5th-level in Paladin to cast the {@spell locate object} spell."
 							]
 						}
 					]
@@ -19305,7 +19305,6 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 2,
 			"entries": [
-				"{@i A Druid Subclass by the Undertomes}",
 				"Druids of this circle are completely in-tune with their emotions and the feelings of those around them - they carry the burden of people, animals and plants that come to them for aid. They know tears are a necessary, cleansing part of life, and they are not afraid to cry when they need to, as well as teach whoever needs it to cry as well."
 			]
 		},
@@ -19381,7 +19380,6 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 2,
 			"entries": [
-				"{@i A Druid Subclass by the Undertomes}",
 				"Moving on from death is a hard passage for most, yet an unavoidable piece of happenstance to all. You are one who has taken the calling of aiding the very world and those who live in it to move onto the other side, be that in freeing those who remain after their time from their ethereal permanence, removing the remains of the dead to where they may wither away in piece or guiding those in life to become focused in living instead of mourning the everpresent dead."
 			]
 		},
@@ -19663,7 +19661,6 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 3,
 			"entries": [
-				"{@i A Bard Subclass by the Undertomes}",
 				"Bards who follow the College of the Heartthrob are often neither bards nor followers, instead being such beautiful visages to behold and to hear that their exotic existence captivates the mortal heart, turning it into a maleable tool under their whims.",
 				"Most recognize their talent and use it to fulfil a duty inspiring others and becoming grand leaders and advisors, but others might choose to use such a gift to gain everything their ever wanted while leaving a trail of heartbreak behind their wake."
 			]
@@ -19701,7 +19698,6 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 3,
 			"entries": [
-				"{@i A Bard Subclass by the Undertomes}",
 				"The College of Weathered Tales is a particular craft passed down from generation to generation, sometimes through a hereditary tradition in certain families, sometimes by an old master to a completely unrelated student. In either case, a bard of such College is oftentime a minstrel by trade who spins stories of times forlorn to time, using their magic and knowledge to make one feel like they were stuck back into the past, using of nostalgia as a powerful tool to enable and disable all alike.",
 				"Inside this College tales are often the same told time after time, with one’s grandest objective as a bard being not only to tell them far and wide, but to add to them - To create or learn of such a story that will withstand time with pride, never leaving the shared repertoire of their peers."
 			]
@@ -20191,7 +20187,7 @@
 			"subclassSource": "TheUndertomesDC",
 			"level": 10,
 			"entries": [
-				"Upon reaching 10th level your bladework is enough to entice fear into the hearts of your opponents, slicing cleanly through armor and those that would dare hide away their bodies in defense. As a bonus action during your turn you may give yourself a bonus to hit targets who are wearing Heavy Armor or have their Armor Class increased by external effects, such as the Shield spell. This bonus is equal to your Proficiency Modifier and you deal an additional damage die on a hit, with the dice being the same as your weapons damage dice. You may use this feature a number of times equal to your Proficiency Modifier, restoring its uses on a long rest.",
+				"Upon reaching 10th level your bladework is enough to entice fear into the hearts of your opponents, slicing cleanly through armor and those that would dare hide away their bodies in defense. As a bonus action during your turn you may give yourself a bonus to hit targets who are wearing Heavy Armor or have their Armor Class increased by external effects, such as the {@spell Shield} spell. This bonus is equal to your Proficiency Modifier and you deal an additional damage die on a hit, with the dice being the same as your weapons damage dice. You may use this feature a number of times equal to your Proficiency Modifier, restoring its uses on a long rest.",
 				"Upon reaching 15th level, you deal an additional die of damage against targets within the criteria mentioned."
 			]
 		},
@@ -21013,7 +21009,6 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 2,
 			"entries": [
-				"{@i A Wizard Subclass by the Undertomes}",
 				"Those who study the Endless Elation Arcane Tradition are often hedonists who seek joy in its purest form, how it’s born and how it’s best injected. Alchemical study and plentiful of psychodelic ground reasearch has allowed them to reach one of the answers for true, unending and unbearable elation to be spread to all.",
 				"Wizards of this Tradition can usually be seen alongside bardic troupes or even in more cloistered groups which all seek the answers to their research in unison, fully dedicated to happiness at all costs."
 			]
@@ -22775,8 +22770,8 @@
 					"entries": ["The coffin bursts open, letting them out.."]
 				},
 				"Feasting on the dead and liberating them from their mortal coils is the calling of your swarm. You can command your Clerid Swarm to take the Consume Body Action while you are performing your Woundhealing ritual.",
-				"You are also able to spend your Reaction whenever a creature within 30-ft of you or your swarm is reduced to half or below their maximum hitpoints to perform a Revenous Bites attack with your swarm against them, generating 1 {@condition Lifeblood|TheUndertomesASV} Count when you do so.",
-				"Furthermore, you may spend {@condition Lifeblood|TheUndertomesASV} in the following ways:",
+				"You are also able to spend your Reaction whenever a creature within 30-ft of you or your swarm is reduced to half or below their maximum hitpoints to perform a Revenous Bites attack with your swarm against them, generating 1 Lifeblood Count when you do so.",
+				"Furthermore, you may spend Lifeblood in the following ways:",
 				{
 					"type": "list",
 					"items": [
@@ -22784,17 +22779,17 @@
 							"type": "item",
 							"name": "Entice the Swarm.",
 							"entries": [
-								"You may spend your Action and consume up to 9 {@condition Lifeblood|TheUndertomesASV} to draw out your Swarm’s unending appetite, granting it a +1 to attack and damage rolls per each 3 {@condition Lifeblood|TheUndertomesASV} spent this way. Furthermore, their Ravenous Bites attack deals an additional damage die for each 3 {@condition Bleed|TheUndertomesGeneralRules} on it’s target, to a maximum amount of {@dice 5d8} additional damage. This effect lasts up to three turns, or until you fall {@condition Unconscious}."
+								"You may spend your Action and consume up to 9 Lifeblood to draw out your Swarm’s unending appetite, granting it a +1 to attack and damage rolls per each 3 Lifeblood spent this way. Furthermore, their Ravenous Bites attack deals an additional damage die for each 3 {@condition Bleed|TheUndertomesGeneralRules} on it’s target, to a maximum amount of {@dice 5d8} additional damage. This effect lasts up to three turns, or until you fall {@condition Unconscious}."
 							]
 						},
 						{
 							"type": "item",
 							"name": "Death Postponed.",
 							"entries": [
-								"Before you cast the {@spell Shrouded Hand|TheUndertomesASV} cantrip you may spend 2 {@condition Lifeblood|TheUndertomesASV} count to make it so the cantrip instead heals a creature it grasps instead of dealing damage, chanelling life from your Coffin."
+								"Before you cast the {@spell Shrouded Hand|TheUndertomesASV} cantrip you may spend 2 Lifeblood count to make it so the cantrip instead heals a creature it grasps instead of dealing damage, chanelling life from your Coffin."
 							]
 						},
-						"You may have a maximum 10 {@condition Lifeblood|TheUndertomesASV} count at any given time, losing half (Rounded Up) your total counts upon taking a short or long rest.",
+						"You may have a maximum 10 Lifeblood count at any given time, losing half (Rounded Up) your total counts upon taking a short or long rest.",
 						"Furthermore, you gain proficiency in the {@skill Medicine} skill or expertise if you were already proficient."
 					]
 				}
@@ -23350,7 +23345,7 @@
 						"As part of your attack action, you may spend a {@condition Hysteria|TheUndertomesMG} stack per attack to literally beat your righteousness into the air using your Magic Wand! You gain an additional 15-feet radius to your attack and it deals an additional {@dice 1d4} force damage on a hit, as beams of arcane energy shoot out to complement it."
 					]
 				},
-				"In the Name of Love and Hate! By spending an action and three {@condition Hysteria|TheUndertomesMG} stacks you may prepare a series of magical circles to soak your Magic Wand into as you deliver a single powerful blow enchanted by each circle, you roll a weapon attack as usual, on a hit you instead deal {@dice 2d12} plus your Strength Modifier in force damage, and the target must pass a Constitution Saving Throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or suffer a stack of {@condition Fragility|TheUndertomesMG}."
+				"In the Name of Love and Hate! By spending an action and three {@condition Hysteria|TheUndertomesMG} stacks you may prepare a series of magical circles to soak your Magic Wand into as you deliver a single powerful blow enchanted by each circle, you roll a weapon attack as usual, on a hit you instead deal {@dice 2d12} plus your Strength Modifier in force damage, and the target must pass a Constitution Saving Throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or suffer a stack of {@condition Fragile|TheUndertomesASF}."
 			]
 		},
 		{
@@ -23484,7 +23479,6 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 1,
 			"entries": [
-				"{@i A Cleric Subclass by the Undertomes}",
 				"Those who come to inherit the Immemorial Domain serve the Gods that have been wounded, forgotten by time and left out ot bleed. These Gods might want to incur their mighty wrath in vengeance for whatever has befallen them, or only wish to heal and live on, nevertheless their clerics are devoted to their own God’s healing, having grown to see the wounds in the very world they live in, the wear and tear of roads and each cut delivered upon a tree, so recklessly taken from just as the deity they follow.",
 				"Clerics of a God Immemorial are dutiful souls who wish only to grant their deity their due reprise, acting upon their will in a way that is often much more personal than most others in clergy.",
 				"Ozma"
@@ -23897,7 +23891,6 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 1,
 			"entries": [
-				"{@i A Cleric Subclass by the Undertomes}",
 				"Clerics from the Judgment Domain are guided by a simple command: exact the judgment of their god in their stead. They do not discern themselves what is right and what is wrong, they simply follow the teachings of their faith and pass on the decisions of their divine onto others. Carrying an emerald tablet of commands and principles, they read from it for guidance and record the doings of the creatures they see so that their god may be aware of the actions that transpire on the mortal realm. They are executors of law, first and foremost."
 			]
 		},
@@ -24783,7 +24776,7 @@
 					"entries": ["A single bullet ain't enough..."]
 				},
 				"You and the concept of the hunt have been lost in smoke for years, granting you the capability to make manifest fallen memories as if they were still lingering spirits on the world. Once per long rest you may summon two ghoulish apparitions of conflicts past to occupy any unoccupied space you can see within 60-ft. of you.",
-				"These beings use the {@condition Stigmatized|TheUndertomesFM} Memory sheet and are unable to speak and are subjugated by your own will, being considered friendly to you regardless of their disposition, they are forced to follow your orders regardless of if it would endanger them.",
+				"These beings use the Stigmatized Memory sheet and are unable to speak and are subjugated by your own will, being considered friendly to you regardless of their disposition, they are forced to follow your orders regardless of if it would endanger them.",
 				"The appearance of these creatures are usually that of a hazy selection of faces that you have met and taken down in the past - be they friend or foe. You may Bellow Orders as a Free Action during your turn or between other creature's turns, before or after they act.",
 				{
 					"type": "statblock",
@@ -24812,7 +24805,7 @@
 				{
 					"type": "list",
 					"items": [
-						"While you have at least one {@condition Stigmatized|TheUndertomesFM} Memory summoned, you may spend your Reaction whenever you take damage to only take half that damage and have all {@condition Stigmatized|TheUndertomesFM} Memories within 120-ft. reach of you suffer the other half. If a {@condition Stigmatized|TheUndertomesFM} Memory is killed in this way, you do not receive its benefits.",
+						"While you have at least one Stigmatized Memory summoned, you may spend your Reaction whenever you take damage to only take half that damage and have all Stigmatized Memories within 120-ft. reach of you suffer the other half. If a Stigmatized Memory is killed in this way, you do not receive its benefits.",
 						"Upon rolling Initiative you gain 4 {@condition Poise|TheUndertomesGeneralRules} count and one {@condition Torn Memory|TheUndertomesFM} count.",
 						"You inflict an additional 3 {@condition Bleed|TheUndertomesGeneralRules} count against creatures within your Sweet Spot.",
 						"Whenever you Critically Hit a creature, you may choose to spend one {@condition Torn Memory|TheUndertomesFM} to deal an additional {@damage 2d8} piercing damage and also double any Conditions you would inflict.",
@@ -26588,7 +26581,7 @@
 					]
 				},
 				"You have become a figure of grace for your god, a stalward pillar they may lean on as much as you lean on them for support on your rising life, and that has you be entrusted with a mighty, milacrous power to wield. When you use your Channel Divinity: {@item The Road Back|TheUndertomesASV} From Oblivion you may instead force another creature to meet your god’s punishment.",
-				"When you do this targetting an unwilling creature they must pass a Wisdom saving throw or be momentareousl transported with you to a demiplane where your god resides, with its features and aesthetic directly reflecting that of the deity you have followed for so long. The target may get asked a question from your deity, such as if they are sorry for their past infrictions or a piece of knowledge as to why they have behaved in such a horrid way - On a response that pleases your deity ( As per your GM’s discretion ) the creature is only drained of their energy so they may also experience the regrowth you have, suffering 5 points of {@condition Exhaustion}. On one that displeases your Deity they suffer {@dice 12d10} force damage as celestial might sears through them, a brand being cast upon their back and having them suffer the effects of both the Hex spell targeting one Attribute of your choice and the Locate Creature spell allowing any other Immemorial Domain cleric to sense them freely. Both these effects last until the creature dies.",
+				"When you do this targetting an unwilling creature they must pass a Wisdom saving throw or be momentareousl transported with you to a demiplane where your god resides, with its features and aesthetic directly reflecting that of the deity you have followed for so long. The target may get asked a question from your deity, such as if they are sorry for their past infrictions or a piece of knowledge as to why they have behaved in such a horrid way - On a response that pleases your deity ( As per your GM’s discretion ) the creature is only drained of their energy so they may also experience the regrowth you have, suffering 5 points of {@condition Exhaustion}. On one that displeases your Deity they suffer {@dice 12d10} force damage as celestial might sears through them, a brand being cast upon their back and having them suffer the effects of both the {@spell Hex} spell targeting one Attribute of your choice and the {@spell Locate Creature} spell allowing any other Immemorial Domain cleric to sense them freely. Both these effects last until the creature dies.",
 				"After this judgement you both are transported back into the material plane. Furthermore, you may rely upon your god for a miracle, allowing you to spend your action to cast one spell you know but haven’t prepared ( still spending the appropriate spell slot ) once per long rest."
 			]
 		},
@@ -26669,7 +26662,6 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 1,
 			"entries": [
-				"{@i A Warlock Subclass by The Undertomes}",
 				"Somewhere, hidden in the veil that permeates the multiverse, lies a haunted manor that was once the target of a powerful, ancient curse. The master of the manor has long since lost their life, but their soul was bound to its impenetrable walls.",
 				"Their servants? Those that did not leave were cursed as well. They roam and safekeep the manor, hoping that one day this curse will be broken and their old master will once more return to his prime and save them all from this accursed existence. You, somehow, wandered through its walls, experienced the memories of the lives imprisoned within, and became another servant of the manor’s master - with the grace of being able to leave its gate unharmed.",
 				"Now, you travel the world as the old master commands, in search of a way to unseal the bindings and break the cursed chains that keep them and your fellow servants there."
@@ -28099,7 +28091,6 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 1,
 			"entries": [
-				"{@i A Sorcerer Subclass by the Undertomes}",
 				"Something has taken hold of your spirit and does not plan to let go. You can feel writhing under your skin, beneath that still, as your very veins seem to be filled something more than blood. Your essence is slowly defiling, and there are only two options:",
 				"fight back against this filth that plans to consume you, or become one with the gluttonous energy that’s sapping away at you to use it against your enemies."
 			]
@@ -29107,7 +29098,7 @@
 			"subclassSource": "TheUndertomesCH",
 			"level": 6,
 			"entries": [
-				"As you develop your knowledge in the arcane arts, you can now not only infuse your magic into your Hex Dolls, but to use it to conjure fear inducing hexes! Starting at 6th level, you gain a pool of Hex Points equal to your Druid level, you may expend a number of them to cast a Hex from the table below. All these Hexes count as spells.",
+				"As you develop your knowledge in the arcane arts, you can now not only infuse your magic into your Hex Dolls, but to use it to conjure fear inducing hexes! Starting at 6th level, you gain a pool of Hex Points equal to your Druid level, you may expend a number of them to cast a {@spell Hex} from the table below. All these Hexes count as spells.",
 				{
 					"type": "entries",
 					"name": "Encore, Encore!",
@@ -29212,7 +29203,6 @@
 			"subclassSource": "TheUndertomesASV",
 			"level": 3,
 			"entries": [
-				"{@i An Artificer Subclass by the Undertomes}",
 				"The gift of harnessing power from the stars themselves is one rare and highly sought of after by Wizards and Artificers alike, but most lose track in their devout studies as they lack reverence for the very subject of their study.",
 				"Artificers who Specialize in the Starry Skies are those who have managed to sculpt a reflection of the night sky weaving not only the fruits of devoted intellectual prowess but also a genuine reverence towards each connected star and constelaltion which paints that which all can see through the dark canvas of space, bearing down faces and symbols that these Artificers manage to draw pure power from using specialized tools to do so."
 			]
@@ -30864,9 +30854,9 @@
 						"Though the wailing hasn’t ceased,the weeping seems to have softened, just a little."
 					]
 				},
-				"Your grasp of life and death has been synchronized with the Coffin you carry on your back, granting you further control of the ways of the beyond. Your maximum {@condition Lifeblood|TheUndertomesASV} count becomes 15. While performing your Woundhealing Ritual you may spend your Action to spend 3 or more ( To a maximum of 15 ) {@condition Lifeblood|TheUndertomesASV} to create a bloody ethereal arm that seeps out of the coffin, rippling with the screams and chittering of the damned.",
-				"This Death-Eating Hand is a magical melee weapon you are proficient with, having a reach of 30-ft. You use your Wisdom modifier for this weapon and it deals a number of d8 slashing damage and inflicting a number of {@condition Bleed|TheUndertomesGeneralRules} equal to the sum of each 3 {@condition Lifeblood|TheUndertomesASV} spent this way. The Death-Eating Hand counts as a silvered weapon and makes it so Undead creatures it hits suffer its damage as if they were Vulnerable to it.",
-				"The Death-Eating Hand can be targetted for attacks, having an AC of 13 + ( 1 for each 3 {@condition Lifeblood|TheUndertomesASV} ) and an amount of hit points equal to a number of d8+2 for each 3 {@condition Lifeblood|TheUndertomesASV} spent to create it. It is Immune to all Conditions, psychic and acid damage and is Vulnerable to radiant damage. It cannot be healed by any means except your Ravenous Cycle of Bloodletting feature, also being healed by one hit point when you inflict {@condition Bleed|TheUndertomesGeneralRules} with it.",
+				"Your grasp of life and death has been synchronized with the Coffin you carry on your back, granting you further control of the ways of the beyond. Your maximum Lifeblood count becomes 15. While performing your Woundhealing Ritual you may spend your Action to spend 3 or more ( To a maximum of 15 ) Lifeblood to create a bloody ethereal arm that seeps out of the coffin, rippling with the screams and chittering of the damned.",
+				"This Death-Eating Hand is a magical melee weapon you are proficient with, having a reach of 30-ft. You use your Wisdom modifier for this weapon and it deals a number of d8 slashing damage and inflicting a number of {@condition Bleed|TheUndertomesGeneralRules} equal to the sum of each 3 Lifeblood spent this way. The Death-Eating Hand counts as a silvered weapon and makes it so Undead creatures it hits suffer its damage as if they were Vulnerable to it.",
+				"The Death-Eating Hand can be targetted for attacks, having an AC of 13 + ( 1 for each 3 Lifeblood ) and an amount of hit points equal to a number of d8+2 for each 3 Lifeblood spent to create it. It is Immune to all Conditions, psychic and acid damage and is Vulnerable to radiant damage. It cannot be healed by any means except your Ravenous Cycle of Bloodletting feature, also being healed by one hit point when you inflict {@condition Bleed|TheUndertomesGeneralRules} with it.",
 				"Furthermore, when you hit a creature with below half their maximum hit points you may spend your Reaction to attempt to Grapple them, using your Spell Attack Modifier for this Grapple check. On a Success, the creature suffers one point of {@condition Exhaustion} for each time it starts its turn {@condition Grappled}, being able to attempt to break free by spending it’s Action to do so, rolling their {@skill Athletics} or {@skill Acrobatics} check against your Druid Spell Save DC. If this creature is suffering from four or more points of {@condition Exhaustion}, you may spend your Action to open the Wailing Coffin and suck the creature in, forcing them to pass a Wisdom Saving Throw or be instantly killed, with all but their magical belongings being eaten by that which lurks inside. When you do this, you gain a +1 to all rolls until the end of combat."
 			]
 		},
@@ -32418,8 +32408,7 @@
 					]
 				},
 				"Centipede Venom can only be applied to a Creature who is suffering from the {@condition Poisoned} Condition, ending as soon as {@condition Poisoned} ends.",
-				"A creature may only suffer up to 20 Centipede Venom count at any given time and if killed while still suffering the effect, all creatures within 5-ft of the dying creature must pass a Constitution Saving Throw or suffer from the {@condition Poisoned} Condition and inherit all the Centipede Venom count from the dying creature until the end of their next turn. The DC for this Constitution saving throw is equal to 12 + Half the Centipede Venom count.",
-				"( rounded down. )"
+				"A creature may only suffer up to 20 Centipede Venom count at any given time and if killed while still suffering the effect, all creatures within 5-ft of the dying creature must pass a Constitution Saving Throw or suffer from the {@condition Poisoned} Condition and inherit all the Centipede Venom count from the dying creature until the end of their next turn. The DC for this Constitution saving throw is equal to 12 + Half the Centipede Venom count (rounded down)."
 			]
 		},
 		{
@@ -32757,13 +32746,6 @@
 			"page": 29
 		},
 		{
-			"name": "Fragility",
-			"source": "TheUndertomesMG",
-			"entries": [
-				"A Fragilized creature feels their interiors becoming brittle, and any blow could easily break them as the weakness sinks in, rendering attacks much more effective against them. A creature suffering from Fragility suffers from one of two effects depending on how many stacks they possess. From one to four, they suffer the equivalent value of stacks as penalty to their AC. On five or above the next damage type they take considered as if their resistance was one step down, with immunities becoming resistance, resistance becoming normal and normal becoming a vulnerability. After taking damage like this, one stack of Fragility is removed."
-			]
-		},
-		{
 			"name": "Full Makeover",
 			"source": "TheUndertomesCR",
 			"page": 3,
@@ -32961,35 +32943,6 @@
 			]
 		},
 		{
-			"name": "Lifeblood",
-			"source": "TheUndertomesASV",
-			"entries": [
-				"You are also able to spend your Reaction whenever a creature within 30-ft of you or your swarm is reduced to half or below their maximum hitpoints to perform a Revenous Bites attack with your swarm against them, generating 1 Lifeblood Count when you do so.",
-				"Furthermore, you may spend Lifeblood in the following ways:",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Entice the Swarm.",
-							"entries": [
-								"You may spend your Action and consume up to 9 Lifeblood to draw out your Swarm’s unending appetite, granting it a +1 to attack and damage rolls per each 3 Lifeblood spent this way. Furthermore, their Ravenous Bites attack deals an additional damage die for each 3 {@condition Bleed|TheUndertomesGeneralRules} on it’s target, to a maximum amount of {@dice 5d8} additional damage. This effect lasts up to three turns, or until you fall {@condition Unconscious}."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Death Postponed.",
-							"entries": [
-								"Before you cast the {@spell Shrouded Hand|TheUndertomesASV} cantrip you may spend 2 Lifeblood count to make it so the cantrip instead heals a creature it grasps instead of dealing damage, chanelling life from your Coffin."
-							]
-						},
-						"You may have a maximum 10 Lifeblood count at any given time, losing half (Rounded Up) your total counts upon taking a short or long rest."
-					]
-				}
-			],
-			"page": 15
-		},
-		{
 			"name": "Lingering Blossoms",
 			"source": "TheUndertomesFS",
 			"entries": [
@@ -33167,7 +33120,7 @@
 			"name": "Procuration [Hermes]",
 			"source": "TheUndertomesFD",
 			"entries": [
-				"This Effect is granted and defined by the To Become a Canvas, Slowly Painted feature of the Fatalism Domain."
+				"The maximum count is half your proficiency bonus, rounded down. The minimum is -2."
 			]
 		},
 		{
@@ -33246,7 +33199,7 @@
 			"source": "TheUndertomesAED",
 			"page": 3,
 			"entries": [
-				"{@condition Self-Charge|TheUndertomesAED} is a Condition that represents a mixture of sheer willpower and overwhelming energy keeping you from bursting at the seams. While you have count of the Condition, you are Immune to being knocked {@condition Unconscious} through any means. It counts as {@condition Charge|TheUndertomesGeneralRules} for the purposes of fuelling your skills and decays at a rate of 3 count at the end of your turns and 1 whenever you would suffer damage."
+				"Self-Charge is a Condition that represents a mixture of sheer willpower and overwhelming energy keeping you from bursting at the seams. While you have count of the Condition, you are Immune to being knocked {@condition Unconscious} through any means. It counts as {@condition Charge|TheUndertomesGeneralRules} for the purposes of fuelling your skills and decays at a rate of 3 count at the end of your turns and 1 whenever you would suffer damage."
 			]
 		},
 		{
@@ -33311,7 +33264,7 @@
 			"name": "Sizzling Wound",
 			"source": "TheUndertomesFD",
 			"entries": [
-				"This state is granted and defined by the Masked Wounds feat."
+				"When your current hit points are reduced to or below half their maximum, you enter this state. Your AC is reduced by 2. When you deal damage, you deal an additional {@damage 1d6} fire damage and inflict {@condition Burn|TheUndertomesGeneralRules} count equal to half your proficiency bonus. If the attack already deals fire damage, inflict count equal to your proficiency bonus instead. This state lasts until your next short rest or until you recover all your hit points."
 			]
 		},
 		{
@@ -33327,7 +33280,16 @@
 			"source": "TheUndertomesASV",
 			"page": 29,
 			"entries": [
-				"A creature afflicted by Solitude feels a growing nostalgia gnaw at their heart, a desperate wish to be in a time that will never come back around. This Solitude has three stages, starting at it’s first and evolving to the next at the end of the afflicted creature’s turn. At the first stage, the creature has an anxiety wash over them, inflicting a -1 negative modifier to their Attack and Damage rolls. At the second stage, a dread starts settling into their heart, halving their movement speed and having them suffer Disadvantage on Wisdom Saving Throws, on top of previous effects. At the third stage, the creature is overcome by a grief that might have never even existed before, having their movement speed reduced to 0, suffering Disadvantage on Dexterity Saving Throws and having any attacks made against them being done so with Advantage. After reaching third stage, the condition ends at the end of the afflicted creature’s next turn."
+				"A creature afflicted by Solitude feels a growing nostalgia gnaw at their heart, a desperate wish to be in a time that will never come back around. This Solitude has three stages, starting at it’s first and evolving to the next at the end of the afflicted creature’s turn.",
+				{
+					"type": "list",
+					"items": [
+						"At the first stage, the creature has an anxiety wash over them, inflicting a -1 negative modifier to their Attack and Damage rolls.",
+						"At the second stage, a dread starts settling into their heart, halving their movement speed and having them suffer Disadvantage on Wisdom Saving Throws, on top of previous effects.",
+						"At the third stage, the creature is overcome by a grief that might have never even existed before, having their movement speed reduced to 0, suffering Disadvantage on Dexterity Saving Throws and having any attacks made against them being done so with Advantage."
+					]
+				},
+				"After reaching third stage, the condition ends at the end of the afflicted creature’s next turn."
 			]
 		},
 		{
@@ -33345,14 +33307,6 @@
 				"As a bonus action, the creature can jump a number of feet equal to five times its proficiency bonus without provoking opportunity attacks. It can use this ability once, only while its speed is greater than 0, and regains the expended use when it finishes a long rest.",
 				"A creature with Strider Mao takes on rabbit-like features, usually morphing its feet into paws or developing a fluffy tail."
 			]
-		},
-		{
-			"name": "Symphony",
-			"source": "TheUndertomesASV",
-			"entries": [
-				"Each time you hit an attack against a creature, you gain one Symphony count, being able to channel the pure power of The Harper going from it’s shorter strings to it’s longest ones - Performing a crescendo of attacks with a devastating finale. You deal an additional {@dice 1d8} thunder damage per Symphony count you currently have, and after reaching 3 Symphony count it is reset to zero, causing your next attack to be infused with the powerful energy of a Finale, dealing a total of {@dice 6d8} thunder damage plus {@dice 1d4} piercing damage on a hit. A target hit by a Finale also must pass a Constitution saving throw or be knocked {@condition Prone} and have all objects that aren’t being worn or wielded burst into pieces as the sheer melodic force forces them to scream out loud. You lose one count of Symphony when you miss an attack."
-			],
-			"page": 60
 		},
 		{
 			"name": "Talisman",
@@ -33390,15 +33344,7 @@
 			"name": "Torn Memory",
 			"source": "TheUndertomesFM",
 			"entries": [
-				"Whenever you kill a {@condition Stigmatized|TheUndertomesFM} creature you gain {@condition Poise|TheUndertomesGeneralRules} count equal to your proficiency bonus and one Torn Memory count, as the already dissolving mental image of that which you have shattered lingers on in your aim. If you kill or knock a friendly creature {@condition unconscious} you gain one Torn Memory, yet you may only gain one count per creature per combat.",
-				"During your turn you may spend Torn Memory as a Free Action you may take once per turn for the following:",
-				{
-					"type": "list",
-					"items": [
-						"{@b Reload, Then Fire.} By spending one Torn Memory you may perform an additional attack as part of your Attack action during your next turn. This extra attack does not stack. Additionally, any ranged weapons you are wielding are instantly reloaded at the start of your next turn provided you have enough ammunition on your person.",
-						"{@b Designated Target Fire.} By spending at least three Torn Memory count you may spend your Action to perform a special attack, coating an 15-ft. radius within your weapon's range in a red haze that reeks of lingering sweat and charred hair. All creatures of your choice within that radius must pass a Dexterity saving throw or suffer an amount of d10 piercing damage and a sum of 2 {@condition Bleed|TheUndertomesGeneralRules} count equal to the amount of Torn Memory spent. Creatures who succeed take half that damage and count instead. Afterward you gain one {@condition Poise|TheUndertomesGeneralRules} count for each creature damaged through this, with an additional 8 {@condition Poise|TheUndertomesGeneralRules} count if you have killed your {@condition Stigmatized|TheUndertomesFM} creature through this attack. These 8 count do not count toward your turn limit. You cannot gain an amount of {@condition Poise|TheUndertomesGeneralRules} in a single turn greater than double your proficiency bonus through this way."
-					]
-				}
+				"Whenever you kill a {@condition Stigmatized|TheUndertomesFM} creature you gain {@condition Poise|TheUndertomesGeneralRules} count equal to your proficiency bonus and one Torn Memory count, as the already dissolving mental image of that which you have shattered lingers on in your aim. If you kill or knock a friendly creature {@condition unconscious} you gain one Torn Memory, yet you may only gain one count per creature per combat."
 			]
 		},
 		{
@@ -33794,7 +33740,27 @@
 			"entries": [
 				"This slimy, yet delicious bubble dropped from a verminous creature is extremely healthy and, sadly, addictive. As a Bonus Action, any creature may eat this or feed it to a willing creature. The creature regains {@dice 6d4 + 6} hit points. They must succeed on a Wisdom saving throw (DC 14) or become addicted to the substance and unable to heal from anything else or eat anything else until their next Long Rest. This DC increases by 2 each time this item is consumed before a Long Rest."
 			],
-			"wondrous": true
+			"wondrous": true,
+			"foundryActivities": [
+				{
+					"name": "BongBong Orange",
+					"type": "save",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"This slimy, yet delicious bubble dropped from a verminous creature is extremely healthy and, sadly, addictive. As a Bonus Action, any creature may eat this or feed it to a willing creature. The creature regains {@dice 6d4 + 6} hit points. They must succeed on a Wisdom saving throw (DC 14) or become addicted to the substance and unable to heal from anything else or eat anything else until their next Long Rest. This DC increases by 2 each time this item is consumed before a Long Rest."
+					],
+					"save": {
+						"ability": ["wis"],
+						"dc": {
+							"formula": "14",
+							"calculation": ""
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Booster Shot",
@@ -33947,7 +33913,26 @@
 				"If you are benefitting from the Pact of the Blade Boon you may choose to have the {@item Bum-Pick-Stitcher's Blade|TheUndertomesNW} count as a Pact Weapon for you while it still exists."
 			],
 			"rarity": "unknown (magic)",
-			"reqAttune": true
+			"reqAttune": true,
+			"foundryActivities": [
+				{
+					"name": "Bum-Pick-Stitcher's Blade",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You may use your Action to spend all Tiny and Sharp Nails you currently have to have them burst out as you let out some steam by swinging the weapon around wildly. All hostile creatures within a 15-ft. radius of you must pass a Dexterity saving throw against your Spell Save DC or suffer {@dice 2d8} magical piercing damage and an amount of {@condition Naildle|TheUndertomesNW} equal to the damage die rolled, or half that damage and count on a success."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Butchered Knife",
@@ -34547,6 +34532,28 @@
 					]
 				},
 				"A summoned creature or one with no blood cannot generate any Bloodfeast."
+			],
+			"foundryActivities": [
+				{
+					"name": "Devouring Bloodstone",
+					"type": "damage",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"As an Action you may toss the Bloodstone at an {@condition Unconscious} creature corpse within 30-ft of you, dealing {@damage 4d12} piercing damage to the creature if it is still living. If causing a creature to die or targeting a dead corpse, the Bloodstone quickly devours it until there is no trace left, generating Bloodfeast according to the creatures size, as follows:"
+					],
+					"damage": {
+						"parts": [
+							{
+								"number": 4,
+								"denomination": 12,
+								"types": ["piercing"]
+							}
+						]
+					}
+				}
 			]
 		},
 		{
@@ -34584,7 +34591,26 @@
 				"After using this Reaction the Robe is torn to shreds, but your Needlekin isn't. It is grateful for that."
 			],
 			"rarity": "unknown (magic)",
-			"reqAttune": true
+			"reqAttune": true,
+			"foundryActivities": [
+				{
+					"name": "Double-Needled Needlekin Robe",
+					"type": "save",
+					"activation": {
+						"type": "reaction",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You may spend your Reaction when the Needlekin would Buzz Off to have them flare out the Robes and ensure their safety first, having them retain one Hit Point until the start of your next turn. Additionally when you do so, the creature who last damaged your Needlekin must pass a Dexterity saving throw against your Spell Save DC or have a thousand tiny needles explode near them at a trajectory starting from the robe and ending at their face. On a failure, they suffer an amount of {@dice d4} {@condition Naildle|TheUndertomesNW} equal to half your proficiency bonus."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Emblazoned Hunting Shawl",
@@ -34595,7 +34621,27 @@
 			"entries": [
 				"A Shawl fashioned for quick donning and practical movement while in a hunt. Its hem is lined with sharp emblems, either of holy symbols for protection or those resembling an old hunting order. This Shawl has six Vein Splitters spread around his hem, which you can spend to throw as part of your attack action. A Vein Splitter thrown this way is lost when thrown but inflicts {@condition Bleed|TheUndertomesGeneralRules|Bleed} as per Hemorrhaging as long as it hits a creature who isn't immune to the condition. As an action while wearing this armor you may swiftly spin around, forcing all creatures within 5-ft of you to pass Dexterity Saving Throw whose DC 8 + Your Proficiency Modifier + Your Dexterity Modifier or suffer a number of d4 slashing damage plus the same number in {@condition Bleed|TheUndertomesGeneralRules|Bleed} stacks, or half on a success. This number is equal to half the amount of Vein Splitters still attached to it, rounded up. You may replace up to your Proficiency Modifier's worth of Vein Splitters to the hem of the shawl by using a separate Vein Splitter or by spending 20 gp per replaced part."
 			],
-			"ac": 12
+			"ac": 12,
+			"foundryActivities": [
+				{
+					"name": "Emblazoned Hunting Shawl",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"A Shawl fashioned for quick donning and practical movement while in a hunt. Its hem is lined with sharp emblems, either of holy symbols for protection or those resembling an old hunting order. This Shawl has six Vein Splitters spread around his hem, which you can spend to throw as part of your attack action. A Vein Splitter thrown this way is lost when thrown but inflicts {@condition Bleed|TheUndertomesGeneralRules|Bleed} as per Hemorrhaging as long as it hits a creature who isn't immune to the condition. As an action while wearing this armor you may swiftly spin around, forcing all creatures within 5-ft of you to pass Dexterity Saving Throw whose DC 8 + Your Proficiency Modifier + Your Dexterity Modifier or suffer a number of d4 slashing damage plus the same number in {@condition Bleed|TheUndertomesGeneralRules|Bleed} stacks, or half on a success. This number is equal to half the amount of Vein Splitters still attached to it, rounded up. You may replace up to your Proficiency Modifier's worth of Vein Splitters to the hem of the shawl by using a separate Vein Splitter or by spending 20 gp per replaced part."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"formula": "8",
+							"calculation": ""
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Emerald Elytra",
@@ -35299,8 +35345,8 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"entries": [
-				"A strange, bloodied instrument infused with dark magic and put together with scraps of a dark machine. Whenever a creature is knocked {@condition Unconscious} or suffers a Critical Hit, every creature that is not {@condition Deafened} within 30 feet of you suffers 1 count of {@condition Fragility|TheUndertomesMG}.",
-				"If you or a friendly creature within 30 feet of you applies counts of {@condition Bleed|TheUndertomesGeneralRules} while there are Fragility creatures within 30 feet of you because of this effect, all friendly creatures within 30 feet of you lose 1 count of {@condition Fragility|TheUndertomesMG}, and the attacked creature suffers an additional 3 counts of {@condition Bleed|TheUndertomesGeneralRules}."
+				"A strange, bloodied instrument infused with dark magic and put together with scraps of a dark machine. Whenever a creature is knocked {@condition Unconscious} or suffers a Critical Hit, every creature that is not {@condition Deafened} within 30 feet of you suffers 1 count of {@condition Fragile|TheUndertomesASF}.",
+				"If you or a friendly creature within 30 feet of you applies counts of {@condition Bleed|TheUndertomesGeneralRules} while there are Fragility creatures within 30 feet of you because of this effect, all friendly creatures within 30 feet of you lose 1 count of {@condition Fragile|TheUndertomesASF}, and the attacked creature suffers an additional 3 counts of {@condition Bleed|TheUndertomesGeneralRules}."
 			],
 			"wondrous": true
 		},
@@ -35418,6 +35464,26 @@
 			"value": 30,
 			"entries": [
 				"A bar of compressed and dried blood meant to quench the thirst of Bloodfiends and Vampires alike. It is textureless and tasteless, functioning as a Ration yet barely palatable. You may spend an Action to consume a Hemobar and gain one Bloodfeast, yet must pass a DC 13 + Times you've consumed a Hemobar until your next Short or Long Rest Constitution Saving Throw to benefit from another one, suffering one point of Exhaustion on a failure."
+			],
+			"foundryActivities": [
+				{
+					"name": "Hemobar",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"A bar of compressed and dried blood meant to quench the thirst of Bloodfiends and Vampires alike. It is textureless and tasteless, functioning as a Ration yet barely palatable. You may spend an Action to consume a Hemobar and gain one Bloodfeast, yet must pass a DC 13 + Times you've consumed a Hemobar until your next Short or Long Rest Constitution Saving Throw to benefit from another one, suffering one point of Exhaustion on a failure."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"formula": "13",
+							"calculation": ""
+						}
+					}
+				}
 			]
 		},
 		{
@@ -36096,7 +36162,7 @@
 				"STAGE I. You feel a ravenous hunger at most times, yet can barely push back from the urge to bite down the first thing you can see. If suffer from a negative modifier to all your rolls equal to the amount of negative SMILE points you have, if you haven't eaten.",
 				"STAGE II. Hunger's need turns to desire, gluttonous joy. Your Bite natural attack grows in strength, gaining a +1 to hit and for its damage roll, also now dealing {@damage 2d8} piercing damage.",
 				"Additionally, your movement speed is increased by 10-feet. You reach STAGE II with 4 SMILE points. STAGE III.",
-				"The elation from consumption of another's being is unbearable. Your Bite attack changes once more, becoming disjointed and destructive, you have a +2 to hit and a +3 to damage rolls using it, alongside dealing {@damage 3d8} piercing damage. Aditionally, your movement speed is increased by 20- feet, and once per day you may cast the Sickening Sludge spell without spending a spell slot.",
+				"The elation from consumption of another's being is unbearable. Your Bite attack changes once more, becoming disjointed and destructive, you have a +2 to hit and a +3 to damage rolls using it, alongside dealing {@damage 3d8} piercing damage. Aditionally, your movement speed is increased by 20- feet, and once per day you may cast the {@spell Sickening Sludge|TheUndertomesASF} spell without spending a spell slot.",
 				"You can cast it more times by spending 2 SMILE points. You also may spend 1 SMILE point to gain an additional 5-feet to your movement speed until the end of your turn or spend the same value for a +1 for your attacks hit and damage modifier, also for the same duration. You reach STAGE III with 10 SMILE points."
 			],
 			"page": 35
@@ -37502,6 +37568,36 @@
 			"weight": 1.0,
 			"entries": [
 				"A spherical object that resembles a pinecone with some protrusions of sharp yellow spikes that make your skin flutter upon a touch. You may use your action to shake the Bomb violently, causing the volatile seeds inside to become agitated and soon explode. As part of that same action you also toss the bomb to any point you can see within 60-ft. of yourself, causing it to detonate and engulf a 15-ft. radius around the point it hits in a thousand poisonous needles, forcing all creatures within reach to pass a DC 14 Constitution saving throw or suffer {@dice 4d6} piercing damage and the {@condition Charmed} condition for the next minute. A creature {@condition Charmed} this way considers every other creature they can see or hear to be the source of their {@condition Charmed} condition, also having a -1 attack modifier for the duration. A creature {@condition Charmed} this way may retry this Constitution saving throw once per turn when they suffer damage, only being able to attempt another one after the end of their next turn. On a successful save, the creature only suffers half the damage rolled."
+			],
+			"foundryActivities": [
+				{
+					"name": "Spike Bomb",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"A spherical object that resembles a pinecone with some protrusions of sharp yellow spikes that make your skin flutter upon a touch. You may use your action to shake the Bomb violently, causing the volatile seeds inside to become agitated and soon explode. As part of that same action you also toss the bomb to any point you can see within 60-ft. of yourself, causing it to detonate and engulf a 15-ft. radius around the point it hits in a thousand poisonous needles, forcing all creatures within reach to pass a DC 14 Constitution saving throw or suffer {@dice 4d6} piercing damage and the {@condition Charmed} condition for the next minute. A creature {@condition Charmed} this way considers every other creature they can see or hear to be the source of their {@condition Charmed} condition, also having a -1 attack modifier for the duration. A creature {@condition Charmed} this way may retry this Constitution saving throw once per turn when they suffer damage, only being able to attempt another one after the end of their next turn. On a successful save, the creature only suffers half the damage rolled."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"formula": "14",
+							"calculation": ""
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 4,
+								"denomination": 6,
+								"types": ["piercing"]
+							}
+						],
+						"onSave": "half"
+					}
+				}
 			]
 		},
 		{
@@ -37915,14 +38011,14 @@
 					"type": "entries",
 					"name": "Attacco Accelerato",
 					"entries": [
-						"You may spend your action to quickly nock four arrows into The Harper’s strings, all taking the same shape and color. You then perform four ranged weapon attacks with this weapon to any target within reach, instead dealing only {@dice 1d8} thunder damage per hit and not increasing {@condition Symphony|TheUndertomesASV}, instead gaining a +1 bonus modifier to hit the same target creature you have hit with these ranged attacks, to a maximum modifier of +3. This bonus resets to zero at the end of your turn."
+						"You may spend your action to quickly nock four arrows into The Harper’s strings, all taking the same shape and color. You then perform four ranged weapon attacks with this weapon to any target within reach, instead dealing only {@dice 1d8} thunder damage per hit and not increasing Symphony, instead gaining a +1 bonus modifier to hit the same target creature you have hit with these ranged attacks, to a maximum modifier of +3. This bonus resets to zero at the end of your turn."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Melodia a Tre Stadi",
 					"entries": [
-						"Each time you hit an attack against a creature, you gain one {@condition Symphony|TheUndertomesASV} count, being able to channel the pure power of The Harper going from it’s shorter strings to it’s longest ones - Performing a crescendo of attacks with a devastating finale. You deal an additional {@dice 1d8} thunder damage per {@condition Symphony|TheUndertomesASV} count you currently have, and after reaching 3 {@condition Symphony|TheUndertomesASV} count it is reset to zero, causing your next attack to be infused with the powerful energy of a Finale, dealing a total of {@dice 6d8} thunder damage plus {@dice 1d4} piercing damage on a hit. A target hit by a Finale also must pass a Constitution saving throw or be knocked {@condition Prone} and have all objects that aren’t being worn or wielded burst into pieces as the sheer melodic force forces them to scream out loud. You lose one count of {@condition Symphony|TheUndertomesASV} when you miss an attack."
+						"Each time you hit an attack against a creature, you gain one Symphony count, being able to channel the pure power of The Harper going from it’s shorter strings to it’s longest ones - Performing a crescendo of attacks with a devastating finale. You deal an additional {@dice 1d8} thunder damage per Symphony count you currently have, and after reaching 3 Symphony count it is reset to zero, causing your next attack to be infused with the powerful energy of a Finale, dealing a total of {@dice 6d8} thunder damage plus {@dice 1d4} piercing damage on a hit. A target hit by a Finale also must pass a Constitution saving throw or be knocked {@condition Prone} and have all objects that aren’t being worn or wielded burst into pieces as the sheer melodic force forces them to scream out loud. You lose one count of Symphony when you miss an attack."
 					]
 				},
 				{
@@ -39323,7 +39419,7 @@
 					"type": "list",
 					"items": [
 						"Your Charisma score increases by 1, to a maximum of 20.",
-						"Whenever a creature you can see and that can hear you within 120-ft. Critically fails a roll of any kind or suffers the effect of the vicious mockery spell, you belch out a horrible bout of laughter that shakes them to their core, having them instantly take {@dice 1d8} psychic damage and have the next attack rolled against them be made with advantage. This damage increases to {@dice 2d8} when you reach 8th-level and {@dice 3d8} when you reach 14th-level."
+						"Whenever a creature you can see and that can hear you within 120-ft. Critically fails a roll of any kind or suffers the effect of the {@spell Vicious Mockery} spell, you belch out a horrible bout of laughter that shakes them to their core, having them instantly take {@dice 1d8} psychic damage and have the next attack rolled against them be made with advantage. This damage increases to {@dice 2d8} when you reach 8th-level and {@dice 3d8} when you reach 14th-level."
 					]
 				},
 				{
@@ -39968,7 +40064,7 @@
 			"source": "TheUndertomesASF",
 			"entries": [
 				"You can't die, not yet, not now. There is more to be done. When you would suffer a failed Death Saving Throw, you may instead choose to have it become a success.",
-				"Whenever you do this, your Hit Points are permanently reduced by a value equal to half your hit die plus your Consittution modifier. This reduction cannot be lowered or restored by any means short of the Wish spell, as some scars will never heal, no matter how hard you try."
+				"Whenever you do this, your Hit Points are permanently reduced by a value equal to half your hit die plus your Consittution modifier. This reduction cannot be lowered or restored by any means short of the {@spell Wish} spell, as some scars will never heal, no matter how hard you try."
 			],
 			"prerequisite": [
 				{
@@ -40236,7 +40332,7 @@
 						"All it’s Attribute Scores are 16, except for it’s Charisma, which is 18.",
 						"The servant can be seen at your will, with the ability to become unseen as part of your bonus action command to them. It’s appearance is that of your choice when casting this spell.",
 						"You may order the servant to aid a creature within 15-ft of it, having it take the Help action towards the target creature.",
-						"If it is dispelled through anti-magic areas ( Such as the Antimagic Field spell and not the Dispel Magic spell ) the servant loses it’s memories."
+						"If it is dispelled through anti-magic areas ( Such as the {@spell Antimagic Field} spell and not the {@spell Dispel Magic} spell ) the servant loses it’s memories."
 					]
 				},
 				"One of your Intelligence, Wisdom or Charisma scores also increases by 1, to a maximum of 20."
@@ -40327,7 +40423,7 @@
 			"source": "TheUndertomesTO",
 			"entries": [
 				"There's some sort of monstrous being that really ticks you off, to a point where their losses outright give you life. When you take this feat, choose one from the following creature types: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead.",
-				"When a creature of this type is reduced to 0 hit points for the first time in an hour, you may become invigorated with satisfaction, giving you an {@dice 1d4} bonus to skill checks, attack rolls and saving throws until your next turn, or up to one minute when outside of combat. This does not work on summoned creatures such as those created from magic items such as a Bag of Pests or spells like the Summon Elementals spell."
+				"When a creature of this type is reduced to 0 hit points for the first time in an hour, you may become invigorated with satisfaction, giving you an {@dice 1d4} bonus to skill checks, attack rolls and saving throws until your next turn, or up to one minute when outside of combat. This does not work on summoned creatures such as those created from magic items such as a Bag of Pests or spells like the {@spell Summon Elemental|TCE} spell."
 			],
 			"prerequisite": [
 				{
@@ -40699,7 +40795,7 @@
 			"name": "Vorpal Instinct",
 			"source": "TheUndertomesASF",
 			"entries": [
-				"There is no greater rush than when you sever a creature's head from its body. When you would kill a creature through a melee weapon attack, you may choose to viscerally decapitate it, casting fear into your foes hearts. As you do so, choose one creature within 30-feet of yourself, it must make a Wisdom Saving Throw or become {@condition Frightened} of you until the end of your next turn.",
+				"There is no greater rush than when you sever a creature's head from its body. When you would kill a creature through a melee weapon attack, you may choose to viscerally decapitate it, casting {@spell Fear} into your foes hearts. As you do so, choose one creature within 30-feet of yourself, it must make a Wisdom Saving Throw or become {@condition Frightened} of you until the end of your next turn.",
 				"A creature that is immune to being {@condition Frightened||frightened} instead only gains advantage against this check. The DC for this Wisdom Saving Throw is 8 +Your Strength or Dexterity modifier ( Choosen when you take this feat ) + your Proficiency Bonus."
 			],
 			"prerequisite": [
@@ -40928,6 +41024,23 @@
 			"featureType": ["BRBT"],
 			"entries": [
 				"By spending one Fervor Point, you may, as a free action, have your next attack be considered a critical hit on a roll of 18-20. This critical hit does not deal additional damage, but instead has all the flames that were on your target all explode out in a searing inferno, instantly causing them to take fire damage from all the stacks of {@condition Burn|TheUndertomesGeneralRules} on them. You may use this only once a turn, even if it misses."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -41106,6 +41219,23 @@
 			"featureType": ["BRPW"],
 			"entries": [
 				"Sometimes, you must channel your strikes not only thinking of wounding your foe, but protecting your ally. By spending 4 Fervor Points as a free action while you are attacking another target creature, you watch the flow of the rest of your body as you hit, granting one friendly creature within 10-feet of you the attention of your fire tempered in moonlight. With a cyan glow, this friendly creature benefit from the same bonus you have from Fire Tempered In Moonlight until the end of your next turn.*"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -41430,9 +41560,7 @@
 			"featureType": ["AI"],
 			"prerequisite": [
 				{
-					"level": {
-						"level": 6
-					},
+					"level": 6,
 					"other": "A stick of Dynamite"
 				}
 			],
@@ -41523,7 +41651,13 @@
 						"level": 7,
 						"class": {
 							"name": "Fighter",
-							"source": "PHB"
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
 						}
 					}
 				}
@@ -41536,6 +41670,23 @@
 			"featureType": ["BRBT"],
 			"entries": [
 				"As a free action, you may spend two Fervor Points to focus your strikes to bring out the flames. Until the end of your next turn, all your attacks automatically inflict {@condition Burn|TheUndertomesGeneralRules} in accordance to Precise Ignition."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -41552,7 +41703,13 @@
 						"level": 7,
 						"class": {
 							"name": "Fighter",
-							"source": "PHB"
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
 						}
 					}
 				}
@@ -41593,9 +41750,7 @@
 			"featureType": ["AI"],
 			"prerequisite": [
 				{
-					"level": {
-						"level": 6
-					},
+					"level": 6,
 					"other": "A flare"
 				}
 			],
@@ -41807,7 +41962,7 @@
 				"You have managed to make a piece of minimizing technology able to contain an entire house, albeit small, onto a single briefcase for safe and portable solution to your problems.",
 				"You create a Homely Porta-Home, which can be deployed remotely as an action provided no creatures are within the briefcase’s reach as a full house, which is a 60-ft. wide, 20-ft.",
 				"long and 10-ft. tall rectangle. When in its house mode the Porta-Home holds no furniture except for lights and bedding for you and your companions if you so choose, but can be furnished however you want. You may use any Artisan’s Tools as a material to create workstations inside the Porta-Home which function as the supplied Artisan’s Kit, except a creature using it also has a +2 on any check using that Kit.",
-				"The Porta-Home automatically has the Alarm spell cast around a 20-ft radius of it’s extremities and may be retrieved as an action provided that no creature is inside it, using a complex magic to shrink down and compartmentalize all furniture inside while holding it in place, becoming a simple briefcase of your design which weighs 2 lb. and may be used as a weapon ( light hammer ) if needed. While being a full house the Porta-Home also has wheels which makes it function like a wagon if needed."
+				"The Porta-Home automatically has the {@spell Alarm} spell cast around a 20-ft radius of it’s extremities and may be retrieved as an action provided that no creature is inside it, using a complex magic to shrink down and compartmentalize all furniture inside while holding it in place, becoming a simple briefcase of your design which weighs 2 lb. and may be used as a weapon ( light hammer ) if needed. While being a full house the Porta-Home also has wheels which makes it function like a wagon if needed."
 			]
 		},
 		{
@@ -41852,6 +42007,23 @@
 			"featureType": ["BRPW"],
 			"entries": [
 				"A specific point is all you need to make the whole body suffer in pain. By spending 8 Fervor points and an action, you may deliver a powerful blow against a target creature within reach. This attack deals {@damage 2d10} bludgeoning damage, with a further {@damage 2d10} fire damage if the target has more than 5 Stacks of {@condition Burn|TheUndertomesGeneralRules}. The target creature must pass a Constitution Saving throw or have their limbs lock up from the intense, flaring pain from the attack, suffering a penalty to their Attacks and Saving Throws until the end of their next turn equal to the Stacks of {@condition Burn|TheUndertomesGeneralRules} they currently have. Creatures who do not have a nervous system or are physically unable to feel pain are immune to this penalty."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -41869,9 +42041,7 @@
 			"featureType": ["AI"],
 			"prerequisite": [
 				{
-					"level": {
-						"level": 6
-					},
+					"level": 6,
 					"other": "A beartrap"
 				}
 			],
@@ -42026,9 +42196,7 @@
 			"featureType": ["AI"],
 			"prerequisite": [
 				{
-					"level": {
-						"level": 6
-					},
+					"level": 6,
 					"other": "An ocular aid"
 				}
 			],
@@ -42155,6 +42323,23 @@
 			"featureType": ["BRPW"],
 			"entries": [
 				"Simply let them burn away in an instant, a clever jab can go miles blowing through enemy after enemy. As an action in your turn, you may spend 6 Fervor Points to deliver this devastating blow. Attack a creature within your range, this next attack deals {@damage 2d8} bludgeoning damage plus an additional {@damage d8} of fire damage per stack of {@condition Burn|TheUndertomesGeneralRules} the target currently has. The fiery blaze is so great that for any other creature within a 5-feet radius except for yourself must pass a Dexterity Saving throw or take the same amount of fire damage, taking half on a success."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -42174,6 +42359,23 @@
 			"featureType": ["BRPW"],
 			"entries": [
 				"You rush your oppnent with attack after attack, slowly breaking their defenses and flinging them back. By spending 5 Fervor Points you may turn the third attack you hit during your turn into a Palm Strike to the target creature’s stomach, dealing {@damage 2d4} damage and shoving them back a distance upwards to 15-feet, the distance being of your choice when you deliver the blow."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -42183,6 +42385,23 @@
 			"featureType": ["BRPW"],
 			"entries": [
 				"Relentless, unwielding and all encompassing. By spending an action and 4 Fervor points, you may perform up to four unarmed attacks against a target creature within your reach. These hits always inflict {@condition Burn|TheUndertomesGeneralRules} and if the target has more than 5 Stacks of {@condition Burn|TheUndertomesGeneralRules}, you gain a +2 to this attack. As long as they have Stacks of {@condition Burn|TheUndertomesGeneralRules}, you also deal an additional 2 fire damage per Stack. If the first three attacks hit and are not resisted, the fourth attack instead gains a +3 modifier and you deal 4 additional fire damage per Stack of they’re suffering from, if this attack hits the target loses two Stacks of {@condition Burn|TheUndertomesGeneralRules} afterward."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -42415,6 +42634,23 @@
 			"featureType": ["BRBT"],
 			"entries": [
 				"By spending two Fervor Points, you may deliver your next attack as a powerful kick coated in red-hot blaze that deals {@damage 1d8} bludgeoning damage plus an additional value of fire damage equal to the stacks of {@condition Burn|TheUndertomesGeneralRules} on target creature. Additionally, this attack always inflicts one stack of {@condition Burn|TheUndertomesGeneralRules}."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -42499,7 +42735,7 @@
 								"The fall brings newfound hope for a future that is less maculate. Targets of your choice may choose to automatically fail this saving throw and suffer no adverse effects, instead recovering an amount of Hit Points equal to half the damage that would be dealt. They also become Immune of the {@condition Frightened|PHB} Condition for one hour.",
 								"The Tower isn't the only one to fall, with all the lingering resentment from the world also being manifested as a fierce thunder fall to punish the insolent. The Tower's collapse deals d12s instead of d8s.",
 								"Pain is the only thing you could believe this world deserves. The Tower's collapse deals an additional 4 damage die.",
-								"The ground shall be scarred by the destruction wrought upon this day , and so will those who survive. All spaces within this range become Difficult Terrain that you and creatures of your choice may ignore. On a failed saving throw against the Tower's collapse, creatures who survive it gain a permanent scar upon their person. This scar may only be removed by a use of the Wish spell.",
+								"The ground shall be scarred by the destruction wrought upon this day , and so will those who survive. All spaces within this range become Difficult Terrain that you and creatures of your choice may ignore. On a failed saving throw against the Tower's collapse, creatures who survive it gain a permanent scar upon their person. This scar may only be removed by a use of the {@spell Wish} spell.",
 								"Nothing shall last, not a ruin, not a thought nor a memory. All faeric, demonic and holy contracts of your choice within the area immediately end. Area-based spells of your choice instantly end. Any desecrated or consecrated areas that come into contact with that range are instantly neutralized and any traces of lead become silver instead."
 							]
 						},
@@ -42595,7 +42831,13 @@
 						"level": 7,
 						"class": {
 							"name": "Fighter",
-							"source": "PHB"
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
 						}
 					}
 				}
@@ -42730,6 +42972,23 @@
 			"featureType": ["BRBT"],
 			"entries": [
 				"By spending two Fervor Points, you may jab foward with all your might, your next attack deals {@damage 2d4} piercing damage and the target has disadvantage on Concentration Saving Throws provoked by this attack, as it disrupts their body momentarily."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -42845,6 +43104,23 @@
 			"featureType": ["BRBT"],
 			"entries": [
 				"As a bonus action, you may spend a number of Fervor Points to enter a stance ready to return any blows given. Name how many Fervor Points you’ve spent, up to your proficiency modifier. Until the start of your next turn, whenever a creature attempts to attack you or any creature within 5-feet of you, before they hit, you may performed one unarmed strike against them an amount of times equal to the amount of Fervor Points spent."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -43604,6 +43880,23 @@
 			"featureType": ["BRBT"],
 			"entries": [
 				"By spending a Fervor Point, as a reaction to when you are suffering from the {@condition Frightened} or {@condition Charmed} condition and may roll again during your turn, you gain advantage to this Saving Throw, as you focus only on readying up for the next moment in the battle ahead."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Fighter",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brazen",
+							"source": "TheUndertomesBRZ",
+							"visible": true
+						}
+					}
+				}
 			]
 		},
 		{
@@ -43612,9 +43905,7 @@
 			"featureType": ["AI"],
 			"prerequisite": [
 				{
-					"level": {
-						"level": 10
-					},
+					"level": 10,
 					"other": "A Martial Weapon that does not have the Two-Handed property (requires attunement)"
 				}
 			],
@@ -44023,7 +44314,37 @@
 			},
 			"page": 7,
 			"savingThrow": ["dexterity"],
-			"damageInflict": ["piercing"]
+			"damageInflict": ["piercing"],
+			"foundryActivities": [
+				{
+					"name": "Arms of the Spider",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You conjure the disembodied gigantic, spindly legs of a spider near a target creature within range. It must pass a Dexterity saving throw or suffer from the spider perfectly weaving a Cocoon around most of its body, rendering it {@condition Grappled||grappled} until the Cocoon is broken. On a success, the creature takes {@damage 2d4} piercing damage as the legs nick its body from the rampant movement.",
+						"The Cocoon has 50 hit points, 12 AC and weakness to fire damage. After being destroyed the Cocoon slowly crumbles into white dust."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 2,
+								"denomination": 4,
+								"types": ["piercing"]
+							}
+						],
+						"onSave": "none"
+					}
+				}
+			]
 		},
 		{
 			"name": "Assimilate Shell",
@@ -44136,7 +44457,7 @@
 			"miscTags": ["SMN"],
 			"entries": [
 				"You conjure a living shack that follows your commands and can only be entered when it’s gigantic chicken legs are lowered. The house is 30-ft tall and 30-ft wide, with it’s chicken legs elevating it’s height to a total of 50-ft. Its doors and windows lead to an extradimensional dwelling with a moderate number of chambers, having all the nescessary chambers for a dwelling and an alchemy and arcane research room, library and a chamber of holding cells.",
-				"You may create any floor plan you like, but this space can’t exceed 30 cubes, each cube being 10 feet on each side. The house is furnished and decorated as you choose, but contains no supplies when first summoned, only retaining anything left inside it whenever this spell is cast afterward. If the Mystical House is destroyed, it and its contents are fully restored when the spell is next cast. The Mystical House uses the {@creature Baba Yaga’s Mystical House|TheUndertomesASV} creature sheet and rolls it’s own Initiative count if in combat, obeying all your orders or taking whatever action nescessary to kill a creature that has damaged it or simply spending all its movement speed moving away from the encounter if not provoked or ordered to attack.",
+				"You may create any floor plan you like, but this space can’t exceed 30 cubes, each cube being 10 feet on each side. The house is furnished and decorated as you choose, but contains no supplies when first summoned, only retaining anything left inside it whenever this spell is cast afterward. If the Mystical House is destroyed, it and its contents are fully restored when the spell is next cast. The Mystical House uses the Baba Yaga’s Mystical House creature sheet and rolls it’s own Initiative count if in combat, obeying all your orders or taking whatever action nescessary to kill a creature that has damaged it or simply spending all its movement speed moving away from the encounter if not provoked or ordered to attack.",
 				"You may spend your Action to call upon a psychical link to the house and command it to come closer, making it appear within an unocuppied space within reach after an amount of time equalling 1 minute per mile apart from the house.",
 				{
 					"type": "entries",
@@ -44931,7 +45252,37 @@
 			},
 			"page": 11,
 			"savingThrow": ["charisma"],
-			"damageInflict": ["psychic"]
+			"damageInflict": ["psychic"],
+			"foundryActivities": [
+				{
+					"name": "Cacophonous Gramophone",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You conjure forth a haunting melody to play out of a phantom gramophone, its sound is usually almost alien in nature, and you can choose which creatures can suffer its true melody. All creatures beside yourself within the area must pass a Charisma Saving throw on the start of their turn or suffer {@damage 2d4} psychic damage and suffer a -2 penalty to their Intelligence, Wisdom and Charisma saving throws until the start of their next turn. On a success, they only take half the psychic damage.",
+						"When you cast this spell, you may choose up to three creatures to automatically pass the Saving Throw caused by this spell."
+					],
+					"save": {
+						"ability": ["cha"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 2,
+								"denomination": 4,
+								"types": ["psychic"]
+							}
+						],
+						"onSave": "half"
+					}
+				}
+			]
 		},
 		{
 			"name": "Candlesetting",
@@ -45373,7 +45724,27 @@
 				]
 			},
 			"page": 25,
-			"savingThrow": ["charisma"]
+			"savingThrow": ["charisma"],
+			"foundryActivities": [
+				{
+					"name": "Conductors Orders",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You pool up arcane energies in a small chromatic aberration within the broken lightbulb, which you hold up. Choose a creature within range and between green light or red light. On a red light, the target creature must pass a Charisma Saving Throw or have their senses overtaken by a blinding red light, having their maximum walking speed reduced in half.",
+						"A green light however grants the creature a bonus to their walking speed equal to half their maximum current speed."
+					],
+					"save": {
+						"ability": ["cha"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Congealed Shot",
@@ -45403,6 +45774,27 @@
 				"This bullet features a smooth gelatin congealed within its casing which explodes after hitting a target. When used, you may choose any point within your Marksman Weapon's range to shoot. When the bullet hits a surface, it detonates in the form of a 5-ft large sphere of gelatin.",
 				"If this gelatin hits a creature, they must perform a Strength Saving Throw or be pushed in the opposite direction of where they were hit for up to 10 * SL feet, with Large or greater creatures having advantage on this Saving Throw.",
 				"After being deployed, any creature within 5-feet of the gelatin may use their bonus action to hop onto the Gelatin, being flung in the air on a long jump for the same distance as if they would be hit in length and half that number, rounded down, of height, or the inverse if they choose to perform a high jump."
+			],
+			"foundryActivities": [
+				{
+					"name": "Congealed Shot",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"This bullet features a smooth gelatin congealed within its casing which explodes after hitting a target. When used, you may choose any point within your Marksman Weapon's range to shoot. When the bullet hits a surface, it detonates in the form of a 5-ft large sphere of gelatin.",
+						"If this gelatin hits a creature, they must perform a Strength Saving Throw or be pushed in the opposite direction of where they were hit for up to 10 * SL feet, with Large or greater creatures having advantage on this Saving Throw.",
+						"After being deployed, any creature within 5-feet of the gelatin may use their bonus action to hop onto the Gelatin, being flung in the air on a long jump for the same distance as if they would be hit in length and half that number, rounded down, of height, or the inverse if they choose to perform a high jump."
+					],
+					"save": {
+						"ability": ["str"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
 			]
 		},
 		{
@@ -46332,7 +46724,26 @@
 						"source": "PHB"
 					}
 				]
-			}
+			},
+			"foundryActivities": [
+				{
+					"name": "Fan the Flame",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You mystically extend the wing in your hand to become a blazing fan and then beat it, causing a great scorching gale to overtake the area within range. All creatures of your choice must pass a Constitution saving throw or suffer 1 {@condition Burn|TheUndertomesGeneralRules|Burn} count and then have all failing creature's count of the Condition be summed up and then divided equally amongst them."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Fear of God [Cleric Only]",
@@ -46657,7 +47068,41 @@
 						"source": "PHB"
 					}
 				]
-			}
+			},
+			"foundryActivities": [
+				{
+					"name": "Fleeting Emberblade",
+					"type": "attack",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You create a bright flaming blade that extends from your fingers. Make a melee spell attack against a creature within range. On a hit, the target takes {@damage 1d8} fire damage and suffers 1 {@condition Burn|TheUndertomesGeneralRules|Burn} count.",
+						"The spell's damage and Burn increase when you reach 5th level ({@damage 2d8}, 3 Burn), 11th level ({@damage 3d8}, 4 Burn), and 17th level ({@damage 4d8}, 5 Burn)."
+					],
+					"attack": {
+						"type": {
+							"value": "melee",
+							"classification": "spell"
+						},
+						"ability": "spellcasting"
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 1,
+								"denomination": 8,
+								"types": ["fire"],
+								"scaling": {
+									"mode": "whole",
+									"number": 1
+								}
+							}
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Forest Purifying Light",
@@ -46840,7 +47285,7 @@
 			]
 		},
 		{
-			"name": "Gift of an Broken Heart",
+			"name": "Gift of a Broken Heart",
 			"source": "TheUndertomesASF",
 			"level": 4,
 			"school": "N",
@@ -47236,7 +47681,37 @@
 			},
 			"page": 31,
 			"savingThrow": ["wisdom"],
-			"damageInflict": ["psychic"]
+			"damageInflict": ["psychic"],
+			"foundryActivities": [
+				{
+					"name": "Hollow Words",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Even words can haunt a creature to their core. You choose a creature within range to suffer a psychic onslaught. They must pass a Wisdom Saving Throw or take {@damage 2d8} psychic damage and suffer from the Panicked condition, or just take half damage on a success.",
+						"Higher Levels: You may choose an additional target for this spell when its cast on every second level above 2nd, such as having two targets at 4th."
+					],
+					"save": {
+						"ability": ["wis"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 2,
+								"denomination": 8,
+								"types": ["psychic"]
+							}
+						],
+						"onSave": "half"
+					}
+				}
+			]
 		},
 		{
 			"name": "Human Taming",
@@ -47278,6 +47753,26 @@
 			"entries": [
 				"You concentrate a great amount of dense spore dust in your palm and blow it toward a creature within reach, forcing them to pass a Constitution saving throw or be transformed into a Beast or Plant of your choice, provided that you have seen that specific creature before and that the target’s Level or CR is equal to or lower to the creature chosen.",
 				"The target retains their memories and cognition, but if their Intelligence score is greater than the chosen Beast or Plant’s, it becomes the chosen Beast or Plant’s Intelligence score plus the target’s previous Intelligence modifier. The target also keeps the ability to understand any language they spoke before, but cannot speak if the creature they become cannot as well This spell’s effects can only be reversed through a {@spell Greater Restoration} or greater spell or through casting this spell on the target again while choosing to simply revert them back to their original form. An anti-magic zone or any likewise magic nullifying zone does not nullify this spell’s effects."
+			],
+			"foundryActivities": [
+				{
+					"name": "Human Taming",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You concentrate a great amount of dense spore dust in your palm and blow it toward a creature within reach, forcing them to pass a Constitution saving throw or be transformed into a Beast or Plant of your choice, provided that you have seen that specific creature before and that the target’s Level or CR is equal to or lower to the creature chosen.",
+						"The target retains their memories and cognition, but if their Intelligence score is greater than the chosen Beast or Plant’s, it becomes the chosen Beast or Plant’s Intelligence score plus the target’s previous Intelligence modifier. The target also keeps the ability to understand any language they spoke before, but cannot speak if the creature they become cannot as well This spell’s effects can only be reversed through a {@spell Greater Restoration} or greater spell or through casting this spell on the target again while choosing to simply revert them back to their original form. An anti-magic zone or any likewise magic nullifying zone does not nullify this spell’s effects."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
 			]
 		},
 		{
@@ -47458,7 +47953,26 @@
 					}
 				]
 			},
-			"page": 35
+			"page": 35,
+			"foundryActivities": [
+				{
+					"name": "Land of Smiles",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Sickness and disease come in many forms, sometimes that form is elation. Choose a point within range, a viscous black bud of a plant appears in that spot, quickly bursting into dark fluid that covers a 15-foot radius around it, turning the area into difficult terrain and forcing any creatures within to pass a Charisma Saving throw or have their movement speed halved until they start their turn outside the difficult terrain as their thoughts are assaulted by an eery elation."
+					],
+					"save": {
+						"ability": ["cha"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Landshark Lunge",
@@ -47748,6 +48262,26 @@
 			"entries": [
 				"You cause a bright flash around you, drawing the attention of creatures to you and nothing else as your body starts bearing runes and symbols to stare back at however many peer back into you. When you cast this spell, all creatures of your choice within reach must pass a Wisdom saving throw or have their gaze and attention fully stuck on you, making them be considered {@condition Blinded} and {@condition Deafened} against any creature that isn’t you, but having Advantage on any attacks against you for the spell’s duration. The runes also boost your speed, an euphoric adrenalin rush flowing through your veins as you’re stared at, granting a +1 bonus modifier to your Armor Class per creature affected by this spell, to a maximum modifier of +5.",
 				"For the duration, afflicted creatures may choose to retry their Wisdom saving throw at the end of their turn. Any creature who passed this saving throw automatically succeeds any subsequent saving throw caused by this spell for the next hour."
+			],
+			"foundryActivities": [
+				{
+					"name": "Mark of the Witness",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You cause a bright flash around you, drawing the attention of creatures to you and nothing else as your body starts bearing runes and symbols to stare back at however many peer back into you. When you cast this spell, all creatures of your choice within reach must pass a Wisdom saving throw or have their gaze and attention fully stuck on you, making them be considered {@condition Blinded} and {@condition Deafened} against any creature that isn’t you, but having Advantage on any attacks against you for the spell’s duration. The runes also boost your speed, an euphoric adrenalin rush flowing through your veins as you’re stared at, granting a +1 bonus modifier to your Armor Class per creature affected by this spell, to a maximum modifier of +5.",
+						"For the duration, afflicted creatures may choose to retry their Wisdom saving throw at the end of their turn. Any creature who passed this saving throw automatically succeeds any subsequent saving throw caused by this spell for the next hour."
+					],
+					"save": {
+						"ability": ["wis"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
 			]
 		},
 		{
@@ -48073,7 +48607,27 @@
 				]
 			},
 			"page": 8,
-			"savingThrow": ["constitution"]
+			"savingThrow": ["constitution"],
+			"foundryActivities": [
+				{
+					"name": "Mutual Exsanguination",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You either deliver a nasty cut to one of your palms that soon closes as blood seeps out to the floor, or you simply sacrifice your blood magically to summon two gangly pale arms around you, reaching around to grasp at one creature of your choice within range. When you cast this spell, you take an amout of your hit die in slashing damage equal to the level you cast it on, and the target creature must pass a Constitution Saving Throw or take double the amount of die in slashing damage, as slices and gashes start being formed as the hands hold them, then crumbling to dust in the end of the spell. The amount of Hit Die spendable at once is equal to the spell slot level this spell is cast on.",
+						"At Higher Levels: For every second spell slot level spent above 2nd level, starting at 4th, you may choose an additional target for this spell."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Obsession",
@@ -48111,7 +48665,27 @@
 				"During these last days, they become hostile to any creatures that might go against their will. In addition, if they have a chance before the sixth day to acquire their object of desire in any manner, they must pass a Charisma Saving Throw or immediately become more deranged, trying their hardest to obtain it earlier."
 			],
 			"page": 17,
-			"savingThrow": ["charisma"]
+			"savingThrow": ["charisma"],
+			"foundryActivities": [
+				{
+					"name": "Obsession",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You whisper a short string of words into another neutral or friendly creatures ear, often disguised within a phrase or a question and laden with arcane energy. This creature must pass a Charisma Saving throw or be enchanted to become fully obsessed with the main subject of what you said, such as an object, a topic or a person, this becoming their hyperfixation or object of desire for the duration of the spell. A creature enchanted like this will act upon their obsession in increasing levels, on the first five days they may, depending on their personality, have fully researched a topic without having nearly enough sleep, or even stalked the person deemed as their desire, yet they will become desperate and anxious on the sixth and seventh days if they do not acquire their object of desire or make a discovery within the topic of their knowledge.",
+						"During these last days, they become hostile to any creatures that might go against their will. In addition, if they have a chance before the sixth day to acquire their object of desire in any manner, they must pass a Charisma Saving Throw or immediately become more deranged, trying their hardest to obtain it earlier."
+					],
+					"save": {
+						"ability": ["cha"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Orb of Balance",
@@ -48317,6 +48891,27 @@
 				"You ward a number of creatures against harm and helping them get back to their feet. A 15-ft. dome of light forms around a point of your choice within range, protecting all willing creatures within and forcing any unwilling one to pass a Wisdom saving throw or be moved out to the nearest unoccupied space. Until the spell ends, any creature who targets a creature within the warded area with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell protects the warded creatures from area effects, such as the explosion of a {@spell fireball}.",
 				"Warded creatures benefit from your Spell Attack modifier to Constitution and Wisdom saving throws and are healed by {@dice 2d8+2} hit points at the start of your turn for the duration of this spell.",
 				"If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends."
+			],
+			"foundryActivities": [
+				{
+					"name": "Perfected Sanctuary",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You ward a number of creatures against harm and helping them get back to their feet. A 15-ft. dome of light forms around a point of your choice within range, protecting all willing creatures within and forcing any unwilling one to pass a Wisdom saving throw or be moved out to the nearest unoccupied space. Until the spell ends, any creature who targets a creature within the warded area with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell protects the warded creatures from area effects, such as the explosion of a {@spell fireball}.",
+						"Warded creatures benefit from your Spell Attack modifier to Constitution and Wisdom saving throws and are healed by {@dice 2d8+2} hit points at the start of your turn for the duration of this spell.",
+						"If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends."
+					],
+					"save": {
+						"ability": ["wis"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
 			]
 		},
 		{
@@ -48956,7 +49551,26 @@
 						"source": "PHB"
 					}
 				]
-			}
+			},
+			"foundryActivities": [
+				{
+					"name": "Shakewave",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You send out a magnetic shockwave that covers a 30-ft radius around you, forcing any hostile creature within to attempt a Constitution Saving Throw or be knocked {@condition Prone} and suffer 4 {@condition Tremor|TheUndertomesGeneralRules}, or only take half the stacks on a success."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Shattering Smite",
@@ -49120,6 +49734,25 @@
 			"areaTags": ["R"],
 			"entries": [
 				"Various steel pellets are found within this bullet's shell, having a second ignition trigger after hitting a target and exploding to expand its field of effect. When used, you may choose a point within your Marksman Weapon's range, all creatures within a 5 * SL radius of the point must pass a Dexterity Saving Throw or suffer SL die of damage plus your Charisma Modifier, with the type of die and damage matches the Marksman Weapon's. On a success, creatures take half the damage rolled"
+			],
+			"foundryActivities": [
+				{
+					"name": "Shrapnel Shot",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Various steel pellets are found within this bullet's shell, having a second ignition trigger after hitting a target and exploding to expand its field of effect. When used, you may choose a point within your Marksman Weapon's range, all creatures within a 5 * SL radius of the point must pass a Dexterity Saving Throw or suffer SL die of damage plus your Charisma Modifier, with the type of die and damage matches the Marksman Weapon's. On a success, creatures take half the damage rolled"
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
 			]
 		},
 		{
@@ -49391,7 +50024,7 @@
 			},
 			"entries": [
 				"You carve out the brain and heart of a body of a creature whose size is equal to yours and that is at most 10 days old and grind them to a fine paste used to form a magic circle around the remains, which over the course of the ritual of casting this spell start floating and melding into your own body. For the duration of this spell, you look exactly like what the creature looked in life, choosing when you first cast this spell if you wish to have it be as it were when the creature first died or looking pristine. Either way, any damage taken afterward does not heal, like a cut on the skin not healing over time. You still recover hit points as usual.",
-				"You become indistinguishable from the creature both in looks and voice, perfectly assimilating any mannerisms that person had and learning the memory of the past 24 hours of this creatures life. You may choose to use what Charisma score they had in life instead of yours. Creatures instantly fail to pass {@skill Insight} checks to discern if you aren’t the real person unless they already know of this spell and your Charisma skill checks against them have Advantage. Whenever you’d be questioned something about the creatures memories, you may attempt an Intelligence check against a DC set by the DM, having the corpse whisper vague recollections of events into your ears on a success. Magic detection spells do not work to detect this spell, instead only being detected by the effects of the Detect Poison and Disease spell, which recognizes your fake skin as a toxic substance.",
+				"You become indistinguishable from the creature both in looks and voice, perfectly assimilating any mannerisms that person had and learning the memory of the past 24 hours of this creatures life. You may choose to use what Charisma score they had in life instead of yours. Creatures instantly fail to pass {@skill Insight} checks to discern if you aren’t the real person unless they already know of this spell and your Charisma skill checks against them have Advantage. Whenever you’d be questioned something about the creatures memories, you may attempt an Intelligence check against a DC set by the DM, having the corpse whisper vague recollections of events into your ears on a success. Magic detection spells do not work to detect this spell, instead only being detected by the effects of the {@spell Detect Poison and Disease} spell, which recognizes your fake skin as a toxic substance.",
 				"When this spell ends, the false skin becomes like a second layer upon your own expanding body, which reverts to its original proportions and might cause the ol dskin to burst and explode away from you. If your size changes while this spell is active, the spell ends.",
 				{
 					"type": "entries",
@@ -49547,6 +50180,29 @@
 			"entries": [
 				"The next time you hit a creature with a weapon attack before this spell ends, your weapon nearly shatters under your grasp as it is over-saturated in an energy destined to equalize all things in the end, and the attack deals an extra {@dice 5d10} necrotic damage to the target. This necrotic damage counts as if it were radiant damage when targetting Undead or Fiends. When a creature suffers necrotic damage in this way, their maximum hit points are also reduced by that value for the next hour as their body is left with an open wound covered in a dark void which eats all light, seeming only like a black hole on their skin.",
 				"If a creature is knocked {@condition Unconscious} from this smite, their hit point total is reduced permanently by that value, only being restored through a {@spell Greater Restoration} spell or greater."
+			],
+			"foundryActivities": [
+				{
+					"name": "Smite of Nihilation",
+					"type": "damage",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"The next time you hit a creature with a weapon attack before this spell ends, your weapon nearly shatters under your grasp as it is over-saturated in an energy destined to equalize all things in the end, and the attack deals an extra {@dice 5d10} necrotic damage to the target. This necrotic damage counts as if it were radiant damage when targetting Undead or Fiends. When a creature suffers necrotic damage in this way, their maximum hit points are also reduced by that value for the next hour as their body is left with an open wound covered in a dark void which eats all light, seeming only like a black hole on their skin.",
+						"If a creature is knocked {@condition Unconscious} from this smite, their hit point total is reduced permanently by that value, only being restored through a {@spell Greater Restoration} spell or greater."
+					],
+					"damage": {
+						"parts": [
+							{
+								"number": 5,
+								"denomination": 10,
+								"types": ["necrotic"]
+							}
+						]
+					}
+				}
 			]
 		},
 		{
@@ -49798,7 +50454,36 @@
 			},
 			"page": 24,
 			"savingThrow": ["dexterity"],
-			"damageInflict": ["piercing"]
+			"damageInflict": ["piercing"],
+			"foundryActivities": [
+				{
+					"name": "Spread Lean Wings",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Even the earth must take to the air at times, all to reach its very own garden of Eden. You crush the bramble between your fingers, its thorny length becoming much larger, covering both of your hands in wings that quickly extend outward in an explosion of spikes. All creatures within a 15-feet radius of yourself must pass a Dexterity Saving Throw or take {@damage 5d8} piercing damage and suffer 3 stacks of {@condition Bleed|TheUndertomesGeneralRules}, or only taking half the damage on a success."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 5,
+								"denomination": 8,
+								"types": ["piercing"]
+							}
+						],
+						"onSave": "half"
+					}
+				}
+			]
 		},
 		{
 			"name": "Sprouting Lights",
@@ -50060,7 +50745,27 @@
 					}
 				]
 			},
-			"page": 39
+			"page": 39,
+			"foundryActivities": [
+				{
+					"name": "Step Through Heaven's Door",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"In a moments notice, you clap your hands and have your body transferred to another point within reach, as if you had simply taken a step from a room to another. When you cast this spell, you are teleported instantly to any empty 5-feet space of which you've seen before. You may also choose to spend your reaction in addition to your action to cast this spell as a reaction to failing a Strength or Dexterity Saving Throw, potentially saving yourself from its consequences.",
+						"At Higher Levels: When cast with every second spell slot level above 5th ( 7th and 9th ), this spell's range increases by one mile."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Sultus Justitia",
@@ -50108,7 +50813,28 @@
 				]
 			},
 			"page": 27,
-			"savingThrow": ["charisma"]
+			"savingThrow": ["charisma"],
+			"foundryActivities": [
+				{
+					"name": "Sultus Justitia",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Summary judgement is in order, despite the veredict. You summon an arcane circle along the surface covered by this spell's range, indiscernible court-room chatter echoing out. Choose up to three creatures within reach, they must pass a Charisma Saving Throw or have ropes of darkness fall from the sky and strangle them by the neck, hoisting them up 5- feet into the air.",
+						"While hanging, these creatures suffer 1 level of Exhaustion at the start of their turn and having their movement speed reduced to 0 feet. To become free from this, the rope holding their neck must be cut. It has an AC of 14 and 50 hit points, alongside having vulnerability to fire and slashing damage.",
+						"The strangled creature has disadvantage to attacks targeting their own rope. Upon being set free, the creatures hanged recover from half their total Exhaustion, rounded up."
+					],
+					"save": {
+						"ability": ["cha"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Summon Thieving Jacks",
@@ -50180,7 +50906,7 @@
 			"miscTags": ["SMN"],
 			"entries": [
 				"You toss away a pumpkin seed imbued with your magic, causing it to nearly explode as it quickly grows into a servant of your own. This creature uses the Thieving Pumpkinhead stat block, except it gains a bonus to it’s AC equal to the spell slot level spent and an additional 15 maximum hit points for that same value. When summoned, the Pumpkinhead has it’s maximum possible amount of hit points as it’s total. The creature disappears when it drops to 0 hit points or when the spell ends.",
-				"Whenever the Thieving Pumpkinhead uses it’s Steal or be Stolen reaction you may use any abilities it steals directly using your own modifiers instead of the Pumpkinhead’s or the original ability owner. You may also have it swap one of your Attribute scores for the stolen target’s, doing so after the Attribute is determined by the d6.",
+				"Whenever the Thieving Pumpkinhead uses it’s Steal or Be Stolen reaction you may use any abilities it steals directly using your own modifiers instead of the Pumpkinhead’s or the original ability owner. You may also have it swap one of your Attribute scores for the stolen target’s, doing so after the Attribute is determined by the d6.",
 				"The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger."
 			]
 		},
@@ -50274,6 +51000,25 @@
 			"savingThrow": ["dexterity"],
 			"entries": [
 				"Although not very practical for inflicting great damage, this magazine contains a series of compact bullets useful to effectively pin down a target. When used, you may choose a target within your Marksman Weapon's range, it must pass a Dexterity Saving Throw or suffer immense hardship to leave its position, having their movement speed reduced by 5 * SL, to a minimum of 5-feet. In addition, if the target does move during this duration, the next attack aimed against them has your SL as a bonus modifier to hit."
+			],
+			"foundryActivities": [
+				{
+					"name": "Suppressive Fire",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Although not very practical for inflicting great damage, this magazine contains a series of compact bullets useful to effectively pin down a target. When used, you may choose a target within your Marksman Weapon's range, it must pass a Dexterity Saving Throw or suffer immense hardship to leave its position, having their movement speed reduced by 5 * SL, to a minimum of 5-feet. In addition, if the target does move during this duration, the next attack aimed against them has your SL as a bonus modifier to hit."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
 			]
 		},
 		{
@@ -50599,9 +51344,44 @@
 				"All creatures within reach are asked to “Give up their time.”",
 				"by a ghastly voice that rings out through the entire battlefield, being heard in a language that they understand, with even those who don’t speak a language instinctively understanding. A creature who hears this may instantly spend a free action to respond in affirmative or negative, with one of the following effects happening depending on how many creatures have accepted giving up their time:",
 				"If more than 13 ( or 70% of the current total creatures within reach, rounded down ) agree to give up their time, they receive it back as all color rushes back into them. All creatures who denied to give up their time are fully stripped of it, being rendered {@condition Paralyzed} for the next three turns, also suffering one point of {@condition Exhaustion} per turn they spend {@condition Paralyzed}. Another creature may spend an Action during their turn while within 5-ft of the {@condition Paralyzed} creature to share their time with them, ending their turn instantly so this effect ends early.",
-				"If less than 13 ( or 70% of the current total creatures within reach, rounded down ) refuse to give up their time, only those who accepted become affected with the effects of the Slow spell for the duration of this spell.",
-				"If all creatures agree, all within this range are affected with the effects of the Haste spell for this spell’s duration, as the collective mass of time is renovated and boosted.",
+				"If less than 13 ( or 70% of the current total creatures within reach, rounded down ) refuse to give up their time, only those who accepted become affected with the effects of the {@spell Slow} spell for the duration of this spell.",
+				"If all creatures agree, all within this range are affected with the effects of the {@spell Haste} spell for this spell’s duration, as the collective mass of time is renovated and boosted.",
 				"If none of the creatures agree, a great temporal distortion happens, forcing all creatures to attempt a Constitution Saving Throw or suffer {@dice 8d10} force damage and suffer 2 points of {@condition Exhaustion}, or half that damage and {@condition Exhaustion} on a success."
+			],
+			"foundryActivities": [
+				{
+					"name": "The Long Silence",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"The ability to unwind and strip the very concept of time to your will is one that you can briefly tap onto, challenging the rules of the universe so they may bend in your favour. You draw out a complex magical circle that reaches towards a 180-ft. radius around you, causing all things within reach to lose their usual pigmentation as a sepia tone washes over them, their time starting to be melted into a collective mass.",
+						"All creatures within reach are asked to “Give up their time.”",
+						"by a ghastly voice that rings out through the entire battlefield, being heard in a language that they understand, with even those who don’t speak a language instinctively understanding. A creature who hears this may instantly spend a free action to respond in affirmative or negative, with one of the following effects happening depending on how many creatures have accepted giving up their time:",
+						"If more than 13 ( or 70% of the current total creatures within reach, rounded down ) agree to give up their time, they receive it back as all color rushes back into them. All creatures who denied to give up their time are fully stripped of it, being rendered {@condition Paralyzed} for the next three turns, also suffering one point of {@condition Exhaustion} per turn they spend {@condition Paralyzed}. Another creature may spend an Action during their turn while within 5-ft of the {@condition Paralyzed} creature to share their time with them, ending their turn instantly so this effect ends early.",
+						"If less than 13 ( or 70% of the current total creatures within reach, rounded down ) refuse to give up their time, only those who accepted become affected with the effects of the Slow spell for the duration of this spell.",
+						"If all creatures agree, all within this range are affected with the effects of the Haste spell for this spell’s duration, as the collective mass of time is renovated and boosted.",
+						"If none of the creatures agree, a great temporal distortion happens, forcing all creatures to attempt a Constitution Saving Throw or suffer {@dice 8d10} force damage and suffer 2 points of {@condition Exhaustion}, or half that damage and {@condition Exhaustion} on a success."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 8,
+								"denomination": 10,
+								"types": ["force"]
+							}
+						],
+						"onSave": "half"
+					}
+				}
 			]
 		},
 		{
@@ -50709,7 +51489,42 @@
 				]
 			},
 			"spellAttack": ["R"],
-			"damageInflict": ["piercing"]
+			"damageInflict": ["piercing"],
+			"foundryActivities": [
+				{
+					"name": "Ticking Clockhand",
+					"type": "attack",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"{@i Chronurgy cantrip.}",
+						"You fling an ethereal clock hand toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes {@damage 1d6} piercing damage and suffers 2 {@condition Tremor|TheUndertomesGeneralRules}.",
+						"The spell's damage increases by {@damage 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+					],
+					"attack": {
+						"type": {
+							"value": "ranged",
+							"classification": "spell"
+						},
+						"ability": "spellcasting"
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 1,
+								"denomination": 6,
+								"types": ["piercing"],
+								"scaling": {
+									"mode": "whole",
+									"number": 1
+								}
+							}
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Time for Harvest",
@@ -51066,6 +51881,27 @@
 				"You reach out to a creature within reach that you can see and envelop them in a green glow, forcing their body to retrace their recent steps, rewinding in real time. That creature must pass a Wisdom saving throw if unwilling or suffer the spells effects on a failure, those being having their hit point count reversed to what they were at the start of the target’s previous turns, with wounds being mended as if rewinding from when they were formed or any form of healing received just bursts off as a painful attack repeats without a blade.",
 				"If a target creature that was healed from becoming {@condition Unconscious} would lose their recovered hit points, they remain at a minimum of one hit point instead of becoming {@condition Unconscious} again. If a target creature that was knocked {@condition Unconscious} has their hit points restored to a point where they become conscious again they become dazed until the end of their next turn, suffering the whiplash from healing.",
 				"For the duration the creature suffers a -3 negative modifier to all their rolls."
+			],
+			"foundryActivities": [
+				{
+					"name": "Unwinding Pain",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You reach out to a creature within reach that you can see and envelop them in a green glow, forcing their body to retrace their recent steps, rewinding in real time. That creature must pass a Wisdom saving throw if unwilling or suffer the spells effects on a failure, those being having their hit point count reversed to what they were at the start of the target’s previous turns, with wounds being mended as if rewinding from when they were formed or any form of healing received just bursts off as a painful attack repeats without a blade.",
+						"If a target creature that was healed from becoming {@condition Unconscious} would lose their recovered hit points, they remain at a minimum of one hit point instead of becoming {@condition Unconscious} again. If a target creature that was knocked {@condition Unconscious} has their hit points restored to a point where they become conscious again they become dazed until the end of their next turn, suffering the whiplash from healing.",
+						"For the duration the creature suffers a -3 negative modifier to all their rolls."
+					],
+					"save": {
+						"ability": ["wis"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
 			]
 		},
 		{
@@ -51447,7 +52283,27 @@
 					}
 				]
 			},
-			"page": 24
+			"page": 24,
+			"foundryActivities": [
+				{
+					"name": "Wickerman's Brambles",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Not only skin can be turned into bark, nor will only it be bitten into by flame. Choose one creature within range, they are forced to pass a Constitution Saving Throw or have their veins slowly start to turn into wood. The searing pain from such causes them to be unable to focus well on anything, taking a -3 penalty to their attack rolls and Saving Throws.",
+						"This effect ends early if they take fire or lightning damage, as the wood inside their body rapidly catches onto a blazing inferno, causing the creature to take damage from that source as if it were vulnerable to it, or resistance if it was immune to these damage types, also taking an additional {@dice 3d8} damage of the respective type. At Higher Levels: When this spell is cast at a level higher than 5th, it deducts an additional -1 to the total penalty and deals an additional {@dice 2d8} damage by each second spell slot above 5th. ( 7th level and 9th level )."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
 		},
 		{
 			"name": "Will of Nihil",
@@ -51546,7 +52402,7 @@
 			],
 			"entries": [
 				"The sounds of a clock ticking down can become infernal, and you're here to bring hell, after all. You point to a creature that you can see within range, it must pass a Wisdom Saving Throw or suffer from perceiving a giant, sharpened clock hand dangling above their head, nearly dropping. This clock hand cannot be broken and will fall if the target creature fails to wind up the clock.",
-				"For the duration, whenever this creature is hit by an attack, it must perform a Concentration Check, and on a failure the clock hand falls as they miss their chance to wind-up the clock. The clock hand deals {@damage 6d10} piercing damage and inflicts the effects of the Slow spell to the target creature automatically, lasting for a minute. The clock hand may be dispelled through the {@spell dispel magic|PHB|Dispel Magic} spell or through breaking your concentration, and if the creature does not trigger the hand to fall during your spell's duration, it simply cracks and explodes into harmless golden dust."
+				"For the duration, whenever this creature is hit by an attack, it must perform a Concentration Check, and on a failure the clock hand falls as they miss their chance to wind-up the clock. The clock hand deals {@damage 6d10} piercing damage and inflicts the effects of the {@spell Slow} spell to the target creature automatically, lasting for a minute. The clock hand may be dispelled through the {@spell dispel magic|PHB|Dispel Magic} spell or through breaking your concentration, and if the creature does not trigger the hand to fall during your spell's duration, it simply cracks and explodes into harmless golden dust."
 			],
 			"classes": {
 				"fromClassList": [
@@ -51638,6 +52494,464 @@
 			"entries": [
 				"The eyes are the window to the soul, while you know the wounds are the doorways to the flesh. You point to a creature you can see within reach that is below half their maximum hit points, having your body unravel from your fingertip to your feet as if you were unspooling your flesh into thin air. You then instantly reappear from inside the target creatures open wounds and may choose to come out of their gashes as a full, re-structured body or safely reform your body in a looser form, being able to slip out without harming the creature. You reappear at an unnocupied space within 5-ft of the target.",
 				"If you chose to re-appear with your whole body formed, the creature must pass a Constitution saving throw or suffer {@dice 8d8} bludgeoning damage as your regrowing body violently erupts from their open wound, also having the next weapon attack performed against the target being done at advantage. On a succesful save, both you and the target take half this spells damage."
+			],
+			"foundryActivities": [
+				{
+					"name": "Woundwalking",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"The eyes are the window to the soul, while you know the wounds are the doorways to the flesh. You point to a creature you can see within reach that is below half their maximum hit points, having your body unravel from your fingertip to your feet as if you were unspooling your flesh into thin air. You then instantly reappear from inside the target creatures open wounds and may choose to come out of their gashes as a full, re-structured body or safely reform your body in a looser form, being able to slip out without harming the creature. You reappear at an unnocupied space within 5-ft of the target.",
+						"If you chose to re-appear with your whole body formed, the creature must pass a Constitution saving throw or suffer {@dice 8d8} bludgeoning damage as your regrowing body violently erupts from their open wound, also having the next weapon attack performed against the target being done at advantage. On a succesful save, both you and the target take half this spells damage."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 8,
+								"denomination": 8,
+								"types": ["bludgeoning"]
+							}
+						],
+						"onSave": "none"
+					}
+				}
+			]
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"name": "Arcana Pierce",
+			"source": "TheUndertomesDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Despair",
+			"subclassSource": "TheUndertomesDD",
+			"level": 17,
+			"activities": [
+				{
+					"name": "Arcana Pierce",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You have reached the culmination of your suffering and guilt, and as your swords pierce you, they bring forth all manner of emotions that flood and mold the battlefield with their crushing weight. As an action, you gain {@condition Sharpened by Tears|TheUndertomesDD|Tear-Sharpened}. Then, if you are in Blessing Mode, as part of the same action, choose a number of creatures within 30 feet of you equal to your Wisdom modifier (minimum of one creature). If a chosen creature made an attack roll on its previous turn, it must make a Wisdom saving throw against your spell save DC. On a failed save, your swords pierce it, and it becomes {@condition Restrained||restrained} until the start of your next turn. On a successful save, it is not restrained, but it gains 2 counts of {@condition Sinking|TheUndertomesGeneralRules}."
+					],
+					"save": {
+						"ability": ["wis"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Bygone Days",
+			"source": "TheUndertomesASV",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Old Master",
+			"subclassSource": "TheUndertomesASV",
+			"level": 1,
+			"activities": [
+				{
+					"name": "Bygone Days",
+					"type": "save",
+					"activation": {
+						"type": "special",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"This portrait can look however you wish, yet it is always an old wooden frame holding a picture or painting of the humanoid form of the old master, a luxurious person wearing dark brown clothes of your choice. The Portrait hit points is 10 x your proficiency bonus, and it is immune to poison and psychic damage. Your Portraits hover, and as a free action on your turn, you can move them up to 30 feet in any direction. As a bonus action, you can force all creatures of your choice within 10 feet of it to roll a Wisdom saving throw against your spell save DC or gain 3 counts of {@condition Sinking|TheUndertomesGeneralRules}, on a successful save, they gain only 1 count instead. When a creature reduces a Portrait to 0 Hit Points, you may use a reaction to make a spell attack against it. Your Portraits last until they’re reduced to 0 Hit Points or until you finish a short or long rest, upon which the remaining portraits turn to dust."
+					],
+					"save": {
+						"ability": ["wis"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Gallery Ingredient - A Bloodied Ring",
+			"source": "TheUndertomesCO",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Corporist",
+			"subclassSource": "TheUndertomesCO",
+			"level": 9,
+			"activities": [
+				{
+					"name": "Installation Art no. 3: Improvised Ribcage",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"While inside your gallery, you can use an Action to summon rib cages around a creature that you can see within the gallery in attempts to imprison it. They must succeed on a Dexterity saving throw against your spell save DC or become {@condition restrained} for a minute. They may reroll this saving throw at the end of each of their turns, ending this effect on a success."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Greta's Melody - Anatomization of the Unanatomized by the Anatomized",
+			"source": "TheUndertomesCO",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Corporist",
+			"subclassSource": "TheUndertomesCO",
+			"level": 15,
+			"activities": [
+				{
+					"name": "Closing Time - Installation Art no. 1: Your Flesh and Bones as the Gallery's Seats",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"As an Action inside your gallery, you may have any of your art pieces expand their bones and puncture creatures nearby. Choose any number of creatures that you can see up to your Proficiency Bonus. They must succeed on a Dexterity saving throw against your spell save DC or be pierced, taking {@damage 8d6} Piercing damage and having to roll on the Lingering Injuries Table. If this kills a creature, they are immediately added to your gallery as one of its sculptures. Once you use this feature, you can only use it again after a Long Rest."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 8,
+								"denomination": 6,
+								"types": ["piercing"]
+							}
+						],
+						"onSave": "none"
+					}
+				}
+			]
+		},
+		{
+			"name": "I Shall Impale",
+			"source": "TheUndertomesDE",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Dream Ender",
+			"subclassSource": "TheUndertomesDE",
+			"level": 20,
+			"activities": [
+				{
+					"name": "I Shall Impale",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Whenever you hit with an attack, you apply 1 additional count of {@condition Bleed|TheUndertomesGeneralRules}. When you kill a creature that was Bleeding, you generate 10 Bloodfeast. As an action, you can empower your lance and immediately use all of your movement speed to move in a straight line and force every creature of your choice within that line to roll a Constitution saving throw against your spell save DC."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "If I Could Go Back…",
+			"source": "TheUndertomesASV",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Old Master",
+			"subclassSource": "TheUndertomesASV",
+			"level": 6,
+			"activities": [
+				{
+					"name": "If I Could Go Back…",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You gain the ability to reduce the suffering of those around you and use those feelings to empower yourself and your allies. As an action, choose a creature you can see within 120 feet of you. They must roll a Dexterity saving throw against your spell save DC, and they can choose to fail, as one of your arms becomes woody and stumpy, and insectile roots charge at the creature. On a failed save, you remove {@condition Sinking|TheUndertomesGeneralRules} counts from them (minimum of 3 and maximum of 15). For each 3 counts you remove this way, you may target an additional creature within 120 feet of you and grant them {@dice 2d6} temporary Hit Points. On a successful save, they aren’t affected by this effect, however, instead of halving their {@condition Sinking|TheUndertomesGeneralRules} count at the end of the turn, they lose 3 counts instead."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Legerdemain",
+			"source": "TheUndertomesASV",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Rotten Soul",
+			"subclassSource": "TheUndertomesASV",
+			"level": 1,
+			"activities": [
+				{
+					"name": "Legerdemain",
+					"type": "save",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Additionally, you can use a bonus action to feed one of your fruits to a creature within 5 feet of you. If they’re unwilling, they must succeed on a Strength saving throw against your spell save DC to push you off. If they eat the fruit, until your next long rest you always instinctively know where they are, as long as they are within the same plane of existence as you."
+					],
+					"save": {
+						"ability": ["str"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Loser's Penalty",
+			"source": "TheUndertomesHT",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Haunted Toymaker",
+			"subclassSource": "TheUndertomesHT",
+			"level": 9,
+			"activities": [
+				{
+					"name": "Loser's Penalty",
+					"type": "save",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Playing games is a part of your essence, it's who you are, and sharing the fun you have in those moments is what you seek to do as a toymaker. As a Bonus Action, you can challenge a willing creature to a game, or force an unwilling creature to play if they fail a Wisdom saving throw against your spell save DC as long as they aren't Immune to the {@condition Charmed} condition."
+					],
+					"save": {
+						"ability": ["wis"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Melting Pinion",
+			"source": "TheUndertomesWW",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Waxen Wings",
+			"subclassSource": "TheUndertomesWW",
+			"level": 18,
+			"activities": [
+				{
+					"name": "Passive Effect",
+					"type": "save",
+					"activation": {
+						"type": "reaction",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"While you are in Volatile State, when you take psychic damage, you can use your reaction to scream. Each creature of your choice within 30 feet must make a Wisdom saving throw against your spell save DC, taking thunder damage equal to the psychic damage rolled on a failure, or half as much on a success."
+					],
+					"save": {
+						"ability": ["wis"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Nail Down Purification of Filth",
+			"source": "TheUndertomesHF",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Hammer of Faith",
+			"subclassSource": "TheUndertomesHF",
+			"level": 6,
+			"activities": [
+				{
+					"name": "Crucifixion",
+					"type": "damage",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You may spend your Action to build up the grave to a new world free of filth. You may consume 8 {@condition Nails|TheUndertomesGeneralRules} count on a target within melee reach to perform a melee weapon attack against them. On a hit, they have their binds pierce through their limbs and bind them to a single place to suffer divine retribution. That creature suffers {@damage 2d12} piercing damage and becomes Immobilized until the start of your next turn. After recovering from this Condition, they suffer 8 count of {@condition Immolation|TheUndertomesGeneralRules}. A creature crucified this way becomes overtaken by the adrenaline due to the extreme pain inflicted onto them, gaining a +5 to their AC against being crucified for one minute."
+					],
+					"damage": {
+						"parts": [
+							{
+								"number": 2,
+								"denomination": 12,
+								"types": ["piercing"]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Serpent's Mortal Flurry",
+			"source": "TheUndertomesSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Slithering One",
+			"subclassSource": "TheUndertomesSO",
+			"level": 18,
+			"activities": [
+				{
+					"name": "Serpent's Mortal Flurry",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Your transformation into a serpent is almost complete, as you feel your veins slither and tremble beneath your skin. As an action, you transform both arms into myriads of purple serpents, then stretch them toward a point you choose within 60 feet. Each creature of your choice in a 20-foot-radius sphere centered on that point must make a Constitution saving throw against your spell save DC. On a failed save, a creature takes {@damage 6d8} poison damage and is {@condition Restrained|PHB} until the start of its next turn. If it had neither resistance nor immunity to poison damage, it is {@condition Paralyzed|PHB} instead. On a successful save, it takes half as much damage and suffers 2 stacks of {@condition Rupture|TheUndertomesGeneralRules}, but is neither paralyzed nor restrained."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 6,
+								"denomination": 8,
+								"types": ["poison"]
+							}
+						],
+						"onSave": "half"
+					},
+					"range": {
+						"units": "ft",
+						"value": "60"
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "sphere",
+							"size": "20"
+						},
+						"affects": {
+							"type": "creature",
+							"choice": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Unerring Undertaker, Unavoidable",
+			"source": "TheUndertomesLW",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "The Living Will",
+			"subclassSource": "TheUndertomesLW",
+			"level": 14,
+			"activities": [
+				{
+					"name": "Eradication",
+					"type": "save",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"You may spend your Action and one Warlock spell slot to channel the Will directly, creating a number of mechanical arms that swing down from the heavens to crush any creature of a choice within 120-ft. of you. Any target within reach must pass a Dexterity saving throw against your Spell Save DC, suffering 6d10 bludgeoning damage and being knocked Prone on a failure or only suffering half that damage on a success."
+					],
+					"save": {
+						"ability": ["dex"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"number": 6,
+								"denomination": 10,
+								"types": ["bludgeoning"]
+							}
+						]
+					},
+					"range": {
+						"units": "ft",
+						"value": "120"
+					}
+				}
+			]
+		},
+		{
+			"name": "Ungeziefer",
+			"source": "TheUndertomesASV",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Rotten Soul",
+			"subclassSource": "TheUndertomesASV",
+			"level": 6,
+			"activities": [
+				{
+					"name": "Ungeziefer",
+					"type": "save",
+					"activation": {
+						"type": "reaction",
+						"value": 1
+					},
+					"descriptionEntries": [
+						"Your body has become a nesting ground for the vermin that tear through the flesh of your opponents, and they can feel this with the slightest touch. You gain resistance to Necrotic damage, and, once per turn, as a reaction when you’re hit by a melee attack, the attacker must perform a Constitution saving throw against your spell save DC. On a failure, they suffer 2 counts of {@condition Maggots|TheUndertomesASV} and take {@dice 2d6} piercing damage."
+					],
+					"save": {
+						"ability": ["con"],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 2,
+								"denomination": 6,
+								"types": ["piercing"]
+							}
+						],
+						"onSave": "none"
+					}
+				}
 			]
 		}
 	],
@@ -51807,7 +53121,7 @@
 							"type": "item",
 							"name": "Languages & Tool proficiencies",
 							"entries": [
-								"One Language of your choice and either Cartographer’s Tools or a Vehicle of your choice."
+								"One Language of your choice and either {@item cartographer's tools|PHB|Cartographer’s Tools} or a Vehicle of your choice."
 							]
 						},
 						{
@@ -56725,7 +58039,7 @@
 				{
 					"name": "A House",
 					"entries": [
-						"A friendly creature within 5-ft of {@creature Baba Yaga’s Mystical House|TheUndertomesASV} may spend their Bonus Action to call down upon it, making it headplant into the creature and consequentially moving the creature into it’s demiplane. The creature may spend half their movement speed to leave during their turn, and if the House is killed while creatures are inside, they are violently spewed out the front door, knocked {@condition prone} and suffering 16 {@dice 4d8} bludgeoning damage."
+						"A friendly creature within 5-ft of Baba Yaga’s Mystical House may spend their Bonus Action to call down upon it, making it headplant into the creature and consequentially moving the creature into it’s demiplane. The creature may spend half their movement speed to leave during their turn, and if the House is killed while creatures are inside, they are violently spewed out the front door, knocked {@condition prone} and suffering 16 {@dice 4d8} bludgeoning damage."
 					]
 				}
 			],
@@ -56823,19 +58137,19 @@
 				{
 					"name": "Delicious Looks",
 					"entries": [
-						"Any non {@condition Well-Fed|TheUndertomesLS} creature who ends its turn near the {@creature Basillisoup|TheUndertomesLS} feels a terrible hunger washing over them, forcing them to pass a {@dc 17} Constitution Saving Throw or take {@damage 2d10} psychic damage."
+						"Any non {@condition Well-Fed|TheUndertomesLS} creature who ends its turn near the Basillisoup feels a terrible hunger washing over them, forcing them to pass a {@dc 17} Constitution Saving Throw or take {@damage 2d10} psychic damage."
 					]
 				},
 				{
 					"name": "Everwarm Feed",
 					"entries": [
-						"When the {@creature Basillisoup|TheUndertomesLS} would be targeted by fire damage, it is instead healed by that amount as the warmth keeps the stew inside it warmer."
+						"When the Basillisoup would be targeted by fire damage, it is instead healed by that amount as the warmth keeps the stew inside it warmer."
 					]
 				},
 				{
 					"name": "The Original Ladle",
 					"entries": [
-						"The {@creature Basillisoup|TheUndertomesLS} is a mythical beast of legend that inspired the creation of {@creature Basillisoup|TheUndertomesLS} Ladles, as such while another creature is mounted on the {@creature Basillisoup|TheUndertomesLS}, it's attacks count as if they were made with Ladles."
+						"The Basillisoup is a mythical beast of legend that inspired the creation of {@item Basillisoup Ladle|TheUndertomesLS|Basillisoup Ladles}, as such while another creature is mounted on the Basillisoup, it's attacks count as if they were made with Ladles."
 					]
 				}
 			],
@@ -57061,7 +58375,7 @@
 				{
 					"name": "Filling a Medium-sized Orange Bubble",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}21 ({@damage 3d10 + 5}) piercing damage and the creature suffers 3 counts of {@condition Bleed|TheUndertomesGeneralRules}. If the target is already Bleeding, deal an additional 4 ({@damage 1d8}) die of piercing damage. If the attack hits, the creature must succeed on a {@dc 17} Constitution saving throw or suffer 1 count of {@condition Fragility|TheUndertomesMG}. A creature that succeeds this effect becomes immune to it for the next hour."
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}21 ({@damage 3d10 + 5}) piercing damage and the creature suffers 3 counts of {@condition Bleed|TheUndertomesGeneralRules}. If the target is already Bleeding, deal an additional 4 ({@damage 1d8}) die of piercing damage. If the attack hits, the creature must succeed on a {@dc 17} Constitution saving throw or suffer 1 count of {@condition Fragile|TheUndertomesASF}. A creature that succeeds this effect becomes immune to it for the next hour."
 					]
 				},
 				{
@@ -57234,7 +58548,7 @@
 				{
 					"name": "Consume Body",
 					"entries": [
-						"(Requires 6th-Level) The Swarm devours the body of a dead creature within 5-ft of it, being healed by {@dice 2d8}+PB hit points and generating 3 {@condition Lifeblood|TheUndertomesASV}. A Small or lesser creature only heals and generates half those amounts, rounded down, and Large creatures may be eaten from twice before the body is gone."
+						"(Requires 6th-Level) The Swarm devours the body of a dead creature within 5-ft of it, being healed by {@dice 2d8}+PB hit points and generating 3 Lifeblood. A Small or lesser creature only heals and generates half those amounts, rounded down, and Large creatures may be eaten from twice before the body is gone."
 					]
 				},
 				{
@@ -57403,13 +58717,13 @@
 				{
 					"name": "Claiming Friendship",
 					"entries": [
-						"If the Gift Friend deals damage to a creature suffering from the effects of the {@optfeature Unloved Gift Surprise|TheUndertomesASF} feature, it instantly triggers that feature's Heartbreak effect."
+						"If the Gift Friend deals damage to a creature suffering from the effects of the {@spell Gift of a Broken Heart|TheUndertomesASF}, it instantly triggers that feature's Heartbreak effect."
 					]
 				},
 				{
-					"name": "Disturbing Appearence",
+					"name": "Disturbing Appearance",
 					"entries": [
-						"Any creature that can see the Gift Friend has a -1 to Saving Throws to resist becoming frightened."
+						"Any creature that can see the Gift Friend has a -1 to Saving Throws to resist becoming {@condition frightened}."
 					]
 				},
 				{
@@ -57629,13 +58943,13 @@
 				{
 					"name": "Obey Firing Order",
 					"entries": [
-						"When ordered by their summoner, the {@condition Stigmatized|TheUndertomesFM} Memory performs a Shambling Jab attack or a Re-Enactment of the War attack against a target creature of the summoner's choice."
+						"When ordered by their summoner, the Stigmatized Memory performs a Shambling Jab attack or a Re-Enactment of the War attack against a target creature of the summoner's choice."
 					]
 				},
 				{
 					"name": "Obey Repositioning Order",
 					"entries": [
-						"When ordered by their summoner, the {@condition Stigmatized|TheUndertomesFM} Memory spends their Reaction to move up to 20-ft. in any direction of the summoner's choice."
+						"When ordered by their summoner, the Stigmatized Memory spends their Reaction to move up to 20-ft. in any direction of the summoner's choice."
 					]
 				}
 			]
@@ -57697,14 +59011,9 @@
 			],
 			"reaction": [
 				{
-					"name": "Steal or be Stolen",
+					"name": "Steal or Be Stolen",
 					"entries": [
-						"Whenever the Pumpkinhead deals damage to a creature, it steals part of their abilities at random, being able to use them as if it were its own until it is killed or until combat ends. The creature stolen from cannot use these abilities until recovered. To determine which ability is stolen, roll a d4 and then the DM chooses a specific one. For a roll of 1, an Offensive ability is stolen, for 2 a Healing ability, for 3 a Skill Proficiency and on a 4 the Pumpkinhead swaps an Attribute score of its own with the targets. To determine the Attribute score roll a d6, following the order of Attributes displayed in Player Character Sheets. The Pumpkinhead may use any of the target creature’s modifiers to use these abilities. An Offensive ability is any type of attack such as a Greatsword attack or a Monk’s Flurry of Blows, while a Healing ability may be a Fighter’s"
-					]
-				},
-				{
-					"name": "Second Wind or a Cure Wounds spell",
-					"entries": [
+						"Whenever the Pumpkinhead deals damage to a creature, it steals part of their abilities at random, being able to use them as if it were its own until it is killed or until combat ends. The creature stolen from cannot use these abilities until recovered. To determine which ability is stolen, roll a d4 and then the DM chooses a specific one. For a roll of 1, an Offensive ability is stolen, for 2 a Healing ability, for 3 a Skill Proficiency and on a 4 the Pumpkinhead swaps an Attribute score of its own with the targets. To determine the Attribute score roll a d6, following the order of Attributes displayed in Player Character Sheets. The Pumpkinhead may use any of the target creature’s modifiers to use these abilities. An Offensive ability is any type of attack such as a Greatsword attack or a Monk’s Flurry of Blows, while a Healing ability may be a Fighter’s Second Wind or a {@spell Cure Wounds} spell.",
 						"If a spell is stolen, the Pumpkinhead may cast it only once, with it then being recovered by it’s original owner."
 					]
 				}
@@ -57779,7 +59088,7 @@
 				{
 					"name": "Rake to Oblivion",
 					"entries": [
-						"One creature {@condition grappled} by the blood ooze must succeed on a DC 14 Strength saving throw or be pulled into the ooze’s body. An engulfed target is {@condition blinded}, {@condition restrained}, unable to breathe, and has total cover from effects that originate outside the ooze. At the start of each of the ooze’s turns, the engulfed creature takes 18 ({@dice 4d8}) psychic damage. The ooze can have only one creature engulfed at a time. An engulfed creature can try to escape by taking an action to make its choice of a DC 14 Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. On a success, the creature escapes and uses 5 ft. of movement to enter a space of its choice within 5 ft. of the ooze. If the ooze dies, an engulfed creature is no longer {@condition restrained} by it and can escape from the corpse by using 10 feet of movement. If the engulfed creature dies, it becomes another valentine’s ooze that is expelled to the nearest vacant space. It can only be restored to it’s former self with a True Polymorph, {@spell Greater Restoration} or greater spell, having all their memories as an ooze being a breezy blur. Melting Love"
+						"One creature {@condition grappled} by the blood ooze must succeed on a DC 14 Strength saving throw or be pulled into the ooze’s body. An engulfed target is {@condition blinded}, {@condition restrained}, unable to breathe, and has total cover from effects that originate outside the ooze. At the start of each of the ooze’s turns, the engulfed creature takes 18 ({@dice 4d8}) psychic damage. The ooze can have only one creature engulfed at a time. An engulfed creature can try to escape by taking an action to make its choice of a DC 14 Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. On a success, the creature escapes and uses 5 ft. of movement to enter a space of its choice within 5 ft. of the ooze. If the ooze dies, an engulfed creature is no longer {@condition restrained} by it and can escape from the corpse by using 10 feet of movement. If the engulfed creature dies, it becomes another valentine’s ooze that is expelled to the nearest vacant space. It can only be restored to it’s former self with a {@spell True Polymorph}, {@spell Greater Restoration} or greater spell, having all their memories as an ooze being a breezy blur. Melting Love"
 					]
 				}
 			],
@@ -58163,8 +59472,20 @@
 					"entries": ["Celestial"]
 				},
 				"Certain groups of cultists reject the notion that change is a constant and necessary part of Astu’s teachings, and are aiming to preserve their societies in a single, specific, and perfect way in their eyes. Those that do not love the way their city is have no place in society as a whole.",
-				"Hushed Conversion. This creature can cast Silence and Suggestion once per day without the need for components. If they do not have a spell save DC, it becomes 10 plus their CR (Maximum of 19).",
-				"Those Who Love Their City. Once per day, as a bonus action, this creature can be instilled by an overflowing and powerful aura of devotion. They heal {@dice 4d4 + 4} Hit Points and, for a minute, deal additional radiant damage whenever they deal damage equal to their Wisdom modifier."
+				{
+					"type": "entries",
+					"name": "Hushed Conversion",
+					"entries": [
+						"This creature can cast {@spell Silence} and {@spell Suggestion} once per day without the need for components. If they do not have a spell save DC, it becomes 10 plus their CR (Maximum of 19)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Those Who Love Their City",
+					"entries": [
+						"Once per day, as a bonus action, this creature can be instilled by an overflowing and powerful aura of devotion. They heal {@dice 4d4 + 4} Hit Points and, for a minute, deal additional radiant damage whenever they deal damage equal to their Wisdom modifier."
+					]
+				}
 			]
 		}
 	],
@@ -58275,120 +59596,40 @@
 					"entries": [
 						"When you choose this ancestry or are turned into a Bloodfiend, you gain access to unique abilities known as Blood Arts. These represent how you've learned to control your Bloodfiend powers. Choose one Blood Art:",
 						{
-							"type": "options",
-							"count": 1,
-							"entries": [
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Hemomancy|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Eyes on the Prize|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "In the Dark of the Night|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Hungry for More|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Blood Is Fuel|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Hardblood Armaments|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Transfusion|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Depraved Consumption|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "The Caring Hand|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Quasi-Formed Bloodbag|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Bloody Coating|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Higher Presence|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Family Heirloom|TheUndertomesTO"
-								}
+							"type": "list",
+							"items": [
+								"{@optfeature Hemomancy|TheUndertomesTO}",
+								"{@optfeature Eyes on the Prize|TheUndertomesTO}",
+								"{@optfeature In the Dark of the Night|TheUndertomesTO}",
+								"{@optfeature Hungry for More|TheUndertomesTO}",
+								"{@optfeature Blood Is Fuel|TheUndertomesTO}",
+								"{@optfeature Hardblood Armaments|TheUndertomesTO}",
+								"{@optfeature Transfusion|TheUndertomesTO}",
+								"{@optfeature Depraved Consumption|TheUndertomesTO}",
+								"{@optfeature The Caring Hand|TheUndertomesTO}",
+								"{@optfeature Quasi-Formed Bloodbag|TheUndertomesTO}",
+								"{@optfeature Bloody Coating|TheUndertomesTO}",
+								"{@optfeature Higher Presence|TheUndertomesTO}",
+								"{@optfeature Family Heirloom|TheUndertomesTO}"
 							]
 						},
 						"At 12th level, choose one additional Blood Art:",
 						{
-							"type": "options",
-							"count": 1,
-							"entries": [
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Hemomancy|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Eyes on the Prize|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "In the Dark of the Night|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Hungry for More|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Blood Is Fuel|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Hardblood Armaments|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Transfusion|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Depraved Consumption|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "The Caring Hand|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Quasi-Formed Bloodbag|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Bloody Coating|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Higher Presence|TheUndertomesTO"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Family Heirloom|TheUndertomesTO"
-								}
+							"type": "list",
+							"items": [
+								"{@optfeature Hemomancy|TheUndertomesTO}",
+								"{@optfeature Eyes on the Prize|TheUndertomesTO}",
+								"{@optfeature In the Dark of the Night|TheUndertomesTO}",
+								"{@optfeature Hungry for More|TheUndertomesTO}",
+								"{@optfeature Blood Is Fuel|TheUndertomesTO}",
+								"{@optfeature Hardblood Armaments|TheUndertomesTO}",
+								"{@optfeature Transfusion|TheUndertomesTO}",
+								"{@optfeature Depraved Consumption|TheUndertomesTO}",
+								"{@optfeature The Caring Hand|TheUndertomesTO}",
+								"{@optfeature Quasi-Formed Bloodbag|TheUndertomesTO}",
+								"{@optfeature Bloody Coating|TheUndertomesTO}",
+								"{@optfeature Higher Presence|TheUndertomesTO}",
+								"{@optfeature Family Heirloom|TheUndertomesTO}"
 							]
 						},
 						"A Bloodfiend performs Blood Arts by spending Blood Charges. These arts are usually passed from parent to child, although a Kindred can develop one independently."
@@ -58788,7 +60029,7 @@
 					"items": [
 						"The creature becomes {@condition Poisoned} until they end their turn outside of the Poisonous Gas.",
 						"The creature takes an amount of d6 poison damage equal to the amount of turns it spent inside the gas, or half on a success. This damage can go up to {@dice 4d6} poison damage per turn.",
-						"A {@condition Poisoned} creature has disadvantage on this saving throw. Poisonous Gas cannot be removed by a gust of wind, instead being moved to cover a different area depending on the wind’s strength, such as a Gust of Wind spell being able to move the entirety of Poisonous Gas toward a 60-ft line of the caster’s choice. An area covered by Poisonous Gas is considered Difficult Terrain."
+						"A {@condition Poisoned} creature has disadvantage on this saving throw. Poisonous Gas cannot be removed by a gust of wind, instead being moved to cover a different area depending on the wind’s strength, such as a {@spell Gust of Wind} spell being able to move the entirety of Poisonous Gas toward a 60-ft line of the caster’s choice. An area covered by Poisonous Gas is considered Difficult Terrain."
 					]
 				},
 				{
